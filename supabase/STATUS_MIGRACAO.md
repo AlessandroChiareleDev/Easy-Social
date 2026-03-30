@@ -50,12 +50,14 @@
 ## Feito Agora ✅
 
 ### FASE 2 — Deploy do Schema no Supabase
+
 - [x] Adaptado migration SQL para Session Pooler (Opção B: prefixo `master_`)
 - [x] Migration file: `20260330000001_pooler_compatible.sql`
 - [x] 28 tabelas criadas no Supabase (sem `certificados_a1` e `senha_certificado_salva`)
 - [x] `master_perfis` criado com `id integer` temporário (UUID quando integrar Supabase Auth)
 
 ### FASE 3 — Migração de Dados
+
 - [x] 22 tabelas easy_social_db exportadas via CSV + pg_dump
 - [x] 4 tabelas master exportadas (empresas, perfis, usuario_empresa, naturezas_esocial)
 - [x] Encoding corrigido (Latin1 → UTF8) para tabelas com acentos

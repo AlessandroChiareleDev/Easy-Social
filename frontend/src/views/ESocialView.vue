@@ -1746,7 +1746,7 @@ import axios from 'axios'
 const ESOCIAL_API =
   window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
     ? 'http://localhost:8000'
-    : 'https://celebrities-packing-trackbacks-between.trycloudflare.com'
+    : 'https://landing-turning-partnerships-house.trycloudflare.com'
 
 // ── State ────────────────────────────────────────────────────────
 

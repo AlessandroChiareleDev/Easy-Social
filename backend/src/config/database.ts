@@ -41,7 +41,9 @@ function colNameForIndex(i: number): string {
 export async function initializeDatabase() {
   const client = await pool.connect();
   try {
-    const result = await client.query("SELECT current_database(), current_user");
+    const result = await client.query(
+      "SELECT current_database(), current_user",
+    );
     console.log(
       `✅ Conectado ao banco: ${result.rows[0].current_database} (user: ${result.rows[0].current_user})`,
     );

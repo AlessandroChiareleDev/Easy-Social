@@ -35,7 +35,7 @@ from esocial.esocial_client import ESocialClient
 
 import sys
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
-from db_config import DB_CONFIG
+from db_config import DB_CONFIG, LOCAL_DB_CONFIG
 
 router = APIRouter(prefix="/api/esocial", tags=["esocial"])
 
@@ -121,22 +121,27 @@ class EnviarRequest(BaseModel):
 # ── Helpers ───────────────────────────────────────────────────────
 
 
-def _load_cert_ativo(cursor) -> dict:
-    """Carrega certificado ativo do banco. Retorna dict ou None."""
-    cursor.execute(
-        "SELECT id, cnpj, titular, arquivo_path, senha_encrypted, ativo "
-        "FROM certificados_a1 WHERE ativo = TRUE LIMIT 1"
-    )
-    row = cursor.fetchone()
-    if not row:
-        return None
-    return {
-        "id": row[0],
-        "cnpj": row[1],
-        "titular": row[2],
-        "arquivo_path": row[3],
-        "senha_encrypted": row[4],
-    }
+def _load_cert_ativo(cursor=None) -> dict:
+    """Carrega certificado ativo do banco LOCAL. Retorna dict ou None."""
+    local_conn = psycopg2.connect(**LOCAL_DB_CONFIG)
+    try:
+        with local_conn.cursor() as local_cur:
+            local_cur.execute(
+                "SELECT id, cnpj, titular, arquivo_path, senha_encrypted, ativo "
+                "FROM certificados_a1 WHERE ativo = TRUE LIMIT 1"
+            )
+            row = local_cur.fetchone()
+            if not row:
+                return None
+            return {
+                "id": row[0],
+                "cnpj": row[1],
+                "titular": row[2],
+                "arquivo_path": row[3],
+                "senha_encrypted": row[4],
+            }
+    finally:
+        local_conn.close()
 
 
 def _salvar_xmls_repositorio(

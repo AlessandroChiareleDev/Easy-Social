@@ -36,7 +36,7 @@ app.add_middleware(
         "http://localhost:5173",
         "http://localhost:5174",
         "http://localhost:3333",
-        "https://grown-morning-attend-currently.trycloudflare.com",
+        "https://distributor-timing-blues-rubber.trycloudflare.com",
     ],
     allow_credentials=True,
     allow_methods=["*"],

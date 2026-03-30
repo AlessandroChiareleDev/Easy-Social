@@ -4,16 +4,12 @@ Rotas para consulta da tabela cruzamento_eb (EB Skills Cruzamentos).
 from fastapi import APIRouter, Query
 import psycopg2
 import psycopg2.extras
+import os
+import sys
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+from db_config import DB_CONFIG
 
 router = APIRouter(prefix="/api/cruzamento-eb", tags=["Cruzamento EB"])
-
-DB_CONFIG = {
-    'host': 'localhost',
-    'port': 5432,
-    'dbname': 'easy_social_db',
-    'user': 'easy_social_user',
-    'password': 'sua_senha_segura'
-}
 
 
 def _get_conn():

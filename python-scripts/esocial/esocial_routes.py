@@ -33,15 +33,11 @@ from esocial.xml_signer import S1010XMLSigner
 from esocial.soap_builder import SOAPEnvelopeBuilder
 from esocial.esocial_client import ESocialClient
 
-router = APIRouter(prefix="/api/esocial", tags=["esocial"])
+import sys
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+from db_config import DB_CONFIG
 
-DB_CONFIG = {
-    "host": os.environ.get("DB_HOST", "localhost"),
-    "port": int(os.environ.get("DB_PORT", "5432")),
-    "database": os.environ.get("DB_NAME", "easy_social_db"),
-    "user": os.environ.get("DB_USER", "easy_social_user"),
-    "password": os.environ.get("DB_PASSWORD", "sua_senha_segura"),
-}
+router = APIRouter(prefix="/api/esocial", tags=["esocial"])
 
 INIT_ENVIOS_SQL = """
 CREATE TABLE IF NOT EXISTS esocial_envios (

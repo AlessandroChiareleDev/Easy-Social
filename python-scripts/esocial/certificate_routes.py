@@ -9,16 +9,14 @@ from fastapi import APIRouter, UploadFile, File, Form, HTTPException
 from .certificate_manager import CertificateManager
 import psycopg2
 import os
+import sys
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+from db_config import LOCAL_DB_CONFIG
 
 router = APIRouter(prefix="/api/certificados", tags=["certificados"])
 
-DB_CONFIG = {
-    "host": os.environ.get("DB_HOST", "localhost"),
-    "port": int(os.environ.get("DB_PORT", "5432")),
-    "database": os.environ.get("DB_NAME", "easy_social_db"),
-    "user": os.environ.get("DB_USER", "easy_social_user"),
-    "password": os.environ.get("DB_PASSWORD", "sua_senha_segura"),
-}
+# Certificados ficam SEMPRE no banco LOCAL (nunca na nuvem)
+DB_CONFIG = LOCAL_DB_CONFIG
 
 INIT_SQL = """
 CREATE TABLE IF NOT EXISTS certificados_a1 (

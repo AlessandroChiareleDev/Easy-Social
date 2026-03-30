@@ -32,13 +32,7 @@ pyautogui.PAUSE = 0.3  # Pausa de 300ms entre cada ação
 # CONFIGURAÇÃO
 # ============================================================
 
-DB_CONFIG = {
-    "host": os.getenv("DB_HOST", "localhost"),
-    "port": int(os.getenv("DB_PORT", "5432")),
-    "user": os.getenv("DB_USER", "easy_social_user"),
-    "password": os.getenv("DB_PASSWORD", "sua_senha_segura"),
-    "database": os.getenv("DB_NAME", "easy_social_db"),
-}
+from db_config import DB_CONFIG
 
 # Diretório para salvar screenshots de referência e debug
 SCREENSHOTS_DIR = os.path.join(os.path.dirname(__file__), "screenshots")

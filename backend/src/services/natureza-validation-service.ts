@@ -76,19 +76,69 @@ const STOPWORDS = new Set([
 ]);
 
 /**
- * Tokeniza um texto: lowercase, remove acentos, split, filtra stopwords e tokens curtos
+ * Dicionário de siglas/abreviações comuns em folha de pagamento.
+ * Cada sigla expande para as palavras-chave que devem ser buscadas nas naturezas.
+ */
+const SIGLAS: Record<string, string[]> = {
+  dsr: ["descanso", "semanal", "remunerado", "dsr"],
+  dif: ["diferenca"],
+  he: ["hora", "extra", "extraordinaria"],
+  hs: ["hora", "extra", "extraordinaria"],
+  cct: ["convencao", "coletiva"],
+  act: ["acordo", "coletivo"],
+  inss: ["previdencia", "social", "inss"],
+  fgts: ["fgts", "garantia"],
+  irrf: ["imposto", "renda", "irrf"],
+  vt: ["transporte", "vale"],
+  va: ["alimentacao", "vale"],
+  vr: ["refeicao", "vale"],
+  pat: ["alimentacao", "pat"],
+  plr: ["lucros", "resultados", "participacao"],
+  ppr: ["lucros", "resultados", "participacao"],
+  desc: ["desconto"],
+  dev: ["devolucao"],
+  reemb: ["reembolso", "ressarcimento"],
+  grat: ["gratificacao"],
+  adic: ["adicional"],
+  adc: ["adicional"],
+  compl: ["complemento"],
+  contrib: ["contribuicao"],
+  sest: ["sest", "senat", "transporte"],
+  senat: ["sest", "senat", "transporte"],
+};
+
+/**
+ * Tokeniza um texto: lowercase, remove acentos, split, filtra stopwords.
+ * Aceita tokens com 2+ caracteres para não descartar siglas (DSR, HE, VT etc).
  */
 function tokenize(text: string): string[] {
   const normalized = text
     .toLowerCase()
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "") // remove acentos
-    .replace(/[^a-z0-9\s]/g, " ") // remove pontuação
+    // Colapsar abreviações pontilhadas: "D.S.R." → "DSR", "H.E." → "HE"
+    .replace(/\b((?:[a-z]\.){2,})/gi, (match) => match.replace(/\./g, ""))
+    .replace(/[^a-z0-9\s]/g, " ") // remove pontuação restante
     .trim();
 
   return normalized
     .split(/\s+/)
-    .filter((t) => t.length > 2 && !STOPWORDS.has(t));
+    .filter((t) => t.length >= 2 && !STOPWORDS.has(t));
+}
+
+/**
+ * Expande tokens usando o dicionário de siglas.
+ * Ex: ["dif", "dsr"] → ["dif", "diferenca", "dsr", "descanso", "semanal", "remunerado"]
+ */
+function expandTokens(tokens: string[]): string[] {
+  const expanded = new Set(tokens);
+  for (const token of tokens) {
+    const synonyms = SIGLAS[token];
+    if (synonyms) {
+      for (const s of synonyms) expanded.add(s);
+    }
+  }
+  return [...expanded];
 }
 
 export class NaturezaValidationService {
@@ -149,24 +199,32 @@ export class NaturezaValidationService {
    *   "1012 - Descanso semanal remunerado" → ["1012"]
    *   "Natureza 1299 encerrada... sujerida 1629 - Ressarcimento" → ["1629", "1299"]
    */
+  /**
+   * Extrai TODOS os códigos de 4 dígitos mencionados na col_f.
+   * Retorna na ordem: "sugerida/sujerida" primeiro, depois os demais.
+   */
   private extrairCodigosDaColF(colF: string): string[] {
-    const codigos: string[] = [];
+    const sugeridos: string[] = [];
+    const outros: string[] = [];
+
     // Padrão: "sugerida XXXX" ou "sujerida XXXX" ou "sujerido XXXX"
     const sugeridaMatch = colF.match(/sujer?id[ao]\s*-?\s*(\d{4})/gi);
     if (sugeridaMatch) {
       for (const m of sugeridaMatch) {
         const num = m.match(/(\d{4})/);
-        if (num) codigos.push(num[1]);
+        if (num) sugeridos.push(num[1]);
       }
     }
-    // Se não achou por "sugerida", tenta pegar o primeiro código de 4 dígitos
-    if (codigos.length === 0) {
-      const simples = colF.match(/\b(\d{4})\b/g);
-      if (simples && simples.length > 0) {
-        codigos.push(simples[0]);
+
+    // Pegar TODOS os códigos de 4 dígitos (incluindo os mencionados como "inativado")
+    const todos = colF.match(/\b(\d{4})\b/g);
+    if (todos) {
+      for (const c of todos) {
+        if (!sugeridos.includes(c)) outros.push(c);
       }
     }
-    return [...new Set(codigos)];
+
+    return [...new Set([...sugeridos, ...outros])];
   }
 
   /**
@@ -212,26 +270,38 @@ export class NaturezaValidationService {
         sugestaoTexto = colF;
         const codigos = this.extrairCodigosDaColF(colF);
         if (codigos.length > 0) {
-          const nat = naturezasMap.get(codigos[0]);
-          if (nat) {
+          // Preferir natureza ATIVA (sem data_fim) entre os códigos mencionados
+          let melhorNat: any = null;
+          for (const cod of codigos) {
+            const nat = naturezasMap.get(cod);
+            if (!nat) continue;
+            if (!nat.data_fim) {
+              // Ativa — usar esta
+              melhorNat = nat;
+              break;
+            }
+            if (!melhorNat) melhorNat = nat; // guardar primeira (inativa) como fallback
+          }
+          if (melhorNat) {
             sugestaoHumana = {
-              id: nat.id,
-              codigo: nat.codigo,
-              nome: nat.nome,
-              descricao: nat.descricao,
-              data_inicio: nat.data_inicio,
-              data_fim: nat.data_fim,
+              id: melhorNat.id,
+              codigo: melhorNat.codigo,
+              nome: melhorNat.nome,
+              descricao: melhorNat.descricao,
+              data_inicio: melhorNat.data_inicio,
+              data_fim: melhorNat.data_fim,
               score: 100,
               origem: "sugestao_humana",
             };
-            codigosJaUsados.add(nat.codigo);
+            codigosJaUsados.add(melhorNat.codigo);
           }
         }
       }
     }
 
     // === CAMADA 2: Score de matching (até 15 com score > 0) ===
-    const tokensEvento = tokenize(nomeEvento);
+    const tokensEventoRaw = tokenize(nomeEvento);
+    const tokensEvento = expandTokens(tokensEventoRaw);
     const scored: NaturezaSugerida[] = [];
 
     for (const nat of natResult.rows) {
@@ -240,12 +310,19 @@ export class NaturezaValidationService {
       const tokensNat = tokenize(textoNat);
 
       let score = 0;
+      const matchedTokens = new Set<string>();
       for (const token of tokensEvento) {
         for (const natToken of tokensNat) {
           if (natToken === token) {
-            score += 3;
+            if (!matchedTokens.has(token)) {
+              score += 3;
+              matchedTokens.add(token);
+            }
           } else if (natToken.includes(token) || token.includes(natToken)) {
-            score += 1;
+            if (!matchedTokens.has(`${token}~${natToken}`)) {
+              score += 1;
+              matchedTokens.add(`${token}~${natToken}`);
+            }
           }
         }
       }
@@ -398,7 +475,8 @@ export class NaturezaValidationService {
     const result = await pool.query(`
       SELECT cs.analise_natureza_id as id, cs.codigoevento, cs.nome_evento,
              cs.natureza_anterior,
-             cs.natureza_nova_codigo || '-' || cs.natureza_nova_nome as natureza_nova,
+             CASE WHEN cs.natureza_nova_codigo = '0' THEN '(vazio)'
+                  ELSE cs.natureza_nova_codigo || '-' || cs.natureza_nova_nome END as natureza_nova,
              cs.usuario_nome, cs.criado_em as data_correcao, cs.motivo, cs.status
       FROM correcoes_staging cs
       ORDER BY cs.criado_em DESC
@@ -434,19 +512,25 @@ export class NaturezaValidationService {
       );
 
       for (const cs of pendentes.rows) {
-        const naturezaNovaFull = `${cs.natureza_nova_codigo}-${cs.natureza_nova_nome}`;
+        // Código "0" = sem natureza (campo vazio)
+        const naturezaNovaFull =
+          cs.natureza_nova_codigo === "0"
+            ? ""
+            : `${cs.natureza_nova_codigo}-${cs.natureza_nova_nome}`;
 
-        // Aplicar na analise_natureza
+        // Aplicar na analise_natureza_certo (tabela corrigida, original não é tocada)
         await client.query(
-          `UPDATE analise_natureza 
-           SET natureza_anterior = $1, 
-               natureza_nova = $2,
+          `UPDATE analise_natureza_certo 
+           SET col_c = $1,
+               natureza_anterior = $2, 
+               natureza_nova = $1,
+               col_d = 'OK',
                usuario_correcao = $3,
                data_correcao = CURRENT_TIMESTAMP
            WHERE id = $4`,
           [
-            cs.natureza_anterior,
             naturezaNovaFull,
+            cs.natureza_anterior,
             cs.usuario_nome,
             cs.analise_natureza_id,
           ],
@@ -485,6 +569,17 @@ export class NaturezaValidationService {
   }
 
   /**
+   * Busca uma natureza pelo código exato (ex: "1002")
+   */
+  async buscarPorCodigo(codigo: string): Promise<any | null> {
+    const result = await pool.query(
+      "SELECT id, codigo, nome, descricao, data_inicio, data_fim FROM naturezas_esocial WHERE codigo = $1",
+      [codigo],
+    );
+    return result.rows[0] || null;
+  }
+
+  /**
    * Lista todas as naturezas disponíveis no banco
    */
   async listarNaturezas(): Promise<any[]> {
@@ -492,6 +587,23 @@ export class NaturezaValidationService {
       "SELECT id, codigo, nome, descricao, data_inicio, data_fim FROM naturezas_esocial ORDER BY codigo",
     );
     return result.rows;
+  }
+
+  /**
+   * Edita uma correção pendente no staging
+   */
+  async editarStaging(
+    analiseNaturezaId: number,
+    novoCodigo: string,
+    novoNome: string,
+  ): Promise<boolean> {
+    const result = await pool.query(
+      `UPDATE correcoes_staging
+       SET natureza_nova_codigo = $1, natureza_nova_nome = $2, criado_em = CURRENT_TIMESTAMP
+       WHERE analise_natureza_id = $3 AND status = 'pendente'`,
+      [novoCodigo, novoNome, analiseNaturezaId],
+    );
+    return (result.rowCount ?? 0) > 0;
   }
 
   /**

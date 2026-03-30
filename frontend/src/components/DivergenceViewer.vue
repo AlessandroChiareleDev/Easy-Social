@@ -1,6 +1,12 @@
 <template>
-  <div class="divergence-viewer">
-    <h2>🔍 Validação de Rubricas — Ponto 1</h2>
+  <div class="dv">
+    <!-- Section Header -->
+    <div class="dv-header">
+      <div>
+        <h2 class="dv-title">Validação de Rubricas</h2>
+        <p class="dv-subtitle">Ponto 1 · Análise de divergências entre DIRF e eSocial</p>
+      </div>
+    </div>
 
     <!-- Resumo Cards -->
     <div class="resumo-cards" v-if="resumo">
@@ -24,19 +30,45 @@
         <span class="card-number">{{ resumo.total_verificadas }}</span>
         <span class="card-label">Verificadas</span>
       </div>
+      <div class="card card-realizada">
+        <span class="card-number">{{ resumo.total_realizadas }}</span>
+        <span class="card-label">Realizadas</span>
+      </div>
     </div>
 
     <!-- Ações -->
     <div class="actions-bar">
       <button class="btn btn-detectar" @click="executarDeteccao" :disabled="detecting">
-        {{ detecting ? 'Analisando...' : '🔄 Detectar Divergências' }}
+        <svg
+          class="btn-icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+        >
+          <path d="M21 12a9 9 0 1 1-6.22-8.56" />
+          <polyline points="21 3 21 9 15 9" />
+        </svg>
+        {{ detecting ? 'Analisando...' : 'Detectar Divergências' }}
       </button>
       <button
         class="btn btn-wizard"
         @click="abrirWizard"
         :disabled="!resumo || resumo.total_pendentes === 0"
       >
-        🧭 Iniciar Correção Guiada
+        <svg
+          class="btn-icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+        >
+          <circle cx="12" cy="12" r="10" />
+          <polygon points="10 8 16 12 10 16 10 8" fill="currentColor" stroke="none" />
+        </svg>
+        Iniciar Correção Guiada
       </button>
     </div>
 
@@ -53,10 +85,12 @@
         ></div>
       </div>
       <span class="progress-text">
-        {{ resumo.total_corrigidas + resumo.total_verificadas }} /
+        {{ resumo.total_corrigidas + resumo.total_verificadas + resumo.total_realizadas }} /
         {{ resumo.total_divergentes }} tratadas ({{
           Math.round(
-            ((resumo.total_corrigidas + resumo.total_verificadas) / resumo.total_divergentes) * 100,
+            ((resumo.total_corrigidas + resumo.total_verificadas + resumo.total_realizadas) /
+              resumo.total_divergentes) *
+              100,
           )
         }}%)
       </span>
@@ -84,6 +118,12 @@
         @click="setFilter('verificado')"
       >
         Verificadas ({{ resumo.total_verificadas }})
+      </button>
+      <button
+        :class="['filter-btn filter-realizada', { active: filtroStatus === 'realizada' }]"
+        @click="setFilter('realizada')"
+      >
+        Realizadas ({{ resumo.total_realizadas }})
       </button>
     </div>
 
@@ -137,25 +177,46 @@
             </td>
             <td class="col-actions">
               <button
-                v-if="div.status === 'pendente'"
+                v-if="div.status === 'pendente' && confirmandoId !== div.id"
                 class="btn-sm btn-corrigir"
                 @click="marcarCorrigido(div.id)"
               >
-                ✅ Corrigido
+                Corrigido
+              </button>
+              <button
+                v-if="div.status === 'pendente' && confirmandoId !== div.id"
+                class="btn-sm btn-realizada"
+                @click="iniciarRealizada(div.id)"
+              >
+                Realizada
+              </button>
+              <button
+                v-if="confirmandoId === div.id"
+                class="btn-sm btn-salvar"
+                @click="confirmarRealizada(div.id)"
+              >
+                Salvar
+              </button>
+              <button
+                v-if="confirmandoId === div.id"
+                class="btn-sm btn-resetar"
+                @click="cancelarRealizada()"
+              >
+                Cancelar
               </button>
               <button
                 v-if="div.status === 'corrigido'"
                 class="btn-sm btn-verificar"
                 @click="marcarVerificado(div.id)"
               >
-                🔍 Verificar
+                Verificar
               </button>
               <button
-                v-if="div.status !== 'pendente'"
+                v-if="div.status !== 'pendente' && confirmandoId !== div.id"
                 class="btn-sm btn-resetar"
                 @click="resetar(div.id)"
               >
-                ↩ Resetar
+                Resetar
               </button>
             </td>
           </tr>
@@ -174,11 +235,18 @@
       v-if="!loading && resumo && resumo.total_divergentes === 0 && resumo.total_rubricas > 0"
       class="no-divergences"
     >
-      ✅ Nenhuma divergência encontrada! Todas as rubricas estão corretas.
+      <svg class="nd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+        <polyline points="22 4 12 14.01 9 11.01" />
+      </svg>
+      Nenhuma divergência encontrada! Todas as rubricas estão corretas.
     </div>
 
-    <div v-if="loading" class="loading">Carregando...</div>
-    <div v-if="error" class="error-message">❌ {{ error }}</div>
+    <div v-if="loading" class="loading">
+      <div class="loading-spinner"></div>
+      Carregando...
+    </div>
+    <div v-if="error" class="error-message">{{ error }}</div>
 
     <!-- Wizard Modal -->
     <CorrectionWizard v-if="showWizard" @close="fecharWizard" @updated="onWizardUpdate" />
@@ -198,6 +266,7 @@ interface Resumo {
   total_pendentes: number
   total_corrigidas: number
   total_verificadas: number
+  total_realizadas: number
 }
 
 interface Divergencia {
@@ -226,6 +295,7 @@ const detecting = ref(false)
 const error = ref<string | null>(null)
 const filtroStatus = ref('')
 const showWizard = ref(false)
+const confirmandoId = ref<number | null>(null)
 
 const currentPage = ref(1)
 const itemsPerPage = 50
@@ -247,6 +317,7 @@ function statusLabel(status: string): string {
     pendente: 'Pendente',
     corrigido: 'Corrigido',
     verificado: 'Verificado',
+    realizada: 'Realizada',
   }
   return labels[status] || status
 }
@@ -319,6 +390,25 @@ async function marcarVerificado(id: number) {
   }
 }
 
+function iniciarRealizada(id: number) {
+  confirmandoId.value = id
+}
+
+function cancelarRealizada() {
+  confirmandoId.value = null
+}
+
+async function confirmarRealizada(id: number) {
+  try {
+    await axios.patch(`${API_URL}/validacao/${id}/realizada`)
+    confirmandoId.value = null
+    await loadResumo()
+    await loadDivergencias()
+  } catch (err: any) {
+    error.value = err.response?.data?.error || 'Erro ao marcar como realizada'
+  }
+}
+
 async function resetar(id: number) {
   try {
     await axios.patch(`${API_URL}/validacao/${id}/resetar`)
@@ -365,102 +455,158 @@ onMounted(async () => {
 </script>
 
 <style scoped>
-.divergence-viewer {
-  padding: 20px;
-  color: #333;
+/* ═══════════════════════════════════════════════
+   DivergenceViewer — Orbit Navy + Electric Blue
+   ═══════════════════════════════════════════════ */
+
+.dv {
+  color: #e2e8f0;
 }
 
-/* Cards de Resumo */
+/* ── Header ── */
+.dv-header {
+  margin-bottom: 28px;
+}
+.dv-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+}
+.dv-subtitle {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-top: 4px;
+}
+
+/* ── Stat Cards ── */
 .resumo-cards {
-  display: flex;
-  gap: 12px;
-  margin: 20px 0;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 14px;
+  margin-bottom: 28px;
 }
 
 .card {
-  flex: 1;
-  min-width: 140px;
-  padding: 16px;
-  border-radius: 8px;
+  background: #0d1530;
+  border-radius: 14px;
+  padding: 22px 16px;
   text-align: center;
-  color: white;
+  color: #e2e8f0;
+  border: 1px solid rgba(0, 102, 255, 0.12);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 102, 255, 0.15);
+}
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+}
+
+.card-total::before {
+  background: linear-gradient(90deg, #0066ff, #3388ff);
+}
+.card-divergente::before {
+  background: linear-gradient(90deg, #ef4444, #f87171);
+}
+.card-pendente::before {
+  background: linear-gradient(90deg, #f59e0b, #fbbf24);
+}
+.card-corrigido::before {
+  background: linear-gradient(90deg, #0066ff, #3388ff);
+}
+.card-verificado::before {
+  background: linear-gradient(90deg, #10b981, #34d399);
+}
+.card-realizada::before {
+  background: linear-gradient(90deg, #8b5cf6, #a78bfa);
 }
 
 .card-number {
   display: block;
-  font-size: 28px;
-  font-weight: bold;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1;
 }
 
 .card-label {
   display: block;
-  font-size: 12px;
-  margin-top: 4px;
-  opacity: 0.9;
+  font-size: 0.7rem;
+  color: #64748b;
+  margin-top: 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
-.card-total {
-  background: #607d8b;
-}
-.card-divergente {
-  background: #e53935;
-}
-.card-pendente {
-  background: #ff9800;
-}
-.card-corrigido {
-  background: #2196f3;
-}
-.card-verificado {
-  background: #4caf50;
-}
-
-/* Actions Bar */
+/* ── Actions Bar ── */
 .actions-bar {
   display: flex;
-  gap: 10px;
-  margin: 16px 0;
+  gap: 12px;
+  margin-bottom: 24px;
 }
 
 .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   padding: 10px 20px;
   border: none;
-  border-radius: 6px;
+  border-radius: 10px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 0.85rem;
   font-weight: 600;
+  transition: all 0.15s;
 }
-
 .btn:disabled {
-  opacity: 0.5;
+  opacity: 0.4;
   cursor: not-allowed;
+}
+.btn-icon {
+  width: 16px;
+  height: 16px;
 }
 
 .btn-detectar {
-  background: #1976d2;
+  background: #0066ff;
   color: white;
+  box-shadow: 0 2px 8px rgba(0, 102, 255, 0.3);
 }
 .btn-detectar:hover:not(:disabled) {
-  background: #1565c0;
-}
-.btn-wizard {
-  background: #7b1fa2;
-  color: white;
-}
-.btn-wizard:hover:not(:disabled) {
-  background: #6a1b9a;
+  background: #0055dd;
+  box-shadow: 0 4px 16px rgba(0, 102, 255, 0.4);
 }
 
-/* Progress Bar */
+.btn-wizard {
+  background: linear-gradient(135deg, #0066ff, #0044bb);
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 102, 255, 0.3);
+}
+.btn-wizard:hover:not(:disabled) {
+  box-shadow: 0 4px 16px rgba(0, 102, 255, 0.4);
+}
+
+/* ── Progress ── */
 .progress-bar {
-  margin: 16px 0;
+  margin-bottom: 24px;
 }
 
 .progress-track {
-  height: 20px;
-  background: #e0e0e0;
-  border-radius: 10px;
+  height: 8px;
+  background: #111b3a;
+  border-radius: 100px;
   position: relative;
   overflow: hidden;
 }
@@ -469,235 +615,373 @@ onMounted(async () => {
   height: 100%;
   position: absolute;
   top: 0;
-  transition: width 0.5s ease;
+  border-radius: 100px;
+  transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .progress-verificado {
-  background: #4caf50;
+  background: linear-gradient(90deg, #10b981, #34d399);
   left: 0;
 }
 .progress-corrigido {
-  background: #2196f3;
+  background: linear-gradient(90deg, #0066ff, #3388ff);
 }
 
 .progress-text {
-  font-size: 13px;
-  color: #666;
-  margin-top: 4px;
+  font-size: 0.8rem;
+  color: #64748b;
+  margin-top: 8px;
   display: block;
+  font-weight: 500;
 }
 
-/* Filtros */
+/* ── Filters ── */
 .filter-bar {
   display: flex;
   gap: 8px;
-  margin: 16px 0;
+  margin-bottom: 20px;
   flex-wrap: wrap;
 }
 
 .filter-btn {
-  padding: 6px 14px;
-  border: 2px solid #ccc;
-  border-radius: 20px;
-  background: white;
+  padding: 7px 16px;
+  border: 1.5px solid rgba(255, 255, 255, 0.1);
+  border-radius: 100px;
+  background: #0d1530;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #94a3b8;
+  transition: all 0.15s;
+}
+.filter-btn:hover {
+  border-color: rgba(0, 102, 255, 0.3);
+  background: #111b3a;
 }
 
 .filter-btn.active {
-  border-color: #1976d2;
-  background: #e3f2fd;
-  color: #1976d2;
+  border-color: #0066ff;
+  background: rgba(0, 102, 255, 0.15);
+  color: #0066ff;
   font-weight: 600;
 }
-
 .filter-pendente.active {
-  border-color: #ff9800;
-  background: #fff3e0;
-  color: #e65100;
+  border-color: #f59e0b;
+  background: rgba(245, 158, 11, 0.1);
+  color: #fbbf24;
 }
 .filter-corrigido.active {
-  border-color: #2196f3;
-  background: #e3f2fd;
-  color: #1565c0;
+  border-color: #0066ff;
+  background: rgba(0, 102, 255, 0.15);
+  color: #3388ff;
 }
 .filter-verificado.active {
-  border-color: #4caf50;
-  background: #e8f5e9;
-  color: #2e7d32;
+  border-color: #10b981;
+  background: rgba(16, 185, 129, 0.1);
+  color: #34d399;
+}
+.filter-realizada.active {
+  border-color: #8b5cf6;
+  background: rgba(139, 92, 246, 0.1);
+  color: #a78bfa;
 }
 
-/* Tabela */
+/* ── Table ── */
 .table-container {
-  overflow-x: auto;
-  margin-top: 16px;
+  background: #0d1530;
+  border-radius: 14px;
+  border: 1px solid rgba(0, 102, 255, 0.12);
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  background: white;
-  font-size: 13px;
-}
-
-th,
-td {
-  border: 1px solid #e0e0e0;
-  padding: 8px 10px;
-  text-align: center;
+  font-size: 0.82rem;
 }
 
 th {
-  background: #37474f;
-  color: white;
+  background: #111b3a;
+  color: #64748b;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 12px 12px;
+  text-align: center;
   white-space: nowrap;
+  border-bottom: 1px solid rgba(0, 102, 255, 0.1);
+}
+
+td {
+  padding: 10px 12px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  color: #cbd5e1;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:hover td {
+  background: rgba(0, 102, 255, 0.05);
 }
 
 .col-code {
-  font-weight: bold;
-  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 0.85rem;
 }
 .col-desc {
   text-align: left;
-  max-width: 250px;
+  max-width: 260px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  color: #cbd5e1;
 }
 .col-arrow {
-  width: 20px;
+  width: 24px;
 }
 .col-compare {
-  min-width: 50px;
+  min-width: 48px;
 }
 .col-actions {
-  min-width: 120px;
+  min-width: 180px;
 }
+
 .arrow {
-  color: #999;
-  font-weight: bold;
+  color: #475569;
+  font-weight: 600;
 }
 
 td.divergent {
-  background: #ffebee;
-  color: #c62828;
-  font-weight: bold;
+  background: rgba(239, 68, 68, 0.1);
+  color: #f87171;
+  font-weight: 700;
+  font-size: 0.85rem;
 }
-
 td.corrected {
-  background: #e8f5e9;
-  color: #2e7d32;
-  font-weight: bold;
+  background: rgba(16, 185, 129, 0.1);
+  color: #34d399;
+  font-weight: 700;
+  font-size: 0.85rem;
 }
 
-/* Status Badges */
+/* ── Badges ── */
 .badge {
-  padding: 3px 10px;
-  border-radius: 12px;
-  font-size: 11px;
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 100px;
+  font-size: 0.7rem;
   font-weight: 600;
   white-space: nowrap;
+  letter-spacing: 0.02em;
 }
 
 .badge-pendente {
-  background: #fff3e0;
-  color: #e65100;
+  background: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
 }
 .badge-corrigido {
-  background: #e3f2fd;
-  color: #1565c0;
+  background: rgba(0, 102, 255, 0.15);
+  color: #3388ff;
 }
 .badge-verificado {
-  background: #e8f5e9;
-  color: #2e7d32;
+  background: rgba(16, 185, 129, 0.12);
+  color: #34d399;
+}
+.badge-realizada {
+  background: rgba(139, 92, 246, 0.15);
+  color: #a78bfa;
 }
 
-/* Row states */
-.row-corrigido {
-  background: #f5f9ff;
+/* ── Row States ── */
+.row-corrigido td {
+  background: rgba(0, 102, 255, 0.04);
 }
-.row-verificado {
-  background: #f0faf0;
+.row-corrigido:hover td {
+  background: rgba(0, 102, 255, 0.08);
+}
+.row-verificado td {
+  background: rgba(16, 185, 129, 0.04);
+}
+.row-verificado:hover td {
+  background: rgba(16, 185, 129, 0.08);
+}
+.row-realizada td {
+  background: rgba(139, 92, 246, 0.04);
+}
+.row-realizada:hover td {
+  background: rgba(139, 92, 246, 0.08);
 }
 
-/* Action Buttons */
+/* ── Small Action Buttons ── */
 .btn-sm {
-  padding: 4px 8px;
+  padding: 5px 12px;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
-  font-size: 11px;
-  margin: 1px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  margin: 2px;
+  transition: all 0.15s;
 }
 
 .btn-corrigir {
-  background: #2196f3;
+  background: #0066ff;
   color: white;
 }
 .btn-corrigir:hover {
-  background: #1976d2;
+  background: #0055dd;
 }
 .btn-verificar {
-  background: #4caf50;
+  background: #10b981;
   color: white;
 }
 .btn-verificar:hover {
-  background: #388e3c;
+  background: #059669;
 }
 .btn-resetar {
-  background: #e0e0e0;
-  color: #333;
+  background: rgba(255, 255, 255, 0.06);
+  color: #94a3b8;
 }
 .btn-resetar:hover {
-  background: #bdbdbd;
+  background: rgba(255, 255, 255, 0.1);
+  color: #e2e8f0;
+}
+.btn-realizada {
+  background: #8b5cf6;
+  color: white;
+}
+.btn-realizada:hover {
+  background: #7c3aed;
+}
+.btn-salvar {
+  background: #10b981;
+  color: white;
+  animation: pulse-save 1s ease-in-out infinite;
+}
+.btn-salvar:hover {
+  background: #059669;
+}
+@keyframes pulse-save {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 4px rgba(16, 185, 129, 0);
+  }
 }
 
+/* ── States ── */
 .no-divergences {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
   text-align: center;
   padding: 40px;
-  font-size: 18px;
-  color: #4caf50;
-  background: #e8f5e9;
-  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #34d399;
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  border-radius: 14px;
   margin-top: 20px;
+}
+.nd-icon {
+  width: 28px;
+  height: 28px;
+  color: #34d399;
 }
 
 .loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
   text-align: center;
-  padding: 20px;
-  color: #666;
+  padding: 40px;
+  color: #64748b;
+  font-weight: 500;
+}
+.loading-spinner {
+  width: 20px;
+  height: 20px;
+  border: 2.5px solid rgba(255, 255, 255, 0.1);
+  border-top-color: #0066ff;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .error-message {
-  color: #dc3545;
-  padding: 10px;
-  background: #f8d7da;
-  border-radius: 4px;
-  margin-top: 10px;
+  color: #f87171;
+  padding: 14px 18px;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  border-radius: 10px;
+  margin-top: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
 }
 
-/* Pagination */
+/* ── Pagination ── */
 .pagination {
-  margin-top: 16px;
+  margin-top: 20px;
+  padding-top: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
 .pagination button {
-  background: #37474f;
-  color: white;
-  padding: 8px 15px;
-  border: none;
-  border-radius: 4px;
+  background: #0d1530;
+  color: #cbd5e1;
+  padding: 8px 18px;
+  border: 1.5px solid rgba(0, 102, 255, 0.15);
+  border-radius: 8px;
   cursor: pointer;
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: all 0.15s;
+}
+.pagination button:hover:not(:disabled) {
+  border-color: #0066ff;
+  color: #0066ff;
+  background: rgba(0, 102, 255, 0.1);
+}
+.pagination button:disabled {
+  background: #0a1024;
+  color: #334155;
+  border-color: rgba(255, 255, 255, 0.05);
+  cursor: not-allowed;
 }
 
-.pagination button:disabled {
-  background: #ccc;
-  cursor: not-allowed;
+.pagination span {
+  font-size: 0.82rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .resumo-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .resumo-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 </style>

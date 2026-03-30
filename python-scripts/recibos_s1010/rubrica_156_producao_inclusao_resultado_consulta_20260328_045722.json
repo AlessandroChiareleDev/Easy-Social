@@ -1,0 +1,14 @@
+{
+  "sucesso": true,
+  "codigo_resposta": "201",
+  "descricao": "Lote processado com sucesso.",
+  "eventos": [
+    {
+      "id": "ID1059690710000002026032807572200001",
+      "codigo_resposta": "201",
+      "descricao": "Sucesso.",
+      "nr_recibo": null,
+      "ocorrencias": []
+    }
+  ]
+}

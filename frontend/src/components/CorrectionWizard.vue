@@ -357,7 +357,7 @@ onMounted(() => {
 .wizard-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -365,13 +365,14 @@ onMounted(() => {
 }
 
 .wizard-modal {
-  background: white;
+  background: #0d1530;
   border-radius: 12px;
   width: 90%;
   max-width: 700px;
   max-height: 90vh;
   overflow-y: auto;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 102, 255, 0.15);
 }
 
 .wizard-header {
@@ -379,8 +380,8 @@ onMounted(() => {
   justify-content: space-between;
   align-items: center;
   padding: 20px 24px;
-  border-bottom: 1px solid #e0e0e0;
-  background: #37474f;
+  border-bottom: 1px solid rgba(0, 102, 255, 0.12);
+  background: #0a1024;
   color: white;
   border-radius: 12px 12px 0 0;
 }
@@ -392,19 +393,21 @@ onMounted(() => {
 .btn-close {
   background: none;
   border: none;
-  color: white;
+  color: #94a3b8;
   font-size: 20px;
   cursor: pointer;
 }
 
 .wizard-content {
   padding: 24px;
+  color: #e2e8f0;
 }
 
 .wizard-loading,
 .wizard-done {
   padding: 60px 24px;
   text-align: center;
+  color: #e2e8f0;
 }
 
 .done-icon {
@@ -429,35 +432,36 @@ onMounted(() => {
   justify-content: center;
   font-size: 13px;
   font-weight: bold;
-  background: #e0e0e0;
-  color: #666;
+  background: #111b3a;
+  color: #64748b;
 }
 
 .step-dot.active {
-  background: #1976d2;
+  background: #0066ff;
   color: white;
 }
 .step-dot.done {
-  background: #4caf50;
+  background: #10b981;
   color: white;
 }
 
 /* Step Panel */
 .step-panel h4 {
   margin: 0 0 8px 0;
-  color: #37474f;
+  color: #ffffff;
 }
 .step-desc {
-  color: #666;
+  color: #94a3b8;
   margin-bottom: 16px;
 }
 
 /* Rubrica Card */
 .rubrica-card {
-  background: #f5f5f5;
+  background: #111b3a;
   border-radius: 8px;
   padding: 16px;
   margin-bottom: 16px;
+  border: 1px solid rgba(0, 102, 255, 0.1);
 }
 
 .rubrica-header {
@@ -468,21 +472,21 @@ onMounted(() => {
   display: block;
   font-size: 18px;
   font-weight: bold;
-  color: #1976d2;
+  color: #0066ff;
 }
 
 .rubrica-desc {
   display: block;
-  color: #555;
+  color: #cbd5e1;
   margin-top: 4px;
 }
 
 /* Compare Grid */
 .compare-grid {
-  background: white;
+  background: #0a1024;
   border-radius: 6px;
   overflow: hidden;
-  border: 1px solid #e0e0e0;
+  border: 1px solid rgba(0, 102, 255, 0.12);
 }
 
 .compare-header,
@@ -494,60 +498,63 @@ onMounted(() => {
 }
 
 .compare-header {
-  background: #37474f;
-  color: white;
+  background: #111b3a;
+  color: #cbd5e1;
   font-size: 12px;
   font-weight: 600;
 }
 
 .compare-row {
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid rgba(0, 102, 255, 0.08);
 }
 
 .compare-row.has-diff {
-  background: #fff8e1;
+  background: rgba(245, 158, 11, 0.08);
 }
 
 .field-name {
   font-weight: 600;
-  color: #37474f;
+  color: #e2e8f0;
 }
 .val-antes {
-  color: #c62828;
+  color: #f87171;
   font-weight: bold;
   text-align: center;
 }
 .val-correto {
-  color: #2e7d32;
+  color: #34d399;
   font-weight: bold;
   text-align: center;
 }
 .arrow {
   text-align: center;
-  color: #999;
+  color: #475569;
 }
 .col-label {
   text-align: center;
   font-size: 11px;
 }
 .col-antes {
-  color: #ffcdd2;
+  color: #f87171;
 }
 .col-correto {
-  color: #c8e6c9;
+  color: #34d399;
 }
 
 /* Legal Basis */
 .legal-basis {
   margin-top: 12px;
   padding: 12px;
-  background: #e3f2fd;
+  background: rgba(0, 102, 255, 0.08);
   border-radius: 6px;
   font-size: 12px;
+  color: #cbd5e1;
+  border: 1px solid rgba(0, 102, 255, 0.12);
 }
 
 .legal-basis h5 {
   margin: 0 0 8px 0;
+  color: #ffffff;
 }
 .legal-basis p {
   margin: 4px 0;
@@ -556,10 +563,11 @@ onMounted(() => {
 
 /* Instruction Box */
 .instruction-box {
-  background: #f5f5f5;
+  background: #111b3a;
   border-radius: 8px;
   padding: 16px;
   margin: 16px 0;
+  border: 1px solid rgba(0, 102, 255, 0.1);
 }
 
 .instruction-step {
@@ -567,12 +575,13 @@ onMounted(() => {
   align-items: center;
   gap: 12px;
   padding: 8px 0;
+  color: #e2e8f0;
 }
 
 .instruction-step .num {
   width: 28px;
   height: 28px;
-  background: #1976d2;
+  background: #0066ff;
   color: white;
   border-radius: 50%;
   display: flex;
@@ -587,8 +596,8 @@ onMounted(() => {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: white;
-  border: 2px dashed #1976d2;
+  background: #0a1024;
+  border: 2px dashed #0066ff;
   border-radius: 6px;
   padding: 12px 16px;
   margin: 8px 0 8px 40px;
@@ -596,29 +605,29 @@ onMounted(() => {
 }
 
 .copy-value:hover {
-  background: #e3f2fd;
+  background: rgba(0, 102, 255, 0.1);
 }
 
 .copy-value .value {
   font-size: 24px;
   font-weight: bold;
-  color: #1976d2;
+  color: #0066ff;
 }
 
 .copy-value .copy-icon {
-  color: #1976d2;
+  color: #0066ff;
   font-size: 13px;
 }
 
 /* Warning Box */
 .warning-box {
-  background: #fff3e0;
-  border: 1px solid #ffcc80;
+  background: rgba(245, 158, 11, 0.08);
+  border: 1px solid rgba(245, 158, 11, 0.3);
   border-radius: 8px;
   padding: 16px;
   margin: 16px 0;
   font-size: 13px;
-  color: #e65100;
+  color: #fbbf24;
   line-height: 1.6;
 }
 
@@ -628,16 +637,17 @@ onMounted(() => {
 }
 
 .correction-field {
-  background: #f5f5f5;
+  background: #111b3a;
   border-radius: 8px;
   padding: 12px 16px;
   margin-bottom: 8px;
+  border: 1px solid rgba(0, 102, 255, 0.08);
 }
 
 .field-label {
   display: block;
   font-size: 13px;
-  color: #666;
+  color: #94a3b8;
   margin-bottom: 8px;
 }
 
@@ -649,8 +659,8 @@ onMounted(() => {
 
 .old-val {
   padding: 6px 12px;
-  background: #ffebee;
-  color: #c62828;
+  background: rgba(239, 68, 68, 0.12);
+  color: #f87171;
   border-radius: 4px;
   font-weight: bold;
   font-size: 18px;
@@ -658,13 +668,13 @@ onMounted(() => {
 
 .arrow-big {
   font-size: 24px;
-  color: #999;
+  color: #475569;
 }
 
 .new-val {
   padding: 6px 12px;
-  background: #e8f5e9;
-  color: #2e7d32;
+  background: rgba(16, 185, 129, 0.12);
+  color: #34d399;
   border-radius: 4px;
   font-weight: bold;
   font-size: 18px;
@@ -672,7 +682,7 @@ onMounted(() => {
 }
 
 .new-val:hover {
-  background: #c8e6c9;
+  background: rgba(16, 185, 129, 0.2);
 }
 
 /* Validation Checklist */
@@ -682,9 +692,10 @@ onMounted(() => {
 
 .check-item {
   padding: 12px;
-  background: #f5f5f5;
+  background: #111b3a;
   border-radius: 6px;
   margin-bottom: 8px;
+  border: 1px solid rgba(0, 102, 255, 0.08);
 }
 
 .check-item label {
@@ -693,12 +704,14 @@ onMounted(() => {
   gap: 10px;
   cursor: pointer;
   font-size: 14px;
+  color: #e2e8f0;
 }
 
 .check-item input[type='checkbox'] {
   width: 20px;
   height: 20px;
   cursor: pointer;
+  accent-color: #0066ff;
 }
 
 .obs-field {
@@ -708,17 +721,19 @@ onMounted(() => {
 .obs-field label {
   display: block;
   font-size: 13px;
-  color: #666;
+  color: #94a3b8;
   margin-bottom: 4px;
 }
 
 .obs-field textarea {
   width: 100%;
   padding: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 102, 255, 0.15);
   border-radius: 4px;
   resize: vertical;
   font-family: inherit;
+  background: #0a1024;
+  color: #e2e8f0;
 }
 
 /* Step Actions */
@@ -744,49 +759,49 @@ onMounted(() => {
 }
 
 .btn-next {
-  background: #1976d2;
+  background: #0066ff;
   color: white;
   margin-left: auto;
 }
 .btn-next:hover:not(:disabled) {
-  background: #1565c0;
+  background: #0055dd;
 }
 .btn-back {
-  background: #e0e0e0;
-  color: #333;
+  background: #111b3a;
+  color: #cbd5e1;
 }
 .btn-back:hover {
-  background: #bdbdbd;
+  background: #162044;
 }
 .btn-confirm {
-  background: #4caf50;
+  background: #0066ff;
   color: white;
   margin-left: auto;
 }
 .btn-confirm:hover:not(:disabled) {
-  background: #388e3c;
+  background: #0055dd;
 }
 .btn-fechar {
-  background: #37474f;
-  color: white;
+  background: #111b3a;
+  color: #cbd5e1;
   margin-top: 16px;
 }
 
 /* Wizard Footer */
 .wizard-footer {
   padding: 12px 24px;
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid rgba(0, 102, 255, 0.12);
   text-align: center;
   font-size: 13px;
-  color: #666;
-  background: #fafafa;
+  color: #64748b;
+  background: #0a1024;
   border-radius: 0 0 12px 12px;
 }
 
 .no-change {
   text-align: center;
   padding: 20px;
-  color: #4caf50;
+  color: #34d399;
   font-weight: 600;
 }
 </style>

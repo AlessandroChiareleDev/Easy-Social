@@ -1,0 +1,16 @@
+from playwright.sync_api import sync_playwright
+
+p = sync_playwright().start()
+b = p.chromium.launch()
+page = b.new_page(viewport={"width": 1280, "height": 900})
+page.goto("http://localhost:5174/login")
+page.fill('input[placeholder="Seu usuário"]', "admin")
+page.fill('input[placeholder="••••••••"]', "admin123")
+page.click('button:has-text("Entrar")')
+page.wait_for_timeout(1500)
+page.click("text=APPA SERVICOS")
+page.wait_for_timeout(2500)
+page.screenshot(path="docs/brain-screenshot.png", full_page=True)
+print("Screenshot saved to docs/brain-screenshot.png")
+b.close()
+p.stop()

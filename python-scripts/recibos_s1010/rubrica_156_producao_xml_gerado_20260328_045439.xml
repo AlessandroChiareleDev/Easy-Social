@@ -1,0 +1,31 @@
+<eSocial xmlns="http://www.esocial.gov.br/schema/evt/evtTabRubrica/v_S_01_03_00">
+  <evtTabRubrica Id="ID1059690710000002026032807543900001">
+    <ideEvento>
+      <tpAmb>1</tpAmb>
+      <procEmi>1</procEmi>
+      <verProc>EasySocial_1.0</verProc>
+    </ideEvento>
+    <ideEmpregador>
+      <tpInsc>1</tpInsc>
+      <nrInsc>05969071</nrInsc>
+    </ideEmpregador>
+    <infoRubrica>
+      <alteracao>
+        <ideRubrica>
+          <codRubr>156</codRubr>
+          <ideTabRubr>1</ideTabRubr>
+          <iniValid>2026-03</iniValid>
+        </ideRubrica>
+        <dadosRubrica>
+          <dscRubr>DIF. FERIAS</dscRubr>
+          <natRubr>1016</natRubr>
+          <tpRubr>1</tpRubr>
+          <codIncCP>11</codIncCP>
+          <codIncIRRF>13</codIncIRRF>
+          <codIncFGTS>11</codIncFGTS>
+          <codIncPisPasep>00</codIncPisPasep>
+        </dadosRubrica>
+      </alteracao>
+    </infoRubrica>
+  </evtTabRubrica>
+</eSocial>

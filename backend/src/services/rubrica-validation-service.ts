@@ -22,6 +22,7 @@ export interface ResumoValidacao {
   total_pendentes: number;
   total_corrigidas: number;
   total_verificadas: number;
+  total_realizadas: number;
 }
 
 /**
@@ -135,7 +136,8 @@ export class RubricaValidationService {
            COUNT(*) as total,
            COUNT(*) FILTER (WHERE status = 'pendente') as pendentes,
            COUNT(*) FILTER (WHERE status = 'corrigido') as corrigidas,
-           COUNT(*) FILTER (WHERE status = 'verificado') as verificadas
+           COUNT(*) FILTER (WHERE status = 'verificado') as verificadas,
+           COUNT(*) FILTER (WHERE status = 'realizada') as realizadas
          FROM rubrica_corrections`,
       );
 
@@ -147,6 +149,7 @@ export class RubricaValidationService {
         total_pendentes: parseInt(stats.pendentes),
         total_corrigidas: parseInt(stats.corrigidas),
         total_verificadas: parseInt(stats.verificadas),
+        total_realizadas: parseInt(stats.realizadas),
       };
     } finally {
       client.release();
@@ -163,7 +166,12 @@ export class RubricaValidationService {
   ): Promise<{ data: Divergencia[]; total: number }> {
     const client = await pool.connect();
     try {
-      const allowedStatuses = ["pendente", "corrigido", "verificado"];
+      const allowedStatuses = [
+        "pendente",
+        "corrigido",
+        "verificado",
+        "realizada",
+      ];
       let whereClause = "";
       const params: any[] = [];
 
@@ -251,6 +259,26 @@ export class RubricaValidationService {
       const result = await client.query(
         `UPDATE rubrica_corrections
          SET status = 'verificado'
+         WHERE id = $1
+         RETURNING *`,
+        [id],
+      );
+
+      return result.rows.length > 0 ? result.rows[0] : null;
+    } finally {
+      client.release();
+    }
+  }
+
+  /**
+   * Marca como realizada manualmente (feito direto no eSocial)
+   */
+  async marcarRealizada(id: number): Promise<Divergencia | null> {
+    const client = await pool.connect();
+    try {
+      const result = await client.query(
+        `UPDATE rubrica_corrections
+         SET status = 'realizada', corrigido_em = NOW()
          WHERE id = $1
          RETURNING *`,
         [id],

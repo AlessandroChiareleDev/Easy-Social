@@ -1,6 +1,5 @@
 <template>
   <div class="tabelas-view">
-    <h1>Tabelas do Banco de Dados</h1>
     <TableViewer />
   </div>
 </template>
@@ -14,10 +13,11 @@ import TableViewer from '../components/TableViewer.vue'
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
-  color: #333;
+  color: #e2e8f0;
 }
 
 h1 {
   margin-bottom: 16px;
+  color: #ffffff;
 }
 </style>

@@ -25,7 +25,15 @@ router.post("/auth/login", async (req: Request, res: Response) => {
     res.json({ success: true, token: result.token, user: result.user });
   } catch (error: any) {
     console.error("Erro no login:", error);
-    res.status(500).json({ error: "Erro interno no login" });
+    if (error.code === "ECONNREFUSED" || error.code === "ENOTFOUND") {
+      res.status(503).json({ error: "Banco de dados indisponível" });
+    } else if (error.code === "28P01" || error.code === "28000") {
+      res
+        .status(503)
+        .json({ error: "Erro de autenticação com o banco de dados" });
+    } else {
+      res.status(500).json({ error: "Erro interno no login" });
+    }
   }
 });
 

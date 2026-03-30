@@ -7,6 +7,7 @@ import uploadRoutes from "./routes/uploadRoutes";
 import tableRoutes from "./routes/tableRoutes";
 import validationRoutes from "./routes/validationRoutes";
 import naturezaRoutes from "./routes/naturezaRoutes";
+import cruzamentoRoutes from "./routes/cruzamentoRoutes";
 import authRoutes from "./routes/authRoutes";
 
 dotenv.config();
@@ -34,6 +35,7 @@ app.use("/api", uploadRoutes);
 app.use("/api", tableRoutes);
 app.use("/api", validationRoutes);
 app.use("/api", naturezaRoutes);
+app.use("/api", cruzamentoRoutes);
 
 // Health check
 app.get("/api/health", (_req, res) => {

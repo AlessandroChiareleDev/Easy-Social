@@ -1,4 +1,5 @@
 <template>
+  33 ,
   <div class="v-root">
     <!-- ═══════════ MODO LISTA ═══════════ -->
     <template v-if="modo === 'lista'">
@@ -184,23 +185,52 @@
             <button class="v-btn v-btn-danger-sm" @click="desfazerCorrecao">Desfazer</button>
           </div>
 
-          <!-- Busca manual -->
+          <!-- Busca manual: nome ou código -->
           <div class="c-search">
             <input
               v-model="buscaManual"
-              placeholder="Buscar natureza manualmente..."
+              placeholder="Buscar por nome ou código..."
               @keyup.enter="buscarManual"
               class="c-search-input"
             />
-            <button class="v-btn v-btn-sm" @click="buscarManual" :disabled="!buscaManual.trim()">
-              Buscar
+            <button
+              class="v-btn v-btn-sm"
+              @click="buscarManual"
+              :disabled="!buscaManual.trim() || buscandoCodigo"
+            >
+              {{ buscandoCodigo ? '...' : 'Buscar' }}
             </button>
           </div>
+          <div v-if="erroCodigoManual" class="c-code-error">{{ erroCodigoManual }}</div>
+
+          <!-- Botão sem natureza (código 0) -->
+          <button class="c-btn-vazio" @click="escolherVazio">⊘ Sem natureza (deixar vazio)</button>
         </div>
 
         <!-- Coluna direita: sugestões -->
         <div class="c-suggestions">
           <div v-if="loadingSugestoes" class="v-loading">Buscando sugestões...</div>
+
+          <!-- Resultado de busca por código direto -->
+          <div
+            v-if="naturezaManual"
+            class="c-sug c-sug-manual"
+            :class="{
+              selected: naturezaEscolhida?.id === naturezaManual.id,
+              expired: naturezaManual.data_fim,
+            }"
+            @click="escolherNatureza(naturezaManual)"
+          >
+            <div class="c-sug-top">
+              <span class="c-sug-code">{{ naturezaManual.codigo }}</span>
+              <span class="c-sug-tag manual">🔢 CÓDIGO DIRETO</span>
+              <span class="c-sug-exp" v-if="naturezaManual.data_fim"
+                >Exp: {{ formatDate(naturezaManual.data_fim) }}</span
+              >
+            </div>
+            <div class="c-sug-name">{{ naturezaManual.nome }}</div>
+            <div class="c-sug-desc">{{ naturezaManual.descricao }}</div>
+          </div>
 
           <!-- Sugestão humana -->
           <div
@@ -321,6 +351,9 @@ const error = ref<string | null>(null)
 const showRelatorio = ref(false)
 const relatorio = ref<any[]>([])
 const aplicando = ref(false)
+const naturezaManual = ref<Sugestao | null>(null)
+const buscandoCodigo = ref(false)
+const erroCodigoManual = ref<string | null>(null)
 
 // Computed: filter suggestions by type
 const scoreResults = computed(() => sugestoes.value.filter((s) => s.origem === 'score'))
@@ -371,12 +404,13 @@ async function carregarSugestoes(rubrica: Rubrica) {
   sugestaoTexto.value = null
   motivo.value = ''
   buscaManual.value = ''
+  naturezaManual.value = null
+  erroCodigoManual.value = null
   loadingSugestoes.value = true
   try {
-    const resp = await axios.get(
-      `${API_URL}/naturezas/buscar-similares/${encodeURIComponent(rubrica.nome_evento)}`,
-      { params: { topN: 10, codigoEvento: rubrica.codigoevento } },
-    )
+    const resp = await axios.get(`${API_URL}/naturezas/buscar-similares`, {
+      params: { nomeEvento: rubrica.nome_evento, topN: 10, codigoEvento: rubrica.codigoevento },
+    })
     sugestaoHumana.value = resp.data.sugestaoHumana
     sugestaoTexto.value = resp.data.sugestaoTexto
     sugestoes.value = resp.data.resultados
@@ -413,14 +447,63 @@ function escolherNatureza(sug: Sugestao) {
   naturezaEscolhida.value = sug
 }
 
+function escolherVazio() {
+  naturezaEscolhida.value = {
+    id: -1,
+    codigo: '0',
+    nome: 'Sem natureza',
+    descricao: 'Campo será deixado vazio',
+    data_inicio: '',
+    data_fim: null,
+    score: 0,
+    origem: 'score',
+  } as Sugestao
+}
+
 async function buscarManual() {
-  if (!buscaManual.value.trim()) return
+  const termo = buscaManual.value.trim()
+  if (!termo) return
+
+  erroCodigoManual.value = null
+  naturezaManual.value = null
+
+  // Se é número puro → busca por código
+  if (/^\d+$/.test(termo)) {
+    buscandoCodigo.value = true
+    try {
+      const resp = await axios.get(`${API_URL}/naturezas/por-codigo/${encodeURIComponent(termo)}`)
+      const nat = resp.data.data
+      naturezaManual.value = {
+        id: nat.id,
+        codigo: nat.codigo,
+        nome: nat.nome,
+        descricao: nat.descricao,
+        data_inicio: nat.data_inicio,
+        data_fim: nat.data_fim,
+        score: 0,
+        origem: 'score',
+      }
+      // Limpar sugestões anteriores ao buscar por código
+      sugestaoHumana.value = null
+      sugestaoTexto.value = null
+      sugestoes.value = []
+    } catch {
+      erroCodigoManual.value = `Código "${termo}" não encontrado na tabela de naturezas`
+      naturezaManual.value = null
+      sugestoes.value = []
+    } finally {
+      buscandoCodigo.value = false
+    }
+    return
+  }
+
+  // Senão → busca por nome (texto)
   loadingSugestoes.value = true
+  naturezaManual.value = null
   try {
-    const resp = await axios.get(
-      `${API_URL}/naturezas/buscar-similares/${encodeURIComponent(buscaManual.value)}`,
-      { params: { topN: 10 } },
-    )
+    const resp = await axios.get(`${API_URL}/naturezas/buscar-similares`, {
+      params: { nomeEvento: termo, topN: 10 },
+    })
     sugestaoHumana.value = null
     sugestaoTexto.value = null
     sugestoes.value = resp.data.resultados
@@ -512,13 +595,13 @@ onMounted(() => {
 </script>
 
 <style scoped>
-/* ═══════════ BASE ═══════════ */
+/* ═══════════ BASE — Orbit Navy + Electric Blue ═══════════ */
 .v-root {
   padding: 24px;
   max-width: 1400px;
   margin: 0 auto;
   font-family: var(--font-sans, 'Inter', sans-serif);
-  color: #1e293b;
+  color: #e2e8f0;
 }
 
 /* ═══════════ SHARED ═══════════ */
@@ -541,73 +624,76 @@ onMounted(() => {
 .v-btn-sm {
   padding: 6px 12px;
   font-size: 0.8rem;
-  background: #e2e8f0;
-  color: #334155;
+  background: #111b3a;
+  color: #cbd5e1;
   border-radius: 6px;
 }
 .v-btn-sm:hover:not(:disabled) {
-  background: #cbd5e1;
+  background: #162044;
+  color: #fff;
 }
 .v-btn-ghost {
   background: transparent;
-  color: #2563eb;
+  color: #0066ff;
 }
 .v-btn-ghost:hover {
-  background: #eff6ff;
+  background: rgba(0, 102, 255, 0.1);
 }
 .v-btn-back {
-  background: #f1f5f9;
-  color: #334155;
+  background: #111b3a;
+  color: #cbd5e1;
 }
 .v-btn-back:hover {
-  background: #e2e8f0;
+  background: #162044;
+  color: #fff;
 }
 .v-btn-save {
-  background: #059669;
+  background: #0066ff;
   color: #fff;
   padding: 10px 24px;
   font-size: 0.9rem;
   border-radius: 10px;
 }
 .v-btn-save:hover:not(:disabled) {
-  background: #047857;
+  background: #0055dd;
 }
 .v-btn-apply {
-  background: #059669;
+  background: #0066ff;
   color: #fff;
 }
 .v-btn-apply:hover:not(:disabled) {
-  background: #047857;
+  background: #0055dd;
 }
 .v-btn-danger-sm {
-  background: #fee2e2;
-  color: #dc2626;
+  background: rgba(239, 68, 68, 0.15);
+  color: #f87171;
   padding: 6px 12px;
   font-size: 0.8rem;
   border-radius: 6px;
 }
 .v-btn-danger-sm:hover {
-  background: #fecaca;
+  background: rgba(239, 68, 68, 0.25);
 }
 
 .v-loading {
   text-align: center;
   padding: 32px;
-  color: #94a3b8;
+  color: #64748b;
   font-size: 0.9rem;
 }
 .v-empty {
   text-align: center;
   padding: 48px;
-  color: #94a3b8;
+  color: #64748b;
 }
 .v-error {
-  background: #fef2f2;
-  color: #dc2626;
+  background: rgba(239, 68, 68, 0.1);
+  color: #f87171;
   padding: 10px 14px;
   border-radius: 8px;
   font-size: 0.85rem;
   margin-bottom: 12px;
+  border: 1px solid rgba(239, 68, 68, 0.2);
 }
 
 /* ═══════════ MODO LISTA ═══════════ */
@@ -622,7 +708,7 @@ onMounted(() => {
 .v-title {
   font-size: 1.4rem;
   font-weight: 700;
-  color: #0f172a;
+  color: #ffffff;
   margin: 0;
 }
 .v-stats {
@@ -639,25 +725,25 @@ onMounted(() => {
   margin-right: 4px;
 }
 .v-stat-n.total {
-  color: #2563eb;
+  color: #0066ff;
 }
 .v-stat-n.pending {
-  color: #d97706;
+  color: #fbbf24;
 }
 .v-stat-n.done {
-  color: #059669;
+  color: #34d399;
 }
 
 .v-progress {
   height: 8px;
-  background: #e2e8f0;
+  background: #111b3a;
   border-radius: 99px;
   overflow: hidden;
   margin-bottom: 20px;
 }
 .v-progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, #059669, #10b981);
+  background: linear-gradient(90deg, #0066ff, #3388ff);
   border-radius: 99px;
   font-size: 0;
   color: transparent;
@@ -669,13 +755,13 @@ onMounted(() => {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #ecfdf5;
-  border: 1px solid #a7f3d0;
+  background: rgba(0, 102, 255, 0.08);
+  border: 1px solid rgba(0, 102, 255, 0.2);
   border-radius: 10px;
   padding: 10px 16px;
   margin-bottom: 16px;
   font-size: 0.85rem;
-  color: #065f46;
+  color: #cbd5e1;
 }
 .v-staging-left {
   display: flex;
@@ -684,7 +770,7 @@ onMounted(() => {
 }
 .v-staging-hint {
   font-size: 0.8rem;
-  color: #6b7280;
+  color: #64748b;
   font-style: italic;
 }
 
@@ -699,11 +785,11 @@ onMounted(() => {
   align-items: center;
   gap: 6px;
   font-size: 0.85rem;
-  color: #475569;
+  color: #94a3b8;
   cursor: pointer;
 }
 .v-checkbox input {
-  accent-color: #2563eb;
+  accent-color: #0066ff;
 }
 
 /* Relatório */
@@ -711,7 +797,7 @@ onMounted(() => {
   overflow-x: auto;
   margin-bottom: 20px;
   border-radius: 10px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid rgba(0, 102, 255, 0.12);
 }
 .v-relatorio table {
   width: 100%;
@@ -719,17 +805,18 @@ onMounted(() => {
   font-size: 0.8rem;
 }
 .v-relatorio th {
-  background: #1e3a5f;
-  color: #fff;
+  background: #111b3a;
+  color: #cbd5e1;
   padding: 8px 12px;
   text-align: left;
 }
 .v-relatorio td {
   padding: 8px 12px;
-  border-bottom: 1px solid #f1f5f9;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  color: #cbd5e1;
 }
 .v-relatorio tr:hover td {
-  background: #f8fafc;
+  background: rgba(0, 102, 255, 0.05);
 }
 
 /* Lista de rubricas */
@@ -742,26 +829,26 @@ onMounted(() => {
   display: flex;
   align-items: center;
   gap: 12px;
-  background: #fff;
-  border: 1px solid #e2e8f0;
+  background: #0d1530;
+  border: 1px solid rgba(0, 102, 255, 0.12);
   border-radius: 10px;
   padding: 12px 16px;
   cursor: pointer;
   transition: all 0.15s;
 }
 .v-item:hover {
-  border-color: #93c5fd;
-  background: #eff6ff;
+  border-color: rgba(0, 102, 255, 0.4);
+  background: #111b3a;
   transform: translateX(4px);
 }
 .v-item.done {
   opacity: 0.55;
-  border-left: 4px solid #10b981;
+  border-left: 4px solid #34d399;
 }
 .v-item-num {
   width: 28px;
   height: 28px;
-  background: #f1f5f9;
+  background: #111b3a;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -783,19 +870,19 @@ onMounted(() => {
 .v-item-code {
   font-weight: 700;
   font-size: 0.85rem;
-  color: #1e3a5f;
+  color: #0066ff;
   flex-shrink: 0;
 }
 .v-item-name {
   font-size: 0.85rem;
-  color: #334155;
+  color: #cbd5e1;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .v-item-sub {
   font-size: 0.75rem;
-  color: #94a3b8;
+  color: #64748b;
   margin-top: 2px;
 }
 .v-item-badge {
@@ -809,12 +896,12 @@ onMounted(() => {
   flex-shrink: 0;
 }
 .v-item-badge.pend {
-  background: #fef3c7;
-  color: #d97706;
+  background: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
 }
 .v-item-badge.ok {
-  background: #d1fae5;
-  color: #059669;
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
 }
 
 /* ═══════════ MODO CORREÇÃO ═══════════ */
@@ -828,8 +915,8 @@ onMounted(() => {
 .c-counter {
   font-size: 0.9rem;
   font-weight: 700;
-  color: #2563eb;
-  background: #eff6ff;
+  color: #0066ff;
+  background: rgba(0, 102, 255, 0.12);
   padding: 4px 14px;
   border-radius: 99px;
 }
@@ -860,51 +947,51 @@ onMounted(() => {
   gap: 16px;
 }
 .c-rubrica-card {
-  background: #fff;
-  border: 1px solid #e2e8f0;
+  background: #0d1530;
+  border: 1px solid rgba(0, 102, 255, 0.12);
   border-radius: 12px;
   padding: 20px;
 }
 .c-rubrica-code {
   font-size: 1.3rem;
   font-weight: 800;
-  color: #1e3a5f;
+  color: #0066ff;
   margin-bottom: 4px;
 }
 .c-rubrica-name {
   font-size: 1rem;
   font-weight: 600;
-  color: #334155;
+  color: #e2e8f0;
   margin-bottom: 12px;
 }
 .c-rubrica-nat {
   font-size: 0.85rem;
-  color: #64748b;
+  color: #94a3b8;
   margin-bottom: 4px;
 }
 .c-rubrica-obs {
   font-size: 0.85rem;
-  color: #64748b;
+  color: #94a3b8;
   margin-bottom: 4px;
 }
 .c-label {
   font-weight: 600;
-  color: #475569;
+  color: #cbd5e1;
 }
 .c-rubrica-hint {
   margin-top: 10px;
   padding: 8px 12px;
-  background: #fffbeb;
+  background: rgba(245, 158, 11, 0.1);
   border-left: 3px solid #f59e0b;
   border-radius: 0 8px 8px 0;
   font-size: 0.85rem;
-  color: #92400e;
+  color: #fbbf24;
 }
 
 /* Save box */
 .c-save-box {
-  background: #ecfdf5;
-  border: 2px solid #10b981;
+  background: rgba(0, 102, 255, 0.08);
+  border: 2px solid #0066ff;
   border-radius: 12px;
   padding: 16px;
 }
@@ -917,23 +1004,25 @@ onMounted(() => {
 .c-chosen-code {
   font-size: 1.1rem;
   font-weight: 800;
-  color: #059669;
+  color: #0066ff;
 }
 .c-chosen-name {
   font-size: 0.9rem;
-  color: #065f46;
+  color: #cbd5e1;
   font-weight: 500;
 }
 .c-motivo {
   width: 100%;
   padding: 8px 10px;
-  border: 1px solid #a7f3d0;
+  border: 1px solid rgba(0, 102, 255, 0.2);
   border-radius: 8px;
   font-size: 0.85rem;
   resize: vertical;
   margin-bottom: 10px;
   box-sizing: border-box;
   font-family: inherit;
+  background: #0a1024;
+  color: #e2e8f0;
 }
 .c-save-actions {
   display: flex;
@@ -945,14 +1034,14 @@ onMounted(() => {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #fff;
-  border: 1px solid #e2e8f0;
+  background: #0d1530;
+  border: 1px solid rgba(0, 102, 255, 0.12);
   border-radius: 10px;
   padding: 10px 14px;
 }
 .c-undo-text {
   font-size: 0.85rem;
-  color: #059669;
+  color: #34d399;
   font-weight: 500;
 }
 
@@ -964,15 +1053,54 @@ onMounted(() => {
 .c-search-input {
   flex: 1;
   padding: 8px 12px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid rgba(0, 102, 255, 0.15);
   border-radius: 8px;
   font-size: 0.85rem;
   font-family: inherit;
+  background: #0a1024;
+  color: #e2e8f0;
 }
 .c-search-input:focus {
-  border-color: #93c5fd;
+  border-color: #0066ff;
   outline: none;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.15);
+}
+
+/* Code lookup */
+.c-code-error {
+  font-size: 0.8rem;
+  color: #f87171;
+  padding: 2px 0;
+}
+.c-btn-vazio {
+  margin-top: 24px;
+  padding: 10px 14px;
+  border: 1px dashed rgba(239, 68, 68, 0.4);
+  border-radius: 8px;
+  background: rgba(239, 68, 68, 0.08);
+  color: #f87171;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: 100%;
+  text-align: left;
+}
+.c-btn-vazio:hover {
+  border-color: #ef4444;
+  color: #ef4444;
+  background: rgba(239, 68, 68, 0.14);
+}
+.c-sug-manual {
+  border-color: rgba(16, 185, 129, 0.3);
+  background: rgba(16, 185, 129, 0.06);
+}
+.c-sug-manual:hover {
+  border-color: rgba(16, 185, 129, 0.5);
+}
+.c-sug-tag.manual {
+  background: linear-gradient(90deg, #10b981, #34d399);
+  color: #fff;
 }
 
 /* Right column: suggestions */
@@ -983,21 +1111,21 @@ onMounted(() => {
 }
 
 .c-sug {
-  background: #fff;
-  border: 2px solid #e2e8f0;
+  background: #0d1530;
+  border: 2px solid rgba(0, 102, 255, 0.12);
   border-radius: 10px;
   padding: 14px 16px;
   cursor: pointer;
   transition: all 0.15s;
 }
 .c-sug:hover {
-  border-color: #93c5fd;
-  background: #f8fafc;
+  border-color: rgba(0, 102, 255, 0.4);
+  background: #111b3a;
 }
 .c-sug.selected {
-  border-color: #10b981;
-  background: #ecfdf5;
-  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
+  border-color: #0066ff;
+  background: rgba(0, 102, 255, 0.1);
+  box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.15);
 }
 .c-sug.expired {
   opacity: 0.6;
@@ -1005,16 +1133,16 @@ onMounted(() => {
 
 /* Human suggestion */
 .c-sug-human {
-  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
-  border: 2px solid #f59e0b;
+  background: rgba(245, 158, 11, 0.08);
+  border: 2px solid rgba(245, 158, 11, 0.4);
   position: relative;
 }
 .c-sug-human:hover {
-  border-color: #d97706;
+  border-color: #f59e0b;
 }
 .c-sug-human.selected {
-  border-color: #10b981;
-  background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+  border-color: #0066ff;
+  background: rgba(0, 102, 255, 0.1);
 }
 
 .c-sug-top {
@@ -1027,12 +1155,12 @@ onMounted(() => {
 .c-sug-code {
   font-weight: 800;
   font-size: 1rem;
-  color: #1e3a5f;
+  color: #0066ff;
 }
 .c-sug-score {
   font-size: 0.7rem;
-  background: #dbeafe;
-  color: #1d4ed8;
+  background: rgba(0, 102, 255, 0.15);
+  color: #3388ff;
   padding: 2px 8px;
   border-radius: 99px;
   font-weight: 600;
@@ -1048,20 +1176,20 @@ onMounted(() => {
   color: #fff;
 }
 .c-sug-tag.pop {
-  background: #e2e8f0;
-  color: #475569;
+  background: rgba(255, 255, 255, 0.08);
+  color: #94a3b8;
 }
 .c-sug-exp {
   font-size: 0.7rem;
-  background: #fff7ed;
-  color: #c2410c;
+  background: rgba(239, 68, 68, 0.1);
+  color: #f87171;
   padding: 2px 8px;
   border-radius: 99px;
 }
 .c-sug-name {
   font-size: 0.9rem;
   font-weight: 600;
-  color: #1e293b;
+  color: #e2e8f0;
 }
 .c-sug-desc {
   font-size: 0.8rem;
@@ -1071,24 +1199,24 @@ onMounted(() => {
 .c-sug-hint {
   margin-top: 6px;
   font-size: 0.8rem;
-  color: #92400e;
+  color: #fbbf24;
   font-style: italic;
 }
 
 /* Popular divider */
 .c-pop-divider {
   font-size: 0.8rem;
-  color: #94a3b8;
+  color: #64748b;
   font-weight: 600;
   padding: 8px 0 4px;
-  border-top: 1px dashed #e2e8f0;
+  border-top: 1px dashed rgba(0, 102, 255, 0.15);
   margin-top: 4px;
 }
 .c-sug-pop {
-  background: #f8fafc;
-  border-color: #f1f5f9;
+  background: #0a1024;
+  border-color: rgba(255, 255, 255, 0.06);
 }
 .c-sug-pop:hover {
-  border-color: #cbd5e1;
+  border-color: rgba(0, 102, 255, 0.3);
 }
 </style>

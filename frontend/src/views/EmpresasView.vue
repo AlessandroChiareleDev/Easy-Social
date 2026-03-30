@@ -1,34 +1,21 @@
 <template>
-  <div
-    class="min-h-screen bg-gradient-to-br from-primary-600 via-primary-700 to-primary-900 relative overflow-hidden"
-  >
-    <!-- Background decorations -->
-    <div class="absolute inset-0 opacity-[0.06]">
-      <div class="absolute top-16 left-24 w-72 h-72 border-2 border-white rounded-full"></div>
-      <div
-        class="absolute bottom-20 right-20 w-56 h-56 border-2 border-white rounded-2xl rotate-45"
-      ></div>
-      <div class="absolute top-1/3 right-1/3 w-40 h-40 border-2 border-white rounded-full"></div>
+  <div class="min-h-screen relative overflow-hidden emp-bg">
+    <!-- Animated glassmorphism shapes -->
+    <div class="absolute inset-0 overflow-hidden">
+      <div class="glass-shape shape-1"></div>
+      <div class="glass-shape shape-2"></div>
+      <div class="glass-shape shape-3"></div>
+      <div class="glass-shape shape-4"></div>
+      <div class="glass-shape shape-5"></div>
+      <div class="glass-shape shape-6"></div>
+      <div class="glass-shape shape-7"></div>
+      <div class="glass-shape shape-8"></div>
     </div>
 
     <!-- Top bar -->
     <div class="relative z-10 flex items-center justify-between px-8 pt-6">
       <div class="flex items-center gap-3">
-        <div
-          class="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center backdrop-blur-sm border border-white/10"
-        >
-          <svg
-            viewBox="0 0 40 40"
-            class="w-5 h-5 text-white"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-          >
-            <circle cx="20" cy="20" r="18" />
-            <path d="M12 28c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke-linecap="round" />
-            <circle cx="20" cy="14" r="4" fill="currentColor" stroke="none" />
-          </svg>
-        </div>
+        <BrandLogo :size="52" :speed="4" />
         <span class="text-white/80 font-semibold text-lg">Easy Social</span>
       </div>
 
@@ -181,6 +168,7 @@
 import { computed, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useAuthStore, type Empresa } from '../stores/auth'
+import BrandLogo from '../components/BrandLogo.vue'
 
 const router = useRouter()
 const authStore = useAuthStore()
@@ -225,7 +213,6 @@ function handleLogout() {
 .animate-fade-in {
   animation: fadeIn 400ms ease;
 }
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -234,6 +221,224 @@ function handleLogout() {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* ── Animated background gradient ── */
+.emp-bg {
+  background: linear-gradient(135deg, #0a1024, #0d1530, #0066ff, #0d1530, #0a1024);
+  background-size: 400% 400%;
+  animation: bgShift 12s ease-in-out infinite;
+}
+@keyframes bgShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* ── Glass shape base ── */
+.glass-shape {
+  position: absolute;
+  border: 1.5px solid rgba(0, 102, 255, 0.25);
+  background: rgba(0, 102, 255, 0.06);
+  box-shadow:
+    0 0 15px rgba(0, 102, 255, 0.3),
+    0 0 40px rgba(0, 102, 255, 0.18),
+    0 0 80px rgba(0, 102, 255, 0.08),
+    inset 0 0 20px rgba(0, 102, 255, 0.04);
+  will-change: transform;
+}
+
+/* ── Shape 1 — large circle ── */
+.shape-1 {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  filter: blur(2px);
+  animation: drift1 26s ease-in-out infinite;
+}
+@keyframes drift1 {
+  0% {
+    transform: translate(-10%, -15%) rotate(0deg);
+  }
+  50% {
+    transform: translate(40%, 60%) rotate(30deg);
+  }
+  100% {
+    transform: translate(-10%, -15%) rotate(0deg);
+  }
+}
+
+/* ── Shape 2 — rotated rounded square ── */
+.shape-2 {
+  width: 220px;
+  height: 220px;
+  border-radius: 36px;
+  filter: blur(1.5px);
+  right: -30px;
+  animation: drift2 30s ease-in-out infinite;
+}
+@keyframes drift2 {
+  0% {
+    transform: translate(10%, -20%) rotate(45deg);
+  }
+  50% {
+    transform: translate(-50%, 70%) rotate(90deg);
+  }
+  100% {
+    transform: translate(10%, -20%) rotate(45deg);
+  }
+}
+
+/* ── Shape 3 — medium circle ── */
+.shape-3 {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  filter: blur(3px);
+  left: 60%;
+  animation: drift3 22s ease-in-out infinite;
+  animation-delay: -8s;
+}
+@keyframes drift3 {
+  0% {
+    transform: translate(0, -30%) rotate(0deg);
+  }
+  50% {
+    transform: translate(-30%, 85%) rotate(-20deg);
+  }
+  100% {
+    transform: translate(0, -30%) rotate(0deg);
+  }
+}
+
+/* ── Shape 4 — small rounded square ── */
+.shape-4 {
+  width: 110px;
+  height: 110px;
+  border-radius: 22px;
+  filter: blur(1px);
+  left: 35%;
+  animation: drift4 18s ease-in-out infinite;
+  animation-delay: -4s;
+}
+@keyframes drift4 {
+  0% {
+    transform: translate(0, -10%) rotate(12deg);
+  }
+  50% {
+    transform: translate(20%, 95%) rotate(60deg);
+  }
+  100% {
+    transform: translate(0, -10%) rotate(12deg);
+  }
+}
+
+/* ── Shape 5 — large rounded rect ── */
+.shape-5 {
+  width: 250px;
+  height: 190px;
+  border-radius: 44px;
+  filter: blur(2.5px);
+  left: 12%;
+  bottom: 0;
+  animation: drift5 34s ease-in-out infinite;
+  animation-delay: -12s;
+}
+@keyframes drift5 {
+  0% {
+    transform: translate(-5%, 20%) rotate(-8deg);
+  }
+  50% {
+    transform: translate(30%, -75%) rotate(15deg);
+  }
+  100% {
+    transform: translate(-5%, 20%) rotate(-8deg);
+  }
+}
+
+/* ── Shape 6 — small circle, bright neon ── */
+.shape-6 {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  filter: blur(1px);
+  left: 75%;
+  top: 55%;
+  border-color: rgba(0, 102, 255, 0.4);
+  box-shadow:
+    0 0 20px rgba(0, 102, 255, 0.4),
+    0 0 50px rgba(0, 102, 255, 0.2),
+    0 0 80px rgba(0, 102, 255, 0.1);
+  animation: drift6 15s ease-in-out infinite;
+  animation-delay: -6s;
+}
+@keyframes drift6 {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(-40%, -110%) rotate(45deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+/* ── Shape 7 — medium rounded square ── */
+.shape-7 {
+  width: 150px;
+  height: 150px;
+  border-radius: 30px;
+  filter: blur(2px);
+  right: 12%;
+  top: 18%;
+  animation: drift7 24s ease-in-out infinite;
+  animation-delay: -10s;
+}
+@keyframes drift7 {
+  0% {
+    transform: translate(10%, -5%) rotate(-12deg);
+  }
+  50% {
+    transform: translate(-20%, 70%) rotate(25deg);
+  }
+  100% {
+    transform: translate(10%, -5%) rotate(-12deg);
+  }
+}
+
+/* ── Shape 8 — tiny circle, fast bright ── */
+.shape-8 {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  filter: blur(0.5px);
+  left: 22%;
+  top: 42%;
+  border-color: rgba(0, 102, 255, 0.45);
+  box-shadow:
+    0 0 18px rgba(0, 102, 255, 0.45),
+    0 0 45px rgba(0, 102, 255, 0.22),
+    0 0 70px rgba(0, 102, 255, 0.1);
+  animation: drift8 13s ease-in-out infinite;
+  animation-delay: -3s;
+}
+@keyframes drift8 {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(50%, 100%) rotate(-30deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
   }
 }
 </style>

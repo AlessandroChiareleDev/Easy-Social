@@ -39,6 +39,36 @@ const router = createRouter({
       component: () => import('../views/ValidadorView.vue'),
       meta: { requireEmpresa: true },
     },
+    {
+      path: '/confirmar',
+      name: 'confirmar',
+      component: () => import('../views/ConfirmarAlteracoesView.vue'),
+      meta: { requireEmpresa: true },
+    },
+    {
+      path: '/cruzamento',
+      name: 'cruzamento',
+      component: () => import('../views/CruzamentoView.vue'),
+      meta: { requireEmpresa: true },
+    },
+    {
+      path: '/depara',
+      name: 'depara',
+      component: () => import('../views/DeParaView.vue'),
+      meta: { requireEmpresa: true },
+    },
+    {
+      path: '/esocial',
+      name: 'esocial',
+      component: () => import('../views/ESocialView.vue'),
+      meta: { requireEmpresa: true },
+    },
+    {
+      path: '/eb-cruzamento',
+      name: 'eb-cruzamento',
+      component: () => import('../views/EBSkillsCruzamentoView.vue'),
+      meta: { requireEmpresa: true },
+    },
   ],
 })
 

@@ -20,13 +20,16 @@ router.get("/naturezas", async (_req, res) => {
 });
 
 /**
- * GET /api/naturezas/buscar-similares/:nomeEvento
+ * GET /api/naturezas/buscar-similares
  * Busca naturezas similares ao nome do evento (3 camadas)
- * Query: topN, codigoEvento
+ * Query: nomeEvento, topN, codigoEvento
  */
-router.get("/naturezas/buscar-similares/:nomeEvento", async (req, res) => {
+router.get("/naturezas/buscar-similares", async (req, res) => {
   try {
-    const nomeEvento = req.params.nomeEvento;
+    const nomeEvento = req.query.nomeEvento as string;
+    if (!nomeEvento) {
+      return res.status(400).json({ error: "nomeEvento é obrigatório" });
+    }
     const topN = parseInt(req.query.topN as string) || 30;
     const codigoEvento = req.query.codigoEvento as string | undefined;
     const resultado = await service.buscarSimilares(
@@ -35,6 +38,24 @@ router.get("/naturezas/buscar-similares/:nomeEvento", async (req, res) => {
       codigoEvento,
     );
     return res.status(200).json({ success: true, ...resultado });
+  } catch (error: any) {
+    return res.status(500).json({ error: error.message });
+  }
+});
+
+/**
+ * GET /api/naturezas/por-codigo/:codigo
+ * Busca natureza pelo código exato
+ */
+router.get("/naturezas/por-codigo/:codigo", async (req, res) => {
+  try {
+    const nat = await service.buscarPorCodigo(req.params.codigo);
+    if (!nat) {
+      return res
+        .status(404)
+        .json({ success: false, error: "Código não encontrado" });
+    }
+    return res.status(200).json({ success: true, data: nat });
   } catch (error: any) {
     return res.status(500).json({ error: error.message });
   }
@@ -170,6 +191,36 @@ router.get("/rubricas/staging-resumo", async (_req, res) => {
   try {
     const resumo = await service.getStagingResumo();
     return res.status(200).json({ success: true, ...resumo });
+  } catch (error: any) {
+    return res.status(500).json({ error: error.message });
+  }
+});
+
+/**
+ * PUT /api/rubricas/staging/:id
+ * Edita uma correção pendente no staging (muda código/nome da natureza)
+ */
+router.put("/rubricas/staging/:id", async (req, res) => {
+  try {
+    const id = parseInt(req.params.id);
+    if (isNaN(id)) {
+      return res.status(400).json({ error: "ID inválido" });
+    }
+    const { naturezaCodigo, naturezaNome } = req.body;
+    if (!naturezaCodigo || !naturezaNome) {
+      return res
+        .status(400)
+        .json({ error: "naturezaCodigo e naturezaNome são obrigatórios" });
+    }
+    const ok = await service.editarStaging(id, naturezaCodigo, naturezaNome);
+    if (!ok) {
+      return res
+        .status(404)
+        .json({ error: "Correção pendente não encontrada" });
+    }
+    return res
+      .status(200)
+      .json({ success: true, message: "Correção atualizada" });
   } catch (error: any) {
     return res.status(500).json({ error: error.message });
   }

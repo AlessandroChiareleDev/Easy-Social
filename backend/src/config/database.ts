@@ -20,6 +20,19 @@ pool.on("error", (err) => {
 });
 
 /**
+ * Converts 0-based index to column name: 0→col_a, 25→col_z, 26→col_aa, 53→col_bb
+ */
+function colNameForIndex(i: number): string {
+  let letter = "";
+  let num = i;
+  while (num >= 0) {
+    letter = String.fromCharCode(97 + (num % 26)) + letter;
+    num = Math.floor(num / 26) - 1;
+  }
+  return `col_${letter}`;
+}
+
+/**
  * Criar tabelas se não existirem
  */
 export async function initializeDatabase() {
@@ -177,6 +190,39 @@ export async function initializeDatabase() {
       ALTER TABLE analise_natureza ADD COLUMN IF NOT EXISTS usuario_correcao VARCHAR(255);
       ALTER TABLE analise_natureza ADD COLUMN IF NOT EXISTS data_correcao TIMESTAMP;
     `);
+
+    // Colunas adicionais para analise_natureza_certo
+    await client.query(`
+      ALTER TABLE analise_natureza_certo ADD COLUMN IF NOT EXISTS natureza_anterior TEXT;
+      ALTER TABLE analise_natureza_certo ADD COLUMN IF NOT EXISTS natureza_nova TEXT;
+      ALTER TABLE analise_natureza_certo ADD COLUMN IF NOT EXISTS usuario_correcao VARCHAR(255);
+      ALTER TABLE analise_natureza_certo ADD COLUMN IF NOT EXISTS data_correcao TIMESTAMP;
+    `);
+
+    // Estender todas as tabelas de dados para suportar até 54 colunas (col_a até col_bb)
+    const dataTables = [
+      "analise_natureza",
+      "analise_natureza_certo",
+      "dinamica",
+      "tabela_eventos_gl",
+      "tabela_eb",
+    ];
+    for (const table of dataTables) {
+      const alterCols: string[] = [];
+      for (let i = 10; i < 54; i++) {
+        const colName = colNameForIndex(i);
+        alterCols.push(`ADD COLUMN IF NOT EXISTS ${colName} VARCHAR(255)`);
+      }
+      // Execute in batches to avoid overly long statements
+      const BATCH = 10;
+      for (let b = 0; b < alterCols.length; b += BATCH) {
+        const batch = alterCols.slice(b, b + BATCH);
+        await client.query(`ALTER TABLE ${table} ${batch.join(", ")}`);
+      }
+    }
+    console.log(
+      "✅ Colunas estendidas até col_bb (54 colunas) em todas as tabelas",
+    );
 
     // Criar índices
     await client.query(`

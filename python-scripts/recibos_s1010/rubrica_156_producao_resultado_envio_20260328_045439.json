@@ -1,0 +1,9 @@
+{
+  "sucesso": false,
+  "codigo_resposta": null,
+  "descricao": null,
+  "protocolo": null,
+  "dh_recepcao": null,
+  "ocorrencias": [],
+  "erro": "HTTPSConnectionPool(host='webservices.esocial.gov.br', port=443): Max retries exceeded with url: /servicos/empregador/enviarloteeventos/WsEnviarLoteEventos.svc (Caused by NameResolutionError(\"HTTPSConnection(host='webservices.esocial.gov.br', port=443): Failed to resolve 'webservices.esocial.gov.br' ([Errno 11001] getaddrinfo failed)\"))"
+}

@@ -1,0 +1,20 @@
+{
+  "sucesso": true,
+  "codigo_resposta": "201",
+  "descricao": "Lote processado com sucesso.",
+  "eventos": [
+    {
+      "id": "ID1059690710000002026032807555700001",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "nr_recibo": null,
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "105",
+          "descricao": "O evento a ser excluído/retificado (alterado) não foi localizado na base de dados do eSocial.\nAção Sugerida: Verificar se o número do recibo informado no evento, corresponde ao mesmo número de recibo do evento original. Preencher com o número do recibo do arquivo a ser retificado"
+        }
+      ]
+    }
+  ]
+}

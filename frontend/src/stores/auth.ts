@@ -2,7 +2,10 @@ import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
 import axios from 'axios'
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3333/api'
+const API_URL =
+  window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+    ? import.meta.env.VITE_API_URL || 'http://localhost:3333/api'
+    : 'https://bacteria-rare-packet-rand.trycloudflare.com/api'
 
 export interface User {
   userId: number
@@ -49,8 +52,15 @@ export const useAuthStore = defineStore('auth', () => {
       setupAxios()
       await fetchEmpresas()
       return true
-    } catch {
-      return false
+    } catch (err: any) {
+      if (err.response) {
+        // Server respondeu com erro
+        throw new Error(err.response.data?.error || 'Credenciais inválidas')
+      } else if (err.request) {
+        // Sem resposta do servidor
+        throw new Error('Servidor indisponível — verifique se o backend está rodando')
+      }
+      throw new Error('Erro de conexão com o servidor')
     }
   }
 

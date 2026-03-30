@@ -32,11 +32,32 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:5174", "http://localhost:3333"],
+    allow_origins=[
+        "http://localhost:5173",
+        "http://localhost:5174",
+        "http://localhost:3333",
+        "https://grown-morning-attend-currently.trycloudflare.com",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Rotas eSocial (certificados A1)
+from esocial.certificate_routes import router as cert_router
+app.include_router(cert_router)
+
+# Rotas eSocial (orquestração S-1010)
+from esocial.esocial_routes import router as esocial_router
+app.include_router(esocial_router)
+
+# Rotas De-Para (mapeamento de campos S-1010)
+from esocial.depara_routes import router as depara_router
+app.include_router(depara_router)
+
+# Rotas Cruzamento EB Skills
+from esocial.cruzamento_eb_routes import router as cruzamento_eb_router
+app.include_router(cruzamento_eb_router)
 
 # Thread do bot
 bot_thread: threading.Thread | None = None

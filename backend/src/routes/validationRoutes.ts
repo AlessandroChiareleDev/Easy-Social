@@ -119,6 +119,27 @@ router.patch("/validacao/:id/verificar", async (req, res) => {
 });
 
 /**
+ * PATCH /api/validacao/:id/realizada
+ * Marca uma rubrica como realizada manualmente
+ */
+router.patch("/validacao/:id/realizada", async (req, res) => {
+  try {
+    const id = parseInt(req.params.id);
+    if (isNaN(id)) {
+      return res.status(400).json({ error: "ID inválido" });
+    }
+
+    const resultado = await validationService.marcarRealizada(id);
+    if (!resultado) {
+      return res.status(404).json({ error: "Correção não encontrada" });
+    }
+    return res.status(200).json({ success: true, data: resultado });
+  } catch (error: any) {
+    return res.status(500).json({ error: error.message });
+  }
+});
+
+/**
  * PATCH /api/validacao/:id/resetar
  * Reseta uma correção de volta para pendente
  */

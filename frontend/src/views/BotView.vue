@@ -234,11 +234,16 @@ onUnmounted(() => {
   padding: 20px;
   max-width: 1000px;
   margin: 0 auto;
-  color: #333;
+  color: #e2e8f0;
 }
 
 h1 {
   margin-bottom: 20px;
+  color: #ffffff;
+}
+
+h3 {
+  color: #ffffff;
 }
 
 .bot-controls {
@@ -257,16 +262,16 @@ h1 {
 }
 
 .status-badge.running {
-  background: #d4edda;
-  color: #155724;
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
 }
 .status-badge.stopped {
-  background: #e2e3e5;
-  color: #383d41;
+  background: rgba(255, 255, 255, 0.06);
+  color: #94a3b8;
 }
 .status-badge.error {
-  background: #f8d7da;
-  color: #721c24;
+  background: rgba(239, 68, 68, 0.15);
+  color: #f87171;
 }
 
 .btn-group {
@@ -290,54 +295,57 @@ h1 {
   cursor: not-allowed;
 }
 .btn-start {
-  background: #28a745;
+  background: #0066ff;
   color: white;
 }
 .btn-stop {
-  background: #dc3545;
+  background: rgba(239, 68, 68, 0.8);
   color: white;
 }
 .btn-screenshot {
-  background: #17a2b8;
-  color: white;
+  background: #111b3a;
+  color: #cbd5e1;
+  border: 1px solid rgba(0, 102, 255, 0.15);
 }
 
 .calibration-section {
   padding: 16px;
   border-radius: 8px;
   margin-bottom: 24px;
-  border-left: 4px solid #ffc107;
-  background: #fff3cd;
+  border-left: 4px solid #f59e0b;
+  background: rgba(245, 158, 11, 0.08);
 }
 
 .calibration-section.calibrated {
-  border-left-color: #28a745;
-  background: #d4edda;
+  border-left-color: #0066ff;
+  background: rgba(0, 102, 255, 0.08);
 }
 
 .calibration-ok {
-  color: #155724;
+  color: #34d399;
 }
 
 .calibration-missing {
-  color: #856404;
+  color: #fbbf24;
 }
 
 .calibration-missing code {
   display: block;
-  background: #1e1e1e;
+  background: #0a1024;
   color: #d4d4d4;
   padding: 10px;
   border-radius: 4px;
   margin: 8px 0;
   font-size: 13px;
   word-break: break-all;
+  border: 1px solid rgba(0, 102, 255, 0.12);
 }
 
 .cal-steps {
   margin-top: 8px;
   font-size: 0.9rem;
   line-height: 1.6;
+  color: #cbd5e1;
 }
 
 .progress-section {
@@ -347,7 +355,7 @@ h1 {
 .progress-bar {
   width: 100%;
   height: 28px;
-  background: #e9ecef;
+  background: #111b3a;
   border-radius: 14px;
   overflow: hidden;
   margin-top: 8px;
@@ -355,7 +363,7 @@ h1 {
 
 .progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, #28a745, #20c997);
+  background: linear-gradient(90deg, #0066ff, #3388ff);
   color: white;
   font-size: 13px;
   font-weight: bold;
@@ -368,11 +376,11 @@ h1 {
 
 .progress-text {
   margin-top: 6px;
-  color: #666;
+  color: #64748b;
   font-size: 0.9rem;
 }
 .error-count {
-  color: #dc3545;
+  color: #f87171;
 }
 
 .current-rubrica {
@@ -380,14 +388,16 @@ h1 {
 }
 
 .rubrica-card {
-  background: #f8f9fa;
-  border-left: 4px solid #007bff;
+  background: #0d1530;
+  border-left: 4px solid #0066ff;
   padding: 16px;
   border-radius: 6px;
+  border: 1px solid rgba(0, 102, 255, 0.12);
 }
 
 .rubrica-card p {
   margin: 4px 0;
+  color: #cbd5e1;
 }
 
 .screenshot-section {
@@ -396,7 +406,7 @@ h1 {
 
 .screenshot-img {
   max-width: 100%;
-  border: 1px solid #ddd;
+  border: 1px solid rgba(0, 102, 255, 0.15);
   border-radius: 6px;
   margin-top: 8px;
 }
@@ -406,7 +416,7 @@ h1 {
 }
 
 .log-container {
-  background: #1e1e1e;
+  background: #0a1024;
   color: #d4d4d4;
   border-radius: 6px;
   padding: 12px;
@@ -414,38 +424,40 @@ h1 {
   overflow-y: auto;
   font-family: 'Consolas', 'Courier New', monospace;
   font-size: 13px;
+  border: 1px solid rgba(0, 102, 255, 0.12);
 }
 
 .log-entry {
   padding: 2px 0;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .log-entry.error {
-  color: #f44;
+  color: #f87171;
 }
 .log-entry.warning {
-  color: #fa0;
+  color: #fbbf24;
 }
 .log-entry.success {
-  color: #4f4;
+  color: #34d399;
 }
 
 .log-time {
-  color: #888;
+  color: #64748b;
   margin-right: 8px;
 }
 
 .log-empty {
-  color: #666;
+  color: #475569;
   text-align: center;
   padding: 20px;
 }
 
 .error-message {
-  color: #dc3545;
+  color: #f87171;
   padding: 10px;
-  background-color: #f8d7da;
+  background-color: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.2);
   border-radius: 4px;
   margin-top: 10px;
 }

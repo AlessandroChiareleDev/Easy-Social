@@ -5,15 +5,32 @@ import fs from "fs";
 /** Whitelist of allowed table names to prevent SQL injection */
 const ALLOWED_TABLES = [
   "analise_natureza",
+  "analise_natureza_certo",
   "dinamica",
   "tabela_eventos_gl",
   "tabela_eb",
+  "tabela_cruzamento",
+  "tabela3_esocial_oficial",
+  "eb_skills_base_legal",
 ];
 
 function validateTableName(tableName: string): void {
   if (!ALLOWED_TABLES.includes(tableName)) {
     throw new Error(`Tabela "${tableName}" não é permitida`);
   }
+}
+
+/**
+ * Converts 0-based index to column name: 0→col_a, 25→col_z, 26→col_aa, 53→col_bb
+ */
+function colNameForIndex(i: number): string {
+  let letter = "";
+  let num = i;
+  while (num >= 0) {
+    letter = String.fromCharCode(97 + (num % 26)) + letter;
+    num = Math.floor(num / 26) - 1;
+  }
+  return `col_${letter}`;
 }
 
 export class DatabaseService {
@@ -93,11 +110,12 @@ export class DatabaseService {
       ) {
         const batch = data.slice(batchStart, batchStart + BATCH_SIZE);
 
-        // Construir INSERT em lote com múltiplos VALUES
-        const colCount = Math.min(10, columnLetters.length);
+        // Construir INSERT em lote com múltiplos VALUES (até 54 colunas: col_a a col_bb)
+        const MAX_COLS = 54;
+        const colCount = Math.min(MAX_COLS, columnLetters.length);
         const colNames = ["upload_id", "row_number", "raw_data"];
         for (let c = 0; c < colCount; c++) {
-          colNames.push(`col_${String.fromCharCode(97 + c)}`);
+          colNames.push(colNameForIndex(c));
         }
 
         const allValues: any[] = [];
@@ -152,12 +170,24 @@ export class DatabaseService {
     tableName: string,
     limit: number = 100,
     offset: number = 0,
+    filters: { column: string; value: string }[] = [],
   ) {
     validateTableName(tableName);
     const client = await pool.connect();
     try {
-      const query = `SELECT * FROM ${tableName} LIMIT $1 OFFSET $2`;
-      const result = await client.query(query, [limit, offset]);
+      const params: any[] = [limit, offset];
+      let whereClause = "";
+
+      if (filters.length > 0) {
+        const conditions = filters.map((f, i) => {
+          params.push(`%${f.value}%`);
+          return `CAST(${f.column} AS TEXT) ILIKE $${i + 3}`;
+        });
+        whereClause = ` WHERE ${conditions.join(" AND ")}`;
+      }
+
+      const query = `SELECT * FROM ${tableName}${whereClause} LIMIT $1 OFFSET $2`;
+      const result = await client.query(query, params);
       return result.rows;
     } finally {
       client.release();
@@ -167,12 +197,26 @@ export class DatabaseService {
   /**
    * Conta total de registros em uma tabela
    */
-  async getTableCount(tableName: string) {
+  async getTableCount(
+    tableName: string,
+    filters: { column: string; value: string }[] = [],
+  ) {
     validateTableName(tableName);
     const client = await pool.connect();
     try {
-      const query = `SELECT COUNT(*) as count FROM ${tableName}`;
-      const result = await client.query(query);
+      const params: any[] = [];
+      let whereClause = "";
+
+      if (filters.length > 0) {
+        const conditions = filters.map((f, i) => {
+          params.push(`%${f.value}%`);
+          return `CAST(${f.column} AS TEXT) ILIKE $${i + 1}`;
+        });
+        whereClause = ` WHERE ${conditions.join(" AND ")}`;
+      }
+
+      const query = `SELECT COUNT(*) as count FROM ${tableName}${whereClause}`;
+      const result = await client.query(query, params);
       return result.rows[0].count;
     } finally {
       client.release();
@@ -187,14 +231,41 @@ export class DatabaseService {
 
     const tableNameToSheet: { [key: string]: string } = {
       analise_natureza: "ANALISE NATUREZA",
+      analise_natureza_certo: "ANALISE NATUREZA",
       dinamica: "Dinamica",
       tabela_eventos_gl: "Tabela Eventos GI",
       tabela_eb: "Tabela EB",
+      tabela_cruzamento: "__cruzamento__",
+      tabela3_esocial_oficial: "__tabela3_oficial__",
     };
 
     const sheetName = tableNameToSheet[tableName];
     const client = await pool.connect();
     try {
+      // tabela_cruzamento: hardcoded headers matching col_a..col_f mapping
+      if (sheetName === "__cruzamento__") {
+        return [
+          { letter: "A", name: "Código" },
+          { letter: "B", name: "Nome Evento" },
+          { letter: "C", name: "Natureza E-social" },
+          { letter: "D", name: "Cód. INSS" },
+          { letter: "E", name: "Cód. IRRF" },
+          { letter: "F", name: "Cód. FGTS" },
+        ];
+      }
+
+      // tabela3_esocial_oficial: hardcoded headers
+      if (sheetName === "__tabela3_oficial__") {
+        return [
+          { letter: "A", name: "Código" },
+          { letter: "B", name: "Nome" },
+          { letter: "C", name: "Dt Início" },
+          { letter: "D", name: "Dt Fim" },
+          { letter: "E", name: "Descrição" },
+          { letter: "F", name: "Incid. Exclusiva Empregado" },
+        ];
+      }
+
       const result = await client.query(
         `SELECT analysis_data FROM uploads ORDER BY id DESC LIMIT 1`,
       );
@@ -210,15 +281,22 @@ export class DatabaseService {
       );
       if (!tableInfo) return [];
 
-      const count = Math.min(10, tableInfo.columns.length);
+      const count = Math.min(54, tableInfo.columns.length);
       const columns = [];
       for (let i = 0; i < count; i++) {
+        // Generate Excel-style letter: 0→A, 25→Z, 26→AA, 53→BB
+        let letter = "";
+        let num = i;
+        while (num >= 0) {
+          letter = String.fromCharCode(65 + (num % 26)) + letter;
+          num = Math.floor(num / 26) - 1;
+        }
         columns.push({
-          letter: String.fromCharCode(65 + i),
+          letter,
           name:
             tableInfo.columns[i] != null
               ? String(tableInfo.columns[i])
-              : `Col ${String.fromCharCode(65 + i)}`,
+              : `Col ${letter}`,
         });
       }
       return columns;

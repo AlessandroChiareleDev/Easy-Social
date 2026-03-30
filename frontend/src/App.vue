@@ -2,6 +2,7 @@
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { RouterLink, RouterView, useRouter, useRoute } from 'vue-router'
 import { useAuthStore } from './stores/auth'
+import BrandLogo from './components/BrandLogo.vue'
 
 const authStore = useAuthStore()
 const router = useRouter()
@@ -10,15 +11,39 @@ const route = useRoute()
 const sidebarCollapsed = ref(false)
 const userMenuOpen = ref(false)
 
-const navItems = [
-  { to: '/', label: 'Painel', icon: 'dashboard' },
-  { to: '/tabelas', label: 'Tabelas', icon: 'table' },
-  { to: '/validador', label: 'Validador', icon: 'check' },
-  { to: '/bot', label: 'Robô eSocial', icon: 'bot' },
+const navGroups = [
+  {
+    id: 'arquivos',
+    label: 'Arquivos, Folhas e Tabelas',
+    items: [
+      { to: '/tabelas', label: 'Tabelas', icon: 'table' },
+      { to: '/cruzamento', label: 'Cruzamento', icon: 'cruzamento' },
+      { to: '/depara', label: 'De-Para', icon: 'depara' },
+    ],
+  },
+  {
+    id: 'rubricas',
+    label: 'Rubricas',
+    items: [
+      { to: '/validador', label: 'Validador', icon: 'check' },
+      { to: '/confirmar', label: 'Confirmar', icon: 'confirm' },
+      { to: '/eb-cruzamento', label: 'EB Skills Cruzamentos', icon: 'cruzamento' },
+    ],
+  },
+  {
+    id: 'automacao',
+    label: 'Automação eSocial',
+    items: [
+      { to: '/bot', label: 'Robô eSocial', icon: 'bot' },
+      { to: '/esocial', label: 'eSocial S-1010', icon: 'esocial' },
+    ],
+  },
 ]
 
+const allNavItems = navGroups.flatMap((g) => g.items)
+
 const currentPageTitle = computed(() => {
-  return navItems.find((n) => n.to === route.path)?.label ?? ''
+  return allNavItems.find((n) => n.to === route.path)?.label ?? 'Painel'
 })
 
 const userInitial = computed(() => {
@@ -30,7 +55,8 @@ const showLayout = computed(() => {
     authStore.isLoggedIn &&
     !!authStore.empresaSelecionada &&
     route.path !== '/login' &&
-    route.path !== '/empresas'
+    route.path !== '/empresas' &&
+    route.path !== '/'
   )
 })
 
@@ -71,47 +97,45 @@ onUnmounted(() => {
   <RouterView v-if="!showLayout" />
 
   <!-- Main app with sidebar + topbar -->
-  <div v-else class="flex h-screen bg-gray-50">
+  <div v-else class="flex h-screen" style="background: #0a1024">
     <!-- Sidebar -->
     <aside
       :class="sidebarCollapsed ? 'w-16' : 'w-60'"
-      class="bg-white border-r border-gray-200 flex flex-col shrink-0 transition-all duration-300 overflow-hidden"
+      class="flex flex-col shrink-0 transition-all duration-300 overflow-hidden"
+      style="background: #0d1530; border-right: 1px solid rgba(0, 102, 255, 0.12)"
     >
       <!-- Sidebar header -->
       <div
-        class="h-16 flex items-center border-b border-gray-200"
+        class="h-16 flex items-center gap-2"
+        style="border-bottom: 1px solid rgba(0, 102, 255, 0.12)"
         :class="sidebarCollapsed ? 'justify-center px-2' : 'px-5'"
       >
-        <span v-if="!sidebarCollapsed" class="text-lg font-bold text-gray-900 whitespace-nowrap">
-          Easy Social
-        </span>
-        <span v-else class="text-lg font-bold text-primary-600">ES</span>
+        <template v-if="!sidebarCollapsed">
+          <BrandLogo :size="40" :animate="false" />
+          <span class="text-lg font-bold text-white whitespace-nowrap">Easy Social</span>
+        </template>
+        <BrandLogo v-else :size="34" :animate="false" />
       </div>
 
       <!-- Navigation -->
-      <nav class="flex-1 py-4" :class="sidebarCollapsed ? 'px-2' : 'px-3'">
+      <nav class="flex-1 py-4 overflow-y-auto" :class="sidebarCollapsed ? 'px-2' : 'px-3'">
+        <!-- Painel link -->
         <RouterLink
-          v-for="item in navItems"
-          :key="item.to"
-          :to="item.to"
+          to="/"
           :class="[
-            route.path === item.to
-              ? 'bg-primary-50 text-primary-700'
-              : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900',
+            route.path === '/'
+              ? 'bg-[#0066FF]/15 text-[#0066FF]'
+              : 'text-slate-400 hover:bg-white/5 hover:text-white',
             sidebarCollapsed ? 'justify-center' : '',
           ]"
-          class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors duration-150 mb-1 relative"
-          :title="sidebarCollapsed ? item.label : undefined"
+          class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors duration-150 mb-3 relative"
+          :title="sidebarCollapsed ? 'Painel' : undefined"
         >
-          <!-- Active indicator bar -->
           <div
-            v-if="route.path === item.to"
-            class="absolute left-0 top-1/2 -translate-y-1/2 w-[3px] h-5 bg-primary-500 rounded-r-full"
+            v-if="route.path === '/'"
+            class="absolute left-0 top-1/2 -translate-y-1/2 w-[3px] h-5 bg-[#0066FF] rounded-r-full"
           ></div>
-
-          <!-- Icons -->
           <svg
-            v-if="item.icon === 'dashboard'"
             class="w-5 h-5 shrink-0"
             viewBox="0 0 24 24"
             fill="none"
@@ -125,53 +149,152 @@ onUnmounted(() => {
             <rect x="3" y="14" width="7" height="7" rx="1" />
             <rect x="14" y="14" width="7" height="7" rx="1" />
           </svg>
-          <svg
-            v-else-if="item.icon === 'table'"
-            class="w-5 h-5 shrink-0"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <rect x="3" y="3" width="18" height="18" rx="2" />
-            <line x1="3" y1="9" x2="21" y2="9" />
-            <line x1="3" y1="15" x2="21" y2="15" />
-            <line x1="9" y1="3" x2="9" y2="21" />
-          </svg>
-          <svg
-            v-else-if="item.icon === 'check'"
-            class="w-5 h-5 shrink-0"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-            <polyline points="22 4 12 14.01 9 11.01" />
-          </svg>
-          <svg
-            v-else-if="item.icon === 'bot'"
-            class="w-5 h-5 shrink-0"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <rect x="3" y="11" width="18" height="10" rx="2" />
-            <circle cx="12" cy="5" r="2" />
-            <path d="M12 7v4" />
-            <circle cx="8.5" cy="16" r="1.5" fill="currentColor" stroke="none" />
-            <circle cx="15.5" cy="16" r="1.5" fill="currentColor" stroke="none" />
-          </svg>
-
-          <span v-if="!sidebarCollapsed" class="whitespace-nowrap">{{ item.label }}</span>
+          <span v-if="!sidebarCollapsed" class="whitespace-nowrap">Painel</span>
         </RouterLink>
+
+        <!-- Grouped nav items -->
+        <div v-for="(group, gi) in navGroups" :key="group.id" :class="gi > 0 ? 'mt-2' : ''">
+          <!-- Group header -->
+          <div
+            v-if="!sidebarCollapsed"
+            class="px-3 pt-3 pb-1.5 text-[10px] font-semibold uppercase tracking-wider text-slate-500"
+            style="border-top: 1px solid rgba(255, 255, 255, 0.06)"
+          >
+            {{ group.label }}
+          </div>
+          <div v-else class="my-2" style="border-top: 1px solid rgba(255, 255, 255, 0.06)"></div>
+
+          <RouterLink
+            v-for="item in group.items"
+            :key="item.to"
+            :to="item.to"
+            :class="[
+              route.path === item.to
+                ? 'bg-[#0066FF]/15 text-[#0066FF]'
+                : 'text-slate-400 hover:bg-white/5 hover:text-white',
+              sidebarCollapsed ? 'justify-center' : '',
+            ]"
+            class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors duration-150 mb-1 relative"
+            :title="sidebarCollapsed ? item.label : undefined"
+          >
+            <!-- Active indicator bar -->
+            <div
+              v-if="route.path === item.to"
+              class="absolute left-0 top-1/2 -translate-y-1/2 w-[3px] h-5 bg-[#0066FF] rounded-r-full"
+            ></div>
+
+            <!-- Icons -->
+            <svg
+              v-if="item.icon === 'table'"
+              class="w-5 h-5 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <line x1="3" y1="9" x2="21" y2="9" />
+              <line x1="3" y1="15" x2="21" y2="15" />
+              <line x1="9" y1="3" x2="9" y2="21" />
+            </svg>
+            <svg
+              v-else-if="item.icon === 'check'"
+              class="w-5 h-5 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+              <polyline points="22 4 12 14.01 9 11.01" />
+            </svg>
+            <svg
+              v-else-if="item.icon === 'confirm'"
+              class="w-5 h-5 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M9 11l3 3L22 4" />
+              <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+            </svg>
+            <svg
+              v-else-if="item.icon === 'cruzamento'"
+              class="w-5 h-5 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M16 3h5v5" />
+              <path d="M8 3H3v5" />
+              <path d="M21 3l-7 7" />
+              <path d="M3 3l7 7" />
+              <path d="M16 21h5v-5" />
+              <path d="M8 21H3v-5" />
+              <path d="M21 21l-7-7" />
+              <path d="M3 21l7-7" />
+            </svg>
+            <svg
+              v-else-if="item.icon === 'bot'"
+              class="w-5 h-5 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="3" y="11" width="18" height="10" rx="2" />
+              <circle cx="12" cy="5" r="2" />
+              <path d="M12 7v4" />
+              <circle cx="8.5" cy="16" r="1.5" fill="currentColor" stroke="none" />
+              <circle cx="15.5" cy="16" r="1.5" fill="currentColor" stroke="none" />
+            </svg>
+            <svg
+              v-else-if="item.icon === 'esocial'"
+              class="w-5 h-5 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 2L2 7l10 5 10-5-10-5z" />
+              <path d="M2 17l10 5 10-5" />
+              <path d="M2 12l10 5 10-5" />
+            </svg>
+            <svg
+              v-else-if="item.icon === 'depara'"
+              class="w-5 h-5 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M8 3H5a2 2 0 0 0-2 2v3" />
+              <path d="M21 8V5a2 2 0 0 0-2-2h-3" />
+              <path d="M3 16v3a2 2 0 0 0 2 2h3" />
+              <path d="M16 21h3a2 2 0 0 0 2-2v-3" />
+              <path d="M7 12h10" />
+              <path d="M14 9l3 3-3 3" />
+            </svg>
+
+            <span v-if="!sidebarCollapsed" class="whitespace-nowrap">{{ item.label }}</span>
+          </RouterLink>
+        </div>
       </nav>
     </aside>
 
@@ -179,13 +302,14 @@ onUnmounted(() => {
     <div class="flex-1 flex flex-col min-w-0">
       <!-- Top bar -->
       <header
-        class="h-16 bg-white border-b border-gray-200 flex items-center justify-between px-6 shrink-0"
+        class="h-16 flex items-center justify-between px-6 shrink-0"
+        style="background: #0d1530; border-bottom: 1px solid rgba(0, 102, 255, 0.12)"
       >
         <div class="flex items-center gap-3">
           <!-- Toggle sidebar -->
           <button
             @click="sidebarCollapsed = !sidebarCollapsed"
-            class="p-1.5 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-lg transition-colors"
+            class="p-1.5 text-slate-400 hover:text-white hover:bg-white/10 rounded-lg transition-colors"
           >
             <svg
               class="w-5 h-5"
@@ -200,17 +324,17 @@ onUnmounted(() => {
               <line x1="3" y1="18" x2="21" y2="18" />
             </svg>
           </button>
-          <h1 class="text-lg font-semibold text-gray-900">{{ currentPageTitle }}</h1>
+          <h1 class="text-lg font-semibold text-white">{{ currentPageTitle }}</h1>
         </div>
 
         <div class="flex items-center gap-4">
           <!-- Company chip -->
           <button
             @click="trocarEmpresa"
-            class="flex items-center gap-2 px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-lg text-sm font-medium text-gray-700 transition-colors"
+            class="flex items-center gap-2 px-3 py-1.5 bg-white/5 hover:bg-white/10 rounded-lg text-sm font-medium text-slate-300 transition-colors border border-white/10"
           >
             <svg
-              class="w-4 h-4 text-gray-500"
+              class="w-4 h-4 text-slate-500"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -222,7 +346,7 @@ onUnmounted(() => {
             </svg>
             {{ authStore.empresaSelecionada?.nome }}
             <svg
-              class="w-3.5 h-3.5 text-gray-400"
+              class="w-3.5 h-3.5 text-slate-500"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -236,7 +360,7 @@ onUnmounted(() => {
           <div class="relative user-menu-container">
             <button
               @click.stop="userMenuOpen = !userMenuOpen"
-              class="w-8 h-8 rounded-full bg-primary-600 text-white text-sm font-semibold flex items-center justify-center hover:bg-primary-700 transition-colors"
+              class="w-8 h-8 rounded-full bg-[#0066FF] text-white text-sm font-semibold flex items-center justify-center hover:bg-[#0055dd] transition-colors"
             >
               {{ userInitial }}
             </button>
@@ -252,15 +376,16 @@ onUnmounted(() => {
             >
               <div
                 v-if="userMenuOpen"
-                class="absolute right-0 mt-2 w-56 bg-white border border-gray-200 rounded-xl shadow-xl py-2 z-50"
+                class="absolute right-0 mt-2 w-56 rounded-xl shadow-xl py-2 z-50"
+                style="background: #111b3a; border: 1px solid rgba(0, 102, 255, 0.15)"
               >
-                <div class="px-4 py-2 border-b border-gray-100">
-                  <p class="text-sm font-medium text-gray-900">{{ authStore.user?.nome }}</p>
-                  <p class="text-xs text-gray-500 mt-0.5">{{ authStore.user?.email }}</p>
+                <div class="px-4 py-2" style="border-bottom: 1px solid rgba(255, 255, 255, 0.08)">
+                  <p class="text-sm font-medium text-white">{{ authStore.user?.nome }}</p>
+                  <p class="text-xs text-slate-400 mt-0.5">{{ authStore.user?.email }}</p>
                 </div>
                 <button
                   @click="handleLogout"
-                  class="w-full flex items-center gap-2 px-4 py-2 text-sm text-red-600 hover:bg-red-50 transition-colors mt-1"
+                  class="w-full flex items-center gap-2 px-4 py-2 text-sm text-red-400 hover:bg-red-500/10 transition-colors mt-1"
                 >
                   <svg
                     class="w-4 h-4"
@@ -280,7 +405,7 @@ onUnmounted(() => {
       </header>
 
       <!-- Page content -->
-      <main class="flex-1 overflow-auto p-6">
+      <main class="flex-1 overflow-auto p-6" style="background: #0a1024">
         <div class="max-w-[1400px] mx-auto">
           <RouterView />
         </div>

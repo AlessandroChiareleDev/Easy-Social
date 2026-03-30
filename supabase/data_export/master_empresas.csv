@@ -1,0 +1,2 @@
+id,nome,cnpj,db_name,db_host,db_port,ativo,criado_em
+1,APPA SERVICOS TEMPORARIOS E EFETIVOS LTDA,05.969.071/0001-10,easy_social_db,localhost,5432,t,2026-03-26 13:02:31.09173

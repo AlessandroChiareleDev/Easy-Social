@@ -1,0 +1,4 @@
+id,email,nome,senha_hash,role,ativo,criado_em,atualizado_em,username
+1,admin@easysocial.com,Administrador,$2b$12$Wyguegnc7n0RWpiPxY9oPuhTZqBc5/KxiqgksoaYfcg6Wxp0lgqD6,admin,t,2026-03-26 13:02:31.321535,2026-03-28 21:21:56.770915,admin
+2,ana@appa.com,Ana,$2b$12$ju/XX6NHwXMM9nsNGDIKmec4E2BOXLNaNXHlW9sglxrR8Xe42ZRDS,operador,t,2026-03-26 14:15:37.607418,2026-03-30 01:07:10.136456,Ana
+3,lobo@appa.com,Lobo,$2b$12$vl4yE7j7PXUZOJe6hxBLsOAy7aRf0go2KN869dzpanQv8xSaWmDTS,operador,t,2026-03-27 11:45:42.517343,2026-03-27 11:51:52.436076,Lobo

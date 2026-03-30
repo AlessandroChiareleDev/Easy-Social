@@ -5,7 +5,7 @@ import axios from 'axios'
 const API_URL =
   window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
     ? import.meta.env.VITE_API_URL || 'http://localhost:3333/api'
-    : 'https://bacteria-rare-packet-rand.trycloudflare.com/api'
+    : 'https://article-latest-approaches-tan.trycloudflare.com/api'
 
 export interface User {
   userId: number

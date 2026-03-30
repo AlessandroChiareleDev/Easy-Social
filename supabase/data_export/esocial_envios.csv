@@ -1,0 +1,756 @@
+id,tipo_evento,modo,status,protocolo_envio,codigo_resposta,descricao_resposta,total_eventos,rubrica_ids,xml_retorno,ocorrencias,created_at,updated_at,ambiente,ini_valid,rubrica_detalhes,xml_enviado,recibo_consulta
+1,S-1010,alteracao,processado,1.2.202603.0000000000205430968,201,Lote Recebido com Sucesso.,1,[1036],,[],2026-03-28 02:11:53.476079,2026-03-28 02:14:31.881735,2,,,,
+2,S-1010,alteracao,processado,1.2.202603.0000000000205430990,201,Lote Recebido com Sucesso.,1,[1036],,[],2026-03-28 02:28:00.237316,2026-03-28 02:28:26.338792,2,,,,
+3,S-1010,inclusao,processado,1.2.202603.0000000000205431018,201,Lote Recebido com Sucesso.,1,[1036],,[],2026-03-28 02:31:52.034218,2026-03-28 02:32:07.478404,2,,,,
+4,S-1010,alteracao,enviado,1.2.202603.0000000000205431186,201,Lote Recebido com Sucesso.,1,"[""156""]",,[],2026-03-28 04:43:26.776911,2026-03-28 04:43:26.776911,2,,,,
+7,S-1010,inclusao,erro,1.1.202603.0000000012937113286,201,Lote Recebido com Sucesso.,1,"[""156""]",,[],2026-03-28 04:57:33.378479,2026-03-28 09:15:30.18924,2,,,,
+6,S-1010,alteracao,erro,1.1.202603.0000000012937112906,201,Lote Recebido com Sucesso.,1,"[""156""]",,[],2026-03-28 04:56:08.09226,2026-03-28 09:15:35.214875,2,,,,
+10,S-1010,alteracao,erro,1.1.202603.0000000012937562937,201,Lote Recebido com Sucesso.,1,"[""228""]",,[],2026-03-28 11:55:22.412996,2026-03-28 12:14:59.7356,1,"","[{""analise"": ""Rubrica com inconsistência de IRRF"", ""nat_rubr"": ""6129"", ""descricao"": ""REEMB. DESC. ASSIST. MEDICA"", ""incid_fgts"": ""0"", ""incid_inss"": ""0"", ""incid_irrf"": ""0"", ""cod_rubrica"": ""228"", ""cod_natureza"": ""6129 - Outras verbas não remuneratórias (indenizatórias ou multas)"", ""fgts_correto"": ""0"", ""inss_correto"": ""0"", ""irrf_correto"": ""79"", ""base_legal_fgts"": ""0 - Artigo 15 da Lei n° 8.036/90"", ""base_legal_inss"": ""0 - Artigo 28, inciso I, da Lei n° 8.212/91"", ""base_legal_irrf"": ""79 - Artigos 6 da Lei nº 7.713/88 e Artigo 2° da Lei n° 8.036/90, e artigo 65 do Decreto n° 9.580/2018""}]","<?xml version=""1.0"" encoding=""UTF-8""?>
+<soapenv:Envelope xmlns:soapenv=""http://schemas.xmlsoap.org/soap/envelope/"" xmlns:v1=""http://www.esocial.gov.br/servicos/empregador/lote/eventos/envio/v1_1_0"">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <v1:EnviarLoteEventos>
+      <v1:loteEventos><eSocial xmlns=""http://www.esocial.gov.br/schema/lote/eventos/envio/v1_1_1"">
+  <envioLoteEventos grupo=""1"">
+    <ideEmpregador>
+      <tpInsc>1</tpInsc>
+      <nrInsc>05969071</nrInsc>
+    </ideEmpregador>
+    <ideTransmissor>
+      <tpInsc>1</tpInsc>
+      <nrInsc>05969071000110</nrInsc>
+    </ideTransmissor>
+    <eventos>
+            <evento Id=""ID1059690710000002026032814552200001"">
+              <eSocial xmlns=""http://www.esocial.gov.br/schema/evt/evtTabRubrica/v_S_01_03_00""><evtTabRubrica Id=""ID1059690710000002026032814552200001""><ideEvento><tpAmb>1</tpAmb><procEmi>1</procEmi><verProc>EasySocial_1.0</verProc></ideEvento><ideEmpregador><tpInsc>1</tpInsc><nrInsc>05969071</nrInsc></ideEmpregador><infoRubrica><alteracao><ideRubrica><codRubr>228</codRubr><ideTabRubr>1</ideTabRubr><iniValid>2014-01</iniValid></ideRubrica><dadosRubrica><dscRubr>REEMB. DESC. ASSIST. MEDICA</dscRubr><natRubr>6129</natRubr><tpRubr>1</tpRubr><codIncCP>00</codIncCP><codIncIRRF>79</codIncIRRF><codIncFGTS>00</codIncFGTS><codIncPisPasep>00</codIncPisPasep></dadosRubrica></alteracao></infoRubrica></evtTabRubrica><ds:Signature xmlns:ds=""http://www.w3.org/2000/09/xmldsig#""><ds:SignedInfo><ds:CanonicalizationMethod Algorithm=""http://www.w3.org/TR/2001/REC-xml-c14n-20010315""/><ds:SignatureMethod Algorithm=""http://www.w3.org/2001/04/xmldsig-more#rsa-sha256""/><ds:Reference URI=""""><ds:Transforms><ds:Transform Algorithm=""http://www.w3.org/2000/09/xmldsig#enveloped-signature""/><ds:Transform Algorithm=""http://www.w3.org/TR/2001/REC-xml-c14n-20010315""/></ds:Transforms><ds:DigestMethod Algorithm=""http://www.w3.org/2001/04/xmlenc#sha256""/><ds:DigestValue>2/to/rPvuzG9j/AHlPjmfBULUFmQhl4z80QL8OcYO7E=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue>ITFeZgBxoetQ2V92Ahg6CRn3joQGoz0ib3fpGMTroGrXcPhyQ9dBLOBtMj2LCehgVVeBa1RujUx2xJqsNv/AfPxyoJ8c4nnkIh/0+zFv6SMAdbzRozylD7Z3zB/m1Nddq2N84szPyQfqUM16deredXF3Ll+TmU1dCRzWcFmII8WXzuFb5F1DlGz/ls90fofktNRSxym5gocSzO87ddNqwxlQbQC8wdDxH+S96UZgqwvTz7FIPVScU2qFuIEfwIucN5AV4vegLkSozYQz+YHkTR8i24k+GV+o1qRWL4Nt0AQinkodKvidJA3DUkRmhnsSeXQe7Gs6YB4l5R3xEe/2Cg==</ds:SignatureValue><ds:KeyInfo><ds:X509Data><ds:X509Certificate>MIIH+TCCBeGgAwIBAgIIRcfr6E8/5mUwDQYJKoZIhvcNAQELBQAwdjELMAkGA1UE
+BhMCQlIxEzARBgNVBAoTCklDUC1CcmFzaWwxNjA0BgNVBAsTLVNlY3JldGFyaWEg
+ZGEgUmVjZWl0YSBGZWRlcmFsIGRvIEJyYXNpbCAtIFJGQjEaMBgGA1UEAxMRQUMg
+U0FGRVdFQiBSRkIgdjUwHhcNMjUwOTE5MTYzMjU5WhcNMjYwOTE5MTYzMjU5WjCC
+AQoxCzAJBgNVBAYTAkJSMRMwEQYDVQQKEwpJQ1AtQnJhc2lsMQswCQYDVQQIEwJT
+UDESMBAGA1UEBxMJU0FPIFBBVUxPMTYwNAYDVQQLEy1TZWNyZXRhcmlhIGRhIFJl
+Y2VpdGEgRmVkZXJhbCBkbyBCcmFzaWwgLSBSRkIxFjAUBgNVBAsTDVJGQiBlLUNO
+UEogQTExFzAVBgNVBAsTDjQ1OTUxNTk4MDAwMTMyMRkwFwYDVQQLExB2aWRlb2Nv
+bmZlcmVuY2lhMUEwPwYDVQQDEzhBUFBBIFNFUlZJQ09TIFRFTVBPUkFSSU9TIEUg
+RUZFVElWT1MgTFREQTowNTk2OTA3MTAwMDExMDCCASIwDQYJKoZIhvcNAQEBBQAD
+ggEPADCCAQoCggEBALrWAqx2qqfyzPymhGVcvtK4+yHKNiHW/OysBetF7crKfTBl
+fOHoIwqWb2NeQdDxwknSfrngs/OksNKGP09z4v+0Vzg9YvCTiT3xiwar8cFzcF4e
+jpYSQPf+ZvA/TLHH5GEli3nPQbphUddg8NQAZD0yACENatLfMMAGy2p82gZDc5fK
+fPzYMG71U85CNgcUL4/p/B80Rf0quj9fnMFVHZ0nrQWKjF9L29H/QVXHWTx6v8wx
+vIZ/nBWWWpV2dXlG4VJa9weJ+6zzd75PjzESC1TqVgRwpDKQlmRheapXj51+6KHi
+qf3fZQbbVFiatNo8d6ccuPPkkajNpTC6+esrsd0CAwEAAaOCAvMwggLvMB8GA1Ud
+IwQYMBaAFCleS9VGTLv+FqdjwR3EJvLd2PMFMA4GA1UdDwEB/wQEAwIF4DBpBgNV
+HSAEYjBgMF4GBmBMAQIBMzBUMFIGCCsGAQUFBwIBFkZodHRwOi8vcmVwb3NpdG9y
+aW8uYWNzYWZld2ViLmNvbS5ici9hYy1zYWZld2VicmZiL2RwYy1hY3NhZmV3ZWJy
+ZmIucGRmMIGuBgNVHR8EgaYwgaMwT6BNoEuGSWh0dHA6Ly9yZXBvc2l0b3Jpby5h
+Y3NhZmV3ZWIuY29tLmJyL2FjLXNhZmV3ZWJyZmIvbGNyLWFjLXNhZmV3ZWJyZmJ2
+NS5jcmwwUKBOoEyGSmh0dHA6Ly9yZXBvc2l0b3JpbzIuYWNzYWZld2ViLmNvbS5i
+ci9hYy1zYWZld2VicmZiL2xjci1hYy1zYWZld2VicmZidjUuY3JsMIG3BggrBgEF
+BQcBAQSBqjCBpzBRBggrBgEFBQcwAoZFaHR0cDovL3JlcG9zaXRvcmlvLmFjc2Fm
+ZXdlYi5jb20uYnIvYWMtc2FmZXdlYnJmYi9hYy1zYWZld2VicmZidjUucDdiMFIG
+CCsGAQUFBzAChkZodHRwOi8vcmVwb3NpdG9yaW8yLmFjc2FmZXdlYi5jb20uYnIv
+YWMtc2FmZXdlYnJmYi9hYy1zYWZld2VicmZidjUucDdiMIG7BgNVHREEgbMwgbCB
+IEVEVUFSRE8uTkVUT0BBUFBBRU1QUkVHT1MuQ09NLkJSoB4GBWBMAQMCoBUTE0VE
+VUFSRE8gRFVBUlRFIE5FVE+gGQYFYEwBAwOgEBMOMDU5NjkwNzEwMDAxMTCgOAYF
+YEwBAwSgLxMtMjEwNDE5NzAyNDU1MzQxMTg2NTAwMDAwMDAwMDAwMDAwMDAwMDAw
+MDAwMDAwoBcGBWBMAQMHoA4TDDAwMDAwMDAwMDAwMDAdBgNVHSUEFjAUBggrBgEF
+BQcDAgYIKwYBBQUHAwQwCQYDVR0TBAIwADANBgkqhkiG9w0BAQsFAAOCAgEAevBW
+nahGX6HuYq9HYWCfpMWLoAf+4rsBhJP6jpqvIQY9WgxTOPeOjNmWuEVVCsLYTpEV
+88VuLTxlkEDrGsR0RWvpo7DNNrMcg/O7wVxBMYNezE+Syna1c4HuC11hJl7++dAj
+Aslm6FQStLY3AzKl/I2FKcK9vOxGysa5IupQqP7fPyWf0531tCbQpVFYlBs1ziap
+J9cYPKenuYQeNgcW5z5ackXb5ypRFKE8K7Fk6xKJsdM6F5T1eHBdta4N+W1f8RGK
+xt+xd7NwN4e02R6k/m8Qy4wMggannspwosTOYBy4KYJOUD15iTU+v/+SZHkfcg6S
+pYO2qK5Qzt2/gx/SkBw+PP27mSrXswLwTGFsh9swVTuOBBwDN3oXCKaMYUxiIo1f
+Hnedbll2ad4HqeTWHuii9jJLQfHRmKz6AOUErK4XJdWQyuaFv6jqL/gR2FOzkhWZ
+pISNdauJF4EV6ePgJdeb6zyASz103crcr/imnZmzxN055fa5Jq1r9Pj4k3dEygU8
+gZS7Rqo5afI2+6wUfd05b1dexu4TT1kiN0HWrrv+pxZ+YbkSsY8cbEK7cRD3CJcS
+R32YGZzejvwkyDuwqYQFjyuLAktUUaMzz3VbMRsNSJidgDOWMkxxsIWe7OazS7Dr
+9ZMDdTWee2d4Jwk/KHcnvSyQKQDpRVuOZ8j/xmo=
+</ds:X509Certificate></ds:X509Data></ds:KeyInfo></ds:Signature></eSocial>
+            </evento>
+    </eventos>
+  </envioLoteEventos>
+</eSocial></v1:loteEventos>
+    </v1:EnviarLoteEventos>
+  </soapenv:Body>
+</soapenv:Envelope>","{""eventos"": [{""id"": ""ID1059690710000002026032814552200001"", ""descricao"": ""Conteudo do evento inválido."", ""nr_recibo"": null, ""ocorrencias"": [{""tipo"": ""1"", ""codigo"": ""130"", ""descricao"": ""É necessário existir informação cadastral do empregador para o período.\nAção Sugerida: Verificar se já foi enviado um evento de cadastramento do empregador.""}], ""codigo_resposta"": ""401""}], ""sucesso"": true, ""descricao"": ""Lote processado com sucesso."", ""codigo_resposta"": ""201""}"
+5,S-1010,inclusao,processado,1.2.202603.0000000000205431190,201,Lote Recebido com Sucesso.,1,"[""156""]",,[],2026-03-28 04:45:20.378267,2026-03-28 09:43:40.378254,2,,,,
+11,S-1010,alteracao,enviado,1.1.202603.0000000012937600584,201,Lote Recebido com Sucesso.,1,"[""228""]",,[],2026-03-28 12:22:16.380048,2026-03-28 12:22:16.380048,1,2018-02,"[{""analise"": ""Rubrica com inconsistência de IRRF"", ""nat_rubr"": ""6129"", ""descricao"": ""REEMB. DESC. ASSIST. MEDICA"", ""incid_fgts"": ""0"", ""incid_inss"": ""0"", ""incid_irrf"": ""0"", ""cod_rubrica"": ""228"", ""cod_natureza"": ""6129 - Outras verbas não remuneratórias (indenizatórias ou multas)"", ""fgts_correto"": ""0"", ""inss_correto"": ""0"", ""irrf_correto"": ""79"", ""base_legal_fgts"": ""0 - Artigo 15 da Lei n° 8.036/90"", ""base_legal_inss"": ""0 - Artigo 28, inciso I, da Lei n° 8.212/91"", ""base_legal_irrf"": ""79 - Artigos 6 da Lei nº 7.713/88 e Artigo 2° da Lei n° 8.036/90, e artigo 65 do Decreto n° 9.580/2018""}]","<?xml version=""1.0"" encoding=""UTF-8""?>
+<soapenv:Envelope xmlns:soapenv=""http://schemas.xmlsoap.org/soap/envelope/"" xmlns:v1=""http://www.esocial.gov.br/servicos/empregador/lote/eventos/envio/v1_1_0"">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <v1:EnviarLoteEventos>
+      <v1:loteEventos><eSocial xmlns=""http://www.esocial.gov.br/schema/lote/eventos/envio/v1_1_1"">
+  <envioLoteEventos grupo=""1"">
+    <ideEmpregador>
+      <tpInsc>1</tpInsc>
+      <nrInsc>05969071</nrInsc>
+    </ideEmpregador>
+    <ideTransmissor>
+      <tpInsc>1</tpInsc>
+      <nrInsc>05969071000110</nrInsc>
+    </ideTransmissor>
+    <eventos>
+            <evento Id=""ID1059690710000002026032815221600001"">
+              <eSocial xmlns=""http://www.esocial.gov.br/schema/evt/evtTabRubrica/v_S_01_03_00""><evtTabRubrica Id=""ID1059690710000002026032815221600001""><ideEvento><tpAmb>1</tpAmb><procEmi>1</procEmi><verProc>EasySocial_1.0</verProc></ideEvento><ideEmpregador><tpInsc>1</tpInsc><nrInsc>05969071</nrInsc></ideEmpregador><infoRubrica><alteracao><ideRubrica><codRubr>228</codRubr><ideTabRubr>1</ideTabRubr><iniValid>2018-02</iniValid></ideRubrica><dadosRubrica><dscRubr>REEMB. DESC. ASSIST. MEDICA</dscRubr><natRubr>6129</natRubr><tpRubr>1</tpRubr><codIncCP>00</codIncCP><codIncIRRF>79</codIncIRRF><codIncFGTS>00</codIncFGTS><codIncPisPasep>00</codIncPisPasep></dadosRubrica></alteracao></infoRubrica></evtTabRubrica><ds:Signature xmlns:ds=""http://www.w3.org/2000/09/xmldsig#""><ds:SignedInfo><ds:CanonicalizationMethod Algorithm=""http://www.w3.org/TR/2001/REC-xml-c14n-20010315""/><ds:SignatureMethod Algorithm=""http://www.w3.org/2001/04/xmldsig-more#rsa-sha256""/><ds:Reference URI=""""><ds:Transforms><ds:Transform Algorithm=""http://www.w3.org/2000/09/xmldsig#enveloped-signature""/><ds:Transform Algorithm=""http://www.w3.org/TR/2001/REC-xml-c14n-20010315""/></ds:Transforms><ds:DigestMethod Algorithm=""http://www.w3.org/2001/04/xmlenc#sha256""/><ds:DigestValue>0tWbxADXTc7+id5Sj3oABZEIGS7Zr/MU/CMsOpmkAVg=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue>UD98SxMKU6y17RowkGqwu7ca/g/siW7Z5xQpggjQyM9fjeWMOe+4Asee08pQL3QT5NR6FDtOX7GJKLBhnZwJO/Y47cJkZ2pc9+LLp4IgDaAfF2gcARwdYUJUE8hF3pAPpm2n3ZJqdej0cpXNq0wx91xA2VPIqJLCOupwhJKCROmPssYHRuSqDzu1Pwx6yxyFAZI6Qnnof5nqKePghK/x/YpNQttMak9gVviE54dtNyv7c2qkHFZ2XZ+cU10jNgF926MEf3vhkluoP9VTL2MsSlQvNSu7IeoVEffu/6H3tqRsjXaI/qa475BgaDGzgK0L9oW3wGaUkMWgW/Of8DLpdg==</ds:SignatureValue><ds:KeyInfo><ds:X509Data><ds:X509Certificate>MIIH+TCCBeGgAwIBAgIIRcfr6E8/5mUwDQYJKoZIhvcNAQELBQAwdjELMAkGA1UE
+BhMCQlIxEzARBgNVBAoTCklDUC1CcmFzaWwxNjA0BgNVBAsTLVNlY3JldGFyaWEg
+ZGEgUmVjZWl0YSBGZWRlcmFsIGRvIEJyYXNpbCAtIFJGQjEaMBgGA1UEAxMRQUMg
+U0FGRVdFQiBSRkIgdjUwHhcNMjUwOTE5MTYzMjU5WhcNMjYwOTE5MTYzMjU5WjCC
+AQoxCzAJBgNVBAYTAkJSMRMwEQYDVQQKEwpJQ1AtQnJhc2lsMQswCQYDVQQIEwJT
+UDESMBAGA1UEBxMJU0FPIFBBVUxPMTYwNAYDVQQLEy1TZWNyZXRhcmlhIGRhIFJl
+Y2VpdGEgRmVkZXJhbCBkbyBCcmFzaWwgLSBSRkIxFjAUBgNVBAsTDVJGQiBlLUNO
+UEogQTExFzAVBgNVBAsTDjQ1OTUxNTk4MDAwMTMyMRkwFwYDVQQLExB2aWRlb2Nv
+bmZlcmVuY2lhMUEwPwYDVQQDEzhBUFBBIFNFUlZJQ09TIFRFTVBPUkFSSU9TIEUg
+RUZFVElWT1MgTFREQTowNTk2OTA3MTAwMDExMDCCASIwDQYJKoZIhvcNAQEBBQAD
+ggEPADCCAQoCggEBALrWAqx2qqfyzPymhGVcvtK4+yHKNiHW/OysBetF7crKfTBl
+fOHoIwqWb2NeQdDxwknSfrngs/OksNKGP09z4v+0Vzg9YvCTiT3xiwar8cFzcF4e
+jpYSQPf+ZvA/TLHH5GEli3nPQbphUddg8NQAZD0yACENatLfMMAGy2p82gZDc5fK
+fPzYMG71U85CNgcUL4/p/B80Rf0quj9fnMFVHZ0nrQWKjF9L29H/QVXHWTx6v8wx
+vIZ/nBWWWpV2dXlG4VJa9weJ+6zzd75PjzESC1TqVgRwpDKQlmRheapXj51+6KHi
+qf3fZQbbVFiatNo8d6ccuPPkkajNpTC6+esrsd0CAwEAAaOCAvMwggLvMB8GA1Ud
+IwQYMBaAFCleS9VGTLv+FqdjwR3EJvLd2PMFMA4GA1UdDwEB/wQEAwIF4DBpBgNV
+HSAEYjBgMF4GBmBMAQIBMzBUMFIGCCsGAQUFBwIBFkZodHRwOi8vcmVwb3NpdG9y
+aW8uYWNzYWZld2ViLmNvbS5ici9hYy1zYWZld2VicmZiL2RwYy1hY3NhZmV3ZWJy
+ZmIucGRmMIGuBgNVHR8EgaYwgaMwT6BNoEuGSWh0dHA6Ly9yZXBvc2l0b3Jpby5h
+Y3NhZmV3ZWIuY29tLmJyL2FjLXNhZmV3ZWJyZmIvbGNyLWFjLXNhZmV3ZWJyZmJ2
+NS5jcmwwUKBOoEyGSmh0dHA6Ly9yZXBvc2l0b3JpbzIuYWNzYWZld2ViLmNvbS5i
+ci9hYy1zYWZld2VicmZiL2xjci1hYy1zYWZld2VicmZidjUuY3JsMIG3BggrBgEF
+BQcBAQSBqjCBpzBRBggrBgEFBQcwAoZFaHR0cDovL3JlcG9zaXRvcmlvLmFjc2Fm
+ZXdlYi5jb20uYnIvYWMtc2FmZXdlYnJmYi9hYy1zYWZld2VicmZidjUucDdiMFIG
+CCsGAQUFBzAChkZodHRwOi8vcmVwb3NpdG9yaW8yLmFjc2FmZXdlYi5jb20uYnIv
+YWMtc2FmZXdlYnJmYi9hYy1zYWZld2VicmZidjUucDdiMIG7BgNVHREEgbMwgbCB
+IEVEVUFSRE8uTkVUT0BBUFBBRU1QUkVHT1MuQ09NLkJSoB4GBWBMAQMCoBUTE0VE
+VUFSRE8gRFVBUlRFIE5FVE+gGQYFYEwBAwOgEBMOMDU5NjkwNzEwMDAxMTCgOAYF
+YEwBAwSgLxMtMjEwNDE5NzAyNDU1MzQxMTg2NTAwMDAwMDAwMDAwMDAwMDAwMDAw
+MDAwMDAwoBcGBWBMAQMHoA4TDDAwMDAwMDAwMDAwMDAdBgNVHSUEFjAUBggrBgEF
+BQcDAgYIKwYBBQUHAwQwCQYDVR0TBAIwADANBgkqhkiG9w0BAQsFAAOCAgEAevBW
+nahGX6HuYq9HYWCfpMWLoAf+4rsBhJP6jpqvIQY9WgxTOPeOjNmWuEVVCsLYTpEV
+88VuLTxlkEDrGsR0RWvpo7DNNrMcg/O7wVxBMYNezE+Syna1c4HuC11hJl7++dAj
+Aslm6FQStLY3AzKl/I2FKcK9vOxGysa5IupQqP7fPyWf0531tCbQpVFYlBs1ziap
+J9cYPKenuYQeNgcW5z5ackXb5ypRFKE8K7Fk6xKJsdM6F5T1eHBdta4N+W1f8RGK
+xt+xd7NwN4e02R6k/m8Qy4wMggannspwosTOYBy4KYJOUD15iTU+v/+SZHkfcg6S
+pYO2qK5Qzt2/gx/SkBw+PP27mSrXswLwTGFsh9swVTuOBBwDN3oXCKaMYUxiIo1f
+Hnedbll2ad4HqeTWHuii9jJLQfHRmKz6AOUErK4XJdWQyuaFv6jqL/gR2FOzkhWZ
+pISNdauJF4EV6ePgJdeb6zyASz103crcr/imnZmzxN055fa5Jq1r9Pj4k3dEygU8
+gZS7Rqo5afI2+6wUfd05b1dexu4TT1kiN0HWrrv+pxZ+YbkSsY8cbEK7cRD3CJcS
+R32YGZzejvwkyDuwqYQFjyuLAktUUaMzz3VbMRsNSJidgDOWMkxxsIWe7OazS7Dr
+9ZMDdTWee2d4Jwk/KHcnvSyQKQDpRVuOZ8j/xmo=
+</ds:X509Certificate></ds:X509Data></ds:KeyInfo></ds:Signature></eSocial>
+            </evento>
+    </eventos>
+  </envioLoteEventos>
+</eSocial></v1:loteEventos>
+    </v1:EnviarLoteEventos>
+  </soapenv:Body>
+</soapenv:Envelope>",
+8,S-1010,alteracao,erro,1.1.202603.0000000012937362376,201,Lote Recebido com Sucesso.,1,"[""185""]",,[],2026-03-28 10:03:46.8522,2026-03-28 10:16:42.087653,1,2026-03,"[{""analise"": ""Rubrica com inconsistência de INSS, IRRF e FGTS"", ""nat_rubr"": ""6102"", ""descricao"": ""INDENIZACAO LEI Nº 7.238/84"", ""incid_fgts"": ""11"", ""incid_inss"": ""11"", ""incid_irrf"": ""11"", ""cod_rubrica"": ""185"", ""cod_natureza"": ""6102 - Indenização do art. 9º lei nº 7.238/84"", ""fgts_correto"": ""0"", ""inss_correto"": ""0"", ""irrf_correto"": ""74"", ""base_legal_fgts"": ""0 - Artigo 15, § 6º da Lei n° 8.036/90"", ""base_legal_inss"": ""0 - Artigo 28, § 9º da Lei n° 8.212/91"", ""base_legal_irrf"": ""74 - Artigo 6º, inciso V da Lei nº 7.713/88 e artigo 28 da Lei nº 8.036/90""}]","<?xml version=""1.0"" encoding=""UTF-8""?>
+<soapenv:Envelope xmlns:soapenv=""http://schemas.xmlsoap.org/soap/envelope/"" xmlns:v1=""http://www.esocial.gov.br/servicos/empregador/lote/eventos/envio/v1_1_0"">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <v1:EnviarLoteEventos>
+      <v1:loteEventos><eSocial xmlns=""http://www.esocial.gov.br/schema/lote/eventos/envio/v1_1_1"">
+  <envioLoteEventos grupo=""1"">
+    <ideEmpregador>
+      <tpInsc>1</tpInsc>
+      <nrInsc>05969071</nrInsc>
+    </ideEmpregador>
+    <ideTransmissor>
+      <tpInsc>1</tpInsc>
+      <nrInsc>05969071000110</nrInsc>
+    </ideTransmissor>
+    <eventos>
+            <evento Id=""ID1059690710000002026032813034600001"">
+              <eSocial xmlns=""http://www.esocial.gov.br/schema/evt/evtTabRubrica/v_S_01_03_00""><evtTabRubrica Id=""ID1059690710000002026032813034600001""><ideEvento><tpAmb>1</tpAmb><procEmi>1</procEmi><verProc>EasySocial_1.0</verProc></ideEvento><ideEmpregador><tpInsc>1</tpInsc><nrInsc>05969071</nrInsc></ideEmpregador><infoRubrica><alteracao><ideRubrica><codRubr>185</codRubr><ideTabRubr>1</ideTabRubr><iniValid>2026-03</iniValid></ideRubrica><dadosRubrica><dscRubr>INDENIZACAO LEI Nº 7.238/84</dscRubr><natRubr>6102</natRubr><tpRubr>1</tpRubr><codIncCP>00</codIncCP><codIncIRRF>74</codIncIRRF><codIncFGTS>00</codIncFGTS><codIncPisPasep>00</codIncPisPasep></dadosRubrica></alteracao></infoRubrica></evtTabRubrica><ds:Signature xmlns:ds=""http://www.w3.org/2000/09/xmldsig#""><ds:SignedInfo><ds:CanonicalizationMethod Algorithm=""http://www.w3.org/TR/2001/REC-xml-c14n-20010315""/><ds:SignatureMethod Algorithm=""http://www.w3.org/2001/04/xmldsig-more#rsa-sha256""/><ds:Reference URI=""""><ds:Transforms><ds:Transform Algorithm=""http://www.w3.org/2000/09/xmldsig#enveloped-signature""/><ds:Transform Algorithm=""http://www.w3.org/TR/2001/REC-xml-c14n-20010315""/></ds:Transforms><ds:DigestMethod Algorithm=""http://www.w3.org/2001/04/xmlenc#sha256""/><ds:DigestValue>Ibxqbw2rxq3fZuhKRfcZJYt4Bc5Q8BplV0U96V/ZDwg=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue>rh0185+Wpy7v9w9UIfSmdS4hyKdc+bmq9TV+y8G7fNifUFeoqpcRkQYU+XkZwpZH4UkytzpgNwV4q5EvMSPUqe73CYvVFPTbGX/xVfjcBQ/ruFtPN87UFirq37vBGelKLF9QSxi12NTXAX+ka7jSAJala31TUWAPBX3Rr6fBsScxegtJi3RcFD1tMvLzcufarU9sYrOn2rC9stVxBh84PXqi/AyR3zFCqMV+zNC08JA9BRWJbNk8fKVX1qyF66CLGMQzIhgboO4Hk4qpVpejkZfP7gaq+MoKy7RRkaFqXu+tcrgyjV3bYifvX16evbQzVWIyIoAj9Zt1Bw6daBxN/g==</ds:SignatureValue><ds:KeyInfo><ds:X509Data><ds:X509Certificate>MIIH+TCCBeGgAwIBAgIIRcfr6E8/5mUwDQYJKoZIhvcNAQELBQAwdjELMAkGA1UE
+BhMCQlIxEzARBgNVBAoTCklDUC1CcmFzaWwxNjA0BgNVBAsTLVNlY3JldGFyaWEg
+ZGEgUmVjZWl0YSBGZWRlcmFsIGRvIEJyYXNpbCAtIFJGQjEaMBgGA1UEAxMRQUMg
+U0FGRVdFQiBSRkIgdjUwHhcNMjUwOTE5MTYzMjU5WhcNMjYwOTE5MTYzMjU5WjCC
+AQoxCzAJBgNVBAYTAkJSMRMwEQYDVQQKEwpJQ1AtQnJhc2lsMQswCQYDVQQIEwJT
+UDESMBAGA1UEBxMJU0FPIFBBVUxPMTYwNAYDVQQLEy1TZWNyZXRhcmlhIGRhIFJl
+Y2VpdGEgRmVkZXJhbCBkbyBCcmFzaWwgLSBSRkIxFjAUBgNVBAsTDVJGQiBlLUNO
+UEogQTExFzAVBgNVBAsTDjQ1OTUxNTk4MDAwMTMyMRkwFwYDVQQLExB2aWRlb2Nv
+bmZlcmVuY2lhMUEwPwYDVQQDEzhBUFBBIFNFUlZJQ09TIFRFTVBPUkFSSU9TIEUg
+RUZFVElWT1MgTFREQTowNTk2OTA3MTAwMDExMDCCASIwDQYJKoZIhvcNAQEBBQAD
+ggEPADCCAQoCggEBALrWAqx2qqfyzPymhGVcvtK4+yHKNiHW/OysBetF7crKfTBl
+fOHoIwqWb2NeQdDxwknSfrngs/OksNKGP09z4v+0Vzg9YvCTiT3xiwar8cFzcF4e
+jpYSQPf+ZvA/TLHH5GEli3nPQbphUddg8NQAZD0yACENatLfMMAGy2p82gZDc5fK
+fPzYMG71U85CNgcUL4/p/B80Rf0quj9fnMFVHZ0nrQWKjF9L29H/QVXHWTx6v8wx
+vIZ/nBWWWpV2dXlG4VJa9weJ+6zzd75PjzESC1TqVgRwpDKQlmRheapXj51+6KHi
+qf3fZQbbVFiatNo8d6ccuPPkkajNpTC6+esrsd0CAwEAAaOCAvMwggLvMB8GA1Ud
+IwQYMBaAFCleS9VGTLv+FqdjwR3EJvLd2PMFMA4GA1UdDwEB/wQEAwIF4DBpBgNV
+HSAEYjBgMF4GBmBMAQIBMzBUMFIGCCsGAQUFBwIBFkZodHRwOi8vcmVwb3NpdG9y
+aW8uYWNzYWZld2ViLmNvbS5ici9hYy1zYWZld2VicmZiL2RwYy1hY3NhZmV3ZWJy
+ZmIucGRmMIGuBgNVHR8EgaYwgaMwT6BNoEuGSWh0dHA6Ly9yZXBvc2l0b3Jpby5h
+Y3NhZmV3ZWIuY29tLmJyL2FjLXNhZmV3ZWJyZmIvbGNyLWFjLXNhZmV3ZWJyZmJ2
+NS5jcmwwUKBOoEyGSmh0dHA6Ly9yZXBvc2l0b3JpbzIuYWNzYWZld2ViLmNvbS5i
+ci9hYy1zYWZld2VicmZiL2xjci1hYy1zYWZld2VicmZidjUuY3JsMIG3BggrBgEF
+BQcBAQSBqjCBpzBRBggrBgEFBQcwAoZFaHR0cDovL3JlcG9zaXRvcmlvLmFjc2Fm
+ZXdlYi5jb20uYnIvYWMtc2FmZXdlYnJmYi9hYy1zYWZld2VicmZidjUucDdiMFIG
+CCsGAQUFBzAChkZodHRwOi8vcmVwb3NpdG9yaW8yLmFjc2FmZXdlYi5jb20uYnIv
+YWMtc2FmZXdlYnJmYi9hYy1zYWZld2VicmZidjUucDdiMIG7BgNVHREEgbMwgbCB
+IEVEVUFSRE8uTkVUT0BBUFBBRU1QUkVHT1MuQ09NLkJSoB4GBWBMAQMCoBUTE0VE
+VUFSRE8gRFVBUlRFIE5FVE+gGQYFYEwBAwOgEBMOMDU5NjkwNzEwMDAxMTCgOAYF
+YEwBAwSgLxMtMjEwNDE5NzAyNDU1MzQxMTg2NTAwMDAwMDAwMDAwMDAwMDAwMDAw
+MDAwMDAwoBcGBWBMAQMHoA4TDDAwMDAwMDAwMDAwMDAdBgNVHSUEFjAUBggrBgEF
+BQcDAgYIKwYBBQUHAwQwCQYDVR0TBAIwADANBgkqhkiG9w0BAQsFAAOCAgEAevBW
+nahGX6HuYq9HYWCfpMWLoAf+4rsBhJP6jpqvIQY9WgxTOPeOjNmWuEVVCsLYTpEV
+88VuLTxlkEDrGsR0RWvpo7DNNrMcg/O7wVxBMYNezE+Syna1c4HuC11hJl7++dAj
+Aslm6FQStLY3AzKl/I2FKcK9vOxGysa5IupQqP7fPyWf0531tCbQpVFYlBs1ziap
+J9cYPKenuYQeNgcW5z5ackXb5ypRFKE8K7Fk6xKJsdM6F5T1eHBdta4N+W1f8RGK
+xt+xd7NwN4e02R6k/m8Qy4wMggannspwosTOYBy4KYJOUD15iTU+v/+SZHkfcg6S
+pYO2qK5Qzt2/gx/SkBw+PP27mSrXswLwTGFsh9swVTuOBBwDN3oXCKaMYUxiIo1f
+Hnedbll2ad4HqeTWHuii9jJLQfHRmKz6AOUErK4XJdWQyuaFv6jqL/gR2FOzkhWZ
+pISNdauJF4EV6ePgJdeb6zyASz103crcr/imnZmzxN055fa5Jq1r9Pj4k3dEygU8
+gZS7Rqo5afI2+6wUfd05b1dexu4TT1kiN0HWrrv+pxZ+YbkSsY8cbEK7cRD3CJcS
+R32YGZzejvwkyDuwqYQFjyuLAktUUaMzz3VbMRsNSJidgDOWMkxxsIWe7OazS7Dr
+9ZMDdTWee2d4Jwk/KHcnvSyQKQDpRVuOZ8j/xmo=
+</ds:X509Certificate></ds:X509Data></ds:KeyInfo></ds:Signature></eSocial>
+            </evento>
+    </eventos>
+  </envioLoteEventos>
+</eSocial></v1:loteEventos>
+    </v1:EnviarLoteEventos>
+  </soapenv:Body>
+</soapenv:Envelope>","{""eventos"": [{""id"": ""ID1059690710000002026032813034600001"", ""descricao"": ""Conteudo do evento inválido."", ""nr_recibo"": null, ""ocorrencias"": [{""tipo"": ""1"", ""codigo"": ""105"", ""descricao"": ""O evento a ser excluído/retificado (alterado) não foi localizado na base de dados do eSocial.\nAção Sugerida: Verificar se o número do recibo informado no evento, corresponde ao mesmo número de recibo do evento original. Preencher com o número do recibo do arquivo a ser retificado""}], ""codigo_resposta"": ""401""}], ""sucesso"": true, ""descricao"": ""Lote processado com sucesso."", ""codigo_resposta"": ""201""}"
+9,S-1010,alteracao,processado,1.1.202603.0000000012937400078,201,Lote Recebido com Sucesso.,1,"[""185""]",,[],2026-03-28 10:27:00.094233,2026-03-28 10:27:11.554201,1,2018-02,"[{""analise"": ""Rubrica com inconsistência de INSS, IRRF e FGTS"", ""nat_rubr"": ""6102"", ""descricao"": ""INDENIZACAO LEI Nº 7.238/84"", ""incid_fgts"": ""11"", ""incid_inss"": ""11"", ""incid_irrf"": ""11"", ""cod_rubrica"": ""185"", ""cod_natureza"": ""6102 - Indenização do art. 9º lei nº 7.238/84"", ""fgts_correto"": ""0"", ""inss_correto"": ""0"", ""irrf_correto"": ""74"", ""base_legal_fgts"": ""0 - Artigo 15, § 6º da Lei n° 8.036/90"", ""base_legal_inss"": ""0 - Artigo 28, § 9º da Lei n° 8.212/91"", ""base_legal_irrf"": ""74 - Artigo 6º, inciso V da Lei nº 7.713/88 e artigo 28 da Lei nº 8.036/90""}]","<?xml version=""1.0"" encoding=""UTF-8""?>
+<soapenv:Envelope xmlns:soapenv=""http://schemas.xmlsoap.org/soap/envelope/"" xmlns:v1=""http://www.esocial.gov.br/servicos/empregador/lote/eventos/envio/v1_1_0"">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <v1:EnviarLoteEventos>
+      <v1:loteEventos><eSocial xmlns=""http://www.esocial.gov.br/schema/lote/eventos/envio/v1_1_1"">
+  <envioLoteEventos grupo=""1"">
+    <ideEmpregador>
+      <tpInsc>1</tpInsc>
+      <nrInsc>05969071</nrInsc>
+    </ideEmpregador>
+    <ideTransmissor>
+      <tpInsc>1</tpInsc>
+      <nrInsc>05969071000110</nrInsc>
+    </ideTransmissor>
+    <eventos>
+            <evento Id=""ID1059690710000002026032813270000001"">
+              <eSocial xmlns=""http://www.esocial.gov.br/schema/evt/evtTabRubrica/v_S_01_03_00""><evtTabRubrica Id=""ID1059690710000002026032813270000001""><ideEvento><tpAmb>1</tpAmb><procEmi>1</procEmi><verProc>EasySocial_1.0</verProc></ideEvento><ideEmpregador><tpInsc>1</tpInsc><nrInsc>05969071</nrInsc></ideEmpregador><infoRubrica><alteracao><ideRubrica><codRubr>185</codRubr><ideTabRubr>1</ideTabRubr><iniValid>2018-02</iniValid></ideRubrica><dadosRubrica><dscRubr>INDENIZACAO LEI Nº 7.238/84</dscRubr><natRubr>6102</natRubr><tpRubr>1</tpRubr><codIncCP>00</codIncCP><codIncIRRF>74</codIncIRRF><codIncFGTS>00</codIncFGTS><codIncPisPasep>00</codIncPisPasep></dadosRubrica></alteracao></infoRubrica></evtTabRubrica><ds:Signature xmlns:ds=""http://www.w3.org/2000/09/xmldsig#""><ds:SignedInfo><ds:CanonicalizationMethod Algorithm=""http://www.w3.org/TR/2001/REC-xml-c14n-20010315""/><ds:SignatureMethod Algorithm=""http://www.w3.org/2001/04/xmldsig-more#rsa-sha256""/><ds:Reference URI=""""><ds:Transforms><ds:Transform Algorithm=""http://www.w3.org/2000/09/xmldsig#enveloped-signature""/><ds:Transform Algorithm=""http://www.w3.org/TR/2001/REC-xml-c14n-20010315""/></ds:Transforms><ds:DigestMethod Algorithm=""http://www.w3.org/2001/04/xmlenc#sha256""/><ds:DigestValue>wxW5JiDD8gJTRzylbioA1RkSaZOqkZPQUtHmVczpDNQ=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue>bc8DMX3dZLZKAkcD2T8BZfnYpE8ldYqzrXWZ5UuGX+2FEU4gDrMChdb4MpE+74iwK2LzZoX1M2MXx/uWmjV6cJjkslLxgILFkihr5HtXZW1YFB9kBU8YO7PY4moz2e3DLe6mY19o83Rrfy+Aw17dTl5D+wBr2SWADmrVDYnIwUMXv2d+GEEwjbkqPTdcGzz1ZpZrGKtuE6tzeLSTmlA2RILhfKTHbzRngFkHgFcH2aO2XCwtVSGR1RLJ/9vZYVHjHF2FABgjC6fCHHQPBBJYAUJjMRYnwjLE3VBULX2luxoFKI4WHsxerU05pw6lS0I2EteaC2P+1visfPrRsSOPPg==</ds:SignatureValue><ds:KeyInfo><ds:X509Data><ds:X509Certificate>MIIH+TCCBeGgAwIBAgIIRcfr6E8/5mUwDQYJKoZIhvcNAQELBQAwdjELMAkGA1UE
+BhMCQlIxEzARBgNVBAoTCklDUC1CcmFzaWwxNjA0BgNVBAsTLVNlY3JldGFyaWEg
+ZGEgUmVjZWl0YSBGZWRlcmFsIGRvIEJyYXNpbCAtIFJGQjEaMBgGA1UEAxMRQUMg
+U0FGRVdFQiBSRkIgdjUwHhcNMjUwOTE5MTYzMjU5WhcNMjYwOTE5MTYzMjU5WjCC
+AQoxCzAJBgNVBAYTAkJSMRMwEQYDVQQKEwpJQ1AtQnJhc2lsMQswCQYDVQQIEwJT
+UDESMBAGA1UEBxMJU0FPIFBBVUxPMTYwNAYDVQQLEy1TZWNyZXRhcmlhIGRhIFJl
+Y2VpdGEgRmVkZXJhbCBkbyBCcmFzaWwgLSBSRkIxFjAUBgNVBAsTDVJGQiBlLUNO
+UEogQTExFzAVBgNVBAsTDjQ1OTUxNTk4MDAwMTMyMRkwFwYDVQQLExB2aWRlb2Nv
+bmZlcmVuY2lhMUEwPwYDVQQDEzhBUFBBIFNFUlZJQ09TIFRFTVBPUkFSSU9TIEUg
+RUZFVElWT1MgTFREQTowNTk2OTA3MTAwMDExMDCCASIwDQYJKoZIhvcNAQEBBQAD
+ggEPADCCAQoCggEBALrWAqx2qqfyzPymhGVcvtK4+yHKNiHW/OysBetF7crKfTBl
+fOHoIwqWb2NeQdDxwknSfrngs/OksNKGP09z4v+0Vzg9YvCTiT3xiwar8cFzcF4e
+jpYSQPf+ZvA/TLHH5GEli3nPQbphUddg8NQAZD0yACENatLfMMAGy2p82gZDc5fK
+fPzYMG71U85CNgcUL4/p/B80Rf0quj9fnMFVHZ0nrQWKjF9L29H/QVXHWTx6v8wx
+vIZ/nBWWWpV2dXlG4VJa9weJ+6zzd75PjzESC1TqVgRwpDKQlmRheapXj51+6KHi
+qf3fZQbbVFiatNo8d6ccuPPkkajNpTC6+esrsd0CAwEAAaOCAvMwggLvMB8GA1Ud
+IwQYMBaAFCleS9VGTLv+FqdjwR3EJvLd2PMFMA4GA1UdDwEB/wQEAwIF4DBpBgNV
+HSAEYjBgMF4GBmBMAQIBMzBUMFIGCCsGAQUFBwIBFkZodHRwOi8vcmVwb3NpdG9y
+aW8uYWNzYWZld2ViLmNvbS5ici9hYy1zYWZld2VicmZiL2RwYy1hY3NhZmV3ZWJy
+ZmIucGRmMIGuBgNVHR8EgaYwgaMwT6BNoEuGSWh0dHA6Ly9yZXBvc2l0b3Jpby5h
+Y3NhZmV3ZWIuY29tLmJyL2FjLXNhZmV3ZWJyZmIvbGNyLWFjLXNhZmV3ZWJyZmJ2
+NS5jcmwwUKBOoEyGSmh0dHA6Ly9yZXBvc2l0b3JpbzIuYWNzYWZld2ViLmNvbS5i
+ci9hYy1zYWZld2VicmZiL2xjci1hYy1zYWZld2VicmZidjUuY3JsMIG3BggrBgEF
+BQcBAQSBqjCBpzBRBggrBgEFBQcwAoZFaHR0cDovL3JlcG9zaXRvcmlvLmFjc2Fm
+ZXdlYi5jb20uYnIvYWMtc2FmZXdlYnJmYi9hYy1zYWZld2VicmZidjUucDdiMFIG
+CCsGAQUFBzAChkZodHRwOi8vcmVwb3NpdG9yaW8yLmFjc2FmZXdlYi5jb20uYnIv
+YWMtc2FmZXdlYnJmYi9hYy1zYWZld2VicmZidjUucDdiMIG7BgNVHREEgbMwgbCB
+IEVEVUFSRE8uTkVUT0BBUFBBRU1QUkVHT1MuQ09NLkJSoB4GBWBMAQMCoBUTE0VE
+VUFSRE8gRFVBUlRFIE5FVE+gGQYFYEwBAwOgEBMOMDU5NjkwNzEwMDAxMTCgOAYF
+YEwBAwSgLxMtMjEwNDE5NzAyNDU1MzQxMTg2NTAwMDAwMDAwMDAwMDAwMDAwMDAw
+MDAwMDAwoBcGBWBMAQMHoA4TDDAwMDAwMDAwMDAwMDAdBgNVHSUEFjAUBggrBgEF
+BQcDAgYIKwYBBQUHAwQwCQYDVR0TBAIwADANBgkqhkiG9w0BAQsFAAOCAgEAevBW
+nahGX6HuYq9HYWCfpMWLoAf+4rsBhJP6jpqvIQY9WgxTOPeOjNmWuEVVCsLYTpEV
+88VuLTxlkEDrGsR0RWvpo7DNNrMcg/O7wVxBMYNezE+Syna1c4HuC11hJl7++dAj
+Aslm6FQStLY3AzKl/I2FKcK9vOxGysa5IupQqP7fPyWf0531tCbQpVFYlBs1ziap
+J9cYPKenuYQeNgcW5z5ackXb5ypRFKE8K7Fk6xKJsdM6F5T1eHBdta4N+W1f8RGK
+xt+xd7NwN4e02R6k/m8Qy4wMggannspwosTOYBy4KYJOUD15iTU+v/+SZHkfcg6S
+pYO2qK5Qzt2/gx/SkBw+PP27mSrXswLwTGFsh9swVTuOBBwDN3oXCKaMYUxiIo1f
+Hnedbll2ad4HqeTWHuii9jJLQfHRmKz6AOUErK4XJdWQyuaFv6jqL/gR2FOzkhWZ
+pISNdauJF4EV6ePgJdeb6zyASz103crcr/imnZmzxN055fa5Jq1r9Pj4k3dEygU8
+gZS7Rqo5afI2+6wUfd05b1dexu4TT1kiN0HWrrv+pxZ+YbkSsY8cbEK7cRD3CJcS
+R32YGZzejvwkyDuwqYQFjyuLAktUUaMzz3VbMRsNSJidgDOWMkxxsIWe7OazS7Dr
+9ZMDdTWee2d4Jwk/KHcnvSyQKQDpRVuOZ8j/xmo=
+</ds:X509Certificate></ds:X509Data></ds:KeyInfo></ds:Signature></eSocial>
+            </evento>
+    </eventos>
+  </envioLoteEventos>
+</eSocial></v1:loteEventos>
+    </v1:EnviarLoteEventos>
+  </soapenv:Body>
+</soapenv:Envelope>","{""eventos"": [{""id"": ""ID1059690710000002026032813270000001"", ""descricao"": ""Sucesso."", ""nr_recibo"": null, ""ocorrencias"": [], ""codigo_resposta"": ""201""}], ""sucesso"": true, ""descricao"": ""Lote processado com sucesso."", ""codigo_resposta"": ""201""}"
+12,S-1010,alteracao,processado,1.1.202603.0000000012937600719,201,Lote Recebido com Sucesso.,1,"[""228""]",,[],2026-03-28 12:22:21.154548,2026-03-28 12:22:36.305386,1,2018-02,"[{""analise"": ""Rubrica com inconsistência de IRRF"", ""nat_rubr"": ""6129"", ""descricao"": ""REEMB. DESC. ASSIST. MEDICA"", ""incid_fgts"": ""0"", ""incid_inss"": ""0"", ""incid_irrf"": ""0"", ""cod_rubrica"": ""228"", ""cod_natureza"": ""6129 - Outras verbas não remuneratórias (indenizatórias ou multas)"", ""fgts_correto"": ""0"", ""inss_correto"": ""0"", ""irrf_correto"": ""79"", ""base_legal_fgts"": ""0 - Artigo 15 da Lei n° 8.036/90"", ""base_legal_inss"": ""0 - Artigo 28, inciso I, da Lei n° 8.212/91"", ""base_legal_irrf"": ""79 - Artigos 6 da Lei nº 7.713/88 e Artigo 2° da Lei n° 8.036/90, e artigo 65 do Decreto n° 9.580/2018""}]","<?xml version=""1.0"" encoding=""UTF-8""?>
+<soapenv:Envelope xmlns:soapenv=""http://schemas.xmlsoap.org/soap/envelope/"" xmlns:v1=""http://www.esocial.gov.br/servicos/empregador/lote/eventos/envio/v1_1_0"">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <v1:EnviarLoteEventos>
+      <v1:loteEventos><eSocial xmlns=""http://www.esocial.gov.br/schema/lote/eventos/envio/v1_1_1"">
+  <envioLoteEventos grupo=""1"">
+    <ideEmpregador>
+      <tpInsc>1</tpInsc>
+      <nrInsc>05969071</nrInsc>
+    </ideEmpregador>
+    <ideTransmissor>
+      <tpInsc>1</tpInsc>
+      <nrInsc>05969071000110</nrInsc>
+    </ideTransmissor>
+    <eventos>
+            <evento Id=""ID1059690710000002026032815222100001"">
+              <eSocial xmlns=""http://www.esocial.gov.br/schema/evt/evtTabRubrica/v_S_01_03_00""><evtTabRubrica Id=""ID1059690710000002026032815222100001""><ideEvento><tpAmb>1</tpAmb><procEmi>1</procEmi><verProc>EasySocial_1.0</verProc></ideEvento><ideEmpregador><tpInsc>1</tpInsc><nrInsc>05969071</nrInsc></ideEmpregador><infoRubrica><alteracao><ideRubrica><codRubr>228</codRubr><ideTabRubr>1</ideTabRubr><iniValid>2018-02</iniValid></ideRubrica><dadosRubrica><dscRubr>REEMB. DESC. ASSIST. MEDICA</dscRubr><natRubr>6129</natRubr><tpRubr>1</tpRubr><codIncCP>00</codIncCP><codIncIRRF>79</codIncIRRF><codIncFGTS>00</codIncFGTS><codIncPisPasep>00</codIncPisPasep></dadosRubrica></alteracao></infoRubrica></evtTabRubrica><ds:Signature xmlns:ds=""http://www.w3.org/2000/09/xmldsig#""><ds:SignedInfo><ds:CanonicalizationMethod Algorithm=""http://www.w3.org/TR/2001/REC-xml-c14n-20010315""/><ds:SignatureMethod Algorithm=""http://www.w3.org/2001/04/xmldsig-more#rsa-sha256""/><ds:Reference URI=""""><ds:Transforms><ds:Transform Algorithm=""http://www.w3.org/2000/09/xmldsig#enveloped-signature""/><ds:Transform Algorithm=""http://www.w3.org/TR/2001/REC-xml-c14n-20010315""/></ds:Transforms><ds:DigestMethod Algorithm=""http://www.w3.org/2001/04/xmlenc#sha256""/><ds:DigestValue>Oc++agterifjcdm+S7cOGnyiGsh8IOzwNFaLK3QNlgY=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue>Ta3DXxS1jcZf7vkuJ7zeTh0R1Xw/rsrWlPRpgsJAM01V8/gGDvfCP0bxzThsqVZQ3h/H5k0pNqB6cFYm0TYie7eB/KEQlV557U+aHmPdCcBnuR2FAXrEx2CoRff7G7XTsnyKwDF2GtJSJyxSGI7gKVUxCTWSiGCOjKEtZUzXXgzoMJfVbBsqBhcEVGBOOhRxPTQt4MfBZEdBqYARP/zqpdZ6lsQxlrDoGroTr3KoGnx9hvIcyPb9r17VftnKgI/xEorH1fM8uvMieXQy7XidRbRS5RWXXhDiaDoK67EjYC6Ynzx4zJtXJvnYYB2dTaSIVWj4zpN4kWPX+nIFVlJxxQ==</ds:SignatureValue><ds:KeyInfo><ds:X509Data><ds:X509Certificate>MIIH+TCCBeGgAwIBAgIIRcfr6E8/5mUwDQYJKoZIhvcNAQELBQAwdjELMAkGA1UE
+BhMCQlIxEzARBgNVBAoTCklDUC1CcmFzaWwxNjA0BgNVBAsTLVNlY3JldGFyaWEg
+ZGEgUmVjZWl0YSBGZWRlcmFsIGRvIEJyYXNpbCAtIFJGQjEaMBgGA1UEAxMRQUMg
+U0FGRVdFQiBSRkIgdjUwHhcNMjUwOTE5MTYzMjU5WhcNMjYwOTE5MTYzMjU5WjCC
+AQoxCzAJBgNVBAYTAkJSMRMwEQYDVQQKEwpJQ1AtQnJhc2lsMQswCQYDVQQIEwJT
+UDESMBAGA1UEBxMJU0FPIFBBVUxPMTYwNAYDVQQLEy1TZWNyZXRhcmlhIGRhIFJl
+Y2VpdGEgRmVkZXJhbCBkbyBCcmFzaWwgLSBSRkIxFjAUBgNVBAsTDVJGQiBlLUNO
+UEogQTExFzAVBgNVBAsTDjQ1OTUxNTk4MDAwMTMyMRkwFwYDVQQLExB2aWRlb2Nv
+bmZlcmVuY2lhMUEwPwYDVQQDEzhBUFBBIFNFUlZJQ09TIFRFTVBPUkFSSU9TIEUg
+RUZFVElWT1MgTFREQTowNTk2OTA3MTAwMDExMDCCASIwDQYJKoZIhvcNAQEBBQAD
+ggEPADCCAQoCggEBALrWAqx2qqfyzPymhGVcvtK4+yHKNiHW/OysBetF7crKfTBl
+fOHoIwqWb2NeQdDxwknSfrngs/OksNKGP09z4v+0Vzg9YvCTiT3xiwar8cFzcF4e
+jpYSQPf+ZvA/TLHH5GEli3nPQbphUddg8NQAZD0yACENatLfMMAGy2p82gZDc5fK
+fPzYMG71U85CNgcUL4/p/B80Rf0quj9fnMFVHZ0nrQWKjF9L29H/QVXHWTx6v8wx
+vIZ/nBWWWpV2dXlG4VJa9weJ+6zzd75PjzESC1TqVgRwpDKQlmRheapXj51+6KHi
+qf3fZQbbVFiatNo8d6ccuPPkkajNpTC6+esrsd0CAwEAAaOCAvMwggLvMB8GA1Ud
+IwQYMBaAFCleS9VGTLv+FqdjwR3EJvLd2PMFMA4GA1UdDwEB/wQEAwIF4DBpBgNV
+HSAEYjBgMF4GBmBMAQIBMzBUMFIGCCsGAQUFBwIBFkZodHRwOi8vcmVwb3NpdG9y
+aW8uYWNzYWZld2ViLmNvbS5ici9hYy1zYWZld2VicmZiL2RwYy1hY3NhZmV3ZWJy
+ZmIucGRmMIGuBgNVHR8EgaYwgaMwT6BNoEuGSWh0dHA6Ly9yZXBvc2l0b3Jpby5h
+Y3NhZmV3ZWIuY29tLmJyL2FjLXNhZmV3ZWJyZmIvbGNyLWFjLXNhZmV3ZWJyZmJ2
+NS5jcmwwUKBOoEyGSmh0dHA6Ly9yZXBvc2l0b3JpbzIuYWNzYWZld2ViLmNvbS5i
+ci9hYy1zYWZld2VicmZiL2xjci1hYy1zYWZld2VicmZidjUuY3JsMIG3BggrBgEF
+BQcBAQSBqjCBpzBRBggrBgEFBQcwAoZFaHR0cDovL3JlcG9zaXRvcmlvLmFjc2Fm
+ZXdlYi5jb20uYnIvYWMtc2FmZXdlYnJmYi9hYy1zYWZld2VicmZidjUucDdiMFIG
+CCsGAQUFBzAChkZodHRwOi8vcmVwb3NpdG9yaW8yLmFjc2FmZXdlYi5jb20uYnIv
+YWMtc2FmZXdlYnJmYi9hYy1zYWZld2VicmZidjUucDdiMIG7BgNVHREEgbMwgbCB
+IEVEVUFSRE8uTkVUT0BBUFBBRU1QUkVHT1MuQ09NLkJSoB4GBWBMAQMCoBUTE0VE
+VUFSRE8gRFVBUlRFIE5FVE+gGQYFYEwBAwOgEBMOMDU5NjkwNzEwMDAxMTCgOAYF
+YEwBAwSgLxMtMjEwNDE5NzAyNDU1MzQxMTg2NTAwMDAwMDAwMDAwMDAwMDAwMDAw
+MDAwMDAwoBcGBWBMAQMHoA4TDDAwMDAwMDAwMDAwMDAdBgNVHSUEFjAUBggrBgEF
+BQcDAgYIKwYBBQUHAwQwCQYDVR0TBAIwADANBgkqhkiG9w0BAQsFAAOCAgEAevBW
+nahGX6HuYq9HYWCfpMWLoAf+4rsBhJP6jpqvIQY9WgxTOPeOjNmWuEVVCsLYTpEV
+88VuLTxlkEDrGsR0RWvpo7DNNrMcg/O7wVxBMYNezE+Syna1c4HuC11hJl7++dAj
+Aslm6FQStLY3AzKl/I2FKcK9vOxGysa5IupQqP7fPyWf0531tCbQpVFYlBs1ziap
+J9cYPKenuYQeNgcW5z5ackXb5ypRFKE8K7Fk6xKJsdM6F5T1eHBdta4N+W1f8RGK
+xt+xd7NwN4e02R6k/m8Qy4wMggannspwosTOYBy4KYJOUD15iTU+v/+SZHkfcg6S
+pYO2qK5Qzt2/gx/SkBw+PP27mSrXswLwTGFsh9swVTuOBBwDN3oXCKaMYUxiIo1f
+Hnedbll2ad4HqeTWHuii9jJLQfHRmKz6AOUErK4XJdWQyuaFv6jqL/gR2FOzkhWZ
+pISNdauJF4EV6ePgJdeb6zyASz103crcr/imnZmzxN055fa5Jq1r9Pj4k3dEygU8
+gZS7Rqo5afI2+6wUfd05b1dexu4TT1kiN0HWrrv+pxZ+YbkSsY8cbEK7cRD3CJcS
+R32YGZzejvwkyDuwqYQFjyuLAktUUaMzz3VbMRsNSJidgDOWMkxxsIWe7OazS7Dr
+9ZMDdTWee2d4Jwk/KHcnvSyQKQDpRVuOZ8j/xmo=
+</ds:X509Certificate></ds:X509Data></ds:KeyInfo></ds:Signature></eSocial>
+            </evento>
+    </eventos>
+  </envioLoteEventos>
+</eSocial></v1:loteEventos>
+    </v1:EnviarLoteEventos>
+  </soapenv:Body>
+</soapenv:Envelope>","{""eventos"": [{""id"": ""ID1059690710000002026032815222100001"", ""descricao"": ""Sucesso."", ""nr_recibo"": null, ""ocorrencias"": [], ""codigo_resposta"": ""201""}], ""sucesso"": true, ""descricao"": ""Lote processado com sucesso."", ""codigo_resposta"": ""201""}"
+13,S-1010,alteracao,erro,1.1.202603.0000000012937611775,201,Lote Recebido com Sucesso.,1,"[""233""]",,[],2026-03-28 12:29:12.415413,2026-03-28 12:29:20.387599,1,"","[{""analise"": ""Rubrica com inconsistência de IRRF"", ""nat_rubr"": ""1801"", ""descricao"": ""REEMB. REFEICAO"", ""incid_fgts"": ""0"", ""incid_inss"": ""0"", ""incid_irrf"": ""0"", ""cod_rubrica"": ""233"", ""cod_natureza"": ""1801 - Auxílio-alimentação"", ""fgts_correto"": ""11"", ""inss_correto"": ""11"", ""irrf_correto"": ""11"", ""base_legal_fgts"": ""11 - Artigo 15 da Lei n° 8.036/900 - Artigo 15 da Lei n° 8.036/90"", ""base_legal_inss"": ""11 - Artigo 28, inciso I, da Lei n° 8.212/910 - Artigo 28, inciso I, da Lei n° 8.212/91"", ""base_legal_irrf"": ""11 - Artigos 3º e 7º da Lei nº 7.713/889 - artigo 35, inciso I, alínea p do Decreto n° 9.580/2018""}]","<?xml version=""1.0"" encoding=""UTF-8""?>
+<soapenv:Envelope xmlns:soapenv=""http://schemas.xmlsoap.org/soap/envelope/"" xmlns:v1=""http://www.esocial.gov.br/servicos/empregador/lote/eventos/envio/v1_1_0"">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <v1:EnviarLoteEventos>
+      <v1:loteEventos><eSocial xmlns=""http://www.esocial.gov.br/schema/lote/eventos/envio/v1_1_1"">
+  <envioLoteEventos grupo=""1"">
+    <ideEmpregador>
+      <tpInsc>1</tpInsc>
+      <nrInsc>05969071</nrInsc>
+    </ideEmpregador>
+    <ideTransmissor>
+      <tpInsc>1</tpInsc>
+      <nrInsc>05969071000110</nrInsc>
+    </ideTransmissor>
+    <eventos>
+            <evento Id=""ID1059690710000002026032815291200001"">
+              <eSocial xmlns=""http://www.esocial.gov.br/schema/evt/evtTabRubrica/v_S_01_03_00""><evtTabRubrica Id=""ID1059690710000002026032815291200001""><ideEvento><tpAmb>1</tpAmb><procEmi>1</procEmi><verProc>EasySocial_1.0</verProc></ideEvento><ideEmpregador><tpInsc>1</tpInsc><nrInsc>05969071</nrInsc></ideEmpregador><infoRubrica><alteracao><ideRubrica><codRubr>233</codRubr><ideTabRubr>1</ideTabRubr><iniValid>2014-01</iniValid></ideRubrica><dadosRubrica><dscRubr>REEMB. REFEICAO</dscRubr><natRubr>1801</natRubr><tpRubr>1</tpRubr><codIncCP>11</codIncCP><codIncIRRF>11</codIncIRRF><codIncFGTS>11</codIncFGTS><codIncPisPasep>00</codIncPisPasep></dadosRubrica></alteracao></infoRubrica></evtTabRubrica><ds:Signature xmlns:ds=""http://www.w3.org/2000/09/xmldsig#""><ds:SignedInfo><ds:CanonicalizationMethod Algorithm=""http://www.w3.org/TR/2001/REC-xml-c14n-20010315""/><ds:SignatureMethod Algorithm=""http://www.w3.org/2001/04/xmldsig-more#rsa-sha256""/><ds:Reference URI=""""><ds:Transforms><ds:Transform Algorithm=""http://www.w3.org/2000/09/xmldsig#enveloped-signature""/><ds:Transform Algorithm=""http://www.w3.org/TR/2001/REC-xml-c14n-20010315""/></ds:Transforms><ds:DigestMethod Algorithm=""http://www.w3.org/2001/04/xmlenc#sha256""/><ds:DigestValue>2teaU8wNqYAte1seNfbZRjzsjE5G7VylxWnBhtXvocU=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue>hzMGvbbT9zDnIcLT/cCEDAJGQdEfKePuaaT2BfGj/8yjT7QtooP/BmI6XHEKSXBskiwPTIOgAFRvF/nH55/R500vvPp/cvXQG+JSxYf85mtBERnrf/2L6ekx3cXgITx2w0PXEofyZuUhZtml3j+FlnDwI+HrHPKimwfu+CR/I8J/Y7cKTPjhxoyKUZfB6wblAhusnGEzmTSA/A5mlDrKFolSY2N37dBRQ1sm/OJwvRofUGFaJn2d4tOXJPwfyZvHheaqf1Vv/9B5QFUJ1fB1Xen4ueIUdOZ3+Y9cR8TizO1o+0igJKHjz/+W58Ps/2hUkKzApj7+ebLdNcDx7She9A==</ds:SignatureValue><ds:KeyInfo><ds:X509Data><ds:X509Certificate>MIIH+TCCBeGgAwIBAgIIRcfr6E8/5mUwDQYJKoZIhvcNAQELBQAwdjELMAkGA1UE
+BhMCQlIxEzARBgNVBAoTCklDUC1CcmFzaWwxNjA0BgNVBAsTLVNlY3JldGFyaWEg
+ZGEgUmVjZWl0YSBGZWRlcmFsIGRvIEJyYXNpbCAtIFJGQjEaMBgGA1UEAxMRQUMg
+U0FGRVdFQiBSRkIgdjUwHhcNMjUwOTE5MTYzMjU5WhcNMjYwOTE5MTYzMjU5WjCC
+AQoxCzAJBgNVBAYTAkJSMRMwEQYDVQQKEwpJQ1AtQnJhc2lsMQswCQYDVQQIEwJT
+UDESMBAGA1UEBxMJU0FPIFBBVUxPMTYwNAYDVQQLEy1TZWNyZXRhcmlhIGRhIFJl
+Y2VpdGEgRmVkZXJhbCBkbyBCcmFzaWwgLSBSRkIxFjAUBgNVBAsTDVJGQiBlLUNO
+UEogQTExFzAVBgNVBAsTDjQ1OTUxNTk4MDAwMTMyMRkwFwYDVQQLExB2aWRlb2Nv
+bmZlcmVuY2lhMUEwPwYDVQQDEzhBUFBBIFNFUlZJQ09TIFRFTVBPUkFSSU9TIEUg
+RUZFVElWT1MgTFREQTowNTk2OTA3MTAwMDExMDCCASIwDQYJKoZIhvcNAQEBBQAD
+ggEPADCCAQoCggEBALrWAqx2qqfyzPymhGVcvtK4+yHKNiHW/OysBetF7crKfTBl
+fOHoIwqWb2NeQdDxwknSfrngs/OksNKGP09z4v+0Vzg9YvCTiT3xiwar8cFzcF4e
+jpYSQPf+ZvA/TLHH5GEli3nPQbphUddg8NQAZD0yACENatLfMMAGy2p82gZDc5fK
+fPzYMG71U85CNgcUL4/p/B80Rf0quj9fnMFVHZ0nrQWKjF9L29H/QVXHWTx6v8wx
+vIZ/nBWWWpV2dXlG4VJa9weJ+6zzd75PjzESC1TqVgRwpDKQlmRheapXj51+6KHi
+qf3fZQbbVFiatNo8d6ccuPPkkajNpTC6+esrsd0CAwEAAaOCAvMwggLvMB8GA1Ud
+IwQYMBaAFCleS9VGTLv+FqdjwR3EJvLd2PMFMA4GA1UdDwEB/wQEAwIF4DBpBgNV
+HSAEYjBgMF4GBmBMAQIBMzBUMFIGCCsGAQUFBwIBFkZodHRwOi8vcmVwb3NpdG9y
+aW8uYWNzYWZld2ViLmNvbS5ici9hYy1zYWZld2VicmZiL2RwYy1hY3NhZmV3ZWJy
+ZmIucGRmMIGuBgNVHR8EgaYwgaMwT6BNoEuGSWh0dHA6Ly9yZXBvc2l0b3Jpby5h
+Y3NhZmV3ZWIuY29tLmJyL2FjLXNhZmV3ZWJyZmIvbGNyLWFjLXNhZmV3ZWJyZmJ2
+NS5jcmwwUKBOoEyGSmh0dHA6Ly9yZXBvc2l0b3JpbzIuYWNzYWZld2ViLmNvbS5i
+ci9hYy1zYWZld2VicmZiL2xjci1hYy1zYWZld2VicmZidjUuY3JsMIG3BggrBgEF
+BQcBAQSBqjCBpzBRBggrBgEFBQcwAoZFaHR0cDovL3JlcG9zaXRvcmlvLmFjc2Fm
+ZXdlYi5jb20uYnIvYWMtc2FmZXdlYnJmYi9hYy1zYWZld2VicmZidjUucDdiMFIG
+CCsGAQUFBzAChkZodHRwOi8vcmVwb3NpdG9yaW8yLmFjc2FmZXdlYi5jb20uYnIv
+YWMtc2FmZXdlYnJmYi9hYy1zYWZld2VicmZidjUucDdiMIG7BgNVHREEgbMwgbCB
+IEVEVUFSRE8uTkVUT0BBUFBBRU1QUkVHT1MuQ09NLkJSoB4GBWBMAQMCoBUTE0VE
+VUFSRE8gRFVBUlRFIE5FVE+gGQYFYEwBAwOgEBMOMDU5NjkwNzEwMDAxMTCgOAYF
+YEwBAwSgLxMtMjEwNDE5NzAyNDU1MzQxMTg2NTAwMDAwMDAwMDAwMDAwMDAwMDAw
+MDAwMDAwoBcGBWBMAQMHoA4TDDAwMDAwMDAwMDAwMDAdBgNVHSUEFjAUBggrBgEF
+BQcDAgYIKwYBBQUHAwQwCQYDVR0TBAIwADANBgkqhkiG9w0BAQsFAAOCAgEAevBW
+nahGX6HuYq9HYWCfpMWLoAf+4rsBhJP6jpqvIQY9WgxTOPeOjNmWuEVVCsLYTpEV
+88VuLTxlkEDrGsR0RWvpo7DNNrMcg/O7wVxBMYNezE+Syna1c4HuC11hJl7++dAj
+Aslm6FQStLY3AzKl/I2FKcK9vOxGysa5IupQqP7fPyWf0531tCbQpVFYlBs1ziap
+J9cYPKenuYQeNgcW5z5ackXb5ypRFKE8K7Fk6xKJsdM6F5T1eHBdta4N+W1f8RGK
+xt+xd7NwN4e02R6k/m8Qy4wMggannspwosTOYBy4KYJOUD15iTU+v/+SZHkfcg6S
+pYO2qK5Qzt2/gx/SkBw+PP27mSrXswLwTGFsh9swVTuOBBwDN3oXCKaMYUxiIo1f
+Hnedbll2ad4HqeTWHuii9jJLQfHRmKz6AOUErK4XJdWQyuaFv6jqL/gR2FOzkhWZ
+pISNdauJF4EV6ePgJdeb6zyASz103crcr/imnZmzxN055fa5Jq1r9Pj4k3dEygU8
+gZS7Rqo5afI2+6wUfd05b1dexu4TT1kiN0HWrrv+pxZ+YbkSsY8cbEK7cRD3CJcS
+R32YGZzejvwkyDuwqYQFjyuLAktUUaMzz3VbMRsNSJidgDOWMkxxsIWe7OazS7Dr
+9ZMDdTWee2d4Jwk/KHcnvSyQKQDpRVuOZ8j/xmo=
+</ds:X509Certificate></ds:X509Data></ds:KeyInfo></ds:Signature></eSocial>
+            </evento>
+    </eventos>
+  </envioLoteEventos>
+</eSocial></v1:loteEventos>
+    </v1:EnviarLoteEventos>
+  </soapenv:Body>
+</soapenv:Envelope>","{""eventos"": [{""id"": ""ID1059690710000002026032815291200001"", ""descricao"": ""Conteudo do evento inválido."", ""nr_recibo"": null, ""ocorrencias"": [{""tipo"": ""1"", ""codigo"": ""130"", ""descricao"": ""É necessário existir informação cadastral do empregador para o período.\nAção Sugerida: Verificar se já foi enviado um evento de cadastramento do empregador.""}], ""codigo_resposta"": ""401""}], ""sucesso"": true, ""descricao"": ""Lote processado com sucesso."", ""codigo_resposta"": ""201""}"
+14,S-1010,alteracao,erro,1.1.202603.0000000012938184215,201,Lote Recebido com Sucesso.,1,"[""233""]",,[],2026-03-28 18:38:14.63321,2026-03-28 18:38:21.262686,1,2018-02,"[{""analise"": ""Rubrica com inconsistência de IRRF"", ""nat_rubr"": ""1801"", ""descricao"": ""REEMB. REFEICAO"", ""incid_fgts"": ""0"", ""incid_inss"": ""0"", ""incid_irrf"": ""0"", ""cod_rubrica"": ""233"", ""cod_natureza"": ""1801 - Auxílio-alimentação"", ""fgts_correto"": ""11"", ""inss_correto"": ""11"", ""irrf_correto"": ""11"", ""base_legal_fgts"": ""11 - Artigo 15 da Lei n° 8.036/900 - Artigo 15 da Lei n° 8.036/90"", ""base_legal_inss"": ""11 - Artigo 28, inciso I, da Lei n° 8.212/910 - Artigo 28, inciso I, da Lei n° 8.212/91"", ""base_legal_irrf"": ""11 - Artigos 3º e 7º da Lei nº 7.713/889 - artigo 35, inciso I, alínea p do Decreto n° 9.580/2018""}]","<?xml version=""1.0"" encoding=""UTF-8""?>
+<soapenv:Envelope xmlns:soapenv=""http://schemas.xmlsoap.org/soap/envelope/"" xmlns:v1=""http://www.esocial.gov.br/servicos/empregador/lote/eventos/envio/v1_1_0"">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <v1:EnviarLoteEventos>
+      <v1:loteEventos><eSocial xmlns=""http://www.esocial.gov.br/schema/lote/eventos/envio/v1_1_1"">
+  <envioLoteEventos grupo=""1"">
+    <ideEmpregador>
+      <tpInsc>1</tpInsc>
+      <nrInsc>05969071</nrInsc>
+    </ideEmpregador>
+    <ideTransmissor>
+      <tpInsc>1</tpInsc>
+      <nrInsc>05969071000110</nrInsc>
+    </ideTransmissor>
+    <eventos>
+            <evento Id=""ID1059690710000002026032821381400001"">
+              <eSocial xmlns=""http://www.esocial.gov.br/schema/evt/evtTabRubrica/v_S_01_03_00""><evtTabRubrica Id=""ID1059690710000002026032821381400001""><ideEvento><tpAmb>1</tpAmb><procEmi>1</procEmi><verProc>EasySocial_1.0</verProc></ideEvento><ideEmpregador><tpInsc>1</tpInsc><nrInsc>05969071</nrInsc></ideEmpregador><infoRubrica><alteracao><ideRubrica><codRubr>233</codRubr><ideTabRubr>1</ideTabRubr><iniValid>2018-02</iniValid></ideRubrica><dadosRubrica><dscRubr>REEMB. REFEICAO</dscRubr><natRubr>1801</natRubr><tpRubr>1</tpRubr><codIncCP>11</codIncCP><codIncIRRF>11</codIncIRRF><codIncFGTS>11</codIncFGTS><codIncPisPasep>00</codIncPisPasep></dadosRubrica></alteracao></infoRubrica></evtTabRubrica><ds:Signature xmlns:ds=""http://www.w3.org/2000/09/xmldsig#""><ds:SignedInfo><ds:CanonicalizationMethod Algorithm=""http://www.w3.org/TR/2001/REC-xml-c14n-20010315""/><ds:SignatureMethod Algorithm=""http://www.w3.org/2001/04/xmldsig-more#rsa-sha256""/><ds:Reference URI=""""><ds:Transforms><ds:Transform Algorithm=""http://www.w3.org/2000/09/xmldsig#enveloped-signature""/><ds:Transform Algorithm=""http://www.w3.org/TR/2001/REC-xml-c14n-20010315""/></ds:Transforms><ds:DigestMethod Algorithm=""http://www.w3.org/2001/04/xmlenc#sha256""/><ds:DigestValue>lGBVO2olgA+x1dcRtwHYd2qr+U/gL8oChkkAd7awyWY=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue>rrBEa7vq22tcG2s0zKObgdr9EpGczKdLh0DThhOEYmAP26Btgo3vi+ooaXu6wItcsEkB+6uKg/7PtqvzN4bQwkTQ6BUoiussPes6i4zN83j5771Uwq6M1vZqiRouYBJ96Yw5OaTehgpNSm5RAAz3VAWWmV61yrHvLkH2sTaTKOBF2KON2qYEgxYxZ+9Ny6cNAXdsxGnPCsig4CpDlMVRW4ld1SlpPQiXHdiMY2VwG0R6S0TrBM2rJ6tEdcpMNwzu8EDdPnKPoVn9vtCUygqSiRPSv0WaQ9bBSohbw4LgguZjs8zdXwjSXki5sfX9ll0YXflTAL7JwIcgVDwX8V/bhA==</ds:SignatureValue><ds:KeyInfo><ds:X509Data><ds:X509Certificate>MIIH+TCCBeGgAwIBAgIIRcfr6E8/5mUwDQYJKoZIhvcNAQELBQAwdjELMAkGA1UE
+BhMCQlIxEzARBgNVBAoTCklDUC1CcmFzaWwxNjA0BgNVBAsTLVNlY3JldGFyaWEg
+ZGEgUmVjZWl0YSBGZWRlcmFsIGRvIEJyYXNpbCAtIFJGQjEaMBgGA1UEAxMRQUMg
+U0FGRVdFQiBSRkIgdjUwHhcNMjUwOTE5MTYzMjU5WhcNMjYwOTE5MTYzMjU5WjCC
+AQoxCzAJBgNVBAYTAkJSMRMwEQYDVQQKEwpJQ1AtQnJhc2lsMQswCQYDVQQIEwJT
+UDESMBAGA1UEBxMJU0FPIFBBVUxPMTYwNAYDVQQLEy1TZWNyZXRhcmlhIGRhIFJl
+Y2VpdGEgRmVkZXJhbCBkbyBCcmFzaWwgLSBSRkIxFjAUBgNVBAsTDVJGQiBlLUNO
+UEogQTExFzAVBgNVBAsTDjQ1OTUxNTk4MDAwMTMyMRkwFwYDVQQLExB2aWRlb2Nv
+bmZlcmVuY2lhMUEwPwYDVQQDEzhBUFBBIFNFUlZJQ09TIFRFTVBPUkFSSU9TIEUg
+RUZFVElWT1MgTFREQTowNTk2OTA3MTAwMDExMDCCASIwDQYJKoZIhvcNAQEBBQAD
+ggEPADCCAQoCggEBALrWAqx2qqfyzPymhGVcvtK4+yHKNiHW/OysBetF7crKfTBl
+fOHoIwqWb2NeQdDxwknSfrngs/OksNKGP09z4v+0Vzg9YvCTiT3xiwar8cFzcF4e
+jpYSQPf+ZvA/TLHH5GEli3nPQbphUddg8NQAZD0yACENatLfMMAGy2p82gZDc5fK
+fPzYMG71U85CNgcUL4/p/B80Rf0quj9fnMFVHZ0nrQWKjF9L29H/QVXHWTx6v8wx
+vIZ/nBWWWpV2dXlG4VJa9weJ+6zzd75PjzESC1TqVgRwpDKQlmRheapXj51+6KHi
+qf3fZQbbVFiatNo8d6ccuPPkkajNpTC6+esrsd0CAwEAAaOCAvMwggLvMB8GA1Ud
+IwQYMBaAFCleS9VGTLv+FqdjwR3EJvLd2PMFMA4GA1UdDwEB/wQEAwIF4DBpBgNV
+HSAEYjBgMF4GBmBMAQIBMzBUMFIGCCsGAQUFBwIBFkZodHRwOi8vcmVwb3NpdG9y
+aW8uYWNzYWZld2ViLmNvbS5ici9hYy1zYWZld2VicmZiL2RwYy1hY3NhZmV3ZWJy
+ZmIucGRmMIGuBgNVHR8EgaYwgaMwT6BNoEuGSWh0dHA6Ly9yZXBvc2l0b3Jpby5h
+Y3NhZmV3ZWIuY29tLmJyL2FjLXNhZmV3ZWJyZmIvbGNyLWFjLXNhZmV3ZWJyZmJ2
+NS5jcmwwUKBOoEyGSmh0dHA6Ly9yZXBvc2l0b3JpbzIuYWNzYWZld2ViLmNvbS5i
+ci9hYy1zYWZld2VicmZiL2xjci1hYy1zYWZld2VicmZidjUuY3JsMIG3BggrBgEF
+BQcBAQSBqjCBpzBRBggrBgEFBQcwAoZFaHR0cDovL3JlcG9zaXRvcmlvLmFjc2Fm
+ZXdlYi5jb20uYnIvYWMtc2FmZXdlYnJmYi9hYy1zYWZld2VicmZidjUucDdiMFIG
+CCsGAQUFBzAChkZodHRwOi8vcmVwb3NpdG9yaW8yLmFjc2FmZXdlYi5jb20uYnIv
+YWMtc2FmZXdlYnJmYi9hYy1zYWZld2VicmZidjUucDdiMIG7BgNVHREEgbMwgbCB
+IEVEVUFSRE8uTkVUT0BBUFBBRU1QUkVHT1MuQ09NLkJSoB4GBWBMAQMCoBUTE0VE
+VUFSRE8gRFVBUlRFIE5FVE+gGQYFYEwBAwOgEBMOMDU5NjkwNzEwMDAxMTCgOAYF
+YEwBAwSgLxMtMjEwNDE5NzAyNDU1MzQxMTg2NTAwMDAwMDAwMDAwMDAwMDAwMDAw
+MDAwMDAwoBcGBWBMAQMHoA4TDDAwMDAwMDAwMDAwMDAdBgNVHSUEFjAUBggrBgEF
+BQcDAgYIKwYBBQUHAwQwCQYDVR0TBAIwADANBgkqhkiG9w0BAQsFAAOCAgEAevBW
+nahGX6HuYq9HYWCfpMWLoAf+4rsBhJP6jpqvIQY9WgxTOPeOjNmWuEVVCsLYTpEV
+88VuLTxlkEDrGsR0RWvpo7DNNrMcg/O7wVxBMYNezE+Syna1c4HuC11hJl7++dAj
+Aslm6FQStLY3AzKl/I2FKcK9vOxGysa5IupQqP7fPyWf0531tCbQpVFYlBs1ziap
+J9cYPKenuYQeNgcW5z5ackXb5ypRFKE8K7Fk6xKJsdM6F5T1eHBdta4N+W1f8RGK
+xt+xd7NwN4e02R6k/m8Qy4wMggannspwosTOYBy4KYJOUD15iTU+v/+SZHkfcg6S
+pYO2qK5Qzt2/gx/SkBw+PP27mSrXswLwTGFsh9swVTuOBBwDN3oXCKaMYUxiIo1f
+Hnedbll2ad4HqeTWHuii9jJLQfHRmKz6AOUErK4XJdWQyuaFv6jqL/gR2FOzkhWZ
+pISNdauJF4EV6ePgJdeb6zyASz103crcr/imnZmzxN055fa5Jq1r9Pj4k3dEygU8
+gZS7Rqo5afI2+6wUfd05b1dexu4TT1kiN0HWrrv+pxZ+YbkSsY8cbEK7cRD3CJcS
+R32YGZzejvwkyDuwqYQFjyuLAktUUaMzz3VbMRsNSJidgDOWMkxxsIWe7OazS7Dr
+9ZMDdTWee2d4Jwk/KHcnvSyQKQDpRVuOZ8j/xmo=
+</ds:X509Certificate></ds:X509Data></ds:KeyInfo></ds:Signature></eSocial>
+            </evento>
+    </eventos>
+  </envioLoteEventos>
+</eSocial></v1:loteEventos>
+    </v1:EnviarLoteEventos>
+  </soapenv:Body>
+</soapenv:Envelope>","{""eventos"": [{""id"": ""ID1059690710000002026032821381400001"", ""descricao"": ""Conteudo do evento inválido."", ""nr_recibo"": null, ""ocorrencias"": [{""tipo"": ""1"", ""codigo"": ""244"", ""descricao"": ""Natureza da rubrica inválida.\nAção Sugerida: O valor informado no campo deverá existir e estar válido no período na Tabela 3 (Natureza das Rubricas da Folha de Pagamento).""}], ""codigo_resposta"": ""401""}], ""sucesso"": true, ""descricao"": ""Lote processado com sucesso."", ""codigo_resposta"": ""201""}"
+15,S-1010,alteracao,processado,1.1.202603.0000000012938218819,201,Lote Recebido com Sucesso.,1,"[""233""]",,[],2026-03-28 19:08:52.701682,2026-03-28 19:08:59.414011,1,2018-02,"[{""analise"": ""Rubrica com inconsistência de IRRF"", ""nat_rubr"": ""1629"", ""descricao"": ""REEMB. REFEICAO"", ""incid_fgts"": ""0"", ""incid_inss"": ""0"", ""incid_irrf"": ""0"", ""cod_rubrica"": ""233"", ""cod_natureza"": ""1629 - Ressarcimento de outras despesas"", ""fgts_correto"": ""11"", ""inss_correto"": ""11"", ""irrf_correto"": ""11"", ""base_legal_fgts"": ""11 - Artigo 15 da Lei n° 8.036/900 - Artigo 15 da Lei n° 8.036/90"", ""base_legal_inss"": ""11 - Artigo 28, inciso I, da Lei n° 8.212/910 - Artigo 28, inciso I, da Lei n° 8.212/91"", ""base_legal_irrf"": ""11 - Artigos 3º e 7º da Lei nº 7.713/889 - artigo 35, inciso I, alínea p do Decreto n° 9.580/2018""}]","<?xml version=""1.0"" encoding=""UTF-8""?>
+<soapenv:Envelope xmlns:soapenv=""http://schemas.xmlsoap.org/soap/envelope/"" xmlns:v1=""http://www.esocial.gov.br/servicos/empregador/lote/eventos/envio/v1_1_0"">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <v1:EnviarLoteEventos>
+      <v1:loteEventos><eSocial xmlns=""http://www.esocial.gov.br/schema/lote/eventos/envio/v1_1_1"">
+  <envioLoteEventos grupo=""1"">
+    <ideEmpregador>
+      <tpInsc>1</tpInsc>
+      <nrInsc>05969071</nrInsc>
+    </ideEmpregador>
+    <ideTransmissor>
+      <tpInsc>1</tpInsc>
+      <nrInsc>05969071000110</nrInsc>
+    </ideTransmissor>
+    <eventos>
+            <evento Id=""ID1059690710000002026032822085200001"">
+              <eSocial xmlns=""http://www.esocial.gov.br/schema/evt/evtTabRubrica/v_S_01_03_00""><evtTabRubrica Id=""ID1059690710000002026032822085200001""><ideEvento><tpAmb>1</tpAmb><procEmi>1</procEmi><verProc>EasySocial_1.0</verProc></ideEvento><ideEmpregador><tpInsc>1</tpInsc><nrInsc>05969071</nrInsc></ideEmpregador><infoRubrica><alteracao><ideRubrica><codRubr>233</codRubr><ideTabRubr>1</ideTabRubr><iniValid>2018-02</iniValid></ideRubrica><dadosRubrica><dscRubr>REEMB. REFEICAO</dscRubr><natRubr>1629</natRubr><tpRubr>1</tpRubr><codIncCP>11</codIncCP><codIncIRRF>11</codIncIRRF><codIncFGTS>11</codIncFGTS><codIncPisPasep>00</codIncPisPasep></dadosRubrica></alteracao></infoRubrica></evtTabRubrica><ds:Signature xmlns:ds=""http://www.w3.org/2000/09/xmldsig#""><ds:SignedInfo><ds:CanonicalizationMethod Algorithm=""http://www.w3.org/TR/2001/REC-xml-c14n-20010315""/><ds:SignatureMethod Algorithm=""http://www.w3.org/2001/04/xmldsig-more#rsa-sha256""/><ds:Reference URI=""""><ds:Transforms><ds:Transform Algorithm=""http://www.w3.org/2000/09/xmldsig#enveloped-signature""/><ds:Transform Algorithm=""http://www.w3.org/TR/2001/REC-xml-c14n-20010315""/></ds:Transforms><ds:DigestMethod Algorithm=""http://www.w3.org/2001/04/xmlenc#sha256""/><ds:DigestValue>jbaDlb1OkEbXng1hzRW1B3ZOMteV0v0z/7+nElyen14=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue>iIMm0TGZ4wVH5bEp69By1IpE6UjqcZgHfZiAzWapEYJ+7GZQXpEw8KE6CVFXvJ4W/wbKxMag0sXY1unJyLC6RPYifbDB0jVSZAgmrNCd5NyaWeQRfC4TH56K+Nlpllbfqohd8QPi32/HoLOf3HlHkiVf+QiyVDoFg3d5m2gyIPVPZXnZctw1HeJK9B5kfckiwCFPQzr6o5JMIhEEEMa2uM9E+Dz/giB7t0Epf2vEQS52nG8A6wEbyEPf6cJ6AHbfUvOctiIXBXJsELEGamBcDZxEOJKoWuydv0MXw6M+agb305BasOQlZO5hlJuniPHQ3ozbsneYxyuc5oa3eYUTJQ==</ds:SignatureValue><ds:KeyInfo><ds:X509Data><ds:X509Certificate>MIIH+TCCBeGgAwIBAgIIRcfr6E8/5mUwDQYJKoZIhvcNAQELBQAwdjELMAkGA1UE
+BhMCQlIxEzARBgNVBAoTCklDUC1CcmFzaWwxNjA0BgNVBAsTLVNlY3JldGFyaWEg
+ZGEgUmVjZWl0YSBGZWRlcmFsIGRvIEJyYXNpbCAtIFJGQjEaMBgGA1UEAxMRQUMg
+U0FGRVdFQiBSRkIgdjUwHhcNMjUwOTE5MTYzMjU5WhcNMjYwOTE5MTYzMjU5WjCC
+AQoxCzAJBgNVBAYTAkJSMRMwEQYDVQQKEwpJQ1AtQnJhc2lsMQswCQYDVQQIEwJT
+UDESMBAGA1UEBxMJU0FPIFBBVUxPMTYwNAYDVQQLEy1TZWNyZXRhcmlhIGRhIFJl
+Y2VpdGEgRmVkZXJhbCBkbyBCcmFzaWwgLSBSRkIxFjAUBgNVBAsTDVJGQiBlLUNO
+UEogQTExFzAVBgNVBAsTDjQ1OTUxNTk4MDAwMTMyMRkwFwYDVQQLExB2aWRlb2Nv
+bmZlcmVuY2lhMUEwPwYDVQQDEzhBUFBBIFNFUlZJQ09TIFRFTVBPUkFSSU9TIEUg
+RUZFVElWT1MgTFREQTowNTk2OTA3MTAwMDExMDCCASIwDQYJKoZIhvcNAQEBBQAD
+ggEPADCCAQoCggEBALrWAqx2qqfyzPymhGVcvtK4+yHKNiHW/OysBetF7crKfTBl
+fOHoIwqWb2NeQdDxwknSfrngs/OksNKGP09z4v+0Vzg9YvCTiT3xiwar8cFzcF4e
+jpYSQPf+ZvA/TLHH5GEli3nPQbphUddg8NQAZD0yACENatLfMMAGy2p82gZDc5fK
+fPzYMG71U85CNgcUL4/p/B80Rf0quj9fnMFVHZ0nrQWKjF9L29H/QVXHWTx6v8wx
+vIZ/nBWWWpV2dXlG4VJa9weJ+6zzd75PjzESC1TqVgRwpDKQlmRheapXj51+6KHi
+qf3fZQbbVFiatNo8d6ccuPPkkajNpTC6+esrsd0CAwEAAaOCAvMwggLvMB8GA1Ud
+IwQYMBaAFCleS9VGTLv+FqdjwR3EJvLd2PMFMA4GA1UdDwEB/wQEAwIF4DBpBgNV
+HSAEYjBgMF4GBmBMAQIBMzBUMFIGCCsGAQUFBwIBFkZodHRwOi8vcmVwb3NpdG9y
+aW8uYWNzYWZld2ViLmNvbS5ici9hYy1zYWZld2VicmZiL2RwYy1hY3NhZmV3ZWJy
+ZmIucGRmMIGuBgNVHR8EgaYwgaMwT6BNoEuGSWh0dHA6Ly9yZXBvc2l0b3Jpby5h
+Y3NhZmV3ZWIuY29tLmJyL2FjLXNhZmV3ZWJyZmIvbGNyLWFjLXNhZmV3ZWJyZmJ2
+NS5jcmwwUKBOoEyGSmh0dHA6Ly9yZXBvc2l0b3JpbzIuYWNzYWZld2ViLmNvbS5i
+ci9hYy1zYWZld2VicmZiL2xjci1hYy1zYWZld2VicmZidjUuY3JsMIG3BggrBgEF
+BQcBAQSBqjCBpzBRBggrBgEFBQcwAoZFaHR0cDovL3JlcG9zaXRvcmlvLmFjc2Fm
+ZXdlYi5jb20uYnIvYWMtc2FmZXdlYnJmYi9hYy1zYWZld2VicmZidjUucDdiMFIG
+CCsGAQUFBzAChkZodHRwOi8vcmVwb3NpdG9yaW8yLmFjc2FmZXdlYi5jb20uYnIv
+YWMtc2FmZXdlYnJmYi9hYy1zYWZld2VicmZidjUucDdiMIG7BgNVHREEgbMwgbCB
+IEVEVUFSRE8uTkVUT0BBUFBBRU1QUkVHT1MuQ09NLkJSoB4GBWBMAQMCoBUTE0VE
+VUFSRE8gRFVBUlRFIE5FVE+gGQYFYEwBAwOgEBMOMDU5NjkwNzEwMDAxMTCgOAYF
+YEwBAwSgLxMtMjEwNDE5NzAyNDU1MzQxMTg2NTAwMDAwMDAwMDAwMDAwMDAwMDAw
+MDAwMDAwoBcGBWBMAQMHoA4TDDAwMDAwMDAwMDAwMDAdBgNVHSUEFjAUBggrBgEF
+BQcDAgYIKwYBBQUHAwQwCQYDVR0TBAIwADANBgkqhkiG9w0BAQsFAAOCAgEAevBW
+nahGX6HuYq9HYWCfpMWLoAf+4rsBhJP6jpqvIQY9WgxTOPeOjNmWuEVVCsLYTpEV
+88VuLTxlkEDrGsR0RWvpo7DNNrMcg/O7wVxBMYNezE+Syna1c4HuC11hJl7++dAj
+Aslm6FQStLY3AzKl/I2FKcK9vOxGysa5IupQqP7fPyWf0531tCbQpVFYlBs1ziap
+J9cYPKenuYQeNgcW5z5ackXb5ypRFKE8K7Fk6xKJsdM6F5T1eHBdta4N+W1f8RGK
+xt+xd7NwN4e02R6k/m8Qy4wMggannspwosTOYBy4KYJOUD15iTU+v/+SZHkfcg6S
+pYO2qK5Qzt2/gx/SkBw+PP27mSrXswLwTGFsh9swVTuOBBwDN3oXCKaMYUxiIo1f
+Hnedbll2ad4HqeTWHuii9jJLQfHRmKz6AOUErK4XJdWQyuaFv6jqL/gR2FOzkhWZ
+pISNdauJF4EV6ePgJdeb6zyASz103crcr/imnZmzxN055fa5Jq1r9Pj4k3dEygU8
+gZS7Rqo5afI2+6wUfd05b1dexu4TT1kiN0HWrrv+pxZ+YbkSsY8cbEK7cRD3CJcS
+R32YGZzejvwkyDuwqYQFjyuLAktUUaMzz3VbMRsNSJidgDOWMkxxsIWe7OazS7Dr
+9ZMDdTWee2d4Jwk/KHcnvSyQKQDpRVuOZ8j/xmo=
+</ds:X509Certificate></ds:X509Data></ds:KeyInfo></ds:Signature></eSocial>
+            </evento>
+    </eventos>
+  </envioLoteEventos>
+</eSocial></v1:loteEventos>
+    </v1:EnviarLoteEventos>
+  </soapenv:Body>
+</soapenv:Envelope>","{""eventos"": [{""id"": ""ID1059690710000002026032822085200001"", ""descricao"": ""Sucesso."", ""nr_recibo"": null, ""ocorrencias"": [], ""codigo_resposta"": ""201""}], ""sucesso"": true, ""descricao"": ""Lote processado com sucesso."", ""codigo_resposta"": ""201""}"
+16,S-1010,alteracao,processado,1.1.202603.0000000012938222896,201,Lote Recebido com Sucesso.,1,"[""234""]",,[],2026-03-28 19:12:53.580527,2026-03-28 19:13:01.655255,1,2018-02,"[{""analise"": ""Rubrica com inconsistência de IRRF"", ""nat_rubr"": ""6129"", ""descricao"": ""REEMB. EXAMES MÉDICOS"", ""incid_fgts"": ""0"", ""incid_inss"": ""0"", ""incid_irrf"": ""9"", ""cod_rubrica"": ""234"", ""cod_natureza"": ""6129 - Outras verbas não remuneratórias (indenizatórias ou multas)"", ""fgts_correto"": ""0"", ""inss_correto"": ""0"", ""irrf_correto"": ""79"", ""base_legal_fgts"": ""0 - Artigo 15 da Lei n° 8.036/90"", ""base_legal_inss"": ""0 - Artigo 28, inciso I, da Lei n° 8.212/91"", ""base_legal_irrf"": ""79 - Artigos 6 da Lei nº 7.713/88 e Artigo 2° da Lei n° 8.036/90, e artigo 65 do Decreto n° 9.580/2018""}]","<?xml version=""1.0"" encoding=""UTF-8""?>
+<soapenv:Envelope xmlns:soapenv=""http://schemas.xmlsoap.org/soap/envelope/"" xmlns:v1=""http://www.esocial.gov.br/servicos/empregador/lote/eventos/envio/v1_1_0"">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <v1:EnviarLoteEventos>
+      <v1:loteEventos><eSocial xmlns=""http://www.esocial.gov.br/schema/lote/eventos/envio/v1_1_1"">
+  <envioLoteEventos grupo=""1"">
+    <ideEmpregador>
+      <tpInsc>1</tpInsc>
+      <nrInsc>05969071</nrInsc>
+    </ideEmpregador>
+    <ideTransmissor>
+      <tpInsc>1</tpInsc>
+      <nrInsc>05969071000110</nrInsc>
+    </ideTransmissor>
+    <eventos>
+            <evento Id=""ID1059690710000002026032822125300001"">
+              <eSocial xmlns=""http://www.esocial.gov.br/schema/evt/evtTabRubrica/v_S_01_03_00""><evtTabRubrica Id=""ID1059690710000002026032822125300001""><ideEvento><tpAmb>1</tpAmb><procEmi>1</procEmi><verProc>EasySocial_1.0</verProc></ideEvento><ideEmpregador><tpInsc>1</tpInsc><nrInsc>05969071</nrInsc></ideEmpregador><infoRubrica><alteracao><ideRubrica><codRubr>234</codRubr><ideTabRubr>1</ideTabRubr><iniValid>2018-02</iniValid></ideRubrica><dadosRubrica><dscRubr>REEMB. EXAMES MÉDICOS</dscRubr><natRubr>6129</natRubr><tpRubr>1</tpRubr><codIncCP>00</codIncCP><codIncIRRF>79</codIncIRRF><codIncFGTS>00</codIncFGTS><codIncPisPasep>00</codIncPisPasep></dadosRubrica></alteracao></infoRubrica></evtTabRubrica><ds:Signature xmlns:ds=""http://www.w3.org/2000/09/xmldsig#""><ds:SignedInfo><ds:CanonicalizationMethod Algorithm=""http://www.w3.org/TR/2001/REC-xml-c14n-20010315""/><ds:SignatureMethod Algorithm=""http://www.w3.org/2001/04/xmldsig-more#rsa-sha256""/><ds:Reference URI=""""><ds:Transforms><ds:Transform Algorithm=""http://www.w3.org/2000/09/xmldsig#enveloped-signature""/><ds:Transform Algorithm=""http://www.w3.org/TR/2001/REC-xml-c14n-20010315""/></ds:Transforms><ds:DigestMethod Algorithm=""http://www.w3.org/2001/04/xmlenc#sha256""/><ds:DigestValue>TpFYckH/K+qo3EI4l7OdITb2Ty3mpZP3CSE7NNKbGpQ=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue>Ux2xDs7OLFUBeGOFW6/o0T1kqLpX+gi6IrEfC8D9xYVhcgaGFs2b0eT4UQI07aXNnQrtwtsJ0L/IRxtAv5NZXUMd3bbjxxxm581FYeBmhLgAaDysWfp/RUPwr8gJtSZRGdPtQyV80b3PoYqibcEqlsArX1rWpl0b0nB+x7x4jKYaxvoogNf0Emfwd8Ntwt1f4LgLem/CO1a567dDc3UjdggWk1C77Iuj+MNnMiyhHf8BEaqjcxs17NO6TBfjcdkWJAtIVdZKghw+WSnCTfGMcxibsZgZHqb3KdXHBs2gDSEbr125kV2QnhTiN9Iif+30GhaOTw0ULnEixquGuRKU3Q==</ds:SignatureValue><ds:KeyInfo><ds:X509Data><ds:X509Certificate>MIIH+TCCBeGgAwIBAgIIRcfr6E8/5mUwDQYJKoZIhvcNAQELBQAwdjELMAkGA1UE
+BhMCQlIxEzARBgNVBAoTCklDUC1CcmFzaWwxNjA0BgNVBAsTLVNlY3JldGFyaWEg
+ZGEgUmVjZWl0YSBGZWRlcmFsIGRvIEJyYXNpbCAtIFJGQjEaMBgGA1UEAxMRQUMg
+U0FGRVdFQiBSRkIgdjUwHhcNMjUwOTE5MTYzMjU5WhcNMjYwOTE5MTYzMjU5WjCC
+AQoxCzAJBgNVBAYTAkJSMRMwEQYDVQQKEwpJQ1AtQnJhc2lsMQswCQYDVQQIEwJT
+UDESMBAGA1UEBxMJU0FPIFBBVUxPMTYwNAYDVQQLEy1TZWNyZXRhcmlhIGRhIFJl
+Y2VpdGEgRmVkZXJhbCBkbyBCcmFzaWwgLSBSRkIxFjAUBgNVBAsTDVJGQiBlLUNO
+UEogQTExFzAVBgNVBAsTDjQ1OTUxNTk4MDAwMTMyMRkwFwYDVQQLExB2aWRlb2Nv
+bmZlcmVuY2lhMUEwPwYDVQQDEzhBUFBBIFNFUlZJQ09TIFRFTVBPUkFSSU9TIEUg
+RUZFVElWT1MgTFREQTowNTk2OTA3MTAwMDExMDCCASIwDQYJKoZIhvcNAQEBBQAD
+ggEPADCCAQoCggEBALrWAqx2qqfyzPymhGVcvtK4+yHKNiHW/OysBetF7crKfTBl
+fOHoIwqWb2NeQdDxwknSfrngs/OksNKGP09z4v+0Vzg9YvCTiT3xiwar8cFzcF4e
+jpYSQPf+ZvA/TLHH5GEli3nPQbphUddg8NQAZD0yACENatLfMMAGy2p82gZDc5fK
+fPzYMG71U85CNgcUL4/p/B80Rf0quj9fnMFVHZ0nrQWKjF9L29H/QVXHWTx6v8wx
+vIZ/nBWWWpV2dXlG4VJa9weJ+6zzd75PjzESC1TqVgRwpDKQlmRheapXj51+6KHi
+qf3fZQbbVFiatNo8d6ccuPPkkajNpTC6+esrsd0CAwEAAaOCAvMwggLvMB8GA1Ud
+IwQYMBaAFCleS9VGTLv+FqdjwR3EJvLd2PMFMA4GA1UdDwEB/wQEAwIF4DBpBgNV
+HSAEYjBgMF4GBmBMAQIBMzBUMFIGCCsGAQUFBwIBFkZodHRwOi8vcmVwb3NpdG9y
+aW8uYWNzYWZld2ViLmNvbS5ici9hYy1zYWZld2VicmZiL2RwYy1hY3NhZmV3ZWJy
+ZmIucGRmMIGuBgNVHR8EgaYwgaMwT6BNoEuGSWh0dHA6Ly9yZXBvc2l0b3Jpby5h
+Y3NhZmV3ZWIuY29tLmJyL2FjLXNhZmV3ZWJyZmIvbGNyLWFjLXNhZmV3ZWJyZmJ2
+NS5jcmwwUKBOoEyGSmh0dHA6Ly9yZXBvc2l0b3JpbzIuYWNzYWZld2ViLmNvbS5i
+ci9hYy1zYWZld2VicmZiL2xjci1hYy1zYWZld2VicmZidjUuY3JsMIG3BggrBgEF
+BQcBAQSBqjCBpzBRBggrBgEFBQcwAoZFaHR0cDovL3JlcG9zaXRvcmlvLmFjc2Fm
+ZXdlYi5jb20uYnIvYWMtc2FmZXdlYnJmYi9hYy1zYWZld2VicmZidjUucDdiMFIG
+CCsGAQUFBzAChkZodHRwOi8vcmVwb3NpdG9yaW8yLmFjc2FmZXdlYi5jb20uYnIv
+YWMtc2FmZXdlYnJmYi9hYy1zYWZld2VicmZidjUucDdiMIG7BgNVHREEgbMwgbCB
+IEVEVUFSRE8uTkVUT0BBUFBBRU1QUkVHT1MuQ09NLkJSoB4GBWBMAQMCoBUTE0VE
+VUFSRE8gRFVBUlRFIE5FVE+gGQYFYEwBAwOgEBMOMDU5NjkwNzEwMDAxMTCgOAYF
+YEwBAwSgLxMtMjEwNDE5NzAyNDU1MzQxMTg2NTAwMDAwMDAwMDAwMDAwMDAwMDAw
+MDAwMDAwoBcGBWBMAQMHoA4TDDAwMDAwMDAwMDAwMDAdBgNVHSUEFjAUBggrBgEF
+BQcDAgYIKwYBBQUHAwQwCQYDVR0TBAIwADANBgkqhkiG9w0BAQsFAAOCAgEAevBW
+nahGX6HuYq9HYWCfpMWLoAf+4rsBhJP6jpqvIQY9WgxTOPeOjNmWuEVVCsLYTpEV
+88VuLTxlkEDrGsR0RWvpo7DNNrMcg/O7wVxBMYNezE+Syna1c4HuC11hJl7++dAj
+Aslm6FQStLY3AzKl/I2FKcK9vOxGysa5IupQqP7fPyWf0531tCbQpVFYlBs1ziap
+J9cYPKenuYQeNgcW5z5ackXb5ypRFKE8K7Fk6xKJsdM6F5T1eHBdta4N+W1f8RGK
+xt+xd7NwN4e02R6k/m8Qy4wMggannspwosTOYBy4KYJOUD15iTU+v/+SZHkfcg6S
+pYO2qK5Qzt2/gx/SkBw+PP27mSrXswLwTGFsh9swVTuOBBwDN3oXCKaMYUxiIo1f
+Hnedbll2ad4HqeTWHuii9jJLQfHRmKz6AOUErK4XJdWQyuaFv6jqL/gR2FOzkhWZ
+pISNdauJF4EV6ePgJdeb6zyASz103crcr/imnZmzxN055fa5Jq1r9Pj4k3dEygU8
+gZS7Rqo5afI2+6wUfd05b1dexu4TT1kiN0HWrrv+pxZ+YbkSsY8cbEK7cRD3CJcS
+R32YGZzejvwkyDuwqYQFjyuLAktUUaMzz3VbMRsNSJidgDOWMkxxsIWe7OazS7Dr
+9ZMDdTWee2d4Jwk/KHcnvSyQKQDpRVuOZ8j/xmo=
+</ds:X509Certificate></ds:X509Data></ds:KeyInfo></ds:Signature></eSocial>
+            </evento>
+    </eventos>
+  </envioLoteEventos>
+</eSocial></v1:loteEventos>
+    </v1:EnviarLoteEventos>
+  </soapenv:Body>
+</soapenv:Envelope>","{""eventos"": [{""id"": ""ID1059690710000002026032822125300001"", ""descricao"": ""Sucesso."", ""nr_recibo"": null, ""ocorrencias"": [], ""codigo_resposta"": ""201""}], ""sucesso"": true, ""descricao"": ""Lote processado com sucesso."", ""codigo_resposta"": ""201""}"
+17,S-1010,alteracao,processado,1.1.202603.0000000012938232904,201,Lote Recebido com Sucesso.,1,"[""240""]",,[],2026-03-28 19:20:24.287643,2026-03-28 19:20:33.873971,1,2018-02,"[{""analise"": ""Rubrica com inconsistência de IRRF"", ""nat_rubr"": ""1409"", ""descricao"": ""REEMB. SALARIO FAMILIA"", ""incid_fgts"": ""0"", ""incid_inss"": ""51"", ""incid_irrf"": ""0"", ""cod_rubrica"": ""240"", ""cod_natureza"": ""1409 - Salário-família"", ""fgts_correto"": ""0"", ""inss_correto"": ""51"", ""irrf_correto"": ""79"", ""base_legal_fgts"": ""0 - Artigo 15 da Lei n° 8.036/90"", ""base_legal_inss"": ""51 - Artigo 28, inciso I, da Lei n° 8.212/91"", ""base_legal_irrf"": ""79 - Artigos 5º, inciso VII da IN 1500/2014""}]","<?xml version=""1.0"" encoding=""UTF-8""?>
+<soapenv:Envelope xmlns:soapenv=""http://schemas.xmlsoap.org/soap/envelope/"" xmlns:v1=""http://www.esocial.gov.br/servicos/empregador/lote/eventos/envio/v1_1_0"">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <v1:EnviarLoteEventos>
+      <v1:loteEventos><eSocial xmlns=""http://www.esocial.gov.br/schema/lote/eventos/envio/v1_1_1"">
+  <envioLoteEventos grupo=""1"">
+    <ideEmpregador>
+      <tpInsc>1</tpInsc>
+      <nrInsc>05969071</nrInsc>
+    </ideEmpregador>
+    <ideTransmissor>
+      <tpInsc>1</tpInsc>
+      <nrInsc>05969071000110</nrInsc>
+    </ideTransmissor>
+    <eventos>
+            <evento Id=""ID1059690710000002026032822202400001"">
+              <eSocial xmlns=""http://www.esocial.gov.br/schema/evt/evtTabRubrica/v_S_01_03_00""><evtTabRubrica Id=""ID1059690710000002026032822202400001""><ideEvento><tpAmb>1</tpAmb><procEmi>1</procEmi><verProc>EasySocial_1.0</verProc></ideEvento><ideEmpregador><tpInsc>1</tpInsc><nrInsc>05969071</nrInsc></ideEmpregador><infoRubrica><alteracao><ideRubrica><codRubr>240</codRubr><ideTabRubr>1</ideTabRubr><iniValid>2018-02</iniValid></ideRubrica><dadosRubrica><dscRubr>REEMB. SALARIO FAMILIA</dscRubr><natRubr>1409</natRubr><tpRubr>1</tpRubr><codIncCP>51</codIncCP><codIncIRRF>79</codIncIRRF><codIncFGTS>00</codIncFGTS><codIncPisPasep>00</codIncPisPasep></dadosRubrica></alteracao></infoRubrica></evtTabRubrica><ds:Signature xmlns:ds=""http://www.w3.org/2000/09/xmldsig#""><ds:SignedInfo><ds:CanonicalizationMethod Algorithm=""http://www.w3.org/TR/2001/REC-xml-c14n-20010315""/><ds:SignatureMethod Algorithm=""http://www.w3.org/2001/04/xmldsig-more#rsa-sha256""/><ds:Reference URI=""""><ds:Transforms><ds:Transform Algorithm=""http://www.w3.org/2000/09/xmldsig#enveloped-signature""/><ds:Transform Algorithm=""http://www.w3.org/TR/2001/REC-xml-c14n-20010315""/></ds:Transforms><ds:DigestMethod Algorithm=""http://www.w3.org/2001/04/xmlenc#sha256""/><ds:DigestValue>TuXK8Pq9wVibbC/25vEo6xK3G1RHf281d3oCgrQgyLM=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue>Jvnjr/xhK0RGEHxGpYFFAHiyFFsYcXZ+BuFoWXxrY19+4nsrOzjJ69kI+0Pn4YcjbKrccbNA0mzta5PJ9iMFy40rJNlZJZzkOaLX5ShMV9ruixsHDd9TK3FAzx86iGytFoGKAVfdDlnIXEukeIf7BFdJe0Ntc0ZJ/4Zyg5DEq2GSwrXqcySTCzqPE/y2MBs6aRI1bHHns9Vpxkx6KyDnKy2Zn1kI7hJvn3y4jErjw6gCNIqOKpcVIdPg/L126/1IzrgUw9rgSbY1sjezgJaJHW43W00LbUGMp02ntpQSHLdrziqin4xf5+KfmmVNEfjTVa93Eqka1BnWXpoLucgEKQ==</ds:SignatureValue><ds:KeyInfo><ds:X509Data><ds:X509Certificate>MIIH+TCCBeGgAwIBAgIIRcfr6E8/5mUwDQYJKoZIhvcNAQELBQAwdjELMAkGA1UE
+BhMCQlIxEzARBgNVBAoTCklDUC1CcmFzaWwxNjA0BgNVBAsTLVNlY3JldGFyaWEg
+ZGEgUmVjZWl0YSBGZWRlcmFsIGRvIEJyYXNpbCAtIFJGQjEaMBgGA1UEAxMRQUMg
+U0FGRVdFQiBSRkIgdjUwHhcNMjUwOTE5MTYzMjU5WhcNMjYwOTE5MTYzMjU5WjCC
+AQoxCzAJBgNVBAYTAkJSMRMwEQYDVQQKEwpJQ1AtQnJhc2lsMQswCQYDVQQIEwJT
+UDESMBAGA1UEBxMJU0FPIFBBVUxPMTYwNAYDVQQLEy1TZWNyZXRhcmlhIGRhIFJl
+Y2VpdGEgRmVkZXJhbCBkbyBCcmFzaWwgLSBSRkIxFjAUBgNVBAsTDVJGQiBlLUNO
+UEogQTExFzAVBgNVBAsTDjQ1OTUxNTk4MDAwMTMyMRkwFwYDVQQLExB2aWRlb2Nv
+bmZlcmVuY2lhMUEwPwYDVQQDEzhBUFBBIFNFUlZJQ09TIFRFTVBPUkFSSU9TIEUg
+RUZFVElWT1MgTFREQTowNTk2OTA3MTAwMDExMDCCASIwDQYJKoZIhvcNAQEBBQAD
+ggEPADCCAQoCggEBALrWAqx2qqfyzPymhGVcvtK4+yHKNiHW/OysBetF7crKfTBl
+fOHoIwqWb2NeQdDxwknSfrngs/OksNKGP09z4v+0Vzg9YvCTiT3xiwar8cFzcF4e
+jpYSQPf+ZvA/TLHH5GEli3nPQbphUddg8NQAZD0yACENatLfMMAGy2p82gZDc5fK
+fPzYMG71U85CNgcUL4/p/B80Rf0quj9fnMFVHZ0nrQWKjF9L29H/QVXHWTx6v8wx
+vIZ/nBWWWpV2dXlG4VJa9weJ+6zzd75PjzESC1TqVgRwpDKQlmRheapXj51+6KHi
+qf3fZQbbVFiatNo8d6ccuPPkkajNpTC6+esrsd0CAwEAAaOCAvMwggLvMB8GA1Ud
+IwQYMBaAFCleS9VGTLv+FqdjwR3EJvLd2PMFMA4GA1UdDwEB/wQEAwIF4DBpBgNV
+HSAEYjBgMF4GBmBMAQIBMzBUMFIGCCsGAQUFBwIBFkZodHRwOi8vcmVwb3NpdG9y
+aW8uYWNzYWZld2ViLmNvbS5ici9hYy1zYWZld2VicmZiL2RwYy1hY3NhZmV3ZWJy
+ZmIucGRmMIGuBgNVHR8EgaYwgaMwT6BNoEuGSWh0dHA6Ly9yZXBvc2l0b3Jpby5h
+Y3NhZmV3ZWIuY29tLmJyL2FjLXNhZmV3ZWJyZmIvbGNyLWFjLXNhZmV3ZWJyZmJ2
+NS5jcmwwUKBOoEyGSmh0dHA6Ly9yZXBvc2l0b3JpbzIuYWNzYWZld2ViLmNvbS5i
+ci9hYy1zYWZld2VicmZiL2xjci1hYy1zYWZld2VicmZidjUuY3JsMIG3BggrBgEF
+BQcBAQSBqjCBpzBRBggrBgEFBQcwAoZFaHR0cDovL3JlcG9zaXRvcmlvLmFjc2Fm
+ZXdlYi5jb20uYnIvYWMtc2FmZXdlYnJmYi9hYy1zYWZld2VicmZidjUucDdiMFIG
+CCsGAQUFBzAChkZodHRwOi8vcmVwb3NpdG9yaW8yLmFjc2FmZXdlYi5jb20uYnIv
+YWMtc2FmZXdlYnJmYi9hYy1zYWZld2VicmZidjUucDdiMIG7BgNVHREEgbMwgbCB
+IEVEVUFSRE8uTkVUT0BBUFBBRU1QUkVHT1MuQ09NLkJSoB4GBWBMAQMCoBUTE0VE
+VUFSRE8gRFVBUlRFIE5FVE+gGQYFYEwBAwOgEBMOMDU5NjkwNzEwMDAxMTCgOAYF
+YEwBAwSgLxMtMjEwNDE5NzAyNDU1MzQxMTg2NTAwMDAwMDAwMDAwMDAwMDAwMDAw
+MDAwMDAwoBcGBWBMAQMHoA4TDDAwMDAwMDAwMDAwMDAdBgNVHSUEFjAUBggrBgEF
+BQcDAgYIKwYBBQUHAwQwCQYDVR0TBAIwADANBgkqhkiG9w0BAQsFAAOCAgEAevBW
+nahGX6HuYq9HYWCfpMWLoAf+4rsBhJP6jpqvIQY9WgxTOPeOjNmWuEVVCsLYTpEV
+88VuLTxlkEDrGsR0RWvpo7DNNrMcg/O7wVxBMYNezE+Syna1c4HuC11hJl7++dAj
+Aslm6FQStLY3AzKl/I2FKcK9vOxGysa5IupQqP7fPyWf0531tCbQpVFYlBs1ziap
+J9cYPKenuYQeNgcW5z5ackXb5ypRFKE8K7Fk6xKJsdM6F5T1eHBdta4N+W1f8RGK
+xt+xd7NwN4e02R6k/m8Qy4wMggannspwosTOYBy4KYJOUD15iTU+v/+SZHkfcg6S
+pYO2qK5Qzt2/gx/SkBw+PP27mSrXswLwTGFsh9swVTuOBBwDN3oXCKaMYUxiIo1f
+Hnedbll2ad4HqeTWHuii9jJLQfHRmKz6AOUErK4XJdWQyuaFv6jqL/gR2FOzkhWZ
+pISNdauJF4EV6ePgJdeb6zyASz103crcr/imnZmzxN055fa5Jq1r9Pj4k3dEygU8
+gZS7Rqo5afI2+6wUfd05b1dexu4TT1kiN0HWrrv+pxZ+YbkSsY8cbEK7cRD3CJcS
+R32YGZzejvwkyDuwqYQFjyuLAktUUaMzz3VbMRsNSJidgDOWMkxxsIWe7OazS7Dr
+9ZMDdTWee2d4Jwk/KHcnvSyQKQDpRVuOZ8j/xmo=
+</ds:X509Certificate></ds:X509Data></ds:KeyInfo></ds:Signature></eSocial>
+            </evento>
+    </eventos>
+  </envioLoteEventos>
+</eSocial></v1:loteEventos>
+    </v1:EnviarLoteEventos>
+  </soapenv:Body>
+</soapenv:Envelope>","{""eventos"": [{""id"": ""ID1059690710000002026032822202400001"", ""descricao"": ""Sucesso."", ""nr_recibo"": null, ""ocorrencias"": [], ""codigo_resposta"": ""201""}], ""sucesso"": true, ""descricao"": ""Lote processado com sucesso."", ""codigo_resposta"": ""201""}"
+18,S-1010,alteracao,processado,1.1.202603.0000000012938234001,201,Lote Recebido com Sucesso.,1,"[""241""]",,[],2026-03-28 19:21:43.015493,2026-03-28 19:21:51.438815,1,2018-02,"[{""analise"": ""Rubrica com inconsistência de IRRF"", ""nat_rubr"": ""1409"", ""descricao"": ""SALÁRIO FAMILIA MES ANTERIOR"", ""incid_fgts"": ""0"", ""incid_inss"": ""51"", ""incid_irrf"": ""0"", ""cod_rubrica"": ""241"", ""cod_natureza"": ""1409 - Salário-família"", ""fgts_correto"": ""0"", ""inss_correto"": ""51"", ""irrf_correto"": ""79"", ""base_legal_fgts"": ""0 - Artigo 15 da Lei n° 8.036/90"", ""base_legal_inss"": ""51 - Artigo 28, inciso I, da Lei n° 8.212/91"", ""base_legal_irrf"": ""79 - Artigos 5º, inciso VII da IN 1500/2014""}]","<?xml version=""1.0"" encoding=""UTF-8""?>
+<soapenv:Envelope xmlns:soapenv=""http://schemas.xmlsoap.org/soap/envelope/"" xmlns:v1=""http://www.esocial.gov.br/servicos/empregador/lote/eventos/envio/v1_1_0"">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <v1:EnviarLoteEventos>
+      <v1:loteEventos><eSocial xmlns=""http://www.esocial.gov.br/schema/lote/eventos/envio/v1_1_1"">
+  <envioLoteEventos grupo=""1"">
+    <ideEmpregador>
+      <tpInsc>1</tpInsc>
+      <nrInsc>05969071</nrInsc>
+    </ideEmpregador>
+    <ideTransmissor>
+      <tpInsc>1</tpInsc>
+      <nrInsc>05969071000110</nrInsc>
+    </ideTransmissor>
+    <eventos>
+            <evento Id=""ID1059690710000002026032822214300001"">
+              <eSocial xmlns=""http://www.esocial.gov.br/schema/evt/evtTabRubrica/v_S_01_03_00""><evtTabRubrica Id=""ID1059690710000002026032822214300001""><ideEvento><tpAmb>1</tpAmb><procEmi>1</procEmi><verProc>EasySocial_1.0</verProc></ideEvento><ideEmpregador><tpInsc>1</tpInsc><nrInsc>05969071</nrInsc></ideEmpregador><infoRubrica><alteracao><ideRubrica><codRubr>241</codRubr><ideTabRubr>1</ideTabRubr><iniValid>2018-02</iniValid></ideRubrica><dadosRubrica><dscRubr>SALÁRIO FAMILIA MES ANTERIOR</dscRubr><natRubr>1409</natRubr><tpRubr>1</tpRubr><codIncCP>51</codIncCP><codIncIRRF>79</codIncIRRF><codIncFGTS>00</codIncFGTS><codIncPisPasep>00</codIncPisPasep></dadosRubrica></alteracao></infoRubrica></evtTabRubrica><ds:Signature xmlns:ds=""http://www.w3.org/2000/09/xmldsig#""><ds:SignedInfo><ds:CanonicalizationMethod Algorithm=""http://www.w3.org/TR/2001/REC-xml-c14n-20010315""/><ds:SignatureMethod Algorithm=""http://www.w3.org/2001/04/xmldsig-more#rsa-sha256""/><ds:Reference URI=""""><ds:Transforms><ds:Transform Algorithm=""http://www.w3.org/2000/09/xmldsig#enveloped-signature""/><ds:Transform Algorithm=""http://www.w3.org/TR/2001/REC-xml-c14n-20010315""/></ds:Transforms><ds:DigestMethod Algorithm=""http://www.w3.org/2001/04/xmlenc#sha256""/><ds:DigestValue>fQp7m8CiavzrxUSqvhV6fkhqF3N40+l7YZcKiRNU+tc=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue>cBsqDxIp0kvdTT0SbBL5PCmA6oDLPHupor9Gdt6Av+7v9Ux+hPZ7UvZciY1wDbrGajijP+ODoUiIeh6XWWKRyXURAguA6Hc/sOBTSIRF7HFMiuc1WPBKa231EgO4g5aYZ6pbjSePqxRgtRDHPDn26AN4Jkh9WNbmf/bXlSTm/R7+MoiUg3hHW+rEnlk01DjoYq+bumV6Svowtr/JjV4oY9f9NvPyIqn60y9OvwtZegfISbBFM+jb3Q3yrtd9U5MakLddDIVRqsW4eY5h1uytq/g7lrWbyxgino2lyj2LxNbiRiul/8FePCBVJSFvQeVu/FwwahMStsig7QFAYS+bIA==</ds:SignatureValue><ds:KeyInfo><ds:X509Data><ds:X509Certificate>MIIH+TCCBeGgAwIBAgIIRcfr6E8/5mUwDQYJKoZIhvcNAQELBQAwdjELMAkGA1UE
+BhMCQlIxEzARBgNVBAoTCklDUC1CcmFzaWwxNjA0BgNVBAsTLVNlY3JldGFyaWEg
+ZGEgUmVjZWl0YSBGZWRlcmFsIGRvIEJyYXNpbCAtIFJGQjEaMBgGA1UEAxMRQUMg
+U0FGRVdFQiBSRkIgdjUwHhcNMjUwOTE5MTYzMjU5WhcNMjYwOTE5MTYzMjU5WjCC
+AQoxCzAJBgNVBAYTAkJSMRMwEQYDVQQKEwpJQ1AtQnJhc2lsMQswCQYDVQQIEwJT
+UDESMBAGA1UEBxMJU0FPIFBBVUxPMTYwNAYDVQQLEy1TZWNyZXRhcmlhIGRhIFJl
+Y2VpdGEgRmVkZXJhbCBkbyBCcmFzaWwgLSBSRkIxFjAUBgNVBAsTDVJGQiBlLUNO
+UEogQTExFzAVBgNVBAsTDjQ1OTUxNTk4MDAwMTMyMRkwFwYDVQQLExB2aWRlb2Nv
+bmZlcmVuY2lhMUEwPwYDVQQDEzhBUFBBIFNFUlZJQ09TIFRFTVBPUkFSSU9TIEUg
+RUZFVElWT1MgTFREQTowNTk2OTA3MTAwMDExMDCCASIwDQYJKoZIhvcNAQEBBQAD
+ggEPADCCAQoCggEBALrWAqx2qqfyzPymhGVcvtK4+yHKNiHW/OysBetF7crKfTBl
+fOHoIwqWb2NeQdDxwknSfrngs/OksNKGP09z4v+0Vzg9YvCTiT3xiwar8cFzcF4e
+jpYSQPf+ZvA/TLHH5GEli3nPQbphUddg8NQAZD0yACENatLfMMAGy2p82gZDc5fK
+fPzYMG71U85CNgcUL4/p/B80Rf0quj9fnMFVHZ0nrQWKjF9L29H/QVXHWTx6v8wx
+vIZ/nBWWWpV2dXlG4VJa9weJ+6zzd75PjzESC1TqVgRwpDKQlmRheapXj51+6KHi
+qf3fZQbbVFiatNo8d6ccuPPkkajNpTC6+esrsd0CAwEAAaOCAvMwggLvMB8GA1Ud
+IwQYMBaAFCleS9VGTLv+FqdjwR3EJvLd2PMFMA4GA1UdDwEB/wQEAwIF4DBpBgNV
+HSAEYjBgMF4GBmBMAQIBMzBUMFIGCCsGAQUFBwIBFkZodHRwOi8vcmVwb3NpdG9y
+aW8uYWNzYWZld2ViLmNvbS5ici9hYy1zYWZld2VicmZiL2RwYy1hY3NhZmV3ZWJy
+ZmIucGRmMIGuBgNVHR8EgaYwgaMwT6BNoEuGSWh0dHA6Ly9yZXBvc2l0b3Jpby5h
+Y3NhZmV3ZWIuY29tLmJyL2FjLXNhZmV3ZWJyZmIvbGNyLWFjLXNhZmV3ZWJyZmJ2
+NS5jcmwwUKBOoEyGSmh0dHA6Ly9yZXBvc2l0b3JpbzIuYWNzYWZld2ViLmNvbS5i
+ci9hYy1zYWZld2VicmZiL2xjci1hYy1zYWZld2VicmZidjUuY3JsMIG3BggrBgEF
+BQcBAQSBqjCBpzBRBggrBgEFBQcwAoZFaHR0cDovL3JlcG9zaXRvcmlvLmFjc2Fm
+ZXdlYi5jb20uYnIvYWMtc2FmZXdlYnJmYi9hYy1zYWZld2VicmZidjUucDdiMFIG
+CCsGAQUFBzAChkZodHRwOi8vcmVwb3NpdG9yaW8yLmFjc2FmZXdlYi5jb20uYnIv
+YWMtc2FmZXdlYnJmYi9hYy1zYWZld2VicmZidjUucDdiMIG7BgNVHREEgbMwgbCB
+IEVEVUFSRE8uTkVUT0BBUFBBRU1QUkVHT1MuQ09NLkJSoB4GBWBMAQMCoBUTE0VE
+VUFSRE8gRFVBUlRFIE5FVE+gGQYFYEwBAwOgEBMOMDU5NjkwNzEwMDAxMTCgOAYF
+YEwBAwSgLxMtMjEwNDE5NzAyNDU1MzQxMTg2NTAwMDAwMDAwMDAwMDAwMDAwMDAw
+MDAwMDAwoBcGBWBMAQMHoA4TDDAwMDAwMDAwMDAwMDAdBgNVHSUEFjAUBggrBgEF
+BQcDAgYIKwYBBQUHAwQwCQYDVR0TBAIwADANBgkqhkiG9w0BAQsFAAOCAgEAevBW
+nahGX6HuYq9HYWCfpMWLoAf+4rsBhJP6jpqvIQY9WgxTOPeOjNmWuEVVCsLYTpEV
+88VuLTxlkEDrGsR0RWvpo7DNNrMcg/O7wVxBMYNezE+Syna1c4HuC11hJl7++dAj
+Aslm6FQStLY3AzKl/I2FKcK9vOxGysa5IupQqP7fPyWf0531tCbQpVFYlBs1ziap
+J9cYPKenuYQeNgcW5z5ackXb5ypRFKE8K7Fk6xKJsdM6F5T1eHBdta4N+W1f8RGK
+xt+xd7NwN4e02R6k/m8Qy4wMggannspwosTOYBy4KYJOUD15iTU+v/+SZHkfcg6S
+pYO2qK5Qzt2/gx/SkBw+PP27mSrXswLwTGFsh9swVTuOBBwDN3oXCKaMYUxiIo1f
+Hnedbll2ad4HqeTWHuii9jJLQfHRmKz6AOUErK4XJdWQyuaFv6jqL/gR2FOzkhWZ
+pISNdauJF4EV6ePgJdeb6zyASz103crcr/imnZmzxN055fa5Jq1r9Pj4k3dEygU8
+gZS7Rqo5afI2+6wUfd05b1dexu4TT1kiN0HWrrv+pxZ+YbkSsY8cbEK7cRD3CJcS
+R32YGZzejvwkyDuwqYQFjyuLAktUUaMzz3VbMRsNSJidgDOWMkxxsIWe7OazS7Dr
+9ZMDdTWee2d4Jwk/KHcnvSyQKQDpRVuOZ8j/xmo=
+</ds:X509Certificate></ds:X509Data></ds:KeyInfo></ds:Signature></eSocial>
+            </evento>
+    </eventos>
+  </envioLoteEventos>
+</eSocial></v1:loteEventos>
+    </v1:EnviarLoteEventos>
+  </soapenv:Body>
+</soapenv:Envelope>","{""eventos"": [{""id"": ""ID1059690710000002026032822214300001"", ""descricao"": ""Sucesso."", ""nr_recibo"": null, ""ocorrencias"": [], ""codigo_resposta"": ""201""}], ""sucesso"": true, ""descricao"": ""Lote processado com sucesso."", ""codigo_resposta"": ""201""}"

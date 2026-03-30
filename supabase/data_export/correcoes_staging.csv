@@ -1,0 +1,92 @@
+id,analise_natureza_id,codigoevento,nome_evento,natureza_anterior,natureza_nova_codigo,natureza_nova_nome,motivo,usuario_id,usuario_nome,status,criado_em,aplicado_em
+3,461,13,REEMB. VALE TRANSPORTE,1629-Ressarcimento de outras despesas,1810,Transporte,"",,Ana,aplicada,2026-03-26 15:25:56.06855,2026-03-27 13:37:03.472527
+16,524,243,REEMB. CONTRIB. SINDICAL,2920-Reembolsos diversos,6129,Outras multas ou indenizações,"",,Ana,aplicada,2026-03-27 12:07:41.877817,2026-03-27 13:37:03.472527
+17,533,265,REEMB. EMPRESTIMO CONSIGNADO,9254-Empréstimos consignados  desconto,6129,Outras multas ou indenizações,"",,Ana,aplicada,2026-03-27 12:07:54.596131,2026-03-27 13:37:03.472527
+19,560,342,DIF. CESTA BASICA CCT,2920-Reembolsos diversos,9243,"Cesta básica ou refeição, vinculada ao PAT - Desconto","",,Ana,aplicada,2026-03-27 12:09:35.581699,2026-03-27 13:37:03.472527
+20,593,403,COMPLEMENTO FERIAS (DISSIDIO),1020-Férias  gozadas,1016,Férias,"",,Ana,aplicada,2026-03-27 12:11:49.255605,2026-03-27 13:37:03.472527
+21,595,405,MEDIAS FERIAS (Ferias),1020-Férias  gozadas,1016,Férias,"",,Ana,aplicada,2026-03-27 12:12:02.256142,2026-03-27 13:37:03.472527
+22,597,407,MEDIAS FERIAS S/ABONO (Ferias),1017-Terço constitucional de férias,1023,Férias - Abono pecuniário,"",,Ana,aplicada,2026-03-27 12:12:19.402194,2026-03-27 13:37:03.472527
+23,598,408,1/3 MEDIAS FERIAS S/ABONO (Ferias),1021-Férias - abono ou gratificação de férias superior a 20 dias,1023,Férias - Abono pecuniário,"",,Ana,aplicada,2026-03-27 12:12:32.288428,2026-03-27 13:37:03.472527
+24,600,421,AJUDA DE CUSTO,1211-Gratificações,1603,Ajuda de custo,"",,Ana,aplicada,2026-03-27 12:13:29.70817,2026-03-27 13:37:03.472527
+25,628,503,DESC. D.S.R. S/FALTAS (DIAS),9210-DSR s/faltas e atrasos,9211,DSR sobre faltas,"",,Ana,aplicada,2026-03-27 12:13:54.530071,2026-03-27 13:37:03.472527
+26,629,504,DESC. D.S.R. S/FALTAS (HORAS),9210-DSR s/faltas e atrasos,9210,DSR s/faltas e atrasos,"",,Ana,aplicada,2026-03-27 12:14:21.31779,2026-03-27 13:37:03.472527
+27,637,516,DESC. ASSIST. ODONTOLOGICA DEPENDENTE,9299-Outros descontos,9219,Desconto de assistência médica ou odontológica,"",,Ana,aplicada,2026-03-27 12:15:40.300491,2026-03-27 13:37:03.472527
+35,755,752,DIF. 1/3 DAS FERIAS,1020-Férias  gozadas,1016,Férias,"",,Ana,aplicada,2026-03-27 12:20:10.103052,2026-03-27 13:37:03.472527
+59,603,430,DEVOLUCAO DESC. VT,2920-Reembolsos diversos,1629,Ressarcimento de outras despesas,"",,Ana,aplicada,2026-03-27 12:48:36.52108,2026-03-27 13:37:03.472527
+60,626,501,DESC. FALTAS (HORAS),9209-Faltas ou atrados,9209,Faltas ou atrasos,"",,Ana,aplicada,2026-03-27 12:49:52.098905,2026-03-27 13:37:03.472527
+61,633,509,DESC. DEV. HE/A.N./DSR - MES ANT,9210-DSR s/faltas e atrasos,9299,Outros descontos,"",,Ana,aplicada,2026-03-27 12:59:25.97264,2026-03-27 13:37:03.472527
+62,556,328,ADIANTAMENTO DE SALARIO,0-Não Informado,0,Sem natureza,"",,Ana,aplicada,2026-03-27 13:00:13.735871,2026-03-27 13:37:03.472527
+63,636,512,DESC. FALTAS HORAS MES ANTERIOR,9290-Desconto de pagamento indevido em meses anteriores,9209,Faltas ou atrasos,"",,Ana,aplicada,2026-03-27 13:00:49.358268,2026-03-27 13:37:03.472527
+64,642,524,DESC. DIF. SALARIO,9290-Desconto de pagamento indevido em meses anteriores,9299,Outros descontos,"",,Ana,aplicada,2026-03-27 13:01:10.673512,2026-03-27 13:37:03.472527
+28,641,522,DESC. CO PARTICIPACAO A.M.,9299-Outros descontos,9219,Desconto de assistência médica ou odontológica,"",,Ana,aplicada,2026-03-27 12:16:20.085842,2026-03-27 13:37:03.472527
+29,646,537,DESC. ASSIST. MEDICA,9299-Outros descontos,9219,Desconto de assistência médica ou odontológica,"",,Ana,aplicada,2026-03-27 12:16:47.572892,2026-03-27 13:37:03.472527
+30,685,605,DESC. ASSIST. ODONTO. DEPENDENTE,9299-Outros descontos,9219,Desconto de assistência médica ou odontológica,"",,Ana,aplicada,2026-03-27 12:17:53.450885,2026-03-27 13:37:03.472527
+31,686,606,DESC. ASSIST. ODONTO. DEPENDENTE,9299-Outros descontos,9219,Desconto de assistência médica ou odontológica,"",,Ana,aplicada,2026-03-27 12:18:16.787622,2026-03-27 13:37:03.472527
+32,694,619,DESC. ASS. MÉDICA DEP.,9299-Outros descontos,9219,Desconto de assistência médica ou odontológica,"",,Ana,aplicada,2026-03-27 12:18:31.953817,2026-03-27 13:37:03.472527
+33,699,631,DESC. ASSIST. ODONT. SINTACLUNS,9299-Outros descontos,9219,Desconto de assistência médica ou odontológica,"",,Ana,aplicada,2026-03-27 12:19:01.878031,2026-03-27 13:37:03.472527
+34,702,638,DESC. ASSIST. ODONT. DEP. SINTACLUNS,9299-Outros descontos,9219,Desconto de assistência médica ou odontológica,"",,Ana,aplicada,2026-03-27 12:19:14.196437,2026-03-27 13:37:03.472527
+57,594,404,DIF. FERIAS,1020-Férias  gozadas,1016,Férias,"",,Ana,aplicada,2026-03-27 12:45:25.365186,2026-03-27 13:37:03.472527
+58,602,428,REEMBOLSO DESC. INDEVIDO,1299-Outros Adicionais,1629,Ressarcimento de outras despesas,"",,Ana,aplicada,2026-03-27 12:47:04.716161,2026-03-27 13:37:03.472527
+72,823,899,DESC. PAGTO. INDEVIDO,9209-Faltas ou atrados,9299,Outros descontos,"",,Ana,aplicada,2026-03-27 13:15:03.307945,2026-03-27 13:37:03.472527
+73,706,645,DESCONTO DE 2 VIA VT,0-Não Informado,0,Sem natureza,"",,Ana,aplicada,2026-03-27 13:15:10.636538,2026-03-27 13:37:03.472527
+74,695,621,DESC. BB DETAL,9299-Outros descontos,9219,Desconto de assistência médica ou odontológica,"",,Ana,aplicada,2026-03-27 13:15:32.3971,2026-03-27 13:37:03.472527
+92,836,994,PARCELAMENTO,0-Não Informado,0,Sem natureza,"",,Ana,aplicada,2026-03-27 13:27:45.382972,2026-03-27 13:37:03.472527
+65,644,526,DESC. PLR,9200-Desconto de Adiantamentos,9232,Contribuição sindical - Assistencial,"",,Ana,aplicada,2026-03-27 13:11:05.274754,2026-03-27 13:37:03.472527
+18,555,320,SOBRE AVISO,1003-Horas extraordinárias,1011,Sobreaviso e prontidão,"",,Ana,aplicada,2026-03-27 12:08:04.5585,2026-03-27 13:37:03.472527
+66,666,577,DESC. VA NAO UTILIZADO MES ANTERIOR,"9243-Cesta básica ou refeição, vinculada ao PAT - Desconto",9299,Outros descontos,"",,Ana,aplicada,2026-03-27 13:11:35.413137,2026-03-27 13:37:03.472527
+75,715,664,DESC. VALE ALIMENTACAO MES ANTERIOR,"9243-Cesta básica ou refeição, vinculada ao PAT - Desconto",9241,"Alimentação em ticket ou cartão, vinculada ao PAT - Desconto","",,Ana,aplicada,2026-03-27 13:16:01.219163,2026-03-27 13:37:03.472527
+76,724,685,DESC. ADIANTAMENTO DE SALARIO,0-Não Informado,0,Sem natureza,"",,Ana,aplicada,2026-03-27 13:16:04.794365,2026-03-27 13:37:03.472527
+85,758,757,DESC. CONTRIB. DE NATUREZA PREVIDENCIARIA,9232-Contribuição Sindical  Assistencial,9232,Contribuição sindical - Assistencial,"",,Ana,aplicada,2026-03-27 13:23:34.754489,2026-03-27 13:37:03.472527
+86,763,767,DESC. PAGTO. SALARIO INDEV.,9209-Faltas ou atrados,9299,Outros descontos,"",,Ana,aplicada,2026-03-27 13:23:48.395165,2026-03-27 13:37:03.472527
+87,771,776,DESC. VALE ALIMENTACAO,"9243-Cesta básica ou refeição, vinculada ao PAT - Desconto",9241,"Alimentação em ticket ou cartão, vinculada ao PAT - Desconto","",,Ana,aplicada,2026-03-27 13:23:55.538108,2026-03-27 13:37:03.472527
+44,495,146,DEV. D.S.R. S/FALTAS (DIAS),1002-Descanso semanal remunerado - DSR,1002,Descanso semanal remunerado - DSR,"",,Ana,aplicada,2026-03-27 12:26:25.613997,2026-03-27 13:37:03.472527
+6,811,869,REEMBOLSO DESC. INDEVIDO,1299-Outros Adicionais,1629,Ressarcimento de outras despesas,"",,Ana,aplicada,2026-03-26 17:27:16.598237,2026-03-27 13:37:03.472527
+7,466,35,DIF. D.S.R.,1002-Descanso semanal remunerado - DSR,1002,Descanso semanal remunerado - DSR,"",,Ana,aplicada,2026-03-27 12:05:10.800923,2026-03-27 13:37:03.472527
+9,493,136,D.S.R. S/ADICIONAL,1002-Descanso semanal remunerado - DSR,1002,Descanso semanal remunerado - DSR,"",,Ana,aplicada,2026-03-27 12:05:33.606779,2026-03-27 13:37:03.472527
+11,501,159,D.S.R. S/ADICIONAL,1002-Descanso semanal remunerado - DSR,1002,Descanso semanal remunerado - DSR,"",,Ana,aplicada,2026-03-27 12:06:03.252038,2026-03-27 13:37:03.472527
+12,502,160,D.S.R. S/HORA EXTRA,1002-Descanso semanal remunerado - DSR,1002,Descanso semanal remunerado - DSR,"",,Ana,aplicada,2026-03-27 12:06:23.741503,2026-03-27 13:37:03.472527
+13,504,163,D.S.R. S/FERIADO - HS,1002-Descanso semanal remunerado - DSR,1012,Descanso semanal remunerado - DSR e feriado,"",,Ana,aplicada,2026-03-27 12:06:36.193618,2026-03-27 13:37:03.472527
+14,505,170,D.S.R. S/COMISSAO,1002-Descanso semanal remunerado - DSR,1012,Descanso semanal remunerado - DSR e feriado,"",,Ana,aplicada,2026-03-27 12:06:48.045483,2026-03-27 13:37:03.472527
+15,520,234,REEMB. EXAMES MÉDICOS,1299-Outros Adicionais,6129,Outras multas ou indenizações,"",,Ana,aplicada,2026-03-27 12:07:17.280346,2026-03-27 13:37:03.472527
+67,659,560,DESC. FERIAS PAGAS,9299-Outros descontos,9221,Desconto de férias,"",,Ana,aplicada,2026-03-27 13:11:49.887407,2026-03-27 13:37:03.472527
+68,668,579,DESC. FALTAS (DIAS) MES ANTERIOR,9209-Faltas ou atrados,9207,Faltas,"",,Ana,aplicada,2026-03-27 13:11:59.780671,2026-03-27 13:37:03.472527
+69,673,586,DESC. CONTRIB. SINDICAL,9230-Contribuição Sindical  Compulsória,9230,Contribuição sindical laboral,"",,Ana,aplicada,2026-03-27 13:12:23.819683,2026-03-27 13:37:03.472527
+70,681,597,DESC. D.S.R. S/FALTAS (DIAS) MES ANTERIOR,1002-Descanso semanal remunerado - DSR,9210,DSR s/faltas e atrasos,"",,Ana,aplicada,2026-03-27 13:12:30.30683,2026-03-27 13:37:03.472527
+77,725,686,DESC. AVISO PREVIO NAO TRABALHADO,0-Não Informado,6901,Desconto do aviso prévio,"",,Ana,aplicada,2026-03-27 13:19:57.976328,2026-03-27 13:37:03.472527
+78,729,692,DESC. 2 VIA CARTAO,0-Não Informado,0,Sem natureza,"",,Ana,aplicada,2026-03-27 13:20:09.096065,2026-03-27 13:37:03.472527
+79,730,693,DESC. EMPRESTIMO FOLHA PGTO ANTERIOR,0-Não Informado,0,Sem natureza,"",,Ana,aplicada,2026-03-27 13:20:12.984825,2026-03-27 13:37:03.472527
+80,738,710,DESC. ALIMENTACAO MES ANTERIOR,"9243-Cesta básica ou refeição, vinculada ao PAT - Desconto",9241,"Alimentação em ticket ou cartão, vinculada ao PAT - Desconto","",,Ana,aplicada,2026-03-27 13:20:19.63701,2026-03-27 13:37:03.472527
+81,741,724,DESC. MULTA DE TRANSITO,9299-Outros descontos,9270,Danos e prejuízos causados pelo trabalhador,"",,Ana,aplicada,2026-03-27 13:20:23.12446,2026-03-27 13:37:03.472527
+88,772,778,DESC. VALE ALIMENTACAO NAO UTILIZADO,"9243-Cesta básica ou refeição, vinculada ao PAT - Desconto",9299,Outros descontos,"",,Ana,aplicada,2026-03-27 13:27:14.101935,2026-03-27 13:37:03.472527
+89,796,837,DESC. FALTAS (DIAS),9209-Faltas ou atrados,9207,Faltas,"",,Ana,aplicada,2026-03-27 13:27:18.041776,2026-03-27 13:37:03.472527
+90,806,861,DESC. D.S.R. S/FALTAS (HORAS) MÊS ANTERIOR,9210-DSR s/faltas e atrasos,9210,DSR s/faltas e atrasos,"",,Ana,aplicada,2026-03-27 13:27:22.190316,2026-03-27 13:37:03.472527
+91,822,897,DESC. ANTECIPACAO VA E VR,0-Não Informado,0,Sem natureza,"",,Ana,aplicada,2026-03-27 13:27:29.680896,2026-03-27 13:37:03.472527
+10,497,151,REEMB. VALE TRANSPORTE MÊS ANTERIOR,9989-Outros valores informativos,1810,Transporte,"",,Ana,aplicada,2026-03-27 13:29:20.543077,2026-03-27 13:37:03.472527
+4,463,18,ADICIONAL DE SALARIO,1211-Gratificações,1000,"Salário, vencimento, soldo","",,Ana,aplicada,2026-03-27 13:34:37.692482,2026-03-27 13:37:03.472527
+5,464,19,REEMB. EXAME ADMISSIONAL,1299-Outros Adicionais,6129,Outras multas ou indenizações,"",,Ana,aplicada,2026-03-27 13:35:17.882895,2026-03-27 13:37:03.472527
+8,492,135,D.S.R. S/HORA EXTRA,9299-Outros descontos,1002,Descanso semanal remunerado - DSR,"",,Ana,aplicada,2026-03-27 13:35:30.36118,2026-03-27 13:37:03.472527
+36,769,774,DESC. ASSIST. MEDICA,9299-Outros descontos,9219,Desconto de assistência médica ou odontológica,"",,Ana,aplicada,2026-03-27 12:21:54.607856,2026-03-27 13:37:03.472527
+37,770,775,DESC. ASSIST. ODONTOLOGICA,9299-Outros descontos,9219,Desconto de assistência médica ou odontológica,"",,Ana,aplicada,2026-03-27 12:22:49.76859,2026-03-27 13:37:03.472527
+38,783,811,ACUMULO DE FUNCAO,1211-Gratificações,1201,Adicional de função / cargo confiança,"",,Ana,aplicada,2026-03-27 12:23:21.457738,2026-03-27 13:37:03.472527
+39,787,822,D.S.R. S/FERIADO - HS (INTERMITENTE),1002-Descanso semanal remunerado - DSR,1012,Descanso semanal remunerado - DSR e feriado,"",,Ana,aplicada,2026-03-27 12:23:33.843472,2026-03-27 13:37:03.472527
+40,819,892,REEMB. EXAME RETORNO AO TRABALHO,1299-Outros Adicionais,6129,Outras multas ou indenizações,"",,Ana,aplicada,2026-03-27 12:23:49.56568,2026-03-27 13:37:03.472527
+41,821,895,DESC. ASSIST. ODONTO. DEPENDENTE MES ANT,9299-Outros descontos,9219,Desconto de assistência médica ou odontológica,"",,Ana,aplicada,2026-03-27 12:24:20.307272,2026-03-27 13:37:03.472527
+42,841,1017,REEMB. EXAME TROCA DE FUNCAO,1299-Outros Adicionais,6129,Outras multas ou indenizações,"",,Ana,aplicada,2026-03-27 12:24:36.038818,2026-03-27 13:37:03.472527
+45,496,149,REEMB D.S.R MES ANTERIOR,1002-Descanso semanal remunerado - DSR,1002,Descanso semanal remunerado - DSR,"",,Ana,aplicada,2026-03-27 12:26:30.350371,2026-03-27 13:37:03.472527
+46,503,161,D.S.R. MES ANTERIOR,1002-Descanso semanal remunerado - DSR,1002,Descanso semanal remunerado - DSR,"",,Ana,aplicada,2026-03-27 12:26:57.275592,2026-03-27 13:37:03.472527
+47,548,294,DESP DE VIAGENS,2920-Reembolsos diversos,1621,"Ressarcimento de despesas de viagem, exceto despesas com veículos","",,Ana,aplicada,2026-03-27 12:28:24.489269,2026-03-27 13:37:03.472527
+48,625,500,DESC. FALTAS (DIAS),9209-Faltas ou atrados,9207,Faltas,"",,Ana,aplicada,2026-03-27 12:29:18.896054,2026-03-27 13:37:03.472527
+49,500,156,DIF. FERIAS,6006-Férias proporcionais,1016,Férias,"",,Ana,aplicada,2026-03-27 12:29:32.445849,2026-03-27 13:37:03.472527
+50,639,520,DESC. AVARIA,9299-Outros descontos,9270,Danos e prejuízos causados pelo trabalhador,"",,Ana,aplicada,2026-03-27 12:31:20.904417,2026-03-27 13:37:03.472527
+51,740,716,DESC. CELULAR NAO DEVOLVIDO,9299-Outros descontos,9270,Danos e prejuízos causados pelo trabalhador,"",,Ana,aplicada,2026-03-27 12:33:55.031336,2026-03-27 13:37:03.472527
+52,744,730,DESC. SMARTPHONE NAO DEVOLVIDO,9299-Outros descontos,9270,Danos e prejuízos causados pelo trabalhador,"",,Ana,aplicada,2026-03-27 12:34:15.227521,2026-03-27 13:37:03.472527
+54,516,228,REEMB. DESC. ASSIST. MEDICA,2920-Reembolsos diversos,6129,Outras multas ou indenizações,"",,Ana,aplicada,2026-03-27 12:43:01.627706,2026-03-27 13:37:03.472527
+55,525,249,REEMB. DESC. ASS. ODONTOLOGICA,2920-Reembolsos diversos,6129,Outras multas ou indenizações,"",,Ana,aplicada,2026-03-27 12:43:11.738502,2026-03-27 13:37:03.472527
+56,558,339,DEVOLUCAO FALTAS / DSR,1002-Descanso semanal remunerado - DSR,1000,"Salário, vencimento, soldo","",,Ana,aplicada,2026-03-27 12:45:13.27973,2026-03-27 13:37:03.472527
+71,689,611,DESC. VALE ALIMENTACAO - CCT,"9243-Cesta básica ou refeição, vinculada ao PAT - Desconto",9241,"Alimentação em ticket ou cartão, vinculada ao PAT - Desconto","",,Ana,aplicada,2026-03-27 13:13:01.047014,2026-03-27 13:37:03.472527
+82,750,746,DIFERENCA CCT,1099-Outras verbas salariais,1000,"Salário, vencimento, soldo","",,Ana,aplicada,2026-03-27 13:21:57.027867,2026-03-27 13:37:03.472527
+83,751,748,DESC. JUDICIAL - 2,9299-Outros descontos,9299,Outros descontos,"",,Ana,aplicada,2026-03-27 13:22:14.737494,2026-03-27 13:37:03.472527
+84,757,755,REEMB. VALE TRANSPORTE - HORA EXTRA,1810-Transporte,1810,Transporte,"",,Ana,aplicada,2026-03-27 13:22:44.067362,2026-03-27 13:37:03.472527
+93,905,1112,CUSTEIO SOCIAL - SINTEAC MG,9230-Contribuição Sindical  Compulsória,9230,Contribuição sindical laboral,"",,Ana,aplicada,2026-03-27 13:28:33.122396,2026-03-27 13:37:03.472527
+53,519,233,REEMB. REFEICAO,1629-Ressarcimento de outras despesas,1801,Alimentação,"",,Ana,aplicada,2026-03-27 13:36:26.809475,2026-03-27 13:37:03.472527
+43,846,1026,PAGTO. VT E VA - REF FERIADOS,1299-Outros Adicionais,1801,Alimentação,"",,Ana,aplicada,2026-03-27 13:36:55.35918,2026-03-27 13:37:03.472527

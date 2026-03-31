@@ -30,7 +30,7 @@ export class AuthService {
     senha: string,
   ): Promise<{ token: string; user: UserPayload } | null> {
     const result = await masterPool.query(
-      "SELECT id, username, nome, senha_hash, role, ativo FROM usuarios WHERE username = $1",
+      "SELECT id, username, nome, senha_hash, role, ativo FROM master_perfis WHERE username = $1",
       [username],
     );
 
@@ -53,7 +53,7 @@ export class AuthService {
 
     // Update last access
     await masterPool.query(
-      "UPDATE usuarios SET atualizado_em = CURRENT_TIMESTAMP WHERE id = $1",
+      "UPDATE master_perfis SET atualizado_em = CURRENT_TIMESTAMP WHERE id = $1",
       [user.id],
     );
 
@@ -77,8 +77,8 @@ export class AuthService {
   async getEmpresasDoUsuario(userId: number): Promise<Empresa[]> {
     const result = await masterPool.query(
       `SELECT e.id, e.nome, e.cnpj, e.db_name, ue.role_emp
-       FROM empresas e
-       JOIN usuario_empresa ue ON ue.empresa_id = e.id
+       FROM master_empresas e
+       JOIN master_usuario_empresa ue ON ue.empresa_id = e.id
        WHERE ue.usuario_id = $1 AND e.ativo = true
        ORDER BY e.nome`,
       [userId],
@@ -95,8 +95,8 @@ export class AuthService {
   ): Promise<{ dbName: string; roleEmp: string } | null> {
     const result = await masterPool.query(
       `SELECT e.db_name, ue.role_emp
-       FROM empresas e
-       JOIN usuario_empresa ue ON ue.empresa_id = e.id
+       FROM master_empresas e
+       JOIN master_usuario_empresa ue ON ue.empresa_id = e.id
        WHERE ue.usuario_id = $1 AND e.id = $2 AND e.ativo = true`,
       [userId, empresaId],
     );
@@ -115,7 +115,7 @@ export class AuthService {
   ): Promise<{ id: number; username: string; nome: string; role: string }> {
     const senhaHash = await bcrypt.hash(senha, 12);
     const result = await masterPool.query(
-      `INSERT INTO usuarios (username, nome, senha_hash, role) 
+      `INSERT INTO master_perfis (username, nome, senha_hash, role) 
        VALUES ($1, $2, $3, $4) 
        RETURNING id, username, nome, role`,
       [username, nome, senhaHash, role],
@@ -132,7 +132,7 @@ export class AuthService {
     roleEmp: string = "operador",
   ): Promise<void> {
     await masterPool.query(
-      `INSERT INTO usuario_empresa (usuario_id, empresa_id, role_emp) 
+      `INSERT INTO master_usuario_empresa (usuario_id, empresa_id, role_emp) 
        VALUES ($1, $2, $3) ON CONFLICT (usuario_id, empresa_id) DO UPDATE SET role_emp = $3`,
       [userId, empresaId, roleEmp],
     );
@@ -145,9 +145,9 @@ export class AuthService {
     const result = await masterPool.query(
       `SELECT u.id, u.username, u.nome, u.role, u.ativo, u.criado_em,
               array_agg(json_build_object('id', e.id, 'nome', e.nome)) FILTER (WHERE e.id IS NOT NULL) as empresas
-       FROM usuarios u
-       LEFT JOIN usuario_empresa ue ON ue.usuario_id = u.id
-       LEFT JOIN empresas e ON e.id = ue.empresa_id
+       FROM master_perfis u
+       LEFT JOIN master_usuario_empresa ue ON ue.usuario_id = u.id
+       LEFT JOIN master_empresas e ON e.id = ue.empresa_id
        GROUP BY u.id
        ORDER BY u.nome`,
     );
@@ -159,7 +159,7 @@ export class AuthService {
    */
   async listarEmpresas(): Promise<any[]> {
     const result = await masterPool.query(
-      "SELECT id, nome, cnpj, db_name, ativo, criado_em FROM empresas ORDER BY nome",
+      "SELECT id, nome, cnpj, db_name, ativo, criado_em FROM master_empresas ORDER BY nome",
     );
     return result.rows;
   }

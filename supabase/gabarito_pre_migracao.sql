@@ -1,0 +1,103 @@
+-- =============================================================================
+-- GABARITO PRÉ-MIGRAÇÃO — Easy Social
+-- Gerado em: 2025-03-30
+-- Banco local: PostgreSQL 16, easy_social_db + easy_social_master
+-- =============================================================================
+
+-- ============================
+-- 1. CONTAGEM DE LINHAS
+-- ============================
+-- easy_social_db (26 tabelas):
+--   analise_natureza ............... 455
+--   analise_natureza_certo ......... 455
+--   auditoria_naturezas ............ 91
+--   base_ficha_financeira .......... 0
+--   certificados_a1 ................ 90  *** NAO MIGRA (local only) ***
+--   config_esocial ................. 1
+--   correcoes_staging .............. 91
+--   cruzamento_eb .................. 448
+--   cruzamento_resultado ........... 455
+--   cruzamento_tabela_a ............ 455
+--   cruzamento_tabela_b ............ 1145
+--   cruzamento_uploads ............. 1
+--   dinamica ....................... 276
+--   eb_skills_base_legal ........... 534
+--   esocial_depara ................. 2381
+--   esocial_envios ................. 18
+--   esocial_tabela3_natureza ....... 203
+--   naturezas_esocial .............. 206
+--   planilha_1 ..................... 0
+--   rubrica_corrections ............ 385
+--   senha_certificado_salva ........ 0
+--   tabela3_esocial_oficial ........ 215
+--   tabela_cruzamento .............. 455
+--   tabela_eb ...................... 1224
+--   tabela_eventos_gl .............. 1145
+--   uploads ........................ 2
+--
+-- easy_social_master (4 tabelas):
+--   empresas ....................... 1
+--   naturezas_esocial .............. 203
+--   usuario_empresa ................ 3
+--   usuarios ....................... 3
+
+-- ============================
+-- 2. CHECKSUMS MD5 (INTEGRIDADE)
+-- ============================
+-- Tabela                       | Checksum MD5 (key fields, ordered)
+-- -----------------------------|--------------------------------------
+-- analise_natureza             | 1b105599d7ad5e891ba45753a43c8a69
+-- auditoria_naturezas          | de60062036cd038bf3abb03fe3c6d068
+-- certificados_a1              | 3cebb02194b3d77c5a93e3e116ec3d8f  *** referencia local ***
+-- config_esocial               | a12fca678d13adcadb1ba49f750efb97
+-- correcoes_staging            | 8af278a91b6c9d79ed1db0fb20054614
+-- cruzamento_eb                | 94f844bc1e023106776f8e9fd3884360
+-- dinamica                     | f78df226934deab64150720e0893b4fb
+-- eb_skills_base_legal         | 62808dbe777b041f1e7641a97e439364
+-- esocial_depara               | ac2cb566ce861ff0d032acbb26e89994
+-- esocial_envios               | e81d4dbc36757dcb2bde3dbff045cecb
+-- esocial_tabela3_natureza     | 6dbe830a10f2b0ca8f6da15344f8b276
+-- naturezas_esocial            | 14c2726baf1c46e87ec24bb8449e91e0
+-- rubrica_corrections          | f569695b6f6896491c63b206717d7d36
+-- tabela_eb                    | 093012480c0153b3da61ee0a18bcbb46
+-- tabela_eventos_gl            | 27c1f47695cd804a09aa795a2eed323a
+-- uploads                      | 05448202eb15e2f011ed5796222d4f2f
+--
+-- easy_social_master:
+-- empresas                     | f3df6ab8d56ea2385c70fe3f1aa9e7b1
+-- naturezas_esocial (master)   | 84656339c9d673dd9f06a39cbd0f44df
+-- usuario_empresa              | 4fe6c4d57e6db0d0ca292cca040c1fce
+-- usuarios                     | c706d5bc591f45125e52e0e36bfa1137
+
+-- ============================
+-- 3. REGISTROS SENTINELA
+-- ============================
+-- cruzamento_eb PRIMEIRO: id=1, cod_rubrica=1, "HORAS NORMAIS", incid 11/11/11
+-- cruzamento_eb ULTIMO:   id=448, cod_rubrica=9281, "ASSISTENCIA ODONTOLOGICA"
+--
+-- esocial_envios PRIMEIRO: id=1, protocolo=1.2.202603.0000000000205430968, status=processado
+-- esocial_envios ULTIMO:   id=18, protocolo=1.1.202603.0000000012938234001
+--
+-- master empresas: APPA SERVICOS TEMPORARIOS E EFETIVOS LTDA, CNPJ 05.969.071/0001-10
+-- master usuarios: admin@easysocial.com (admin), ana@appa.com (operador), lobo@appa.com (operador)
+
+-- ============================
+-- 4. MAX IDs (SEQUENCES)
+-- ============================
+-- cruzamento_eb ........... 448
+-- esocial_envios .......... 18
+-- uploads ................. 2
+-- analise_natureza ........ 910
+-- tabela_eb ............... 1224
+-- tabela_eventos_gl ....... 1145
+-- rubrica_corrections ..... 1418
+-- certificados_a1 ......... 139  *** local only ***
+
+-- ============================
+-- 5. DADOS SENSÍVEIS (PERMANECEM LOCAL)
+-- ============================
+-- certificados_a1: 90 registros com metadados de certificados PFX
+--   - arquivo_path aponta para filesystem local
+--   - NUNCA deve ser enviado para Supabase
+-- senha_certificado_salva: 0 registros atualmente, mas estrutura local
+-- PFX files: ficam em backend/uploads/, nunca em Supabase Storage

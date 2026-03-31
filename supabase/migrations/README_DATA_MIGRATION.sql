@@ -1,0 +1,15 @@
+-- =============================================================================
+-- Easy Social — Dump de Dados para Supabase
+-- Gera INSERTs para importar no Supabase após rodar a migration de schema
+-- =============================================================================
+-- COMO USAR:
+--   1. Rode a migration de schema no Supabase primeiro
+--   2. Gere os dumps de dados: 
+--      pg_dump -h localhost -U easy_social_user -d easy_social_db --data-only --inserts --no-owner --no-privileges > data_dump_db.sql
+--      pg_dump -h localhost -U easy_social_user -d easy_social_master --data-only --inserts --no-owner --no-privileges > data_dump_master.sql
+--   3. Edite data_dump_master.sql: troque "public." por "master." nas tabelas empresas, usuarios, usuario_empresa, naturezas_esocial
+--   4. Importe no Supabase via psql ou SQL Editor
+-- =============================================================================
+
+-- Para automatizar o processo, use o script PowerShell abaixo:
+-- (Salvo separadamente em export_data.ps1)

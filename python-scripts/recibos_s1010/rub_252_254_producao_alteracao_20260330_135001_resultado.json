@@ -1,0 +1,14 @@
+{
+  "sucesso": false,
+  "codigo_resposta": "402",
+  "descricao": "Lote Incorreto - Schema Inválido.",
+  "protocolo": null,
+  "dh_recepcao": null,
+  "ocorrencias": [
+    {
+      "tipo": "1",
+      "codigo": "402",
+      "descricao": "'ID1059690710000002026033016500000001' is already used as an ID."
+    }
+  ]
+}

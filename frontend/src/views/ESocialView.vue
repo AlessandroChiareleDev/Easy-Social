@@ -837,41 +837,152 @@
                       >?</span
                     >
                   </td>
-                  <td class="py-2 px-3 text-center">
-                    <span v-if="rub.incid_inss !== rub.inss_correto" class="text-xs font-mono">
-                      <span class="text-red-400">{{ rub.incid_inss }}</span>
-                      <span class="text-slate-500">→</span>
-                      <span class="text-emerald-400">{{ rub.inss_correto }}</span>
-                    </span>
-                    <span
-                      v-else
-                      class="px-2 py-0.5 rounded text-xs font-mono bg-emerald-500/10 text-emerald-400"
-                      >{{ rub.inss_correto }}</span
+                  <td class="py-2 px-3 text-center" @click.stop>
+                    <div
+                      v-if="
+                        editingIncid?.cod === rub.cod_rubrica &&
+                        editingIncid?.field === 'inss_correto'
+                      "
+                      class="flex items-center gap-1 justify-center"
                     >
+                      <input
+                        v-model="editIncidValue"
+                        type="text"
+                        maxlength="2"
+                        class="w-10 px-1 py-0.5 text-xs text-white text-center rounded border border-[#0066FF]/50 bg-[#0a1024] outline-none focus:border-[#0066FF] font-mono"
+                        @keyup.enter="salvarIncid(rub, 'inss_correto')"
+                        @keyup.escape="editingIncid = null"
+                      />
+                      <button
+                        @click="salvarIncid(rub, 'inss_correto')"
+                        class="text-emerald-400 hover:text-emerald-300 text-xs"
+                      >
+                        ✓
+                      </button>
+                      <button
+                        @click="editingIncid = null"
+                        class="text-red-400 hover:text-red-300 text-xs"
+                      >
+                        ✕
+                      </button>
+                    </div>
+                    <template v-else>
+                      <span v-if="rub.incid_inss !== rub.inss_correto" class="text-xs font-mono">
+                        <span class="text-red-400">{{ rub.incid_inss }}</span>
+                        <span class="text-slate-500">→</span>
+                        <span
+                          class="text-emerald-400 cursor-pointer hover:underline"
+                          @click="iniciarEditIncid(rub, 'inss_correto')"
+                          title="Clique para editar"
+                          >{{ rub.inss_correto }}</span
+                        >
+                      </span>
+                      <span
+                        v-else
+                        class="px-2 py-0.5 rounded text-xs font-mono bg-emerald-500/10 text-emerald-400 cursor-pointer hover:underline"
+                        @click="iniciarEditIncid(rub, 'inss_correto')"
+                        title="Clique para editar"
+                        >{{ rub.inss_correto }}</span
+                      >
+                    </template>
                   </td>
-                  <td class="py-2 px-3 text-center">
-                    <span v-if="rub.incid_irrf !== rub.irrf_correto" class="text-xs font-mono">
-                      <span class="text-red-400">{{ rub.incid_irrf }}</span>
-                      <span class="text-slate-500">→</span>
-                      <span class="text-emerald-400">{{ rub.irrf_correto }}</span>
-                    </span>
-                    <span
-                      v-else
-                      class="px-2 py-0.5 rounded text-xs font-mono bg-emerald-500/10 text-emerald-400"
-                      >{{ rub.irrf_correto }}</span
+                  <td class="py-2 px-3 text-center" @click.stop>
+                    <div
+                      v-if="
+                        editingIncid?.cod === rub.cod_rubrica &&
+                        editingIncid?.field === 'irrf_correto'
+                      "
+                      class="flex items-center gap-1 justify-center"
                     >
+                      <input
+                        v-model="editIncidValue"
+                        type="text"
+                        maxlength="2"
+                        class="w-10 px-1 py-0.5 text-xs text-white text-center rounded border border-[#0066FF]/50 bg-[#0a1024] outline-none focus:border-[#0066FF] font-mono"
+                        @keyup.enter="salvarIncid(rub, 'irrf_correto')"
+                        @keyup.escape="editingIncid = null"
+                      />
+                      <button
+                        @click="salvarIncid(rub, 'irrf_correto')"
+                        class="text-emerald-400 hover:text-emerald-300 text-xs"
+                      >
+                        ✓
+                      </button>
+                      <button
+                        @click="editingIncid = null"
+                        class="text-red-400 hover:text-red-300 text-xs"
+                      >
+                        ✕
+                      </button>
+                    </div>
+                    <template v-else>
+                      <span v-if="rub.incid_irrf !== rub.irrf_correto" class="text-xs font-mono">
+                        <span class="text-red-400">{{ rub.incid_irrf }}</span>
+                        <span class="text-slate-500">→</span>
+                        <span
+                          class="text-emerald-400 cursor-pointer hover:underline"
+                          @click="iniciarEditIncid(rub, 'irrf_correto')"
+                          title="Clique para editar"
+                          >{{ rub.irrf_correto }}</span
+                        >
+                      </span>
+                      <span
+                        v-else
+                        class="px-2 py-0.5 rounded text-xs font-mono bg-emerald-500/10 text-emerald-400 cursor-pointer hover:underline"
+                        @click="iniciarEditIncid(rub, 'irrf_correto')"
+                        title="Clique para editar"
+                        >{{ rub.irrf_correto }}</span
+                      >
+                    </template>
                   </td>
-                  <td class="py-2 px-3 text-center">
-                    <span v-if="rub.incid_fgts !== rub.fgts_correto" class="text-xs font-mono">
-                      <span class="text-red-400">{{ rub.incid_fgts }}</span>
-                      <span class="text-slate-500">→</span>
-                      <span class="text-emerald-400">{{ rub.fgts_correto }}</span>
-                    </span>
-                    <span
-                      v-else
-                      class="px-2 py-0.5 rounded text-xs font-mono bg-emerald-500/10 text-emerald-400"
-                      >{{ rub.fgts_correto }}</span
+                  <td class="py-2 px-3 text-center" @click.stop>
+                    <div
+                      v-if="
+                        editingIncid?.cod === rub.cod_rubrica &&
+                        editingIncid?.field === 'fgts_correto'
+                      "
+                      class="flex items-center gap-1 justify-center"
                     >
+                      <input
+                        v-model="editIncidValue"
+                        type="text"
+                        maxlength="2"
+                        class="w-10 px-1 py-0.5 text-xs text-white text-center rounded border border-[#0066FF]/50 bg-[#0a1024] outline-none focus:border-[#0066FF] font-mono"
+                        @keyup.enter="salvarIncid(rub, 'fgts_correto')"
+                        @keyup.escape="editingIncid = null"
+                      />
+                      <button
+                        @click="salvarIncid(rub, 'fgts_correto')"
+                        class="text-emerald-400 hover:text-emerald-300 text-xs"
+                      >
+                        ✓
+                      </button>
+                      <button
+                        @click="editingIncid = null"
+                        class="text-red-400 hover:text-red-300 text-xs"
+                      >
+                        ✕
+                      </button>
+                    </div>
+                    <template v-else>
+                      <span v-if="rub.incid_fgts !== rub.fgts_correto" class="text-xs font-mono">
+                        <span class="text-red-400">{{ rub.incid_fgts }}</span>
+                        <span class="text-slate-500">→</span>
+                        <span
+                          class="text-emerald-400 cursor-pointer hover:underline"
+                          @click="iniciarEditIncid(rub, 'fgts_correto')"
+                          title="Clique para editar"
+                          >{{ rub.fgts_correto }}</span
+                        >
+                      </span>
+                      <span
+                        v-else
+                        class="px-2 py-0.5 rounded text-xs font-mono bg-emerald-500/10 text-emerald-400 cursor-pointer hover:underline"
+                        @click="iniciarEditIncid(rub, 'fgts_correto')"
+                        title="Clique para editar"
+                        >{{ rub.fgts_correto }}</span
+                      >
+                    </template>
                   </td>
                   <td class="py-2 px-3 text-center">
                     <span
@@ -1742,11 +1853,7 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted, watch, nextTick } from 'vue'
 import axios from 'axios'
-
-const ESOCIAL_API =
-  window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
-    ? 'http://localhost:8000'
-    : 'https://remaining-instead-registry-democratic.trycloudflare.com'
+import { PYTHON_API as ESOCIAL_API } from '@/lib/api'
 
 // ── State ────────────────────────────────────────────────────────
 
@@ -1783,6 +1890,10 @@ const editingNatureza = ref<string | null>(null)
 const editNaturezaValue = ref('')
 const salvandoNatureza = ref(false)
 const naturezaInput = ref<HTMLInputElement | null>(null)
+
+// Editar incidências inline (frontend-only)
+const editingIncid = ref<{ cod: string; field: string } | null>(null)
+const editIncidValue = ref('')
 
 // Envio
 const iniValid = ref(localStorage.getItem('esocial_iniValid') || getCurrentMonth())
@@ -1930,6 +2041,34 @@ async function salvarNatureza(rub: any) {
   } finally {
     salvandoNatureza.value = false
   }
+}
+
+// ── Editar Incidências (frontend-only) ──────────────────────────
+
+function iniciarEditIncid(rub: any, field: string) {
+  editingIncid.value = { cod: rub.cod_rubrica, field }
+  editIncidValue.value = rub[field] || ''
+  nextTick(() => {
+    const input = document.querySelector<HTMLInputElement>('.esocial-view input[maxlength="2"]')
+    input?.focus()
+    input?.select()
+  })
+}
+
+function salvarIncid(rub: any, field: string) {
+  const novoValor = editIncidValue.value.trim()
+  if (!novoValor) {
+    editingIncid.value = null
+    return
+  }
+  const labelMap: Record<string, string> = {
+    inss_correto: 'INSS',
+    irrf_correto: 'IRRF',
+    fgts_correto: 'FGTS',
+  }
+  rub[field] = novoValor
+  editingIncid.value = null
+  showToast(`${labelMap[field]} da rubrica ${rub.cod_rubrica} alterado para ${novoValor}`, 'ok')
 }
 
 function getEventoStatus(env: any, index: number): string | null {

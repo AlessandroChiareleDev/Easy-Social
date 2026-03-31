@@ -1,7 +1,7 @@
 {
-  "name": "easy-social-backend",
+  "name": "easy-esocial-backend",
   "version": "1.0.0",
-  "description": "Easy Social - Backend API - Developed By Xandao",
+  "description": "Easy e-Social - Backend API - Developed By Xandao",
   "main": "dist/app.js",
   "scripts": {
     "start": "node dist/app.js",
@@ -9,7 +9,10 @@
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["esocial", "dirf"],
+  "keywords": [
+    "esocial",
+    "dirf"
+  ],
   "author": "Xandao",
   "license": "ISC",
   "type": "commonjs",

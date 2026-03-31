@@ -374,8 +374,7 @@
 <script setup lang="ts">
 import { ref, onMounted, watch } from 'vue'
 import axios from 'axios'
-
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3333/api'
+import { API_URL } from '@/lib/api'
 
 // Módulo ativo (null = tela de seleção)
 const activeModule = ref<string | null>(null)

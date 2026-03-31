@@ -71,8 +71,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import axios from 'axios'
-
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3333/api'
+import { API_URL } from '@/lib/api'
 
 const selectedFile = ref<File | null>(null)
 const uploading = ref(false)

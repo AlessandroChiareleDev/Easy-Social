@@ -1,5 +1,5 @@
 """
-Easy Social — Robô eSocial (PyAutoGUI)
+Easy e-Social — Robô eSocial (PyAutoGUI)
 Developed By Xandao
 
 Bot automático para correção de rubricas no eSocial.
@@ -649,7 +649,7 @@ if __name__ == "__main__":
             bot_state.add_log("🛑 Bot interrompido pelo usuário")
             bot_state.status = BotStatus.STOPPED
     else:
-        print("Easy Social — Bot eSocial")
+        print("Easy e-Social — Bot eSocial")
         print()
         print("Comandos:")
         print("  python bot_esocial.py --calibrate  Calibrar (marcar posições dos elementos)")

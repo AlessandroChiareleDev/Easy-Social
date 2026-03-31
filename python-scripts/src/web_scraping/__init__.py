@@ -1,4 +1,4 @@
 """
-Easy Social - Web Scraping Module
+Easy e-Social - Web Scraping Module
 Automação de navegação e interação com o portal eSocial.
 """

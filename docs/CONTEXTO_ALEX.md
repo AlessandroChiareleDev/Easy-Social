@@ -1,7 +1,7 @@
-# CONTEXTO_ALEX.md — Diário de Engenharia
+﻿# CONTEXTO_ALEX.md — Diário de Engenharia
 
 > **Engenheiro:** Alex (Claude Opus 4.6)  
-> **Projeto:** Easy Social — Integração eSocial S-1010 via Web Service SOAP  
+> **Projeto:** Easy e-Social — Integração eSocial S-1010 via Web Service SOAP  
 > **Método:** TDD — Testes definem as features  
 > **Ambiente:** Homologação (tpAmb=2) — exclusivamente
 
@@ -13,7 +13,7 @@
 
 ### 1. Entendimento Atual
 
-O **Easy Social** é um sistema web multi-tenant para gestão e correção de rubricas do eSocial. O fluxo atual é:
+O **Easy e-Social** é um sistema web multi-tenant para gestão e correção de rubricas do eSocial. O fluxo atual é:
 
 ```
 Upload DIRF.xlsx → Popular tabelas PostgreSQL → Detectar divergências (Ponto 1)
@@ -156,7 +156,7 @@ Infraestrutura genérica — funciona para qualquer evento eSocial. Para S-1010,
 
 1. Código de referência comprovado é 100% Python
 2. `signxml` + `cryptography` + `lxml` + `requests` são robustas e testadas
-3. Easy Social já tem FastAPI na porta 8000
+3. Easy e-Social já tem FastAPI na porta 8000
 4. Reaproveitamento direto do `esocial_client.py`, `xml_signer.py`, `certificate_manager.py`
 5. Sem dependências de SO — tudo roda com pip wheel
 6. Evita reinventar a roda com `xml-crypto` + `node-forge` em Node.js

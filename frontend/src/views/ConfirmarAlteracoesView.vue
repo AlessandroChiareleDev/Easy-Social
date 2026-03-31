@@ -170,8 +170,7 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, watch } from 'vue'
 import axios from 'axios'
-
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3333/api'
+import { API_URL } from '@/lib/api'
 
 interface Correcao {
   id: number

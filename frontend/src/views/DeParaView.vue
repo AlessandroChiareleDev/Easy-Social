@@ -401,8 +401,7 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted, reactive, nextTick } from 'vue'
 import axios from 'axios'
-
-const PYTHON_API = import.meta.env.VITE_PYTHON_API_URL || 'http://localhost:8000'
+import { PYTHON_API } from '@/lib/api'
 
 // State
 const resumo = ref<any>(null)

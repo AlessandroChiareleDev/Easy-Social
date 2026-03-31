@@ -1,6 +1,6 @@
 <template>
   <div class="dashboard-view">
-    <h1>Easy Social Dashboard</h1>
+    <h1>Easy e-Social Dashboard</h1>
     <UploadComponent />
     <hr class="my-8" />
     <TableViewer />

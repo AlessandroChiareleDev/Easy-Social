@@ -1,6 +1,6 @@
-# Perguntas sobre o Repositório o1 pro 4.6 (eSocial Web Service)
+﻿# Perguntas sobre o Repositório o1 pro 4.6 (eSocial Web Service)
 
-> **Objetivo:** Entender TUDO sobre como esse repositório se comunica com o eSocial em produção restrita (homologação), para usar como base na implementação do Easy Social.
+> **Objetivo:** Entender TUDO sobre como esse repositório se comunica com o eSocial em produção restrita (homologação), para usar como base na implementação do Easy e-Social.
 > 
 > **Instrução:** Responda cada pergunta diretamente abaixo dela. Pode ser curto ou longo, o importante é ser preciso.
 
@@ -278,9 +278,9 @@
 
 ---
 
-## 12. INTEGRAÇÃO COM O EASY SOCIAL
+## 12. INTEGRAÇÃO COM O Easy e-Social
 
-### 12.1. Na sua opinião, o que do repositório o1 pro 4.6 pode ser reaproveitado diretamente no Easy Social?
+### 12.1. Na sua opinião, o que do repositório o1 pro 4.6 pode ser reaproveitado diretamente no Easy e-Social?
 **R:**
 
 ### 12.2. O que precisaria ser adaptado?

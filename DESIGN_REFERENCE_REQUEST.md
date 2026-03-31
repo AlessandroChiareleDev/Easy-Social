@@ -1,8 +1,8 @@
-# Design Reference Request — Easy Social Login & Internal Pages
+﻿# Design Reference Request — Easy e-Social Login & Internal Pages
 
 ## Context
 
-I'm building **Easy Social**, an internal enterprise tool for managing eSocial (Brazilian government payroll compliance system). The app handles:
+I'm building **Easy e-Social**, an internal enterprise tool for managing eSocial (Brazilian government payroll compliance system). The app handles:
 
 - User authentication with company selection (multi-tenant)
 - Data validation workflows (comparing spreadsheet data against government tables)
@@ -22,7 +22,7 @@ I need a **login page** for an internal B2B SaaS tool (not consumer-facing). Req
 - Email + password fields
 - "Entrar" (Login) button
 - Error message display
-- Brand: "Easy Social" — professional, modern, trustworthy
+- Brand: "Easy e-Social" — professional, modern, trustworthy
 - Color palette suggestion that conveys: reliability, technology, compliance/legal feel
 - Should it have a sidebar illustration + form layout (split screen), or a centered card layout?
 - What background treatment works best for a business tool? (gradient, pattern, solid, image?)

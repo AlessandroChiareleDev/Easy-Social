@@ -1,4 +1,4 @@
-# Easy Social
+﻿# Easy e-Social
 
 ### Developed By Xandao
 
@@ -16,7 +16,7 @@ Sistema focado em eSocial e suas tabelas. Recebe o arquivo **Relatório DIRF.xls
 ## Estrutura
 
 ```
-easy-social/
+easy-esocial/
 ├── backend/       → API Node.js/TS (porta 3000)
 ├── frontend/      → Vue 3 SPA (porta 5173)
 ├── python-scripts/ → FastAPI + processamento DIRF (porta 8000)

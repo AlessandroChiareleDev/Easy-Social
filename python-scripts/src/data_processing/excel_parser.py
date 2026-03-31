@@ -1,5 +1,5 @@
 """
-Easy Social - Excel Parser
+Easy e-Social - Excel Parser
 Developed By Xandao
 
 Módulo para análise e extração de dados do arquivo DIRF.xlsx

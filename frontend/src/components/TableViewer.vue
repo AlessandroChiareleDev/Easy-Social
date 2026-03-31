@@ -294,8 +294,7 @@
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
 import axios from 'axios'
 import * as XLSX from 'xlsx'
-
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3333/api'
+import { API_URL } from '@/lib/api'
 
 const allTabs = [
   { key: 'analise_natureza', label: 'Análise Natureza' },

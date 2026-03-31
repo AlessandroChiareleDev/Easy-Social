@@ -1,5 +1,5 @@
 """
-Easy Social — API de controle do Bot eSocial
+Easy e-Social — API de controle do Bot eSocial
 Developed By Xandao
 
 Roda em porta 8000. O frontend Vue se comunica com esta API
@@ -26,17 +26,17 @@ from bot_esocial import (
 )
 
 app = FastAPI(
-    title="Easy Social — Bot Control API",
+    title="Easy e-Social — Bot Control API",
     version="2.0.0",
 )
 
 app.add_middleware(
     CORSMiddleware,
+    allow_origin_regex=r"^https://.*\.trycloudflare\.com$",
     allow_origins=[
         "http://localhost:5173",
         "http://localhost:5174",
         "http://localhost:3333",
-        "https://premises-emotions-kyle-himself.trycloudflare.com",
     ],
     allow_credentials=True,
     allow_methods=["*"],
@@ -65,7 +65,7 @@ bot_thread: threading.Thread | None = None
 
 @app.get("/health")
 async def health():
-    return {"status": "ok", "system": "Easy Social Bot API", "version": "2.0.0"}
+    return {"status": "ok", "system": "Easy e-Social Bot API", "version": "2.0.0"}
 
 
 @app.get("/bot/status")
@@ -161,7 +161,7 @@ async def list_divergencias():
 
 if __name__ == "__main__":
     print("=" * 50)
-    print("  Easy Social — Bot Control API")
+    print("  Easy e-Social — Bot Control API")
     print("  http://localhost:8000")
     print("=" * 50)
     uvicorn.run(app, host="0.0.0.0", port=8000)

@@ -1,7 +1,7 @@
 <template>
   <div class="brand-logo" :style="containerStyle">
     <!-- PNG image base -->
-    <img src="/brand-logo.png" alt="Easy Social" :style="imgStyle" draggable="false" />
+    <img src="/brand-logo.png" alt="Easy e-Social" :style="imgStyle" draggable="false" />
     <!-- Animated glow contour overlay -->
     <svg
       v-if="animate"

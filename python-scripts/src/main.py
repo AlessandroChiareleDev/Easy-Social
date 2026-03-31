@@ -1,5 +1,5 @@
 """
-Easy Social - Python Scripts
+Easy e-Social - Python Scripts
 Developed By Xandao
 
 Módulo de processamento de dados DIRF e web scraping para eSocial.
@@ -12,7 +12,7 @@ import json
 import os
 
 app = FastAPI(
-    title="Easy Social - Python API",
+    title="Easy e-Social - Python API",
     description="API para processamento de dados DIRF e web scraping eSocial",
     version="1.0.0",
 )
@@ -31,7 +31,7 @@ UPLOADS_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'
 
 @app.get("/health")
 async def health_check():
-    return {"status": "ok", "system": "Easy Social - Python API", "version": "1.0.0"}
+    return {"status": "ok", "system": "Easy e-Social - Python API", "version": "1.0.0"}
 
 
 @app.get("/sheet/info")

@@ -16,7 +16,9 @@
     <div class="relative z-10 flex items-center justify-between px-8 pt-6">
       <div class="flex items-center gap-3">
         <BrandLogo :size="52" :speed="4" />
-        <span class="text-white/80 font-semibold text-lg">Easy Social</span>
+        <span class="text-white/80 font-semibold text-lg"
+          >Easy <span class="text-[#0066FF]">e-Social</span></span
+        >
       </div>
 
       <button

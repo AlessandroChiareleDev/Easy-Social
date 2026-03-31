@@ -112,7 +112,9 @@ onUnmounted(() => {
       >
         <template v-if="!sidebarCollapsed">
           <BrandLogo :size="40" :animate="false" />
-          <span class="text-lg font-bold text-white whitespace-nowrap">Easy Social</span>
+          <span class="text-lg font-bold text-white whitespace-nowrap"
+            >Easy <span class="text-[#0066FF]">e-Social</span></span
+          >
         </template>
         <BrandLogo v-else :size="34" :animate="false" />
       </div>

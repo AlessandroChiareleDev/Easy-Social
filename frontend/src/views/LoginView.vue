@@ -21,7 +21,9 @@
         <div class="mx-auto mb-8">
           <BrandLogo :size="120" :speed="4" />
         </div>
-        <h1 class="text-4xl font-bold text-white mb-3 tracking-tight">Easy Social</h1>
+        <h1 class="text-4xl font-bold text-white mb-3 tracking-tight leading-tight">
+          Easy<br /><span class="text-[#0066FF]">e-Social</span>
+        </h1>
         <p class="text-lg text-white/60">Gestão eSocial simplificada</p>
       </div>
     </div>
@@ -32,11 +34,11 @@
         <!-- Mobile logo -->
         <div class="lg:hidden text-center mb-8 flex flex-col items-center gap-2">
           <BrandLogo :size="72" :speed="4" />
-          <h1 class="text-2xl font-bold text-[#0066FF]">Easy Social</h1>
+          <h1 class="text-2xl font-bold text-[#0066FF]">Easy<br />e-Social</h1>
         </div>
 
         <h2 class="text-2xl font-bold text-white">Entrar</h2>
-        <p class="text-sm text-slate-400 mt-1 mb-8">Acesse sua conta Easy Social</p>
+        <p class="text-sm text-slate-400 mt-1 mb-8">Acesse sua conta Easy e-Social</p>
 
         <!-- Error banner -->
         <div
@@ -163,7 +165,7 @@
 
         <!-- Footer -->
         <p class="text-center text-xs text-slate-600 mt-10">
-          Easy Social v1.0 · By Alessandro Chiarele Filho
+          Easy e-Social v1.0 · By Alessandro Chiarele Filho
         </p>
       </div>
     </div>

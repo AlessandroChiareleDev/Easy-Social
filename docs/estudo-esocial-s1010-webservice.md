@@ -1,4 +1,4 @@
-# Estudo eSocial S-1010 — Web Service para Envio de Alterações INSS/IRRF/FGTS
+﻿# Estudo eSocial S-1010 — Web Service para Envio de Alterações INSS/IRRF/FGTS
 
 > **Data do estudo:** 27/03/2026  
 > **Versão do leiaute:** S-1.3 (vigente em produção e produção restrita)  
@@ -11,7 +11,7 @@
 O **S-1010 (evtTabRubrica)** é o evento de **Tabela de Rubricas** do eSocial. Por meio dele é possível:
 
 - **Incluir** uma nova rubrica (`<inclusao>`)
-- **Alterar** uma rubrica existente (`<alteracao>`) ← **é o que o Easy Social precisa**
+- **Alterar** uma rubrica existente (`<alteracao>`) ← **é o que o Easy e-Social precisa**
 - **Excluir** uma rubrica (`<exclusao>`)
 
 Cada rubrica possui campos de incidência tributária que determinam como aquele valor é tratado para fins de INSS, IRRF e FGTS:
@@ -123,7 +123,7 @@ Exemplo: `ID1123456780000002026032710370000001`
 </eSocial>
 ```
 
-### 4.2. Alteração (modificar rubrica existente) — O QUE O EASY SOCIAL PRECISA
+### 4.2. Alteração (modificar rubrica existente) — O QUE O Easy e-Social PRECISA
 
 ```xml
 <eSocial xmlns="http://www.esocial.gov.br/schema/evt/evtTabRubrica/vS01_03_00">
@@ -566,7 +566,7 @@ Sem esses certificados, a conexão HTTPS (mTLS) falhará com erro de SSL/TLS.
 
 ---
 
-## 14. Resumo das Decisões Técnicas para o Easy Social
+## 14. Resumo das Decisões Técnicas para o Easy e-Social
 
 ### O que precisamos implementar:
 

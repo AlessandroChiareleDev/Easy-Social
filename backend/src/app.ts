@@ -41,7 +41,7 @@ app.use("/api", cruzamentoRoutes);
 app.get("/api/health", (_req, res) => {
   res.json({
     status: "ok",
-    system: "Easy Social",
+    system: "Easy e-Social",
     version: "1.0.0",
     author: "Xandao",
   });

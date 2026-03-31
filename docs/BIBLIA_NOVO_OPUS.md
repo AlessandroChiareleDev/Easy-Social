@@ -1,16 +1,16 @@
-# BÍBLIA — Integração eSocial S-1010 Web Service (Easy Social)
+﻿# BÍBLIA — Integração eSocial S-1010 Web Service (Easy e-Social)
 
 > **Para:** Alex (Engenheiro de Software Opus 4.6)  
-> **De:** Equipe Easy Social  
+> **De:** Equipe Easy e-Social  
 > **Data:** 27/03/2026  
-> **Objetivo:** Este documento contém TUDO que você precisa para implementar a comunicação com o web service do eSocial para envio de eventos S-1010 (Tabela de Rubricas) no projeto Easy Social.  
+> **Objetivo:** Este documento contém TUDO que você precisa para implementar a comunicação com o web service do eSocial para envio de eventos S-1010 (Tabela de Rubricas) no projeto Easy e-Social.  
 > **Abordagem:** TDD — os testes definem as features. Primeiro crie os testes em homologação, depois implemente até eles passarem.
 
 ---
 
-## PARTE 1 — CONTEXTO DO PROJETO EASY SOCIAL
+## PARTE 1 — CONTEXTO DO PROJETO Easy e-Social
 
-### 1.1 O que é o Easy Social
+### 1.1 O que é o Easy e-Social
 
 Sistema web para gestão e correção de rubricas do eSocial. O sistema:
 
@@ -846,7 +846,7 @@ Razões:
 
 - O código de referência comprovado é 100% Python
 - Bibliotecas `signxml` + `cryptography` + `lxml` + `requests` são robustas e testadas
-- O Easy Social já tem FastAPI na porta 8000
+- O Easy e-Social já tem FastAPI na porta 8000
 - Reaproveitamento direto do código que já funciona em produção restrita
 
 O backend Node.js (Express) pode chamar o Python via HTTP interno, ou o frontend pode chamar o FastAPI diretamente.
@@ -911,4 +911,4 @@ Antes de considerar a feature "pronta":
 
 ---
 
-> **Este documento é a única referência necessária para implementar a integração eSocial S-1010 no Easy Social.**
+> **Este documento é a única referência necessária para implementar a integração eSocial S-1010 no Easy e-Social.**

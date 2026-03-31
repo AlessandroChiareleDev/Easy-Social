@@ -1,5 +1,5 @@
 -- ============================================================
--- Easy Social - Schema PostgreSQL
+-- Easy e-Social - Schema PostgreSQL
 -- Developed By Xandao
 -- Banco: easy_social_db
 -- ============================================================

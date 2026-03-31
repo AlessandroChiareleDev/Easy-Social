@@ -1,6 +1,6 @@
-# Perguntas sobre o Repositório o1 pro 4.6 (eSocial Web Service)
+﻿# Perguntas sobre o Repositório o1 pro 4.6 (eSocial Web Service)
 
-> **Objetivo:** Entender TUDO sobre como esse repositório se comunica com o eSocial em produção restrita (homologação), para usar como base na implementação do Easy Social.
+> **Objetivo:** Entender TUDO sobre como esse repositório se comunica com o eSocial em produção restrita (homologação), para usar como base na implementação do Easy e-Social.
 > 
 > **Instrução:** Responda cada pergunta diretamente abaixo dela. Pode ser curto ou longo, o importante é ser preciso.
 
@@ -793,9 +793,9 @@ REPOSITORIO_XML_PATH = os.getenv('REPOSITORIO_XML_PATH', 'Repositorio_XML')
 
 ---
 
-## 12. INTEGRAÇÃO COM O EASY SOCIAL
+## 12. INTEGRAÇÃO COM O Easy e-Social
 
-### 12.1. Na sua opinião, o que do repositório o1 pro 4.6 pode ser reaproveitado diretamente no Easy Social?
+### 12.1. Na sua opinião, o que do repositório o1 pro 4.6 pode ser reaproveitado diretamente no Easy e-Social?
 **R:**
 - **`esocial_client.py`** — Cliente SOAP completo (envio + consulta + parsing) — 100% reaproveitável para qualquer evento
 - **`xml_signer.py`** — Assinatura XMLDSig — funciona para qualquer evento eSocial sem alteração
@@ -819,7 +819,7 @@ REPOSITORIO_XML_PATH = os.getenv('REPOSITORIO_XML_PATH', 'Repositorio_XML')
 - Toda a lógica de negócio de processos trabalhistas (Steps 1-7, cálculos S-2501, SELIC, multa)
 - O wizard de 8 steps é específico demais
 - Os verificadores e comparadores de dados são específicos
-- O parser de S-5501 é específico (Easy Social precisaria de parser para S-5001 ou outro)
+- O parser de S-5501 é específico (Easy e-Social precisaria de parser para S-5001 ou outro)
 - A integração SERPRO (CPF/CNPJ) é útil mas não essencial para S-1010
 
 ### 12.4. Qual a parte mais difícil/complexa de toda a integração?

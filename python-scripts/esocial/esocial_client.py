@@ -266,7 +266,9 @@ class ESocialClient:
                     "erro": str(e),
                 }
 
-            return ESocialClient._parsear_resposta_consulta(response.text)
+            resultado = ESocialClient._parsear_resposta_consulta(response.text)
+            resultado["xml_resposta"] = response.text
+            return resultado
 
         finally:
             for f in (temp_cert.name, temp_key.name):
@@ -330,7 +332,9 @@ class ESocialClient:
             if proc_desc is not None:
                 evt_data["descricao"] = proc_desc.text
 
-            recibo = evt_el.find(".//{*}processamento/{*}nrRecibo")
+            recibo = evt_el.find(".//{*}recibo/{*}nrRecibo")
+            if recibo is None:
+                recibo = evt_el.find(".//{*}nrRecibo")
             if recibo is not None:
                 evt_data["nr_recibo"] = recibo.text
 

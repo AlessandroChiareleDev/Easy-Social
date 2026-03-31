@@ -85,6 +85,9 @@ BEGIN
     IF NOT EXISTS (SELECT 1 FROM information_schema.columns WHERE table_name='esocial_envios' AND column_name='recibo_consulta') THEN
         ALTER TABLE esocial_envios ADD COLUMN recibo_consulta JSONB;
     END IF;
+    IF NOT EXISTS (SELECT 1 FROM information_schema.columns WHERE table_name='esocial_envios' AND column_name='nr_recibo') THEN
+        ALTER TABLE esocial_envios ADD COLUMN nr_recibo VARCHAR(100);
+    END IF;
     -- Coluna envio_status em cruzamento_eb: pendente | enviado | feito
     IF NOT EXISTS (SELECT 1 FROM information_schema.columns WHERE table_name='cruzamento_eb' AND column_name='envio_status') THEN
         ALTER TABLE cruzamento_eb ADD COLUMN envio_status VARCHAR(20) DEFAULT 'pendente';
@@ -738,17 +741,30 @@ async def consultar_s1010(protocolo: str, ambiente: str = "2"):
 
             # Atualizar envio no banco com resultado da consulta
             try:
+                # Extrair XML bruto e nr_recibo antes de remover do resultado
+                xml_resposta = resultado.pop("xml_resposta", None)
+
                 # Verificar se o lote foi processado E se os eventos individuais tiveram sucesso
                 eventos = resultado.get("eventos", [])
                 todos_sucesso = resultado.get("sucesso", False) and all(
                     str(ev.get("codigo_resposta", "")) in ("201", "202") for ev in eventos
                 )
                 status_final = "processado" if todos_sucesso else "erro"
+
+                # Extrair nr_recibo do primeiro evento com sucesso
+                nr_recibo = None
+                for ev in eventos:
+                    if ev.get("nr_recibo"):
+                        nr_recibo = ev["nr_recibo"]
+                        break
+
                 cur.execute(
                     """UPDATE esocial_envios
-                       SET status = %s, recibo_consulta = %s, updated_at = NOW()
+                       SET status = %s, recibo_consulta = %s, xml_retorno = %s,
+                           nr_recibo = %s, updated_at = NOW()
                        WHERE protocolo_envio = %s""",
-                    (status_final, json.dumps(resultado), protocolo),
+                    (status_final, json.dumps(resultado), xml_resposta,
+                     nr_recibo, protocolo),
                 )
                 # Atualizar status das rubricas no cruzamento_eb
                 if envio_detalhes:
@@ -788,6 +804,93 @@ async def consultar_s1010(protocolo: str, ambiente: str = "2"):
         conn.close()
 
 
+@router.post("/reconsultar-todos")
+async def reconsultar_todos(ambiente: str = "1"):
+    """Re-consulta todos os envios processados/enviados para extrair nrRecibo correto."""
+    is_producao = ambiente == "1"
+    conn = _get_conn()
+    try:
+        with conn.cursor() as cur:
+            cur.execute(INIT_ENVIOS_SQL)
+            cur.execute(MIGRATE_ENVIOS_SQL)
+            conn.commit()
+
+            # Carregar certificado ativo
+            cert_info = _load_cert_ativo(cur)
+            if not cert_info:
+                raise HTTPException(status_code=400, detail="Nenhum certificado A1 ativo")
+
+            senha = CertificateManager.decrypt_password(cert_info["senha_encrypted"])
+            with open(cert_info["arquivo_path"], "rb") as f:
+                pfx_data = f.read()
+
+            # Buscar todos envios que precisam de nr_recibo
+            cur.execute(
+                """SELECT id, protocolo_envio, status, ambiente
+                   FROM esocial_envios
+                   WHERE protocolo_envio IS NOT NULL
+                     AND protocolo_envio != ''
+                     AND (nr_recibo IS NULL OR nr_recibo = '')
+                   ORDER BY id"""
+            )
+            envios = cur.fetchall()
+
+            resultados = []
+            for envio_id, protocolo, status_atual, amb in envios:
+                try:
+                    is_prod = (amb or ambiente) == "1"
+                    url_consulta = SOAPEnvelopeBuilder.url_consulta(producao=is_prod)
+                    resultado = ESocialClient.consultar_lote(protocolo, pfx_data, senha, url=url_consulta)
+
+                    xml_resposta = resultado.pop("xml_resposta", None)
+                    eventos = resultado.get("eventos", [])
+                    todos_sucesso = resultado.get("sucesso", False) and all(
+                        str(ev.get("codigo_resposta", "")) in ("201", "202") for ev in eventos
+                    )
+                    status_final = "processado" if todos_sucesso else "erro"
+
+                    nr_recibo = None
+                    for ev in eventos:
+                        if ev.get("nr_recibo"):
+                            nr_recibo = ev["nr_recibo"]
+                            break
+
+                    cur.execute(
+                        """UPDATE esocial_envios
+                           SET status = %s, recibo_consulta = %s, xml_retorno = %s,
+                               nr_recibo = %s, updated_at = NOW()
+                           WHERE id = %s""",
+                        (status_final, json.dumps(resultado), xml_resposta,
+                         nr_recibo, envio_id),
+                    )
+                    conn.commit()
+
+                    resultados.append({
+                        "id": envio_id,
+                        "protocolo": protocolo,
+                        "status": status_final,
+                        "nr_recibo": nr_recibo,
+                        "sucesso": True,
+                    })
+                except Exception as e:
+                    resultados.append({
+                        "id": envio_id,
+                        "protocolo": protocolo,
+                        "nr_recibo": None,
+                        "sucesso": False,
+                        "erro": str(e),
+                    })
+
+            return {
+                "total": len(envios),
+                "resultados": resultados,
+                "com_recibo": sum(1 for r in resultados if r.get("nr_recibo")),
+                "sem_recibo": sum(1 for r in resultados if not r.get("nr_recibo")),
+            }
+    finally:
+        conn.close()
+
+
 @router.get("/envios")
 async def listar_envios():
     """Retorna histórico de envios ao eSocial."""
@@ -800,7 +903,7 @@ async def listar_envios():
                 """SELECT id, tipo_evento, modo, status, protocolo_envio,
                           codigo_resposta, descricao_resposta, total_eventos,
                           created_at, ambiente, ini_valid, rubrica_detalhes,
-                          rubrica_ids, recibo_consulta, updated_at
+                          rubrica_ids, recibo_consulta, updated_at, nr_recibo
                    FROM esocial_envios
                    ORDER BY created_at DESC
                    LIMIT 100"""
@@ -824,6 +927,7 @@ async def listar_envios():
                     "rubrica_ids": _safe_json(r[12], []),
                     "recibo_consulta": _safe_json(r[13]),
                     "updated_at": str(r[14]) if r[14] else None,
+                    "nr_recibo": r[15],
                 })
             return {"envios": envios, "total": len(envios)}
     finally:

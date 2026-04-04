@@ -22,6 +22,25 @@
       </div>
 
       <div class="flex items-center gap-3">
+        <!-- Admin panel -->
+        <button
+          v-if="authStore.isAdmin"
+          @click="router.push('/admin')"
+          class="flex items-center gap-2 px-4 py-2 bg-[#0066FF]/20 hover:bg-[#0066FF]/40 border border-[#0066FF]/30 text-blue-100 rounded-lg text-sm font-medium backdrop-blur-sm transition-all duration-200"
+        >
+          <svg
+            class="w-4 h-4"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          >
+            <path d="M12 20V10M18 20V4M6 20v-4" />
+          </svg>
+          Admin
+        </button>
+
         <!-- Trocar empresa -->
         <button
           @click="trocarEmpresa"

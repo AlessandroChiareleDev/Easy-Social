@@ -21,24 +21,44 @@
         >
       </div>
 
-      <button
-        @click="handleLogout"
-        class="flex items-center gap-2 px-4 py-2 bg-red-500/20 hover:bg-red-500/40 border border-red-400/30 text-red-100 rounded-lg text-sm font-medium backdrop-blur-sm transition-all duration-200"
-      >
-        <svg
-          class="w-4 h-4"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
+      <div class="flex items-center gap-3">
+        <button
+          v-if="authStore.isAdmin"
+          @click="router.push('/admin')"
+          class="flex items-center gap-2 px-4 py-2 bg-[#0066FF]/20 hover:bg-[#0066FF]/40 border border-[#0066FF]/30 text-blue-100 rounded-lg text-sm font-medium backdrop-blur-sm transition-all duration-200"
         >
-          <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
-          <polyline points="16 17 21 12 16 7" />
-          <line x1="21" y1="12" x2="9" y2="12" />
-        </svg>
-        Sair
-      </button>
+          <svg
+            class="w-4 h-4"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          >
+            <path d="M12 20V10M18 20V4M6 20v-4" />
+          </svg>
+          Admin
+        </button>
+
+        <button
+          @click="handleLogout"
+          class="flex items-center gap-2 px-4 py-2 bg-red-500/20 hover:bg-red-500/40 border border-red-400/30 text-red-100 rounded-lg text-sm font-medium backdrop-blur-sm transition-all duration-200"
+        >
+          <svg
+            class="w-4 h-4"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          >
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+            <polyline points="16 17 21 12 16 7" />
+            <line x1="21" y1="12" x2="9" y2="12" />
+          </svg>
+          Sair
+        </button>
+      </div>
     </div>
 
     <!-- Content -->

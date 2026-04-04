@@ -81,6 +81,11 @@ const router = createRouter({
       component: () => import('../views/ExploradorEventosView.vue'),
       meta: { requireEmpresa: true },
     },
+    {
+      path: '/admin',
+      name: 'admin',
+      component: () => import('../views/AdminPanelView.vue'),
+    },
   ],
 })
 

@@ -75,6 +75,22 @@ export class AuthService {
    * Retorna empresas acessíveis pelo usuário
    */
   async getEmpresasDoUsuario(userId: number): Promise<Empresa[]> {
+    const userResult = await masterPool.query(
+      "SELECT role FROM master_perfis WHERE id = $1",
+      [userId],
+    );
+    const isAdmin = userResult.rows[0]?.role === "admin";
+
+    if (isAdmin) {
+      const result = await masterPool.query(
+        `SELECT e.id, e.nome, e.cnpj, e.db_name, 'admin' as role_emp
+         FROM master_empresas e
+         WHERE e.ativo = true
+         ORDER BY e.nome`,
+      );
+      return result.rows;
+    }
+
     const result = await masterPool.query(
       `SELECT e.id, e.nome, e.cnpj, e.db_name, ue.role_emp
        FROM master_empresas e
@@ -93,6 +109,21 @@ export class AuthService {
     userId: number,
     empresaId: number,
   ): Promise<{ dbName: string; roleEmp: string } | null> {
+    const userResult = await masterPool.query(
+      "SELECT role FROM master_perfis WHERE id = $1",
+      [userId],
+    );
+    const isAdmin = userResult.rows[0]?.role === "admin";
+
+    if (isAdmin) {
+      const result = await masterPool.query(
+        `SELECT e.db_name FROM master_empresas e WHERE e.id = $1 AND e.ativo = true`,
+        [empresaId],
+      );
+      if (result.rows.length === 0) return null;
+      return { dbName: result.rows[0].db_name, roleEmp: "admin" };
+    }
+
     const result = await masterPool.query(
       `SELECT e.db_name, ue.role_emp
        FROM master_empresas e

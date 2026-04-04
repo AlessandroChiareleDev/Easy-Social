@@ -9,6 +9,8 @@ import validationRoutes from "./routes/validationRoutes";
 import naturezaRoutes from "./routes/naturezaRoutes";
 import cruzamentoRoutes from "./routes/cruzamentoRoutes";
 import authRoutes from "./routes/authRoutes";
+import adminRoutes from "./routes/adminRoutes";
+import { activityLogger } from "./middleware/activityLogger";
 
 dotenv.config();
 
@@ -19,6 +21,9 @@ const PORT = process.env.PORT || 3333;
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+// Activity logger — roda em todas as rotas (só loga se req.user existir)
+app.use(activityLogger);
 
 // Servir arquivos estáticos (uploads)
 app.use("/uploads", express.static(path.join(__dirname, "../uploads")));
@@ -31,6 +36,7 @@ initializeDatabase().catch((err) => {
 
 // Rotas
 app.use("/api", authRoutes);
+app.use("/api", adminRoutes);
 app.use("/api", uploadRoutes);
 app.use("/api", tableRoutes);
 app.use("/api", validationRoutes);

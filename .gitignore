@@ -42,3 +42,14 @@ htmlcov/
 .pytest_cache/
 
 supabase/data_export/
+
+# Deploy artifacts
+deploy.tar.gz
+pipeline_result.json
+
+# Temporary deploy/debug scripts
+python-scripts/_*.py
+python-scripts/_*.xml
+python-scripts/_*.json
+python-scripts/last_request.json
+transcricoes-call/

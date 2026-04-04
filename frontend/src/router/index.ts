@@ -69,6 +69,18 @@ const router = createRouter({
       component: () => import('../views/EBSkillsCruzamentoView.vue'),
       meta: { requireEmpresa: true },
     },
+    {
+      path: '/pipeline-audit',
+      name: 'pipeline-audit',
+      component: () => import('../views/PipelineAuditView.vue'),
+      meta: { requireEmpresa: true },
+    },
+    {
+      path: '/explorador',
+      name: 'explorador',
+      component: () => import('../views/ExploradorEventosView.vue'),
+      meta: { requireEmpresa: true },
+    },
   ],
 })
 

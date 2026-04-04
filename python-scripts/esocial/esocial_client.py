@@ -20,6 +20,7 @@ from cryptography.hazmat.primitives.serialization import (
 from cryptography.hazmat.backends import default_backend
 
 from esocial.soap_builder import SOAPEnvelopeBuilder
+from esocial.xml_signer import S1010XMLSigner
 
 # Homologação tem problemas de SSL — suprimir warnings
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -352,3 +353,380 @@ class ESocialClient:
             resultado["eventos"].append(evt_data)
 
         return resultado
+
+    # ── Download Cirúrgico ────────────────────────────────────────
+
+    @staticmethod
+    def _fazer_request_assinado(
+        inner_xml: str,
+        montar_soap_fn,
+        url: str,
+        headers: dict,
+        pfx_data: bytes,
+        password: str,
+    ) -> str:
+        """
+        Fluxo comum: assinar inner XML → montar SOAP → enviar → retornar texto.
+
+        Raises on HTTP error. Returns response text.
+        """
+        # 1. Assinar inner XML
+        inner_assinado = S1010XMLSigner.assinar(
+            inner_xml.encode("utf-8"), pfx_data, password
+        )
+        inner_str = inner_assinado.decode("utf-8") if isinstance(inner_assinado, bytes) else inner_assinado
+
+        # 2. Montar SOAP envelope
+        soap = montar_soap_fn(inner_str)
+
+        # 3. Extrair PEM e enviar
+        cert_pem, key_pem = ESocialClient._extrair_pem(pfx_data, password)
+        temp_cert = tempfile.NamedTemporaryFile(mode="wb", delete=False, suffix=".pem")
+        temp_key = tempfile.NamedTemporaryFile(mode="wb", delete=False, suffix=".pem")
+        try:
+            temp_cert.write(cert_pem)
+            temp_cert.flush()
+            temp_cert.close()
+            temp_key.write(key_pem)
+            temp_key.flush()
+            temp_key.close()
+
+            response = requests.post(
+                url=url,
+                data=soap.encode("utf-8"),
+                headers=headers,
+                cert=(temp_cert.name, temp_key.name),
+                verify=False,
+                timeout=120,
+            )
+            response.raise_for_status()
+            return response.text
+        finally:
+            for f in (temp_cert.name, temp_key.name):
+                try:
+                    os.unlink(f)
+                except OSError:
+                    pass
+
+    # ── Consultar Identificadores ─────────────────────────────────
+
+    @staticmethod
+    def consultar_identificadores_trabalhador(
+        cpf: str,
+        dt_ini: str,
+        dt_fim: str,
+        pfx_data: bytes,
+        password: str,
+        empregador: dict,
+        producao: bool = False,
+    ) -> dict:
+        """
+        Consulta identificadores de eventos de um trabalhador por CPF e período.
+
+        Args:
+            cpf: CPF do trabalhador (11 dígitos)
+            dt_ini: Data início (YYYY-MM-DD)
+            dt_fim: Data fim (YYYY-MM-DD)
+            pfx_data: Conteúdo do .pfx
+            password: Senha do certificado
+            empregador: dict com tpInsc e nrInsc
+            producao: Se True, usa ambiente de produção
+
+        Returns:
+            dict com: sucesso, codigo_resposta, descricao, eventos[], xml_resposta, erro
+        """
+        inner_xml = SOAPEnvelopeBuilder.inner_consulta_ident_trabalhador(
+            empregador, cpf, dt_ini, dt_fim
+        )
+        try:
+            response_text = ESocialClient._fazer_request_assinado(
+                inner_xml=inner_xml,
+                montar_soap_fn=SOAPEnvelopeBuilder.montar_consulta_ident_trabalhador,
+                url=SOAPEnvelopeBuilder.url_identificadores(producao),
+                headers=SOAPEnvelopeBuilder.headers_ident_trabalhador(),
+                pfx_data=pfx_data,
+                password=password,
+            )
+        except Exception as e:
+            return {
+                "sucesso": False,
+                "codigo_resposta": None,
+                "descricao": None,
+                "eventos": [],
+                "erro": str(e),
+            }
+
+        resultado = ESocialClient._parsear_resposta_identificadores(response_text)
+        resultado["xml_resposta"] = response_text
+        return resultado
+
+    @staticmethod
+    def consultar_identificadores_empregador(
+        tp_evt: str,
+        per_apur: str,
+        pfx_data: bytes,
+        password: str,
+        empregador: dict,
+        producao: bool = False,
+    ) -> dict:
+        """
+        Consulta identificadores de eventos do empregador por tipo e período.
+
+        Args:
+            tp_evt: Tipo do evento (ex: "S-1200")
+            per_apur: Período de apuração (ex: "2024-01")
+            pfx_data: Conteúdo do .pfx
+            password: Senha do certificado
+            empregador: dict com tpInsc e nrInsc
+            producao: Se True, usa ambiente de produção
+
+        Returns:
+            dict com: sucesso, codigo_resposta, descricao, eventos[], xml_resposta, erro
+        """
+        inner_xml = SOAPEnvelopeBuilder.inner_consulta_ident_empregador(
+            empregador, tp_evt, per_apur
+        )
+        try:
+            response_text = ESocialClient._fazer_request_assinado(
+                inner_xml=inner_xml,
+                montar_soap_fn=SOAPEnvelopeBuilder.montar_consulta_ident_empregador,
+                url=SOAPEnvelopeBuilder.url_identificadores(producao),
+                headers=SOAPEnvelopeBuilder.headers_ident_empregador(),
+                pfx_data=pfx_data,
+                password=password,
+            )
+        except Exception as e:
+            return {
+                "sucesso": False,
+                "codigo_resposta": None,
+                "descricao": None,
+                "eventos": [],
+                "erro": str(e),
+            }
+
+        resultado = ESocialClient._parsear_resposta_identificadores(response_text)
+        resultado["xml_resposta"] = response_text
+        return resultado
+
+    @staticmethod
+    def _parsear_resposta_identificadores(response_text: str) -> dict:
+        """Parseia resposta de consulta de identificadores de eventos."""
+        resultado = {
+            "sucesso": False,
+            "codigo_resposta": None,
+            "descricao": None,
+            "eventos": [],
+        }
+
+        try:
+            root = etree.fromstring(response_text.encode("utf-8"))
+        except etree.XMLSyntaxError:
+            resultado["erro"] = "Resposta não é XML válido"
+            return resultado
+
+        # Status
+        cd = root.find(".//{*}cdResposta")
+        if cd is not None:
+            resultado["codigo_resposta"] = cd.text
+
+        desc = root.find(".//{*}descResposta")
+        if desc is not None:
+            resultado["descricao"] = desc.text
+
+        resultado["sucesso"] = resultado["codigo_resposta"] in ("201", "101")
+
+        # Eventos identificados
+        for id_el in root.findall(".//{*}id"):
+            evt = {
+                "id": id_el.text,
+                "nrRec": None,
+            }
+            # Try to find sibling nrRec within the same parent
+            parent = id_el.getparent() if hasattr(id_el, 'getparent') else None
+            if parent is not None:
+                nr_rec = parent.find("{*}nrRec")
+                if nr_rec is not None:
+                    evt["nrRec"] = nr_rec.text
+            resultado["eventos"].append(evt)
+
+        return resultado
+
+    # ── Solicitar Download ────────────────────────────────────────
+
+    @staticmethod
+    def solicitar_download_por_id(
+        ids: list[str],
+        pfx_data: bytes,
+        password: str,
+        empregador: dict,
+        producao: bool = False,
+    ) -> dict:
+        """
+        Solicita download de eventos por ID.
+
+        Args:
+            ids: Lista de IDs de eventos
+            pfx_data: Conteúdo do .pfx
+            password: Senha do certificado
+            empregador: dict com tpInsc e nrInsc
+            producao: Se True, usa ambiente de produção
+
+        Returns:
+            dict com: sucesso, codigo_resposta, descricao, arquivos[], xml_resposta, erro
+        """
+        inner_xml = SOAPEnvelopeBuilder.inner_download_por_id(empregador, ids)
+        try:
+            response_text = ESocialClient._fazer_request_assinado(
+                inner_xml=inner_xml,
+                montar_soap_fn=SOAPEnvelopeBuilder.montar_download_por_id,
+                url=SOAPEnvelopeBuilder.url_download(producao),
+                headers=SOAPEnvelopeBuilder.headers_download_por_id(),
+                pfx_data=pfx_data,
+                password=password,
+            )
+        except Exception as e:
+            return {
+                "sucesso": False,
+                "codigo_resposta": None,
+                "descricao": None,
+                "arquivos": [],
+                "erro": str(e),
+            }
+
+        resultado = ESocialClient._parsear_resposta_download(response_text)
+        resultado["xml_resposta"] = response_text
+        return resultado
+
+    @staticmethod
+    def solicitar_download_por_nrrecibo(
+        nr_recibos: list[str],
+        pfx_data: bytes,
+        password: str,
+        empregador: dict,
+        producao: bool = False,
+    ) -> dict:
+        """
+        Solicita download de eventos por número de recibo.
+
+        Args:
+            nr_recibos: Lista de números de recibo
+            pfx_data: Conteúdo do .pfx
+            password: Senha do certificado
+            empregador: dict com tpInsc e nrInsc
+            producao: Se True, usa ambiente de produção
+
+        Returns:
+            dict com: sucesso, codigo_resposta, descricao, arquivos[], xml_resposta, erro
+        """
+        inner_xml = SOAPEnvelopeBuilder.inner_download_por_nrrecibo(empregador, nr_recibos)
+        try:
+            response_text = ESocialClient._fazer_request_assinado(
+                inner_xml=inner_xml,
+                montar_soap_fn=SOAPEnvelopeBuilder.montar_download_por_nrrecibo,
+                url=SOAPEnvelopeBuilder.url_download(producao),
+                headers=SOAPEnvelopeBuilder.headers_download_por_nrrecibo(),
+                pfx_data=pfx_data,
+                password=password,
+            )
+        except Exception as e:
+            return {
+                "sucesso": False,
+                "codigo_resposta": None,
+                "descricao": None,
+                "arquivos": [],
+                "erro": str(e),
+            }
+
+        resultado = ESocialClient._parsear_resposta_download(response_text)
+        resultado["xml_resposta"] = response_text
+        return resultado
+
+    @staticmethod
+    def _parsear_resposta_download(response_text: str) -> dict:
+        """Parseia resposta de download de eventos."""
+        resultado = {
+            "sucesso": False,
+            "codigo_resposta": None,
+            "descricao": None,
+            "arquivos": [],
+        }
+
+        try:
+            root = etree.fromstring(response_text.encode("utf-8"))
+        except etree.XMLSyntaxError:
+            resultado["erro"] = "Resposta não é XML válido"
+            return resultado
+
+        # Status geral
+        status = root.find(".//{*}status")
+        if status is not None:
+            cd = status.find("{*}cdResposta")
+            if cd is not None:
+                resultado["codigo_resposta"] = cd.text
+            desc = status.find("{*}descResposta")
+            if desc is not None:
+                resultado["descricao"] = desc.text
+
+        resultado["sucesso"] = resultado["codigo_resposta"] in ("201", "101")
+
+        # Arquivos (cada evento retornado)
+        ns_dl = "http://www.esocial.gov.br/schema/download/retornoProcessamento/v1_0_0"
+
+        # Try both retornoProcessamentoDownload and arquivo patterns
+        for arquivo in root.findall(f".//{{{ns_dl}}}arquivo"):
+            arq_data = ESocialClient._parsear_arquivo_download(arquivo, ns_dl)
+            if arq_data:
+                resultado["arquivos"].append(arq_data)
+
+        # Fallback: try wildcard namespace
+        if not resultado["arquivos"]:
+            for arquivo in root.findall(".//{*}arquivo"):
+                arq_data = ESocialClient._parsear_arquivo_download(arquivo)
+                if arq_data:
+                    resultado["arquivos"].append(arq_data)
+
+        return resultado
+
+    @staticmethod
+    def _parsear_arquivo_download(arquivo_el, ns: str = None) -> dict | None:
+        """Parseia um elemento arquivo do download."""
+        # Find evento and recibo inside arquivo
+        if ns:
+            evento_el = arquivo_el.find(f"{{{ns}}}evento")
+            recibo_el = arquivo_el.find(f"{{{ns}}}recibo")
+        else:
+            evento_el = arquivo_el.find("{*}evento")
+            recibo_el = arquivo_el.find("{*}recibo")
+
+        if evento_el is None:
+            return None
+
+        # Extract inner eSocial from evento
+        inner_esocial = None
+        for child in evento_el:
+            if "eSocial" in child.tag:
+                inner_esocial = child
+                break
+
+        arq = {
+            "evento_xml": etree.tostring(inner_esocial, encoding="unicode") if inner_esocial is not None else None,
+            "nr_recibo": None,
+            "cd_resposta": None,
+        }
+
+        # Extract recibo info
+        if recibo_el is not None:
+            recibo_inner = None
+            for child in recibo_el:
+                if "eSocial" in child.tag:
+                    recibo_inner = child
+                    break
+            if recibo_inner is not None:
+                nr_rec = recibo_inner.find(".//{*}nrRecibo")
+                if nr_rec is not None:
+                    arq["nr_recibo"] = nr_rec.text
+                cd_resp = recibo_inner.find(".//{*}cdResposta")
+                if cd_resp is not None:
+                    arq["cd_resposta"] = cd_resp.text
+
+        return arq

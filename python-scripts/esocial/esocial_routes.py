@@ -29,6 +29,10 @@ import psycopg2
 
 from esocial.certificate_manager import CertificateManager
 from esocial.xml_generator import S1010XMLGenerator
+from esocial.xml_s1200 import S1200XMLGenerator
+from esocial.xml_s1298 import S1298XMLGenerator
+from esocial.xml_s1299 import S1299XMLGenerator
+from esocial.xml_s1210 import S1210XMLGenerator
 from esocial.xml_signer import S1010XMLSigner
 from esocial.soap_builder import SOAPEnvelopeBuilder
 from esocial.esocial_client import ESocialClient
@@ -1027,5 +1031,933 @@ async def set_config_empresa(req: ConfigEmpresaRequest):
             _save_ini_valid_empresa(cur, cnpj, req.ini_valid_padrao, auto=False)
             conn.commit()
         return {"cnpj": cnpj, "ini_valid_padrao": req.ini_valid_padrao, "auto_detected": False}
+    finally:
+        conn.close()
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# EVENTOS PERIÓDICOS — S-1298 (Reabertura) e S-1299 (Fechamento)
+# ══════════════════════════════════════════════════════════════════════════════
+
+
+class EnviarS1298Request(BaseModel):
+    per_apur: str            # AAAA-MM — período a reabrir
+    ind_apuracao: str = "1"  # "1" = mensal, "2" = 13º
+    ambiente: str = "2"      # "1" = produção, "2" = homologação
+
+
+class EnviarS1299Request(BaseModel):
+    per_apur: str            # AAAA-MM — período a fechar
+    ind_apuracao: str = "1"  # "1" = mensal, "2" = 13º
+    ambiente: str = "2"      # "1" = produção, "2" = homologação
+    nm_resp: str             # Nome do responsável
+    cpf_resp: str            # CPF do responsável
+    telefone: str            # Telefone
+    email: str               # Email
+
+
+@router.post("/s1298/enviar")
+async def enviar_s1298(req: EnviarS1298Request):
+    """
+    Envia S-1298 (Reabertura de Eventos Periódicos) ao eSocial.
+    Pipeline: Gerar XML → Assinar → SOAP (grupo=3) → Enviar → Salvar
+    """
+    if not re.match(r"^\d{4}-\d{2}$", req.per_apur):
+        raise HTTPException(status_code=400, detail="per_apur deve ter formato AAAA-MM")
+    if req.ambiente not in ("1", "2"):
+        raise HTTPException(status_code=400, detail="ambiente deve ser '1' ou '2'")
+    if req.ind_apuracao not in ("1", "2"):
+        raise HTTPException(status_code=400, detail="ind_apuracao deve ser '1' (mensal) ou '2' (13º)")
+
+    is_producao = req.ambiente == "1"
+    conn = _get_conn()
+    try:
+        with conn.cursor() as cur:
+            # 1. Certificado ativo
+            cert_info = _load_cert_ativo(cur)
+            if not cert_info:
+                raise HTTPException(status_code=400, detail="Nenhum certificado A1 ativo")
+
+            senha = CertificateManager.decrypt_password(cert_info["senha_encrypted"])
+            with open(cert_info["arquivo_path"], "rb") as f:
+                pfx_data = f.read()
+
+            cnpj = cert_info["cnpj"]
+            empregador = {"tpInsc": 1, "nrInsc": cnpj}
+            transmissor = {"tpInsc": 1, "nrInsc": cnpj}
+
+            # 2. Gerar XML S-1298
+            xml_bytes = S1298XMLGenerator.gerar(
+                empregador, req.per_apur, req.ind_apuracao, tp_amb=req.ambiente
+            )
+
+            # 3. Assinar
+            xml_assinado = S1010XMLSigner.assinar(xml_bytes, pfx_data, senha)
+
+            # 4. Montar SOAP (grupo=3 para periódicos)
+            soap_envelope = SOAPEnvelopeBuilder.montar_envio(
+                [xml_assinado], empregador, transmissor, grupo="3"
+            )
+
+            # 5. Enviar
+            url_envio = SOAPEnvelopeBuilder.url_envio(producao=is_producao)
+            resultado = ESocialClient.enviar_lote(soap_envelope, pfx_data, senha, url=url_envio)
+
+            # 6. Salvar no banco
+            try:
+                cur.execute(INIT_ENVIOS_SQL)
+                cur.execute(MIGRATE_ENVIOS_SQL)
+                cur.execute(
+                    """INSERT INTO esocial_envios
+                       (tipo_evento, modo, ambiente, ini_valid, status, protocolo_envio,
+                        codigo_resposta, descricao_resposta, total_eventos,
+                        rubrica_ids, xml_enviado, ocorrencias)
+                       VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                       RETURNING id""",
+                    (
+                        "S-1298",
+                        "reabertura",
+                        req.ambiente,
+                        req.per_apur,
+                        "enviado" if resultado.get("sucesso") else "erro",
+                        resultado.get("protocolo"),
+                        resultado.get("codigo_resposta"),
+                        resultado.get("descricao"),
+                        1,
+                        json.dumps([req.per_apur]),
+                        soap_envelope[:50000],
+                        json.dumps(resultado.get("ocorrencias", [])),
+                    ),
+                )
+                envio_id = cur.fetchone()[0]
+                conn.commit()
+            except Exception:
+                envio_id = None
+
+            return {
+                "sucesso": resultado.get("sucesso", False),
+                "protocolo": resultado.get("protocolo"),
+                "codigo_resposta": resultado.get("codigo_resposta"),
+                "descricao": resultado.get("descricao"),
+                "dh_recepcao": resultado.get("dh_recepcao"),
+                "per_apur": req.per_apur,
+                "envio_id": envio_id,
+                "ocorrencias": resultado.get("ocorrencias", []),
+                "erro": resultado.get("erro"),
+            }
+    finally:
+        conn.close()
+
+
+@router.post("/s1299/enviar")
+async def enviar_s1299(req: EnviarS1299Request):
+    """
+    Envia S-1299 (Fechamento de Eventos Periódicos) ao eSocial.
+    Pipeline: Gerar XML → Assinar → SOAP (grupo=3) → Enviar → Salvar
+    """
+    if not re.match(r"^\d{4}-\d{2}$", req.per_apur):
+        raise HTTPException(status_code=400, detail="per_apur deve ter formato AAAA-MM")
+    if req.ambiente not in ("1", "2"):
+        raise HTTPException(status_code=400, detail="ambiente deve ser '1' ou '2'")
+    if not req.cpf_resp or len(req.cpf_resp) != 11:
+        raise HTTPException(status_code=400, detail="cpf_resp deve ter 11 dígitos")
+
+    is_producao = req.ambiente == "1"
+    conn = _get_conn()
+    try:
+        with conn.cursor() as cur:
+            # 1. Certificado ativo
+            cert_info = _load_cert_ativo(cur)
+            if not cert_info:
+                raise HTTPException(status_code=400, detail="Nenhum certificado A1 ativo")
+
+            senha = CertificateManager.decrypt_password(cert_info["senha_encrypted"])
+            with open(cert_info["arquivo_path"], "rb") as f:
+                pfx_data = f.read()
+
+            cnpj = cert_info["cnpj"]
+            empregador = {"tpInsc": 1, "nrInsc": cnpj}
+            transmissor = {"tpInsc": 1, "nrInsc": cnpj}
+
+            responsavel = {
+                "nmResp": req.nm_resp,
+                "cpfResp": req.cpf_resp,
+                "telefone": req.telefone,
+                "email": req.email,
+            }
+
+            # 2. Gerar XML S-1299
+            xml_bytes = S1299XMLGenerator.gerar(
+                empregador, req.per_apur, responsavel, req.ind_apuracao, tp_amb=req.ambiente
+            )
+
+            # 3. Assinar
+            xml_assinado = S1010XMLSigner.assinar(xml_bytes, pfx_data, senha)
+
+            # 4. Montar SOAP (grupo=3)
+            soap_envelope = SOAPEnvelopeBuilder.montar_envio(
+                [xml_assinado], empregador, transmissor, grupo="3"
+            )
+
+            # 5. Enviar
+            url_envio = SOAPEnvelopeBuilder.url_envio(producao=is_producao)
+            resultado = ESocialClient.enviar_lote(soap_envelope, pfx_data, senha, url=url_envio)
+
+            # 6. Salvar
+            try:
+                cur.execute(INIT_ENVIOS_SQL)
+                cur.execute(MIGRATE_ENVIOS_SQL)
+                cur.execute(
+                    """INSERT INTO esocial_envios
+                       (tipo_evento, modo, ambiente, ini_valid, status, protocolo_envio,
+                        codigo_resposta, descricao_resposta, total_eventos,
+                        rubrica_ids, xml_enviado, ocorrencias)
+                       VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                       RETURNING id""",
+                    (
+                        "S-1299",
+                        "fechamento",
+                        req.ambiente,
+                        req.per_apur,
+                        "enviado" if resultado.get("sucesso") else "erro",
+                        resultado.get("protocolo"),
+                        resultado.get("codigo_resposta"),
+                        resultado.get("descricao"),
+                        1,
+                        json.dumps([req.per_apur]),
+                        soap_envelope[:50000],
+                        json.dumps(resultado.get("ocorrencias", [])),
+                    ),
+                )
+                envio_id = cur.fetchone()[0]
+                conn.commit()
+            except Exception:
+                envio_id = None
+
+            return {
+                "sucesso": resultado.get("sucesso", False),
+                "protocolo": resultado.get("protocolo"),
+                "codigo_resposta": resultado.get("codigo_resposta"),
+                "descricao": resultado.get("descricao"),
+                "dh_recepcao": resultado.get("dh_recepcao"),
+                "per_apur": req.per_apur,
+                "envio_id": envio_id,
+                "ocorrencias": resultado.get("ocorrencias", []),
+                "erro": resultado.get("erro"),
+            }
+    finally:
+        conn.close()
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# S-1200  —  Remuneração do Trabalhador
+# ─────────────────────────────────────────────────────────────────────────────
+
+class ItensRemunRequest(BaseModel):
+    codRubr: str
+    ideTabRubr: str
+    vrRubr: str
+    indApurIR: str = "0"
+    qtdRubr: str | None = None
+    fatorRubr: str | None = None
+    descFolha: dict | None = None  # {tpDesc, instFinanc?, nrDoc?}
+
+
+class RemunPerApurRequest(BaseModel):
+    matricula: str
+    itensRemun: list[ItensRemunRequest]
+    indSimples: str | None = None
+    infoAgNocivo: dict | None = None  # {grauExp}
+
+
+class IdeEstabLotRequest(BaseModel):
+    tpInsc: str
+    nrInsc: str
+    codLotacao: str
+    remunPerApur: list[RemunPerApurRequest]
+
+
+class InfoPerApurRequest(BaseModel):
+    ideEstabLot: list[IdeEstabLotRequest]
+
+
+class DmDevRequest(BaseModel):
+    ideDmDev: str
+    codCateg: str | None = None
+    infoPerApur: InfoPerApurRequest | None = None
+    infoPerAnt: dict | None = None  # Estrutura livre p/ período anterior
+
+
+class EnviarS1200Request(BaseModel):
+    cpf_trab: str              # CPF do trabalhador (11 dígitos)
+    per_apur: str              # AAAA-MM
+    dm_devs: list[DmDevRequest]
+    ind_retif: str = "1"       # "1" original, "2" retificação
+    nr_recibo: str | None = None  # obrigatório se ind_retif=2
+    ind_apuracao: str = "1"    # "1" mensal, "2" 13º
+    ambiente: str = "2"        # "1" produção, "2" homologação
+
+
+class EnviarS1200LoteRequest(BaseModel):
+    eventos: list[EnviarS1200Request]
+    ambiente: str = "2"
+
+
+@router.post("/s1200/enviar")
+async def enviar_s1200(req: EnviarS1200Request):
+    """
+    Envia S-1200 (Remuneração do Trabalhador) ao eSocial.
+    Pipeline: Gerar XML → Assinar → SOAP (grupo=1) → Enviar → Salvar
+    """
+    if not re.match(r"^\d{4}-\d{2}$", req.per_apur):
+        raise HTTPException(status_code=400, detail="per_apur deve ter formato AAAA-MM")
+    if req.ambiente not in ("1", "2"):
+        raise HTTPException(status_code=400, detail="ambiente deve ser '1' ou '2'")
+    if not req.cpf_trab or len(req.cpf_trab) != 11 or not req.cpf_trab.isdigit():
+        raise HTTPException(status_code=400, detail="cpf_trab deve ter 11 dígitos numéricos")
+    if req.ind_retif == "2" and not req.nr_recibo:
+        raise HTTPException(status_code=400, detail="nr_recibo é obrigatório para retificação (ind_retif=2)")
+    if not req.dm_devs:
+        raise HTTPException(status_code=400, detail="dm_devs não pode ser vazio")
+
+    is_producao = req.ambiente == "1"
+    conn = _get_conn()
+    try:
+        with conn.cursor() as cur:
+            # 1. Certificado ativo
+            cert_info = _load_cert_ativo(cur)
+            if not cert_info:
+                raise HTTPException(status_code=400, detail="Nenhum certificado A1 ativo")
+
+            senha = CertificateManager.decrypt_password(cert_info["senha_encrypted"])
+            with open(cert_info["arquivo_path"], "rb") as f:
+                pfx_data = f.read()
+
+            cnpj = cert_info["cnpj"]
+            empregador = {"tpInsc": 1, "nrInsc": cnpj}
+            transmissor = {"tpInsc": 1, "nrInsc": cnpj}
+
+            trabalhador = {"cpfTrab": req.cpf_trab}
+            dm_devs = [dm.model_dump(exclude_none=True) for dm in req.dm_devs]
+
+            # 2. Gerar XML S-1200
+            xml_bytes = S1200XMLGenerator.gerar(
+                empregador=empregador,
+                trabalhador=trabalhador,
+                dm_devs=dm_devs,
+                per_apur=req.per_apur,
+                ind_retif=req.ind_retif,
+                nr_recibo=req.nr_recibo,
+                ind_apuracao=req.ind_apuracao,
+                tp_amb=req.ambiente,
+            )
+
+            # 3. Assinar
+            xml_assinado = S1010XMLSigner.assinar(xml_bytes, pfx_data, senha)
+
+            # 4. Montar SOAP (grupo=1 para eventos não-periódicos por trabalhador)
+            soap_envelope = SOAPEnvelopeBuilder.montar_envio(
+                [xml_assinado], empregador, transmissor, grupo="1"
+            )
+
+            # 5. Enviar
+            url_envio = SOAPEnvelopeBuilder.url_envio(producao=is_producao)
+            resultado = ESocialClient.enviar_lote(soap_envelope, pfx_data, senha, url=url_envio)
+
+            # 6. Salvar no banco
+            modo = "retificacao" if req.ind_retif == "2" else "original"
+            try:
+                cur.execute(INIT_ENVIOS_SQL)
+                cur.execute(MIGRATE_ENVIOS_SQL)
+                cur.execute(
+                    """INSERT INTO esocial_envios
+                       (tipo_evento, modo, ambiente, ini_valid, status, protocolo_envio,
+                        codigo_resposta, descricao_resposta, total_eventos,
+                        rubrica_ids, xml_enviado, ocorrencias)
+                       VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                       RETURNING id""",
+                    (
+                        "S-1200",
+                        modo,
+                        req.ambiente,
+                        req.per_apur,
+                        "enviado" if resultado.get("sucesso") else "erro",
+                        resultado.get("protocolo"),
+                        resultado.get("codigo_resposta"),
+                        resultado.get("descricao"),
+                        1,
+                        json.dumps({"cpf": req.cpf_trab, "nr_recibo": req.nr_recibo}),
+                        soap_envelope[:50000],
+                        json.dumps(resultado.get("ocorrencias", [])),
+                    ),
+                )
+                envio_id = cur.fetchone()[0]
+                conn.commit()
+            except Exception:
+                envio_id = None
+
+            return {
+                "sucesso": resultado.get("sucesso", False),
+                "protocolo": resultado.get("protocolo"),
+                "codigo_resposta": resultado.get("codigo_resposta"),
+                "descricao": resultado.get("descricao"),
+                "dh_recepcao": resultado.get("dh_recepcao"),
+                "per_apur": req.per_apur,
+                "cpf_trab": req.cpf_trab,
+                "ind_retif": req.ind_retif,
+                "envio_id": envio_id,
+                "ocorrencias": resultado.get("ocorrencias", []),
+                "erro": resultado.get("erro"),
+            }
+    finally:
+        conn.close()
+
+
+@router.post("/s1200/enviar-lote")
+async def enviar_s1200_lote(req: EnviarS1200LoteRequest):
+    """
+    Envia lote de S-1200 (múltiplos trabalhadores) ao eSocial.
+    Máximo 50 eventos por lote.
+    """
+    if not req.eventos:
+        raise HTTPException(status_code=400, detail="eventos não pode ser vazio")
+    if len(req.eventos) > 50:
+        raise HTTPException(status_code=400, detail=f"Máximo 50 eventos por lote. Recebido: {len(req.eventos)}")
+
+    is_producao = req.ambiente == "1"
+    conn = _get_conn()
+    try:
+        with conn.cursor() as cur:
+            cert_info = _load_cert_ativo(cur)
+            if not cert_info:
+                raise HTTPException(status_code=400, detail="Nenhum certificado A1 ativo")
+
+            senha = CertificateManager.decrypt_password(cert_info["senha_encrypted"])
+            with open(cert_info["arquivo_path"], "rb") as f:
+                pfx_data = f.read()
+
+            cnpj = cert_info["cnpj"]
+            empregador = {"tpInsc": 1, "nrInsc": cnpj}
+            transmissor = {"tpInsc": 1, "nrInsc": cnpj}
+
+            # Gerar + assinar todos os XMLs
+            xmls_assinados = []
+            for i, ev in enumerate(req.eventos, start=1):
+                trabalhador = {"cpfTrab": ev.cpf_trab}
+                dm_devs = [dm.model_dump(exclude_none=True) for dm in ev.dm_devs]
+                xml_bytes = S1200XMLGenerator.gerar(
+                    empregador=empregador,
+                    trabalhador=trabalhador,
+                    dm_devs=dm_devs,
+                    per_apur=ev.per_apur,
+                    ind_retif=ev.ind_retif,
+                    nr_recibo=ev.nr_recibo,
+                    ind_apuracao=ev.ind_apuracao,
+                    seq=i,
+                    tp_amb=req.ambiente,
+                )
+                xmls_assinados.append(S1010XMLSigner.assinar(xml_bytes, pfx_data, senha))
+
+            # Montar SOAP com todos os eventos
+            soap_envelope = SOAPEnvelopeBuilder.montar_envio(
+                xmls_assinados, empregador, transmissor, grupo="1"
+            )
+
+            # Enviar
+            url_envio = SOAPEnvelopeBuilder.url_envio(producao=is_producao)
+            resultado = ESocialClient.enviar_lote(soap_envelope, pfx_data, senha, url=url_envio)
+
+            # Salvar
+            cpfs = [ev.cpf_trab for ev in req.eventos]
+            try:
+                cur.execute(INIT_ENVIOS_SQL)
+                cur.execute(MIGRATE_ENVIOS_SQL)
+                cur.execute(
+                    """INSERT INTO esocial_envios
+                       (tipo_evento, modo, ambiente, ini_valid, status, protocolo_envio,
+                        codigo_resposta, descricao_resposta, total_eventos,
+                        rubrica_ids, xml_enviado, ocorrencias)
+                       VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                       RETURNING id""",
+                    (
+                        "S-1200",
+                        "lote",
+                        req.ambiente,
+                        req.eventos[0].per_apur if req.eventos else "",
+                        "enviado" if resultado.get("sucesso") else "erro",
+                        resultado.get("protocolo"),
+                        resultado.get("codigo_resposta"),
+                        resultado.get("descricao"),
+                        len(req.eventos),
+                        json.dumps({"cpfs": cpfs}),
+                        soap_envelope[:50000],
+                        json.dumps(resultado.get("ocorrencias", [])),
+                    ),
+                )
+                envio_id = cur.fetchone()[0]
+                conn.commit()
+            except Exception:
+                envio_id = None
+
+            return {
+                "sucesso": resultado.get("sucesso", False),
+                "protocolo": resultado.get("protocolo"),
+                "codigo_resposta": resultado.get("codigo_resposta"),
+                "descricao": resultado.get("descricao"),
+                "dh_recepcao": resultado.get("dh_recepcao"),
+                "total_eventos": len(req.eventos),
+                "envio_id": envio_id,
+                "ocorrencias": resultado.get("ocorrencias", []),
+                "erro": resultado.get("erro"),
+            }
+    finally:
+        conn.close()
+
+
+# ── S-1210 — Pagamento de Rendimentos ─────────────────────────────
+
+
+class InfoPgtoRequest(BaseModel):
+    dtPgto: str          # AAAA-MM-DD
+    tpPgto: str          # 1-9
+    perRef: str | None = None  # AAAA-MM
+    ideDmDev: str        # Identificador do demonstrativo (ref S-1200)
+    vrLiq: str           # Valor líquido pago
+
+
+class DedDepenRequest(BaseModel):
+    tpRend: str
+    cpfDep: str
+    vlrDedDep: str
+
+
+class InfoIRCRRequest(BaseModel):
+    tpCR: str
+    vrCR: str | None = None
+    dedDepen: list[DedDepenRequest] | None = None
+
+
+class InfoIRComplemRequest(BaseModel):
+    infoIRCR: list[InfoIRCRRequest]
+
+
+class EnviarS1210Request(BaseModel):
+    cpf_benef: str              # CPF do beneficiário (11 dígitos)
+    per_apur: str               # AAAA-MM
+    info_pgtos: list[InfoPgtoRequest]
+    ind_retif: str = "1"        # "1" original, "2" retificação
+    nr_recibo: str | None = None  # obrigatório se ind_retif=2
+    info_ir_complem: InfoIRComplemRequest | None = None
+    ambiente: str = "2"         # "1" produção, "2" homologação
+
+
+class EnviarS1210LoteRequest(BaseModel):
+    eventos: list[EnviarS1210Request]
+    ambiente: str = "2"
+
+
+@router.post("/s1210/enviar")
+async def enviar_s1210(req: EnviarS1210Request):
+    """
+    Envia S-1210 (Pagamento de Rendimentos) ao eSocial.
+    Pipeline: Gerar XML → Assinar → SOAP (grupo=1) → Enviar → Salvar
+    """
+    if not re.match(r"^\d{4}-\d{2}$", req.per_apur):
+        raise HTTPException(status_code=400, detail="per_apur deve ter formato AAAA-MM")
+    if req.ambiente not in ("1", "2"):
+        raise HTTPException(status_code=400, detail="ambiente deve ser '1' ou '2'")
+    if not req.cpf_benef or len(req.cpf_benef) != 11 or not req.cpf_benef.isdigit():
+        raise HTTPException(status_code=400, detail="cpf_benef deve ter 11 dígitos numéricos")
+    if req.ind_retif == "2" and not req.nr_recibo:
+        raise HTTPException(status_code=400, detail="nr_recibo é obrigatório para retificação (ind_retif=2)")
+    if not req.info_pgtos:
+        raise HTTPException(status_code=400, detail="info_pgtos não pode ser vazio")
+
+    is_producao = req.ambiente == "1"
+    conn = _get_conn()
+    try:
+        with conn.cursor() as cur:
+            # 1. Certificado ativo
+            cert_info = _load_cert_ativo(cur)
+            if not cert_info:
+                raise HTTPException(status_code=400, detail="Nenhum certificado A1 ativo")
+
+            senha = CertificateManager.decrypt_password(cert_info["senha_encrypted"])
+            with open(cert_info["arquivo_path"], "rb") as f:
+                pfx_data = f.read()
+
+            cnpj = cert_info["cnpj"]
+            empregador = {"tpInsc": 1, "nrInsc": cnpj}
+            transmissor = {"tpInsc": 1, "nrInsc": cnpj}
+
+            beneficiario = {"cpfBenef": req.cpf_benef}
+            info_pgtos = [p.model_dump(exclude_none=True) for p in req.info_pgtos]
+            info_ir_complem = req.info_ir_complem.model_dump(exclude_none=True) if req.info_ir_complem else None
+
+            # 2. Gerar XML S-1210
+            xml_bytes = S1210XMLGenerator.gerar(
+                empregador=empregador,
+                beneficiario=beneficiario,
+                info_pgtos=info_pgtos,
+                per_apur=req.per_apur,
+                ind_retif=req.ind_retif,
+                nr_recibo=req.nr_recibo,
+                info_ir_complem=info_ir_complem,
+                tp_amb=req.ambiente,
+            )
+
+            # 3. Assinar
+            xml_assinado = S1010XMLSigner.assinar(xml_bytes, pfx_data, senha)
+
+            # 4. Montar SOAP (grupo=1 para eventos por trabalhador/beneficiário)
+            soap_envelope = SOAPEnvelopeBuilder.montar_envio(
+                [xml_assinado], empregador, transmissor, grupo="1"
+            )
+
+            # 5. Enviar
+            url_envio = SOAPEnvelopeBuilder.url_envio(producao=is_producao)
+            resultado = ESocialClient.enviar_lote(soap_envelope, pfx_data, senha, url=url_envio)
+
+            # 6. Salvar no banco
+            modo = "retificacao" if req.ind_retif == "2" else "original"
+            try:
+                cur.execute(INIT_ENVIOS_SQL)
+                cur.execute(MIGRATE_ENVIOS_SQL)
+                cur.execute(
+                    """INSERT INTO esocial_envios
+                       (tipo_evento, modo, ambiente, ini_valid, status, protocolo_envio,
+                        codigo_resposta, descricao_resposta, total_eventos,
+                        rubrica_ids, xml_enviado, ocorrencias)
+                       VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                       RETURNING id""",
+                    (
+                        "S-1210",
+                        modo,
+                        req.ambiente,
+                        req.per_apur,
+                        "enviado" if resultado.get("sucesso") else "erro",
+                        resultado.get("protocolo"),
+                        resultado.get("codigo_resposta"),
+                        resultado.get("descricao"),
+                        1,
+                        json.dumps({"cpf": req.cpf_benef, "nr_recibo": req.nr_recibo}),
+                        soap_envelope[:50000],
+                        json.dumps(resultado.get("ocorrencias", [])),
+                    ),
+                )
+                envio_id = cur.fetchone()[0]
+                conn.commit()
+            except Exception:
+                envio_id = None
+
+            return {
+                "sucesso": resultado.get("sucesso", False),
+                "protocolo": resultado.get("protocolo"),
+                "codigo_resposta": resultado.get("codigo_resposta"),
+                "descricao": resultado.get("descricao"),
+                "dh_recepcao": resultado.get("dh_recepcao"),
+                "per_apur": req.per_apur,
+                "cpf_benef": req.cpf_benef,
+                "ind_retif": req.ind_retif,
+                "envio_id": envio_id,
+                "ocorrencias": resultado.get("ocorrencias", []),
+                "erro": resultado.get("erro"),
+            }
+    finally:
+        conn.close()
+
+
+@router.post("/s1210/enviar-lote")
+async def enviar_s1210_lote(req: EnviarS1210LoteRequest):
+    """
+    Envia lote de S-1210 (múltiplos beneficiários) ao eSocial.
+    Máximo 50 eventos por lote.
+    """
+    if not req.eventos:
+        raise HTTPException(status_code=400, detail="eventos não pode ser vazio")
+    if len(req.eventos) > 50:
+        raise HTTPException(status_code=400, detail=f"Máximo 50 eventos por lote. Recebido: {len(req.eventos)}")
+
+    is_producao = req.ambiente == "1"
+    conn = _get_conn()
+    try:
+        with conn.cursor() as cur:
+            cert_info = _load_cert_ativo(cur)
+            if not cert_info:
+                raise HTTPException(status_code=400, detail="Nenhum certificado A1 ativo")
+
+            senha = CertificateManager.decrypt_password(cert_info["senha_encrypted"])
+            with open(cert_info["arquivo_path"], "rb") as f:
+                pfx_data = f.read()
+
+            cnpj = cert_info["cnpj"]
+            empregador = {"tpInsc": 1, "nrInsc": cnpj}
+            transmissor = {"tpInsc": 1, "nrInsc": cnpj}
+
+            # Gerar + assinar todos os XMLs
+            xmls_assinados = []
+            for i, ev in enumerate(req.eventos, start=1):
+                beneficiario = {"cpfBenef": ev.cpf_benef}
+                info_pgtos = [p.model_dump(exclude_none=True) for p in ev.info_pgtos]
+                info_ir_complem = ev.info_ir_complem.model_dump(exclude_none=True) if ev.info_ir_complem else None
+                xml_bytes = S1210XMLGenerator.gerar(
+                    empregador=empregador,
+                    beneficiario=beneficiario,
+                    info_pgtos=info_pgtos,
+                    per_apur=ev.per_apur,
+                    ind_retif=ev.ind_retif,
+                    nr_recibo=ev.nr_recibo,
+                    info_ir_complem=info_ir_complem,
+                    seq=i,
+                    tp_amb=req.ambiente,
+                )
+                xmls_assinados.append(S1010XMLSigner.assinar(xml_bytes, pfx_data, senha))
+
+            # Montar SOAP com todos os eventos
+            soap_envelope = SOAPEnvelopeBuilder.montar_envio(
+                xmls_assinados, empregador, transmissor, grupo="1"
+            )
+
+            # Enviar
+            url_envio = SOAPEnvelopeBuilder.url_envio(producao=is_producao)
+            resultado = ESocialClient.enviar_lote(soap_envelope, pfx_data, senha, url=url_envio)
+
+            # Salvar
+            cpfs = [ev.cpf_benef for ev in req.eventos]
+            try:
+                cur.execute(INIT_ENVIOS_SQL)
+                cur.execute(MIGRATE_ENVIOS_SQL)
+                cur.execute(
+                    """INSERT INTO esocial_envios
+                       (tipo_evento, modo, ambiente, ini_valid, status, protocolo_envio,
+                        codigo_resposta, descricao_resposta, total_eventos,
+                        rubrica_ids, xml_enviado, ocorrencias)
+                       VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                       RETURNING id""",
+                    (
+                        "S-1210",
+                        "lote",
+                        req.ambiente,
+                        req.eventos[0].per_apur if req.eventos else "",
+                        "enviado" if resultado.get("sucesso") else "erro",
+                        resultado.get("protocolo"),
+                        resultado.get("codigo_resposta"),
+                        resultado.get("descricao"),
+                        len(req.eventos),
+                        json.dumps({"cpfs": cpfs}),
+                        soap_envelope[:50000],
+                        json.dumps(resultado.get("ocorrencias", [])),
+                    ),
+                )
+                envio_id = cur.fetchone()[0]
+                conn.commit()
+            except Exception:
+                envio_id = None
+
+            return {
+                "sucesso": resultado.get("sucesso", False),
+                "protocolo": resultado.get("protocolo"),
+                "codigo_resposta": resultado.get("codigo_resposta"),
+                "descricao": resultado.get("descricao"),
+                "dh_recepcao": resultado.get("dh_recepcao"),
+                "total_eventos": len(req.eventos),
+                "envio_id": envio_id,
+                "ocorrencias": resultado.get("ocorrencias", []),
+                "erro": resultado.get("erro"),
+            }
+    finally:
+        conn.close()
+
+
+# ── Consulta Genérica de Protocolo ────────────────────────────────
+
+
+@router.get("/consultar/{protocolo}")
+async def consultar_protocolo(protocolo: str, ambiente: str = "2"):
+    """
+    Consulta resultado do processamento de QUALQUER lote pelo protocolo.
+    Funciona para S-1010, S-1200, S-1210, S-1298, S-1299.
+    Atualiza esocial_envios automaticamente.
+    """
+    is_producao = ambiente == "1"
+    conn = _get_conn()
+    try:
+        with conn.cursor() as cur:
+            cert_info = _load_cert_ativo(cur)
+            if not cert_info:
+                raise HTTPException(status_code=400, detail="Nenhum certificado A1 ativo")
+
+            senha = CertificateManager.decrypt_password(cert_info["senha_encrypted"])
+            with open(cert_info["arquivo_path"], "rb") as f:
+                pfx_data = f.read()
+
+            url_consulta = SOAPEnvelopeBuilder.url_consulta(producao=is_producao)
+            resultado = ESocialClient.consultar_lote(protocolo, pfx_data, senha, url=url_consulta)
+
+            # Atualizar envio no banco
+            xml_resposta = resultado.pop("xml_resposta", None)
+            eventos = resultado.get("eventos", [])
+            todos_sucesso = resultado.get("sucesso", False) and all(
+                str(ev.get("codigo_resposta", "")) in ("201", "202") for ev in eventos
+            )
+            status_final = "processado" if todos_sucesso else "erro"
+
+            nr_recibo = None
+            for ev in eventos:
+                if ev.get("nr_recibo"):
+                    nr_recibo = ev["nr_recibo"]
+                    break
+
+            try:
+                cur.execute(
+                    """UPDATE esocial_envios
+                       SET status = %s, recibo_consulta = %s, xml_retorno = %s,
+                           nr_recibo = %s, updated_at = NOW()
+                       WHERE protocolo_envio = %s""",
+                    (status_final, json.dumps(resultado), xml_resposta,
+                     nr_recibo, protocolo),
+                )
+                conn.commit()
+            except Exception:
+                pass
+
+            return resultado
+    finally:
+        conn.close()
+
+
+# ── Totalizadores — Consulta no DB ────────────────────────────────
+
+
+@router.get("/totalizadores/{cpf}/{per_apur}")
+async def consultar_totalizadores(cpf: str, per_apur: str):
+    """
+    Consulta totalizadores (S-5001, S-5002, S-5012) de um CPF/período
+    já importados no explorador_eventos.
+    Retorna dados para conferência antes/depois da correção.
+    """
+    if not re.match(r"^\d{4}-\d{2}$", per_apur):
+        raise HTTPException(status_code=400, detail="per_apur deve ter formato AAAA-MM")
+    if not cpf or not cpf.isdigit():
+        raise HTTPException(status_code=400, detail="CPF deve conter apenas dígitos")
+
+    conn = _get_conn()
+    try:
+        with conn.cursor() as cur:
+            # S-5001 — INSS/FGTS
+            cur.execute(
+                """SELECT nr_recibo, dados_json, dt_processamento, id_evento
+                   FROM explorador_eventos
+                   WHERE tipo_evento = 'S-5001' AND cpf = %s AND per_apur = %s
+                   ORDER BY dt_processamento DESC LIMIT 1""",
+                (cpf, per_apur),
+            )
+            row_5001 = cur.fetchone()
+            s5001 = None
+            if row_5001:
+                s5001 = {
+                    "nr_recibo": row_5001[0],
+                    "dados": _safe_json(row_5001[1], {}),
+                    "dt_processamento": str(row_5001[2]) if row_5001[2] else None,
+                    "id_evento": row_5001[3],
+                }
+
+            # S-5002 — IRRF por CPF
+            cur.execute(
+                """SELECT nr_recibo, dados_json, dt_processamento, id_evento
+                   FROM explorador_eventos
+                   WHERE tipo_evento = 'S-5002' AND cpf = %s AND per_apur = %s
+                   ORDER BY dt_processamento DESC LIMIT 1""",
+                (cpf, per_apur),
+            )
+            row_5002 = cur.fetchone()
+            s5002 = None
+            if row_5002:
+                s5002 = {
+                    "nr_recibo": row_5002[0],
+                    "dados": _safe_json(row_5002[1], {}),
+                    "dt_processamento": str(row_5002[2]) if row_5002[2] else None,
+                    "id_evento": row_5002[3],
+                }
+
+            # S-5012 — IRRF total (não tem CPF, é consolidado por empregador)
+            cur.execute(
+                """SELECT nr_recibo, dados_json, dt_processamento, id_evento
+                   FROM explorador_eventos
+                   WHERE tipo_evento = 'S-5012' AND per_apur = %s
+                   ORDER BY dt_processamento DESC LIMIT 1""",
+                (per_apur,),
+            )
+            row_5012 = cur.fetchone()
+            s5012 = None
+            if row_5012:
+                s5012 = {
+                    "nr_recibo": row_5012[0],
+                    "dados": _safe_json(row_5012[1], {}),
+                    "dt_processamento": str(row_5012[2]) if row_5012[2] else None,
+                    "id_evento": row_5012[3],
+                }
+
+            return {
+                "cpf": cpf,
+                "per_apur": per_apur,
+                "s5001_inss_fgts": s5001,
+                "s5002_irrf_cpf": s5002,
+                "s5012_irrf_total": s5012,
+                "resumo": {
+                    "vlrRendTrib": s5002["dados"].get("totApurMen_vlrRendTrib") if s5002 else None,
+                    "vlrPrevOficial": s5002["dados"].get("totApurMen_vlrPrevOficial") if s5002 else None,
+                    "vlrCRMen": s5002["dados"].get("totApurMen_vlrCRMen") if s5002 else None,
+                    "infoCpCalc": s5001["dados"].get("infoCpCalc") if s5001 else None,
+                },
+            }
+    finally:
+        conn.close()
+
+
+@router.get("/totalizadores/comparar/{cpf}/{per_apur}")
+async def comparar_totalizadores(cpf: str, per_apur: str):
+    """
+    Compara totalizadores ANTES (importação original) vs DEPOIS (mais recente)
+    de um CPF/período. Útil para validar se a correção surtiu efeito.
+    Retorna todos os S-5002 do CPF/período ordenados por processamento.
+    """
+    if not re.match(r"^\d{4}-\d{2}$", per_apur):
+        raise HTTPException(status_code=400, detail="per_apur deve ter formato AAAA-MM")
+
+    conn = _get_conn()
+    try:
+        with conn.cursor() as cur:
+            # Todos os S-5002 desse CPF/período
+            cur.execute(
+                """SELECT nr_recibo, dados_json, dt_processamento, id_evento
+                   FROM explorador_eventos
+                   WHERE tipo_evento = 'S-5002' AND cpf = %s AND per_apur = %s
+                   ORDER BY dt_processamento ASC""",
+                (cpf, per_apur),
+            )
+            rows = cur.fetchall()
+
+            historico = []
+            for r in rows:
+                dados = _safe_json(r[1], {})
+                historico.append({
+                    "nr_recibo": r[0],
+                    "dt_processamento": str(r[2]) if r[2] else None,
+                    "id_evento": r[3],
+                    "vlrRendTrib": dados.get("totApurMen_vlrRendTrib"),
+                    "vlrPrevOficial": dados.get("totApurMen_vlrPrevOficial"),
+                    "vlrCRMen": dados.get("totApurMen_vlrCRMen"),
+                    "infoIR": dados.get("infoIR", []),
+                })
+
+            return {
+                "cpf": cpf,
+                "per_apur": per_apur,
+                "total_registros": len(historico),
+                "historico_s5002": historico,
+                "antes": historico[0] if historico else None,
+                "depois": historico[-1] if len(historico) > 1 else None,
+            }
     finally:
         conn.close()

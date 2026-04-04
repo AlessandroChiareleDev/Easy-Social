@@ -127,16 +127,19 @@ class TestEnviarS1010:
     @patch("esocial.esocial_routes.S1010XMLSigner.assinar")
     @patch("esocial.esocial_routes.S1010XMLGenerator.gerar_inclusao")
     @patch("esocial.esocial_routes.CertificateManager.decrypt_password")
+    @patch("esocial.esocial_routes._load_cert_ativo")
     @patch("esocial.esocial_routes._get_conn")
-    def test_envio_sucesso_uma_rubrica(self, mock_conn, mock_decrypt, mock_gerar, mock_sign, mock_soap, mock_enviar):
+    def test_envio_sucesso_uma_rubrica(self, mock_conn, mock_cert, mock_decrypt, mock_gerar, mock_sign, mock_soap, mock_enviar):
         """Pipeline completo: gerar → assinar → SOAP → enviar → salvar"""
-        # Mock DB: cert ativo + rubrica
+        # Mock cert ativo
+        mock_cert.return_value = {
+            "id": 1, "cnpj": "12345678000190", "titular": "EMPRESA TESTE",
+            "arquivo_path": "/fake/cert.pfx", "senha_encrypted": "enc_pwd",
+        }
+        # Mock DB cursor
         mock_cursor = MagicMock()
         mock_cursor.fetchone.side_effect = [
-            # cert ativo
-            (1, "12345678000190", "EMPRESA TESTE", "/fake/cert.pfx", "enc_pwd", True),
-            # insert envio returning id
-            (1,),
+            (1,),  # insert envio returning id
         ]
         # 10 columns from cruzamento_eb: cod_rubrica, descricao, cod_natureza,
         #   incid_inss, incid_irrf, incid_fgts, incid_base_legal_inss, incid_base_legal_irrf, incid_base_legal_fgts, analise
@@ -232,13 +235,15 @@ class TestConsultarResultado:
 
     @patch("esocial.esocial_routes.ESocialClient.consultar_lote")
     @patch("esocial.esocial_routes.CertificateManager.decrypt_password")
+    @patch("esocial.esocial_routes._load_cert_ativo")
     @patch("esocial.esocial_routes._get_conn")
-    def test_consulta_sucesso(self, mock_conn, mock_decrypt, mock_consultar):
+    def test_consulta_sucesso(self, mock_conn, mock_cert, mock_decrypt, mock_consultar):
         """Deve retornar resultado da consulta e atualizar DB"""
+        mock_cert.return_value = {
+            "id": 1, "cnpj": "12345678000190", "titular": "EMPRESA TESTE",
+            "arquivo_path": "/fake/cert.pfx", "senha_encrypted": "enc_pwd",
+        }
         mock_cursor = MagicMock()
-        mock_cursor.fetchone.return_value = (
-            1, "12345678000190", "EMPRESA TESTE", "/fake/cert.pfx", "enc_pwd", True,
-        )
         mock_conn.return_value.__enter__ = lambda s: s
         mock_conn.return_value.__exit__ = MagicMock(return_value=False)
         mock_conn.return_value.cursor.return_value.__enter__ = lambda s: mock_cursor
@@ -300,14 +305,14 @@ class TestHistoricoEnvios:
     def test_historico_retorna_envios(self, mock_conn):
         """Deve retornar lista de envios do banco"""
         mock_cursor = MagicMock()
-        # 15 columns: id, tipo_evento, modo, status, protocolo_envio,
+        # 16 columns: id, tipo_evento, modo, status, protocolo_envio,
         #   codigo_resposta, descricao_resposta, total_eventos, created_at,
-        #   ambiente, ini_valid, rubrica_detalhes, rubrica_ids, recibo_consulta, updated_at
+        #   ambiente, ini_valid, rubrica_detalhes, rubrica_ids, recibo_consulta, updated_at, nr_recibo
         rubrica_det = json.dumps([{"cod_rubrica": "1", "descricao": "HORAS NORMAIS", "nat_rubr": "1000", "inss_correto": "11", "irrf_correto": "11", "fgts_correto": "11"}])
         mock_cursor.fetchall.return_value = [
             (1, "S-1010", "inclusao", "enviado", "1.2.2026030001",
              "201", "Sucesso", 3, "2026-03-28T10:00:00",
-             "2", "2026-03", rubrica_det, '["1"]', None, "2026-03-28T10:00:00"),
+             "2", "2026-03", rubrica_det, '["1"]', None, "2026-03-28T10:00:00", "1.2.0000000001"),
         ]
         mock_conn.return_value.__enter__ = lambda s: s
         mock_conn.return_value.__exit__ = MagicMock(return_value=False)

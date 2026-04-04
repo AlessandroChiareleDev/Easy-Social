@@ -308,6 +308,11 @@ const painelGroups = [
         label: 'eSocial S-1010',
         description: 'Envio de eventos S-1010 via web service',
       },
+      {
+        to: '/explorador',
+        label: 'Explorador de Eventos',
+        description: 'Buscar e analisar eventos eSocial (CPF, rubrica, período)',
+      },
     ],
   },
 ]

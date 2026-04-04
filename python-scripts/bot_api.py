@@ -59,6 +59,26 @@ app.include_router(depara_router)
 from esocial.cruzamento_eb_routes import router as cruzamento_eb_router
 app.include_router(cruzamento_eb_router)
 
+# Rotas Explorador de Eventos
+from esocial.explorador_routes import router as explorador_router
+app.include_router(explorador_router)
+
+# Rotas Pipeline de Correção (Orquestrador)
+from esocial.pipeline_correcao import router as pipeline_router
+app.include_router(pipeline_router)
+
+# Rotas Pipeline de Recuperação (multi-período)
+from esocial.pipeline_recovery import router as recovery_router
+app.include_router(recovery_router)
+
+# Rotas Parser de Payload XML (extração completa S-1200/S-1210)
+from esocial.parser_routes import router as parser_router
+app.include_router(parser_router)
+
+# Rotas Pipeline Audit (snapshots pré/pós para comprovação)
+from esocial.pipeline_audit_routes import router as audit_router
+app.include_router(audit_router)
+
 # Thread do bot
 bot_thread: threading.Thread | None = None
 

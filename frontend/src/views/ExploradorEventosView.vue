@@ -133,7 +133,13 @@
               @focus="cpfFocused = true"
               @blur="onCpfBlur"
             />
-            <button v-if="filters.cpf" @click="clearCpf" class="cpf-clear-btn" title="Limpar CPF" aria-label="Limpar CPF">
+            <button
+              v-if="filters.cpf"
+              @click="clearCpf"
+              class="cpf-clear-btn"
+              title="Limpar CPF"
+              aria-label="Limpar CPF"
+            >
               <svg
                 class="w-3.5 h-3.5"
                 viewBox="0 0 24 24"
@@ -401,7 +407,12 @@
 
       <!-- Pagination -->
       <div v-if="result.pages > 1" class="pagination">
-        <button :disabled="result.page <= 1" @click="buscar(result.page - 1)" class="page-btn" aria-label="Página anterior">
+        <button
+          :disabled="result.page <= 1"
+          @click="buscar(result.page - 1)"
+          class="page-btn"
+          aria-label="Página anterior"
+        >
           <svg
             class="w-4 h-4"
             viewBox="0 0 24 24"

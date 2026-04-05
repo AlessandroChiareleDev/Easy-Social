@@ -228,7 +228,13 @@
                 class="text-xs bg-[#0066FF]/20 text-[#0066FF] px-2 py-0.5 rounded-full"
               >
                 {{ filtroUsuarioNome }}
-                <button @click="limparFiltroUsuario" class="ml-1 hover:text-white" aria-label="Limpar filtro">✕</button>
+                <button
+                  @click="limparFiltroUsuario"
+                  class="ml-1 hover:text-white"
+                  aria-label="Limpar filtro"
+                >
+                  ✕
+                </button>
               </span>
             </h2>
             <div class="text-white/60 text-xs">{{ totalAtividades }} registros</div>

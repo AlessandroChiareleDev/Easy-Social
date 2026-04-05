@@ -1,5 +1,12 @@
 <template>
   <div class="confirmar-view">
+    <!-- Glass shapes -->
+    <div class="glass-shapes">
+      <div class="glass-shape shape-1"></div>
+      <div class="glass-shape shape-2"></div>
+      <div class="glass-shape shape-3"></div>
+    </div>
+
     <!-- Header -->
     <div class="header">
       <h1>Confirmar Alterações</h1>
@@ -108,13 +115,30 @@
             <td class="col-acoes">
               <template v-if="c.status === 'pendente'">
                 <template v-if="editandoId === c.id">
-                  <button class="btn-icon salvar" @click="salvarEdicao(c)" title="Salvar" aria-label="Salvar">✓</button>
-                  <button class="btn-icon cancelar" @click="cancelarEdicao" title="Cancelar" aria-label="Cancelar">
+                  <button
+                    class="btn-icon salvar"
+                    @click="salvarEdicao(c)"
+                    title="Salvar"
+                    aria-label="Salvar"
+                  >
+                    ✓
+                  </button>
+                  <button
+                    class="btn-icon cancelar"
+                    @click="cancelarEdicao"
+                    title="Cancelar"
+                    aria-label="Cancelar"
+                  >
                     ✕
                   </button>
                 </template>
                 <template v-else>
-                  <button class="btn-icon editar" @click="iniciarEdicao(c)" title="Editar" aria-label="Editar">
+                  <button
+                    class="btn-icon editar"
+                    @click="iniciarEdicao(c)"
+                    title="Editar"
+                    aria-label="Editar"
+                  >
                     <svg
                       width="15"
                       height="15"
@@ -129,7 +153,12 @@
                       <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
                     </svg>
                   </button>
-                  <button class="btn-icon remover" @click="removerCorrecao(c)" title="Remover" aria-label="Remover">
+                  <button
+                    class="btn-icon remover"
+                    @click="removerCorrecao(c)"
+                    title="Remover"
+                    aria-label="Remover"
+                  >
                     <svg
                       width="15"
                       height="15"
@@ -333,6 +362,8 @@ onMounted(carregarCorrecoes)
 
 <style scoped>
 .confirmar-view {
+  position: relative;
+  overflow: hidden;
   padding: 24px;
   max-width: 1400px;
   margin: 0 auto;
@@ -438,7 +469,8 @@ onMounted(carregarCorrecoes)
   padding: 6px 12px;
   border: 1px solid rgba(0, 102, 255, 0.15);
   border-radius: 6px;
-  background: #0d1530;
+  background: rgba(13, 21, 48, 0.7);
+  backdrop-filter: blur(12px);
   color: #e2e8f0;
   font-size: 13px;
   width: 250px;
@@ -455,7 +487,10 @@ onMounted(carregarCorrecoes)
 .table-wrapper {
   overflow-x: auto;
   border-radius: 8px;
-  border: 1px solid rgba(0, 102, 255, 0.1);
+  border: 1px solid rgba(0, 102, 255, 0.12);
+  background: rgba(13, 21, 48, 0.5);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 0 20px rgba(0, 102, 255, 0.04), 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
 table {
@@ -465,7 +500,7 @@ table {
 }
 
 th {
-  background: #111b3a;
+  background: rgba(17, 27, 58, 0.8);
   color: #94a3b8;
   font-weight: 600;
   text-transform: uppercase;
@@ -645,4 +680,20 @@ tr.row-editando {
   opacity: 0;
   transform: translateY(20px);
 }
+
+/* ── Glass Shapes ── */
+.glass-shapes { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.glass-shape {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 102, 255, 0.15);
+  background: rgba(0, 102, 255, 0.04);
+  box-shadow: 0 0 15px rgba(0, 102, 255, 0.2), 0 0 40px rgba(0, 102, 255, 0.1);
+}
+.shape-1 { width: 280px; height: 280px; top: -60px; right: -60px; filter: blur(2px); animation: drift1 26s ease-in-out infinite; }
+.shape-2 { width: 200px; height: 200px; bottom: 10%; left: -40px; border-radius: 36px; filter: blur(1.5px); animation: drift2 30s ease-in-out infinite; }
+.shape-3 { width: 150px; height: 150px; top: 40%; left: 55%; filter: blur(3px); animation: drift3 22s ease-in-out infinite; animation-delay: -8s; }
+@keyframes drift1 { 0%,100% { transform: translate(-10%,-15%) rotate(0deg); } 50% { transform: translate(30%,50%) rotate(25deg); } }
+@keyframes drift2 { 0%,100% { transform: translate(10%,-20%) rotate(45deg); } 50% { transform: translate(-40%,60%) rotate(90deg); } }
+@keyframes drift3 { 0%,100% { transform: translate(0,-20%) rotate(0deg); } 50% { transform: translate(-25%,70%) rotate(-20deg); } }
 </style>

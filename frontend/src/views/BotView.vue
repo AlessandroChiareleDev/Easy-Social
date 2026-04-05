@@ -1,5 +1,12 @@
 <template>
   <div class="bot-view">
+    <!-- Glass shapes -->
+    <div class="glass-shapes">
+      <div class="glass-shape shape-1"></div>
+      <div class="glass-shape shape-2"></div>
+      <div class="glass-shape shape-3"></div>
+    </div>
+
     <h1>Robô eSocial</h1>
 
     <div class="bot-controls">
@@ -231,6 +238,8 @@ onUnmounted(() => {
 
 <style scoped>
 .bot-view {
+  position: relative;
+  overflow: hidden;
   padding: 20px;
   max-width: 1000px;
   margin: 0 auto;
@@ -303,7 +312,8 @@ h3 {
   color: white;
 }
 .btn-screenshot {
-  background: #111b3a;
+  background: rgba(17, 27, 58, 0.7);
+  backdrop-filter: blur(12px);
   color: #cbd5e1;
   border: 1px solid rgba(0, 102, 255, 0.15);
 }
@@ -314,6 +324,7 @@ h3 {
   margin-bottom: 24px;
   border-left: 4px solid #f59e0b;
   background: rgba(245, 158, 11, 0.08);
+  backdrop-filter: blur(12px);
 }
 
 .calibration-section.calibrated {
@@ -355,7 +366,8 @@ h3 {
 .progress-bar {
   width: 100%;
   height: 28px;
-  background: #111b3a;
+  background: rgba(17, 27, 58, 0.7);
+  backdrop-filter: blur(12px);
   border-radius: 14px;
   overflow: hidden;
   margin-top: 8px;
@@ -388,11 +400,13 @@ h3 {
 }
 
 .rubrica-card {
-  background: #0d1530;
+  background: rgba(13, 21, 48, 0.7);
+  backdrop-filter: blur(16px);
   border-left: 4px solid #0066ff;
   padding: 16px;
   border-radius: 6px;
-  border: 1px solid rgba(0, 102, 255, 0.12);
+  border: 1px solid rgba(0, 102, 255, 0.15);
+  box-shadow: 0 0 20px rgba(0, 102, 255, 0.04), 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
 .rubrica-card p {
@@ -416,7 +430,8 @@ h3 {
 }
 
 .log-container {
-  background: #0a1024;
+  background: rgba(10, 16, 36, 0.8);
+  backdrop-filter: blur(16px);
   color: #d4d4d4;
   border-radius: 6px;
   padding: 12px;
@@ -424,7 +439,8 @@ h3 {
   overflow-y: auto;
   font-family: 'Consolas', 'Courier New', monospace;
   font-size: 13px;
-  border: 1px solid rgba(0, 102, 255, 0.12);
+  border: 1px solid rgba(0, 102, 255, 0.15);
+  box-shadow: 0 0 20px rgba(0, 102, 255, 0.04), 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
 .log-entry {
@@ -461,4 +477,20 @@ h3 {
   border-radius: 4px;
   margin-top: 10px;
 }
+
+/* ── Glass Shapes ── */
+.glass-shapes { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.glass-shape {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 102, 255, 0.15);
+  background: rgba(0, 102, 255, 0.04);
+  box-shadow: 0 0 15px rgba(0, 102, 255, 0.2), 0 0 40px rgba(0, 102, 255, 0.1);
+}
+.shape-1 { width: 280px; height: 280px; top: -60px; right: -60px; filter: blur(2px); animation: drift1 26s ease-in-out infinite; }
+.shape-2 { width: 200px; height: 200px; bottom: 10%; left: -40px; border-radius: 36px; filter: blur(1.5px); animation: drift2 30s ease-in-out infinite; }
+.shape-3 { width: 150px; height: 150px; top: 40%; left: 55%; filter: blur(3px); animation: drift3 22s ease-in-out infinite; animation-delay: -8s; }
+@keyframes drift1 { 0%,100% { transform: translate(-10%,-15%) rotate(0deg); } 50% { transform: translate(30%,50%) rotate(25deg); } }
+@keyframes drift2 { 0%,100% { transform: translate(10%,-20%) rotate(45deg); } 50% { transform: translate(-40%,60%) rotate(90deg); } }
+@keyframes drift3 { 0%,100% { transform: translate(0,-20%) rotate(0deg); } 50% { transform: translate(-25%,70%) rotate(-20deg); } }
 </style>

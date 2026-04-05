@@ -1,5 +1,12 @@
 <template>
   <div class="ebc-root">
+    <!-- Glass shapes -->
+    <div class="glass-shapes">
+      <div class="glass-shape shape-1"></div>
+      <div class="glass-shape shape-2"></div>
+      <div class="glass-shape shape-3"></div>
+    </div>
+
     <!-- Header -->
     <div class="ebc-header">
       <div>
@@ -216,15 +223,39 @@
 
     <!-- Paginação -->
     <div class="ebc-pagination" v-if="totalPages > 1">
-      <button class="ebc-page-btn" :disabled="page === 1" @click="goPage(1)" aria-label="Primeira página">«</button>
-      <button class="ebc-page-btn" :disabled="page === 1" @click="goPage(page - 1)" aria-label="Página anterior">‹</button>
+      <button
+        class="ebc-page-btn"
+        :disabled="page === 1"
+        @click="goPage(1)"
+        aria-label="Primeira página"
+      >
+        «
+      </button>
+      <button
+        class="ebc-page-btn"
+        :disabled="page === 1"
+        @click="goPage(page - 1)"
+        aria-label="Página anterior"
+      >
+        ‹
+      </button>
       <span class="ebc-page-info"
         >Página {{ page }} de {{ totalPages }} ({{ total }} rubricas)</span
       >
-      <button class="ebc-page-btn" :disabled="page === totalPages" @click="goPage(page + 1)" aria-label="Próxima página">
+      <button
+        class="ebc-page-btn"
+        :disabled="page === totalPages"
+        @click="goPage(page + 1)"
+        aria-label="Próxima página"
+      >
         ›
       </button>
-      <button class="ebc-page-btn" :disabled="page === totalPages" @click="goPage(totalPages)" aria-label="Última página">
+      <button
+        class="ebc-page-btn"
+        :disabled="page === totalPages"
+        @click="goPage(totalPages)"
+        aria-label="Última página"
+      >
         »
       </button>
     </div>
@@ -367,9 +398,10 @@ onMounted(() => {
 <style scoped>
 /* ═══════ Root ═══════ */
 .ebc-root {
+  position: relative;
+  overflow-x: auto;
   padding: 28px 32px;
   max-width: 100%;
-  overflow-x: auto;
   color: #e2e8f0;
   animation: fadeIn 300ms ease;
 }
@@ -419,6 +451,7 @@ onMounted(() => {
   border-radius: 12px;
   min-width: 180px;
   flex: 1;
+  backdrop-filter: blur(12px);
   transition:
     transform 0.2s,
     box-shadow 0.2s;
@@ -515,7 +548,8 @@ onMounted(() => {
   border-radius: 8px;
   font-size: 0.88rem;
   outline: none;
-  background: #111b3a;
+  background: rgba(17, 27, 58, 0.7);
+  backdrop-filter: blur(12px);
   color: #e2e8f0;
   transition: all 0.2s;
 }
@@ -585,9 +619,11 @@ onMounted(() => {
 /* ═══════ Table ═══════ */
 .ebc-table-wrap {
   overflow-x: auto;
-  background: rgba(13, 21, 48, 0.6);
+  background: rgba(13, 21, 48, 0.5);
+  backdrop-filter: blur(16px);
   border: 1px solid rgba(0, 102, 255, 0.12);
   border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 102, 255, 0.04), 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
 .ebc-table {
@@ -607,7 +643,7 @@ onMounted(() => {
   text-align: left;
   font-weight: 600;
   color: #8892b0;
-  background: #111b3a;
+  background: rgba(17, 27, 58, 0.8);
   border-bottom: 1px solid rgba(0, 102, 255, 0.15);
   white-space: nowrap;
   font-size: 0.78rem;
@@ -647,7 +683,7 @@ onMounted(() => {
   position: sticky;
   left: 0;
   z-index: 3;
-  background: #111b3a;
+  background: rgba(17, 27, 58, 0.8);
 }
 
 .ebc-table td {
@@ -819,7 +855,7 @@ onMounted(() => {
   position: sticky;
   left: 0;
   z-index: 2;
-  background: #0d1530;
+  background: rgba(13, 21, 48, 0.95);
 }
 
 .ebc-row-warn .ebc-td-action {
@@ -916,4 +952,20 @@ onMounted(() => {
   opacity: 0;
   transform: translateY(20px);
 }
+
+/* ── Glass Shapes ── */
+.glass-shapes { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.glass-shape {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 102, 255, 0.15);
+  background: rgba(0, 102, 255, 0.04);
+  box-shadow: 0 0 15px rgba(0, 102, 255, 0.2), 0 0 40px rgba(0, 102, 255, 0.1);
+}
+.shape-1 { width: 280px; height: 280px; top: -60px; right: -60px; filter: blur(2px); animation: drift1 26s ease-in-out infinite; }
+.shape-2 { width: 200px; height: 200px; bottom: 10%; left: -40px; border-radius: 36px; filter: blur(1.5px); animation: drift2 30s ease-in-out infinite; }
+.shape-3 { width: 150px; height: 150px; top: 40%; left: 55%; filter: blur(3px); animation: drift3 22s ease-in-out infinite; animation-delay: -8s; }
+@keyframes drift1 { 0%,100% { transform: translate(-10%,-15%) rotate(0deg); } 50% { transform: translate(30%,50%) rotate(25deg); } }
+@keyframes drift2 { 0%,100% { transform: translate(10%,-20%) rotate(45deg); } 50% { transform: translate(-40%,60%) rotate(90deg); } }
+@keyframes drift3 { 0%,100% { transform: translate(0,-20%) rotate(0deg); } 50% { transform: translate(-25%,70%) rotate(-20deg); } }
 </style>

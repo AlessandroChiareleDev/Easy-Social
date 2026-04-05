@@ -1,6 +1,13 @@
 <template>
   33 ,
   <div class="v-root">
+    <!-- Glass shapes -->
+    <div class="glass-shapes">
+      <div class="glass-shape shape-1"></div>
+      <div class="glass-shape shape-2"></div>
+      <div class="glass-shape shape-3"></div>
+    </div>
+
     <!-- ═══════════ MODO LISTA ═══════════ -->
     <template v-if="modo === 'lista'">
       <!-- Header -->
@@ -597,6 +604,8 @@ onMounted(() => {
 <style scoped>
 /* ═══════════ BASE — Orbit Navy + Electric Blue ═══════════ */
 .v-root {
+  position: relative;
+  overflow: hidden;
   padding: 24px;
   max-width: 1400px;
   margin: 0 auto;
@@ -624,7 +633,8 @@ onMounted(() => {
 .v-btn-sm {
   padding: 6px 12px;
   font-size: 0.8rem;
-  background: #111b3a;
+  background: rgba(17, 27, 58, 0.7);
+  backdrop-filter: blur(12px);
   color: #cbd5e1;
   border-radius: 6px;
 }
@@ -640,7 +650,8 @@ onMounted(() => {
   background: rgba(0, 102, 255, 0.1);
 }
 .v-btn-back {
-  background: #111b3a;
+  background: rgba(17, 27, 58, 0.7);
+  backdrop-filter: blur(12px);
   color: #cbd5e1;
 }
 .v-btn-back:hover {
@@ -736,7 +747,7 @@ onMounted(() => {
 
 .v-progress {
   height: 8px;
-  background: #111b3a;
+  background: rgba(17, 27, 58, 0.7);
   border-radius: 99px;
   overflow: hidden;
   margin-bottom: 20px;
@@ -805,7 +816,7 @@ onMounted(() => {
   font-size: 0.8rem;
 }
 .v-relatorio th {
-  background: #111b3a;
+  background: rgba(17, 27, 58, 0.8);
   color: #cbd5e1;
   padding: 8px 12px;
   text-align: left;
@@ -829,7 +840,8 @@ onMounted(() => {
   display: flex;
   align-items: center;
   gap: 12px;
-  background: #0d1530;
+  background: rgba(13, 21, 48, 0.7);
+  backdrop-filter: blur(12px);
   border: 1px solid rgba(0, 102, 255, 0.12);
   border-radius: 10px;
   padding: 12px 16px;
@@ -838,7 +850,7 @@ onMounted(() => {
 }
 .v-item:hover {
   border-color: rgba(0, 102, 255, 0.4);
-  background: #111b3a;
+  background: rgba(17, 27, 58, 0.8);
   transform: translateX(4px);
 }
 .v-item.done {
@@ -848,7 +860,7 @@ onMounted(() => {
 .v-item-num {
   width: 28px;
   height: 28px;
-  background: #111b3a;
+  background: rgba(17, 27, 58, 0.8);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -947,10 +959,12 @@ onMounted(() => {
   gap: 16px;
 }
 .c-rubrica-card {
-  background: #0d1530;
-  border: 1px solid rgba(0, 102, 255, 0.12);
+  background: rgba(13, 21, 48, 0.7);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 102, 255, 0.15);
   border-radius: 12px;
   padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 102, 255, 0.04), 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 .c-rubrica-code {
   font-size: 1.3rem;
@@ -1034,7 +1048,8 @@ onMounted(() => {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #0d1530;
+  background: rgba(13, 21, 48, 0.7);
+  backdrop-filter: blur(12px);
   border: 1px solid rgba(0, 102, 255, 0.12);
   border-radius: 10px;
   padding: 10px 14px;
@@ -1111,7 +1126,8 @@ onMounted(() => {
 }
 
 .c-sug {
-  background: #0d1530;
+  background: rgba(13, 21, 48, 0.7);
+  backdrop-filter: blur(12px);
   border: 2px solid rgba(0, 102, 255, 0.12);
   border-radius: 10px;
   padding: 14px 16px;
@@ -1120,7 +1136,7 @@ onMounted(() => {
 }
 .c-sug:hover {
   border-color: rgba(0, 102, 255, 0.4);
-  background: #111b3a;
+  background: rgba(17, 27, 58, 0.8);
 }
 .c-sug.selected {
   border-color: #0066ff;
@@ -1213,10 +1229,27 @@ onMounted(() => {
   margin-top: 4px;
 }
 .c-sug-pop {
-  background: #0a1024;
+  background: rgba(10, 16, 36, 0.8);
+  backdrop-filter: blur(12px);
   border-color: rgba(255, 255, 255, 0.06);
 }
 .c-sug-pop:hover {
   border-color: rgba(0, 102, 255, 0.3);
 }
+
+/* ── Glass Shapes ── */
+.glass-shapes { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.glass-shape {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 102, 255, 0.15);
+  background: rgba(0, 102, 255, 0.04);
+  box-shadow: 0 0 15px rgba(0, 102, 255, 0.2), 0 0 40px rgba(0, 102, 255, 0.1);
+}
+.shape-1 { width: 280px; height: 280px; top: -60px; right: -60px; filter: blur(2px); animation: drift1 26s ease-in-out infinite; }
+.shape-2 { width: 200px; height: 200px; bottom: 10%; left: -40px; border-radius: 36px; filter: blur(1.5px); animation: drift2 30s ease-in-out infinite; }
+.shape-3 { width: 150px; height: 150px; top: 40%; left: 55%; filter: blur(3px); animation: drift3 22s ease-in-out infinite; animation-delay: -8s; }
+@keyframes drift1 { 0%,100% { transform: translate(-10%,-15%) rotate(0deg); } 50% { transform: translate(30%,50%) rotate(25deg); } }
+@keyframes drift2 { 0%,100% { transform: translate(10%,-20%) rotate(45deg); } 50% { transform: translate(-40%,60%) rotate(90deg); } }
+@keyframes drift3 { 0%,100% { transform: translate(0,-20%) rotate(0deg); } 50% { transform: translate(-25%,70%) rotate(-20deg); } }
 </style>

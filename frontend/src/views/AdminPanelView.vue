@@ -39,14 +39,6 @@
           <option value="todos">Todos (retroativo)</option>
         </select>
 
-        <label class="text-white/60 text-sm ml-4">Usuário:</label>
-        <select v-model="filtroUsuarioId" @change="onFiltroUsuarioChange" class="glass-input text-sm">
-          <option :value="null">Todos</option>
-          <option v-for="op in resumoOperadores" :key="op.usuario_id" :value="op.usuario_id">
-            {{ op.username }}
-          </option>
-        </select>
-
         <button @click="loadData" class="btn-primary text-sm">Atualizar</button>
         <div v-if="loading" class="text-[#0066FF] text-sm animate-pulse">Carregando...</div>
       </div>
@@ -72,15 +64,7 @@
       </div>
 
       <!-- Summary cards -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
-        <div class="glass-card p-5 text-center">
-          <div class="text-3xl font-bold text-white">{{ totalAcoes }}</div>
-          <div class="text-white/50 text-sm mt-1">Total de Ações</div>
-        </div>
-        <div class="glass-card p-5 text-center">
-          <div class="text-3xl font-bold text-[#0066FF]">{{ totalUsuarios }}</div>
-          <div class="text-white/50 text-sm mt-1">Operadores Ativos</div>
-        </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
         <div class="glass-card p-5 text-center">
           <div class="text-3xl font-bold text-green-400">{{ totalEnvios }}</div>
           <div class="text-white/50 text-sm mt-1">Envios eSocial</div>
@@ -535,11 +519,10 @@ const authStore = useAuthStore()
 
 const loading = ref(false)
 const periodoSelecionado = ref('todos')
-const activeTab = ref('atividades')
+const activeTab = ref('envios')
 
 // ── Tabs ─────────────────────────────────────────
 const tabs = computed(() => [
-  { id: 'atividades', label: 'Atividades', count: totalAcoes.value },
   { id: 'envios', label: 'Envios eSocial', count: totalEnvios.value },
   { id: 'pipeline', label: 'Pipeline Correção', count: totalPipelines.value },
 ])
@@ -615,14 +598,10 @@ async function loadData() {
     const params: any = {}
     if (desde) params.desde = desde
 
-    const [resumoRes, rotasRes, enviosResumoRes] = await Promise.all([
-      axios.get(`${API_URL}/admin/atividades/resumo`, { params }),
-      axios.get(`${API_URL}/admin/atividades/rotas-populares`, { params }),
+    const [enviosResumoRes] = await Promise.all([
       axios.get(`${API_URL}/admin/envios/resumo`).catch(() => ({ data: { resumo: { total: 0 } } })),
     ])
 
-    resumoOperadores.value = resumoRes.data.resumo || []
-    rotasPopulares.value = rotasRes.data.rotas || []
     enviosResumo.value = enviosResumoRes.data.resumo || { total: 0 }
 
     await loadTabData()

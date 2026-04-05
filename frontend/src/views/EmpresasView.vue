@@ -113,7 +113,7 @@
             empresa à sua conta.
           </p>
           <div
-            class="mt-8 flex items-center justify-center gap-2 text-white/30 text-xs font-medium"
+            class="mt-8 flex items-center justify-center gap-2 text-white/50 text-xs font-medium"
           >
             <svg
               class="w-4 h-4"
@@ -152,7 +152,7 @@
             </h3>
 
             <!-- CNPJ -->
-            <p v-if="empresa.cnpj" class="text-white/40 text-xs font-mono mt-1">
+            <p v-if="empresa.cnpj" class="text-white/60 text-xs font-mono mt-1">
               {{ formatCNPJ(empresa.cnpj) }}
             </p>
 

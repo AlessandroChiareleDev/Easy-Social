@@ -13,6 +13,16 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
+  build: {
+    target: 'es2020',
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['vue', 'vue-router', 'pinia', 'axios'],
+        },
+      },
+    },
+  },
   server: {
     host: '0.0.0.0',
     allowedHosts: true,

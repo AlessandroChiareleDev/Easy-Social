@@ -106,6 +106,7 @@
               <button
                 type="button"
                 @click="showPassword = !showPassword"
+                :aria-label="showPassword ? 'Ocultar senha' : 'Mostrar senha'"
                 class="absolute right-3 top-1/2 -translate-y-1/2 text-slate-500 hover:text-slate-300 transition-colors"
               >
                 <svg
@@ -164,7 +165,7 @@
         </form>
 
         <!-- Footer -->
-        <p class="text-center text-xs text-slate-600 mt-10">
+        <p class="text-center text-xs text-slate-500 mt-10">
           Easy e-Social v1.0 · By Alessandro Chiarele Filho
         </p>
       </div>

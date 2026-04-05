@@ -54,10 +54,7 @@
         <button
           v-for="tab in tabs"
           :key="tab.id"
-          @click="
-            activeTab = tab.id
-            loadTabData()
-          "
+          @click="activeTab = tab.id; loadTabData()"
           :class="[
             'px-5 py-2.5 rounded-t-lg text-sm font-medium transition-all',
             activeTab === tab.id

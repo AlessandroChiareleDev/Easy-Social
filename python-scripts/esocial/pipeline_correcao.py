@@ -29,6 +29,7 @@ from esocial.xml_s1210 import S1210XMLGenerator
 from esocial.xml_s1298 import S1298XMLGenerator
 from esocial.xml_s1299 import S1299XMLGenerator
 from esocial.xml_signer import S1010XMLSigner
+from esocial.envio_tracker import registrar_envio, registrar_do_result
 
 import sys
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
@@ -419,6 +420,20 @@ def _executar_pipeline(
             )
             steps.append(step)
 
+            # ── Tracking: registrar envio S-1010 ──
+            registrar_envio(
+                conn,
+                tipo_evento="S-1010", modo="alteracao", ambiente=req.ambiente,
+                ini_valid=rows[0][6] or req.per_apur if rows else req.per_apur,
+                status="processado" if nr_recibo_s1010 else "erro",
+                protocolo_envio=protocolo, nr_recibo=nr_recibo_s1010,
+                codigo_resposta=consulta.get("codigo_resposta") if consulta else None,
+                descricao_resposta=consulta.get("descricao") if consulta else None,
+                total_eventos=len(xmls),
+                rubrica_ids=req.rubrica_ids,
+                origem="pipeline_correcao", cpf=req.cpf, per_apur=req.per_apur,
+            )
+
             if nr_recibo_s1010:
                 steps_ok += 1
                 _update_pipeline(1, protocolo, nr_recibo_s1010, status="em_andamento")
@@ -461,6 +476,13 @@ def _executar_pipeline(
                 descricao=result["descricao"],
             )
             steps.append(step)
+
+            # ── Tracking: registrar envio S-1298 ──
+            registrar_do_result(
+                conn, tipo_evento="S-1298", modo="reabertura", ambiente=req.ambiente,
+                result=result, ini_valid=req.per_apur,
+                origem="pipeline_correcao", cpf=req.cpf, per_apur=req.per_apur,
+            )
 
             if result["sucesso"]:
                 steps_ok += 1
@@ -512,6 +534,13 @@ def _executar_pipeline(
         )
         steps.append(step)
 
+        # ── Tracking: registrar envio S-1200 ──
+        registrar_do_result(
+            conn, tipo_evento="S-1200", modo="retificacao", ambiente=req.ambiente,
+            result=result, ini_valid=req.per_apur,
+            origem="pipeline_correcao", cpf=req.cpf, per_apur=req.per_apur,
+        )
+
         if result["sucesso"]:
             steps_ok += 1
             _update_pipeline(3, result["protocolo"], result["nr_recibo"])
@@ -558,6 +587,13 @@ def _executar_pipeline(
         )
         steps.append(step)
 
+        # ── Tracking: registrar envio S-1210 ──
+        registrar_do_result(
+            conn, tipo_evento="S-1210", modo="retificacao", ambiente=req.ambiente,
+            result=result, ini_valid=req.per_apur,
+            origem="pipeline_correcao", cpf=req.cpf, per_apur=req.per_apur,
+        )
+
         if result["sucesso"]:
             steps_ok += 1
             _update_pipeline(4, result["protocolo"], result["nr_recibo"])
@@ -599,6 +635,13 @@ def _executar_pipeline(
             descricao=result["descricao"],
         )
         steps.append(step)
+
+        # ── Tracking: registrar envio S-1299 ──
+        registrar_do_result(
+            conn, tipo_evento="S-1299", modo="fechamento", ambiente=req.ambiente,
+            result=result, ini_valid=req.per_apur,
+            origem="pipeline_correcao", cpf=req.cpf, per_apur=req.per_apur,
+        )
 
         if result["sucesso"]:
             steps_ok += 1

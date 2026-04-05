@@ -48,6 +48,7 @@ from esocial.xml_s1210 import S1210XMLGenerator
 from esocial.xml_s1299 import S1299XMLGenerator
 from esocial.xml_s3000 import S3000XMLGenerator
 from esocial.xml_signer import S1010XMLSigner as XMLSigner
+from esocial.envio_tracker import registrar_do_result
 
 router = APIRouter(prefix="/api/pipeline", tags=["pipeline-recovery"])
 
@@ -260,6 +261,23 @@ async def executar_recuperacao(req: RecoveryRequest):
     steps: list[RecoveryStepResult] = []
     steps_ok = 0
 
+    # Conexão para tracking em esocial_envios
+    tracking_conn = None
+    try:
+        tracking_conn = psycopg2.connect(**DB_CONFIG)
+    except Exception as e:
+        logger.warning(f"[RECOVERY] Não conseguiu conectar ao DB para tracking: {e}")
+
+    def _track(tipo_evento, modo, per_apur, result):
+        if not tracking_conn:
+            return
+        registrar_do_result(
+            tracking_conn,
+            tipo_evento=tipo_evento, modo=modo, ambiente=req.ambiente,
+            result=result, ini_valid=per_apur,
+            origem="pipeline_recovery", cpf=req.cpf, per_apur=per_apur,
+        )
+
     def _make_step(step_num, evento, per_apur, result):
         return RecoveryStepResult(
             step=step_num, evento=evento, per_apur=per_apur,
@@ -297,6 +315,7 @@ async def executar_recuperacao(req: RecoveryRequest):
             logger.info(f"Step 1: Período {req.per_apur_bloqueador} já estava aberto, continuando...")
         step = _make_step(1, "S-1298", req.per_apur_bloqueador, result)
         steps.append(step)
+        _track("S-1298", "reabertura", req.per_apur_bloqueador, result)
         if result["sucesso"]:
             steps_ok += 1
         else:
@@ -326,6 +345,7 @@ async def executar_recuperacao(req: RecoveryRequest):
             logger.info(f"Step 2: Período {req.per_apur_alvo} já estava aberto, continuando...")
         step = _make_step(2, "S-1298", req.per_apur_alvo, result)
         steps.append(step)
+        _track("S-1298", "reabertura", req.per_apur_alvo, result)
         if result["sucesso"]:
             steps_ok += 1
         else:
@@ -351,6 +371,7 @@ async def executar_recuperacao(req: RecoveryRequest):
         result = _enviar_e_consultar(xml, pfx_data, senha, empregador, "2", is_producao)
         step = _make_step(3, "S-3000 excluir S-1210", req.per_apur_bloqueador, result)
         steps.append(step)
+        _track("S-3000", "exclusao", req.per_apur_bloqueador, result)
         if result["sucesso"]:
             steps_ok += 1
         else:
@@ -377,6 +398,7 @@ async def executar_recuperacao(req: RecoveryRequest):
         result = _enviar_e_consultar(xml, pfx_data, senha, empregador, "3", is_producao)
         step = _make_step(4, "S-1200 retif", req.per_apur_alvo, result)
         steps.append(step)
+        _track("S-1200", "retificacao", req.per_apur_alvo, result)
         if result["sucesso"]:
             steps_ok += 1
         else:
@@ -403,6 +425,7 @@ async def executar_recuperacao(req: RecoveryRequest):
         result = _enviar_e_consultar(xml, pfx_data, senha, empregador, "3", is_producao)
         step = _make_step(5, "S-1210 retif", req.per_apur_alvo, result)
         steps.append(step)
+        _track("S-1210", "retificacao", req.per_apur_alvo, result)
         if result["sucesso"]:
             steps_ok += 1
         else:
@@ -427,6 +450,7 @@ async def executar_recuperacao(req: RecoveryRequest):
         result = _enviar_e_consultar(xml, pfx_data, senha, empregador, "3", is_producao)
         step = _make_step(6, "S-1210 incluir", req.per_apur_bloqueador, result)
         steps.append(step)
+        _track("S-1210", "inclusao", req.per_apur_bloqueador, result)
         if result["sucesso"]:
             steps_ok += 1
         else:
@@ -443,6 +467,7 @@ async def executar_recuperacao(req: RecoveryRequest):
         result = _enviar_e_consultar(xml, pfx_data, senha, empregador, "3", is_producao)
         step = _make_step(7, "S-1299", req.per_apur_alvo, result)
         steps.append(step)
+        _track("S-1299", "fechamento", req.per_apur_alvo, result)
         if result["sucesso"]:
             steps_ok += 1
         else:
@@ -459,6 +484,7 @@ async def executar_recuperacao(req: RecoveryRequest):
         result = _enviar_e_consultar(xml, pfx_data, senha, empregador, "3", is_producao)
         step = _make_step(8, "S-1299", req.per_apur_bloqueador, result)
         steps.append(step)
+        _track("S-1299", "fechamento", req.per_apur_bloqueador, result)
         if result["sucesso"]:
             steps_ok += 1
         else:
@@ -470,6 +496,11 @@ async def executar_recuperacao(req: RecoveryRequest):
     # ══════════════════════════════════════════════════════════════
     # RESULTADO FINAL
     # ══════════════════════════════════════════════════════════════
+    if tracking_conn:
+        try:
+            tracking_conn.close()
+        except Exception:
+            pass
     return RecoveryResponse(
         cpf=req.cpf, status="completo",
         total_steps=len(steps), steps_ok=steps_ok, steps=steps,
@@ -726,6 +757,23 @@ async def executar_completo_stream(req: RecoveryRequest):
         # ── FASE 2: Recovery (8 steps) ──
         yield sse({"tipo": "fase", "fase": "recovery", "msg": "Iniciando pipeline recovery (8 steps)..."})
 
+        # Conexão para tracking em esocial_envios
+        stream_tracking_conn = None
+        try:
+            stream_tracking_conn = psycopg2.connect(**DB_CONFIG)
+        except Exception as e:
+            logger.warning(f"[STREAM] Não conseguiu conectar ao DB para tracking: {e}")
+
+        def _stream_track(tipo_evento, modo, per_apur, result):
+            if not stream_tracking_conn:
+                return
+            registrar_do_result(
+                stream_tracking_conn,
+                tipo_evento=tipo_evento, modo=modo, ambiente=req.ambiente,
+                result=result, ini_valid=per_apur,
+                origem="pipeline_recovery_stream", cpf=req.cpf, per_apur=per_apur,
+            )
+
         steps_ok = 0
         s1210_bloq_recibo = req.s1210_bloq_nr_recibo
         recovery_failed = False
@@ -799,7 +847,24 @@ async def executar_completo_stream(req: RecoveryRequest):
 
             if last_result and last_result.get("sucesso"):
                 steps_ok += 1
+                # Track successful step
+                tipo_map = {"reabertura": "S-1298", "excluir_bloq": "S-3000",
+                            "retif_alvo_1200": "S-1200", "retif_alvo_1210": "S-1210",
+                            "incluir_bloq": "S-1210", "fechamento": "S-1299"}
+                modo_map = {"reabertura": "reabertura", "excluir_bloq": "exclusao",
+                            "retif_alvo_1200": "retificacao", "retif_alvo_1210": "retificacao",
+                            "incluir_bloq": "inclusao", "fechamento": "fechamento"}
+                _stream_track(tipo_map.get(stipo, sevento), modo_map.get(stipo, stipo), sper, last_result)
             else:
+                # Track failed step too
+                if last_result:
+                    tipo_map = {"reabertura": "S-1298", "excluir_bloq": "S-3000",
+                                "retif_alvo_1200": "S-1200", "retif_alvo_1210": "S-1210",
+                                "incluir_bloq": "S-1210", "fechamento": "S-1299"}
+                    modo_map = {"reabertura": "reabertura", "excluir_bloq": "exclusao",
+                                "retif_alvo_1200": "retificacao", "retif_alvo_1210": "retificacao",
+                                "incluir_bloq": "inclusao", "fechamento": "fechamento"}
+                    _stream_track(tipo_map.get(stipo, sevento), modo_map.get(stipo, stipo), sper, last_result)
                 yield sse({"tipo": "recovery_erro", "step": snum,
                            "msg": f"Recovery parou no step {snum} ({sevento})", "steps_ok": steps_ok})
                 recovery_failed = True
@@ -838,6 +903,11 @@ async def executar_completo_stream(req: RecoveryRequest):
                 yield sse({"tipo": "fase_erro", "fase": "comparacao", "msg": f"Erro na comparação: {e}"})
 
         # ── FIM ──
+        if stream_tracking_conn:
+            try:
+                stream_tracking_conn.close()
+            except Exception:
+                pass
         yield sse({"tipo": "completo", "steps_ok": steps_ok, "recovery_ok": not recovery_failed,
                    "msg": f"Fluxo {'completo' if not recovery_failed else 'parcial'} — {steps_ok}/8 steps OK"})
 

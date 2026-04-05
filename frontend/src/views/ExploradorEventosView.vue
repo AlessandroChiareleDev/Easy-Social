@@ -133,7 +133,7 @@
               @focus="cpfFocused = true"
               @blur="onCpfBlur"
             />
-            <button v-if="filters.cpf" @click="clearCpf" class="cpf-clear-btn" title="Limpar CPF">
+            <button v-if="filters.cpf" @click="clearCpf" class="cpf-clear-btn" title="Limpar CPF" aria-label="Limpar CPF">
               <svg
                 class="w-3.5 h-3.5"
                 viewBox="0 0 24 24"
@@ -277,7 +277,7 @@
                 <span v-if="evt.rubricas?.length > 0" class="rubrica-count">{{
                   evt.rubricas.length
                 }}</span>
-                <span v-else class="text-slate-600">—</span>
+                <span v-else class="text-slate-400">—</span>
               </td>
               <td class="text-xs text-slate-500">{{ formatDateTime(evt.dt_processamento) }}</td>
               <td class="text-center">
@@ -387,7 +387,7 @@
       <!-- Empty state -->
       <div v-else class="empty-state">
         <svg
-          class="w-16 h-16 text-slate-600 mx-auto mb-4"
+          class="w-16 h-16 text-slate-400 mx-auto mb-4"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
@@ -401,7 +401,7 @@
 
       <!-- Pagination -->
       <div v-if="result.pages > 1" class="pagination">
-        <button :disabled="result.page <= 1" @click="buscar(result.page - 1)" class="page-btn">
+        <button :disabled="result.page <= 1" @click="buscar(result.page - 1)" class="page-btn" aria-label="Página anterior">
           <svg
             class="w-4 h-4"
             viewBox="0 0 24 24"
@@ -427,6 +427,7 @@
           :disabled="result.page >= result.pages"
           @click="buscar(result.page + 1)"
           class="page-btn"
+          aria-label="Próxima página"
         >
           <svg
             class="w-4 h-4"
@@ -451,6 +452,7 @@
               <button
                 @click="showImport = false"
                 class="text-slate-400 hover:text-white transition-colors"
+                aria-label="Fechar modal"
               >
                 <svg
                   class="w-5 h-5"
@@ -648,6 +650,7 @@
             @click.stop="deletarImport(imp.id)"
             class="delete-import-btn"
             title="Remover importação"
+            aria-label="Remover importação"
           >
             <svg
               class="w-3.5 h-3.5"

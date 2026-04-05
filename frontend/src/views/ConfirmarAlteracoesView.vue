@@ -108,13 +108,13 @@
             <td class="col-acoes">
               <template v-if="c.status === 'pendente'">
                 <template v-if="editandoId === c.id">
-                  <button class="btn-icon salvar" @click="salvarEdicao(c)" title="Salvar">✓</button>
-                  <button class="btn-icon cancelar" @click="cancelarEdicao" title="Cancelar">
+                  <button class="btn-icon salvar" @click="salvarEdicao(c)" title="Salvar" aria-label="Salvar">✓</button>
+                  <button class="btn-icon cancelar" @click="cancelarEdicao" title="Cancelar" aria-label="Cancelar">
                     ✕
                   </button>
                 </template>
                 <template v-else>
-                  <button class="btn-icon editar" @click="iniciarEdicao(c)" title="Editar">
+                  <button class="btn-icon editar" @click="iniciarEdicao(c)" title="Editar" aria-label="Editar">
                     <svg
                       width="15"
                       height="15"
@@ -129,7 +129,7 @@
                       <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
                     </svg>
                   </button>
-                  <button class="btn-icon remover" @click="removerCorrecao(c)" title="Remover">
+                  <button class="btn-icon remover" @click="removerCorrecao(c)" title="Remover" aria-label="Remover">
                     <svg
                       width="15"
                       height="15"

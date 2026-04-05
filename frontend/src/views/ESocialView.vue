@@ -1050,11 +1050,11 @@
           <span :class="ambiente === '1' ? 'text-red-400 font-semibold' : 'text-emerald-400'">
             {{ ambiente === '1' ? 'PRODUÇÃO (tpAmb=1)' : 'Homologação (tpAmb=2)' }}
           </span>
-          <span class="ml-2 text-slate-600">|</span>
+          <span class="ml-2 text-slate-400">|</span>
           <span class="ml-2 text-slate-400"
             >Modo: {{ modoEnvio === 'inclusao' ? 'Inclusão' : 'Alteração' }}</span
           >
-          <span class="ml-2 text-slate-600">|</span>
+          <span class="ml-2 text-slate-400">|</span>
           <span class="ml-2 text-slate-400">{{ selectedIds.length }} selecionada(s)</span>
         </div>
       </div>
@@ -1286,7 +1286,7 @@
                 class="px-2 py-0.5 rounded text-xs ml-auto"
                 >{{ env.status }}</span
               >
-              <span class="text-slate-600 text-xs">{{
+              <span class="text-slate-400 text-xs">{{
                 expandedEnvioId === env.id ? '▲' : '▼'
               }}</span>
             </div>
@@ -1472,7 +1472,7 @@
               @click="toggleRepoExpand(env.id)"
             >
               <div class="flex items-center gap-3">
-                <span class="text-slate-600 text-xs">{{
+                <span class="text-slate-400 text-xs">{{
                   expandedRepoId === env.id ? '▲' : '▼'
                 }}</span>
                 <span
@@ -1526,7 +1526,7 @@
                 >
                   #{{ rub.cod_rubrica }}
                 </span>
-                <span v-if="env.rubrica_detalhes.length > 10" class="text-[10px] text-slate-600">
+                <span v-if="env.rubrica_detalhes.length > 10" class="text-[10px] text-slate-400">
                   +{{ env.rubrica_detalhes.length - 10 }} mais
                 </span>
               </div>
@@ -1544,21 +1544,21 @@
                 style="border-bottom: 1px solid rgba(255, 255, 255, 0.05)"
               >
                 <div>
-                  <span class="text-[10px] text-slate-600 uppercase tracking-wide">Protocolo</span>
+                  <span class="text-[10px] text-slate-400 uppercase tracking-wide">Protocolo</span>
                   <p class="text-sm text-[#0066FF] font-mono mt-0.5 break-all">
                     {{ env.protocolo_envio || '—' }}
                   </p>
                 </div>
                 <div>
-                  <span class="text-[10px] text-slate-600 uppercase tracking-wide">Vigência</span>
+                  <span class="text-[10px] text-slate-400 uppercase tracking-wide">Vigência</span>
                   <p class="text-sm text-white font-mono mt-0.5">{{ env.ini_valid || '—' }}</p>
                 </div>
                 <div>
-                  <span class="text-[10px] text-slate-600 uppercase tracking-wide">Data Envio</span>
+                  <span class="text-[10px] text-slate-400 uppercase tracking-wide">Data Envio</span>
                   <p class="text-sm text-slate-300 mt-0.5">{{ formatDate(env.created_at) }}</p>
                 </div>
                 <div>
-                  <span class="text-[10px] text-slate-600 uppercase tracking-wide"
+                  <span class="text-[10px] text-slate-400 uppercase tracking-wide"
                     >Cód. Resposta</span
                   >
                   <p
@@ -1612,7 +1612,7 @@
                         :key="ri"
                         class="border-b border-white/5 hover:bg-white/[0.02]"
                       >
-                        <td class="py-1.5 px-2 text-slate-600">{{ ri + 1 }}</td>
+                        <td class="py-1.5 px-2 text-slate-400">{{ ri + 1 }}</td>
                         <td class="py-1.5 px-2 text-white font-mono font-medium">
                           {{ rub.cod_rubrica }}
                         </td>
@@ -1632,7 +1632,7 @@
                             class="text-red-400 font-mono"
                             >{{ rub.incid_inss }}</span
                           >
-                          <span v-else class="text-slate-600 font-mono">{{
+                          <span v-else class="text-slate-400 font-mono">{{
                             rub.incid_inss || '—'
                           }}</span>
                         </td>
@@ -1646,7 +1646,7 @@
                             class="text-red-400 font-mono"
                             >{{ rub.incid_irrf }}</span
                           >
-                          <span v-else class="text-slate-600 font-mono">{{
+                          <span v-else class="text-slate-400 font-mono">{{
                             rub.incid_irrf || '—'
                           }}</span>
                         </td>
@@ -1660,7 +1660,7 @@
                             class="text-red-400 font-mono"
                             >{{ rub.incid_fgts }}</span
                           >
-                          <span v-else class="text-slate-600 font-mono">{{
+                          <span v-else class="text-slate-400 font-mono">{{
                             rub.incid_fgts || '—'
                           }}</span>
                         </td>
@@ -1675,7 +1675,7 @@
                           >
                             {{ getReciboForIndex(env, ri) }}
                           </code>
-                          <span v-else class="text-slate-600">—</span>
+                          <span v-else class="text-slate-400">—</span>
                         </td>
                         <!-- Status do evento -->
                         <td class="py-1.5 px-2 text-center">
@@ -1683,7 +1683,7 @@
                             >✓</span
                           >
                           <span v-else-if="getEventoStatus(env, ri)" class="text-red-400">✕</span>
-                          <span v-else class="text-slate-600">—</span>
+                          <span v-else class="text-slate-400">—</span>
                         </td>
                       </tr>
                     </tbody>
@@ -1740,15 +1740,15 @@
                       </div>
                       <div class="grid grid-cols-1 gap-1.5 text-xs">
                         <div v-if="rub.base_legal_inss" class="flex items-start gap-2">
-                          <span class="text-slate-600 shrink-0 w-10">INSS:</span>
+                          <span class="text-slate-400 shrink-0 w-10">INSS:</span>
                           <span class="text-slate-300">{{ rub.base_legal_inss }}</span>
                         </div>
                         <div v-if="rub.base_legal_irrf" class="flex items-start gap-2">
-                          <span class="text-slate-600 shrink-0 w-10">IRRF:</span>
+                          <span class="text-slate-400 shrink-0 w-10">IRRF:</span>
                           <span class="text-slate-300">{{ rub.base_legal_irrf }}</span>
                         </div>
                         <div v-if="rub.base_legal_fgts" class="flex items-start gap-2">
-                          <span class="text-slate-600 shrink-0 w-10">FGTS:</span>
+                          <span class="text-slate-400 shrink-0 w-10">FGTS:</span>
                           <span class="text-slate-300">{{ rub.base_legal_fgts }}</span>
                         </div>
                       </div>
@@ -1768,7 +1768,7 @@
                 </h4>
                 <div class="grid grid-cols-3 gap-3 text-xs">
                   <div>
-                    <span class="text-slate-600">Status Lote</span>
+                    <span class="text-slate-400">Status Lote</span>
                     <p
                       :class="env.recibo_consulta.sucesso ? 'text-emerald-400' : 'text-red-400'"
                       class="font-medium mt-0.5"
@@ -1781,7 +1781,7 @@
                     </p>
                   </div>
                   <div>
-                    <span class="text-slate-600">Código</span>
+                    <span class="text-slate-400">Código</span>
                     <p class="text-slate-300 font-mono mt-0.5">
                       {{
                         env.recibo_consulta.codigo_resposta ||
@@ -1791,7 +1791,7 @@
                     </p>
                   </div>
                   <div>
-                    <span class="text-slate-600">Consultado em</span>
+                    <span class="text-slate-400">Consultado em</span>
                     <p class="text-slate-300 mt-0.5">{{ formatDate(env.updated_at) }}</p>
                   </div>
                 </div>

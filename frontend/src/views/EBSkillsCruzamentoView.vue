@@ -216,15 +216,15 @@
 
     <!-- Paginação -->
     <div class="ebc-pagination" v-if="totalPages > 1">
-      <button class="ebc-page-btn" :disabled="page === 1" @click="goPage(1)">«</button>
-      <button class="ebc-page-btn" :disabled="page === 1" @click="goPage(page - 1)">‹</button>
+      <button class="ebc-page-btn" :disabled="page === 1" @click="goPage(1)" aria-label="Primeira página">«</button>
+      <button class="ebc-page-btn" :disabled="page === 1" @click="goPage(page - 1)" aria-label="Página anterior">‹</button>
       <span class="ebc-page-info"
         >Página {{ page }} de {{ totalPages }} ({{ total }} rubricas)</span
       >
-      <button class="ebc-page-btn" :disabled="page === totalPages" @click="goPage(page + 1)">
+      <button class="ebc-page-btn" :disabled="page === totalPages" @click="goPage(page + 1)" aria-label="Próxima página">
         ›
       </button>
-      <button class="ebc-page-btn" :disabled="page === totalPages" @click="goPage(totalPages)">
+      <button class="ebc-page-btn" :disabled="page === totalPages" @click="goPage(totalPages)" aria-label="Última página">
         »
       </button>
     </div>

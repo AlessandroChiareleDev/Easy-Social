@@ -95,7 +95,7 @@
             class="w-20 h-20 mx-auto mb-6 bg-white/10 rounded-2xl flex items-center justify-center border border-white/10"
           >
             <svg
-              class="w-10 h-10 text-white/40"
+              class="w-10 h-10 text-white/60"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -169,7 +169,7 @@
                 {{ empresa.role_emp === 'admin' ? 'Admin' : 'Operador' }}
               </span>
               <svg
-                class="w-5 h-5 text-white/20 group-hover:text-white/60 group-hover:translate-x-1 transition-all duration-200"
+                class="w-5 h-5 text-white/50 group-hover:text-white/60 group-hover:translate-x-1 transition-all duration-200"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"

@@ -230,7 +230,7 @@
             <!-- Group label + close -->
             <div class="neural-tag">
               <span>{{ displayedLabel }}</span>
-              <button @click="retractAndClose" class="neural-close-btn">
+              <button @click="retractAndClose" class="neural-close-btn" aria-label="Fechar painel">
                 <svg
                   class="w-3.5 h-3.5"
                   viewBox="0 0 24 24"

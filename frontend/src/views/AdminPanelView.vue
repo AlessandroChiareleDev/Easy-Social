@@ -29,7 +29,7 @@
       <h1 class="text-white/90 font-semibold text-lg">
         Painel <span class="text-[#0066FF]">Admin</span>
       </h1>
-      <div class="text-white/40 text-xs">{{ authStore.user?.username }}</div>
+      <div class="text-white/60 text-xs">{{ authStore.user?.username }}</div>
     </div>
 
     <!-- Content -->
@@ -62,7 +62,7 @@
             'px-5 py-2.5 rounded-t-lg text-sm font-medium transition-all',
             activeTab === tab.id
               ? 'bg-white/10 text-white border-b-2 border-[#0066FF]'
-              : 'text-white/40 hover:text-white/70 hover:bg-white/5',
+              : 'text-white/60 hover:text-white/70 hover:bg-white/5',
           ]"
         >
           {{ tab.label }}
@@ -134,17 +134,17 @@
                   <td class="py-2 px-3 text-right text-green-300">{{ op.posts }}</td>
                   <td
                     class="py-2 px-3 text-right"
-                    :class="op.erros > 0 ? 'text-red-400' : 'text-white/40'"
+                    :class="op.erros > 0 ? 'text-red-400' : 'text-white/60'"
                   >
                     {{ op.erros }}
                   </td>
                   <td class="py-2 px-3 text-right">{{ op.duracao_media_ms }}ms</td>
                   <td class="py-2 px-3 text-right">{{ op.dias_ativos }}</td>
                   <td class="py-2 px-3 text-white/50">{{ formatDate(op.ultimo_acesso) }}</td>
-                  <td class="py-2 px-3 text-white/40 text-xs">{{ (op.ips || []).join(', ') }}</td>
+                  <td class="py-2 px-3 text-white/60 text-xs">{{ (op.ips || []).join(', ') }}</td>
                 </tr>
                 <tr v-if="resumoOperadores.length === 0">
-                  <td colspan="9" class="text-center py-8 text-white/30">
+                  <td colspan="9" class="text-center py-8 text-white/50">
                     Nenhuma atividade registrada
                   </td>
                 </tr>
@@ -196,7 +196,7 @@
                   <td class="py-2 px-3 text-right">{{ r.duracao_media_ms }}ms</td>
                   <td
                     class="py-2 px-3 text-right"
-                    :class="r.erros > 0 ? 'text-red-400' : 'text-white/40'"
+                    :class="r.erros > 0 ? 'text-red-400' : 'text-white/60'"
                   >
                     {{ r.erros }}
                   </td>
@@ -228,10 +228,10 @@
                 class="text-xs bg-[#0066FF]/20 text-[#0066FF] px-2 py-0.5 rounded-full"
               >
                 {{ filtroUsuarioNome }}
-                <button @click="limparFiltroUsuario" class="ml-1 hover:text-white">✕</button>
+                <button @click="limparFiltroUsuario" class="ml-1 hover:text-white" aria-label="Limpar filtro">✕</button>
               </span>
             </h2>
-            <div class="text-white/40 text-xs">{{ totalAtividades }} registros</div>
+            <div class="text-white/60 text-xs">{{ totalAtividades }} registros</div>
           </div>
 
           <div class="overflow-x-auto">
@@ -267,10 +267,10 @@
                     {{ a.status_code }}
                   </td>
                   <td class="py-2 px-3 text-right">{{ a.duracao_ms }}ms</td>
-                  <td class="py-2 px-3 text-white/40 text-xs">{{ a.ip }}</td>
+                  <td class="py-2 px-3 text-white/60 text-xs">{{ a.ip }}</td>
                 </tr>
                 <tr v-if="atividades.length === 0">
-                  <td colspan="7" class="text-center py-8 text-white/30">
+                  <td colspan="7" class="text-center py-8 text-white/50">
                     Nenhuma atividade encontrada
                   </td>
                 </tr>
@@ -361,7 +361,7 @@
               </svg>
               Envios ao eSocial
             </h2>
-            <div class="text-white/40 text-xs">{{ totalEnviosPage }} registros</div>
+            <div class="text-white/60 text-xs">{{ totalEnviosPage }} registros</div>
           </div>
 
           <div class="overflow-x-auto">
@@ -422,12 +422,12 @@
                   </td>
                   <td class="py-2 px-3 text-xs font-mono">{{ e.ini_valid || '-' }}</td>
                   <td class="py-2 px-3 text-right">{{ e.total_eventos || '-' }}</td>
-                  <td class="py-2 px-3 font-mono text-xs text-white/40 max-w-[120px] truncate">
+                  <td class="py-2 px-3 font-mono text-xs text-white/60 max-w-[120px] truncate">
                     {{ e.protocolo_envio || '-' }}
                   </td>
                   <td
                     class="py-2 px-3 font-mono text-xs max-w-[120px] truncate"
-                    :class="e.nr_recibo ? 'text-green-400' : 'text-white/30'"
+                    :class="e.nr_recibo ? 'text-green-400' : 'text-white/50'"
                   >
                     {{ e.nr_recibo || 'pendente' }}
                   </td>
@@ -438,7 +438,7 @@
                         ? 'text-green-400'
                         : e.codigo_resposta
                           ? 'text-amber-400'
-                          : 'text-white/40'
+                          : 'text-white/60'
                     "
                   >
                     {{ e.codigo_resposta ? `[${e.codigo_resposta}] ` : ''
@@ -446,7 +446,7 @@
                   </td>
                 </tr>
                 <tr v-if="envios.length === 0">
-                  <td colspan="10" class="text-center py-8 text-white/30">
+                  <td colspan="10" class="text-center py-8 text-white/50">
                     Nenhum envio encontrado
                   </td>
                 </tr>
@@ -465,27 +465,27 @@
                 <h3 class="text-white/80 font-semibold mb-3">Detalhes do Envio #{{ e.id }}</h3>
                 <div class="grid grid-cols-2 md:grid-cols-3 gap-3 text-sm">
                   <div>
-                    <span class="text-white/40">Protocolo:</span>
+                    <span class="text-white/60">Protocolo:</span>
                     <span class="text-white/80 font-mono">{{ e.protocolo_envio || '-' }}</span>
                   </div>
                   <div>
-                    <span class="text-white/40">nrRecibo:</span>
+                    <span class="text-white/60">nrRecibo:</span>
                     <span class="text-green-400 font-mono">{{ e.nr_recibo || '-' }}</span>
                   </div>
                   <div>
-                    <span class="text-white/40">Código Resp:</span>
+                    <span class="text-white/60">Código Resp:</span>
                     <span class="text-white/80">{{ e.codigo_resposta || '-' }}</span>
                   </div>
                   <div class="col-span-2 md:col-span-3">
-                    <span class="text-white/40">Descrição:</span>
+                    <span class="text-white/60">Descrição:</span>
                     <span class="text-white/70">{{ e.descricao_resposta || '-' }}</span>
                   </div>
                   <div>
-                    <span class="text-white/40">Criado:</span>
+                    <span class="text-white/60">Criado:</span>
                     <span class="text-white/70">{{ formatDateTimeFull(e.created_at) }}</span>
                   </div>
                   <div>
-                    <span class="text-white/40">Atualizado:</span>
+                    <span class="text-white/60">Atualizado:</span>
                     <span class="text-white/70">{{ formatDateTimeFull(e.updated_at) }}</span>
                   </div>
                 </div>
@@ -501,7 +501,7 @@
                     >
                       {{ rb.cod_rubrica || rb.codRubr || rb }}
                     </span>
-                    <span v-if="e.rubrica_detalhes.length > 20" class="text-white/40 text-xs"
+                    <span v-if="e.rubrica_detalhes.length > 20" class="text-white/60 text-xs"
                       >+{{ e.rubrica_detalhes.length - 20 }} mais</span
                     >
                   </div>
@@ -605,7 +605,7 @@
               </svg>
               Pipeline de Correção
             </h2>
-            <div class="text-white/40 text-xs">{{ totalPipelinesPage }} registros</div>
+            <div class="text-white/60 text-xs">{{ totalPipelinesPage }} registros</div>
           </div>
 
           <div class="overflow-x-auto">
@@ -664,35 +664,35 @@
                   <td class="py-2 px-3 text-center font-mono">{{ p.step_atual }}/5</td>
                   <td class="py-2 px-3 text-center">
                     <span
-                      :class="p.s1010_nr_recibo ? 'text-green-400' : 'text-white/20'"
+                      :class="p.s1010_nr_recibo ? 'text-green-400' : 'text-white/50'"
                       class="text-xs"
                       >{{ p.s1010_nr_recibo ? '✓' : '·' }}</span
                     >
                   </td>
                   <td class="py-2 px-3 text-center">
                     <span
-                      :class="p.s1298_nr_recibo ? 'text-green-400' : 'text-white/20'"
+                      :class="p.s1298_nr_recibo ? 'text-green-400' : 'text-white/50'"
                       class="text-xs"
                       >{{ p.s1298_nr_recibo ? '✓' : '·' }}</span
                     >
                   </td>
                   <td class="py-2 px-3 text-center">
                     <span
-                      :class="p.s1200_nr_recibo ? 'text-green-400' : 'text-white/20'"
+                      :class="p.s1200_nr_recibo ? 'text-green-400' : 'text-white/50'"
                       class="text-xs"
                       >{{ p.s1200_nr_recibo ? '✓' : '·' }}</span
                     >
                   </td>
                   <td class="py-2 px-3 text-center">
                     <span
-                      :class="p.s1210_nr_recibo ? 'text-green-400' : 'text-white/20'"
+                      :class="p.s1210_nr_recibo ? 'text-green-400' : 'text-white/50'"
                       class="text-xs"
                       >{{ p.s1210_nr_recibo ? '✓' : '·' }}</span
                     >
                   </td>
                   <td class="py-2 px-3 text-center">
                     <span
-                      :class="p.s1299_nr_recibo ? 'text-green-400' : 'text-white/20'"
+                      :class="p.s1299_nr_recibo ? 'text-green-400' : 'text-white/50'"
                       class="text-xs"
                       >{{ p.s1299_nr_recibo ? '✓' : '·' }}</span
                     >
@@ -702,7 +702,7 @@
                   </td>
                 </tr>
                 <tr v-if="pipelines.length === 0">
-                  <td colspan="12" class="text-center py-8 text-white/30">
+                  <td colspan="12" class="text-center py-8 text-white/50">
                     Nenhum pipeline encontrado
                   </td>
                 </tr>
@@ -727,7 +727,7 @@
                     :key="step"
                     class="bg-white/5 rounded-lg p-3"
                   >
-                    <div class="text-xs text-white/40 mb-1">
+                    <div class="text-xs text-white/60 mb-1">
                       {{ step.toUpperCase().replace('S', 'S-') }}
                     </div>
                     <div class="text-xs">
@@ -737,7 +737,7 @@
                           p[step + '_protocolo'] || '-'
                         }}</span>
                       </div>
-                      <div :class="p[step + '_nr_recibo'] ? 'text-green-400' : 'text-white/30'">
+                      <div :class="p[step + '_nr_recibo'] ? 'text-green-400' : 'text-white/50'">
                         Recibo:
                         <span class="font-mono">{{ p[step + '_nr_recibo'] || 'pendente' }}</span>
                       </div>
@@ -757,7 +757,7 @@
                     p.erro
                   }}</pre>
                 </div>
-                <div class="text-xs text-white/40 mt-2">
+                <div class="text-xs text-white/60 mt-2">
                   Criado: {{ formatDateTimeFull(p.created_at) }} | Atualizado:
                   {{ formatDateTimeFull(p.updated_at) }}
                 </div>

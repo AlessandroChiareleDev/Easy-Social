@@ -239,4 +239,232 @@ router.get(
   },
 );
 
+/**
+ * GET /admin/envios - lista envios ao eSocial (da tabela esocial_envios)
+ * Query params: tipo_evento, ambiente, status, desde, ate, limit, offset
+ */
+router.get(
+  "/admin/envios",
+  requireAuth,
+  requireAdmin,
+  async (req: Request, res: Response) => {
+    try {
+      const {
+        tipo_evento,
+        ambiente,
+        status,
+        desde,
+        ate,
+        limit = "50",
+        offset = "0",
+      } = req.query;
+
+      const conditions: string[] = [];
+      const params: any[] = [];
+      let pi = 1;
+
+      if (tipo_evento) {
+        conditions.push(`tipo_evento = $${pi++}`);
+        params.push(tipo_evento);
+      }
+      if (ambiente) {
+        conditions.push(`ambiente = $${pi++}`);
+        params.push(ambiente);
+      }
+      if (status) {
+        conditions.push(`status = $${pi++}`);
+        params.push(status);
+      }
+      if (desde) {
+        conditions.push(`created_at >= $${pi++}`);
+        params.push(desde);
+      }
+      if (ate) {
+        conditions.push(`created_at <= $${pi++}`);
+        params.push(ate);
+      }
+
+      const where =
+        conditions.length > 0 ? `WHERE ${conditions.join(" AND ")}` : "";
+      const safeLimit = Math.min(parseInt(limit as string) || 50, 200);
+      const safeOffset = parseInt(offset as string) || 0;
+
+      // Check if table exists
+      const tableCheck = await masterPool.query(
+        `SELECT EXISTS (SELECT 1 FROM information_schema.tables WHERE table_name = 'esocial_envios')`,
+      );
+      if (!tableCheck.rows[0].exists) {
+        res.json({ success: true, total: 0, envios: [] });
+        return;
+      }
+
+      const countResult = await masterPool.query(
+        `SELECT COUNT(*) FROM esocial_envios ${where}`,
+        params,
+      );
+
+      const result = await masterPool.query(
+        `SELECT id, tipo_evento, modo, status, protocolo_envio,
+                codigo_resposta, descricao_resposta, total_eventos,
+                created_at, ambiente, ini_valid, rubrica_detalhes,
+                rubrica_ids, nr_recibo, updated_at, ocorrencias
+         FROM esocial_envios
+         ${where}
+         ORDER BY created_at DESC
+         LIMIT $${pi++} OFFSET $${pi++}`,
+        [...params, safeLimit, safeOffset],
+      );
+
+      res.json({
+        success: true,
+        total: parseInt(countResult.rows[0].count),
+        envios: result.rows,
+      });
+    } catch (error: any) {
+      console.error("Erro ao buscar envios:", error);
+      res.status(500).json({ error: "Erro ao buscar envios" });
+    }
+  },
+);
+
+/**
+ * GET /admin/envios/resumo - resumo de envios (totais por tipo, status, ambiente)
+ */
+router.get(
+  "/admin/envios/resumo",
+  requireAuth,
+  requireAdmin,
+  async (_req: Request, res: Response) => {
+    try {
+      const tableCheck = await masterPool.query(
+        `SELECT EXISTS (SELECT 1 FROM information_schema.tables WHERE table_name = 'esocial_envios')`,
+      );
+      if (!tableCheck.rows[0].exists) {
+        res.json({
+          success: true,
+          resumo: { total: 0, por_tipo: [], por_status: [], por_ambiente: [] },
+        });
+        return;
+      }
+
+      const [totalRes, porTipoRes, porStatusRes, porAmbienteRes] =
+        await Promise.all([
+          masterPool.query(`SELECT COUNT(*) FROM esocial_envios`),
+          masterPool.query(
+            `SELECT tipo_evento, COUNT(*) as total FROM esocial_envios GROUP BY tipo_evento ORDER BY total DESC`,
+          ),
+          masterPool.query(
+            `SELECT status, COUNT(*) as total FROM esocial_envios GROUP BY status ORDER BY total DESC`,
+          ),
+          masterPool.query(
+            `SELECT ambiente, COUNT(*) as total FROM esocial_envios GROUP BY ambiente ORDER BY total DESC`,
+          ),
+        ]);
+
+      res.json({
+        success: true,
+        resumo: {
+          total: parseInt(totalRes.rows[0].count),
+          por_tipo: porTipoRes.rows,
+          por_status: porStatusRes.rows,
+          por_ambiente: porAmbienteRes.rows,
+        },
+      });
+    } catch (error: any) {
+      console.error("Erro ao buscar resumo envios:", error);
+      res.status(500).json({ error: "Erro ao buscar resumo de envios" });
+    }
+  },
+);
+
+/**
+ * GET /admin/pipelines - lista pipeline de correções
+ * Query params: cpf, status, ambiente, desde, ate, limit, offset
+ */
+router.get(
+  "/admin/pipelines",
+  requireAuth,
+  requireAdmin,
+  async (req: Request, res: Response) => {
+    try {
+      const {
+        cpf,
+        status,
+        ambiente,
+        desde,
+        ate,
+        limit = "50",
+        offset = "0",
+      } = req.query;
+
+      const conditions: string[] = [];
+      const params: any[] = [];
+      let pi = 1;
+
+      if (cpf) {
+        conditions.push(`cpf = $${pi++}`);
+        params.push(cpf);
+      }
+      if (status) {
+        conditions.push(`status = $${pi++}`);
+        params.push(status);
+      }
+      if (ambiente) {
+        conditions.push(`ambiente = $${pi++}`);
+        params.push(ambiente);
+      }
+      if (desde) {
+        conditions.push(`created_at >= $${pi++}`);
+        params.push(desde);
+      }
+      if (ate) {
+        conditions.push(`created_at <= $${pi++}`);
+        params.push(ate);
+      }
+
+      const where =
+        conditions.length > 0 ? `WHERE ${conditions.join(" AND ")}` : "";
+      const safeLimit = Math.min(parseInt(limit as string) || 50, 200);
+      const safeOffset = parseInt(offset as string) || 0;
+
+      const tableCheck = await masterPool.query(
+        `SELECT EXISTS (SELECT 1 FROM information_schema.tables WHERE table_name = 'pipeline_correcao')`,
+      );
+      if (!tableCheck.rows[0].exists) {
+        res.json({ success: true, total: 0, pipelines: [] });
+        return;
+      }
+
+      const countResult = await masterPool.query(
+        `SELECT COUNT(*) FROM pipeline_correcao ${where}`,
+        params,
+      );
+
+      const result = await masterPool.query(
+        `SELECT id, cpf, per_apur, ambiente, status, step_atual,
+                s1010_protocolo, s1010_nr_recibo,
+                s1298_protocolo, s1298_nr_recibo,
+                s1200_protocolo, s1200_nr_recibo,
+                s1210_protocolo, s1210_nr_recibo,
+                s1299_protocolo, s1299_nr_recibo,
+                steps_log, erro, created_at, updated_at
+         FROM pipeline_correcao
+         ${where}
+         ORDER BY created_at DESC
+         LIMIT $${pi++} OFFSET $${pi++}`,
+        [...params, safeLimit, safeOffset],
+      );
+
+      res.json({
+        success: true,
+        total: parseInt(countResult.rows[0].count),
+        pipelines: result.rows,
+      });
+    } catch (error: any) {
+      console.error("Erro ao buscar pipelines:", error);
+      res.status(500).json({ error: "Erro ao buscar pipelines" });
+    }
+  },
+);
+
 export default router;

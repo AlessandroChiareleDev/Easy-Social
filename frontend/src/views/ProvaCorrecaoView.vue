@@ -8,9 +8,7 @@
     </div>
 
     <h1 class="title">Prova de Correção — Comprovação Completa</h1>
-    <p class="subtitle">
-      Evidência integral do trabalho realizado no eSocial para o CPF piloto
-    </p>
+    <p class="subtitle">Evidência integral do trabalho realizado no eSocial para o CPF piloto</p>
 
     <!-- Busca por CPF -->
     <div class="search-bar">
@@ -110,8 +108,8 @@
         <h2 class="section-title">3. Envios ao eSocial — Respostas do Governo</h2>
         <p class="section-desc">
           Cada linha é um envio real ao webservice do eSocial (governo federal). O
-          <strong>código de resposta</strong> e <strong>descrição</strong> são a resposta literal
-          da API do governo, não do nosso sistema.
+          <strong>código de resposta</strong> e <strong>descrição</strong> são a resposta literal da
+          API do governo, não do nosso sistema.
         </p>
         <div class="table-wrap">
           <table class="data-table envios-table">
@@ -211,15 +209,15 @@
               <span class="step-label">S-1299 (Fechamento)</span>
               <span class="mono">{{ p.s1299_nr_recibo }}</span>
             </div>
-            <div v-if="p.erro" class="step-error">
-              <strong>Erro:</strong> {{ p.erro }}
-            </div>
+            <div v-if="p.erro" class="step-error"><strong>Erro:</strong> {{ p.erro }}</div>
           </div>
 
           <!-- Steps log detalhado -->
           <div v-if="p.steps_log" class="steps-log">
             <details>
-              <summary class="log-summary">Ver log detalhado ({{ stepsLogCount(p.steps_log) }} eventos)</summary>
+              <summary class="log-summary">
+                Ver log detalhado ({{ stepsLogCount(p.steps_log) }} eventos)
+              </summary>
               <pre class="log-pre">{{ formatStepsLog(p.steps_log) }}</pre>
             </details>
           </div>

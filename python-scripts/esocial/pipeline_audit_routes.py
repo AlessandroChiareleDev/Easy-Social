@@ -1,7 +1,7 @@
 """
 Rotas Pipeline Audit — Snapshots pré/pós pipeline para comprovação
 """
-4mport json
+import json
 from datetime import datetime
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel

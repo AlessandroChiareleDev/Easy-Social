@@ -82,6 +82,12 @@ const router = createRouter({
       meta: { requireEmpresa: true },
     },
     {
+      path: '/prova',
+      name: 'prova',
+      component: () => import('../views/ProvaCorrecaoView.vue'),
+      meta: { requireEmpresa: true },
+    },
+    {
       path: '/admin',
       name: 'admin',
       component: () => import('../views/AdminPanelView.vue'),

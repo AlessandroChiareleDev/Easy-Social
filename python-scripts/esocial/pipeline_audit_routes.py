@@ -1,7 +1,7 @@
 """
 Rotas Pipeline Audit — Snapshots pré/pós pipeline para comprovação
 """
-import json
+4mport json
 from datetime import datetime
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
@@ -255,6 +255,122 @@ async def capturar_snapshot(req: CapturaSnapshotRequest):
     except Exception as e:
         conn.rollback()
         raise HTTPException(500, f"Erro ao capturar snapshot: {str(e)}")
+    finally:
+        cur.close()
+        conn.close()
+
+
+@router.get("/prova/{cpf}")
+async def prova_correcao(cpf: str, per_apur: str = "2024-12"):
+    """
+    Retorna TODA a evidência de correção para um CPF — prova completa para apresentar.
+    Inclui: snapshots PRÉ/PÓS, comparação, envios ao eSocial, pipelines executados,
+    respostas do governo (codigo_resposta, descricao_resposta), e erros/bloqueios.
+    """
+    conn = psycopg2.connect(**DB_CONFIG)
+    cur = conn.cursor(cursor_factory=RealDictCursor)
+    try:
+        resultado: dict = {"cpf": cpf, "per_apur": per_apur}
+
+        # 1. Snapshots PRÉ e PÓS
+        cur.execute("""
+            SELECT id, cpf, per_apur, tipo, dados, created_at
+            FROM pipeline_audit
+            WHERE cpf = %s
+            ORDER BY created_at ASC
+        """, (cpf,))
+        snapshots = [dict(r) for r in cur.fetchall()]
+        for s in snapshots:
+            if s.get("created_at"):
+                s["created_at"] = s["created_at"].isoformat()
+
+        pre = [s for s in snapshots if s["tipo"] == "pre_pipeline"]
+        pos = [s for s in snapshots if s["tipo"] == "pos_pipeline"]
+        resultado["snapshot_pre"] = pre[-1] if pre else None
+        resultado["snapshot_pos"] = pos[-1] if pos else None
+
+        # 2. Comparação PRÉ vs PÓS
+        if pre and pos:
+            resultado["comparacao"] = _gerar_comparacao(pre[-1]["dados"], pos[-1]["dados"])
+        else:
+            resultado["comparacao"] = None
+
+        # 3. TODOS os envios ao eSocial — com respostas do governo
+        cur.execute("""
+            SELECT id, tipo_evento, modo, status, protocolo_envio,
+                   codigo_resposta, descricao_resposta, total_eventos,
+                   rubrica_ids, rubrica_detalhes, ambiente, ini_valid,
+                   nr_recibo, xml_enviado, ocorrencias, created_at, updated_at
+            FROM esocial_envios
+            ORDER BY id ASC
+        """)
+        envios = [dict(r) for r in cur.fetchall()]
+        for e in envios:
+            if e.get("created_at"):
+                e["created_at"] = e["created_at"].isoformat()
+            if e.get("updated_at"):
+                e["updated_at"] = e["updated_at"].isoformat()
+        resultado["envios_esocial"] = envios
+
+        # 4. Pipelines executados para este CPF
+        try:
+            cur.execute("""
+                SELECT id, cpf, per_apur, ambiente, status, step_atual,
+                       s1010_protocolo, s1010_nr_recibo,
+                       s1298_protocolo, s1298_nr_recibo,
+                       s1200_protocolo, s1200_nr_recibo,
+                       s1210_protocolo, s1210_nr_recibo,
+                       s1299_protocolo, s1299_nr_recibo,
+                       steps_log, erro, created_at, updated_at
+                FROM pipeline_correcao
+                WHERE cpf = %s
+                ORDER BY id ASC
+            """, (cpf,))
+            pipelines = [dict(r) for r in cur.fetchall()]
+            for p in pipelines:
+                if p.get("created_at"):
+                    p["created_at"] = p["created_at"].isoformat()
+                if p.get("updated_at"):
+                    p["updated_at"] = p["updated_at"].isoformat()
+            resultado["pipelines"] = pipelines
+        except Exception:
+            conn.rollback()
+            resultado["pipelines"] = []
+
+        # 5. Rubricas corrigidas (cruzamento_eb)
+        cur.execute("""
+            SELECT cod_rubrica, descricao, cod_natureza,
+                   incid_inss, incid_irrf, incid_fgts,
+                   corrigido, corrigido_em, envio_status, ini_valid_esocial
+            FROM cruzamento_eb
+            WHERE corrigido = true
+            ORDER BY CAST(cod_rubrica AS int)
+        """)
+        rubricas_corrigidas = [dict(r) for r in cur.fetchall()]
+        for r in rubricas_corrigidas:
+            if r.get("corrigido_em"):
+                r["corrigido_em"] = r["corrigido_em"].isoformat()
+        resultado["rubricas_corrigidas"] = rubricas_corrigidas
+
+        # 6. Resumo executivo
+        total_envios = len(envios)
+        envios_ok = len([e for e in envios if e.get("status") == "201"])
+        envios_erro = len([e for e in envios if e.get("status") and e["status"] != "201"])
+        resultado["resumo"] = {
+            "total_envios": total_envios,
+            "envios_sucesso": envios_ok,
+            "envios_erro": envios_erro,
+            "rubricas_corrigidas": len(rubricas_corrigidas),
+            "tem_snapshot_pre": resultado["snapshot_pre"] is not None,
+            "tem_snapshot_pos": resultado["snapshot_pos"] is not None,
+            "tem_comparacao": resultado["comparacao"] is not None,
+            "total_pipelines": len(resultado["pipelines"]),
+        }
+
+        return resultado
+    except Exception as e:
+        conn.rollback()
+        raise HTTPException(500, f"Erro ao gerar prova: {str(e)}")
     finally:
         cur.close()
         conn.close()

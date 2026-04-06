@@ -38,6 +38,7 @@ const navGroups = [
       { to: '/esocial', label: 'eSocial S-1010', icon: 'esocial' },
       { to: '/explorador', label: 'Explorador', icon: 'explorador' },
       { to: '/pipeline-audit', label: 'Pipeline Audit', icon: 'check' },
+      { to: '/prova', label: 'Prova de Correção', icon: 'check' },
     ],
   },
 ]

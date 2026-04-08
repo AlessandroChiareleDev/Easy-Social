@@ -896,46 +896,53 @@ function toggleExpand(id: number) {
 }
 
 // Import — Drag & Drop upload
-function collectXmlFiles(items: DataTransferItemList): Promise<File[]> {
-  const files: File[] = []
-  const promises: Promise<void>[] = []
+function readAllEntries(reader: FileSystemDirectoryReader): Promise<FileSystemEntry[]> {
+  return new Promise((resolve, reject) => {
+    const all: FileSystemEntry[] = []
+    const read = () => {
+      reader.readEntries((entries) => {
+        if (entries.length === 0) { resolve(all); return }
+        all.push(...entries)
+        read()
+      }, reject)
+    }
+    read()
+  })
+}
 
-  function readDir(entry: FileSystemDirectoryEntry): Promise<void> {
-    return new Promise((resolve) => {
-      const reader = entry.createReader()
-      const readBatch = () => {
-        reader.readEntries((entries) => {
-          if (entries.length === 0) { resolve(); return }
-          for (const e of entries) {
-            if (e.isFile) {
-              promises.push(new Promise<void>((res) => {
-                (e as FileSystemFileEntry).file((f) => {
-                  if (f.name.toLowerCase().endsWith('.xml')) files.push(f)
-                  res()
-                }, () => res())
-              }))
-            } else if (e.isDirectory) {
-              promises.push(readDir(e as FileSystemDirectoryEntry))
-            }
-          }
-          readBatch() // continue reading (batched API)
-        }, () => resolve())
-      }
-      readBatch()
-    })
+function fileFromEntry(entry: FileSystemFileEntry): Promise<File | null> {
+  return new Promise((resolve) => {
+    entry.file((f) => resolve(f), () => resolve(null))
+  })
+}
+
+async function collectFromEntry(entry: FileSystemEntry, files: File[]) {
+  if (entry.isFile) {
+    const f = await fileFromEntry(entry as FileSystemFileEntry)
+    if (f && f.name.toLowerCase().endsWith('.xml')) files.push(f)
+  } else if (entry.isDirectory) {
+    const reader = (entry as FileSystemDirectoryEntry).createReader()
+    const entries = await readAllEntries(reader)
+    for (const child of entries) {
+      await collectFromEntry(child, files)
+    }
   }
+}
+
+async function collectXmlFiles(items: DataTransferItemList): Promise<File[]> {
+  const files: File[] = []
+  const entries: FileSystemEntry[] = []
 
   for (let i = 0; i < items.length; i++) {
     const entry = items[i].webkitGetAsEntry?.()
-    if (entry?.isDirectory) {
-      promises.push(readDir(entry as FileSystemDirectoryEntry))
-    } else if (entry?.isFile) {
-      const f = items[i].getAsFile()
-      if (f && f.name.toLowerCase().endsWith('.xml')) files.push(f)
-    }
+    if (entry) entries.push(entry)
   }
 
-  return Promise.all(promises).then(() => files)
+  for (const entry of entries) {
+    await collectFromEntry(entry, files)
+  }
+
+  return files
 }
 
 async function onDrop(e: DragEvent) {

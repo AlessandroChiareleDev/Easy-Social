@@ -456,53 +456,106 @@
     <!-- Import modal -->
     <Teleport to="body">
       <Transition name="modal-fade">
-        <div v-if="showImport" class="modal-overlay" @click.self="showImport = false">
+        <div
+          v-if="showImport"
+          class="modal-overlay"
+          @click.self="!importing && (showImport = false)"
+        >
           <div class="modal-content">
             <div class="flex items-center justify-between mb-6">
               <h2 class="text-xl font-bold text-white">Importar Período</h2>
               <button
+                v-if="!importing"
                 @click="showImport = false"
                 class="text-slate-400 hover:text-white transition-colors"
                 aria-label="Fechar modal"
               >
-                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <svg
+                  class="w-5 h-5"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
                   <path d="M18 6L6 18M6 6l12 12" />
                 </svg>
               </button>
             </div>
 
-            <div v-if="!importing && !importResult">
-              <div class="mb-4">
-                <label class="filter-label">Caminho da Pasta</label>
-                <input
-                  v-model="importPasta"
-                  type="text"
-                  placeholder="C:\Users\xandao\Downloads\28947360"
-                  class="filter-input w-full"
-                />
-                <p class="text-xs text-slate-500 mt-1">
-                  Cole o caminho completo da pasta com os XMLs baixados
-                </p>
-              </div>
-              <div class="mb-6">
-                <label class="filter-label">Período (opcional)</label>
-                <input
-                  v-model="importPeriodo"
-                  type="text"
-                  placeholder="2026-02"
-                  class="filter-input w-full"
-                  maxlength="7"
-                />
-                <p class="text-xs text-slate-500 mt-1">
-                  Formato: AAAA-MM. Se não informar, será detectado dos XMLs
-                </p>
-              </div>
-              <button
-                @click="iniciarImport"
-                :disabled="!importPasta.trim()"
-                class="btn-search w-full justify-center"
+            <!-- STEP 1: Drag & Drop -->
+            <div v-if="!importing && !importResult && !uploadSending">
+              <div
+                class="drop-zone"
+                :class="{
+                  'drop-zone--active': dragOver,
+                  'drop-zone--has-files': uploadFiles.length > 0,
+                }"
+                @dragenter.prevent="dragOver = true"
+                @dragover.prevent="dragOver = true"
+                @dragleave.prevent="dragOver = false"
+                @drop.prevent="onDrop"
               >
-                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <input
+                  ref="fileInputRef"
+                  type="file"
+                  multiple
+                  accept=".xml"
+                  webkitdirectory
+                  class="hidden"
+                  @change="onFileSelect"
+                />
+                <div
+                  v-if="uploadFiles.length === 0"
+                  class="drop-zone-empty"
+                  @click="fileInputRef?.click()"
+                >
+                  <svg
+                    class="w-12 h-12 text-slate-500 mx-auto mb-3"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+                    <polyline points="17 8 12 3 7 8" />
+                    <line x1="12" y1="3" x2="12" y2="15" />
+                  </svg>
+                  <p class="text-white font-medium">Arraste a pasta de XMLs aqui</p>
+                  <p class="text-slate-500 text-sm mt-1">ou clique para selecionar a pasta</p>
+                </div>
+                <div v-else class="drop-zone-loaded">
+                  <div class="flex items-center justify-between mb-2">
+                    <span class="text-emerald-400 font-mono font-bold text-lg">
+                      {{ uploadFiles.length.toLocaleString('pt-BR') }} XMLs
+                    </span>
+                    <button
+                      @click.stop="clearUploadFiles"
+                      class="text-slate-500 hover:text-red-400 text-xs"
+                    >
+                      Limpar
+                    </button>
+                  </div>
+                  <p class="text-sm text-slate-400">
+                    {{ (uploadTotalSize / 1024 / 1024).toFixed(1) }} MB total
+                  </p>
+                  <p v-if="uploadDetectedPeriod" class="text-sm text-[#5ac8f5] mt-1">
+                    Período detectado: <strong>{{ uploadDetectedPeriod }}</strong>
+                  </p>
+                </div>
+              </div>
+
+              <button
+                @click="startUploadImport"
+                :disabled="uploadFiles.length === 0"
+                class="btn-search w-full justify-center mt-4"
+              >
+                <svg
+                  class="w-4 h-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
                   <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
                   <polyline points="17 8 12 3 7 8" />
                   <line x1="12" y1="3" x2="12" y2="15" />
@@ -511,10 +564,31 @@
               </button>
             </div>
 
+            <!-- STEP 1.5: Upload progress -->
+            <div v-if="uploadSending && !importing" class="text-center py-8">
+              <div class="loading-spinner mx-auto"></div>
+              <p class="text-white mt-4 font-medium">
+                Fase 1 — Enviando arquivos para o servidor...
+              </p>
+              <div class="progress-bar-container mt-4">
+                <div class="progress-bar" :style="{ width: uploadProgressPct + '%' }"></div>
+              </div>
+              <p class="text-2xl font-bold text-[var(--brain-blue)] mt-3">
+                {{ uploadProgressPct }}%
+              </p>
+              <p class="text-sm text-slate-300 mt-1">
+                Lote {{ uploadBatchCurrent }} de {{ uploadBatchTotal }}
+              </p>
+              <p class="text-xs text-slate-500 mt-1">
+                {{ uploadFiles.length.toLocaleString('pt-BR') }} arquivos XML ·
+                {{ (uploadTotalSize / 1024 / 1024).toFixed(1) }} MB
+              </p>
+            </div>
+
             <!-- STEP 2: Importing progress -->
             <div v-if="importing" class="text-center py-8">
               <div class="loading-spinner mx-auto"></div>
-              <p class="text-white mt-4 font-medium">Importando XMLs...</p>
+              <p class="text-white mt-4 font-medium">Fase 2 — Importando XMLs...</p>
               <div class="progress-bar-container mt-4">
                 <div class="progress-bar" :style="{ width: importProgressPct + '%' }"></div>
               </div>
@@ -561,7 +635,10 @@
                 <svg
                   v-if="importResult.erros === 0"
                   class="w-12 h-12 text-emerald-400 mx-auto mb-3"
-                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
                 >
                   <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
                   <polyline points="22 4 12 14.01 9 11.01" />
@@ -569,9 +646,14 @@
                 <svg
                   v-else
                   class="w-12 h-12 text-amber-400 mx-auto mb-3"
-                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
                 >
-                  <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" />
+                  <path
+                    d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"
+                  />
                   <line x1="12" y1="9" x2="12" y2="13" />
                   <line x1="12" y1="17" x2="12.01" y2="17" />
                 </svg>
@@ -586,7 +668,10 @@
                     {{ importResult.importados.toLocaleString('pt-BR') }}
                   </div>
                   <div class="text-slate-400">Erros</div>
-                  <div :class="importResult.erros > 0 ? 'text-red-400' : 'text-slate-500'" class="font-mono">
+                  <div
+                    :class="importResult.erros > 0 ? 'text-red-400' : 'text-slate-500'"
+                    class="font-mono"
+                  >
                     {{ importResult.erros }}
                   </div>
                   <div class="text-slate-400">Tempo</div>
@@ -688,8 +773,6 @@ let cpfTimer: ReturnType<typeof setTimeout> | null = null
 const showImport = ref(false)
 const importing = ref(false)
 const importResult = ref<any>(null)
-const importPasta = ref('')
-const importPeriodo = ref('')
 const importProgressPct = ref(0)
 const importProgressText = ref('')
 const importProgressImported = ref(0)
@@ -698,6 +781,21 @@ const importProgressRate = ref(0)
 const importProgressEta = ref('')
 const importProgressLastError = ref('')
 let progressInterval: ReturnType<typeof setInterval> | null = null
+
+// Upload drag & drop
+const fileInputRef = ref<HTMLInputElement | null>(null)
+const dragOver = ref(false)
+const uploadFiles = ref<File[]>([])
+const uploadTotalSize = ref(0)
+const uploadDetectedPeriod = ref('')
+const uploadSending = ref(false)
+const uploadBatchCurrent = ref(0)
+const uploadBatchTotal = ref(0)
+
+const uploadProgressPct = computed(() => {
+  if (uploadBatchTotal.value === 0) return 0
+  return Math.round((uploadBatchCurrent.value / uploadBatchTotal.value) * 100)
+})
 
 const eventTypes = [
   'S-1010',
@@ -866,50 +964,179 @@ function toggleExpand(id: number) {
 }
 
 // Import — Drag & Drop upload
-async function iniciarImport() {
-  importing.value = true
-  importResult.value = null
-  importProgressPct.value = 0
-  importProgressText.value = 'Iniciando...'
-  importProgressImported.value = 0
-  importProgressErrors.value = 0
-  importProgressRate.value = 0
-  importProgressEta.value = ''
-  importProgressLastError.value = ''
+function readAllEntries(reader: FileSystemDirectoryReader): Promise<FileSystemEntry[]> {
+  return new Promise((resolve, reject) => {
+    const all: FileSystemEntry[] = []
+    const read = () => {
+      reader.readEntries((entries) => {
+        if (entries.length === 0) {
+          resolve(all)
+          return
+        }
+        all.push(...entries)
+        read()
+      }, reject)
+    }
+    read()
+  })
+}
 
-  // Poll progress — also detects when import finishes
-  progressInterval = setInterval(async () => {
-    try {
-      const res = await fetch(`${API}/progresso`)
-      if (res.ok) {
-        const prog = await res.json()
-        if (prog.total > 0) {
-          const pct = Math.round((prog.processed / prog.total) * 100)
-          importProgressPct.value = pct
-          importProgressText.value = `${prog.processed.toLocaleString('pt-BR')} / ${prog.total.toLocaleString('pt-BR')} arquivos`
-          importProgressImported.value = prog.imported || 0
-          importProgressErrors.value = prog.errors || 0
-          importProgressRate.value = prog.rate || 0
-          importProgressLastError.value = prog.last_error || ''
-          if (prog.rate > 0) {
-            const remaining = prog.total - prog.processed
-            const etaSec = Math.round(remaining / prog.rate)
-            if (etaSec < 60) {
-              importProgressEta.value = `~${etaSec}s restantes`
-            } else {
-              importProgressEta.value = `~${Math.round(etaSec / 60)}min restantes`
+function fileFromEntry(entry: FileSystemFileEntry): Promise<File | null> {
+  return new Promise((resolve) => {
+    entry.file(
+      (f) => resolve(f),
+      () => resolve(null),
+    )
+  })
+}
+
+async function collectFromEntry(entry: FileSystemEntry, files: File[]) {
+  if (entry.isFile) {
+    const f = await fileFromEntry(entry as FileSystemFileEntry)
+    if (f && f.name.toLowerCase().endsWith('.xml')) files.push(f)
+  } else if (entry.isDirectory) {
+    const reader = (entry as FileSystemDirectoryEntry).createReader()
+    const entries = await readAllEntries(reader)
+    for (const child of entries) {
+      await collectFromEntry(child, files)
+    }
+  }
+}
+
+async function collectXmlFiles(items: DataTransferItemList): Promise<File[]> {
+  const files: File[] = []
+  const entries: FileSystemEntry[] = []
+
+  for (let i = 0; i < items.length; i++) {
+    const entry = items[i].webkitGetAsEntry?.()
+    if (entry) entries.push(entry)
+  }
+
+  for (const entry of entries) {
+    await collectFromEntry(entry, files)
+  }
+
+  return files
+}
+
+async function onDrop(e: DragEvent) {
+  dragOver.value = false
+  if (!e.dataTransfer?.items) return
+  const files = await collectXmlFiles(e.dataTransfer.items)
+  if (files.length === 0) {
+    alert('Nenhum arquivo XML encontrado na pasta')
+    return
+  }
+  uploadFiles.value = files
+  uploadTotalSize.value = files.reduce((sum, f) => sum + f.size, 0)
+  detectPeriodFromFilenames(files)
+}
+
+function onFileSelect(e: Event) {
+  const input = e.target as HTMLInputElement
+  if (!input.files) return
+  const files = Array.from(input.files).filter((f) => f.name.toLowerCase().endsWith('.xml'))
+  if (files.length === 0) {
+    alert('Nenhum arquivo XML encontrado')
+    return
+  }
+  uploadFiles.value = files
+  uploadTotalSize.value = files.reduce((sum, f) => sum + f.size, 0)
+  detectPeriodFromFilenames(files)
+  input.value = '' // reset so same folder can be re-selected
+}
+
+function detectPeriodFromFilenames(files: File[]) {
+  // Try to read first XML to detect perApur from content
+  uploadDetectedPeriod.value = ''
+  const first = files[0]
+  if (!first) return
+  const reader = new FileReader()
+  reader.onload = () => {
+    const text = reader.result as string
+    // Look for <perApur>2026-02</perApur> pattern
+    const match = text.match(/<perApur>\s*(\d{4}-\d{2})\s*<\/perApur>/)
+    if (match) {
+      uploadDetectedPeriod.value = match[1]
+    }
+  }
+  reader.readAsText(first.slice(0, 8192)) // read only first 8KB
+}
+
+function clearUploadFiles() {
+  uploadFiles.value = []
+  uploadTotalSize.value = 0
+  uploadDetectedPeriod.value = ''
+}
+
+async function startUploadImport() {
+  if (uploadFiles.value.length === 0) return
+  uploadSending.value = true
+
+  const BATCH_SIZE = 100
+  const files = uploadFiles.value
+  const totalBatches = Math.ceil(files.length / BATCH_SIZE)
+  uploadBatchTotal.value = totalBatches
+
+  try {
+    // Cancel any previous upload session
+    await fetch(`${API}/upload-cancel`, { method: 'DELETE' }).catch(() => {})
+
+    // Send files in batches
+    for (let i = 0; i < files.length; i += BATCH_SIZE) {
+      const batch = files.slice(i, i + BATCH_SIZE)
+      uploadBatchCurrent.value = Math.floor(i / BATCH_SIZE) + 1
+      // Yield to browser so Vue can repaint the progress bar
+      await new Promise((r) => setTimeout(r, 0))
+      const formData = new FormData()
+      for (const f of batch) {
+        formData.append('files', f)
+      }
+      const res = await fetch(`${API}/upload-batch`, { method: 'POST', body: formData })
+      if (!res.ok) {
+        const err = await res.json().catch(() => ({ detail: 'Erro no upload' }))
+        throw new Error(err.detail || `Erro no lote ${uploadBatchCurrent.value}`)
+      }
+    }
+
+    // All files uploaded — start import
+    uploadSending.value = false
+    importing.value = true
+    importResult.value = null
+    importProgressPct.value = 0
+    importProgressText.value = 'Iniciando...'
+    importProgressImported.value = 0
+    importProgressErrors.value = 0
+    importProgressRate.value = 0
+    importProgressEta.value = ''
+    importProgressLastError.value = ''
+
+    // Start polling progress
+    progressInterval = setInterval(async () => {
+      try {
+        const res = await fetch(`${API}/progresso`)
+        if (res.ok) {
+          const prog = await res.json()
+          if (prog.total > 0) {
+            const pct = Math.round((prog.processed / prog.total) * 100)
+            importProgressPct.value = pct
+            importProgressText.value = `${prog.processed.toLocaleString('pt-BR')} / ${prog.total.toLocaleString('pt-BR')} arquivos`
+            importProgressImported.value = prog.imported || 0
+            importProgressErrors.value = prog.errors || 0
+            importProgressRate.value = prog.rate || 0
+            importProgressLastError.value = prog.last_error || ''
+            if (prog.rate > 0) {
+              const remaining = prog.total - prog.processed
+              const etaSec = Math.round(remaining / prog.rate)
+              importProgressEta.value =
+                etaSec < 60 ? `~${etaSec}s restantes` : `~${Math.round(etaSec / 60)}min restantes`
             }
           }
-        }
-        // Check if background import finished
-        if (prog.finished && !prog.running) {
-          if (progressInterval) clearInterval(progressInterval)
-          importing.value = false
-          importProgressPct.value = 100
-          if (prog.result) {
-            importResult.value = prog.result
-          } else {
-            importResult.value = {
+          if (prog.finished && !prog.running) {
+            if (progressInterval) clearInterval(progressInterval)
+            importing.value = false
+            importProgressPct.value = 100
+            importResult.value = prog.result || {
               total_arquivos: prog.total,
               importados: prog.imported || 0,
               erros: prog.errors || 0,
@@ -917,27 +1144,22 @@ async function iniciarImport() {
             }
           }
         }
+      } catch {
+        /* ignore */
       }
-    } catch {
-      /* ignore */
-    }
-  }, 800)
+    }, 800)
 
-  try {
-    const res = await fetch(`${API}/importar`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ pasta: importPasta.value, periodo: importPeriodo.value || null }),
-    })
+    // Trigger the import
+    const res = await fetch(`${API}/upload-start`, { method: 'POST' })
     if (!res.ok) {
       const err = await res.json().catch(() => ({ detail: 'Erro desconhecido' }))
-      alert(err.detail || 'Erro na importação')
+      alert(err.detail || 'Erro ao iniciar importação')
       importing.value = false
       if (progressInterval) clearInterval(progressInterval)
     }
-    // If ok, the background thread is running — polling will detect completion
-  } catch (e) {
-    alert('Erro de conexão com o servidor')
+  } catch (e: any) {
+    alert(e.message || 'Erro de conexão com o servidor')
+    uploadSending.value = false
     importing.value = false
     if (progressInterval) clearInterval(progressInterval)
   }
@@ -947,8 +1169,10 @@ function fecharImport() {
   showImport.value = false
   importing.value = false
   importResult.value = null
-  importPasta.value = ''
-  importPeriodo.value = ''
+  uploadFiles.value = []
+  uploadTotalSize.value = 0
+  uploadDetectedPeriod.value = ''
+  uploadSending.value = false
   loadStats()
   loadImportacoes()
 }
@@ -1668,6 +1892,29 @@ function flatDadosJson(dados: any): Record<string, string> {
   box-shadow:
     0 0 40px rgba(90, 200, 245, 0.08),
     0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.drop-zone {
+  border: 2px dashed rgba(90, 200, 245, 0.25);
+  border-radius: 16px;
+  padding: 32px 20px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.drop-zone--active {
+  border-color: #5ac8f5;
+  background: rgba(90, 200, 245, 0.06);
+}
+.drop-zone--has-files {
+  border-color: rgba(16, 185, 129, 0.4);
+  background: rgba(16, 185, 129, 0.04);
+  cursor: default;
+}
+.drop-zone-empty {
+  text-align: center;
+}
+.drop-zone-loaded {
+  text-align: center;
 }
 
 .modal-fade-enter-active {

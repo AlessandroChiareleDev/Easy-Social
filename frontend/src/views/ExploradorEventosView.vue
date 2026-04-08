@@ -770,6 +770,7 @@ const visiblePages = computed(() => {
 // ── Lifecycle ──
 onMounted(async () => {
   await Promise.all([loadStats(), loadImportacoes()])
+  buscar(1)
 })
 
 // ── API calls ──
@@ -792,6 +793,14 @@ async function loadImportacoes() {
 }
 
 async function buscar(page: number = 1) {
+  // Sync cpfSearch → filters.cpf before searching
+  const cleanCpf = cpfSearch.value.replace(/\D/g, '')
+  if (cleanCpf.length >= 3) {
+    filters.value.cpf = cleanCpf
+  } else if (cleanCpf.length === 0) {
+    filters.value.cpf = ''
+  }
+
   loading.value = true
   expandedId.value = null
   try {

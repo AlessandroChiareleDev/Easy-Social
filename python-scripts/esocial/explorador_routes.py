@@ -13,8 +13,10 @@ import psycopg2.extras
 from lxml import etree
 from pathlib import Path
 from datetime import datetime
-from typing import Optional
-from fastapi import APIRouter, Query, HTTPException
+from typing import Optional, List
+from fastapi import APIRouter, Query, HTTPException, UploadFile, File
+import tempfile
+import shutil
 from pydantic import BaseModel
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -505,6 +507,144 @@ async def importar_xmls(req: ImportRequest):
     t.start()
 
     return {"status": "started", "total": len(xml_files)}
+
+
+# ── Upload-based import (drag & drop) ──────────────────────────────────────
+
+# Temp storage for multi-batch upload sessions
+_upload_session = {
+    "active": False,
+    "tmpdir": None,
+    "files": [],
+    "total_received": 0,
+}
+
+
+@router.post("/upload-batch")
+async def upload_batch(files: List[UploadFile] = File(...)):
+    """
+    Receive a batch of XML files. Can be called multiple times.
+    Files accumulate in a temp directory until /upload-start is called.
+    """
+    if _import_progress["running"]:
+        raise HTTPException(status_code=409, detail="Uma importação já está em andamento")
+
+    # Create temp dir on first batch
+    if not _upload_session["active"] or not _upload_session["tmpdir"]:
+        tmpdir = tempfile.mkdtemp(prefix="esocial_upload_")
+        _upload_session["active"] = True
+        _upload_session["tmpdir"] = tmpdir
+        _upload_session["files"] = []
+        _upload_session["total_received"] = 0
+
+    tmpdir = _upload_session["tmpdir"]
+
+    saved = 0
+    for upload_file in files:
+        if not upload_file.filename:
+            continue
+        fname = upload_file.filename
+        # Handle folder structure: "subdir/file.xml" → just use filename
+        safe_name = os.path.basename(fname)
+        if not safe_name.lower().endswith('.xml'):
+            continue
+        dest = os.path.join(tmpdir, safe_name)
+        with open(dest, "wb") as out:
+            content = await upload_file.read()
+            out.write(content)
+        _upload_session["files"].append(dest)
+        saved += 1
+
+    _upload_session["total_received"] += saved
+
+    return {
+        "saved": saved,
+        "total_accumulated": _upload_session["total_received"],
+    }
+
+
+@router.post("/upload-start")
+async def upload_start_import():
+    """
+    Finish uploading and start the import process.
+    Auto-detects period from XML content.
+    """
+    if _import_progress["running"]:
+        raise HTTPException(status_code=409, detail="Uma importação já está em andamento")
+
+    if not _upload_session["active"] or not _upload_session["files"]:
+        raise HTTPException(status_code=400, detail="Nenhum arquivo foi enviado. Use /upload-batch primeiro.")
+
+    xml_files = _upload_session["files"]
+    tmpdir = _upload_session["tmpdir"]
+
+    # Auto-detect period from first few XMLs
+    detected_periodo = None
+    for fpath in xml_files[:20]:
+        try:
+            data, err = _parse_xml_file(fpath)
+            if data and data.get("per_apur"):
+                detected_periodo = data["per_apur"]
+                break
+        except Exception:
+            continue
+
+    logger.info(f"Upload import: {len(xml_files)} XMLs, periodo detectado: {detected_periodo}")
+
+    # Initialize progress
+    _import_progress["running"] = True
+    _import_progress["total"] = len(xml_files)
+    _import_progress["processed"] = 0
+    _import_progress["errors"] = 0
+    _import_progress["imported"] = 0
+    _import_progress["last_error"] = ""
+    _import_progress["elapsed"] = 0
+    _import_progress["rate"] = 0
+    _import_progress["finished"] = False
+    _import_progress["result"] = None
+
+    # Reset upload session
+    _upload_session["active"] = False
+    files_copy = list(xml_files)
+    _upload_session["files"] = []
+    _upload_session["total_received"] = 0
+
+    pasta_label = f"upload ({len(files_copy)} arquivos)"
+
+    # Launch background thread
+    t = threading.Thread(
+        target=_run_import_uploaded,
+        args=(files_copy, tmpdir, detected_periodo, pasta_label),
+        daemon=True,
+    )
+    t.start()
+
+    return {
+        "status": "started",
+        "total": len(files_copy),
+        "periodo_detectado": detected_periodo,
+    }
+
+
+@router.delete("/upload-cancel")
+async def upload_cancel():
+    """Cancel an upload session and clean up temp files."""
+    if _upload_session["active"] and _upload_session["tmpdir"]:
+        shutil.rmtree(_upload_session["tmpdir"], ignore_errors=True)
+    _upload_session["active"] = False
+    _upload_session["tmpdir"] = None
+    _upload_session["files"] = []
+    _upload_session["total_received"] = 0
+    return {"status": "cancelled"}
+
+
+def _run_import_uploaded(xml_files, tmpdir, periodo, pasta_label):
+    """Wrapper that runs import from uploaded files and cleans up temp dir after."""
+    try:
+        _run_import(xml_files, pasta_label, periodo)
+    finally:
+        shutil.rmtree(tmpdir, ignore_errors=True)
+        logger.info(f"Cleaned up temp dir: {tmpdir}")
 
 
 def _run_import(xml_files, pasta, periodo):

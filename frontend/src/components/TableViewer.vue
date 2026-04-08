@@ -297,13 +297,13 @@ import * as XLSX from 'xlsx'
 import { API_URL } from '@/lib/api'
 
 const allTabs = [
-  { key: 'analise_natureza', label: 'Análise Natureza' },
-  { key: 'analise_natureza_certo', label: 'Análise Natureza (Certa)' },
-  { key: 'dinamica', label: 'Dinâmica' },
-  { key: 'tabela_eventos_gl', label: 'Tabela Eventos GI' },
-  { key: 'tabela_eb', label: 'Tabela EB' },
-  { key: 'tabela_cruzamento', label: 'Tabela Cruzamento' },
+  { key: 'cruzamento_eb', label: 'Cruzamento EB (Principal)' },
+  { key: 'rubrica_corrections', label: 'Correções de Rubricas' },
+  { key: 'esocial_depara', label: 'De-Para GI→eSocial' },
+  { key: 'eb_skills_base_legal', label: 'Base Legal Tributária' },
+  { key: 'esocial_envios', label: 'Histórico de Envios S-1010' },
   { key: 'tabela3_esocial_oficial', label: 'Tabela 3 E-Social Oficial' },
+  { key: 'tabela_marcos', label: 'Tabela Marcos (1145 Rubricas)' },
 ]
 
 const tabs = ref([...allTabs])

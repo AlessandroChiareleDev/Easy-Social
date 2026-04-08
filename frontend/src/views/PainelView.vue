@@ -244,6 +244,33 @@
               </button>
             </div>
           </div>
+
+          <!-- Quick-access: Logs de Sistema (not part of brain regions) -->
+          <button class="logs-quick-btn" @click="router.push('/logs')">
+            <svg
+              class="w-4 h-4"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+              <polyline points="22 4 12 14.01 9 11.01" />
+            </svg>
+            Logs de Sistema
+            <svg
+              class="w-3.5 h-3.5 opacity-40"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <path d="M9 18l6-6-6-6" />
+            </svg>
+          </button>
         </div>
       </div>
     </div>
@@ -1074,5 +1101,29 @@ function handleLogout() {
   100% {
     transform: translate(0, 0) rotate(0deg);
   }
+}
+
+.logs-quick-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  padding: 10px 22px;
+  background: rgba(0, 102, 255, 0.08);
+  border: 1px solid rgba(0, 102, 255, 0.25);
+  border-radius: 12px;
+  color: rgba(224, 230, 237, 0.7);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  backdrop-filter: blur(6px);
+}
+.logs-quick-btn:hover {
+  background: rgba(0, 102, 255, 0.18);
+  border-color: rgba(0, 102, 255, 0.5);
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 20px rgba(0, 102, 255, 0.15);
 }
 </style>

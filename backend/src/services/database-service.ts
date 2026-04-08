@@ -4,15 +4,28 @@ import fs from "fs";
 
 /** Whitelist of allowed table names to prevent SQL injection */
 const ALLOWED_TABLES = [
-  "analise_natureza",
-  "analise_natureza_certo",
-  "dinamica",
-  "tabela_eventos_gl",
-  "tabela_eb",
-  "tabela_cruzamento",
-  "tabela3_esocial_oficial",
+  "cruzamento_eb",
+  "rubrica_corrections",
+  "esocial_depara",
   "eb_skills_base_legal",
+  "esocial_envios",
+  "tabela3_esocial_oficial",
+  "tabela_marcos",
 ];
+
+/** System columns to exclude from display */
+const SYSTEM_COLUMNS = new Set([
+  "id",
+  "upload_id",
+  "row_number",
+  "raw_data",
+  "created_at",
+  "updated_at",
+]);
+
+/** Cache: column info per table (null = not yet detected) */
+const _colInfoCache: Record<string, { names: string[]; needsRemap: boolean }> =
+  {};
 
 function validateTableName(tableName: string): void {
   if (!ALLOWED_TABLES.includes(tableName)) {
@@ -31,6 +44,68 @@ function colNameForIndex(i: number): string {
     num = Math.floor(num / 26) - 1;
   }
   return `col_${letter}`;
+}
+
+/**
+ * Convert col_a key to 0-based index: col_a→0, col_b→1, col_z→25, col_aa→26
+ */
+function colKeyToIndex(colKey: string): number {
+  const letters = colKey.replace("col_", "");
+  let index = 0;
+  for (let i = 0; i < letters.length; i++) {
+    index = index * 26 + (letters.charCodeAt(i) - 96);
+  }
+  return index - 1;
+}
+
+/**
+ * Converts 0-based index to uppercase Excel letter: 0→A, 25→Z, 26→AA
+ */
+function indexToLetter(i: number): string {
+  let letter = "";
+  let num = i;
+  while (num >= 0) {
+    letter = String.fromCharCode(65 + (num % 26)) + letter;
+    num = Math.floor(num / 26) - 1;
+  }
+  return letter;
+}
+
+/**
+ * Detect displayable columns for a table from information_schema.
+ * needsRemap=true means the table has real column names (not col_a pattern)
+ * and data must be remapped to col_a format for the frontend.
+ */
+async function detectDisplayColumns(
+  tableName: string,
+): Promise<{ names: string[]; needsRemap: boolean }> {
+  if (_colInfoCache[tableName]) return _colInfoCache[tableName];
+  const client = await pool.connect();
+  try {
+    const result = await client.query(
+      `SELECT column_name FROM information_schema.columns
+       WHERE table_schema = 'public' AND table_name = $1
+       ORDER BY ordinal_position`,
+      [tableName],
+    );
+    const allCols: string[] = result.rows.map((r: any) => r.column_name);
+    const colPatternCols = allCols.filter((c) => /^col_[a-z]{1,2}$/.test(c));
+
+    let info: { names: string[]; needsRemap: boolean };
+    if (colPatternCols.length > 0) {
+      // Table uses col_a, col_b, ... format — no remapping needed
+      info = { names: colPatternCols, needsRemap: false };
+    } else {
+      // Table has real column names — must remap to col_a for frontend
+      const displayCols = allCols.filter((c) => !SYSTEM_COLUMNS.has(c));
+      info = { names: displayCols, needsRemap: true };
+    }
+
+    _colInfoCache[tableName] = info;
+    return info;
+  } finally {
+    client.release();
+  }
 }
 
 export class DatabaseService {
@@ -173,6 +248,7 @@ export class DatabaseService {
     filters: { column: string; value: string }[] = [],
   ) {
     validateTableName(tableName);
+    const colInfo = await detectDisplayColumns(tableName);
     const client = await pool.connect();
     try {
       const params: any[] = [limit, offset];
@@ -181,6 +257,13 @@ export class DatabaseService {
       if (filters.length > 0) {
         const conditions = filters.map((f, i) => {
           params.push(`%${f.value}%`);
+          if (colInfo.needsRemap) {
+            // Map col_a → real column name for WHERE clause
+            const idx = colKeyToIndex(f.column);
+            const realCol = colInfo.names[idx];
+            if (!realCol) return "TRUE";
+            return `CAST("${realCol}" AS TEXT) ILIKE $${i + 3}`;
+          }
           return `CAST(${f.column} AS TEXT) ILIKE $${i + 3}`;
         });
         whereClause = ` WHERE ${conditions.join(" AND ")}`;
@@ -188,6 +271,18 @@ export class DatabaseService {
 
       const query = `SELECT * FROM ${tableName}${whereClause} LIMIT $1 OFFSET $2`;
       const result = await client.query(query, params);
+
+      if (colInfo.needsRemap) {
+        // Transform real column names → col_a, col_b, ... for frontend
+        return result.rows.map((row: any) => {
+          const mapped: any = {};
+          colInfo.names.forEach((realCol, i) => {
+            mapped[colNameForIndex(i)] = row[realCol];
+          });
+          return mapped;
+        });
+      }
+
       return result.rows;
     } finally {
       client.release();
@@ -202,6 +297,7 @@ export class DatabaseService {
     filters: { column: string; value: string }[] = [],
   ) {
     validateTableName(tableName);
+    const colInfo = await detectDisplayColumns(tableName);
     const client = await pool.connect();
     try {
       const params: any[] = [];
@@ -210,6 +306,12 @@ export class DatabaseService {
       if (filters.length > 0) {
         const conditions = filters.map((f, i) => {
           params.push(`%${f.value}%`);
+          if (colInfo.needsRemap) {
+            const idx = colKeyToIndex(f.column);
+            const realCol = colInfo.names[idx];
+            if (!realCol) return "TRUE";
+            return `CAST("${realCol}" AS TEXT) ILIKE $${i + 1}`;
+          }
           return `CAST(${f.column} AS TEXT) ILIKE $${i + 1}`;
         });
         whereClause = ` WHERE ${conditions.join(" AND ")}`;
@@ -224,84 +326,44 @@ export class DatabaseService {
   }
 
   /**
-   * Retorna as colunas com letra e nome real do Excel
+   * Retorna as colunas com letra e nome para o frontend
    */
   async getColumnNames(tableName: string) {
     validateTableName(tableName);
 
-    const tableNameToSheet: { [key: string]: string } = {
-      analise_natureza: "ANALISE NATUREZA",
-      analise_natureza_certo: "ANALISE NATUREZA",
-      dinamica: "Dinamica",
-      tabela_eventos_gl: "Tabela Eventos GI",
-      tabela_eb: "Tabela EB",
-      tabela_cruzamento: "__cruzamento__",
-      tabela3_esocial_oficial: "__tabela3_oficial__",
+    // Hardcoded headers for known tables
+    const hardcoded: Record<string, { letter: string; name: string }[]> = {
+      tabela3_esocial_oficial: [
+        { letter: "A", name: "Código" },
+        { letter: "B", name: "Nome" },
+        { letter: "C", name: "Dt Início" },
+        { letter: "D", name: "Dt Fim" },
+        { letter: "E", name: "Descrição" },
+        { letter: "F", name: "Incid. Exclusiva Empregado" },
+      ],
+      eb_skills_base_legal: [
+        { letter: "A", name: "Código" },
+        { letter: "B", name: "Nome Rubrica" },
+        { letter: "C", name: "Natureza eSocial" },
+        { letter: "D", name: "Cód. INSS" },
+        { letter: "E", name: "Cód. IRRF" },
+        { letter: "F", name: "Cód. FGTS" },
+        { letter: "G", name: "Observação" },
+        { letter: "H", name: "Base Legal INSS" },
+        { letter: "I", name: "Base Legal IRRF" },
+        { letter: "J", name: "Base Legal FGTS" },
+      ],
     };
 
-    const sheetName = tableNameToSheet[tableName];
-    const client = await pool.connect();
-    try {
-      // tabela_cruzamento: hardcoded headers matching col_a..col_f mapping
-      if (sheetName === "__cruzamento__") {
-        return [
-          { letter: "A", name: "Código" },
-          { letter: "B", name: "Nome Evento" },
-          { letter: "C", name: "Natureza E-social" },
-          { letter: "D", name: "Cód. INSS" },
-          { letter: "E", name: "Cód. IRRF" },
-          { letter: "F", name: "Cód. FGTS" },
-        ];
-      }
+    if (hardcoded[tableName]) return hardcoded[tableName];
 
-      // tabela3_esocial_oficial: hardcoded headers
-      if (sheetName === "__tabela3_oficial__") {
-        return [
-          { letter: "A", name: "Código" },
-          { letter: "B", name: "Nome" },
-          { letter: "C", name: "Dt Início" },
-          { letter: "D", name: "Dt Fim" },
-          { letter: "E", name: "Descrição" },
-          { letter: "F", name: "Incid. Exclusiva Empregado" },
-        ];
-      }
-
-      const result = await client.query(
-        `SELECT analysis_data FROM uploads ORDER BY id DESC LIMIT 1`,
-      );
-      if (result.rows.length === 0) return [];
-
-      const analysisData =
-        typeof result.rows[0].analysis_data === "string"
-          ? JSON.parse(result.rows[0].analysis_data)
-          : result.rows[0].analysis_data;
-
-      const tableInfo = analysisData.tables.find(
-        (t: any) => t.name === sheetName || t.sheetName === sheetName,
-      );
-      if (!tableInfo) return [];
-
-      const count = Math.min(54, tableInfo.columns.length);
-      const columns = [];
-      for (let i = 0; i < count; i++) {
-        // Generate Excel-style letter: 0→A, 25→Z, 26→AA, 53→BB
-        let letter = "";
-        let num = i;
-        while (num >= 0) {
-          letter = String.fromCharCode(65 + (num % 26)) + letter;
-          num = Math.floor(num / 26) - 1;
-        }
-        columns.push({
-          letter,
-          name:
-            tableInfo.columns[i] != null
-              ? String(tableInfo.columns[i])
-              : `Col ${letter}`,
-        });
-      }
-      return columns;
-    } finally {
-      client.release();
-    }
+    // Auto-detect columns from database
+    const colInfo = await detectDisplayColumns(tableName);
+    return colInfo.names.map((colName, i) => ({
+      letter: indexToLetter(i),
+      name: colInfo.needsRemap
+        ? colName
+        : colName.replace(/^col_/, "").toUpperCase(),
+    }));
   }
 }

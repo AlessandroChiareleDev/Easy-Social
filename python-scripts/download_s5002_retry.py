@@ -3,19 +3,24 @@ import sys, os, json, re, time
 sys.path.insert(0, os.path.dirname(__file__))
 
 import psycopg2
-from db_config import LOCAL_DB_CONFIG
+from db_config import DB_CONFIG, LOCAL_DB_CONFIG
 from esocial.certificate_manager import CertificateManager
 from esocial.esocial_client import ESocialClient
+from esocial.envio_tracker import registrar_consulta
 
 CPF = "08132588983"
 MAX_RETRIES = 5
 RETRY_DELAY = 15
 
-conn = psycopg2.connect(**LOCAL_DB_CONFIG)
-cur = conn.cursor()
+# Certificado vem do banco local
+local_conn = psycopg2.connect(**LOCAL_DB_CONFIG)
+cur = local_conn.cursor()
 cur.execute("SELECT cnpj, arquivo_path, senha_encrypted FROM certificados_a1 WHERE ativo = TRUE LIMIT 1")
 cnpj, arquivo_path, senha_enc = cur.fetchone()
-conn.close()
+local_conn.close()
+
+# Tracker usa Supabase (banco principal)
+conn = psycopg2.connect(**DB_CONFIG)
 
 senha = CertificateManager.decrypt_password(senha_enc)
 with open(arquivo_path, "rb") as f:
@@ -53,6 +58,18 @@ for per in ["2024-12"]:
             if result.get("sucesso"):
                 eventos = result.get("eventos", [])
                 print(f"  OK! {len(eventos)} eventos encontrados")
+
+                # Registrar consulta bem-sucedida no banco
+                registrar_consulta(
+                    conn,
+                    tipo_consulta="CONSULTA-IDENT",
+                    ambiente="1",
+                    resultado=result,
+                    cpf=CPF,
+                    per_apur=per,
+                    xml_resposta=result.get("xml_resposta"),
+                    origem="download_s5002_retry",
+                )
                 
                 por_tipo = {}
                 for ev in eventos:
@@ -118,12 +135,26 @@ for per in ["2024-12"]:
                 cod = result.get("codigo_resposta", "?")
                 desc = result.get("descricao", "?")
                 print(f"  FALHA ({cod}): {desc}")
+
+                # Registrar falha/bloqueio no banco (PROVA!)
+                registrar_consulta(
+                    conn,
+                    tipo_consulta="CONSULTA-IDENT",
+                    ambiente="1",
+                    resultado=result,
+                    cpf=CPF,
+                    per_apur=per,
+                    xml_resposta=result.get("xml_resposta"),
+                    origem="download_s5002_retry",
+                )
+
                 if "dias 1 e 7" in str(desc):
                     print("\n  ** DOWNLOAD BLOQUEADO DIAS 1-7 DO MÊS **")
-                    print("  ** Hoje é dia 4 de abril. Tentar após dia 8. **")
+                    print("  ** Prova de bloqueio salva em esocial_envios! **")
                 break
         except Exception as e:
             print(f"  ERRO: {e}")
             time.sleep(RETRY_DELAY)
 
 print("\n" + "=" * 60)
+conn.close()

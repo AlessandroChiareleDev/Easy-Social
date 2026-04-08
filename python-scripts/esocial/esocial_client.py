@@ -533,13 +533,15 @@ class ESocialClient:
         if desc is not None:
             resultado["descricao"] = desc.text
 
-        resultado["sucesso"] = resultado["codigo_resposta"] in ("201", "101")
+        # 201 = OK, 101 = em processamento, 203 = há mais eventos (paginação)
+        resultado["sucesso"] = resultado["codigo_resposta"] in ("201", "101", "203")
 
         # Eventos identificados
         for id_el in root.findall(".//{*}id"):
             evt = {
                 "id": id_el.text,
                 "nrRec": None,
+                "tipo": ESocialClient._inferir_tipo_evento(id_el.text) if id_el.text else None,
             }
             # Try to find sibling nrRec within the same parent
             parent = id_el.getparent() if hasattr(id_el, 'getparent') else None
@@ -550,6 +552,27 @@ class ESocialClient:
             resultado["eventos"].append(evt)
 
         return resultado
+
+    @staticmethod
+    def _inferir_tipo_evento(event_id: str) -> str | None:
+        """
+        Infere o tipo de evento eSocial a partir do padrão do ID.
+        IDs auto-gerados: ID + dígito + 19 zeros + nrRec
+          dígito 1 = S-5001 (INSS), 2 = S-5002 (IRRF), 3 = S-5003
+        IDs empregador: ID + CNPJ(8) + data/seq
+        """
+        if not event_id or len(event_id) < 22 or not event_id.startswith("ID"):
+            return None
+        after_id = event_id[2:]  # remove "ID"
+        prefix = after_id[0]
+        rest = after_id[1:20]  # chars 1-19
+        if rest == "0" * 19:
+            # Auto-generated totalizador
+            tipo_map = {"1": "S-5001", "2": "S-5002", "3": "S-5003"}
+            return tipo_map.get(prefix, f"S-500{prefix}")
+        else:
+            # Employer event — can't tell exact type without more context
+            return "EMPREGADOR"
 
     # ── Solicitar Download ────────────────────────────────────────
 

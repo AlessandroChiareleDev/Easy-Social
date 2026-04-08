@@ -37,9 +37,12 @@ const navGroups = [
       { to: '/bot', label: 'Robô eSocial', icon: 'bot' },
       { to: '/esocial', label: 'eSocial S-1010', icon: 'esocial' },
       { to: '/explorador', label: 'Explorador', icon: 'explorador' },
-      { to: '/pipeline-audit', label: 'Pipeline Audit', icon: 'check' },
-      { to: '/prova', label: 'Prova de Correção', icon: 'check' },
     ],
+  },
+  {
+    id: 'logs',
+    label: 'Logs de Sistema',
+    items: [{ to: '/logs', label: 'Logs de Sistema', icon: 'check' }],
   },
 ]
 

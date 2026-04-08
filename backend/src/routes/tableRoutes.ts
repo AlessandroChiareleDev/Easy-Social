@@ -8,14 +8,13 @@ const databaseService = new DatabaseService();
 
 /** Whitelist of allowed table names */
 const ALLOWED_TABLES = [
-  "analise_natureza",
-  "analise_natureza_certo",
-  "dinamica",
-  "tabela_eventos_gl",
-  "tabela_eb",
-  "tabela_cruzamento",
-  "tabela3_esocial_oficial",
+  "cruzamento_eb",
+  "rubrica_corrections",
+  "esocial_depara",
   "eb_skills_base_legal",
+  "esocial_envios",
+  "tabela3_esocial_oficial",
+  "tabela_marcos",
 ];
 
 /**
@@ -30,7 +29,7 @@ router.get("/tables", async (_req, res) => {
         SELECT DISTINCT table_name
         FROM information_schema.tables
         WHERE table_schema = 'public'
-        AND table_name IN ('analise_natureza', 'analise_natureza_certo', 'dinamica', 'tabela_eventos_gl', 'tabela_eb', 'tabela_cruzamento');
+        AND table_name IN ('cruzamento_eb', 'rubrica_corrections', 'esocial_depara', 'eb_skills_base_legal', 'esocial_envios', 'tabela3_esocial_oficial', 'tabela_marcos');
       `);
       const tableNames = result.rows.map((row: any) => row.table_name);
       return res.status(200).json({ tables: tableNames });
@@ -123,6 +122,139 @@ router.get("/tables/:tableName/columns", async (req, res) => {
 
     const columns = await databaseService.getColumnNames(tableName);
     return res.status(200).json({ columns });
+  } catch (error: any) {
+    return res.status(500).json({ error: error.message });
+  }
+});
+
+/**
+ * GET /api/envios
+ * Lista envios ao eSocial com filtros (sem exigir admin)
+ */
+router.get("/envios", async (req, res) => {
+  try {
+    const {
+      tipo_evento,
+      ambiente,
+      status,
+      desde,
+      ate,
+      limit = "50",
+      offset = "0",
+    } = req.query;
+
+    const conditions: string[] = [];
+    const params: any[] = [];
+    let pi = 1;
+
+    if (tipo_evento) {
+      conditions.push(`tipo_evento = $${pi++}`);
+      params.push(tipo_evento);
+    }
+    if (ambiente) {
+      conditions.push(`ambiente = $${pi++}`);
+      params.push(ambiente);
+    }
+    if (status) {
+      conditions.push(`status = $${pi++}`);
+      params.push(status);
+    }
+    if (desde) {
+      conditions.push(`created_at >= $${pi++}`);
+      params.push(desde);
+    }
+    if (ate) {
+      conditions.push(`created_at <= $${pi++}`);
+      params.push(ate);
+    }
+
+    const where =
+      conditions.length > 0 ? `WHERE ${conditions.join(" AND ")}` : "";
+    const safeLimit = Math.min(parseInt(limit as string) || 50, 200);
+    const safeOffset = parseInt(offset as string) || 0;
+
+    const client = await pool.connect();
+    try {
+      const tableCheck = await client.query(
+        `SELECT EXISTS (SELECT 1 FROM information_schema.tables WHERE table_name = 'esocial_envios')`,
+      );
+      if (!tableCheck.rows[0].exists) {
+        return res.json({ success: true, total: 0, envios: [] });
+      }
+
+      const countResult = await client.query(
+        `SELECT COUNT(*) FROM esocial_envios ${where}`,
+        params,
+      );
+
+      const result = await client.query(
+        `SELECT id, tipo_evento, modo, status, protocolo_envio,
+                codigo_resposta, descricao_resposta, total_eventos,
+                created_at, ambiente, ini_valid, rubrica_detalhes,
+                rubrica_ids, nr_recibo, updated_at, ocorrencias
+         FROM esocial_envios ${where}
+         ORDER BY created_at DESC
+         LIMIT $${pi++} OFFSET $${pi++}`,
+        [...params, safeLimit, safeOffset],
+      );
+
+      return res.json({
+        success: true,
+        total: parseInt(countResult.rows[0].count),
+        envios: result.rows,
+      });
+    } finally {
+      client.release();
+    }
+  } catch (error: any) {
+    return res.status(500).json({ error: error.message });
+  }
+});
+
+/**
+ * GET /api/envios/resumo
+ * Resumo de envios (totais por tipo, status, ambiente) — sem exigir admin
+ */
+router.get("/envios/resumo", async (_req, res) => {
+  try {
+    const client = await pool.connect();
+    try {
+      const tableCheck = await client.query(
+        `SELECT EXISTS (SELECT 1 FROM information_schema.tables WHERE table_name = 'esocial_envios')`,
+      );
+      if (!tableCheck.rows[0].exists) {
+        return res.json({
+          success: true,
+          resumo: { total: 0, por_tipo: [], por_status: [], por_ambiente: [] },
+        });
+      }
+
+      const [totalRes, porTipoRes, porStatusRes, porAmbienteRes] =
+        await Promise.all([
+          client.query(`SELECT COUNT(*) FROM esocial_envios`),
+          client.query(
+            `SELECT tipo_evento, COUNT(*) as total FROM esocial_envios GROUP BY tipo_evento ORDER BY total DESC`,
+          ),
+          client.query(
+            `SELECT status, COUNT(*) as total FROM esocial_envios GROUP BY status ORDER BY total DESC`,
+          ),
+          client.query(
+            `SELECT ambiente, COUNT(*) as total FROM esocial_envios GROUP BY ambiente ORDER BY total DESC`,
+          ),
+        ]);
+
+      return res.json({
+        success: true,
+        resumo: {
+          total: parseInt(totalRes.rows[0].count),
+          por_tipo: porTipoRes.rows,
+          por_status: porStatusRes.rows,
+          por_ambiente: porAmbienteRes.rows,
+        },
+      });
+    } finally {
+      client.release();
+    }
   } catch (error: any) {
     return res.status(500).json({ error: error.message });
   }

@@ -473,7 +473,7 @@
             </div>
 
             <!-- STEP 1: Drag & Drop -->
-            <div v-if="!importing && !importResult">
+            <div v-if="!importing && !importResult && !uploadSending">
               <div
                 class="drop-zone"
                 :class="{ 'drop-zone--active': dragOver, 'drop-zone--has-files': uploadFiles.length > 0 }"
@@ -513,15 +513,12 @@
                   <p v-if="uploadDetectedPeriod" class="text-sm text-[#5ac8f5] mt-1">
                     Período detectado: <strong>{{ uploadDetectedPeriod }}</strong>
                   </p>
-                  <p v-if="uploadSending" class="text-sm text-yellow-400 mt-2">
-                    Enviando lote {{ uploadBatchCurrent }}/{{ uploadBatchTotal }}...
-                  </p>
                 </div>
               </div>
 
               <button
                 @click="startUploadImport"
-                :disabled="uploadFiles.length === 0 || uploadSending"
+                :disabled="uploadFiles.length === 0"
                 class="btn-search w-full justify-center mt-4"
               >
                 <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -529,14 +526,32 @@
                   <polyline points="17 8 12 3 7 8" />
                   <line x1="12" y1="3" x2="12" y2="15" />
                 </svg>
-                {{ uploadSending ? 'Enviando...' : 'Iniciar Importação' }}
+                Iniciar Importação
               </button>
+            </div>
+
+            <!-- STEP 1.5: Upload progress -->
+            <div v-if="uploadSending && !importing" class="text-center py-8">
+              <div class="loading-spinner mx-auto"></div>
+              <p class="text-white mt-4 font-medium">Fase 1 — Enviando arquivos para o servidor...</p>
+              <div class="progress-bar-container mt-4">
+                <div class="progress-bar" :style="{ width: uploadProgressPct + '%' }"></div>
+              </div>
+              <p class="text-2xl font-bold text-[var(--brain-blue)] mt-3">
+                {{ uploadProgressPct }}%
+              </p>
+              <p class="text-sm text-slate-300 mt-1">
+                Lote {{ uploadBatchCurrent }} de {{ uploadBatchTotal }}
+              </p>
+              <p class="text-xs text-slate-500 mt-1">
+                {{ uploadFiles.length.toLocaleString('pt-BR') }} arquivos XML · {{ (uploadTotalSize / 1024 / 1024).toFixed(1) }} MB
+              </p>
             </div>
 
             <!-- STEP 2: Importing progress -->
             <div v-if="importing" class="text-center py-8">
               <div class="loading-spinner mx-auto"></div>
-              <p class="text-white mt-4 font-medium">Importando XMLs...</p>
+              <p class="text-white mt-4 font-medium">Fase 2 — Importando XMLs...</p>
               <div class="progress-bar-container mt-4">
                 <div class="progress-bar" :style="{ width: importProgressPct + '%' }"></div>
               </div>
@@ -728,6 +743,11 @@ const uploadDetectedPeriod = ref('')
 const uploadSending = ref(false)
 const uploadBatchCurrent = ref(0)
 const uploadBatchTotal = ref(0)
+
+const uploadProgressPct = computed(() => {
+  if (uploadBatchTotal.value === 0) return 0
+  return Math.round((uploadBatchCurrent.value / uploadBatchTotal.value) * 100)
+})
 
 const eventTypes = [
   'S-1010',
@@ -1006,6 +1026,8 @@ async function startUploadImport() {
     for (let i = 0; i < files.length; i += BATCH_SIZE) {
       const batch = files.slice(i, i + BATCH_SIZE)
       uploadBatchCurrent.value = Math.floor(i / BATCH_SIZE) + 1
+      // Yield to browser so Vue can repaint the progress bar
+      await new Promise(r => setTimeout(r, 0))
       const formData = new FormData()
       for (const f of batch) {
         formData.append('files', f) 

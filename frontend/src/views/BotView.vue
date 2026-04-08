@@ -99,8 +99,9 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted, nextTick } from 'vue'
 import axios from 'axios'
+import { PYTHON_API } from '../lib/api'
 
-const BOT_API = 'http://localhost:8000'
+const BOT_API = PYTHON_API
 
 const botStatus = ref('parado')
 const resumo = ref<any>(null)

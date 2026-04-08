@@ -682,8 +682,9 @@
 
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue'
+import { PYTHON_API } from '../lib/api'
 
-const API = 'http://localhost:8000/api/explorador'
+const API = `${PYTHON_API}/api/explorador`
 
 // ── State ──
 const stats = ref<any>(null)

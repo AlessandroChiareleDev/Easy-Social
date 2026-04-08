@@ -22,4 +22,4 @@ export const API_URL: string = isLocal
 /** Python backend (FastAPI, port 8000) — returns base like "http://…" (no trailing slash) */
 export const PYTHON_API: string = isLocal
   ? import.meta.env.VITE_PYTHON_API_URL || 'http://localhost:8000'
-  : import.meta.env.VITE_TUNNEL_PYTHON || 'http://localhost:8000'
+  : import.meta.env.VITE_TUNNEL_PYTHON || '/python-api'

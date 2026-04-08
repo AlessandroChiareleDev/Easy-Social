@@ -1,4 +1,4 @@
-<template>
+﻿<template>
   <div class="explorador-view">
     <!-- Header -->
     <div class="flex items-center justify-between mb-6">
@@ -21,7 +21,7 @@
           Explorador de Eventos
         </h1>
         <p class="text-sm text-slate-400 mt-1">
-          Buscar e analisar eventos eSocial por CPF, rubrica, período e mais
+          Buscar e analisar eventos eSocial por CPF, rubrica, per├¡odo e mais
         </p>
       </div>
       <button @click="showImport = true" class="import-btn">
@@ -38,7 +38,7 @@
           <polyline points="17 8 12 3 7 8" />
           <line x1="12" y1="3" x2="12" y2="15" />
         </svg>
-        Importar Período
+        Importar Per├¡odo
       </button>
     </div>
 
@@ -67,7 +67,7 @@
         </div>
         <div>
           <p class="stat-value">{{ stats.total_cpfs.toLocaleString('pt-BR') }}</p>
-          <p class="stat-label">CPFs Únicos</p>
+          <p class="stat-label">CPFs ├Ünicos</p>
         </div>
       </div>
       <div class="stat-card">
@@ -81,7 +81,7 @@
         </div>
         <div>
           <p class="stat-value">{{ stats.periodos.length }}</p>
-          <p class="stat-label">Períodos Importados</p>
+          <p class="stat-label">Per├¡odos Importados</p>
         </div>
       </div>
       <div class="stat-card" :class="{ 'stat-card--alert': stats.cpfs_irrf_11 > 0 }">
@@ -107,9 +107,9 @@
     <!-- Filters -->
     <div class="filter-card">
       <div class="filter-grid">
-        <!-- Período -->
+        <!-- Per├¡odo -->
         <div class="filter-group">
-          <label class="filter-label">Período</label>
+          <label class="filter-label">Per├¡odo</label>
           <select v-model="filters.per_apur" class="filter-select" @change="buscar(1)">
             <option value="">Todos</option>
             <option v-for="p in stats?.periodos ?? []" :key="p" :value="p">
@@ -188,7 +188,7 @@
 
         <!-- codIncIRRF -->
         <div class="filter-group">
-          <label class="filter-label">Cód. Inc. IRRF</label>
+          <label class="filter-label">C├│d. Inc. IRRF</label>
           <input
             v-model="filters.cod_inc_irrf"
             type="text"
@@ -200,7 +200,7 @@
 
         <!-- Nr Recibo -->
         <div class="filter-group filter-group--wide">
-          <label class="filter-label">Nº Recibo</label>
+          <label class="filter-label">N┬║ Recibo</label>
           <input
             v-model="filters.nr_recibo"
             type="text"
@@ -242,7 +242,7 @@
           <span class="text-white font-semibold">{{ result.total.toLocaleString('pt-BR') }}</span>
           evento{{ result.total !== 1 ? 's' : '' }} encontrado{{ result.total !== 1 ? 's' : '' }}
           <span v-if="result.pages > 1" class="text-slate-500">
-            &mdash; Página {{ result.page }} de {{ result.pages }}</span
+            &mdash; P├ígina {{ result.page }} de {{ result.pages }}</span
           >
         </p>
       </div>
@@ -254,7 +254,7 @@
             <tr>
               <th class="w-24">Evento</th>
               <th class="w-32">CPF</th>
-              <th class="w-24">Período</th>
+              <th class="w-24">Per├¡odo</th>
               <th>Detalhes</th>
               <th class="w-20 text-center">Rubricas</th>
               <th class="w-36">Processado</th>
@@ -275,15 +275,15 @@
                 }}</span>
               </td>
               <td class="font-mono text-xs text-slate-300">
-                {{ evt.cpf ? formatCpf(evt.cpf) : '—' }}
+                {{ evt.cpf ? formatCpf(evt.cpf) : 'ÔÇö' }}
               </td>
-              <td class="text-slate-300 text-sm">{{ evt.per_apur ?? '—' }}</td>
+              <td class="text-slate-300 text-sm">{{ evt.per_apur ?? 'ÔÇö' }}</td>
               <td class="text-xs text-slate-400 max-w-[300px] truncate">{{ eventSummary(evt) }}</td>
               <td class="text-center">
                 <span v-if="evt.rubricas?.length > 0" class="rubrica-count">{{
                   evt.rubricas.length
                 }}</span>
-                <span v-else class="text-slate-400">—</span>
+                <span v-else class="text-slate-400">ÔÇö</span>
               </td>
               <td class="text-xs text-slate-500">{{ formatDateTime(evt.dt_processamento) }}</td>
               <td class="text-center">
@@ -295,7 +295,7 @@
                 <span
                   v-else-if="evt.cd_resposta"
                   class="status-dot status-dot--err"
-                  :title="'Código: ' + evt.cd_resposta"
+                  :title="'C├│digo: ' + evt.cd_resposta"
                 ></span>
                 <span v-else class="status-dot status-dot--none" title="Sem recibo"></span>
               </td>
@@ -314,11 +314,11 @@
                   <div class="detail-meta">
                     <div class="meta-item">
                       <span class="meta-label">ID Evento</span>
-                      <span class="meta-value font-mono text-xs">{{ evt.id_evento ?? '—' }}</span>
+                      <span class="meta-value font-mono text-xs">{{ evt.id_evento ?? 'ÔÇö' }}</span>
                     </div>
                     <div class="meta-item">
-                      <span class="meta-label">Nº Recibo</span>
-                      <span class="meta-value font-mono text-xs">{{ evt.nr_recibo ?? '—' }}</span>
+                      <span class="meta-label">N┬║ Recibo</span>
+                      <span class="meta-value font-mono text-xs">{{ evt.nr_recibo ?? 'ÔÇö' }}</span>
                     </div>
                     <div class="meta-item">
                       <span class="meta-label">Arquivo</span>
@@ -343,7 +343,7 @@
                     <table class="rubricas-table">
                       <thead>
                         <tr>
-                          <th>Código</th>
+                          <th>C├│digo</th>
                           <th>Tab</th>
                           <th>Natureza</th>
                           <th>Tipo</th>
@@ -356,10 +356,10 @@
                       <tbody>
                         <tr v-for="(rub, ri) in evt.rubricas" :key="ri">
                           <td class="font-mono font-semibold text-white">{{ rub.cod_rubr }}</td>
-                          <td class="text-slate-400">{{ rub.ide_tab_rubr ?? '—' }}</td>
-                          <td class="text-slate-300">{{ rub.nat_rubr ?? '—' }}</td>
-                          <td class="text-slate-400">{{ rub.tp_rubr ?? '—' }}</td>
-                          <td class="text-slate-300">{{ rub.cod_inc_cp ?? '—' }}</td>
+                          <td class="text-slate-400">{{ rub.ide_tab_rubr ?? 'ÔÇö' }}</td>
+                          <td class="text-slate-300">{{ rub.nat_rubr ?? 'ÔÇö' }}</td>
+                          <td class="text-slate-400">{{ rub.tp_rubr ?? 'ÔÇö' }}</td>
+                          <td class="text-slate-300">{{ rub.cod_inc_cp ?? 'ÔÇö' }}</td>
                           <td
                             :class="
                               rub.cod_inc_irrf === '11'
@@ -367,16 +367,16 @@
                                 : 'text-slate-300'
                             "
                           >
-                            {{ rub.cod_inc_irrf ?? '—' }}
+                            {{ rub.cod_inc_irrf ?? 'ÔÇö' }}
                           </td>
-                          <td class="text-slate-300">{{ rub.cod_inc_fgts ?? '—' }}</td>
+                          <td class="text-slate-300">{{ rub.cod_inc_fgts ?? 'ÔÇö' }}</td>
                           <td class="font-mono text-emerald-400">
                             {{
                               rub.vr_rubr
                                 ? Number(rub.vr_rubr).toLocaleString('pt-BR', {
                                     minimumFractionDigits: 2,
                                   })
-                                : '—'
+                                : 'ÔÇö'
                             }}
                           </td>
                         </tr>
@@ -411,7 +411,7 @@
           :disabled="result.page <= 1"
           @click="buscar(result.page - 1)"
           class="page-btn"
-          aria-label="Página anterior"
+          aria-label="P├ígina anterior"
         >
           <svg
             class="w-4 h-4"
@@ -438,7 +438,7 @@
           :disabled="result.page >= result.pages"
           @click="buscar(result.page + 1)"
           class="page-btn"
-          aria-label="Próxima página"
+          aria-label="Pr├│xima p├ígina"
         >
           <svg
             class="w-4 h-4"
@@ -459,13 +459,19 @@
         <div v-if="showImport" class="modal-overlay" @click.self="showImport = false">
           <div class="modal-content">
             <div class="flex items-center justify-between mb-6">
-              <h2 class="text-xl font-bold text-white">Importar Período</h2>
+              <h2 class="text-xl font-bold text-white">Importar Per├¡odo</h2>
               <button
                 @click="showImport = false"
                 class="text-slate-400 hover:text-white transition-colors"
                 aria-label="Fechar modal"
               >
-                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <svg
+                  class="w-5 h-5"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
                   <path d="M18 6L6 18M6 6l12 12" />
                 </svg>
               </button>
@@ -485,7 +491,7 @@
                 </p>
               </div>
               <div class="mb-6">
-                <label class="filter-label">Período (opcional)</label>
+                <label class="filter-label">Per├¡odo (opcional)</label>
                 <input
                   v-model="importPeriodo"
                   type="text"
@@ -494,7 +500,7 @@
                   maxlength="7"
                 />
                 <p class="text-xs text-slate-500 mt-1">
-                  Formato: AAAA-MM. Se não informar, será detectado dos XMLs
+                  Formato: AAAA-MM. Se n├úo informar, ser├í detectado dos XMLs
                 </p>
               </div>
               <button
@@ -502,16 +508,22 @@
                 :disabled="!importPasta.trim()"
                 class="btn-search w-full justify-center"
               >
-                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <svg
+                  class="w-4 h-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
                   <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
                   <polyline points="17 8 12 3 7 8" />
                   <line x1="12" y1="3" x2="12" y2="15" />
                 </svg>
-                Iniciar Importação
+                Iniciar Importa├º├úo
               </button>
             </div>
 
-            <!-- STEP 2: Importing progress -->
+            <!-- Importing progress -->
             <div v-if="importing" class="text-center py-8">
               <div class="loading-spinner mx-auto"></div>
               <p class="text-white mt-4 font-medium">Importando XMLs...</p>
@@ -552,7 +564,7 @@
               </p>
             </div>
 
-            <!-- STEP 3: Import result -->
+            <!-- Import result -->
             <div v-if="importResult">
               <div
                 class="import-result"
@@ -561,7 +573,10 @@
                 <svg
                   v-if="importResult.erros === 0"
                   class="w-12 h-12 text-emerald-400 mx-auto mb-3"
-                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
                 >
                   <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
                   <polyline points="22 4 12 14.01 9 11.01" />
@@ -569,13 +584,18 @@
                 <svg
                   v-else
                   class="w-12 h-12 text-amber-400 mx-auto mb-3"
-                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
                 >
-                  <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" />
+                  <path
+                    d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"
+                  />
                   <line x1="12" y1="9" x2="12" y2="13" />
                   <line x1="12" y1="17" x2="12.01" y2="17" />
                 </svg>
-                <h3 class="text-lg font-bold text-white mb-2">Importação Concluída</h3>
+                <h3 class="text-lg font-bold text-white mb-2">Importa├º├úo Conclu├¡da</h3>
                 <div class="grid grid-cols-2 gap-3 text-sm mt-4">
                   <div class="text-slate-400">Arquivos processados</div>
                   <div class="text-white font-mono">
@@ -586,7 +606,10 @@
                     {{ importResult.importados.toLocaleString('pt-BR') }}
                   </div>
                   <div class="text-slate-400">Erros</div>
-                  <div :class="importResult.erros > 0 ? 'text-red-400' : 'text-slate-500'" class="font-mono">
+                  <div
+                    :class="importResult.erros > 0 ? 'text-red-400' : 'text-slate-500'"
+                    class="font-mono"
+                  >
                     {{ importResult.erros }}
                   </div>
                   <div class="text-slate-400">Tempo</div>
@@ -605,7 +628,7 @@
     <!-- Import History (bottom section) -->
     <div v-if="importacoes.length > 0" class="imports-section">
       <h3 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-3">
-        Importações Realizadas
+        Importa├º├Áes Realizadas
       </h3>
       <div class="imports-list">
         <div v-for="imp in importacoes" :key="imp.id" class="import-item">
@@ -621,7 +644,7 @@
             </svg>
             <div class="flex-1 min-w-0">
               <p class="text-sm text-white truncate">
-                {{ imp.periodo ?? 'Sem período' }} &mdash;
+                {{ imp.periodo ?? 'Sem per├¡odo' }} &mdash;
                 {{ imp.total_arquivos.toLocaleString('pt-BR') }} arquivos
               </p>
               <p class="text-xs text-slate-500 truncate">{{ imp.pasta }}</p>
@@ -637,8 +660,8 @@
           <button
             @click.stop="deletarImport(imp.id)"
             class="delete-import-btn"
-            title="Remover importação"
-            aria-label="Remover importação"
+            title="Remover importa├º├úo"
+            aria-label="Remover importa├º├úo"
           >
             <svg
               class="w-3.5 h-3.5"
@@ -663,7 +686,7 @@ import { PYTHON_API } from '../lib/api'
 
 const API = `${PYTHON_API}/api/explorador`
 
-// ── State ──
+// ÔöÇÔöÇ State ÔöÇÔöÇ
 const stats = ref<any>(null)
 const result = ref<any>(null)
 const loading = ref(false)
@@ -723,7 +746,7 @@ const eventTypes = [
   'S-5013',
 ]
 
-// ── Computed ──
+// ÔöÇÔöÇ Computed ÔöÇÔöÇ
 const visiblePages = computed(() => {
   if (!result.value) return []
   const total = result.value.pages
@@ -744,13 +767,13 @@ const visiblePages = computed(() => {
   return pages
 })
 
-// ── Lifecycle ──
+// ÔöÇÔöÇ Lifecycle ÔöÇÔöÇ
 onMounted(async () => {
   await Promise.all([loadStats(), loadImportacoes()])
   buscar(1)
 })
 
-// ── API calls ──
+// ÔöÇÔöÇ API calls ÔöÇÔöÇ
 async function loadStats() {
   try {
     const res = await fetch(`${API}/estatisticas`)
@@ -770,7 +793,7 @@ async function loadImportacoes() {
 }
 
 async function buscar(page: number = 1) {
-  // Sync cpfSearch → filters.cpf before searching
+  // Sync cpfSearch ÔåÆ filters.cpf before searching
   const cleanCpf = cpfSearch.value.replace(/\D/g, '')
   if (cleanCpf.length >= 3) {
     filters.value.cpf = cleanCpf
@@ -865,7 +888,7 @@ function toggleExpand(id: number) {
   expandedId.value = expandedId.value === id ? null : id
 }
 
-// Import — Drag & Drop upload
+// Import
 async function iniciarImport() {
   importing.value = true
   importResult.value = null
@@ -877,7 +900,7 @@ async function iniciarImport() {
   importProgressEta.value = ''
   importProgressLastError.value = ''
 
-  // Poll progress — also detects when import finishes
+  // Poll progress ÔÇö also detects when import finishes
   progressInterval = setInterval(async () => {
     try {
       const res = await fetch(`${API}/progresso`)
@@ -891,6 +914,7 @@ async function iniciarImport() {
           importProgressErrors.value = prog.errors || 0
           importProgressRate.value = prog.rate || 0
           importProgressLastError.value = prog.last_error || ''
+          // ETA
           if (prog.rate > 0) {
             const remaining = prog.total - prog.processed
             const etaSec = Math.round(remaining / prog.rate)
@@ -931,13 +955,13 @@ async function iniciarImport() {
     })
     if (!res.ok) {
       const err = await res.json().catch(() => ({ detail: 'Erro desconhecido' }))
-      alert(err.detail || 'Erro na importação')
+      alert(err.detail || 'Erro na importa├º├úo')
       importing.value = false
       if (progressInterval) clearInterval(progressInterval)
     }
-    // If ok, the background thread is running — polling will detect completion
+    // If ok, the background thread is running ÔÇö polling will detect completion
   } catch (e) {
-    alert('Erro de conexão com o servidor')
+    alert('Erro de conex├úo com o servidor')
     importing.value = false
     if (progressInterval) clearInterval(progressInterval)
   }
@@ -954,7 +978,7 @@ function fecharImport() {
 }
 
 async function deletarImport(id: number) {
-  if (!confirm('Remover esta importação e todos os seus eventos?')) return
+  if (!confirm('Remover esta importa├º├úo e todos os seus eventos?')) return
   try {
     const res = await fetch(`${API}/importacoes/${id}`, { method: 'DELETE' })
     if (res.ok) {
@@ -966,7 +990,7 @@ async function deletarImport(id: number) {
   }
 }
 
-// ── Formatting helpers ──
+// ÔöÇÔöÇ Formatting helpers ÔöÇÔöÇ
 function formatCpf(cpf: string): string {
   if (!cpf || cpf.length !== 11) return cpf ?? ''
   return `${cpf.slice(0, 3)}.${cpf.slice(3, 6)}.${cpf.slice(6, 9)}-${cpf.slice(9)}`
@@ -981,7 +1005,7 @@ function formatPeriodo(p: string): string {
     '',
     'Janeiro',
     'Fevereiro',
-    'Março',
+    'Mar├ºo',
     'Abril',
     'Maio',
     'Junho',
@@ -996,7 +1020,7 @@ function formatPeriodo(p: string): string {
 }
 
 function formatDateTime(dt: string | null): string {
-  if (!dt) return '—'
+  if (!dt) return 'ÔÇö'
   try {
     const d = new Date(dt)
     return (
@@ -1033,7 +1057,7 @@ function eventSummary(evt: any): string {
   if (d.codCateg) parts.push(`Cat: ${d.codCateg}`)
   if (d.dtPgto) parts.push(`Pgto: ${d.dtPgto}`)
   if (d.vrLiq)
-    parts.push(`Líq: R$ ${Number(d.vrLiq).toLocaleString('pt-BR', { minimumFractionDigits: 2 })}`)
+    parts.push(`L├¡q: R$ ${Number(d.vrLiq).toLocaleString('pt-BR', { minimumFractionDigits: 2 })}`)
   if (d.cdResposta) parts.push(d.descResposta ?? `Resp: ${d.cdResposta}`)
   return parts.join(' \u2022 ') || (evt.arquivo_origem ?? '')
 }
@@ -1051,9 +1075,9 @@ function flatDadosJson(dados: any): Record<string, string> {
 </script>
 
 <style scoped>
-/* ═══════════════════════════════════════════════════
-   Explorador de Eventos — Neural Glassmorphism Design
-   ═══════════════════════════════════════════════════ */
+/* ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ
+   Explorador de Eventos ÔÇö Neural Glassmorphism Design
+   ÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉÔòÉ */
 
 .explorador-view {
   --brain-blue: #5ac8f5;
@@ -1066,7 +1090,7 @@ function flatDadosJson(dados: any): Record<string, string> {
   max-width: 1200px;
 }
 
-/* ── Import Button ───────────────────────────────── */
+/* ÔöÇÔöÇ Import Button ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ */
 .import-btn {
   display: flex;
   align-items: center;
@@ -1089,7 +1113,7 @@ function flatDadosJson(dados: any): Record<string, string> {
   box-shadow: 0 0 16px rgba(90, 200, 245, 0.15);
 }
 
-/* ── Stats Cards ─────────────────────────────────── */
+/* ÔöÇÔöÇ Stats Cards ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ */
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1173,7 +1197,7 @@ function flatDadosJson(dados: any): Record<string, string> {
   margin-top: 2px;
 }
 
-/* ── Filter Card ─────────────────────────────────── */
+/* ÔöÇÔöÇ Filter Card ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ */
 .filter-card {
   background: var(--glass-bg);
   backdrop-filter: blur(16px);
@@ -1300,7 +1324,7 @@ function flatDadosJson(dados: any): Record<string, string> {
   border-color: rgba(255, 255, 255, 0.2);
 }
 
-/* ── CPF Autocomplete ────────────────────────────── */
+/* ÔöÇÔöÇ CPF Autocomplete ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ */
 .cpf-search-container {
   position: relative;
 }
@@ -1360,7 +1384,7 @@ function flatDadosJson(dados: any): Record<string, string> {
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-/* ── Results ─────────────────────────────────────── */
+/* ÔöÇÔöÇ Results ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ */
 .loading-container {
   text-align: center;
   padding: 48px 0;
@@ -1440,7 +1464,7 @@ function flatDadosJson(dados: any): Record<string, string> {
   background: rgba(90, 200, 245, 0.05) !important;
 }
 
-/* ── Event badges ────────────────────────────────── */
+/* ÔöÇÔöÇ Event badges ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ */
 .event-badge {
   display: inline-block;
   padding: 3px 8px;
@@ -1526,7 +1550,7 @@ function flatDadosJson(dados: any): Record<string, string> {
   background: #475569;
 }
 
-/* ── Detail row ──────────────────────────────────── */
+/* ÔöÇÔöÇ Detail row ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ */
 .detail-row td {
   padding: 0 !important;
   border-bottom: 1px solid rgba(90, 200, 245, 0.08) !important;
@@ -1591,13 +1615,13 @@ function flatDadosJson(dados: any): Record<string, string> {
   border-bottom: 1px solid rgba(255, 255, 255, 0.03);
 }
 
-/* ── Empty state ─────────────────────────────────── */
+/* ÔöÇÔöÇ Empty state ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ */
 .empty-state {
   text-align: center;
   padding: 48px 0;
 }
 
-/* ── Pagination ──────────────────────────────────── */
+/* ÔöÇÔöÇ Pagination ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ */
 .pagination {
   display: flex;
   align-items: center;
@@ -1646,7 +1670,7 @@ function flatDadosJson(dados: any): Record<string, string> {
   cursor: default !important;
 }
 
-/* ── Modal ───────────────────────────────────────── */
+/* ÔöÇÔöÇ Modal ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ */
 .modal-overlay {
   position: fixed;
   inset: 0;
@@ -1682,7 +1706,7 @@ function flatDadosJson(dados: any): Record<string, string> {
   transform: scale(0.95);
 }
 
-/* ── Progress bar ────────────────────────────────── */
+/* ÔöÇÔöÇ Progress bar ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ */
 .progress-bar-container {
   width: 100%;
   height: 6px;
@@ -1699,7 +1723,7 @@ function flatDadosJson(dados: any): Record<string, string> {
   box-shadow: 0 0 8px rgba(90, 200, 245, 0.4);
 }
 
-/* ── Import Result ───────────────────────────────── */
+/* ÔöÇÔöÇ Import Result ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ */
 .import-result {
   text-align: center;
   padding: 20px;
@@ -1717,7 +1741,7 @@ function flatDadosJson(dados: any): Record<string, string> {
   border-color: rgba(245, 158, 11, 0.2);
 }
 
-/* ── Imports History ─────────────────────────────── */
+/* ÔöÇÔöÇ Imports History ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ */
 .imports-section {
   margin-top: 32px;
   padding-top: 24px;

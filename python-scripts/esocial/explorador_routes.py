@@ -1099,6 +1099,8 @@ async def dados_funcionarios_stats(per_apur: Optional[str] = Query(None)):
                     COUNT(DISTINCT e.cpf) FILTER (WHERE e.cpf IS NOT NULL) as total_cpfs,
                     COUNT(*) FILTER (WHERE e.tipo_evento = 'S-1200') as total_s1200,
                     COUNT(*) FILTER (WHERE e.tipo_evento = 'S-1210') as total_s1210,
+                    COUNT(DISTINCT e.cpf) FILTER (WHERE e.tipo_evento = 'S-1200' AND e.cpf IS NOT NULL) as cpfs_com_s1200,
+                    COUNT(DISTINCT e.cpf) FILTER (WHERE e.tipo_evento = 'S-1210' AND e.cpf IS NOT NULL) as cpfs_com_s1210,
                     COUNT(DISTINCT e.per_apur) as total_periodos,
                     COUNT(DISTINCT e.cpf) FILTER (
                         WHERE e.tipo_evento = 'S-1210'

@@ -714,6 +714,8 @@ class ESocialClient:
     def _parsear_arquivo_download(arquivo_el, ns: str = None) -> dict | None:
         """Parseia um elemento arquivo do download."""
         # Find evento and recibo inside arquivo
+        # Format 1 (download por ID): <arquivo><evento>...<recibo>...
+        # Format 2 (download por nrRecibo): <arquivo><status>...<evt>...
         if ns:
             evento_el = arquivo_el.find(f"{{{ns}}}evento")
             recibo_el = arquivo_el.find(f"{{{ns}}}recibo")
@@ -721,15 +723,27 @@ class ESocialClient:
             evento_el = arquivo_el.find("{*}evento")
             recibo_el = arquivo_el.find("{*}recibo")
 
+        # Fallback: nrRecibo response uses <evt> instead of <evento>
+        evt_el = None
         if evento_el is None:
+            if ns:
+                evt_el = arquivo_el.find(f"{{{ns}}}evt")
+            else:
+                evt_el = arquivo_el.find("{*}evt")
+
+        if evento_el is None and evt_el is None:
             return None
 
-        # Extract inner eSocial from evento
+        # Extract inner eSocial
         inner_esocial = None
-        for child in evento_el:
+        source_el = evento_el if evento_el is not None else evt_el
+        for child in source_el:
             if "eSocial" in child.tag:
                 inner_esocial = child
                 break
+        # For <evt>, the eSocial might be the element itself if it wraps directly
+        if inner_esocial is None and evt_el is not None:
+            inner_esocial = evt_el
 
         arq = {
             "evento_xml": etree.tostring(inner_esocial, encoding="unicode") if inner_esocial is not None else None,
@@ -737,7 +751,7 @@ class ESocialClient:
             "cd_resposta": None,
         }
 
-        # Extract recibo info
+        # Extract recibo info from <recibo> element (download por ID format)
         if recibo_el is not None:
             recibo_inner = None
             for child in recibo_el:
@@ -751,5 +765,19 @@ class ESocialClient:
                 cd_resp = recibo_inner.find(".//{*}cdResposta")
                 if cd_resp is not None:
                     arq["cd_resposta"] = cd_resp.text
+
+        # Extract per-arquivo status (nrRecibo format has <status> inside <arquivo>)
+        if arq["cd_resposta"] is None:
+            status_el = arquivo_el.find("{*}status")
+            if status_el is not None:
+                cd_resp = status_el.find("{*}cdResposta")
+                if cd_resp is not None:
+                    arq["cd_resposta"] = cd_resp.text
+
+        # Extract nrRecibo from inner event data if not found in recibo element
+        if arq["nr_recibo"] is None and inner_esocial is not None:
+            nr_rec = inner_esocial.find(".//{*}nrRecArqBase")
+            if nr_rec is not None:
+                arq["nr_recibo"] = nr_rec.text
 
         return arq

@@ -942,6 +942,43 @@ async def listar_envios():
 # ── Editar Natureza da Rubrica ─────────────────────────────────────
 
 
+class EditIncidenciaRequest(BaseModel):
+    cod_rubrica: str
+    campo: str   # "inss_correto" | "irrf_correto" | "fgts_correto"
+    novo_valor: str  # código numérico (ex: "00", "11", "74")
+
+
+CAMPO_TO_COLUNA = {
+    "inss_correto": "incid_base_legal_inss",
+    "irrf_correto": "incid_base_legal_irrf",
+    "fgts_correto": "incid_base_legal_fgts",
+}
+
+
+@router.patch("/rubrica-incidencia")
+async def editar_incidencia(req: EditIncidenciaRequest):
+    """Atualiza uma incidência (INSS/IRRF/FGTS) da rubrica no cruzamento_eb."""
+    if req.campo not in CAMPO_TO_COLUNA:
+        raise HTTPException(status_code=400, detail=f"campo inválido: {req.campo}")
+    if not req.cod_rubrica or not req.novo_valor:
+        raise HTTPException(status_code=400, detail="cod_rubrica e novo_valor são obrigatórios")
+
+    coluna = CAMPO_TO_COLUNA[req.campo]
+    conn = _get_conn()
+    try:
+        with conn.cursor() as cur:
+            cur.execute(
+                f"UPDATE cruzamento_eb SET {coluna} = %s, envio_status = 'pendente', corrigido = FALSE WHERE cod_rubrica = %s",
+                (req.novo_valor, req.cod_rubrica),
+            )
+            if cur.rowcount == 0:
+                raise HTTPException(status_code=404, detail=f"Rubrica {req.cod_rubrica} não encontrada")
+            conn.commit()
+        return {"cod_rubrica": req.cod_rubrica, "campo": req.campo, "novo_valor": req.novo_valor}
+    finally:
+        conn.close()
+
+
 class EditNaturezaRequest(BaseModel):
     cod_rubrica: str
     nova_natureza: str  # código numérico da natureza (ex: "1803")

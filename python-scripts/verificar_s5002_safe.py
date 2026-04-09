@@ -12,6 +12,7 @@ Após o download, compara automaticamente com os dados PRÉ-pipeline
 documentados no prontuário.
 """
 import sys, os, json, re
+from datetime import datetime, timedelta
 sys.path.insert(0, os.path.dirname(__file__))
 
 import psycopg2
@@ -22,6 +23,11 @@ from esocial.envio_tracker import registrar_consulta
 
 CPF = "08132588983"
 PERIODO = "2024-12"
+# O pipeline rodou em 04/04/2026 (S-1299 fechou dez/2024), gerando novo S-5002.
+# O eSocial permite max 31 dias no range e dtFim até 1h antes de agora.
+_now = datetime.now()
+DT_INI = (_now - timedelta(days=30)).strftime("%Y-%m-%dT00:00:00")
+DT_FIM = (_now - timedelta(hours=2)).strftime("%Y-%m-%dT%H:%M:%S")
 
 # Dados PRÉ-pipeline (extraídos do prontuário) para comparação automática
 PRE_PIPELINE = {
@@ -175,12 +181,12 @@ def main():
     # ══════════════════════════════════════════════
     # CONSULTA 1/2: Buscar identificadores
     # ══════════════════════════════════════════════
-    print(f"\n  [1/2] Consultando identificadores do CPF {CPF} em {PERIODO}...")
+    print(f"\n  [1/2] Consultando identificadores do CPF {CPF} (dez/2024 a abr/2026)...")
 
     result = ESocialClient.consultar_identificadores_trabalhador(
         cpf=CPF,
-        dt_ini=f"{PERIODO}-01T00:00:00",
-        dt_fim=f"{PERIODO}-28T23:59:59",
+        dt_ini=DT_INI,
+        dt_fim=DT_FIM,
         pfx_data=pfx_data,
         password=senha,
         empregador=empregador,
@@ -211,6 +217,10 @@ def main():
     eventos = result.get("eventos", [])
     print(f"  ✅ {len(eventos)} eventos encontrados")
 
+    if result.get("codigo_resposta") == "203":
+        print(f"  ⚠️  Código 203 = há MAIS eventos (paginação). Pode não ter todos os S-5002.")
+        print(f"  Se não encontrar o S-5002 pós-pipeline, pode ser necessário ajustar dtIni.")
+
     por_tipo = {}
     for ev in eventos:
         tp = ev.get("tipo", "?")
@@ -227,16 +237,30 @@ def main():
         conn.close()
         return
 
-    ids = [e["id"] for e in s5002 if e.get("id")]
-    print(f"\n  S-5002 encontrados: {len(ids)} (IDs: {ids})")
+    # S-5002 são totalizadores — download por ID NÃO funciona (erro 401).
+    # Precisamos usar download por nrRecibo.
+    # Pegamos TODOS os S-5002 para comparar — o mais recente (nrRec mais alto) é o pós-pipeline.
+    nr_recibos = sorted([e["nrRec"] for e in s5002 if e.get("nrRec")])
+    print(f"\n  S-5002 encontrados: {len(s5002)}")
+    for e in s5002:
+        print(f"    ID: {e['id']}  nrRec: {e.get('nrRec', '?')}")
+    
+    if nr_recibos:
+        print(f"\n  nrRecibo mais antigo: {nr_recibos[0]}")
+        print(f"  nrRecibo mais recente: {nr_recibos[-1]} ← provável pós-pipeline")
+
+    if not nr_recibos:
+        print(f"\n  ❌ Nenhum nrRecibo encontrado nos S-5002!")
+        conn.close()
+        return
 
     # ══════════════════════════════════════════════
-    # CONSULTA 2/2: Download dos S-5002
+    # CONSULTA 2/2: Download dos S-5002 por nrRecibo
     # ══════════════════════════════════════════════
-    print(f"\n  [2/2] Baixando {len(ids)} S-5002...")
+    print(f"\n  [2/2] Baixando {len(nr_recibos)} S-5002 (por nrRecibo)...")
 
-    dl = ESocialClient.solicitar_download_por_id(
-        ids=ids,
+    dl = ESocialClient.solicitar_download_por_nrrecibo(
+        nr_recibos=nr_recibos,
         pfx_data=pfx_data,
         password=senha,
         empregador=empregador,
@@ -271,14 +295,20 @@ def main():
     print(f"  ✅ Download OK! {len(arquivos)} arquivo(s) recebido(s)")
     print(f"\n  📊 TOTAL CONSULTAS GASTAS: 2 ✅")
 
+    # Processar cada arquivo e encontrar o mais recente para comparação
+    xmls_validos = []
     for i, arq in enumerate(arquivos):
         xml = arq.get("evento_xml") or arq.get("xml_evento") or ""
         nr = arq.get("nr_recibo", "?")
-        print(f"\n  === S-5002 #{i+1} (recibo: {nr}) ===")
+        cd = arq.get("cd_resposta", "?")
+        print(f"\n  === S-5002 #{i+1} (recibo: {nr}, status: {cd}) ===")
+
+        if cd and cd not in ("201", "101", None, "?"):
+            print(f"  ⚠️  Status individual do arquivo: {cd} — pode ser erro parcial")
 
         if xml:
             # Salvar XML
-            fname = f"s5002_POS_pipeline_{PERIODO}_{i+1}.xml"
+            fname = f"s5002_{PERIODO}_{i+1}.xml"
             fpath = os.path.join(os.path.dirname(__file__), fname)
             with open(fpath, "w", encoding="utf-8") as f:
                 f.write(xml)
@@ -288,6 +318,12 @@ def main():
             nm = re.findall(r'<nmTrab>([^<]+)</nmTrab>', xml)
             if nm:
                 print(f"  Nome: {nm[0]}")
+
+            rec_base = re.findall(r'<nrRecArqBase>([^<]+)</nrRecArqBase>', xml)
+            if rec_base:
+                print(f"  nrRecArqBase: {rec_base[0]}")
+                is_pre = rec_base[0] == PRE_PIPELINE["nrRecArqBase"]
+                print(f"  {'📋 Este é o S-5002 PRÉ-pipeline (mesmo recibo base)' if is_pre else '🆕 Este é um S-5002 PÓS-pipeline (recibo base diferente)'}")
 
             infos = re.findall(
                 r'<infoIR><tpInfoIR>(\d+)</tpInfoIR><valor>([^<]+)</valor></infoIR>',
@@ -303,10 +339,14 @@ def main():
                 for tp, val in infos:
                     print(f"    tpInfoIR={tp} ({desc_map.get(tp, '?')}) = R$ {val}")
 
-            # Comparação automática PRÉ vs PÓS
-            comparar_pre_pos(xml)
+            xmls_validos.append((nr, xml))
         else:
             print(f"  ⚠️  XML vazio no arquivo {i+1}")
+
+    # Comparação automática PRÉ vs PÓS — usar o ÚLTIMO XML (mais recente)
+    if xmls_validos:
+        print(f"\n  Usando S-5002 mais recente (recibo: {xmls_validos[-1][0]}) para comparação")
+        comparar_pre_pos(xmls_validos[-1][1])
 
     conn.close()
     print(f"\n{'=' * 60}")

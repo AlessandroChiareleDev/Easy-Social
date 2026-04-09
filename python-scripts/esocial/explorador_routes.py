@@ -298,10 +298,40 @@ def _build_dados_json(tipo_evento, root_evento, root_recibo):
         dados["ideDmDev"] = _xpath_text(root_evento, "ideDmDev") or ""
 
     elif tipo_evento == "S-1210":
-        dados["dtPgto"] = _xpath_text(root_evento, "dtPgto") or ""
-        dados["tpPgto"] = _xpath_text(root_evento, "tpPgto") or ""
-        dados["vrLiq"] = _xpath_text(root_evento, "vrLiq") or ""
-        dados["tpCR"] = _xpath_text(root_evento, "tpCR") or ""
+        dados["indRetif"] = _xpath_text(root_evento, "indRetif") or ""
+        nrRecOrig = _xpath_text(root_evento, "nrRecibo")
+        if nrRecOrig:
+            dados["nrReciboOriginal"] = nrRecOrig
+        # Capture ALL infoPgto entries
+        pagamentos = []
+        for pgto in _xpath_all(root_evento, "infoPgto"):
+            p = {
+                "dtPgto": _xpath_text(pgto, "dtPgto") or "",
+                "tpPgto": _xpath_text(pgto, "tpPgto") or "",
+                "perRef": _xpath_text(pgto, "perRef") or "",
+                "ideDmDev": _xpath_text(pgto, "ideDmDev") or "",
+                "vrLiq": _xpath_text(pgto, "vrLiq") or "",
+            }
+            pagamentos.append(p)
+        dados["pagamentos"] = pagamentos
+        # Backwards compat: first payment summary
+        if pagamentos:
+            dados["dtPgto"] = pagamentos[0]["dtPgto"]
+            dados["tpPgto"] = pagamentos[0]["tpPgto"]
+            dados["vrLiq"] = pagamentos[0]["vrLiq"]
+        # infoIRCR
+        ir_entries = []
+        for ir in _xpath_all(root_evento, "infoIRCR"):
+            entry = {
+                "tpCR": _xpath_text(ir, "tpCR") or "",
+                "vrCR": _xpath_text(ir, "vrCR") or "",
+            }
+            ir_entries.append(entry)
+        if ir_entries:
+            dados["infoIRCR"] = ir_entries
+            dados["tpCR"] = ir_entries[0]["tpCR"]
+        else:
+            dados["tpCR"] = _xpath_text(root_evento, "tpCR") or ""
 
     elif tipo_evento == "S-5002":
         dados["infoIR"] = _extract_info_ir(root_evento)

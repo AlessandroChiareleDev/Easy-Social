@@ -2055,7 +2055,7 @@ function iniciarEditIncid(rub: any, field: string) {
   })
 }
 
-function salvarIncid(rub: any, field: string) {
+async function salvarIncid(rub: any, field: string) {
   const novoValor = editIncidValue.value.trim()
   if (!novoValor) {
     editingIncid.value = null
@@ -2066,9 +2066,20 @@ function salvarIncid(rub: any, field: string) {
     irrf_correto: 'IRRF',
     fgts_correto: 'FGTS',
   }
-  rub[field] = novoValor
-  editingIncid.value = null
-  showToast(`${labelMap[field]} da rubrica ${rub.cod_rubrica} alterado para ${novoValor}`, 'ok')
+  try {
+    await axios.patch(`${ESOCIAL_API}/api/esocial/rubrica-incidencia`, {
+      cod_rubrica: rub.cod_rubrica,
+      campo: field,
+      novo_valor: novoValor,
+    })
+    rub[field] = novoValor
+    rub.envio_status = 'pendente'
+    rub.corrigido = false
+    editingIncid.value = null
+    showToast(`${labelMap[field]} da rubrica ${rub.cod_rubrica} alterado para ${novoValor}`, 'ok')
+  } catch (err: any) {
+    showToast(err.response?.data?.detail || 'Erro ao alterar incidência', 'err')
+  }
 }
 
 function getEventoStatus(env: any, index: number): string | null {

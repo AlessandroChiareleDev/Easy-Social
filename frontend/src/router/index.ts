@@ -72,7 +72,7 @@ const router = createRouter({
     {
       path: '/explorador',
       name: 'explorador',
-      component: () => import('../views/ExploradorEventosView.vue'),
+      component: () => import('../views/ExploradorView.vue'),
       meta: { requireEmpresa: true },
     },
     {

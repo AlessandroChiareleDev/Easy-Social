@@ -1077,3 +1077,176 @@ async def listar_cpfs(
             return cur.fetchall()
     finally:
         conn.close()
+
+
+# ── Dados Funcionários endpoints ────────────────────────────────────────────
+
+@router.get("/dados-funcionarios/estatisticas")
+async def dados_funcionarios_stats(per_apur: Optional[str] = Query(None)):
+    """Employee data statistics — S-1200 and S-1210 aggregation."""
+    conn = _get_conn()
+    try:
+        with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+            conditions = ["e.tipo_evento IN ('S-1200', 'S-1210')"]
+            params = []
+            if per_apur:
+                conditions.append("e.per_apur = %s")
+                params.append(per_apur)
+            where = "WHERE " + " AND ".join(conditions)
+
+            cur.execute(f"""
+                SELECT
+                    COUNT(DISTINCT e.cpf) FILTER (WHERE e.cpf IS NOT NULL) as total_cpfs,
+                    COUNT(*) FILTER (WHERE e.tipo_evento = 'S-1200') as total_s1200,
+                    COUNT(*) FILTER (WHERE e.tipo_evento = 'S-1210') as total_s1210,
+                    COUNT(DISTINCT e.per_apur) as total_periodos,
+                    COUNT(DISTINCT e.cpf) FILTER (
+                        WHERE e.tipo_evento = 'S-1210'
+                        AND e.dados_json->>'indRetif' = '2'
+                    ) as cpfs_retificados
+                FROM explorador_eventos e
+                {where}
+            """, params)
+            row = cur.fetchone()
+
+            # Available periods (from S-1200/S-1210 only)
+            cur.execute(f"""
+                SELECT DISTINCT e.per_apur
+                FROM explorador_eventos e
+                {where} AND e.per_apur IS NOT NULL
+                ORDER BY e.per_apur DESC
+            """, params)
+            row["periodos"] = [r["per_apur"] for r in cur.fetchall()]
+
+            return row
+    finally:
+        conn.close()
+
+
+@router.get("/dados-funcionarios")
+async def dados_funcionarios(
+    per_apur: Optional[str] = Query(None),
+    status: Optional[str] = Query(None),
+    cpf: Optional[str] = Query(None),
+    page: int = Query(1, ge=1),
+    page_size: int = Query(50, ge=1, le=200),
+):
+    """Aggregate employee data per CPF for S-1200 and S-1210 events."""
+    conn = _get_conn()
+    try:
+        with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+            conditions = ["e.tipo_evento IN ('S-1200', 'S-1210')", "e.cpf IS NOT NULL"]
+            params = []
+            if per_apur:
+                conditions.append("e.per_apur = %s")
+                params.append(per_apur)
+            if cpf:
+                clean = cpf.replace(".", "").replace("-", "").strip()
+                conditions.append("e.cpf LIKE %s")
+                params.append(f"%{clean}%")
+            where = "WHERE " + " AND ".join(conditions)
+
+            # Count total unique CPFs
+            cur.execute(f"""
+                SELECT COUNT(DISTINCT e.cpf) as total
+                FROM explorador_eventos e
+                {where}
+            """, params)
+            total = cur.fetchone()["total"]
+
+            # Get per-CPF aggregation
+            offset = (page - 1) * page_size
+            having_clause = ""
+            if status == "retificado":
+                having_clause = "HAVING bool_or(e.tipo_evento = 'S-1210' AND (e.dados_json->>'indRetif') = '2')"
+            elif status == "pendente":
+                having_clause = "HAVING NOT bool_or(e.tipo_evento = 'S-1210' AND (e.dados_json->>'indRetif') = '2')"
+
+            cur.execute(f"""
+                SELECT
+                    e.cpf,
+                    COUNT(*) FILTER (WHERE e.tipo_evento = 'S-1200') as qtd_s1200,
+                    COUNT(*) FILTER (WHERE e.tipo_evento = 'S-1210') as qtd_s1210,
+                    MAX(CASE WHEN e.tipo_evento = 'S-1200' THEN e.dados_json->>'matricula' END) as matricula,
+                    MAX(CASE WHEN e.tipo_evento = 'S-1200' THEN e.dados_json->>'codCateg' END) as cod_categ,
+                    MAX(CASE WHEN e.tipo_evento = 'S-1200' THEN e.dados_json->>'ideDmDev' END) as ide_dm_dev_s1200,
+                    MAX(CASE WHEN e.tipo_evento = 'S-1210' THEN e.dados_json->>'dtPgto' END) as dt_pgto,
+                    MAX(CASE WHEN e.tipo_evento = 'S-1210' THEN e.dados_json->>'vrLiq' END) as vr_liq,
+                    MAX(CASE WHEN e.tipo_evento = 'S-1210' THEN e.dados_json->>'tpCR' END) as tp_cr,
+                    bool_or(e.tipo_evento = 'S-1210' AND (e.dados_json->>'indRetif') = '2') as retificado,
+                    ARRAY_AGG(DISTINCT e.per_apur) FILTER (WHERE e.per_apur IS NOT NULL) as periodos,
+                    MAX(e.nr_recibo) FILTER (WHERE e.tipo_evento = 'S-1210') as nr_recibo_s1210,
+                    MAX(e.dt_processamento) as ultimo_processamento
+                FROM explorador_eventos e
+                {where}
+                GROUP BY e.cpf
+                {having_clause}
+                ORDER BY e.cpf
+                LIMIT %s OFFSET %s
+            """, params + [page_size, offset])
+            rows = cur.fetchall()
+
+            # If using HAVING, recalculate total
+            if having_clause:
+                cur.execute(f"""
+                    SELECT COUNT(*) as cnt FROM (
+                        SELECT e.cpf
+                        FROM explorador_eventos e
+                        {where}
+                        GROUP BY e.cpf
+                        {having_clause}
+                    ) sub
+                """, params)
+                total = cur.fetchone()["cnt"]
+
+            return {
+                "total": total,
+                "page": page,
+                "page_size": page_size,
+                "total_pages": (total + page_size - 1) // page_size if total > 0 else 0,
+                "items": rows,
+            }
+    finally:
+        conn.close()
+
+
+@router.get("/dados-funcionarios/{cpf_param}")
+async def dados_funcionario_detalhe(cpf_param: str, per_apur: Optional[str] = Query(None)):
+    """Detailed S-1200 and S-1210 events for a specific CPF."""
+    conn = _get_conn()
+    cpf_clean = cpf_param.replace(".", "").replace("-", "").strip()
+    try:
+        with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+            conditions = ["e.cpf = %s", "e.tipo_evento IN ('S-1200', 'S-1210')"]
+            params = [cpf_clean]
+            if per_apur:
+                conditions.append("e.per_apur = %s")
+                params.append(per_apur)
+            where = "WHERE " + " AND ".join(conditions)
+
+            cur.execute(f"""
+                SELECT e.*
+                FROM explorador_eventos e
+                {where}
+                ORDER BY e.tipo_evento, e.dt_processamento DESC NULLS LAST
+            """, params)
+            eventos = cur.fetchall()
+
+            # Get rubricas for these events
+            if eventos:
+                evt_ids = [ev["id"] for ev in eventos]
+                cur.execute("""
+                    SELECT * FROM explorador_rubricas
+                    WHERE evento_id = ANY(%s)
+                    ORDER BY evento_id, id
+                """, (evt_ids,))
+                rubricas = cur.fetchall()
+                rub_map = {}
+                for r in rubricas:
+                    rub_map.setdefault(r["evento_id"], []).append(dict(r))
+                for ev in eventos:
+                    ev["rubricas"] = rub_map.get(ev["id"], [])
+
+            return eventos
+    finally:
+        conn.close()

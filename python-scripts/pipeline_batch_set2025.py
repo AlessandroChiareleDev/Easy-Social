@@ -7,11 +7,12 @@ Fluxo:
   3. S-1299   — Fechar período 2025-09 (1x, empregador)
 
 Lê dados do explorador_eventos (Supabase) e certificado do PG local.
+Grava progresso em pipeline_runs / pipeline_cpf_results (Supabase).
 Roda na VPS: python3 pipeline_batch_set2025.py
 """
 
-import sys, os, json, time, logging
-from datetime import datetime
+import sys, os, json, time, logging, re
+from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from db_config import DB_CONFIG, LOCAL_DB_CONFIG
@@ -230,18 +231,91 @@ def _enviar_evento_unico(xml_bytes, pfx_data, senha, empregador, is_producao):
     return _enviar_e_consultar(soap, pfx_data, senha, is_producao)
 
 
-# ── Progress tracking ─────────────────────────────────────────
+# ── Progress tracking (DB + JSON backup) ──────────────────────
 
 def _load_progress() -> dict:
     if os.path.exists(PROGRESS_FILE):
         with open(PROGRESS_FILE) as f:
             return json.load(f)
-    return {"cpfs_ok": [], "cpfs_erro": {}, "s1298_done": False, "s1299_done": False}
+    return {"cpfs_ok": [], "cpfs_erro": {}, "s1298_done": False, "s1299_done": False, "run_id": None}
 
 
 def _save_progress(progress: dict):
     with open(PROGRESS_FILE, "w") as f:
         json.dump(progress, f, indent=2, default=str)
+
+
+def _db_create_run(per_apur: str, total_cpfs: int, total_lotes: int) -> int:
+    """Cria registro pipeline_runs e retorna o ID."""
+    conn = _get_supabase_conn()
+    try:
+        with conn.cursor() as cur:
+            cur.execute("""
+                INSERT INTO pipeline_runs (per_apur, status, total_cpfs, total_lotes)
+                VALUES (%s, 'rodando', %s, %s)
+                RETURNING id
+            """, (per_apur, total_cpfs, total_lotes))
+            run_id = cur.fetchone()[0]
+            conn.commit()
+            return run_id
+    finally:
+        conn.close()
+
+
+def _db_insert_cpfs(run_id: int, cpf_data: list[dict]):
+    """Insere todos os CPFs como 'pendente' na pipeline_cpf_results."""
+    conn = _get_supabase_conn()
+    try:
+        with conn.cursor() as cur:
+            for d in cpf_data:
+                cur.execute("""
+                    INSERT INTO pipeline_cpf_results
+                        (run_id, cpf, status, nr_recibo_original, pagamentos, info_ir_cr)
+                    VALUES (%s, %s, 'pendente', %s, %s, %s)
+                """, (
+                    run_id,
+                    d["cpf"],
+                    d["nr_recibo"],
+                    json.dumps(d["pagamentos"]),
+                    json.dumps(d.get("infoIRCR", [])),
+                ))
+            conn.commit()
+    finally:
+        conn.close()
+
+
+def _db_update_cpf(run_id: int, cpf: str, status: str, nr_recibo_novo: str = None,
+                    erro: str = None, lote_num: int = None):
+    """Atualiza resultado de um CPF."""
+    conn = _get_supabase_conn()
+    try:
+        with conn.cursor() as cur:
+            cur.execute("""
+                UPDATE pipeline_cpf_results
+                SET status = %s, nr_recibo_novo = %s, erro_descricao = %s,
+                    lote_num = %s, processed_at = NOW()
+                WHERE run_id = %s AND cpf = %s
+            """, (status, nr_recibo_novo, erro, lote_num, run_id, cpf))
+            conn.commit()
+    finally:
+        conn.close()
+
+
+def _db_update_run(run_id: int, **kwargs):
+    """Atualiza campos do pipeline_runs."""
+    conn = _get_supabase_conn()
+    try:
+        sets = []
+        vals = []
+        for k, v in kwargs.items():
+            sets.append(f"{k} = %s")
+            vals.append(v)
+        vals.append(run_id)
+        with conn.cursor() as cur:
+            cur.execute(f"UPDATE pipeline_runs SET {', '.join(sets)} WHERE id = %s", vals)
+            conn.commit()
+    finally:
+        conn.close()
 
 
 # ── Main Pipeline ─────────────────────────────────────────────
@@ -281,12 +355,27 @@ def main():
         cpf_data = [d for d in cpf_data if d["pagamentos"]]
         log.info(f"  {len(cpf_data)} CPFs válidos para retificação")
 
+    total_lotes = (len(cpf_data) + LOTE_SIZE - 1) // LOTE_SIZE
+
     # ── Load progress (resume) ──
     progress = _load_progress()
     already_done = set(progress["cpfs_ok"])
     remaining = [d for d in cpf_data if d["cpf"] not in already_done]
-    if already_done:
-        log.info(f"  Resumindo: {len(already_done)} CPFs já processados, {len(remaining)} restantes")
+
+    run_id = progress.get("run_id")
+
+    # Create DB run if not resuming
+    if not run_id:
+        run_id = _db_create_run(PER_APUR, len(cpf_data), total_lotes)
+        progress["run_id"] = run_id
+        _save_progress(progress)
+        log.info(f"  DB run criado: id={run_id}")
+        # Insert all CPFs as pendente
+        _db_insert_cpfs(run_id, cpf_data)
+        log.info(f"  {len(cpf_data)} CPFs inseridos como pendente")
+    else:
+        log.info(f"  Resumindo run_id={run_id}: {len(already_done)} já processados, {len(remaining)} restantes")
+        _db_update_run(run_id, status="rodando")
 
     # ════════════════════════════════════════════════════════════
     # STEP 1: S-1298 — Reabrir período
@@ -315,12 +404,20 @@ def main():
                 log.info(f"  ✓ S-1298: {result.get('descricao', 'OK')}")
                 progress["s1298_done"] = True
                 _save_progress(progress)
+                recibo_1298 = None
+                for e in result.get("eventos", []):
+                    if e.get("nr_recibo"):
+                        recibo_1298 = e["nr_recibo"]
+                        break
+                _db_update_run(run_id, s1298_done=True, s1298_recibo=recibo_1298)
             else:
                 log.error(f"  ✗ S-1298 FALHOU: {result.get('descricao')}")
                 log.error("  ABORTANDO — período não pôde ser reaberto!")
+                _db_update_run(run_id, status="erro", erro_fatal=f"S-1298 falhou: {result.get('descricao')}")
                 sys.exit(1)
         except Exception as e:
             log.error(f"  ✗ S-1298 ERRO: {e}")
+            _db_update_run(run_id, status="erro", erro_fatal=f"S-1298 exception: {e}")
             sys.exit(1)
     else:
         log.info("  STEP 1: S-1298 já executado (resumindo)")
@@ -332,14 +429,18 @@ def main():
     log.info(f"  STEP 2: S-1210 Retificar {len(remaining)} CPFs em lotes de {LOTE_SIZE}")
     log.info(f"{'─'*60}")
 
-    total_lotes = (len(remaining) + LOTE_SIZE - 1) // LOTE_SIZE
+    total_lotes_remaining = (len(remaining) + LOTE_SIZE - 1) // LOTE_SIZE
     cpfs_ok = 0
     cpfs_erro = 0
 
     for lote_idx in range(0, len(remaining), LOTE_SIZE):
         batch = remaining[lote_idx:lote_idx + LOTE_SIZE]
         lote_num = (lote_idx // LOTE_SIZE) + 1
-        log.info(f"\n  Lote {lote_num}/{total_lotes} — {len(batch)} CPFs")
+        log.info(f"\n  Lote {lote_num}/{total_lotes_remaining} — {len(batch)} CPFs")
+
+        # Update run progress
+        _db_update_run(run_id, lote_atual=lote_num, cpfs_ok=len(progress["cpfs_ok"]),
+                       cpfs_erro=len(progress["cpfs_erro"]))
 
         # Gerar e assinar XMLs do lote
         xmls_assinados = []
@@ -365,19 +466,17 @@ def main():
                 xmls_assinados.append(signed)
 
                 # Map event ID to CPF for result matching
-                # Extract ID from signed XML
                 xml_str = signed.decode("utf-8") if isinstance(signed, bytes) else signed
-                import re
                 id_match = re.search(r'Id="(ID[^"]+)"', xml_str)
                 if id_match:
                     batch_cpf_map[id_match.group(1)] = cpf_info["cpf"]
 
         except Exception as e:
             log.error(f"  ✗ Erro ao gerar XMLs do lote {lote_num}: {e}")
-            # Mark all in batch as error
             for ci in batch:
                 progress["cpfs_erro"][ci["cpf"]] = str(e)
                 cpfs_erro += 1
+                _db_update_cpf(run_id, ci["cpf"], "erro", erro=str(e), lote_num=lote_num)
             _save_progress(progress)
             continue
 
@@ -399,11 +498,11 @@ def main():
                 cod = evt.get("codigo_resposta", "")
 
                 if nr_recibo:
-                    # Sucesso
                     if cpf_matched:
                         progress["cpfs_ok"].append(cpf_matched)
                         cpfs_ok += 1
                         log.info(f"    ✓ CPF {cpf_matched}: recibo={nr_recibo}")
+                        _db_update_cpf(run_id, cpf_matched, "ok", nr_recibo_novo=nr_recibo, lote_num=lote_num)
                 elif cod and cod not in ("201", "202"):
                     desc = evt.get("descricao", "")
                     ocorrencias = evt.get("ocorrencias", [])
@@ -415,8 +514,9 @@ def main():
                         progress["cpfs_erro"][cpf_matched] = desc
                         cpfs_erro += 1
                         log.warning(f"    ✗ CPF {cpf_matched}: [{cod}] {desc}")
+                        _db_update_cpf(run_id, cpf_matched, "erro", erro=desc, lote_num=lote_num)
 
-            # Match unmatched CPFs (by position if ID mapping failed)
+            # Match unmatched CPFs by position
             matched_cpfs = set()
             for evt in eventos:
                 evt_id = evt.get("id", "")
@@ -424,7 +524,6 @@ def main():
                 if cpf_matched:
                     matched_cpfs.add(cpf_matched)
 
-            # If some CPFs weren't matched by ID, try positional
             if len(matched_cpfs) < len(batch) and len(eventos) == len(batch):
                 for i, (evt, cpf_info) in enumerate(zip(eventos, batch)):
                     if cpf_info["cpf"] not in matched_cpfs:
@@ -433,11 +532,13 @@ def main():
                             progress["cpfs_ok"].append(cpf_info["cpf"])
                             cpfs_ok += 1
                             log.info(f"    ✓ CPF {cpf_info['cpf']} (pos): recibo={nr_recibo}")
+                            _db_update_cpf(run_id, cpf_info["cpf"], "ok", nr_recibo_novo=nr_recibo, lote_num=lote_num)
                         else:
                             desc = evt.get("descricao", "sem recibo")
                             progress["cpfs_erro"][cpf_info["cpf"]] = desc
                             cpfs_erro += 1
                             log.warning(f"    ✗ CPF {cpf_info['cpf']} (pos): {desc}")
+                            _db_update_cpf(run_id, cpf_info["cpf"], "erro", erro=desc, lote_num=lote_num)
         else:
             # Lote inteiro falhou
             desc = result.get("descricao", "Erro desconhecido")
@@ -452,6 +553,7 @@ def main():
                     progress["cpfs_ok"].append(cpf_matched)
                     cpfs_ok += 1
                     log.info(f"    ✓ CPF {cpf_matched} (partial): recibo={nr_recibo}")
+                    _db_update_cpf(run_id, cpf_matched, "ok", nr_recibo_novo=nr_recibo, lote_num=lote_num)
 
             # Mark remaining as error
             ok_cpfs = set(progress["cpfs_ok"])
@@ -459,8 +561,11 @@ def main():
                 if ci["cpf"] not in ok_cpfs and ci["cpf"] not in progress["cpfs_erro"]:
                     progress["cpfs_erro"][ci["cpf"]] = desc
                     cpfs_erro += 1
+                    _db_update_cpf(run_id, ci["cpf"], "erro", erro=desc, lote_num=lote_num)
 
         _save_progress(progress)
+        _db_update_run(run_id, cpfs_ok=len(progress["cpfs_ok"]), cpfs_erro=len(progress["cpfs_erro"]),
+                       lote_atual=lote_num)
         log.info(f"  Lote {lote_num} concluído: OK={cpfs_ok}, Erro={cpfs_erro}, "
                  f"Total processado={cpfs_ok + cpfs_erro}/{len(cpf_data)}")
 
@@ -483,10 +588,14 @@ def main():
 
             if result["sucesso"]:
                 log.info(f"  ✓ S-1299: {result.get('descricao', 'OK')}")
-                recibos = [e.get("nr_recibo") for e in result.get("eventos", []) if e.get("nr_recibo")]
-                if recibos:
-                    log.info(f"    Recibo: {recibos[0]}")
+                recibo_1299 = None
+                for e in result.get("eventos", []):
+                    if e.get("nr_recibo"):
+                        recibo_1299 = e["nr_recibo"]
+                        log.info(f"    Recibo: {recibo_1299}")
+                        break
                 progress["s1299_done"] = True
+                _db_update_run(run_id, s1299_done=True, s1299_recibo=recibo_1299)
             else:
                 log.error(f"  ✗ S-1299 FALHOU: {result.get('descricao')}")
                 log.error("  Período ficará ABERTO. Execute novamente para tentar fechar.")
@@ -498,28 +607,38 @@ def main():
     _save_progress(progress)
 
     # ═══════════════ RESUMO FINAL ═══════════════
+    final_status = "completo" if (
+        progress["s1298_done"]
+        and progress["s1299_done"]
+        and len(progress["cpfs_erro"]) == 0
+    ) else "parcial"
+
+    _db_update_run(
+        run_id,
+        status=final_status,
+        cpfs_ok=len(progress["cpfs_ok"]),
+        cpfs_erro=len(progress["cpfs_erro"]),
+        finished_at=datetime.now(timezone.utc).isoformat(),
+    )
+
     log.info(f"\n{'='*70}")
     log.info("  RESUMO FINAL")
     log.info(f"{'='*70}")
     log.info(f"  Período: {PER_APUR}")
+    log.info(f"  Run ID: {run_id}")
     log.info(f"  Total CPFs: {len(cpf_data)}")
     log.info(f"  S-1210 retificados: {len(progress['cpfs_ok'])}")
     log.info(f"  S-1210 com erro: {len(progress['cpfs_erro'])}")
     log.info(f"  S-1298 (reabrir): {'✓' if progress['s1298_done'] else '✗'}")
     log.info(f"  S-1299 (fechar):  {'✓' if progress['s1299_done'] else '✗'}")
-
-    status = "COMPLETO" if (
-        progress["s1298_done"]
-        and progress["s1299_done"]
-        and len(progress["cpfs_erro"]) == 0
-    ) else "PARCIAL"
-    log.info(f"  STATUS: {status}")
+    log.info(f"  STATUS: {final_status.upper()}")
     log.info(f"{'='*70}")
 
-    # Salvar resultado final
+    # Salvar resultado final (backup JSON)
     final_result = {
+        "run_id": run_id,
         "per_apur": PER_APUR,
-        "status": status,
+        "status": final_status,
         "total_cpfs": len(cpf_data),
         "cpfs_ok": len(progress["cpfs_ok"]),
         "cpfs_erro": len(progress["cpfs_erro"]),
@@ -531,7 +650,7 @@ def main():
     with open(RESULT_FILE, "w") as f:
         json.dump(final_result, f, indent=2, default=str)
     log.info(f"\nResultado salvo em {RESULT_FILE}")
-    log.info(f"Log em /tmp/pipeline_batch_{PER_APUR.replace('-','')}.log")
+    log.info(f"Acompanhe na interface: Pipeline 98-10-99 → run #{run_id}")
 
     if progress["cpfs_erro"]:
         log.info(f"\nPrimeiros 10 CPFs com erro:")

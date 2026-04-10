@@ -79,6 +79,10 @@ app.include_router(parser_router)
 from esocial.pipeline_audit_routes import router as audit_router
 app.include_router(audit_router)
 
+# Rotas Pipeline Batch (automação 98-10-99)
+from esocial.pipeline_batch_routes import router as pipeline_batch_router
+app.include_router(pipeline_batch_router)
+
 # Thread do bot
 bot_thread: threading.Thread | None = None
 

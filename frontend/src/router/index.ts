@@ -76,6 +76,12 @@ const router = createRouter({
       meta: { requireEmpresa: true },
     },
     {
+      path: '/pipeline',
+      name: 'pipeline',
+      component: () => import('../views/PipelineView.vue'),
+      meta: { requireEmpresa: true },
+    },
+    {
       path: '/logs',
       name: 'logs',
       component: () => import('../views/LogsSistemaView.vue'),

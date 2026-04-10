@@ -37,6 +37,7 @@ const navGroups = [
       { to: '/bot', label: 'Robô eSocial', icon: 'bot' },
       { to: '/esocial', label: 'eSocial S-1010', icon: 'esocial' },
       { to: '/explorador', label: 'Explorador', icon: 'explorador' },
+      { to: '/pipeline', label: 'Pipeline 98-10-99', icon: 'pipeline' },
     ],
   },
   {
@@ -313,6 +314,18 @@ onUnmounted(() => {
               <line x1="21" y1="21" x2="16.65" y2="16.65" />
               <line x1="11" y1="8" x2="11" y2="14" />
               <line x1="8" y1="11" x2="14" y2="11" />
+            </svg>
+            <svg
+              v-else-if="item.icon === 'pipeline'"
+              class="w-5 h-5 shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
             </svg>
 
             <span v-if="!sidebarCollapsed" class="whitespace-nowrap">{{ item.label }}</span>

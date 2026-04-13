@@ -358,20 +358,40 @@ def _save_ini_valid_rubricas(cursor, cod_rubricas: list[str], ini_valid: str):
 
 
 def _load_rubricas_by_ids(cursor, cod_rubricas: list[str]) -> list[dict]:
-    """Carrega rubricas do cruzamento_eb por cod_rubrica."""
+    """Carrega rubricas do cruzamento_eb por cod_rubrica, com tpRubr do depara/explorador."""
     placeholders = ",".join(["%s"] * len(cod_rubricas))
     cursor.execute(
         f"""
-        SELECT cod_rubrica, descricao, cod_natureza,
-               incid_inss, incid_irrf, incid_fgts,
-               incid_base_legal_inss, incid_base_legal_irrf,
-               incid_base_legal_fgts, analise
-        FROM cruzamento_eb
-        WHERE cod_rubrica IN ({placeholders})
+        SELECT ce.cod_rubrica, ce.descricao, ce.cod_natureza,
+               ce.incid_inss, ce.incid_irrf, ce.incid_fgts,
+               ce.incid_base_legal_inss, ce.incid_base_legal_irrf,
+               ce.incid_base_legal_fgts, ce.analise,
+               dp_tp.valor_novo as tprubr_depara
+        FROM cruzamento_eb ce
+        LEFT JOIN esocial_depara dp_tp
+            ON ce.cod_rubrica = dp_tp.cod_rubrica AND dp_tp.campo = 'tpRubr'
+        WHERE ce.cod_rubrica IN ({placeholders})
         """,
         cod_rubricas,
     )
     rows = cursor.fetchall()
+
+    # Fallback: buscar tpRubr do explorador_rubricas para as que não têm depara
+    cod_sem_depara = [r[0] for r in rows if not r[10]]
+    explorador_tp = {}
+    if cod_sem_depara:
+        ph2 = ",".join(["%s"] * len(cod_sem_depara))
+        cursor.execute(
+            f"""
+            SELECT DISTINCT ON (cod_rubr) cod_rubr, tp_rubr
+            FROM explorador_rubricas
+            WHERE cod_rubr IN ({ph2}) AND tp_rubr IS NOT NULL
+            ORDER BY cod_rubr, id DESC
+            """,
+            cod_sem_depara,
+        )
+        explorador_tp = {r[0]: r[1] for r in cursor.fetchall()}
+
     result = []
     for r in rows:
         # Extrair o código correto da base legal ("11 - descrição" -> "11")
@@ -381,6 +401,16 @@ def _load_rubricas_by_ids(cursor, cod_rubricas: list[str]) -> list[dict]:
 
         # Extrair código de natureza ("1016 - descrição" -> "1016")
         cod_nat = r[2].split(" - ")[0] if r[2] else "1000"
+
+        # tpRubr: depara > explorador_rubricas > default "Vencimento"
+        tp_depara = r[10]  # valor do JOIN com esocial_depara
+        if tp_depara:
+            tipo = "Desconto" if str(tp_depara) == "2" else "Vencimento"
+        elif str(r[0]) in explorador_tp:
+            tp_val = explorador_tp[str(r[0])]
+            tipo = "Desconto" if str(tp_val) == "2" else "Vencimento"
+        else:
+            tipo = "Vencimento"
 
         result.append({
             "cod_rubrica": str(r[0]),
@@ -397,7 +427,7 @@ def _load_rubricas_by_ids(cursor, cod_rubricas: list[str]) -> list[dict]:
             "base_legal_irrf": r[7] or "",
             "base_legal_fgts": r[8] or "",
             "analise": r[9] or "",
-            "tipo": "Vencimento",  # default
+            "tipo": tipo,
             "pispasep": "00",
         })
     return result
@@ -413,10 +443,24 @@ async def rubricas_pendentes(filtro: str = "pendentes"):
     try:
         with conn.cursor() as cur:
             extra_filter = ""
+            divergence_cond = """(
+                    ce.incid_inss != SPLIT_PART(ce.incid_base_legal_inss, ' - ', 1)
+                    OR ce.incid_irrf != SPLIT_PART(ce.incid_base_legal_irrf, ' - ', 1)
+                    OR ce.incid_fgts != SPLIT_PART(ce.incid_base_legal_fgts, ' - ', 1)
+                )"""
             if filtro == "enviadas":
-                extra_filter = "AND COALESCE(ce.envio_status, 'pendente') = 'enviado'"
-            elif filtro != "todas":
-                extra_filter = "AND (ce.corrigido IS NULL OR ce.corrigido = FALSE) AND COALESCE(ce.envio_status, 'pendente') = 'pendente'"
+                # Mostra enviados independente de divergência
+                where_clause = "COALESCE(ce.envio_status, 'pendente') = 'enviado'"
+            elif filtro == "todas":
+                # Mostra tudo: divergentes + enviados + feitos
+                where_clause = f"""(
+                    {divergence_cond}
+                    OR ce.envio_status IN ('enviado', 'feito')
+                )"""
+            else:
+                # Pendentes: apenas divergentes não enviados
+                where_clause = f"""{divergence_cond}
+                AND (ce.corrigido IS NULL OR ce.corrigido = FALSE) AND COALESCE(ce.envio_status, 'pendente') = 'pendente'"""
             cur.execute(
                 f"""
                 SELECT ce.id, ce.cod_rubrica, ce.descricao,
@@ -429,12 +473,7 @@ async def rubricas_pendentes(filtro: str = "pendentes"):
                        COALESCE(ce.envio_status, 'pendente') AS envio_status,
                        ce.ini_valid_esocial
                 FROM cruzamento_eb ce
-                WHERE (
-                    ce.incid_inss != SPLIT_PART(ce.incid_base_legal_inss, ' - ', 1)
-                    OR ce.incid_irrf != SPLIT_PART(ce.incid_base_legal_irrf, ' - ', 1)
-                    OR ce.incid_fgts != SPLIT_PART(ce.incid_base_legal_fgts, ' - ', 1)
-                )
-                {extra_filter}
+                WHERE {where_clause}
                 ORDER BY ce.cod_rubrica::int ASC
                 """
             )

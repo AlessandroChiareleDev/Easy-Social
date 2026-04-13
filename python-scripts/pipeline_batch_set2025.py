@@ -45,7 +45,11 @@ RESULT_FILE = f"/tmp/pipeline_batch_{PER_APUR.replace('-','')}_result.json"
 CONNECTION_ERRORS = [
     "connection aborted", "connectionreseterror", "remotedisconnected",
     "connectionerror", "forcibly closed", "timed out",
+    "name resolution", "temporary failure", "could not translate host name",
 ]
+
+DB_RETRY_MAX = 5
+DB_RETRY_DELAY = 5  # seconds
 
 # ── Logging ───────────────────────────────────────────────────
 logging.basicConfig(
@@ -62,11 +66,19 @@ log = logging.getLogger("batch_pipeline")
 # ── DB helpers ────────────────────────────────────────────────
 
 def _get_supabase_conn():
-    return psycopg2.connect(
-        **DB_CONFIG,
-        keepalives=1, keepalives_idle=30,
-        keepalives_interval=10, keepalives_count=3,
-    )
+    for attempt in range(1, DB_RETRY_MAX + 1):
+        try:
+            return psycopg2.connect(
+                **DB_CONFIG,
+                keepalives=1, keepalives_idle=30,
+                keepalives_interval=10, keepalives_count=3,
+            )
+        except psycopg2.OperationalError as e:
+            if attempt < DB_RETRY_MAX:
+                log.warning(f"  DB connect attempt {attempt}/{DB_RETRY_MAX} failed: {e}. Retrying in {DB_RETRY_DELAY}s...")
+                time.sleep(DB_RETRY_DELAY)
+            else:
+                raise
 
 
 def _load_cert():
@@ -286,36 +298,55 @@ def _db_insert_cpfs(run_id: int, cpf_data: list[dict]):
 
 def _db_update_cpf(run_id: int, cpf: str, status: str, nr_recibo_novo: str = None,
                     erro: str = None, lote_num: int = None):
-    """Atualiza resultado de um CPF."""
-    conn = _get_supabase_conn()
-    try:
-        with conn.cursor() as cur:
-            cur.execute("""
-                UPDATE pipeline_cpf_results
-                SET status = %s, nr_recibo_novo = %s, erro_descricao = %s,
-                    lote_num = %s, processed_at = NOW()
-                WHERE run_id = %s AND cpf = %s
-            """, (status, nr_recibo_novo, erro, lote_num, run_id, cpf))
-            conn.commit()
-    finally:
-        conn.close()
+    """Atualiza resultado de um CPF com retry em caso de falha de conexão."""
+    for attempt in range(1, DB_RETRY_MAX + 1):
+        try:
+            conn = _get_supabase_conn()
+            try:
+                with conn.cursor() as cur:
+                    cur.execute("""
+                        UPDATE pipeline_cpf_results
+                        SET status = %s, nr_recibo_novo = %s, erro_descricao = %s,
+                            lote_num = %s, processed_at = NOW()
+                        WHERE run_id = %s AND cpf = %s
+                    """, (status, nr_recibo_novo, erro, lote_num, run_id, cpf))
+                    conn.commit()
+                return  # Success
+            finally:
+                conn.close()
+        except (psycopg2.OperationalError, psycopg2.InterfaceError) as e:
+            if attempt < DB_RETRY_MAX:
+                log.warning(f"  DB update CPF {cpf} attempt {attempt}/{DB_RETRY_MAX} failed: {e}. Retrying in {DB_RETRY_DELAY}s...")
+                time.sleep(DB_RETRY_DELAY)
+            else:
+                log.error(f"  DB update CPF {cpf} FAILED after {DB_RETRY_MAX} attempts: {e}")
+                raise
 
 
 def _db_update_run(run_id: int, **kwargs):
-    """Atualiza campos do pipeline_runs."""
-    conn = _get_supabase_conn()
-    try:
-        sets = []
-        vals = []
-        for k, v in kwargs.items():
-            sets.append(f"{k} = %s")
-            vals.append(v)
-        vals.append(run_id)
-        with conn.cursor() as cur:
-            cur.execute(f"UPDATE pipeline_runs SET {', '.join(sets)} WHERE id = %s", vals)
-            conn.commit()
-    finally:
-        conn.close()
+    """Atualiza campos do pipeline_runs com retry."""
+    for attempt in range(1, DB_RETRY_MAX + 1):
+        try:
+            conn = _get_supabase_conn()
+            try:
+                sets = []
+                vals = []
+                for k, v in kwargs.items():
+                    sets.append(f"{k} = %s")
+                    vals.append(v)
+                vals.append(run_id)
+                with conn.cursor() as cur:
+                    cur.execute(f"UPDATE pipeline_runs SET {', '.join(sets)} WHERE id = %s", vals)
+                    conn.commit()
+                return
+            finally:
+                conn.close()
+        except (psycopg2.OperationalError, psycopg2.InterfaceError) as e:
+            if attempt < DB_RETRY_MAX:
+                log.warning(f"  DB update run attempt {attempt}/{DB_RETRY_MAX} failed: {e}. Retrying...")
+                time.sleep(DB_RETRY_DELAY)
+            else:
+                raise
 
 
 # ── Main Pipeline ─────────────────────────────────────────────
@@ -360,7 +391,6 @@ def main():
     # ── Load progress (resume) ──
     progress = _load_progress()
     already_done = set(progress["cpfs_ok"])
-    remaining = [d for d in cpf_data if d["cpf"] not in already_done]
 
     run_id = progress.get("run_id")
 
@@ -374,8 +404,26 @@ def main():
         _db_insert_cpfs(run_id, cpf_data)
         log.info(f"  {len(cpf_data)} CPFs inseridos como pendente")
     else:
-        log.info(f"  Resumindo run_id={run_id}: {len(already_done)} já processados, {len(remaining)} restantes")
+        # On resume, also check DB for already-processed CPFs (covers crash scenarios)
+        try:
+            conn = _get_supabase_conn()
+            try:
+                with conn.cursor() as cur:
+                    cur.execute(
+                        "SELECT cpf FROM pipeline_cpf_results WHERE run_id=%s AND status IN ('ok','erro')",
+                        (run_id,)
+                    )
+                    db_done = {row[0] for row in cur.fetchall()}
+                    already_done |= db_done
+                    log.info(f"  DB: {len(db_done)} CPFs já processados (ok+erro)")
+            finally:
+                conn.close()
+        except Exception as e:
+            log.warning(f"  Não foi possível checar DB para resume: {e}")
+        log.info(f"  Resumindo run_id={run_id}: {len(already_done)} já processados, {len(cpf_data) - len(already_done)} restantes")
         _db_update_run(run_id, status="rodando")
+
+    remaining = [d for d in cpf_data if d["cpf"] not in already_done]
 
     # ════════════════════════════════════════════════════════════
     # STEP 1: S-1298 — Reabrir período

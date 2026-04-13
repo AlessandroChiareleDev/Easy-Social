@@ -123,7 +123,7 @@ class S3000XMLGenerator:
             ide_trab = _sub(info_exc, "ideTrabalhador")
             _sub(ide_trab, "cpfTrab", cpf_trab)
 
-        # ideFolhaPagto (se evento periódico — apenas perApur, sem indApuracao)
+        # ideFolhaPagto (se evento periódico — apenas perApur)
         if tp_evento in S3000XMLGenerator.EVENTOS_PERIODICOS and per_apur:
             ide_folha = _sub(info_exc, "ideFolhaPagto")
             _sub(ide_folha, "perApur", per_apur)

@@ -322,7 +322,32 @@
                     </div>
                     <div class="meta-item">
                       <span class="meta-label">Arquivo</span>
-                      <span class="meta-value font-mono text-xs">{{ evt.arquivo_origem }}</span>
+                      <span class="meta-value font-mono text-xs">
+                        {{ evt.arquivo_origem }}
+                        <a
+                          v-if="evt.arquivo_origem"
+                          :href="`${API}/eventos/${evt.id}/xml`"
+                          target="_blank"
+                          class="ml-2 inline-flex items-center gap-1 px-2 py-0.5 rounded bg-[#5ac8f5]/15 text-[#5ac8f5] hover:bg-[#5ac8f5]/30 transition-colors text-[10px] font-semibold uppercase tracking-wider no-underline"
+                          title="Download XML"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="w-3 h-3"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            stroke-width="2"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V3"
+                            />
+                          </svg>
+                          XML
+                        </a>
+                      </span>
                     </div>
                     <div
                       v-if="evt.dados_json"

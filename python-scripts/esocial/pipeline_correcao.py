@@ -345,6 +345,31 @@ def _executar_pipeline(
                     return "00"
                 return base_legal.split(" - ")[0].strip() or "00"
 
+            # Buscar tpRubr do depara/explorador para cada rubrica
+            tp_rubr_map = {}
+            with conn.cursor() as cur:
+                ph_tp = ",".join(["%s"] * len(req.rubrica_ids))
+                cur.execute(
+                    f"""SELECT cod_rubrica, valor_novo FROM esocial_depara
+                        WHERE campo = 'tpRubr' AND cod_rubrica IN ({ph_tp})""",
+                    req.rubrica_ids,
+                )
+                tp_rubr_map = {r[0]: r[1] for r in cur.fetchall()}
+
+                # Fallback: explorador_rubricas
+                cod_sem = [c for c in req.rubrica_ids if c not in tp_rubr_map]
+                if cod_sem:
+                    ph_exp = ",".join(["%s"] * len(cod_sem))
+                    cur.execute(
+                        f"""SELECT DISTINCT ON (cod_rubr) cod_rubr, tp_rubr
+                            FROM explorador_rubricas
+                            WHERE cod_rubr IN ({ph_exp}) AND tp_rubr IS NOT NULL
+                            ORDER BY cod_rubr, id DESC""",
+                        cod_sem,
+                    )
+                    for r in cur.fetchall():
+                        tp_rubr_map[r[0]] = r[1]
+
             # Gerar XMLs para cada rubrica
             xmls = []
             for i, row in enumerate(rows):
@@ -352,13 +377,14 @@ def _executar_pipeline(
                 #      3=base_legal_inss, 4=base_legal_irrf, 5=base_legal_fgts,
                 #      6=ini_valid_esocial
                 nat_rubr = (row[2] or "").split(" - ")[0].strip() if row[2] else ""
+                tp_rubr = tp_rubr_map.get(row[0], "1")
                 rubrica = {
                     "codRubr": row[0],
                     "ideTabRubr": "1",
                     "iniValid": row[6] or req.per_apur.replace("-", "-"),
                     "dscRubr": (row[1] or "RUBRICA")[:100],
                     "natRubr": nat_rubr,
-                    "tpRubr": "1",
+                    "tpRubr": str(tp_rubr),
                     "codIncCP": _extrair_codigo(row[3]),
                     "codIncIRRF": _extrair_codigo(row[4]),
                     "codIncFGTS": _extrair_codigo(row[5]),

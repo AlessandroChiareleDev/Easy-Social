@@ -36,6 +36,15 @@ def _build_ded_depen(parent, deps: list[dict]):
         _sub(dd, "vlrDedDep", dep["vlrDedDep"])
 
 
+def _build_pen_alim(parent, pens: list[dict]):
+    """Monta lista de <penAlim> dentro de <infoIRCR>."""
+    for pen in pens:
+        pa = _sub(parent, "penAlim")
+        _sub(pa, "tpRend", pen["tpRend"])
+        _sub(pa, "cpfDep", pen["cpfDep"])
+        _sub(pa, "vlrDedPenAlim", pen["vlrDedPenAlim"])
+
+
 def _build_info_ir_complem(parent, info_ir: dict):
     """Monta <infoIRComplem> com uma ou mais <infoIRCR>."""
     irc = _sub(parent, "infoIRComplem")
@@ -46,6 +55,8 @@ def _build_info_ir_complem(parent, info_ir: dict):
             _sub(ircr, "vrCR", cr["vrCR"])
         if cr.get("dedDepen"):
             _build_ded_depen(ircr, cr["dedDepen"])
+        if cr.get("penAlim"):
+            _build_pen_alim(ircr, cr["penAlim"])
 
 
 class S1210XMLGenerator:

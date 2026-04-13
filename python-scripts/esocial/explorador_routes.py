@@ -15,6 +15,7 @@ from pathlib import Path
 from datetime import datetime
 from typing import Optional, List
 from fastapi import APIRouter, Query, HTTPException, UploadFile, File
+from fastapi.responses import FileResponse
 import tempfile
 import shutil
 from pydantic import BaseModel
@@ -326,6 +327,26 @@ def _build_dados_json(tipo_evento, root_evento, root_recibo):
                 "tpCR": _xpath_text(ir, "tpCR") or "",
                 "vrCR": _xpath_text(ir, "vrCR") or "",
             }
+            # dedDepen dentro de infoIRCR
+            ded_deps = []
+            for dd in _xpath_all(ir, "dedDepen"):
+                ded_deps.append({
+                    "tpRend": _xpath_text(dd, "tpRend") or "",
+                    "cpfDep": _xpath_text(dd, "cpfDep") or "",
+                    "vlrDedDep": _xpath_text(dd, "vlrDedDep") or "",
+                })
+            if ded_deps:
+                entry["dedDepen"] = ded_deps
+            # penAlim dentro de infoIRCR
+            pen_alims = []
+            for pa in _xpath_all(ir, "penAlim"):
+                pen_alims.append({
+                    "tpRend": _xpath_text(pa, "tpRend") or "",
+                    "cpfDep": _xpath_text(pa, "cpfDep") or "",
+                    "vlrDedPenAlim": _xpath_text(pa, "vlrDedPenAlim") or "",
+                })
+            if pen_alims:
+                entry["penAlim"] = pen_alims
             ir_entries.append(entry)
         if ir_entries:
             dados["infoIRCR"] = ir_entries
@@ -1280,5 +1301,36 @@ async def dados_funcionario_detalhe(cpf_param: str, per_apur: Optional[str] = Qu
                     ev["rubricas"] = rub_map.get(ev["id"], [])
 
             return eventos
+    finally:
+        conn.close()
+
+
+@router.get("/eventos/{evento_id}/xml")
+async def download_evento_xml(evento_id: int):
+    """Download the original XML file for a specific event."""
+    conn = _get_conn()
+    try:
+        with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+            cur.execute("""
+                SELECT e.arquivo_origem, i.pasta
+                FROM explorador_eventos e
+                JOIN explorador_importacoes i ON i.id = e.importacao_id
+                WHERE e.id = %s
+            """, (evento_id,))
+            row = cur.fetchone()
+            if not row:
+                raise HTTPException(status_code=404, detail="Evento não encontrado")
+            if not row["arquivo_origem"]:
+                raise HTTPException(status_code=404, detail="Evento sem arquivo de origem")
+
+            file_path = os.path.join(row["pasta"], row["arquivo_origem"])
+            if not os.path.isfile(file_path):
+                raise HTTPException(status_code=404, detail=f"Arquivo não encontrado no servidor: {row['arquivo_origem']}")
+
+            return FileResponse(
+                path=file_path,
+                filename=row["arquivo_origem"],
+                media_type="application/xml",
+            )
     finally:
         conn.close()

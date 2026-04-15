@@ -18,6 +18,7 @@ from fastapi import APIRouter, Query, HTTPException, UploadFile, File
 from fastapi.responses import FileResponse
 import tempfile
 import shutil
+import zipfile
 from pydantic import BaseModel
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -518,9 +519,53 @@ def _parse_file_wrapper(filepath):
         return (filepath, None, f"{os.path.basename(filepath)}: {type(e).__name__}: {e}")
 
 
+def _extract_zips_to_temp(pasta: str) -> tuple[str, int]:
+    """
+    Extract all .zip files in pasta to a temp directory.
+    Returns (tmpdir_path, count_of_xmls_extracted).
+    If no zips found, returns (None, 0).
+    """
+    zip_files = [
+        os.path.join(pasta, f)
+        for f in os.listdir(pasta)
+        if f.lower().endswith('.zip')
+    ]
+    if not zip_files:
+        return None, 0
+
+    tmpdir = tempfile.mkdtemp(prefix="esocial_zip_")
+    total_extracted = 0
+
+    for zf_path in zip_files:
+        try:
+            with zipfile.ZipFile(zf_path, 'r') as zf:
+                for member in zf.namelist():
+                    if member.lower().endswith('.xml'):
+                        # Extract to flat tmpdir (no subdirs)
+                        safe_name = os.path.basename(member)
+                        if not safe_name:
+                            continue
+                        # Avoid overwrites by prefixing with zip name
+                        if os.path.exists(os.path.join(tmpdir, safe_name)):
+                            zip_prefix = os.path.splitext(os.path.basename(zf_path))[0]
+                            safe_name = f"{zip_prefix}_{safe_name}"
+                        data = zf.read(member)
+                        dest = os.path.join(tmpdir, safe_name)
+                        with open(dest, 'wb') as out:
+                            out.write(data)
+                        total_extracted += 1
+        except (zipfile.BadZipFile, Exception) as e:
+            logger.warning(f"Erro ao extrair {zf_path}: {e}")
+            continue
+
+    logger.info(f"Extraídos {total_extracted} XMLs de {len(zip_files)} ZIPs para {tmpdir}")
+    return tmpdir, total_extracted
+
+
 @router.post("/importar")
 async def importar_xmls(req: ImportRequest):
-    """Import all XML files from a local folder into the database (background)."""
+    """Import all XML files from a local folder into the database (background).
+    Supports both .xml files directly and .zip files containing XMLs."""
     pasta = req.pasta.strip()
     if not os.path.isdir(pasta):
         raise HTTPException(status_code=400, detail=f"Pasta não encontrada: {pasta}")
@@ -528,15 +573,28 @@ async def importar_xmls(req: ImportRequest):
     if _import_progress["running"]:
         raise HTTPException(status_code=409, detail="Uma importação já está em andamento")
 
-    # List XML files
+    # List XML files directly in folder
     xml_files = [
         os.path.join(pasta, f)
         for f in os.listdir(pasta)
         if f.lower().endswith('.xml')
     ]
 
+    # Also extract any .zip files
+    zip_tmpdir, zip_count = _extract_zips_to_temp(pasta)
+    if zip_tmpdir and zip_count > 0:
+        zip_xmls = [
+            os.path.join(zip_tmpdir, f)
+            for f in os.listdir(zip_tmpdir)
+            if f.lower().endswith('.xml')
+        ]
+        xml_files.extend(zip_xmls)
+        logger.info(f"Total: {len(xml_files)} XMLs ({len(xml_files) - zip_count} diretos + {zip_count} de ZIPs)")
+
     if not xml_files:
-        raise HTTPException(status_code=400, detail="Nenhum arquivo XML encontrado na pasta")
+        if zip_tmpdir:
+            shutil.rmtree(zip_tmpdir, ignore_errors=True)
+        raise HTTPException(status_code=400, detail="Nenhum arquivo XML encontrado na pasta (nem em ZIPs)")
 
     _import_progress["running"] = True
     _import_progress["total"] = len(xml_files)
@@ -548,16 +606,21 @@ async def importar_xmls(req: ImportRequest):
     _import_progress["rate"] = 0
     _import_progress["finished"] = False
     _import_progress["result"] = None
+    _import_progress["zip_tmpdir"] = zip_tmpdir  # track for cleanup
 
     # Launch background thread
-    t = threading.Thread(
-        target=_run_import,
-        args=(xml_files, pasta, req.periodo),
-        daemon=True,
-    )
+    def _run_and_cleanup():
+        try:
+            _run_import(xml_files, pasta, req.periodo)
+        finally:
+            if zip_tmpdir:
+                shutil.rmtree(zip_tmpdir, ignore_errors=True)
+                logger.info(f"Cleaned up ZIP temp dir: {zip_tmpdir}")
+
+    t = threading.Thread(target=_run_and_cleanup, daemon=True)
     t.start()
 
-    return {"status": "started", "total": len(xml_files)}
+    return {"status": "started", "total": len(xml_files), "from_zips": zip_count}
 
 
 # ── Upload-based import (drag & drop) ──────────────────────────────────────

@@ -45,8 +45,22 @@ def _build_pen_alim(parent, pens: list[dict]):
         _sub(pa, "vlrDedPenAlim", pen["vlrDedPenAlim"])
 
 
-def _build_info_ir_complem(parent, info_ir: dict):
-    """Monta <infoIRComplem> com uma ou mais <infoIRCR>."""
+def _build_plan_saude(parent, plan_saude: dict):
+    """Monta <planSaude> dentro de <infoIRComplem>.
+    plan_saude: {cnpjOper, regANS, vlrSaudeTit, infoDepSau?[]}
+    """
+    ps = _sub(parent, "planSaude")
+    _sub(ps, "cnpjOper", plan_saude["cnpjOper"])
+    _sub(ps, "regANS", plan_saude["regANS"])
+    _sub(ps, "vlrSaudeTit", plan_saude["vlrSaudeTit"])
+    for dep in plan_saude.get("infoDepSau", []):
+        ids = _sub(ps, "infoDepSau")
+        _sub(ids, "cpfDep", dep["cpfDep"])
+        _sub(ids, "vlrSaudeDep", dep["vlrSaudeDep"])
+
+
+def _build_info_ir_complem(parent, info_ir: dict, plan_saude: dict = None):
+    """Monta <infoIRComplem> com uma ou mais <infoIRCR> e opcional <planSaude>."""
     irc = _sub(parent, "infoIRComplem")
     for cr in info_ir.get("infoIRCR", []):
         ircr = _sub(irc, "infoIRCR")
@@ -57,6 +71,8 @@ def _build_info_ir_complem(parent, info_ir: dict):
             _build_ded_depen(ircr, cr["dedDepen"])
         if cr.get("penAlim"):
             _build_pen_alim(ircr, cr["penAlim"])
+    if plan_saude:
+        _build_plan_saude(irc, plan_saude)
 
 
 class S1210XMLGenerator:
@@ -75,6 +91,7 @@ class S1210XMLGenerator:
         ind_retif: str = "1",
         nr_recibo: str = None,
         info_ir_complem: dict = None,
+        plan_saude: dict = None,
         seq: int = 1,
         tp_amb: str = "2",
     ) -> bytes:
@@ -158,7 +175,11 @@ class S1210XMLGenerator:
 
         # --- infoIRComplem (opcional) ---
         if info_ir_complem and info_ir_complem.get("infoIRCR"):
-            _build_info_ir_complem(ide_benef, info_ir_complem)
+            _build_info_ir_complem(ide_benef, info_ir_complem, plan_saude)
+        elif plan_saude:
+            # planSaude sem infoIRCR — precisa criar infoIRComplem só com planSaude
+            irc = _sub(ide_benef, "infoIRComplem")
+            _build_plan_saude(irc, plan_saude)
 
         return etree.tostring(root, xml_declaration=True, encoding="UTF-8")
 
@@ -170,6 +191,7 @@ class S1210XMLGenerator:
         per_apur: str,
         nr_recibo: str,
         info_ir_complem: dict = None,
+        plan_saude: dict = None,
         seq: int = 1,
         tp_amb: str = "2",
     ) -> bytes:
@@ -182,6 +204,7 @@ class S1210XMLGenerator:
             ind_retif="2",
             nr_recibo=nr_recibo,
             info_ir_complem=info_ir_complem,
+            plan_saude=plan_saude,
             seq=seq,
             tp_amb=tp_amb,
         )

@@ -121,3 +121,5 @@ Dependendo da resposta:
 | 566                        | Desconto INSS   | 🔴 Máxima  | "Completa certeza que precisa ser mexida"       |
 | 47                         | (a identificar) | 🟡 Alta    | "Não subiu errada, mas não completamente certa" |
 | Indenizatórias de rescisão | Várias verbas   | 🟡 Alta    | Zeradas no eSocial                              |
+
+

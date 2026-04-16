@@ -1,15 +1,55 @@
-﻿# Easy e-Social — Missão Atual
+﻿# Easy e-Social — Missão Atual (Atualizado 15/04/2026)
 
 ## Status Geral
 
-| Missão                                      | Status                             |
-| ------------------------------------------- | ---------------------------------- |
-| Upload e processamento DIRF.xlsx            | ✅ Concluído                       |
-| 4 tabelas no banco (PostgreSQL)             | ✅ Concluído                       |
-| Detecção de divergências (Ponto 1)          | ✅ 385 divergências detectadas     |
-| Frontend reconstruído (Painel/Tabelas/Robô) | ✅ Concluído                       |
-| Bot eSocial — calibração e automação        | ⏸️ PAUSADO                         |
-| **Missão atual**                            | 🔴 Pendente (aguardando definição) |
+| Missão | Status |
+|--------|--------|
+| Upload/processamento DIRF.xlsx + 4 tabelas | ✅ Concluído |
+| Detecção de divergências (385) + Bot eSocial | ⏸️ PAUSADO |
+| Pipeline batch S-1210 (retificação em massa) | ✅ Código pronto |
+| **M1: Investigação planSaude / causa-raiz** | ✅ Concluído |
+| **M2: Separar CPFs sindicato vs operadora** | 🟡 Aguardando Ana |
+| **M3: Retificar TODOS S-1210 Janeiro** | 🔴 Bloqueado (M2) |
+| **M4: Resolver 100 duplicidade Janeiro** | 🔴 Precisa dez/2024 |
+| **M5: Fechar Janeiro (S-1299)** | 🔴 Depende M3+M4 |
+| **M6: Corrigir Fevereiro** | 🔴 Depois de Janeiro |
+
+---
+
+## 🔴 MISSÃO ATIVA — Corrigir planSaude Janeiro 2025
+
+### Contexto
+Pipeline batch enviou S-1210 para 11.290 CPFs de Jan/2025 com valores de planSaude **ERRADOS** (mapa inflado por bug). Os 8.768 aceitos precisam ser retificados novamente com valores corretos. 164 CPFs ainda com erros.
+
+### Causa-raiz (M1 ✅)
+Bug em `_rebuild_jan_plansaude.py`: somava TODAS rubricas com nat_rubr LIKE '92%' (99 rubricas!) em vez de apenas as de saúde (607/774/775/516). Dobrava valores ao contar original+retif do S-1200.
+
+### Descoberta CRÍTICA — FAQ 14.4 do eSocial
+O grupo planSaude no S-1210 **só deve ser preenchido para plano coletivo empresarial**. Plano por adesão via sindicato NÃO deve ter planSaude, mesmo com desconto em folha.
+
+**Evidências que 774/775 são sindicato (não empresarial):**
+- Set/2025: 1.014 CPFs com rubricas de saúde, ZERO planSaude → Bahia nunca incluiu para 774/775
+- Jan/2025 original: apenas 19 CPFs com planSaude (todos rubrica 607) de 1.578 com rubricas de saúde
+
+### Erros residuais (164 CPFs):
+| Erro | Qtd | Ação |
+|------|-----|------|
+| Duplicidade [106] | 100 | Precisa download dez/2024 |
+| planSaude [8] | 49 | Investigado — ver `docs/CONCLUSOES_15-04-2026.md` |
+| Em processamento | 14 | Aguardar ou reconsultar |
+| Pensão alimentícia [8] | 1 | Fix manual |
+
+### Próximos passos:
+1. **Ana confirmar**: 774/775 é sindicato ou empresarial?
+2. Salvar mapa correto (--save)
+3. Re-retificar TODOS 11.127+ S-1210 aceitos
+4. Resolver 49 planSaude + 100 duplicidade
+5. Fechar Jan com S-1299
+
+### Documentação:
+- `docs/CONCLUSOES_15-04-2026.md` — Pesquisa completa FAQ + investigação
+- `MISSAO_774_607.md` — Histórico rubrica 774→607
+- `docs/DIAGRAMA_CPF_08132588983.md` — Análise detalhada de CPFs
 
 ---
 

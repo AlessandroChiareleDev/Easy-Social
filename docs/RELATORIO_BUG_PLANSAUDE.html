@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Relatório — Erro nos Valores de Plano de Saúde (Janeiro/2025)</title>
+<style>
+  @page { margin: 2cm; }
+  body { font-family: Calibri, Arial, sans-serif; font-size: 11pt; color: #222; line-height: 1.6; max-width: 900px; margin: 40px auto; padding: 0 30px; }
+  h1 { font-size: 18pt; color: #1a3c6e; border-bottom: 3px solid #1a3c6e; padding-bottom: 8px; margin-top: 0; }
+  h2 { font-size: 14pt; color: #1a3c6e; margin-top: 30px; border-bottom: 1px solid #ccc; padding-bottom: 4px; }
+  h3 { font-size: 12pt; color: #333; margin-top: 20px; }
+  .header-info { color: #555; font-size: 10pt; margin-bottom: 25px; }
+  .header-info span { display: block; }
+  .resumo { background: #f0f4f8; border-left: 4px solid #1a3c6e; padding: 15px 20px; margin: 20px 0; }
+  .resumo p { margin: 5px 0; }
+  .destaque { color: #c0392b; font-weight: bold; }
+  .ok { color: #27ae60; font-weight: bold; }
+  table { border-collapse: collapse; width: 100%; margin: 15px 0; font-size: 10pt; }
+  th { background: #1a3c6e; color: white; padding: 8px 10px; text-align: left; }
+  td { padding: 6px 10px; border-bottom: 1px solid #ddd; }
+  tr:nth-child(even) { background: #f7f7f7; }
+  .nao-saude { color: #c0392b; }
+  .saude { color: #27ae60; font-weight: bold; }
+  .calculo { background: #fff3cd; padding: 12px 18px; border-left: 4px solid #f0ad4e; margin: 10px 0; font-size: 10.5pt; }
+  .calculo strong { font-size: 11pt; }
+  .cpf-box { background: #f9f9f9; border: 1px solid #ddd; padding: 15px 20px; margin: 15px 0; border-radius: 4px; }
+  .cpf-box h3 { margin-top: 0; color: #1a3c6e; }
+  .impacto-table td:nth-child(2) { color: #c0392b; font-weight: bold; }
+  .impacto-table td:nth-child(3) { color: #27ae60; font-weight: bold; }
+  .antes-depois th { text-align: center; }
+  .antes-depois td { text-align: center; }
+  .antes-depois td:first-child { text-align: left; }
+  .nota { background: #e8f4fd; border-left: 4px solid #3498db; padding: 10px 15px; margin: 15px 0; font-size: 10pt; }
+  .footer { margin-top: 40px; padding-top: 15px; border-top: 2px solid #1a3c6e; font-size: 9pt; color: #777; }
+  @media print { body { margin: 0; padding: 0; } }
+</style>
+</head>
+<body>
+
+<h1>Relatório: Erro nos Valores de Plano de Saúde<br>S-1210 — Janeiro/2025</h1>
+
+<div class="header-info">
+  <span><strong>Data:</strong> 15 de abril de 2026</span>
+  <span><strong>Empresa:</strong> APPA — Administração dos Portos de Paranaguá e Antonina</span>
+  <span><strong>Assunto:</strong> Valores incorretos de plano de saúde (vlrSaudeTit) nos eventos S-1210 enviados para Janeiro/2025</span>
+</div>
+
+<h2>1. Resumo</h2>
+
+<div class="resumo">
+  <p>O programa que calculou os valores de plano de saúde para os eventos S-1210 de Janeiro/2025 continha <strong>dois erros</strong> que causaram:</p>
+  <p>• <span class="destaque">10.443 funcionários receberam informação de plano de saúde</span>, quando na verdade apenas 2.261 deveriam ter.</p>
+  <p>• <span class="destaque">8.182 funcionários receberam plano de saúde sem ter plano de saúde nenhum.</span></p>
+  <p>• Mesmo os 2.261 que realmente têm saúde receberam <span class="destaque">valores inflados</span> — incluindo descontos que não são de saúde (contribuição sindical, vale-transporte, consignado), tudo somado em dobro.</p>
+</div>
+
+<div class="nota">
+  <strong>Nota:</strong> Antes do pipeline de retificação, o S-5002 (totalizador do IRRF) dos 3 CPFs de exemplo <strong>não apresentava o tipo 67</strong> (plano de saúde coletivo). Isso confirma que o S-1210 original, enviado pela folha, <strong>não continha planSaude</strong>. O tipo 67 só apareceu na S-5002 após a retificação feita pelo sistema Easy-Social (run 6), quando o campo planSaude com vlrSaudeTit foi injetado.
+</div>
+
+<h2>2. O que aconteceu</h2>
+
+<p>Para montar o S-1210 (evento de pagamento do eSocial), quando o trabalhador tem plano de saúde coletivo empresarial, é necessário informar o valor pago pelo titular no campo <code>vlrSaudeTit</code>. Esse valor precisa ser extraído das rubricas de saúde que aparecem no S-1200 (evento de remuneração) do período de referência — que no caso do S-1210 de janeiro/2025 é o <strong>S-1200 de dezembro/2024</strong> (perRef=2024-12).</p>
+
+<p>As rubricas de saúde da APPA são <strong>5</strong>:</p>
+
+<table>
+  <tr><th>Rubrica</th><th>Natureza</th><th>Descrição</th><th>CPFs que usam (dez/2024)</th></tr>
+  <tr><td>607</td><td>9219</td><td>Assistência médica</td><td>18</td></tr>
+  <tr><td>774</td><td>9299</td><td>Desc. assistência médica</td><td>1.027</td></tr>
+  <tr><td>775</td><td>9299</td><td>Saúde (APPA-específica)</td><td>1.444</td></tr>
+  <tr><td>516</td><td>9299</td><td>Desc. assistência odonto dependente</td><td>238</td></tr>
+  <tr><td style="font-weight:bold; color:#c0392b">522</td><td>9299</td><td style="font-weight:bold; color:#c0392b">Desc. assistência médica (titular)</td><td style="font-weight:bold; color:#c0392b">755</td></tr>
+</table>
+
+<div class="nota">
+  <strong>A rubrica 522 não era conhecida anteriormente.</strong> Ela é usada por 755 funcionários e tem a mesma natureza 9299 das demais rubricas de saúde. Sua omissão na análise inicial causou erros de diagnóstico para funcionários como Waldelice, que efetivamente TEM plano de saúde (rubrica 522 = R$ 72,70), mas que havia sido incorretamente classificada como "sem plano".
+</div>
+
+<h3>Erro 1 — Filtro errado pegou 99 rubricas em vez de 5</h3>
+
+<p>O programa, ao buscar as rubricas de saúde no S-1200, usou um filtro genérico que selecionava <strong>todas as rubricas com natureza começando em "92"</strong>. Acontece que "92" não é só saúde — na tabela do eSocial, isso abrange <strong>todos os tipos de desconto</strong>:</p>
+
+<table>
+  <tr><th>Natureza</th><th>O que realmente é</th></tr>
+  <tr><td>9201</td><td>Contribuição sindical</td></tr>
+  <tr><td>9209</td><td>Contribuição previdenciária</td></tr>
+  <tr><td>9213</td><td>Imposto de renda</td></tr>
+  <tr><td>9216</td><td>Pensão alimentícia</td></tr>
+  <tr><td>9219</td><td class="saude">Assistência médica (saúde)</td></tr>
+  <tr><td>9230–9233</td><td>Vale-transporte</td></tr>
+  <tr><td>9241–9243</td><td>Alimentação (VR, VA)</td></tr>
+  <tr><td>9250</td><td>Outros descontos</td></tr>
+  <tr><td>9254</td><td>Empréstimo consignado</td></tr>
+  <tr><td>9290</td><td>Previdência complementar</td></tr>
+  <tr><td>9299</td><td>Diversos (inclui saúde e outros)</td></tr>
+</table>
+
+<p>Resultado: o programa pegou <strong>99 rubricas</strong> em vez das 5 corretas. Somou contribuição sindical, vale-transporte, consignado, pensão, vale-refeição — tudo misturado como se fosse plano de saúde.</p>
+
+<h3>Erro 2 — Valores somados em dobro</h3>
+
+<p>Os arquivos do eSocial (ZIP) podem conter duas versões do mesmo evento: o original (indRetif=1) e a retificação (indRetif=2). O correto é usar <strong>apenas a versão mais recente</strong> (a retificação). O programa somou as duas versões, <strong>dobrando o valor</strong>.</p>
+
+<h3>Resultado combinado</h3>
+
+<div class="calculo">
+  <strong>Valor ERRADO enviado =</strong> soma de TODAS as 99 rubricas de desconto (sindical + VT + consignado + alimentação + tudo) × 2 versões (original + retificação) = <strong>valor massivamente inflado</strong>
+</div>
+
+<div class="calculo">
+  <strong>Valor CORRETO =</strong> apenas o valor da rubrica de saúde (607, 774, 775, 516 ou 522) da versão mais recente (retificação) do S-1200 de <strong>dezembro/2024</strong>
+</div>
+
+<h2>3. Prova com os 3 CPFs de exemplo</h2>
+
+<p>Os dados abaixo são das rubricas do <strong>S-1200 de dezembro/2024</strong> (perRef do S-1210 de janeiro) e do <strong>S-1200 de janeiro/2025</strong> (que foi usado erroneamente pelo mapa bugado).</p>
+
+<div class="cpf-box">
+  <h3>Waldelice Santos de Andrade — CPF: 930.653.455-87</h3>
+  <p><span class="ok">TEM plano de saúde</span> — rubrica 522 = R$ 72,70 no S-1200 de dezembro/2024.</p>
+  
+  <p><strong>Rubricas do S-1200 de dezembro/2024</strong> (período correto de referência):</p>
+  <table>
+    <tr><th>Rubrica</th><th>O que é</th><th>Valor</th><th>É saúde?</th></tr>
+    <tr><td>2</td><td>Salário base</td><td>R$ 1.530,43</td><td class="nao-saude">NÃO</td></tr>
+    <tr><td>273</td><td>Outros proventos</td><td>R$ 0,71</td><td class="nao-saude">NÃO</td></tr>
+    <tr><td style="font-weight:bold; color:#27ae60">522</td><td style="font-weight:bold; color:#27ae60">Assistência médica (titular)</td><td style="font-weight:bold; color:#27ae60">R$ 72,70</td><td class="saude">SIM</td></tr>
+    <tr><td>541</td><td>Arredondamento</td><td>R$ 0,48</td><td class="nao-saude">NÃO</td></tr>
+    <tr><td>566</td><td>Contribuição sindical</td><td>R$ 116,55</td><td class="nao-saude">NÃO</td></tr>
+    <tr><td>672</td><td>Pensão alimentícia</td><td>R$ 91,83</td><td class="nao-saude">NÃO</td></tr>
+    <tr><td>729</td><td>Outros descontos</td><td>R$ 1,18</td><td class="nao-saude">NÃO</td></tr>
+    <tr><td>763</td><td>Vale-transporte</td><td>R$ 20,00</td><td class="nao-saude">NÃO</td></tr>
+    <tr><td>776</td><td>Vale-alimentação</td><td>R$ 71,40</td><td class="nao-saude">NÃO</td></tr>
+    <tr><td>1350</td><td>Remuneração especial</td><td>R$ 1.878,10</td><td class="nao-saude">NÃO</td></tr>
+    <tr><td>9276</td><td>Salário-família</td><td>R$ 218,40</td><td class="nao-saude">NÃO</td></tr>
+    <tr><td>9284</td><td>Abono</td><td>R$ 357,00</td><td class="nao-saude">NÃO</td></tr>
+  </table>
+
+  <p><strong>Rubricas do S-1200 de janeiro/2025</strong> (período errado que o mapa bugado usou):</p>
+  <table>
+    <tr><th>Rubrica</th><th>O que é</th><th>Valor</th><th>É saúde?</th></tr>
+    <tr><td>641</td><td>Contribuição sindical</td><td>R$ 162,47</td><td class="nao-saude">NÃO</td></tr>
+    <tr><td>729</td><td>Outros descontos</td><td>R$ 1,18</td><td class="nao-saude">NÃO</td></tr>
+    <tr><td>763</td><td>Vale-transporte</td><td>R$ 20,00</td><td class="nao-saude">NÃO</td></tr>
+  </table>
+  <p style="font-size:10pt; color:#888;">Nota: o S-1200 de janeiro NÃO tem nenhuma rubrica de saúde — a 522 só aparece em dezembro.</p>
+
+  <div class="calculo">
+    <strong>Valor ERRADO enviado:</strong> R$ 367,30 (todas as rubricas nat=92% do S-1200 de janeiro, somadas em dobro)<br>
+    <strong>Valor CORRETO:</strong> <span class="ok">R$ 72,70</span> (rubrica 522 do S-1200 de dezembro/2024)
+  </div>
+
+  <p><strong>Comprovação pelo S-5002</strong> (Totalizador do IRRF):</p>
+  <table class="antes-depois">
+    <tr><th>Tipo</th><th>Descrição</th><th>ANTES da retificação</th><th>DEPOIS (atual)</th></tr>
+    <tr><td>11</td><td>Remuneração mensal</td><td>R$ 1.413,88</td><td>R$ 1.530,43</td></tr>
+    <tr><td>41</td><td>Previdência oficial</td><td>—</td><td>R$ 116,55</td></tr>
+    <tr><td style="font-weight:bold; color:#27ae60">67</td><td style="font-weight:bold; color:#27ae60">Plano saúde coletivo</td><td>—</td><td style="font-weight:bold; color:#27ae60">R$ 72,70</td></tr>
+    <tr><td>7900</td><td>Verba natureza diversa</td><td>-R$ 183,00</td><td>-R$ 183,00</td></tr>
+    <tr><td>7950</td><td>Rendimento não tributável</td><td>-R$ 73,88</td><td>-R$ 1,18</td></tr>
+  </table>
+  <p style="font-size:10pt;">O tipo 67 = R$ 72,70 apareceu na S-5002 <strong>após</strong> a retificação com planSaude — confirmando que o valor real de saúde é 72,70 (rubrica 522).</p>
+</div>
+
+<div class="cpf-box">
+  <h3>Suyane — CPF: 867.474.825-22</h3>
+  <p><span class="ok">TEM plano de saúde</span> — rubrica 522 = R$ 10,20 no S-1200 de dezembro/2024.</p>
+  
+  <p><strong>Rubricas do S-1200 de dezembro/2024:</strong></p>
+  <table>
+    <tr><th>Rubrica</th><th>O que é</th><th>Valor</th><th>É saúde?</th></tr>
+    <tr><td>2</td><td>Salário base</td><td>R$ 1.530,43</td><td class="nao-saude">NÃO</td></tr>
+    <tr><td>273</td><td>Outros proventos</td><td>R$ 0,82</td><td class="nao-saude">NÃO</td></tr>
+    <tr><td style="font-weight:bold; color:#27ae60">522</td><td style="font-weight:bold; color:#27ae60">Assistência médica (titular)</td><td style="font-weight:bold; color:#27ae60">R$ 10,20</td><td class="saude">SIM</td></tr>
+    <tr><td>541</td><td>Arredondamento</td><td>R$ 1,09</td><td class="nao-saude">NÃO</td></tr>
+    <tr><td>566</td><td>Contribuição sindical</td><td>R$ 116,55</td><td class="nao-saude">NÃO</td></tr>
+    <tr><td>672</td><td>Pensão alimentícia</td><td>R$ 91,83</td><td class="nao-saude">NÃO</td></tr>
+    <tr><td>729</td><td>Outros descontos</td><td>R$ 1,18</td><td class="nao-saude">NÃO</td></tr>
+    <tr><td>763</td><td>Vale-transporte</td><td>R$ 20,00</td><td class="nao-saude">NÃO</td></tr>
+    <tr><td>776</td><td>Vale-alimentação</td><td>R$ 71,40</td><td class="nao-saude">NÃO</td></tr>
+    <tr><td>806</td><td>Empréstimo consignado</td><td>R$ 442,00</td><td class="nao-saude">NÃO</td></tr>
+  </table>
+  
+  <div class="calculo">
+    <strong>Valor ERRADO enviado:</strong> R$ 1.251,30 (todas as rubricas nat=92% do S-1200 de janeiro, somadas em dobro)<br>
+    <strong>Valor CORRETO:</strong> <span class="ok">R$ 10,20</span> (rubrica 522 do S-1200 de dezembro/2024)
+  </div>
+
+  <p><strong>Comprovação S-5002 ANTES:</strong> tipo 11 = R$ 1.413,88 | tipo 7900 = -R$ 625,50 | tipo 7950 = -R$ 11,38 | <strong>tipo 67 = inexistente</strong></p>
+</div>
+
+<div class="cpf-box">
+  <h3>Anaildes — CPF: 978.504.545-53</h3>
+  <p><span class="ok">TEM plano de saúde</span> — rubrica 516 = R$ 7,51 (odonto dependente) no S-1200 de dezembro/2024.</p>
+  
+  <p><strong>Rubricas do S-1200 de dezembro/2024:</strong></p>
+  <table>
+    <tr><th>Rubrica</th><th>O que é</th><th>Valor</th><th>É saúde?</th></tr>
+    <tr><td>2</td><td>Salário base</td><td>R$ 1.530,43</td><td class="nao-saude">NÃO</td></tr>
+    <tr><td>273</td><td>Outros proventos</td><td>R$ 0,11</td><td class="nao-saude">NÃO</td></tr>
+    <tr><td style="font-weight:bold; color:#27ae60">516</td><td style="font-weight:bold; color:#27ae60">Odonto dependente</td><td style="font-weight:bold; color:#27ae60">R$ 7,51</td><td class="saude">SIM</td></tr>
+    <tr><td>541</td><td>Arredondamento</td><td>R$ 0,64</td><td class="nao-saude">NÃO</td></tr>
+    <tr><td>566</td><td>Contribuição sindical</td><td>R$ 116,55</td><td class="nao-saude">NÃO</td></tr>
+    <tr><td>672</td><td>Pensão alimentícia</td><td>R$ 91,83</td><td class="nao-saude">NÃO</td></tr>
+    <tr><td>729</td><td>Outros descontos</td><td>R$ 1,18</td><td class="nao-saude">NÃO</td></tr>
+    <tr><td>763</td><td>Vale-transporte</td><td>R$ 20,00</td><td class="nao-saude">NÃO</td></tr>
+    <tr><td>776</td><td>Vale-alimentação</td><td>R$ 71,40</td><td class="nao-saude">NÃO</td></tr>
+    <tr><td>806</td><td>Empréstimo consignado</td><td>R$ 560,43</td><td class="nao-saude">NÃO</td></tr>
+  </table>
+  
+  <div class="calculo">
+    <strong>Valor ERRADO enviado:</strong> R$ 1.503,18 (todas as rubricas nat=92% do S-1200 de janeiro, somadas em dobro)<br>
+    <strong>Valor CORRETO:</strong> <span class="ok">R$ 7,51</span> (rubrica 516 do S-1200 de dezembro/2024)
+  </div>
+
+  <p><strong>Comprovação S-5002 ANTES:</strong> tipo 11 = R$ 1.413,88 | tipo 7900 = -R$ 744,19 | tipo 7950 = -R$ 8,69 | <strong>tipo 67 = inexistente</strong></p>
+</div>
+
+<h2>4. Números do impacto</h2>
+
+<table class="impacto-table">
+  <tr><th>Indicador</th><th>Valor ERRADO (enviado)</th><th>Valor CORRETO</th></tr>
+  <tr><td>Funcionários que receberam planSaude no S-1210</td><td>10.443</td><td>2.261</td></tr>
+  <tr><td>Funcionários que NÃO deveriam ter recebido</td><td>8.182</td><td>0</td></tr>
+  <tr><td>Menor valor no mapa</td><td>R$ 4,38</td><td>Depende da rubrica real</td></tr>
+  <tr><td>Maior valor no mapa</td><td>R$ 20.501,37</td><td>—</td></tr>
+  <tr><td>Valor mediano</td><td>R$ 679,48</td><td>—</td></tr>
+</table>
+
+<p><strong>Distribuição dos 2.261 CPFs com saúde real (dez/2024):</strong></p>
+<table>
+  <tr><th>Rubrica</th><th>Descrição</th><th>Qtd funcionários</th></tr>
+  <tr><td>775</td><td>Saúde (APPA-específica)</td><td>1.444</td></tr>
+  <tr><td>774</td><td>Desc. assistência médica</td><td>1.027</td></tr>
+  <tr><td>522</td><td>Assistência médica (titular)</td><td>755</td></tr>
+  <tr><td>516</td><td>Odonto dependente</td><td>238</td></tr>
+  <tr><td>607</td><td>Assistência médica</td><td>18</td></tr>
+</table>
+<p style="font-size:10pt; color:#666;">Nota: um funcionário pode ter mais de uma rubrica de saúde. O total de 2.261 é de CPFs únicos com pelo menos uma.</p>
+
+<h2>5. Detalhamento técnico dos erros</h2>
+
+<h3>Erro 1 — Filtro nat_rubr LIKE '92%'</h3>
+
+<p>A query usava <code>WHERE nat_rubr LIKE '92%'</code>, o que capturava <strong>99 rubricas distintas</strong> de desconto, quando apenas 5 são saúde. A natureza "92" no eSocial abrange:</p>
+
+<table>
+  <tr><th>Natureza</th><th>O que é</th><th>É saúde?</th></tr>
+  <tr><td>9201</td><td>Contribuição sindical (ex: rubr 566, 641)</td><td class="nao-saude">NÃO</td></tr>
+  <tr><td>9209</td><td>Contribuição previdenciária</td><td class="nao-saude">NÃO</td></tr>
+  <tr><td>9210</td><td>Seguro de vida</td><td class="nao-saude">NÃO</td></tr>
+  <tr><td>9213</td><td>Imposto de renda</td><td class="nao-saude">NÃO</td></tr>
+  <tr><td>9216</td><td>Pensão alimentícia (ex: rubr 672)</td><td class="nao-saude">NÃO</td></tr>
+  <tr><td>9219</td><td>Assistência médica (ex: rubr 607)</td><td class="saude">SIM</td></tr>
+  <tr><td>9230–9233</td><td>Vale-transporte (ex: rubr 763)</td><td class="nao-saude">NÃO</td></tr>
+  <tr><td>9241–9243</td><td>Alimentação (ex: rubr 776)</td><td class="nao-saude">NÃO</td></tr>
+  <tr><td>9250</td><td>Outros descontos (ex: rubr 729)</td><td class="nao-saude">NÃO</td></tr>
+  <tr><td>9254</td><td>Empréstimo consignado (ex: rubr 806)</td><td class="nao-saude">NÃO</td></tr>
+  <tr><td>9290</td><td>Previdência complementar</td><td class="nao-saude">NÃO</td></tr>
+  <tr><td>9299</td><td>Diversos (inclui 774, 775, 516, 522 de saúde + outros)</td><td>Depende da rubrica</td></tr>
+</table>
+
+<h3>Erro 2 — Período errado + soma duplicada</h3>
+
+<p>O mapa de plano de saúde foi construído a partir do S-1200 de <strong>janeiro/2025</strong>, quando deveria ter usado o S-1200 de <strong>dezembro/2024</strong> (que é o perRef do S-1210 de janeiro). Além disso, somou original + retificação, dobrando os valores.</p>
+
+<h2>6. O que está sendo feito</h2>
+
+<p><strong>1.</strong> O script de construção do mapa de plano de saúde está sendo corrigido para usar apenas as 5 rubricas corretas (607, 774, 775, 516, 522), do S-1200 do período de referência correto, usando apenas a versão mais recente do evento.</p>
+
+<p><strong>2.</strong> Todos os ~11.000 eventos S-1210 aceitos pelo eSocial precisarão ser retificados — os 8.182 que não deveriam ter planSaude terão o campo removido, e os 2.261 que deveriam ter receberão o valor correto extraído do S-1200 de dezembro/2024.</p>
+
+<p><strong>3.</strong> O pipeline capturou snapshots do S-5002 antes e depois de cada retificação (tabela <code>pipeline_snapshots</code>), permitindo auditoria completa de todos os valores impactados.</p>
+
+<div class="footer">
+  <p>Relatório gerado pelo sistema Easy-Social — 15/04/2026 (versão corrigida)</p>
+</div>
+
+</body>
+</html>

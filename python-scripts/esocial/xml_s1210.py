@@ -59,7 +59,16 @@ def _build_plan_saude(parent, plan_saude: dict):
         _sub(ids, "vlrSaudeDep", dep["vlrSaudeDep"])
 
 
-def _build_info_ir_complem(parent, info_ir: dict, plan_saude: dict = None):
+def _build_plan_saude_entries(parent, plan_saude):
+    """Monta um ou mais <planSaude> — aceita dict único ou lista de dicts."""
+    if isinstance(plan_saude, dict):
+        _build_plan_saude(parent, plan_saude)
+    elif isinstance(plan_saude, list):
+        for ps in plan_saude:
+            _build_plan_saude(parent, ps)
+
+
+def _build_info_ir_complem(parent, info_ir: dict, plan_saude=None):
     """Monta <infoIRComplem> com uma ou mais <infoIRCR> e opcional <planSaude>."""
     irc = _sub(parent, "infoIRComplem")
     for cr in info_ir.get("infoIRCR", []):
@@ -72,7 +81,7 @@ def _build_info_ir_complem(parent, info_ir: dict, plan_saude: dict = None):
         if cr.get("penAlim"):
             _build_pen_alim(ircr, cr["penAlim"])
     if plan_saude:
-        _build_plan_saude(irc, plan_saude)
+        _build_plan_saude_entries(irc, plan_saude)
 
 
 class S1210XMLGenerator:
@@ -179,7 +188,7 @@ class S1210XMLGenerator:
         elif plan_saude:
             # planSaude sem infoIRCR — precisa criar infoIRComplem só com planSaude
             irc = _sub(ide_benef, "infoIRComplem")
-            _build_plan_saude(irc, plan_saude)
+            _build_plan_saude_entries(irc, plan_saude)
 
         return etree.tostring(root, xml_declaration=True, encoding="UTF-8")
 

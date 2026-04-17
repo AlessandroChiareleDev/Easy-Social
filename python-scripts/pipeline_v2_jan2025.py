@@ -656,7 +656,7 @@ def save_progress(progress: dict):
 # PIPELINE PRINCIPAL
 # ═══════════════════════════════════════════════════════════════
 
-def run_pipeline(dry_run=False, no_close=False, only_errors=False, workers=PARALLEL_WORKERS, recibo_override_file=None):
+def run_pipeline(dry_run=False, no_close=False, only_errors=False, workers=PARALLEL_WORKERS, recibo_override_file=None, cpf_list_file=None):
     log = setup_logging()
     per_apur = PER_APUR
 
@@ -664,6 +664,7 @@ def run_pipeline(dry_run=False, no_close=False, only_errors=False, workers=PARAL
     if dry_run: mode_tags.append("DRY-RUN")
     if no_close: mode_tags.append("SEM-FECHAR")
     if only_errors: mode_tags.append("SÓ-ERROS")
+    if cpf_list_file: mode_tags.append("CPF-LIST")
     mode_str = " | ".join(mode_tags) if mode_tags else "PRODUÇÃO"
 
     log.info("=" * 70)
@@ -743,7 +744,19 @@ def run_pipeline(dry_run=False, no_close=False, only_errors=False, workers=PARAL
     sem_plan = len(cpf_set) - com_plan
     log.info(f"  No pipeline: {com_plan} COM planSaude, {sem_plan} SEM planSaude")
 
-    # 0.5 Filtrar se --only-errors
+    # 0.5 Filtrar se --cpf-list
+    if cpf_list_file:
+        with open(cpf_list_file) as f:
+            cpf_list_set = set()
+            for line in f:
+                cpf_clean = line.strip().replace(".", "").replace("-", "")
+                if cpf_clean:
+                    cpf_list_set.add(cpf_clean)
+        log.info(f"  [CPF-LIST] {len(cpf_list_set)} CPFs no arquivo")
+        cpf_data = [d for d in cpf_data if d["cpf"] in cpf_list_set]
+        log.info(f"  [CPF-LIST] {len(cpf_data)} CPFs encontrados no explorador")
+
+    # 0.5b Filtrar se --only-errors
     if only_errors:
         error_cpfs = load_error_cpfs(per_apur)
         log.info(f"  [SÓ-ERROS] {len(error_cpfs)} CPFs com erro no último run")
@@ -1023,6 +1036,7 @@ def main():
     parser.add_argument("--only-errors", action="store_true", help="Só reprocessa CPFs com erro do último run")
     parser.add_argument("--workers", type=int, default=PARALLEL_WORKERS, help=f"Workers paralelos (default: {PARALLEL_WORKERS})")
     parser.add_argument("--recibo-override", type=str, help="JSON file com {cpf: recibo_correto} p/ override")
+    parser.add_argument("--cpf-list", type=str, help="Arquivo com CPFs específicos (um por linha)")
     args = parser.parse_args()
 
     run_pipeline(
@@ -1031,6 +1045,7 @@ def main():
         only_errors=args.only_errors,
         workers=args.workers,
         recibo_override_file=args.recibo_override,
+        cpf_list_file=args.cpf_list,
     )
 
 

@@ -1,4 +1,4 @@
-﻿# Easy e-Social — Missão Atual (Atualizado 16/04/2026)
+﻿# Easy e-Social — Missão Atual (Atualizado 15/04/2026)
 
 ## Status Geral
 
@@ -13,72 +13,6 @@
 | **M4: Resolver 100 duplicidade Janeiro** | 🔴 Precisa dez/2024 |
 | **M5: Fechar Janeiro (S-1299)** | 🔴 Depende M3+M4 |
 | **M6: Corrigir Fevereiro** | 🔴 Depois de Janeiro |
-| **M7: Investigação dedDepen Set/2025** | ✅ Investigado — ver abaixo |
-| **M8: Resolver discrepância dedDepen Set/2025** | 🔴 Aguardando call com Ana |
-
----
-
-## 🔴 MISSÃO M7/M8 — Dedução de Dependentes Set/2025
-
-### Contexto (Call Ana 16/04/2026)
-Ana identificou que o **extrator da Receita Federal** mostra apenas **~R$ 20.000** de dedução de dependentes para Set/2025.
-Meses anteriores: Jan R$ 1.099.053 | Fev R$ 1.049.191. Todos os envios são nossos.
-
-### O Que Foi Descoberto (Investigação 16/04/2026)
-
-**Cronologia real dos envios em Oct/2025:**
-1. 06/Out — Enviou 7.762 S-1210 (lote original), 2.585 COM dedDepen = R$ 739.211,41
-2. 09/Out — +9 S-1210 complemento + S-1299 Fechamento #1
-3. 24/Out 10:43 — S-1298 Reabertura #1
-4. 24/Out 10:43 — S-1299 Fechamento #2 (7 segundos depois!)
-5. 24/Out 10:44 — S-1298 Reabertura #2
-6. 24/Out 10:46 — **S-3000 exclusão MASSIVA de TODOS os 7.771 S-1210**
-7. 24/Out ~11-14h — Reenvio completo de 7.771 S-1210 (mesmos dados)
-8. 24/Out 14:04 — S-1299 Fechamento #3 (Final, cdResposta=201 Sucesso)
-
-**3 gerações de S-5002 no download (23.313 = 3 × 7.771):**
-| Geração | Momento | COM dedDepen | Valor |
-|---------|---------|-------------|-------|
-| Gen 1 | Lote original (Oct 6-9) | 2.585 | R$ 739.211,41 |
-| Gen 2 | Após exclusões (Oct 24) | **0** | **R$ 0,00** ← ZERADA! |
-| Gen 3 | Após reenvio (Oct 24) | 2.585 | R$ 739.211,41 |
-
-**Estado final no download:** 2.585 CPFs COM dep = R$ 739.211,41 (correto)
-**Extrator da Receita:** ~R$ 20.000 (ERRADO)
-
-### Discrepância: R$ 739k vs R$ 20k — Hipóteses
-
-1. **Bug eSocial pós-exclusão massiva:** A Gen2 (zerada) ficou "travada" como estado para maioria dos CPFs na Receita, só uns poucos processaram Gen3 corretamente (~R$ 20k)
-2. **Fechamento de 7 segundos gerou snapshot desatualizado** na base da Receita
-3. **Extrator usa DCTFWeb, não S-5002 direto.** Se DCTFWeb foi transmitida antes do reenvio (24/out), está com dados do fechamento #2 (zerado)
-
-### Como Resolver — Plano de Ação
-
-**Perguntas para Ana na próxima call:**
-1. Qual campo/tela EXATAMENTE mostra R$ 20.000 no extrator? É "Dedução de Dependentes" no IRRF?
-2. A DCTFWeb de Set/2025 foi retransmitida após 24/Out 14:04?
-3. Se foi, continua mostrando R$ 20k?
-
-**Ações possíveis (dependendo das respostas):**
-- Se DCTFWeb não foi retransmitida → **retransmitir DCTFWeb Set/2025**
-- Se retransmitiu e continua errado → **reabrir Set/2025 (S-1298), refechar (S-1299)** para forçar nova geração de S-5002, depois retransmitir DCTFWeb
-- Se o problema for no processamento eSocial → pode precisar fazer S-3000 + reenvio novamente de forma limpa (sem o open/close rápido de 7 seg)
-- Como último recurso → **consultar identificadores** no eSocial para ver estado atual dos S-5002 (CUIDADO: limite 10 consultas/dia)
-
-### Documentação
-- `docs/RELATORIO_SETEMBRO_ANA.html` — Relatório HTML profissional (tema claro)
-- `docs/RELATORIO_SETEMBRO_ANA.pdf` — PDF para enviar
-- `docs/RELATORIO_SETEMBRO_DEPENDENTES.html` — Versão dark (técnica)
-- `python-scripts/_investig_real_setembro.py` — Script 8 fases
-- `python-scripts/_relatorio_setembro_v3.py` — Gerador HTML v3
-- `python-scripts/_gerar_relatorio_ana.py` — Gerador HTML+PDF profissional
-
-### Dados de Referência
-- Download: `~/Downloads/29105316 set2025` (98.239 XMLs)
-- 7.771 CPFs, 2.585 COM dep, 5.186 SEM dep
-- Comparação meses: Jan 11.290 CPFs / Set 7.771 (3.519 a menos)
-- Todos S-1210 indRetif=1 (originais), dados idênticos nos dois envios
-- 7.771 S-3000 excluíram especificamente S-1210 (não outros tipos)
 
 ---
 

@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Easy e-Social — Mega Relatório de Calls</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --orbit-navy: #0A1024;
+    --deep-navy: #0D1530;
+    --card-interior: #111B3A;
+    --primary: #0066FF;
+    --primary-hover: #0055DD;
+    --primary-005: rgba(0,102,255,0.05);
+    --primary-010: rgba(0,102,255,0.10);
+    --primary-015: rgba(0,102,255,0.15);
+    --primary-020: rgba(0,102,255,0.20);
+    --success: #10B981;
+    --success-bg: rgba(16,185,129,0.10);
+    --danger: #F87171;
+    --danger-bg: rgba(248,113,113,0.10);
+    --warning: #FBBF24;
+    --warning-bg: rgba(251,191,36,0.10);
+    --info: #5AC8F5;
+    --info-bg: rgba(90,200,245,0.10);
+    --text-primary: #E2E8F0;
+    --text-secondary: #94A3B8;
+    --text-muted: #64748B;
+    --text-faint: #475569;
+    --border: rgba(0,102,255,0.12);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--orbit-navy);
+    color: var(--text-primary);
+    font-family: 'Inter', -apple-system, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  /* Floating glass orbs */
+  .glass-orb {
+    position: fixed;
+    border-radius: 50%;
+    background: var(--primary-005);
+    border: 1px solid var(--primary-010);
+    filter: blur(1px);
+    pointer-events: none;
+    z-index: 0;
+    animation: drift 20s ease-in-out infinite;
+  }
+  .orb-1 { width: 400px; height: 400px; top: -100px; right: -100px; animation-delay: 0s; }
+  .orb-2 { width: 300px; height: 300px; bottom: 200px; left: -80px; animation-delay: -7s; }
+  .orb-3 { width: 250px; height: 250px; top: 50%; right: 10%; animation-delay: -14s; }
+
+  @keyframes drift {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    25% { transform: translate(20px, -30px) scale(1.02); }
+    50% { transform: translate(-15px, 20px) scale(0.98); }
+    75% { transform: translate(25px, 15px) scale(1.01); }
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Header */
+  .report-header {
+    text-align: center;
+    margin-bottom: 48px;
+    padding: 40px 32px;
+    background: var(--deep-navy);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+  }
+  .report-header::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--primary), transparent);
+  }
+  .brand {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin-bottom: 12px;
+  }
+  .report-header h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+  }
+  .report-header .subtitle {
+    font-size: 15px;
+    color: var(--text-secondary);
+  }
+  .date-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 16px;
+    padding: 6px 16px;
+    background: var(--primary-010);
+    border: 1px solid var(--primary-015);
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--primary);
+  }
+
+  /* Section */
+  .section {
+    margin-bottom: 32px;
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  .section-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+  .section-icon.blue { background: var(--primary-015); color: var(--primary); }
+  .section-icon.green { background: var(--success-bg); color: var(--success); }
+  .section-icon.red { background: var(--danger-bg); color: var(--danger); }
+  .section-icon.yellow { background: var(--warning-bg); color: var(--warning); }
+  .section-icon.cyan { background: var(--info-bg); color: var(--info); }
+
+  .section-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -0.01em;
+  }
+
+  /* Card */
+  .card {
+    background: var(--deep-navy);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 16px;
+  }
+  .card-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .card p, .card li {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+  }
+  .card ul {
+    list-style: none;
+    padding: 0;
+  }
+  .card ul li {
+    padding: 6px 0;
+    padding-left: 20px;
+    position: relative;
+  }
+  .card ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 13px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--primary);
+    opacity: 0.6;
+  }
+
+  /* Timeline */
+  .timeline {
+    position: relative;
+    padding-left: 28px;
+  }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 8px;
+    bottom: 8px;
+    width: 2px;
+    background: linear-gradient(180deg, var(--primary), var(--primary-010));
+    border-radius: 2px;
+  }
+  .timeline-item {
+    position: relative;
+    margin-bottom: 28px;
+  }
+  .timeline-item:last-child { margin-bottom: 0; }
+  .timeline-dot {
+    position: absolute;
+    left: -24px;
+    top: 6px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 3px solid var(--primary);
+    background: var(--orbit-navy);
+  }
+  .timeline-dot.done { background: var(--primary); }
+  .timeline-dot.active {
+    background: var(--orbit-navy);
+    box-shadow: 0 0 0 4px rgba(0,102,255,0.25);
+  }
+  .timeline-dot.pending {
+    border-color: var(--text-muted);
+  }
+  .timeline-date {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--primary);
+    margin-bottom: 4px;
+  }
+  .timeline-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+  }
+  .timeline-body {
+    font-size: 13.5px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+  }
+  .timeline-body strong { color: var(--text-primary); font-weight: 600; }
+
+  /* Stats grid */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  .stat-card {
+    background: var(--card-interior);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+  .stat-value {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 4px;
+  }
+  .stat-value.blue { color: var(--primary); }
+  .stat-value.green { color: var(--success); }
+  .stat-value.red { color: var(--danger); }
+  .stat-value.yellow { color: var(--warning); }
+  .stat-label {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-muted);
+  }
+
+  /* Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+  }
+  thead th {
+    background: var(--card-interior);
+    color: var(--text-secondary);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+  }
+  thead th:first-child { border-radius: 8px 0 0 0; }
+  thead th:last-child { border-radius: 0 8px 0 0; }
+  tbody td {
+    padding: 12px 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    color: var(--text-secondary);
+  }
+  tbody tr:hover { background: var(--primary-005); }
+
+  /* Badges */
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .badge-success { background: var(--success-bg); color: var(--success); border: 1px solid rgba(16,185,129,0.2); }
+  .badge-danger { background: var(--danger-bg); color: var(--danger); border: 1px solid rgba(248,113,113,0.2); }
+  .badge-warning { background: var(--warning-bg); color: var(--warning); border: 1px solid rgba(251,191,36,0.2); }
+  .badge-info { background: var(--info-bg); color: var(--info); border: 1px solid rgba(90,200,245,0.2); }
+  .badge-neutral { background: rgba(255,255,255,0.05); color: var(--text-secondary); border: 1px solid rgba(255,255,255,0.1); }
+
+  /* Progress bar */
+  .progress-wrap {
+    margin: 16px 0;
+  }
+  .progress-bar-bg {
+    width: 100%;
+    height: 10px;
+    background: var(--card-interior);
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+  .progress-bar-fill {
+    height: 100%;
+    border-radius: 5px;
+    background: linear-gradient(90deg, var(--primary), var(--success));
+    transition: width 1s ease;
+  }
+  .progress-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+
+  /* Decision box */
+  .decision-box {
+    background: var(--primary-005);
+    border: 1px solid var(--primary-015);
+    border-left: 3px solid var(--primary);
+    border-radius: 0 10px 10px 0;
+    padding: 16px 20px;
+    margin: 12px 0;
+  }
+  .decision-box .label {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--primary);
+    margin-bottom: 6px;
+  }
+  .decision-box p {
+    font-size: 14px;
+    color: var(--text-primary);
+    line-height: 1.6;
+  }
+
+  .warning-box {
+    background: rgba(251,191,36,0.05);
+    border: 1px solid rgba(251,191,36,0.15);
+    border-left: 3px solid var(--warning);
+    border-radius: 0 10px 10px 0;
+    padding: 16px 20px;
+    margin: 12px 0;
+  }
+  .warning-box .label {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--warning);
+    margin-bottom: 6px;
+  }
+  .warning-box p {
+    font-size: 14px;
+    color: var(--text-primary);
+    line-height: 1.6;
+  }
+
+  .danger-box {
+    background: rgba(248,113,113,0.05);
+    border: 1px solid rgba(248,113,113,0.15);
+    border-left: 3px solid var(--danger);
+    border-radius: 0 10px 10px 0;
+    padding: 16px 20px;
+    margin: 12px 0;
+  }
+  .danger-box .label {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--danger);
+    margin-bottom: 6px;
+  }
+  .danger-box p {
+    font-size: 14px;
+    color: var(--text-primary);
+    line-height: 1.6;
+  }
+
+  /* Pending list */
+  .pending-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 14px 16px;
+    background: var(--card-interior);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 8px;
+  }
+  .pending-priority {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 800;
+    color: #fff;
+  }
+  .pending-priority.p1 { background: var(--danger); }
+  .pending-priority.p2 { background: #F59E0B; }
+  .pending-priority.p3 { background: var(--primary); }
+  .pending-priority.p4 { background: var(--info); }
+  .pending-priority.p5 { background: var(--text-muted); }
+  .pending-content { flex: 1; }
+  .pending-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 3px;
+  }
+  .pending-desc {
+    font-size: 12.5px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+  }
+
+  /* Group boxes */
+  .groups-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+  @media (max-width: 768px) {
+    .groups-grid { grid-template-columns: 1fr; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  .group-box {
+    background: var(--card-interior);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+  .group-box .num {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 4px;
+  }
+  .group-box .label {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+  }
+  .group-box .desc {
+    font-size: 12.5px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+  }
+
+  /* Separator */
+  .sep {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border), transparent);
+    margin: 40px 0;
+  }
+
+  /* Rules */
+  .rule-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    background: rgba(248,113,113,0.04);
+    border: 1px solid rgba(248,113,113,0.12);
+    border-radius: 8px;
+    margin-bottom: 6px;
+    font-size: 13.5px;
+    color: var(--text-primary);
+  }
+  .rule-icon {
+    color: var(--danger);
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+
+  code {
+    font-family: 'Fira Code', 'Cascadia Code', monospace;
+    background: var(--primary-005);
+    border: 1px solid var(--primary-010);
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 12.5px;
+    color: var(--info);
+  }
+
+  .footer {
+    text-align: center;
+    padding: 32px 0 0;
+    font-size: 12px;
+    color: var(--text-faint);
+  }
+  .footer span { color: var(--primary); font-weight: 600; }
+</style>
+</head>
+<body>
+
+<div class="glass-orb orb-1"></div>
+<div class="glass-orb orb-2"></div>
+<div class="glass-orb orb-3"></div>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <div class="report-header">
+    <div class="brand">Easy e-Social</div>
+    <h1>Mega Relatório de Calls</h1>
+    <div class="subtitle">Cronologia completa: diagnóstico, evolução, decisões e pendências</div>
+    <div class="date-badge">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      25/03 → 14/04 → 15/04/2026
+    </div>
+  </div>
+
+  <!-- STATUS PIPELINE -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon blue">📊</div>
+      <div class="section-title">Status Pipeline Jan/2025</div>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-value blue">11.290</div>
+        <div class="stat-label">Total CPFs</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value green">11.020</div>
+        <div class="stat-label">Sucesso</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value red">270</div>
+        <div class="stat-label">Erros restantes</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" style="color: var(--primary);">97,6%</div>
+        <div class="stat-label">Taxa de sucesso</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="progress-wrap">
+        <div class="progress-bar-bg">
+          <div class="progress-bar-fill" style="width: 97.6%;"></div>
+        </div>
+        <div class="progress-labels">
+          <span>0</span>
+          <span>11.020 / 11.290 processados com sucesso</span>
+          <span>11.290</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="padding: 0; overflow: hidden;">
+      <table>
+        <thead>
+          <tr>
+            <th>Código Erro</th>
+            <th>Descrição</th>
+            <th>CPFs Afetados</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>[8]</code></td>
+            <td>planSaude required — grupo sindicato sem operadora</td>
+            <td><strong style="color: var(--danger);">150</strong></td>
+            <td><span class="badge badge-warning">⏳ Novo plano</span></td>
+          </tr>
+          <tr>
+            <td><code>[459]</code></td>
+            <td>Recibo não encontrado — recibo desatualizado no DB</td>
+            <td><strong style="color: var(--danger);">113</strong></td>
+            <td><span class="badge badge-info">🔍 Script pronto</span></td>
+          </tr>
+          <tr>
+            <td><code>outros</code></td>
+            <td>Erros diversos</td>
+            <td><strong style="color: var(--text-muted);">7</strong></td>
+            <td><span class="badge badge-neutral">— Investigar</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="sep"></div>
+
+  <!-- TIMELINE -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon cyan">⏱</div>
+      <div class="section-title">Cronologia — O que aconteceu em cada fase</div>
+    </div>
+
+    <div class="timeline">
+
+      <!-- FASE 1 -->
+      <div class="timeline-item">
+        <div class="timeline-dot done"></div>
+        <div class="timeline-date">~25/03/2026 — Call-1 (6 áudios)</div>
+        <div class="timeline-title">Diagnóstico Inicial — O Caos Herdado</div>
+        <div class="timeline-body">
+          <p style="margin-bottom: 10px;">Descoberto que as rubricas estão com <strong>código de incidência IR errado</strong> — código <code>11</code> (remuneração) em vez de <code>41</code> (Previdência Social / dedução IR). Valores de dedução aparecem <strong>ZERADOS</strong> no extrator da Receita Federal, comprometendo a DIRF.</p>
+
+          <div class="card" style="margin: 12px 0;">
+            <div class="card-title">🔍 Problemas identificados</div>
+            <ul>
+              <li><strong>GI totalmente desatualizado</strong> — Sandro sobrescreveu envios via programa externo em Brasília, gerando recibos que o GI desconhece</li>
+              <li><strong>3 sistemas enviando ao eSocial</strong> simultaneamente — ninguém sabe qual tem o último evento válido</li>
+              <li><strong>Validador da Ana removido</strong> — ela não consegue enviar por cima do que o Sandro fez</li>
+              <li><strong>Erros:</strong> 301 (conexão), recibo divergente (caso Nilza, CPF 008.209.967-77), Status 41 no evento 566</li>
+              <li>XML confirmou: incidência IR = <code>11</code>, código natureza <code>9201</code></li>
+            </ul>
+          </div>
+
+          <div class="decision-box">
+            <div class="label">✅ Decisão</div>
+            <p>Criar ferramenta de envio direto (Easy-Social) independente do GI. Marcos fazendo DEPARA manual (3 dias). Dra. Cintia falar com Sandro para alinhamento.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FASE 2 -->
+      <div class="timeline-item">
+        <div class="timeline-dot done"></div>
+        <div class="timeline-date">14/04/2026 — Call Ana + Alex</div>
+        <div class="timeline-title">Pipeline Rodando — Novos Problemas de planSaude</div>
+        <div class="timeline-body">
+          <p style="margin-bottom: 10px;">Pipeline já rodou setembro (7.771 CPFs em 25min) e janeiro (11.290 CPFs em 3h40 com snapshots S-5002). Porém surgiram novos erros.</p>
+
+          <div class="card" style="margin: 12px 0;">
+            <div class="card-title">🚨 Problemas que surgiram</div>
+            <ul>
+              <li><strong>Operadora mudou</strong> em set/2025: CNPJ <code>44649812</code> → <code>63554067</code></li>
+              <li><strong>Ana não tinha planilha</strong> com valor de planSaude por CPF</li>
+              <li><strong>Rubrica 775</strong> (odontológica) = mesmo padrão do 774 → eSocial exige planSaude</li>
+              <li><strong>Rubricas 617, 950</strong> também afetadas</li>
+              <li><strong>Dilema S-1200:</strong> alterar rubrica no S-1010 afetaria S-1200 fechado</li>
+            </ul>
+          </div>
+
+          <div class="card" style="margin: 12px 0; padding: 0; overflow: hidden;">
+            <table>
+              <thead>
+                <tr>
+                  <th>Rubrica</th>
+                  <th>Descrição</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>774</code></td>
+                  <td>Plano de saúde</td>
+                  <td><span class="badge badge-success">✓ Resolvido</span></td>
+                </tr>
+                <tr>
+                  <td><code>775</code></td>
+                  <td>Assistência odontológica</td>
+                  <td><span class="badge badge-warning">Mesmo padrão</span></td>
+                </tr>
+                <tr>
+                  <td><code>617</code></td>
+                  <td>Assistência médica</td>
+                  <td><span class="badge badge-warning">Identificado</span></td>
+                </tr>
+                <tr>
+                  <td><code>950</code></td>
+                  <td>Outro</td>
+                  <td><span class="badge badge-neutral">Investigando</span></td>
+                </tr>
+                <tr>
+                  <td><code>522</code></td>
+                  <td>Alterada DEPOIS dos envios</td>
+                  <td><span class="badge badge-danger">Re-retificar</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- FASE 3 -->
+      <div class="timeline-item">
+        <div class="timeline-dot done"></div>
+        <div class="timeline-date">15/04/2026 — Call 1 (Dra. Cintia + Ana + Marcos + Carla)</div>
+        <div class="timeline-title">Pressão Máxima — Tabela da Ana entregue</div>
+        <div class="timeline-body">
+          <p style="margin-bottom: 10px;">Reunião de alinhamento com a gestora. <strong>Pressão extrema</strong> para fechar janeiro. Ana detalhou: 400+ verbas de IR apuradas → <strong>181 com códigos de natureza a corrigir</strong> (via plataforma Easy-Social).</p>
+
+          <div class="card" style="margin: 12px 0;">
+            <div class="card-title">📋 Entregues nesta call</div>
+            <ul>
+              <li>Tabela com mapeamento <strong>CPF → operadora → valor → rubrica</strong> (ficha financeira dez/2024)</li>
+              <li>Arquivo: <code>S_Tabela - Financeiro - 202412 - certo.xlsx</code></li>
+              <li>Ana agora tem ficha financeira do <strong>ano todo</strong></li>
+            </ul>
+          </div>
+
+          <div class="warning-box">
+            <div class="label">⚠️ Bug da quinta-feira</div>
+            <p>Tentaram trocar código do evento no S-1010 para isolar grupos → bugou porque trocar código troca natureza → eSocial rejeitou e pediu para abrir S-1200. Caminho abandonado.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FASE 4 -->
+      <div class="timeline-item">
+        <div class="timeline-dot done"></div>
+        <div class="timeline-date">15/04/2026 — Call 2 (Marcos + Xande + Ana)</div>
+        <div class="timeline-title">Decisão Técnica Chave — Ideia do Marcos</div>
+        <div class="timeline-body">
+
+          <div class="decision-box">
+            <div class="label">🎯 Decisão Principal — Aceita por todos</div>
+            <p><strong>Quem NÃO tem código de operadora → NÃO gerar bloco planSaude no XML.</strong><br>
+            S-1210 vai para TODO MUNDO — o que muda é se inclui ou não o bloco planSaude. Elimina a necessidade de "ida e volta" na rubrica do S-1010.</p>
+          </div>
+
+          <div class="card" style="margin: 12px 0;">
+            <div class="card-title">📌 Também identificado pela Ana (IR)</div>
+            <ul>
+              <li><strong>Previdência oficial</strong> → deduções NÃO estão subindo</li>
+              <li><strong>Rescisão/PDV</strong> → nada indenizatório subiu</li>
+              <li><strong>Pensão de férias e rescisão</strong> → incidência errada, vai deixar para trás</li>
+              <li>Rubrica <strong>774 "voltou"</strong> (reverteu?) — 775 está OK</li>
+            </ul>
+          </div>
+
+          <div class="card" style="margin: 12px 0;">
+            <div class="card-title">👤 Sandro — O que ele fazia</div>
+            <ul>
+              <li>Suspensão de INSS, troca números de evento, código de suspensão</li>
+              <li>Formato alfanumérico para rastrear alterações</li>
+              <li><strong>Tudo que ele faz pode ser feito dentro do sistema</strong> — APPA ficou sem base de dados por causa disso</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- FASE 5 -->
+      <div class="timeline-item">
+        <div class="timeline-dot active"></div>
+        <div class="timeline-date">15/04/2026 — Call 3 (Ana + Xande)</div>
+        <div class="timeline-title">Confirmação Final — 3 Grupos Definidos</div>
+        <div class="timeline-body">
+
+          <div class="groups-grid" style="margin: 12px 0;">
+            <div class="group-box">
+              <div class="num" style="color: var(--success);">~1.500</div>
+              <div class="label">COM Operadora</div>
+              <div class="desc">Natureza 9219 · IR67<br>S-1210 <strong style="color: var(--success);">COM</strong> planSaude<br>(cnpjOper + regANS + vlrSaudeTit)</div>
+            </div>
+            <div class="group-box">
+              <div class="num" style="color: var(--warning);">~1.101</div>
+              <div class="label">Sindicato (sem operadora)</div>
+              <div class="desc">Natureza 9299 · IR9<br>S-1210 <strong style="color: var(--danger);">SEM</strong> planSaude<br>(desconto repassado ao sindicato)</div>
+            </div>
+            <div class="group-box">
+              <div class="num" style="color: var(--text-muted);">~9.000+</div>
+              <div class="label">Sem Saúde</div>
+              <div class="desc">Sem rubrica de saúde<br>S-1210 <strong style="color: var(--danger);">SEM</strong> planSaude<br>(não se aplica)</div>
+            </div>
+          </div>
+
+          <div class="card" style="margin: 12px 0;">
+            <div class="card-title">📝 Contexto político</div>
+            <ul>
+              <li>Eduardo → Cintia → Xande (cadeia de pressão)</li>
+              <li>Culparam a IA na reunião — Ana defendeu: "cenário que botaram ela pra trabalhar não é ideal"</li>
+              <li>Problema é sistêmico: Tadeu (17 anos, não manja eSocial) → Marcos (3 anos) → agora nós limpando</li>
+              <li>DIF dando problema para TODO o mercado</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /timeline -->
+  </div>
+
+  <div class="sep"></div>
+
+  <!-- O QUE FOI RESOLVIDO -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon green">✅</div>
+      <div class="section-title">O que foi resolvido</div>
+    </div>
+
+    <div class="card">
+      <ul>
+        <li><strong>Causa raiz identificada:</strong> Sandro sobrescreveu envios do GI com programa externo → recibos divergentes</li>
+        <li><strong>Campo errado localizado no XML:</strong> incidência IR = <code>11</code>, correto = <code>41</code></li>
+        <li><strong>Pipeline criado e rodando:</strong> Set/2025 OK (7.771 CPFs), Jan/2025 em 97,6%</li>
+        <li><strong>181 rubricas corrigidas</strong> via plataforma Easy-Social (etapa Rubricas → Confirmar)</li>
+        <li><strong>Snapshot S-5002</strong> implementado (antes/depois por CPF) — já temos estado inicial do run 3</li>
+        <li><strong>Rubrica 774</strong> (plano de saúde) resolvida no fix da Adriana</li>
+        <li><strong>CPF 06621661592</strong> retificado avulso com sucesso (recibo <code>1.1.0000000040024645764</code>)</li>
+        <li><strong>Mapa planSaude V2</strong> com 2.272 CPFs estruturado (cnpjOper + regANS + vlrSaudeTit)</li>
+        <li><strong>6 operadoras mapeadas:</strong> 08787782, 63554067, 15011651, 04222235, 05597049, 44649812</li>
+        <li><strong>Estratégia dos 3 grupos definida</strong> e confirmada por Ana + Marcos + Xande</li>
+        <li><strong>Tabela da Ana entregue:</strong> mapeamento CPF → operadora → valor → rubrica (dez/2024)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="sep"></div>
+
+  <!-- HISTÓRICO DE RUNS -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon blue">🔄</div>
+      <div class="section-title">Histórico de Runs do Pipeline</div>
+    </div>
+
+    <div class="card" style="padding: 0; overflow: hidden;">
+      <table>
+        <thead>
+          <tr>
+            <th>Run</th>
+            <th>Período</th>
+            <th>Sucesso</th>
+            <th>Erros</th>
+            <th>Nota</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>1</strong></td>
+            <td>Set/2025</td>
+            <td><span class="badge badge-success">7.771</span></td>
+            <td>—</td>
+            <td>Primeiro run, sem snapshots</td>
+          </tr>
+          <tr>
+            <td><strong>3</strong></td>
+            <td>Jan/2025</td>
+            <td><span class="badge badge-success">8.768</span></td>
+            <td><span class="badge badge-danger">2.522</span></td>
+            <td>Primeiro jan, com snapshot S-5002</td>
+          </tr>
+          <tr>
+            <td><strong>4</strong></td>
+            <td>Fev/2025</td>
+            <td><span class="badge badge-success">9.600</span></td>
+            <td>—</td>
+            <td>Fevereiro (per_apur errado!)</td>
+          </tr>
+          <tr>
+            <td><strong>5–8</strong></td>
+            <td>Jan/2025</td>
+            <td style="color: var(--text-muted);">parcial</td>
+            <td style="color: var(--text-muted);">vários</td>
+            <td>Fix runs — V1 map + operadora fixa <span class="badge badge-danger">BUG</span></td>
+          </tr>
+          <tr>
+            <td><strong>10</strong></td>
+            <td>Jan/2025</td>
+            <td><span class="badge badge-success">10.979</span></td>
+            <td><span class="badge badge-danger">311</span></td>
+            <td>V2 pipeline com mapa correto</td>
+          </tr>
+          <tr>
+            <td><strong>11</strong></td>
+            <td>Jan/2025</td>
+            <td><span class="badge badge-success">+41</span></td>
+            <td><span class="badge badge-danger">270</span></td>
+            <td>--only-errors</td>
+          </tr>
+          <tr>
+            <td><strong>Avulso</strong></td>
+            <td>Jan/2025</td>
+            <td><span class="badge badge-success">1 CPF</span></td>
+            <td>—</td>
+            <td>06621661592 → recibo obtido</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="sep"></div>
+
+  <!-- PENDÊNCIAS -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon red">⏳</div>
+      <div class="section-title">Pendências — Por Prioridade</div>
+    </div>
+
+    <div class="pending-item">
+      <div class="pending-priority p1">P1</div>
+      <div class="pending-content">
+        <div class="pending-title">113 CPFs — Erro [459] recibo-not-found</div>
+        <div class="pending-desc">Script <code>_consultar_ident_jan2025.py</code> pronto. eSocial estava down à noite → tentar de manhã. 1 consulta resolve.</div>
+      </div>
+    </div>
+
+    <div class="pending-item">
+      <div class="pending-priority p1">P1</div>
+      <div class="pending-content">
+        <div class="pending-title">150 CPFs — Erro [8] planSaude required</div>
+        <div class="pending-desc">Com a decisão do Marcos: enviar S-1210 SEM bloco planSaude para esses CPFs (grupo sindicato). Se eSocial aceitar → resolvido. Se rejeitar → escalar com Ana.</div>
+      </div>
+    </div>
+
+    <div class="pending-item">
+      <div class="pending-priority p2">P2</div>
+      <div class="pending-content">
+        <div class="pending-title">Re-retificar TODOS os S-1210 de Janeiro</div>
+        <div class="pending-desc">Rubrica 522 foi alterada no S-1010 DEPOIS dos envios. Toda a lógica de planSaude muda com a tabela nova da Ana (3 grupos). Reconstruir mapa V2.</div>
+      </div>
+    </div>
+
+    <div class="pending-item">
+      <div class="pending-priority p3">P3</div>
+      <div class="pending-content">
+        <div class="pending-title">Comparativo S-5002 (ANTES vs DEPOIS)</div>
+        <div class="pending-desc">Ana precisa ver diferenças no IR por CPF/nome. Já temos snapshot ANTES (run 3) → não precisa puxar de novo. Capturar DEPOIS quando re-rodar.</div>
+      </div>
+    </div>
+
+    <div class="pending-item">
+      <div class="pending-priority p3">P3</div>
+      <div class="pending-content">
+        <div class="pending-title">Rubrica 774 — Verificar status</div>
+        <div class="pending-desc">Ana disse que "774 voltou" / reverteu no eSocial. 775 está OK. Precisa checar o que aconteceu com o S-1010.</div>
+      </div>
+    </div>
+
+    <div class="pending-item">
+      <div class="pending-priority p4">P4</div>
+      <div class="pending-content">
+        <div class="pending-title">Relatórios pendentes</div>
+        <div class="pending-desc">Relatório set completo (CPFs + recibos) para Sandro. XMLs para Margarido. Acesso GI para Dra. Cintia.</div>
+      </div>
+    </div>
+
+    <div class="pending-item">
+      <div class="pending-priority p5">P5</div>
+      <div class="pending-content">
+        <div class="pending-title">Próximos meses (Fev em diante)</div>
+        <div class="pending-desc">Uma vez janeiro fechado, aplicar mesmo mapeamento. Ana montando tabela do ano todo com ficha financeira completa.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sep"></div>
+
+  <!-- REGRAS ABSOLUTAS -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon red">🛑</div>
+      <div class="section-title">Regras Absolutas</div>
+    </div>
+
+    <div class="rule-item">
+      <span class="rule-icon">⛔</span>
+      <span><strong>NÃO MEXER NO S-1200</strong> — afeta INSS e coisas do Sandro. Regra absoluta confirmada em múltiplas calls.</span>
+    </div>
+    <div class="rule-item">
+      <span class="rule-icon">⛔</span>
+      <span><strong>NÃO alterar valores monetários</strong> — apenas códigos de incidência. Sem exceção.</span>
+    </div>
+    <div class="rule-item">
+      <span class="rule-icon">⛔</span>
+      <span><strong>Máximo 10 consultas/dia ao eSocial</strong> — Download Cirúrgico tem limite rígido.</span>
+    </div>
+    <div class="rule-item">
+      <span class="rule-icon">⛔</span>
+      <span><strong>NÃO rodar consultas/downloads</strong> sem permissão explícita do usuário.</span>
+    </div>
+  </div>
+
+  <div class="sep"></div>
+
+  <!-- BUG PIPELINE BATCH -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon yellow">🐛</div>
+      <div class="section-title">Bug Crítico — Pipeline Batch (Runs 5–8)</div>
+    </div>
+
+    <div class="danger-box">
+      <div class="label">Causa raiz do erro [8]</div>
+      <p>O <code>pipeline_batch.py</code> usava mapa V1 (plain floats) com operadora <strong>fixa</strong> <code>CNPJ 63554067000198 / ANS 368253</code> para TODOS os 10.443 CPFs. Isso fez o eSocial "aprender" que esses CPFs têm planSaude — agora exige o bloco mesmo na retificação. É por isso que os 150 CPFs do sindicato (sem operadora real) dão erro [8] quando enviamos sem planSaude.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-title">🔧 Correção implementada</div>
+      <ul>
+        <li><strong>Pipeline V2</strong> criado (<code>pipeline_v2_jan2025.py</code>) com mapa estruturado por CPF</li>
+        <li>Mapa V2: <code>plansaude_map_v2_jan2025.json</code> — 2.272 CPFs com <code>[{cnpjOper, regANS, vlrSaudeTit}]</code></li>
+        <li>6 operadoras mapeadas corretamente (em vez de 1 fixa)</li>
+        <li>Quem não está no mapa → NÃO recebe bloco planSaude</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="sep"></div>
+
+  <!-- PARTICIPANTES -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon blue">👥</div>
+      <div class="section-title">Participantes & Papéis</div>
+    </div>
+
+    <div class="card" style="padding: 0; overflow: hidden;">
+      <table>
+        <thead>
+          <tr>
+            <th>Quem</th>
+            <th>Papel</th>
+            <th>Contribuição chave</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong style="color: #fff;">Ana</strong></td>
+            <td>Especialista eSocial</td>
+            <td>Mapeamento CPF→operadora, identificação de rubricas, tabela financeira, regras de negócio</td>
+          </tr>
+          <tr>
+            <td><strong style="color: #fff;">Xande (Alex)</strong></td>
+            <td>Desenvolvedor Easy-Social</td>
+            <td>Pipeline de retificação, automação S-1298/S-1210/S-1299, snapshots S-5002</td>
+          </tr>
+          <tr>
+            <td><strong style="color: #fff;">Marcos</strong></td>
+            <td>Desenvolvedor/Técnico</td>
+            <td>DEPARA manual, ideia dos 3 grupos (não enviar planSaude p/ sindicato)</td>
+          </tr>
+          <tr>
+            <td><strong style="color: #fff;">Dra. Cintia</strong></td>
+            <td>Gestora APPA</td>
+            <td>Pressão para fechar jan, cobrança de prazos, acesso GI</td>
+          </tr>
+          <tr>
+            <td><strong style="color: #fff;">Sandro</strong></td>
+            <td>eSocial via Brasília (externo)</td>
+            <td>Causou a bagunça — alterações manuais sem rastreio, APPA ficou sem base de dados</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    Gerado automaticamente por <span>Easy e-Social</span> — 16/04/2026
+  </div>
+
+</div>
+
+</body>
+</html>

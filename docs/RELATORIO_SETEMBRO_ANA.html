@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Relatório — Dedução de Dependentes Set/2025</title>
+<style>
+@page { size: A4; margin: 20mm; }
+@media print { body { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Calibri, Arial, sans-serif; background: #fff; color: #1a1a1a; line-height: 1.65; font-size: 13px; }
+.container { max-width: 900px; margin: 0 auto; padding: 30px 40px; }
+.header { border-bottom: 3px solid #1a56db; padding-bottom: 16px; margin-bottom: 24px; }
+.header h1 { color: #1a1a1a; font-size: 20px; font-weight: 700; margin-bottom: 4px; }
+.header .sub { color: #666; font-size: 11px; }
+.logo-line { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.logo-line .brand { font-size: 14px; font-weight: 700; color: #1a56db; }
+h2 { color: #1a56db; font-size: 15px; font-weight: 700; margin: 28px 0 12px; padding-bottom: 6px; border-bottom: 1px solid #ddd; }
+h3 { color: #333; font-size: 13px; font-weight: 600; margin: 18px 0 8px; }
+p, li { margin-bottom: 6px; }
+
+.alert { background: #fef2f2; border-left: 4px solid #dc2626; padding: 14px 16px; margin: 16px 0; border-radius: 4px; }
+.alert b { color: #dc2626; }
+.info { background: #eff6ff; border-left: 4px solid #2563eb; padding: 14px 16px; margin: 16px 0; border-radius: 4px; }
+.info b { color: #1d4ed8; }
+.success { background: #f0fdf4; border-left: 4px solid #16a34a; padding: 14px 16px; margin: 16px 0; border-radius: 4px; }
+.success b { color: #15803d; }
+.warning { background: #fffbeb; border-left: 4px solid #d97706; padding: 14px 16px; margin: 16px 0; border-radius: 4px; }
+.warning b { color: #b45309; }
+
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 12px; }
+th { background: #f1f5f9; color: #334155; padding: 8px 12px; text-align: left; font-weight: 600; border: 1px solid #e2e8f0; font-size: 11px; text-transform: uppercase; }
+td { padding: 7px 12px; border: 1px solid #e2e8f0; }
+tr:nth-child(even) { background: #f8fafc; }
+.num { text-align: right; font-family: Consolas, 'Courier New', monospace; }
+.red { color: #dc2626; font-weight: 700; }
+.green { color: #16a34a; font-weight: 700; }
+
+.timeline { margin: 16px 0; }
+.tl-row { display: flex; gap: 12px; margin-bottom: 10px; padding: 10px 14px; background: #f8fafc; border-radius: 6px; border-left: 3px solid #94a3b8; }
+.tl-row.send { border-left-color: #16a34a; }
+.tl-row.close { border-left-color: #d97706; }
+.tl-row.open { border-left-color: #2563eb; }
+.tl-row.delete { border-left-color: #dc2626; background: #fef2f2; }
+.tl-dt { color: #64748b; font-size: 11px; font-family: Consolas, monospace; min-width: 160px; white-space: nowrap; padding-top: 2px; }
+.tl-body { flex: 1; }
+.tl-tipo { font-weight: 700; font-size: 12px; margin-bottom: 2px; }
+.tl-det { color: #475569; font-size: 12px; }
+
+.gen-grid { display: flex; gap: 12px; margin: 16px 0; }
+.gen-card { flex: 1; text-align: center; padding: 16px 12px; border-radius: 8px; border: 2px solid #e2e8f0; }
+.gen-card.g1 { border-color: #16a34a; background: #f0fdf4; }
+.gen-card.g2 { border-color: #dc2626; background: #fef2f2; }
+.gen-card.g3 { border-color: #16a34a; background: #f0fdf4; }
+.gen-title { font-size: 10px; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px; }
+.gen-sub { font-size: 10px; color: #94a3b8; margin-bottom: 8px; }
+.gen-num { font-size: 28px; font-weight: 800; font-family: Consolas, monospace; }
+.gen-num.ok { color: #16a34a; }
+.gen-num.bad { color: #dc2626; }
+.gen-val { font-size: 12px; font-family: Consolas, monospace; margin-top: 4px; }
+
+.verdict { border: 2px solid #1a56db; border-radius: 8px; padding: 20px; margin: 20px 0; background: #f8faff; }
+.verdict h2 { border: none; margin: 0 0 12px; padding: 0; }
+.fact { background: #fff; border: 1px solid #e2e8f0; border-radius: 4px; padding: 8px 12px; margin: 6px 0; font-size: 12px; }
+.fact-num { color: #1a56db; font-weight: 700; margin-right: 6px; }
+
+footer { margin-top: 30px; padding-top: 12px; border-top: 1px solid #ddd; color: #94a3b8; font-size: 10px; text-align: center; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+<div class="logo-line">
+<span class="brand">Easy-Social</span>
+<span style="color:#94a3b8;font-size:11px">CONFIDENCIAL</span>
+</div>
+<h1>Relatório de Investigação — Dedução de Dependentes Set/2025</h1>
+<div class="sub">Download #29105316 &nbsp;|&nbsp; CNPJ 10.596.907/0001-00 &nbsp;|&nbsp; Data: 16/04/2026</div>
+</div>
+
+<div class="alert">
+<b>PROBLEMA IDENTIFICADO</b><br>
+O extrator da Receita Federal mostra apenas <b>~R$ 20.000</b> de dedução de dependentes para Set/2025.<br>
+Meses anteriores estão dentro do esperado: Jan R$ 1.099.053 | Fev R$ 1.049.191.<br>
+<b>Todos os envios de Set/2025 foram feitos pelo Easy-Social.</b>
+</div>
+
+<h2>1. Resumo do Download Set/2025</h2>
+
+<table>
+<tr><th>Métrica</th><th class="num">Quantidade</th></tr>
+<tr><td>Total de XMLs no download</td><td class="num">98.239</td></tr>
+<tr><td>S-1210 (pagamentos)</td><td class="num">15.542</td></tr>
+<tr><td>S-5002 (totalizador IRRF)</td><td class="num">23.313</td></tr>
+<tr><td>S-3000 (exclusões de S-1210)</td><td class="num">7.771</td></tr>
+<tr><td>S-1298 (reaberturas)</td><td class="num">2</td></tr>
+<tr><td>S-1299 (fechamentos)</td><td class="num">3</td></tr>
+<tr><td>CPFs únicos</td><td class="num">7.771</td></tr>
+<tr><td>CPFs COM dedução de dependentes</td><td class="num">2.585</td></tr>
+<tr><td>CPFs SEM dedução de dependentes</td><td class="num">5.186</td></tr>
+<tr><td>Valor total dedDepen (estado final)</td><td class="num">R$ 739.211,41</td></tr>
+</table>
+
+<h2>2. Cronologia dos Envios — Setembro/2025</h2>
+
+<div class="timeline">
+
+<div class="tl-row send">
+<div class="tl-dt">06/10/2025</div>
+<div class="tl-body">
+<div class="tl-tipo">S-1210 — Lote 1 (Original)</div>
+<div class="tl-det">Enviados <b>7.762 S-1210</b> — 2.585 COM dedDepen (R$ 739.211,41)</div>
+</div>
+</div>
+
+<div class="tl-row send">
+<div class="tl-dt">09/10/2025 16:54</div>
+<div class="tl-body">
+<div class="tl-tipo">S-1210 — Complemento (9 eventos)</div>
+<div class="tl-det">9 S-1210 adicionais (8 COM dep). Total ativo: 7.771</div>
+</div>
+</div>
+
+<div class="tl-row close">
+<div class="tl-dt">09/10/2025 16:54:22</div>
+<div class="tl-body">
+<div class="tl-tipo">S-1299 — Fechamento #1</div>
+<div class="tl-det">Fechamento do período. eSocial gerou <b>Geração 1</b> de S-5002 (7.771 totalizadores)</div>
+</div>
+</div>
+
+<div class="tl-row open">
+<div class="tl-dt">24/10/2025 10:43:25</div>
+<div class="tl-body">
+<div class="tl-tipo">S-1298 — Reabertura #1</div>
+<div class="tl-det">Reabriu set/2025 para correções</div>
+</div>
+</div>
+
+<div class="tl-row close">
+<div class="tl-dt">24/10/2025 10:43:32</div>
+<div class="tl-body">
+<div class="tl-tipo">S-1299 — Fechamento #2</div>
+<div class="tl-det">Fechou novamente <b>(7 segundos após reabrir)</b></div>
+</div>
+</div>
+
+<div class="tl-row open">
+<div class="tl-dt">24/10/2025 10:44:22</div>
+<div class="tl-body">
+<div class="tl-tipo">S-1298 — Reabertura #2</div>
+<div class="tl-det">Reabriu set/2025 novamente</div>
+</div>
+</div>
+
+<div class="tl-row delete">
+<div class="tl-dt">24/10/2025 10:46:02</div>
+<div class="tl-body">
+<div class="tl-tipo">⚠ S-3000 — Exclusão MASSIVA (7.771 S-1210)</div>
+<div class="tl-det">Excluiu <b>TODOS os 7.771 S-1210</b> do período.<br>
+→ eSocial gerou <b>Geração 2</b> de S-5002: <span class="red">ZERO dedDepen para todos os CPFs</span></div>
+</div>
+</div>
+
+<div class="tl-row send">
+<div class="tl-dt">24/10/2025 ~11:00-14:00</div>
+<div class="tl-body">
+<div class="tl-tipo">S-1210 — Reenvio Completo (7.771 eventos)</div>
+<div class="tl-det">Re-enviou 7.771 S-1210 com os mesmos dados — 2.585 COM dedDepen (R$ 739.211,41)<br>
+→ eSocial gerou <b>Geração 3</b> de S-5002 com dedDepen restaurado</div>
+</div>
+</div>
+
+<div class="tl-row close">
+<div class="tl-dt">24/10/2025 14:04:46</div>
+<div class="tl-body">
+<div class="tl-tipo">S-1299 — Fechamento #3 (Final)</div>
+<div class="tl-det">Fechamento definitivo — cdResposta = 201 (Sucesso)</div>
+</div>
+</div>
+
+</div>
+
+<h2>3. As 3 Gerações de S-5002 (Totalizador IRRF)</h2>
+
+<p>O download contém <b>23.313 S-5002</b> = 3 × 7.771 CPFs. Cada operação gerou uma rodada completa de totalizadores:</p>
+
+<div class="gen-grid">
+<div class="gen-card g1">
+<div class="gen-title">Geração 1</div>
+<div class="gen-sub">Lote Original (Oct 6-9)</div>
+<div class="gen-num ok">2.585</div>
+<div style="font-size:10px;color:#64748b">CPFs COM dedDepen</div>
+<div class="gen-val" style="color:#16a34a">R$ 739.211,41</div>
+</div>
+<div class="gen-card g2">
+<div class="gen-title">Geração 2</div>
+<div class="gen-sub">Após Exclusões (Oct 24)</div>
+<div class="gen-num bad">0</div>
+<div style="font-size:10px;color:#64748b">CPFs COM dedDepen</div>
+<div class="gen-val" style="color:#dc2626">R$ 0,00</div>
+</div>
+<div class="gen-card g3">
+<div class="gen-title">Geração 3</div>
+<div class="gen-sub">Após Reenvio (Oct 24)</div>
+<div class="gen-num ok">2.585</div>
+<div style="font-size:10px;color:#64748b">CPFs COM dedDepen</div>
+<div class="gen-val" style="color:#16a34a">R$ 739.211,41</div>
+</div>
+</div>
+
+<div class="info">
+<b>Estado final no download (último S-5002 por CPF):</b> 2.585 CPFs COM dedDepen = R$ 739.211,41.<br>
+Nosso estado final mostra R$ 739.211,41 — <b>não R$ 20.000</b>.
+</div>
+
+<h2>4. Comparação Entre Meses</h2>
+
+<table>
+<tr><th>Período</th><th class="num">S-1210</th><th class="num">COM dedDepen</th><th class="num">CPFs</th></tr>
+<tr><td>Janeiro 2025</td><td class="num">22.684</td><td class="num">7.750</td><td class="num">11.290</td></tr>
+<tr><td>Fevereiro 2025</td><td class="num">21.603</td><td class="num">7.414</td><td class="num">10.800</td></tr>
+<tr><td>Setembro 2025</td><td class="num">15.542</td><td class="num">5.170</td><td class="num">7.771</td></tr>
+</table>
+
+<div class="warning">
+<b>Redução de CPFs:</b> Janeiro tem 11.290 CPFs vs Setembro com 7.771 (3.519 a menos).<br>
+Isso explica a redução de R$ 1.099.053 → R$ 739.211, mas <b>NÃO explica a redução para R$ 20.000</b>.
+</div>
+
+<h2>5. Consistência dos Envios</h2>
+
+<table>
+<tr><th>Lote</th><th class="num">Total</th><th class="num">COM dep</th><th class="num">SEM dep</th><th class="num">Valor</th></tr>
+<tr><td>Lote Original (06-09/Out)</td><td class="num">7.771</td><td class="num">2.585</td><td class="num">5.186</td><td class="num">R$ 739.211,41</td></tr>
+<tr><td>Reenvio (24/Out)</td><td class="num">7.771</td><td class="num">2.585</td><td class="num">5.186</td><td class="num">R$ 739.211,41</td></tr>
+</table>
+
+<div class="success">
+<b>✓ Dados Consistentes:</b> Todos os 7.771 CPFs aparecem em ambos os lotes com o mesmo status de dedDepen.
+Os dados enviados estão corretos.
+</div>
+
+<h2>6. Fatos Comprovados</h2>
+
+<div class="verdict">
+<div class="fact"><span class="fact-num">1.</span> Nosso último S-5002 por CPF mostra <b>R$ 739.211,41</b> de dedDepen — não R$ 20.000.</div>
+<div class="fact"><span class="fact-num">2.</span> Todos os S-1210 são indRetif=1 (originais), com dados idênticos nos dois envios.</div>
+<div class="fact"><span class="fact-num">3.</span> O período foi aberto/fechado 5 vezes em sequência rápida (Oct 24).</div>
+<div class="fact"><span class="fact-num">4.</span> 7.771 exclusões (S-3000) geraram uma Geração 2 de S-5002 com <span class="red">ZERO dedDepen</span>.</div>
+<div class="fact"><span class="fact-num">5.</span> O fechamento final (Oct 24 14:04, Sucesso) aconteceu APÓS o reenvio correto.</div>
+<div class="fact"><span class="fact-num">6.</span> Nenhum evento de set/2025 foi processado depois de 31/out/2025.</div>
+</div>
+
+<h2>7. Hipóteses — Por Que o Extrator Mostra R$ 20.000?</h2>
+
+<div class="warning">
+<b>Hipótese 1: Estado inconsistente após exclusão massiva + reenvio</b><br>
+A exclusão de 7.771 S-1210 seguida de reenvio imediato é uma operação incomum. A Geração 2 (zerada) pode ter ficado como estado vigente para a maioria dos CPFs no processamento interno da Receita, enquanto apenas alguns CPFs processaram corretamente a Geração 3 (resultando em ~R$ 20k).
+</div>
+
+<div class="warning">
+<b>Hipótese 2: Fechamento de 7 segundos antes das exclusões</b><br>
+O fechamento #2 (10:43:32) aconteceu 7 segundos após a reabertura. Essa sequência pode ter gerado um "snapshot" na Receita que não foi atualizado.
+</div>
+
+<div class="warning">
+<b>Hipótese 3: Extrator usa dados da DCTFWeb</b><br>
+O extrator pode usar dados consolidados da DCTFWeb, não diretamente do S-5002. Se a DCTFWeb foi transmitida antes do reenvio, estaria desatualizada.
+</div>
+
+<h2>8. Próximos Passos Recomendados</h2>
+
+<div class="info">
+<b>1.</b> Confirmar com Ana qual campo/tela exatamente mostra R$ 20.000 no extrator.<br>
+<b>2.</b> Verificar se a DCTFWeb de Set/2025 foi retransmitida após o fechamento final (24/out 14:04).<br>
+<b>3.</b> Se necessário, consultar identificadores do período no eSocial para confirmar estado atual dos S-5002.
+</div>
+
+<footer>
+Easy-Social &nbsp;|&nbsp; Relatório gerado em 16/04/2026 13:23<br>
+Fonte: Download #29105316 (15.542 S-1210, 23.313 S-5002, 7.771 S-3000)
+</footer>
+
+</div>
+</body>
+</html>

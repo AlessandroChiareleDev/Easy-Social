@@ -96,6 +96,12 @@ const router = createRouter({
       redirect: '/logs',
     },
     {
+      path: '/problemas',
+      name: 'problemas',
+      component: () => import('../views/ProblemasView.vue'),
+      meta: { requireEmpresa: true },
+    },
+    {
       path: '/admin',
       name: 'admin',
       component: () => import('../views/AdminPanelView.vue'),

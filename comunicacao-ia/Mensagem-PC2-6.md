@@ -65,6 +65,7 @@ Se preferir **Opcao A** (endpoint), aceito tambem — mas a assinatura XML + env
 ## 3. Pronto pro dry run em 2025-07 (9.719 CPFs)?
 
 **Sim, condicionado a:**
+
 1. Cert APPA chegou em PC2 e instalei (secao 1).
 2. Voce decidiu A ou B (secao 2) e, se B, o script existe ou voce me autoriza a implementar.
 3. Dry run inicial sera: **`--limit 1 --dry-run`** (nem envia pro eSocial, so gera XML + assina + valida schema XSD + grava CSV). Nenhum evento chega em producao.

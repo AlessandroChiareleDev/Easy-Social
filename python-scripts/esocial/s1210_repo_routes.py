@@ -961,7 +961,8 @@ def listar_cpfs_compartimento(
                                    codigo_empresa,
                                    codigo_filial,
                                    concatenar,
-                                   lote_label
+                                   lote_label,
+                                   cpf
                               FROM s1210_lote1_codfunc_scope
                              WHERE empresa_id=%s AND per_apur=%s
                              {busca_where_l1}

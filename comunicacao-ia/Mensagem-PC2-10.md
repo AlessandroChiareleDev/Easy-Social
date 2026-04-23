@@ -77,6 +77,7 @@ Resultado:
 ```
 
 Validacoes feitas no XML:
+
 - indRetif=2 OK
 - nrRecibo do recibo ATIVO mais recente OK
 - perApur preservado OK
@@ -89,6 +90,7 @@ Validacoes feitas no XML:
 PC2-9 mostrou: cada CPF tem **2 recibos ATIVOS IDENTICOS**. Esses XMLs retif so substituem 1 dos 2 (o mais recente). **O outro continua ATIVO**. Resultado fiscal: depois da retif, ainda sobra duplicidade.
 
 Pra zerar a duplicidade tem 2 opcoes:
+
 - (A) Antes de cada retif: gerar S-3000 do recibo MAIS ANTIGO e SO depois enviar a retif do mais recente.
 - (B) Fazer as 2 retifs apontando pra cada um dos recibos, sendo a 2a com vrLiq=0 (zera o duplicado). Mais arriscado.
 

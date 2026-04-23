@@ -35,6 +35,7 @@ Li integralmente `Mensagem-PC1-1.md` e `Mensagem-PC1-2.md`. Confirmo:
 Chave logica: `(empresa_id, per_apur, lote_num, cpf)` quando houver CPF; quando nao houver, `(empresa_id, per_apur, lote_num, codigo_funcionario)`. Antes de qualquer envio, rodar `SELECT` de contagem distinta em `s1210_lote1_codfunc_scope` e em `v_s1210_contadores` para travar o total esperado. Qualquer reexecucao precisa checar se o `nr_recibo_usado` do evento anterior ja existe para o CPF/per_apur antes de enfileirar de novo.
 
 **2. Criterio de sucesso no teste de 1 CPF**
+
 - Retorno do webservice com `cdResposta` em 201 ou 202 (aceito/em processamento).
 - `nrRecibo` gravado no banco.
 - Consulta de retorno (S-5001/5002 ou confirmacao de protocolo) bate com o CPF enviado.
@@ -42,17 +43,20 @@ Chave logica: `(empresa_id, per_apur, lote_num, cpf)` quando houver CPF; quando 
 - Tempo total da ponta-a-ponta (envio + consulta) < 30s.
 
 **3. Limite de erro aceitavel no teste de 100 CPFs**
+
 - Erro estrutural/codigo: **0** (qualquer erro de schema, SQL, assinatura, parse de XML aborta a etapa).
 - Erro de dados/negocio (tipo CPF invalido, vinculo fechado, retorno 4xx do eSocial): tolerancia **<= 2%** (maximo 2 em 100). Acima disso, parar e investigar.
 - Nenhum retorno 5xx do portal eSocial.
 
 **4. Velocidade minima aceitavel para aprovar escala total**
 Baseline historico do sistema: ~40-80 itens/min em envios saudaveis. Proposta:
+
 - **Minimo aceitavel: 30 itens/min** (throughput sustentado medido sobre os 100 CPFs).
 - **Meta: 50 itens/min**.
 - Abaixo de 30/min, investigar gargalo (lote, assinatura, rede, Supabase) antes de escalar.
 
 **5. Plano de rollback imediato em caso de divergencia de contagem**
+
 1. Parar o worker/loop imediatamente (kill do processo Python de envio).
 2. Registrar snapshot: `SELECT` em `v_s1210_contadores` e tabela de recibos para o `per_apur` afetado.
 3. Comparar com baseline pre-execucao (prints/MD guardado antes de iniciar).
@@ -60,11 +64,13 @@ Baseline historico do sistema: ~40-80 itens/min em envios saudaveis. Proposta:
 5. Comunicar PC1 via nova Mensagem-PC2-N.md antes de tentar retomar.
 
 **6. Separar erro de dados (origem) vs erro de codigo (pipeline/SQL)**
+
 - **Codigo/pipeline**: qualquer `psycopg2.errors.*`, `TypeError`, `KeyError`, `lxml.etree.XMLSyntaxError`, `zeep.exceptions.*`, HTTP 5xx nosso, assinatura invalida. Classificado como **bloqueante** -> para tudo.
 - **Dados**: retorno do eSocial com `cdResposta` 4xx indicando CPF invalido, vinculo inexistente, precedencia faltando, rubrica nao cadastrada em S-1010. Classificado como **linha rejeitada**, nao bloqueia o lote se dentro do threshold de 2%.
 - Toda linha deve gravar `origem_erro = 'codigo' | 'dados'` no log/tabela de auditoria para facilitar a triagem.
 
 **7. Logs e consultas como evidencia final**
+
 - Log do `bot_api.py` (uvicorn stdout) da janela de execucao.
 - Tabela de recibos/envios S-1210 filtrada por `per_apur` e `lote_num` com `status`, `nr_recibo_*`, `erro_descricao`, `enviado_em`.
 - `SELECT COUNT(*)` em `s1210_lote1_codfunc_scope` antes/depois, distinguindo com CPF vs sem CPF.
@@ -74,6 +80,7 @@ Baseline historico do sistema: ~40-80 itens/min em envios saudaveis. Proposta:
 
 **8. Ponto de parada automatica**
 Parar imediatamente se qualquer um ocorrer:
+
 - 1 erro de **codigo/pipeline** (qualquer excecao nao-4xx do eSocial).
 - `>` 2% de erros de dados nos 100 CPFs.
 - Throughput < 20 itens/min sustentado por 2 minutos.
@@ -83,13 +90,13 @@ Parar imediatamente se qualquer um ocorrer:
 
 ## 3. Proposta de thresholds (resumo)
 
-| Metrica | Aprovado | Atencao | Abortar |
-|---|---|---|---|
-| Erro de codigo | 0 | - | >= 1 |
-| Erro de dados (100 CPFs) | <= 2% | 2-5% | > 5% |
-| Throughput | >= 50/min | 30-50/min | < 30/min |
-| HTTP 5xx eSocial | 0 | 1 isolado | >= 2 ou seguidos |
-| Tempo ponta-a-ponta do CPF unico | < 30s | 30-60s | > 60s |
+| Metrica                          | Aprovado  | Atencao   | Abortar          |
+| -------------------------------- | --------- | --------- | ---------------- |
+| Erro de codigo                   | 0         | -         | >= 1             |
+| Erro de dados (100 CPFs)         | <= 2%     | 2-5%      | > 5%             |
+| Throughput                       | >= 50/min | 30-50/min | < 30/min         |
+| HTTP 5xx eSocial                 | 0         | 1 isolado | >= 2 ou seguidos |
+| Tempo ponta-a-ponta do CPF unico | < 30s     | 30-60s    | > 60s            |
 
 ## 4. Plano de pausa/rollback
 

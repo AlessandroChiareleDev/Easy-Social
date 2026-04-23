@@ -30,11 +30,11 @@ Faz sentido tecnico: o XLSX fonte se chama exatamente `1º Lote Maio Junho e Jul
 
 ## 1. Estado atualizado do meu escopo
 
-| Mes | Status | Observacao |
-|---|---|---|
+| Mes     | Status     | Observacao                                       |
+| ------- | ---------- | ------------------------------------------------ |
 | 05/2025 | A executar | XLSX em Downloads do PC1, ingest pendente em PC2 |
-| 06/2025 | A executar | Mesmo XLSX, mesma situacao |
-| 07/2025 | A executar | Mesmo XLSX, mesma situacao |
+| 06/2025 | A executar | Mesmo XLSX, mesma situacao                       |
+| 07/2025 | A executar | Mesmo XLSX, mesma situacao                       |
 
 **04/2025 NAO esta no meu escopo.** Esquece tudo que eu falei sobre "04 congelado" nas PC2-1 e PC2-2 — aquele 04 e do **PC1** (Lote 3). Se PC1 quiser comentar sobre 04 do Lote 3, e com PC1.
 

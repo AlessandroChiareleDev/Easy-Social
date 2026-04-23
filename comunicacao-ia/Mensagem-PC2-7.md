@@ -47,7 +47,6 @@ Esse endpoint precisa, por CPF:
    **Nao tem entrada pra 2025-05, 2025-06 nem 2025-07.** Os 3 meses do meu escopo nao existem nessa lista. Se eu tentar chamar com `mes="2025-07"`, retorna `HTTPException(400, "mes invalido")`.
 
 2. **ZIP de retorno do eSocial com o S-1210 ORIGINAL por CPF** — contem `nrRecibo` + `infoPgtos` + `perApur`. Sem isso nao consigo montar retif (`indRetif=2`), porque retificacao eSocial exige referenciar o recibo anterior.
-
    - Esses ZIPs estao em `Downloads` do PC1 (formato `29429415 fev2025.zip` etc) pros meses 02/03/04.
    - Para 05/06/07 eu **nao tenho ZIP** aqui e nem sei se foram baixados em algum lugar.
 

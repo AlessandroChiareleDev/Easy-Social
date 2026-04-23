@@ -80,6 +80,7 @@ Padrao: alguem rodou o envio de Lote 1 / 2025-05 **DUAS VEZES** (em 09-06 e em 1
 ## Implicacao fiscal
 
 eSocial conta soma dos S-1210 ativos. Pra cada um dos 10.021 CPFs em maio:
+
 - 2x vrLiq somado = 2x IRRF apurado
 - DCTFWeb / DARF receita federal recebeu apurado dobrado
 - E se tem pgto fora da folha registrado dobrado
@@ -97,11 +98,13 @@ eSocial conta soma dos S-1210 ativos. Pra cada um dos 10.021 CPFs em maio:
 ## O que ja tenho pronto offline
 
 `python-scripts/saida_retif_lote1_maio/_indice_s1210_maio.json`
+
 - 20.510 S-1210 indexados (cpf, perApur, nrRecibo, indRetif, dhProc, ativo)
 - 30.569 nrRecArqBase de S-5002 (set de recibos ATIVOS)
 - ja sei pra cada CPF qual sao os recibos duplicados
 
 Posso, **OFFLINE (gerar XML em disco, sem enviar)**:
+
 1. Gerar S-3000 pra TODOS os duplicados secundarios (o mais antigo de cada par)
 2. Gerar S-1210 retif (`indRetif=2`, `nrReciboRetif=<sobrevivente>`) pra recalcular se voce quiser ajuste de valores
 3. Gerar S-3000 + S-1210 inclusao pros 564 CPFs do banco que nao tem S-1210 (mas pra esses preciso de fonte de dados - o ZIP nao tem)

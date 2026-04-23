@@ -38,3 +38,6 @@ LOCAL_DB_CONFIG = {
     "user": os.environ.get("LOCAL_DB_USER", "easy_social_user"),
     "password": os.environ.get("LOCAL_DB_PASSWORD", "sua_senha_segura"),
 }
+
+if os.environ.get("LOCAL_DB_SSL", "").lower() == "true":
+    LOCAL_DB_CONFIG["sslmode"] = "require"

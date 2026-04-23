@@ -439,6 +439,7 @@ def _testar_um_cpf_impl(req: TestarUmCpfReq):
     lote_key = _norm_lote(req.lote) or req.lote
     if lote_key not in ("1_LOTE", "2_LOTE", "3_LOTE", "4_LOTE"):
         raise HTTPException(400, f"lote inválido: {req.lote}")
+    lote_num = int(lote_key[0]) if lote_key and lote_key[0].isdigit() else 0
 
     # 1) Escopo — garantir XLSX parseada
     if req.mes not in _CACHE_XLSX:
@@ -492,9 +493,20 @@ def _testar_um_cpf_impl(req: TestarUmCpfReq):
     if s1210_original["info_ir_cr"]:
         info_ir_complem = {"infoIRCR": s1210_original["info_ir_cr"]}
 
-    # Usa o indRetif do evento original (inclusão=1 ou retif=2)
-    ind_retif_usar = s1210_original.get("ind_retif", "1")
-    nr_recibo_para_retif = recibo_usado if ind_retif_usar == "2" else None
+    # Lote 3 SEMPRE é retificação (indRetif=2)
+    # Lote 1/2/4: usa do original ou força 2 se erro de duplicidade
+    ind_retif_usar = "2"  # Lote 3 MISSAO sempre retif
+    nr_recibo_para_retif = recibo_usado
+
+    # Montar plan_saude apenas para Lote 2/3 (com plano de saúde)
+    plan_saude_usar = None
+    if lote_key in ("2_LOTE", "3_LOTE"):
+        # Busca plan_saude agregado por CNPJ na tabela s1210_operadoras
+        try:
+            plan_saude_usar = _buscar_plan_saude_por_cpf(cpf_alvo, s1210_original['per_apur'], lote_num)
+        except Exception as e:
+            log.warning(f"Erro buscando plan_saude para {cpf_alvo}: {e}")
+            plan_saude_usar = None
 
     try:
         xml_bytes = S1210XMLGenerator.gerar(
@@ -505,7 +517,7 @@ def _testar_um_cpf_impl(req: TestarUmCpfReq):
             ind_retif=ind_retif_usar,
             nr_recibo=nr_recibo_para_retif,
             info_ir_complem=info_ir_complem,
-            plan_saude=None,  # LOTE 1 — sem plano
+            plan_saude=plan_saude_usar,
             tp_amb="1",       # PRODUÇÃO
         )
     except Exception as e:
@@ -691,6 +703,59 @@ def _load_cert_ativo():
     with open(cert_path, "rb") as f:
         pfx_data = f.read()
     return cnpj, pfx_data, senha
+
+
+def _buscar_plan_saude_por_cpf(cpf: str, per_apur: str, lote_num: int) -> Optional[list[dict]]:
+    """
+    Busca plan_saude agregado por CNPJ para um CPF em um lote.
+    Retorna lista de dicts: [{cnpjOper, regANS, vlrSaudeTit}, ...]
+    ou None se não houver dados.
+    
+    Usada para Lote 2/3 que têm plano de saúde com operadora.
+    """
+    import sys as _sys
+    import os as _os
+    base = _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__)))
+    if base not in _sys.path:
+        _sys.path.insert(0, base)
+    from db_config import DB_CONFIG
+    import psycopg2
+    import psycopg2.extras
+
+    conn = psycopg2.connect(**DB_CONFIG)
+    try:
+        with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+            cur.execute("""
+                SELECT cnpj_operadora,
+                       MAX(reg_ans) AS reg_ans,
+                       SUM(valor)::BIGINT AS soma_centavos
+                  FROM s1210_operadoras
+                 WHERE per_apur   = %s
+                   AND cpf        = %s
+                   AND lote_num   = %s
+              GROUP BY cnpj_operadora
+              ORDER BY cnpj_operadora
+            """, (per_apur, cpf, lote_num))
+            rows = cur.fetchall()
+    finally:
+        conn.close()
+
+    if not rows:
+        return None
+
+    result = []
+    for r in rows:
+        centavos = int(r["soma_centavos"] or 0)
+        if centavos <= 0:
+            continue
+        vlr = f"{centavos / 100:.2f}"
+        result.append({
+            "cnpjOper": r["cnpj_operadora"],
+            "regANS": r["reg_ans"] or "",
+            "vlrSaudeTit": vlr,
+        })
+    
+    return result if result else None
 
 
 # ── Helpers de persistência na pipeline ─────────────────────────────

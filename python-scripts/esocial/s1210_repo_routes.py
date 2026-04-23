@@ -957,6 +957,7 @@ def listar_cpfs_compartimento(
                         WITH base AS (
                             SELECT DISTINCT ON (codigo_funcionario)
                                    codigo_funcionario,
+                                   cpf,
                                    codigo_empresa,
                                    codigo_filial,
                                    concatenar,

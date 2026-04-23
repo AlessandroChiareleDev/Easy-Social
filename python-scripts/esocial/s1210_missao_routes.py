@@ -492,14 +492,18 @@ def _testar_um_cpf_impl(req: TestarUmCpfReq):
     if s1210_original["info_ir_cr"]:
         info_ir_complem = {"infoIRCR": s1210_original["info_ir_cr"]}
 
+    # Usa o indRetif do evento original (inclusão=1 ou retif=2)
+    ind_retif_usar = s1210_original.get("ind_retif", "1")
+    nr_recibo_para_retif = recibo_usado if ind_retif_usar == "2" else None
+
     try:
         xml_bytes = S1210XMLGenerator.gerar(
             empregador=empregador,
             beneficiario={"cpfBenef": cpf_alvo},
             info_pgtos=s1210_original["info_pgtos"],
             per_apur=s1210_original["per_apur"],
-            ind_retif="2",
-            nr_recibo=recibo_usado,
+            ind_retif=ind_retif_usar,
+            nr_recibo=nr_recibo_para_retif,
             info_ir_complem=info_ir_complem,
             plan_saude=None,  # LOTE 1 — sem plano
             tp_amb="1",       # PRODUÇÃO

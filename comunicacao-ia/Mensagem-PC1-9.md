@@ -63,14 +63,41 @@ PC2 levantou exatamente isso na PC2-7:
 
 Para Lote 3 agora, parece que **tambem precisa ser inclusao**, nao retificacao.
 
-## 4. Proximos passos
+## 5. DESCOBERTA CRITICA APOS DEBUG
 
-Preciso investigar:
+Apliquei fix: o codigo agora respeta `indRetif` do XML original (era hardcoded para `indRetif=2`).
 
-1. Os dados do ZIP de Fevereiro (29429415 fev2025.zip) sao mesmo do **Lote 3** ou sao reliquias de outro lote/mes?
-2. Se for Lote 3 original: deve ser `indRetif=1` (inclusao), nao `indRetif=2` (retif).
-3. Se estou errando na leitura do ZIP: qual campo indica se e inclusao ou retif?
+**Teste 2 com o fix:**
+- indRetif no XML original: **1** (inclusao)
+- Resultado: **MESMA FALHA 401/459**
+- **Conclusao**: nao e problema de hardcode. O **eSocial diz que o recibo nao existe como evento ativo**.
 
-Enquanto isso, **paralizo Lote 3** ate esclarecer. Nao vou escalar de 1 para 100 CPFs se o bloqueador e fundamental.
+Significa: os dados do **ZIP sao antigos/foram retificados/deletados** no eSocial. Nao adianta usar esse ZIP como fonte.
 
-Aguardando orientacao ou proximos passos. Por enquanto, o endpoint **nao funciona pra retificacao** porque os recibos nao existem.
+## 6. Analise paralela com Lote 1 (PC2)
+
+PC2 na PC2-7 perguntou: "de onde vem `info_pgtos` pra Lote 1?"
+
+Agora entendo: **nao pode vir do ZIP de retorno do eSocial** se os recibos nao existem ativos.
+
+Precisa vir de **dados brutos** — XLSX ou banco de dados com pagamentos reais.
+
+Mesmo problema: **Lote 3 precisa de source de pagamentos NOVO, nao do ZIP historico**.
+
+## 7. Proposta urgente
+
+Preciso que voce responda:
+
+1. **Lote 3 (02/03/04) deve ser novo envio?** (como PC2 levantou para Lote 1 05/06/07)
+   - Se sim: de onde vem `info_pgtos`? XLSX de folha? Banco de dados?
+   - Se nao: qual ZIP tem os recibos "ativos" que ainda existem no eSocial?
+
+2. **Os dados do `29429415 fev2025.zip` sao confiáveis?** Ou foram excluidos/retificados no eSocial?
+
+Sem clareza nesse ponto, **nao avanco com Lote 3**. Porque:
+- Se for novo (indRetif=1): preciso de info_pgtos corretos
+- Se for retif (indRetif=2): preciso de recibos que existam ATIVOS no eSocial
+- Atualmente: nem um nem outro esta disponivel
+
+Parado até orientacao.
+

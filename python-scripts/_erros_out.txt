@@ -1,0 +1,64 @@
+﻿
+=== TOTAIS POR STATUS (Lote 1, 2025-02) ===
+  ok           643
+  erro         386
+  enviando     4
+
+=== POR LOTE Î M╩S Î STATUS ===
+  L1 2025-02 enviando     4
+  L1 2025-02 erro         386
+  L1 2025-02 ok           643
+
+=== 386 erros ·nicos no Lote 1 Fev/2025 ===
+
+=== POR ETAPA ===
+   343  processamento_rejeitado
+    43  buscar_recibo
+
+=== POR cdResposta ===
+   343  401
+    43  
+
+=== POR OCORR╩NCIA (codigo Î descriþÒo) ===
+   216  [1089] Um evento foi enviado ao mesmo tempo em mais de um lote ou dois ou mais eventos 
+    81  [543] Jß existe na base de dados do Ambiente Nacional um evento com mesmo identificado
+    43  [459] NÒo foi localizado um evento para o recibo de entrega informado ou o mesmo foi e
+     3  [8] Grupo 'InformaþÒo dos beneficißrios da pensÒo alimentÝcia' deve ser preenchido. 
+
+=== GRUPOS (cdResposta Î ocorrÛncia) + amostras ===
+
+---  216Î cdResposta=401 ocorrencia=1089
+    desc: Um evento foi enviado ao mesmo tempo em mais de um lote ou dois ou mais eventos foram gerados e envi
+     cpf=00031612938  erro_descricao=processamento_rejeitado | C¾digo 401: Conteudo do evento invßlido. | Conteudo do evento invßlido. | ocorrencias=[{"tipo": "1", "codigo": "1089", "descricao": "Um evento foi enviado
+     cpf=00033019584  erro_descricao=processamento_rejeitado | C¾digo 401: Conteudo do evento invßlido. | Conteudo do evento invßlido. | ocorrencias=[{"tipo": "1", "codigo": "1089", "descricao": "Um evento foi enviado
+     cpf=00043872603  erro_descricao=processamento_rejeitado | C¾digo 401: Conteudo do evento invßlido. | Conteudo do evento invßlido. | ocorrencias=[{"tipo": "1", "codigo": "1089", "descricao": "Um evento foi enviado
+
+---   81Î cdResposta=401 ocorrencia=543
+    desc: Jß existe na base de dados do Ambiente Nacional um evento com mesmo identificador (Identificador: ID
+     cpf=00142349712  erro_descricao=processamento_rejeitado | C¾digo 401: Conteudo do evento invßlido. | Conteudo do evento invßlido. | ocorrencias=[{"tipo": "1", "codigo": "543", "descricao": "Jß existe na base de d
+     cpf=00425093786  erro_descricao=processamento_rejeitado | C¾digo 401: Conteudo do evento invßlido. | Conteudo do evento invßlido. | ocorrencias=[{"tipo": "1", "codigo": "543", "descricao": "Jß existe na base de d
+     cpf=00489403646  erro_descricao=processamento_rejeitado | C¾digo 401: Conteudo do evento invßlido. | Conteudo do evento invßlido. | ocorrencias=[{"tipo": "1", "codigo": "543", "descricao": "Jß existe na base de d
+
+---   43Î cdResposta=401 ocorrencia=459
+    desc: NÒo foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluÝdo/retificado.
+
+     cpf=00008401144  erro_descricao=processamento_rejeitado | C¾digo 401: Conteudo do evento invßlido. | Conteudo do evento invßlido. | ocorrencias=[{"tipo": "1", "codigo": "459", "descricao": "NÒo foi localizado um 
+     cpf=00734636717  erro_descricao=processamento_rejeitado | C¾digo 401: Conteudo do evento invßlido. | Conteudo do evento invßlido. | ocorrencias=[{"tipo": "1", "codigo": "459", "descricao": "NÒo foi localizado um 
+     cpf=00743026128  erro_descricao=processamento_rejeitado | C¾digo 401: Conteudo do evento invßlido. | Conteudo do evento invßlido. | ocorrencias=[{"tipo": "1", "codigo": "459", "descricao": "NÒo foi localizado um 
+
+---   43Î cdResposta=None ocorrencia=None
+    desc: buscar_recibo
+     cpf=00050073648  erro_descricao=buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 00050073648
+     cpf=00056143680  erro_descricao=buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 00056143680
+     cpf=00092184758  erro_descricao=buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 00092184758
+
+---    3Î cdResposta=401 ocorrencia=8
+    desc: Grupo 'InformaþÒo dos beneficißrios da pensÒo alimentÝcia' deve ser preenchido. Verifique as condiþ§
+     cpf=01369812400  erro_descricao=processamento_rejeitado | C¾digo 401: Conteudo do evento invßlido. | Conteudo do evento invßlido. | ocorrencias=[{"tipo": "1", "codigo": "8", "descricao": "Grupo 'InformaþÒo dos be
+     cpf=01499812604  erro_descricao=processamento_rejeitado | C¾digo 401: Conteudo do evento invßlido. | Conteudo do evento invßlido. | ocorrencias=[{"tipo": "1", "codigo": "8", "descricao": "Grupo 'InformaþÒo dos be
+     cpf=01652213643  erro_descricao=processamento_rejeitado | C¾digo 401: Conteudo do evento invßlido. | Conteudo do evento invßlido. | ocorrencias=[{"tipo": "1", "codigo": "8", "descricao": "Grupo 'InformaþÒo dos be
+
+=== OK - cdResposta ===
+   641  201  Sucesso.
+     2  None  backfill do hist¾rico legado
+

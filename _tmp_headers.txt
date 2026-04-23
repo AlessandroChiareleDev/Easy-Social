@@ -1,0 +1,579 @@
+﻿
+======================================================================
+02. Fevereiro_2025_APPA certa.xlsx (2025-02)
+======================================================================
+
+--- GERAL: aba 'Geral Para Envio_Lotes' ---
+Header (8 cols):
+  [0] 'CodigoEmpresa'
+  [1] 'Competencia'
+  [2] 'CodigoLote'
+  [3] 'CodigoFilial'
+  [4] 'CodigoFuncionario'
+  [5] 'Concatenar'
+  [6] 'Lotes'
+  [7] 'CPF'
+Sample (first 3 data rows):
+  (2, 202501, 1511176, 1, 219, '2|219', '1║ Lote', '018.533.866-69')
+  (2, 202501, 1511175, 1, 7761, '2|7761', '1║ Lote', '319.485.026-15')
+  (2, 202501, 1511176, 1, 16827, '2|16827', '1║ Lote', '551.460.156-00')
+
+--- OPERADORAS: aba 'Operadoras_012025' ---
+Header (29 cols):
+  [0] 'CodigoEmpresa'
+  [1] 'Competencia'
+  [2] 'CodigoLote'
+  [3] 'CodigoFilial'
+  [4] 'CodigoFuncionario'
+  [5] None
+  [6] 'Sindicato'
+  [7] 'Plano MÚdico'
+  [8] 'CONCATENAR (EMPRESA + MATRICULA + RUBRICA)'
+  [9] 'CNPJ OPERADORA '
+  [10] 'CPD ANS'
+  [11] 'Natureza'
+  [12] 'CodigoEvento'
+  [13] 'Nome Evento'
+  [14] 'Natureza E-social'
+  [15] None
+  [16] None
+  [17] 'QtdEvento'
+  [18] 'ValorEvento'
+  [19] None
+  [20] 'TipoCalculo'
+  [21] 'TotalVen'
+  [22] 'TotalDes'
+  [23] 'Liquido'
+  [24] 'Analise da natureza'
+  [25] 'EB'
+  [26] 'Observaþ§es'
+  [27] 'CodigoEmpresa'
+  [28] 'Lote'
+Sample (first 3 data rows):
+  (2, 202501, 1511176, 1, 16910, '2|16910', 'SINDEAC - BELO HORIZONTE00', 'MÚdica', '2|16910|607', '63.554.067/0001-98', 368253, '9219-Desconto de assistÛncia mÚdica ou odontol¾gica', 607, 'DESC. ASSIST. MEDICA', '9219-Desconto de assistÛncia mÚdica ou odontol¾gica', 0, 0, 0, 28001, None, 'P', 276173, 65873, 210300, 'OK', 'Rubrica com inconsistÛncia de IRRF', 0, 2, '2║ Lote')
+  (2, 202501, 1511176, 1, 16910, '2|16910', 'SINDEAC - BELO HORIZONTE00', 'MÚdica', '2|16910|950', '-', '-', '9299-Outros descontos', 950, 'DIF. ASSISTENCIA MEDICA', '1405-AssistÛncia mÚdica', 9, 0, 0, 12000, None, 'P', 276173, 65873, 210300, 'OK', '-', 0, 2, '2║ Lote')
+  (2, 202501, 1511176, 1, 17213, '2|17213', 'SINDEAC - BELO HORIZONTE00', 'MÚdica', '2|17213|607', '63.554.067/0001-98', 368253, '9219-Desconto de assistÛncia mÚdica ou odontol¾gica', 607, 'DESC. ASSIST. MEDICA', '9219-Desconto de assistÛncia mÚdica ou odontol¾gica', 0, 0, 0, 18667, None, 'P', 266030, 61830, 204200, 'OK', 'Rubrica com inconsistÛncia de IRRF', 0, 2, '2║ Lote')
+
+[2025-02] Coluna 'lote' encontrada em index 2: header='CodigoLote'
+[2025-02] Total linhas: 11602
+[2025-02] Distribuicao lote:
+    '4314': 2222
+    '4316': 921
+    '1512736': 730
+    '1512735': 632
+    '1512745': 603
+    '4300': 534
+    '827': 452
+    '1512767': 439
+    '1511186': 276
+    '1510632': 275
+    '1511170': 256
+    '1511176': 230
+    '1511172': 217
+    '421': 213
+    '1512725': 207
+    '1512738': 193
+    '4327': 173
+    '1511192': 166
+    '1511190': 164
+    '1512755': 140
+    '1512763': 139
+    '4324': 116
+    '1512770': 107
+    '10712018': 105
+    '1510977': 102
+    '28': 101
+    '1512737': 82
+    '1512759': 80
+    '1510633': 80
+    '1512758': 79
+    '10712019': 75
+    '1511183': 74
+    '422': 71
+    '1512760': 70
+    '10712011': 67
+    '1512756': 61
+    '1512707': 58
+    '10712024': 57
+    '423': 48
+    '10711992': 46
+    '830': 45
+    '10711989': 42
+    '10712017': 42
+    '969': 41
+    '1512754': 34
+    '1512746': 33
+    '1512757': 33
+    '4304': 31
+    '795': 31
+    '4223': 30
+    '1512766': 29
+    '405': 28
+    '1511167': 24
+    '1512768': 21
+    '1510630': 20
+    '1510629': 20
+    '1511162': 17
+    '1511191': 17
+    '10712009': 17
+    '10712015': 17
+    '10711998': 15
+    '1512769': 15
+    '4236': 15
+    '424': 15
+    '1512742': 13
+    '1510631': 13
+    '10711993': 12
+    '1511185': 11
+    '1510626': 10
+    '4303': 10
+    '1510634': 9
+    '4301': 9
+    '1512739': 8
+    '1512734': 8
+    '10712023': 7
+    '1512748': 7
+    '1510628': 7
+    '1510627': 7
+    '10712000': 6
+    '10712014': 6
+    '10712016': 6
+    '10712021': 6
+    '4249': 6
+    '419': 6
+    '1511182': 5
+    '10712020': 5
+    '1510975': 5
+    '971': 5
+    '829': 5
+    '831': 5
+    '418': 5
+    '1511180': 4
+    '10711999': 4
+    '10712001': 4
+    '10712025': 4
+    '1512749': 4
+    '416': 4
+    '1511177': 3
+    '1511178': 3
+    '1511181': 3
+    '1511173': 3
+    '10712003': 3
+    '10712012': 3
+    '1512747': 3
+    '1512762': 3
+    '4325': 3
+    '964': 3
+    '965': 3
+    '796': 3
+    '417': 3
+    '420': 3
+    '1511175': 2
+    '1511184': 2
+    '1511153': 2
+    '10712004': 2
+    '10712013': 2
+    '1512740': 2
+    '1512752': 2
+    '1512753': 2
+    '1512761': 2
+    '4245': 2
+    '966': 2
+    '968': 2
+    '970': 2
+    '828': 2
+    '1511179': 1
+    '10712010': 1
+    '10712002': 1
+    '10712026': 1
+    '1512741': 1
+    '1512743': 1
+    '1512750': 1
+    '1512744': 1
+    '1512751': 1
+    '4262': 1
+    '4302': 1
+    '967': 1
+    '963': 1
+
+======================================================================
+03. Marco_2025_APPA.xlsx (2025-03)
+======================================================================
+
+--- GERAL: aba 'Geral Para envio de Lotes' ---
+Header (8 cols):
+  [0] 'CodigoEmpresa'
+  [1] 'Competencia'
+  [2] 'CodigoLote'
+  [3] 'CodigoFilial'
+  [4] 'CodigoFuncionario'
+  [5] 'Concatenar ( Empresa + Matricula)'
+  [6] 'Lotes Final'
+  [7] 'CPF'
+Sample (first 3 data rows):
+  (1, 202502, 10712046, 0, 3804, '1|3804', '1║ Lote', '542.340.268-91')
+  (1, 202502, 10712046, 0, 4745, '1|4745', '1║ Lote', '981.726.978-72')
+  (1, 202502, 10712046, 0, 6430, '1|6430', '1║ Lote', '019.854.998-94')
+
+--- OPERADORAS: aba 'Operadora 022025' ---
+Header (31 cols):
+  [0] 'CodigoEmpresa'
+  [1] 'Competencia'
+  [2] 'CodigoLote'
+  [3] 'CodigoFilial'
+  [4] 'CodigoFuncionario'
+  [5] 'Concatenar'
+  [6] 'Sindicato'
+  [7] 'Tipo AssistÛncia'
+  [8] 'C¾d Operadora '
+  [9] 'Cod ANS '
+  [10] 'Natureza Rubrica_analisada pela situaþÒo do Plano'
+  [11] 'CodigoEvento'
+  [12] 'Nome Evento'
+  [13] 'Natureza E-social'
+  [14] '-'
+  [15] '-'
+  [16] 'QtdEvento'
+  [17] 'ValorEvento'
+  [18] '-'
+  [19] 'TipoCalculo'
+  [20] 'TotalVen'
+  [21] 'TotalDes'
+  [22] 'Liquido'
+  [23] 'Analise da natureza'
+  [24] 'EB'
+  [25] 'Observaþ§es'
+  [26] 'CodigoEmpresa'
+  [27] 'Numero Lote'
+  [28] None
+  [29] None
+  [30] None
+Sample (first 3 data rows):
+  (1, 202502, 10712060, '1|27619', 27619, '1|27619|775', 'SINDEEPRES', 'odontol¾gica', '-', '-', 9299, 775, 'DESC. ASSIST. ODONTOLOGICA', '9299-Outros descontos', 9, 0, 0, 1000, None, 'P', 290391, 53091, 237300, 'VERIFICAR - 9219', '-', 'Natureza da Rubrica sujerida - 9911 Valor nÒo relativo a vencimento ou desconto, relativo Ó assistÛncia prestada por serviþo mÚdico ou odontol¾gico, pr¾prio da empresa ou por ela conveniado, como benefÝcio ao trabalhador', 1, '3║ Lote', '27619|3║ Lote', None, None)
+  (1, 202502, 10712061, '1|27626', 27626, '1|27626|775', 'SINDEEPRES', 'odontol¾gica', '-', '-', 9299, 775, 'DESC. ASSIST. ODONTOLOGICA', '9299-Outros descontos', 9, 0, 0, 1000, None, 'P', 237864, 48064, 189800, 'VERIFICAR - 9219', '-', 'Natureza da Rubrica sujerida - 9911 Valor nÒo relativo a vencimento ou desconto, relativo Ó assistÛncia prestada por serviþo mÚdico ou odontol¾gico, pr¾prio da empresa ou por ela conveniado, como benefÝcio ao trabalhador', 1, '3║ Lote', '27626|3║ Lote', None, None)
+  (1, 202502, 10712060, '1|27651', 27651, '1|27651|775', 'SINDEEPRES', 'odontol¾gica', '-', '-', 9299, 775, 'DESC. ASSIST. ODONTOLOGICA', '9299-Outros descontos', 9, 0, 0, 1000, None, 'P', 390706, 77106, 313600, 'VERIFICAR - 9219', '-', 'Natureza da Rubrica sujerida - 9911 Valor nÒo relativo a vencimento ou desconto, relativo Ó assistÛncia prestada por serviþo mÚdico ou odontol¾gico, pr¾prio da empresa ou por ela conveniado, como benefÝcio ao trabalhador', 1, '3║ Lote', '27651|3║ Lote', None, None)
+
+[2025-03] Coluna 'lote' encontrada em index 2: header='CodigoLote'
+[2025-03] Total linhas: 11186
+[2025-03] Distribuicao lote:
+    '4368': 2211
+    '4384': 918
+    '1512776': 734
+    '1512798': 626
+    '1512785': 597
+    '4376': 521
+    '861': 457
+    '1512809': 283
+    '1511215': 275
+    '1510642': 273
+    '1511217': 231
+    '1511208': 217
+    '468': 206
+    '1512780': 196
+    '1512772': 195
+    '4369': 169
+    '1511206': 166
+    '1511219': 166
+    '1512775': 153
+    '1512795': 146
+    '1512804': 145
+    '4392': 119
+    '1512812': 107
+    '33': 101
+    '1510983': 99
+    '10712055': 97
+    '1512799': 86
+    '1512800': 85
+    '1512777': 81
+    '1510643': 81
+    '1511220': 77
+    '469': 72
+    '10712048': 71
+    '1512801': 71
+    '10712056': 65
+    '1512796': 59
+    '10712067': 57
+    '470': 47
+    '864': 45
+    '10712054': 44
+    '996': 39
+    '1512808': 38
+    '10712022': 34
+    '1512794': 34
+    '1512764': 33
+    '1512786': 33
+    '1512797': 32
+    '4380': 31
+    '4334': 30
+    '10712040': 26
+    '1511199': 24
+    '1512810': 22
+    '834': 22
+    '1510640': 20
+    '10712052': 18
+    '1510645': 18
+    '4326': 18
+    '10712046': 17
+    '1512811': 16
+    '445': 16
+    '1511218': 15
+    '471': 14
+    '1512782': 13
+    '1510641': 13
+    '1510644': 12
+    '1511216': 11
+    '4335': 11
+    '4379': 10
+    '4383': 9
+    '1512778': 7
+    '1512788': 7
+    '1510638': 7
+    '1510637': 7
+    '10712059': 6
+    '10712051': 6
+    '10712066': 6
+    '10712057': 6
+    '466': 6
+    '1510979': 5
+    '998': 5
+    '863': 5
+    '865': 5
+    '465': 5
+    '10712058': 4
+    '10712060': 4
+    '10712053': 4
+    '10712064': 4
+    '1511210': 4
+    '1512789': 4
+    '1510639': 4
+    '463': 4
+    '10712062': 3
+    '10712049': 3
+    '10712027': 3
+    '10712068': 3
+    '1511213': 3
+    '1511204': 3
+    '1511212': 3
+    '1511211': 3
+    '1511222': 3
+    '1512787': 3
+    '1512803': 3
+    '4393': 3
+    '991': 3
+    '992': 3
+    '983': 3
+    '464': 3
+    '10712063': 2
+    '10712050': 2
+    '10712069': 2
+    '1511221': 2
+    '1511209': 2
+    '1512779': 2
+    '1512773': 2
+    '1512792': 2
+    '1512793': 2
+    '1512802': 2
+    '993': 2
+    '995': 2
+    '997': 2
+    '862': 2
+    '467': 2
+    '10712047': 1
+    '10712061': 1
+    '10712065': 1
+    '1511214': 1
+    '1512781': 1
+    '1512783': 1
+    '1512790': 1
+    '1512784': 1
+    '1513135': 1
+    '1512791': 1
+    '1510646': 1
+    '4365': 1
+    '4378': 1
+    '994': 1
+    '974': 1
+
+======================================================================
+04. Abril_2025_APPA.xlsx (2025-04)
+======================================================================
+
+--- GERAL: aba 'Geral Envio para Lotes' ---
+Header (8 cols):
+  [0] 'CodigoEmpresa'
+  [1] 'Competencia'
+  [2] 'CodigoLote'
+  [3] 'CodigoFilial'
+  [4] 'CodigoFuncionario'
+  [5] 'Concatenar (Empresa + Matricula)'
+  [6] 'Lote'
+  [7] 'CPF'
+Sample (first 3 data rows):
+  (1, 202503, 10712092, 0, 3804, '1|3804', '1║ Lote', '542.340.268-91')
+  (1, 202503, 10712092, 0, 4745, '1|4745', '1║ Lote', '981.726.978-72')
+  (1, 202503, 10712092, 0, 6430, '1|6430', '1║ Lote', '019.854.998-94')
+
+--- OPERADORAS: aba 'Operadoras 032025' ---
+Header (28 cols):
+  [0] 'CodigoEmpresa'
+  [1] 'Competencia'
+  [2] 'CodigoLote'
+  [3] 'CodigoFilial'
+  [4] 'CodigoFuncionario'
+  [5] None
+  [6] 'Sindicato'
+  [7] 'Tipo AssistÛncia'
+  [8] 'C¾d Operadora '
+  [9] 'Cod ANS '
+  [10] 'Natureza Rubrica_analisada pela situaþÒo do Plano'
+  [11] 'CodigoEvento'
+  [12] 'Nome Evento'
+  [13] 'Natureza E-social'
+  [14] None
+  [15] None
+  [16] 'QtdEvento'
+  [17] 'ValorEvento'
+  [18] None
+  [19] 'TipoCalculo'
+  [20] 'TotalVen'
+  [21] 'TotalDes'
+  [22] 'Liquido'
+  [23] 'Analise da natureza'
+  [24] 'EB'
+  [25] 'Observaþ§es'
+  [26] 'CodigoEmpresa'
+  [27] 'Lote'
+Sample (first 3 data rows):
+  (1, 202503, 10712078, '1|27619', 27619, '1|27619|775', 'SINDEEPRES', 'odontol¾gica', '-', '-', 9299, 775, 'DESC. ASSIST. ODONTOLOGICA', '9299-Outros descontos', 9, 0, 0, 1000, None, 'P', 243806, 49006, 194800, 'VERIFICAR - 9219', '-', 'Natureza da Rubrica sujerida - 9911 Valor nÒo relativo a vencimento ou desconto, relativo Ó assistÛncia prestada por serviþo mÚdico ou odontol¾gico, pr¾prio da empresa ou por ela conveniado, como benefÝcio ao trabalhador', 1, '3║ Lote')
+  (1, 202503, 10712079, '1|27626', 27626, '1|27626|775', 'SINDEEPRES', 'odontol¾gica', '-', '-', 9299, 775, 'DESC. ASSIST. ODONTOLOGICA', '9299-Outros descontos', 9, 0, 0, 1000, None, 'P', 237899, 48499, 189400, 'VERIFICAR - 9219', '-', 'Natureza da Rubrica sujerida - 9911 Valor nÒo relativo a vencimento ou desconto, relativo Ó assistÛncia prestada por serviþo mÚdico ou odontol¾gico, pr¾prio da empresa ou por ela conveniado, como benefÝcio ao trabalhador', 1, '3║ Lote')
+  (1, 202503, 10712078, '1|27651', 27651, '1|27651|775', 'SINDEEPRES', 'odontol¾gica', '-', '-', 9299, 775, 'DESC. ASSIST. ODONTOLOGICA', '9299-Outros descontos', 9, 0, 0, 1000, None, 'P', 287956, 53256, 234700, 'VERIFICAR - 9219', '-', 'Natureza da Rubrica sujerida - 9911 Valor nÒo relativo a vencimento ou desconto, relativo Ó assistÛncia prestada por serviþo mÚdico ou odontol¾gico, pr¾prio da empresa ou por ela conveniado, como benefÝcio ao trabalhador', 1, '3║ Lote')
+
+[2025-04] Coluna 'lote' encontrada em index 2: header='CodigoLote'
+[2025-04] Total linhas: 10016
+[2025-04] Distribuicao lote:
+    '4471': 2193
+    '4473': 908
+    '1512819': 729
+    '1512830': 609
+    '1512818': 551
+    '4481': 514
+    '894': 470
+    '1510654': 273
+    '10712104': 271
+    '1512828': 195
+    '489': 179
+    '1512814': 170
+    '1512817': 156
+    '1512844': 148
+    '1512852': 144
+    '4472': 143
+    '1512854': 127
+    '4480': 122
+    '1512857': 105
+    '39': 101
+    '1510988': 99
+    '1512847': 87
+    '1512848': 84
+    '1510655': 82
+    '4403': 80
+    '1512815': 79
+    '1512813': 76
+    '10712082': 74
+    '10712094': 73
+    '1512849': 70
+    '490': 63
+    '1512845': 61
+    '10712089': 57
+    '10712070': 54
+    '897': 47
+    '491': 45
+    '481': 44
+    '10712099': 41
+    '1018': 41
+    '1512820': 40
+    '1512843': 33
+    '1512835': 32
+    '1512846': 32
+    '10712085': 30
+    '4485': 30
+    '1512834': 29
+    '1512855': 22
+    '868': 21
+    '1510652': 20
+    '10712098': 18
+    '10712092': 17
+    '492': 16
+    '1512856': 15
+    '1510653': 13
+    '4402': 13
+    '4396': 13
+    '1512831': 12
+    '4415': 12
+    '1510656': 11
+    '4484': 10
+    '4482': 9
+    '10712100': 8
+    '1510649': 8
+    '10712103': 7
+    '1512826': 7
+    '1512837': 7
+    '1510647': 7
+    '1510650': 7
+    '869': 7
+    '10712077': 6
+    '10712097': 6
+    '10712088': 6
+    '898': 6
+    '867': 5
+    '896': 5
+    '487': 5
+    '486': 5
+    '482': 5
+    '10712076': 4
+    '10712078': 4
+    '10712090': 4
+    '10712102': 4
+    '1512838': 4
+    '1020': 4
+    '10712091': 3
+    '1512836': 3
+    '1512851': 3
+    '1510651': 3
+    '1013': 3
+    '485': 3
+    '484': 3
+    '10712080': 2
+    '10712081': 2
+    '10712095': 2
+    '10712096': 2
+    '1512827': 2
+    '1512841': 2
+    '1512850': 2
+    '1510984': 2
+    '4416': 2
+    '1015': 2
+    '1014': 2
+    '1017': 2
+    '1019': 2
+    '1011': 2
+    '895': 2
+    '497': 2
+    '10712093': 1
+    '10712079': 1
+    '10712087': 1
+    '10712072': 1
+    '1512829': 1
+    '1512832': 1
+    '1512839': 1
+    '1512833': 1
+    '1512822': 1
+    '1512842': 1
+    '1512840': 1
+    '1511241': 1
+    '4451': 1
+    '4531': 1
+    '4483': 1
+    '1016': 1
+    '1021': 1
+    '488': 1
+    '34': 1

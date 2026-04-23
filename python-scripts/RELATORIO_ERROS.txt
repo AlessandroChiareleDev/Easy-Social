@@ -1,0 +1,41 @@
+==========================================================================================
+RELATORIO DE ERROS S-1210 - 931 CPFs com ultimo status = erro
+==========================================================================================
+
+-- POR ETAPA (qual fase do pipeline falhou) --
+    780  buscar_recibo
+    151  processamento_rejeitado
+
+-- POR TIPO DE ERRO (etapa + codigo da ocorrencia) --
+    qtd  etapa                     codigo    descricao
+  -------------------------------------------------------------------------------------
+    780  buscar_recibo             -         Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF <xxx>
+     94  processamento_rejeitado   459       Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.
+
+     57  processamento_rejeitado   8         Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condiçõ
+
+-- TOP 15 OCORRENCIAS (todas, mesmo quando mais de uma por CPF) --
+     94  [459] Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi e
+     57  [8] Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. 
+
+-- POR MES+LOTE --
+  mes       lote   total  tipos
+  2025-02   1        931  buscar_recibo=780, processamento_rejeitado:459=94, processamento_rejeitado:8=57
+
+-- EXEMPLOS (3 CPFs por tipo) --
+
+[780x] buscar_recibo / cod=- - Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF <xxx>
+    cpf=00050073648  per=2025-02  lote=1
+    cpf=00056143680  per=2025-02  lote=1
+    cpf=00092184758  per=2025-02  lote=1
+
+[94x] processamento_rejeitado / cod=459 - Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.
+
+    cpf=00734636717  per=2025-02  lote=1
+    cpf=00743026128  per=2025-02  lote=1
+    cpf=00744385652  per=2025-02  lote=1
+
+[57x] processamento_rejeitado / cod=8 - Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condiçõ
+    cpf=01369812400  per=2025-02  lote=1
+    cpf=01499812604  per=2025-02  lote=1
+    cpf=01652213643  per=2025-02  lote=1

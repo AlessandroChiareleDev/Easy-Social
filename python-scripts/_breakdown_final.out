@@ -1,0 +1,39 @@
+﻿===============================================================================================
+BREAKDOWN DEFINITIVO ÔÇö LOTE 1 ÔÇö FEV/MAR/ABR 2025 ÔÇö APPA
+(considera apenas a ├ÜLTIMA tentativa de cada CPF)
+===============================================================================================
+
+ÔöÇÔöÇ 2025-02 L1 ÔöÇÔöÇ ├║nicos:9471  OK:8540  ERRO:931
+  ETAPA l├│gica:
+      780  buscar_recibo
+      151  proc_rejeitado/401
+  ocorr├¬ncias (dentro de proc_rejeitado/401):
+       94  cod 459 ÔÇö N├úo foi localizado um evento para o recibo de entrega informado ou o mesmo foi e
+       57  cod 8 ÔÇö Grupo 'Informa├º├úo dos benefici├írios da pens├úo aliment├¡cia' deve ser preenchido. 
+
+ÔöÇÔöÇ 2025-03 L1 ÔöÇÔöÇ ├║nicos:8164  OK:7317  ERRO:847
+  ETAPA l├│gica:
+      790  buscar_recibo
+       57  proc_rejeitado/401
+  ocorr├¬ncias (dentro de proc_rejeitado/401):
+       43  cod 8 ÔÇö Grupo 'Informa├º├úo dos benefici├írios da pens├úo aliment├¡cia' deve ser preenchido. 
+       14  cod 8 ÔÇö Grupo 'Plano de sa├║de coletivo' deve ser preenchido. Verifique as condi├º├Áes de p
+
+ÔöÇÔöÇ 2025-04 L1 ÔöÇÔöÇ ├║nicos:7142  OK:6187  ERRO:955
+  ETAPA l├│gica:
+      918  buscar_recibo
+       37  proc_rejeitado/401
+  ocorr├¬ncias (dentro de proc_rejeitado/401):
+       34  cod 8 ÔÇö Grupo 'Informa├º├úo dos benefici├írios da pens├úo aliment├¡cia' deve ser preenchido. 
+        2  cod 459 ÔÇö N├úo foi localizado um evento para o recibo de entrega informado ou o mesmo foi e
+        1  cod 8 ÔÇö Grupo 'Plano de sa├║de coletivo' deve ser preenchido. Verifique as condi├º├Áes de p
+
+===============================================================================================
+TOTAL CONSOLIDADO (3 meses, ├║ltimo status):
+     2488  buscar_recibo
+      245  proc_rejeitado/401
+  ocorr├¬ncias consolidadas dentro do 401:
+      134  cod 8 ÔÇö Grupo 'Informa├º├úo dos benefici├írios da pens├úo aliment├¡cia' deve ser preenchido. 
+       96  cod 459 ÔÇö N├úo foi localizado um evento para o recibo de entrega informado ou o mesmo foi e
+       15  cod 8 ÔÇö Grupo 'Plano de sa├║de coletivo' deve ser preenchido. Verifique as condi├º├Áes de p
+===============================================================================================

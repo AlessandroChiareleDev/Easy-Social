@@ -1,0 +1,34 @@
+﻿==========================================================================================
+BREAKDOWN ERROS ÔÇö LOTE 1 ÔÇö FEV/MAR/ABR 2025 ÔÇö APPA (empresa_id=1)
+==========================================================================================
+
+ÔöÇÔöÇ 2025-02 L1 ÔöÇÔöÇ ├║nicos: 9471  OK: 8540  ERRO:  931
+  por ETAPA:
+       780  buscar_recibo
+       151  processamento_rejeitado/401
+  AMOSTRAS:
+    [buscar_recibo|cod=] cpf=00050073648: buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 00050073648
+    [proc_rej/401|cod=401] cpf=00734636717: Conteudo do evento inv├ílido.
+
+ÔöÇÔöÇ 2025-03 L1 ÔöÇÔöÇ ├║nicos: 8164  OK: 7317  ERRO:  847
+  por ETAPA:
+       790  buscar_recibo
+        57  processamento_rejeitado/401
+  AMOSTRAS:
+    [buscar_recibo|cod=None] cpf=00092184758: buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 00092184758
+    [proc_rej/401|cod=401] cpf=01264996594: Conteudo do evento inv├ílido.
+
+ÔöÇÔöÇ 2025-04 L1 ÔöÇÔöÇ ├║nicos: 7142  OK: 6187  ERRO:  955
+  por ETAPA:
+       918  buscar_recibo
+        37  processamento_rejeitado/401
+  AMOSTRAS:
+    [buscar_recibo|cod=None] cpf=00071106774: buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 00071106774
+    [proc_rej/401|cod=401] cpf=00212227700: Conteudo do evento inv├ílido.
+
+==========================================================================================
+TOTAL L1 (3 meses) ÔÇö OK:22044  ERRO:2733
+  etapas consolidadas:
+      2488  buscar_recibo
+       245  processamento_rejeitado/401
+==========================================================================================

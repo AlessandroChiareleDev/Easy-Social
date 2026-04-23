@@ -1,0 +1,9 @@
+﻿Total 401 no L1 (├║ltimo status por CPF): 245
+
+== Padr├Áes ├║nicos ==
+   245  ocorr├¬ncia 401
+
+== Exemplos de mensagem (1 por padr├úo) ==
+
+[ocorr├¬ncia 401] (2025-02 / 00734636717)
+  processamento_rejeitado | C├│digo 401: Conteudo do evento inv├ílido. | Conteudo do evento inv├ílido. | ocorrencias=[{"tipo": "1", "codigo": "459", "descricao": "N├úo foi localizado um evento para o recibo de entrega informado ou o mesmo foi exclu├¡do/retificado.\nA├º├úo Sugerida: Dever├í existir um Evento j├í recebido, \"Ativo\" (n├úo exclu├¡do ou retificado), com n├║mero de recibo de entrega igual ao informa

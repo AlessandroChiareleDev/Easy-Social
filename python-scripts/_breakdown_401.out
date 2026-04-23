@@ -1,0 +1,29 @@
+﻿==========================================================================================
+DETALHE DOS 245 ERROS 401 ÔÇö ocorr├¬ncias do XML resposta
+==========================================================================================
+
+ÔöÇÔöÇ 2025-02 L1 ÔÇö 449 erros 401 ÔöÇÔöÇ
+  ocorr├¬ncias:
+     216├ù cod 1089 ÔåÆ Um evento foi enviado ao mesmo tempo em mais de um lote ou dois ou mais eventos foram gerados e enviados com a mesma chave de acesso, verifique a chave de acesso e reenvie o evento. A├º├úo sugerida para  (ex cpf: 00031612938)
+      95├ù cod 459 ÔåÆ N├úo foi localizado um evento para o recibo de entrega informado ou o mesmo foi exclu├¡do/retificado.\nA├º├úo Sugerida: Dever├í existir um Evento j├í recebido, \  (ex cpf: 00008401144)
+      81├ù cod 543 ÔåÆ J├í existe na base de dados do Ambiente Nacional um evento com mesmo identificador (Identificador: ID1059690710000002026042118275400001). Evento: (Recibo: 1.1.0000000040112315720).  (ex cpf: 00142349712)
+      57├ù cod 8 ÔåÆ Grupo 'Informa├º├úo dos benefici├írios da pens├úo aliment├¡cia' deve ser preenchido. Verifique as condi├º├Áes de preenchimento no leiaute.  (ex cpf: 01369812400)
+
+ÔöÇÔöÇ 2025-03 L1 ÔÇö 3133 erros 401 ÔöÇÔöÇ
+  ocorr├¬ncias:
+    3076├ù cod 620 ÔåÆ A folha de pagamento do per├¡odo 2025-03 j├í foi fechada, para alter├í-la ser├í necess├írio reabri-la.  (ex cpf: 00015348660)
+      57├ù cod 8 ÔåÆ Grupo 'Plano de sa├║de coletivo' deve ser preenchido. Verifique as condi├º├Áes de preenchimento no leiaute.  (ex cpf: 01264996594)
+
+ÔöÇÔöÇ 2025-04 L1 ÔÇö 42 erros 401 ÔöÇÔöÇ
+  ocorr├¬ncias:
+      35├ù cod 8 ÔåÆ Grupo 'Informa├º├úo dos benefici├írios da pens├úo aliment├¡cia' deve ser preenchido. Verifique as condi├º├Áes de preenchimento no leiaute.  (ex cpf: 00212227700)
+       5├ù cod 620 ÔåÆ A folha de pagamento do per├¡odo 2025-04 j├í foi fechada, para alter├í-la ser├í necess├írio reabri-la.  (ex cpf: 00013096176)
+       2├ù cod 459 ÔåÆ N├úo foi localizado um evento para o recibo de entrega informado ou o mesmo foi exclu├¡do/retificado.\nA├º├úo Sugerida: Dever├í existir um Evento j├í recebido, \  (ex cpf: 01221703501)
+
+==========================================================================================
+TOTAL consolidado (3 meses):
+    3081├ù cod 620
+     216├ù cod 1089
+     149├ù cod 8
+      97├ù cod 459
+      81├ù cod 543

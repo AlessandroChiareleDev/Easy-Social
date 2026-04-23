@@ -1,0 +1,58 @@
+﻿
+======================================================================
+CPF 11448798680
+======================================================================
+  per_apur=2025-02  ind_retif=1  nr_recibo=1.1.0000000031292368033
+  info_pgtos: 2
+  infoIRCR[0]:
+    tpCR=056107  vrCR=None
+    dedDepen (2):
+      tpRend=11  cpfDep=15303964680  vlrDedDep=189.59
+      tpRend=11  cpfDep=16123758632  vlrDedDep=189.59
+    penAlim (2):
+      tpRend=11  cpfDep=15303964680  vlrDedPenAlim=607.2
+      tpRend=11  cpfDep=16123758632  vlrDedPenAlim=607.2
+
+======================================================================
+CPF 37904342804
+======================================================================
+  per_apur=2025-02  ind_retif=1  nr_recibo=1.1.0000000031242822950
+  info_pgtos: 3
+  infoIRCR[0]:
+    tpCR=056107  vrCR=None
+    dedDepen (2):
+      tpRend=11  cpfDep=51949263835  vlrDedDep=189.59
+      tpRend=11  cpfDep=51949340848  vlrDedDep=189.59
+    penAlim (5):
+      tpRend=11  cpfDep=51949263835  vlrDedPenAlim=436.9
+      tpRend=13  cpfDep=51949263835  vlrDedPenAlim=115.72
+      tpRend=12  cpfDep=51949263835  vlrDedPenAlim=26.76
+      tpRend=11  cpfDep=51949340848  vlrDedPenAlim=436.9
+      tpRend=12  cpfDep=51949340848  vlrDedPenAlim=26.76
+
+======================================================================
+CPF 07786350667
+======================================================================
+  per_apur=2025-02  ind_retif=1  nr_recibo=1.1.0000000031450343781
+  info_pgtos: 1
+  infoIRCR[0]:
+    tpCR=056107  vrCR=None
+    dedDepen (2):
+      tpRend=11  cpfDep=16767814636  vlrDedDep=189.59
+      tpRend=11  cpfDep=18517956699  vlrDedDep=189.59
+    penAlim (2):
+      tpRend=11  cpfDep=16767814636  vlrDedPenAlim=359.87
+      tpRend=11  cpfDep=18517956699  vlrDedPenAlim=359.87
+
+======================================================================
+CPF 50705962504
+======================================================================
+  per_apur=2025-02  ind_retif=1  nr_recibo=1.1.0000000031302850370
+  info_pgtos: 1
+  infoIRCR[0]:
+    tpCR=056107  vrCR=None
+    dedDepen (2):
+      tpRend=11  cpfDep=10623733595  vlrDedDep=189.59
+      tpRend=11  cpfDep=61828060364  vlrDedDep=189.59
+    penAlim (1):
+      tpRend=11  cpfDep=10623733595  vlrDedPenAlim=383.37

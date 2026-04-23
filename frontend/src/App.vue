@@ -36,6 +36,9 @@ const navGroups = [
     items: [
       { to: '/bot', label: 'Robô eSocial', icon: 'bot' },
       { to: '/esocial', label: 'eSocial S-1010', icon: 'esocial' },
+      { to: '/repositorio-s1210', label: 'Repositório S-1210', icon: 'esocial' },
+      { to: '/s1210-anual', label: 'S-1210 Anual', icon: 'esocial' },
+      { to: '/s1210-missao', label: 'S-1210 Missão (legado)', icon: 'esocial' },
       { to: '/explorador', label: 'Explorador', icon: 'explorador' },
       { to: '/pipeline', label: 'Pipeline 98-10-99', icon: 'pipeline' },
     ],
@@ -340,7 +343,9 @@ onUnmounted(() => {
               stroke-linecap="round"
               stroke-linejoin="round"
             >
-              <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+              <path
+                d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
+              />
               <line x1="12" y1="9" x2="12" y2="13" />
               <line x1="12" y1="17" x2="12.01" y2="17" />
             </svg>

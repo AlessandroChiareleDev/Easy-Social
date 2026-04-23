@@ -19,6 +19,7 @@ Roda na VPS: python3 pipeline_batch.py --periodo 2025-01
 """
 
 import sys, os, json, time, logging, re, argparse
+from collections import Counter
 from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -238,6 +239,50 @@ def _load_error_cpfs(per_apur: str) -> tuple:
         conn.close()
 
 
+def _load_cpfs_filter(cpfs_json_path: str) -> set[str]:
+    """
+    Carrega CPFs de arquivo JSON e retorna set normalizado (somente dígitos).
+    Formatos aceitos:
+      - lista de strings CPF
+      - lista de objetos com chave 'cpf'
+    """
+    # Usa utf-8-sig para aceitar arquivos com BOM sem quebrar o json.load.
+    with open(cpfs_json_path, "r", encoding="utf-8-sig") as f:
+        data = json.load(f)
+
+    cpfs = set()
+    if isinstance(data, list):
+        for item in data:
+            if isinstance(item, str):
+                raw = item
+            elif isinstance(item, dict):
+                raw = item.get("cpf", "")
+            else:
+                raw = ""
+            digits = re.sub(r"\D", "", str(raw or ""))
+            if digits:
+                cpfs.add(digits)
+
+    return cpfs
+
+
+def _is_duplicate_ok(evt: dict, send_original: bool) -> bool:
+    """Em modo send-original, duplicidade [106] significa que o evento já está ativo."""
+    if not send_original:
+        return False
+    cod = str(evt.get("codigo_resposta", "") or "")
+    if cod == "106":
+        return True
+    ocorrencias = evt.get("ocorrencias") or []
+    for oc in ocorrencias:
+        oc_cod = str((oc or {}).get("codigo", "") or "")
+        oc_desc = str((oc or {}).get("descricao", "") or "").lower()
+        if oc_cod == "106" or "duplicidade" in oc_desc:
+            return True
+    desc = str(evt.get("descricao", "") or "").lower()
+    return "duplicidade" in desc
+
+
 CNPJ_OPERADORA = "63554067000198"
 REG_ANS = "368253"
 
@@ -325,8 +370,22 @@ def _enviar_evento_unico(xml_bytes, pfx_data, senha, empregador, is_producao, lo
 
 def _load_progress(progress_file) -> dict:
     if os.path.exists(progress_file):
-        with open(progress_file) as f:
-            return json.load(f)
+        try:
+            with open(progress_file, encoding="utf-8") as f:
+                content = f.read().strip().lstrip("\ufeff")
+                if not content:
+                    raise ValueError("progress file vazio")
+                return json.loads(content)
+        except Exception:
+            # Mantém evidência do arquivo inválido para auditoria e segue com estado limpo.
+            try:
+                bad_copy = progress_file + ".bad"
+                if os.path.exists(bad_copy):
+                    os.remove(bad_copy)
+                os.replace(progress_file, bad_copy)
+            except Exception:
+                pass
+            return {"cpfs_ok": [], "cpfs_erro": {}, "s1298_done": False, "s1299_done": False, "run_id": None}
     return {"cpfs_ok": [], "cpfs_erro": {}, "s1298_done": False, "s1299_done": False, "run_id": None}
 
 
@@ -512,7 +571,9 @@ def capturar_snapshot_s5002(per_apur: str, run_id: int, tipo: str, log):
 
 def run_pipeline(per_apur: str, dry_run: bool = False, no_close: bool = False,
                  fix_errors: bool = False, no_snapshot: bool = False,
-                 send_original: bool = False):
+                 send_original: bool = False, send_original_all: bool = False,
+                 cpfs_json: str = None, min_ok_rate: float = 0.80,
+                 stop_on_low_ok_rate: bool = True):
     paths = _setup_paths(per_apur)
     log = _setup_logging(paths["log"])
 
@@ -522,6 +583,9 @@ def run_pipeline(per_apur: str, dry_run: bool = False, no_close: bool = False,
     if no_close: mode_tags.append("SEM FECHAR")
     if no_snapshot: mode_tags.append("SEM SNAPSHOT")
     if send_original: mode_tags.append("SEND-ORIGINAL")
+    if send_original_all: mode_tags.append("SEND-ORIGINAL-ALL")
+    if cpfs_json: mode_tags.append("CPF-FILTER")
+    if stop_on_low_ok_rate: mode_tags.append(f"AUTO-STOP<{min_ok_rate:.0%}")
     mode_str = " | ".join(mode_tags) if mode_tags else "PRODUÇÃO"
 
     s1210_label = "S-1210 ORIGINAL" if send_original else "S-1210 retif"
@@ -562,14 +626,28 @@ def run_pipeline(per_apur: str, dry_run: bool = False, no_close: bool = False,
         cpf_data = [d for d in cpf_data if d["pagamentos"]]
         log.info(f"  {len(cpf_data)} CPFs válidos para retificação")
 
+    # ── Filtro opcional de CPFs via JSON (ex.: lote único lógico) ──
+    cpf_filter_count = None
+    if cpfs_json:
+        cpfs_filter = _load_cpfs_filter(cpfs_json)
+        cpf_filter_count = len(cpfs_filter)
+        before_filter = len(cpf_data)
+        cpf_data = [d for d in cpf_data if d["cpf"] in cpfs_filter]
+        log.info(f"  [CPF-FILTER] Arquivo: {cpfs_json}")
+        log.info(f"  [CPF-FILTER] {len(cpf_data)} CPFs no explorador (de {before_filter}) "
+                 f"intersectando com {cpf_filter_count} CPFs do filtro")
+
     # ── --send-original: filtrar apenas CPFs com erro de recibo (S-1210 excluído) ──
     if send_original:
-        error_cpfs, cpf_error_msgs = _load_error_cpfs(per_apur)
-        recibo_cpfs = {cpf for cpf, msg in cpf_error_msgs.items()
-                       if "recibo" in msg.lower() or "duplicidade" in msg.lower()}
-        log.info(f"  [SEND-ORIGINAL] {len(recibo_cpfs)} CPFs com erro de recibo/duplicidade (S-1210 excluído)")
-        cpf_data = [d for d in cpf_data if d["cpf"] in recibo_cpfs]
-        log.info(f"  [SEND-ORIGINAL] {len(cpf_data)} CPFs encontrados no explorador")
+        if send_original_all:
+            log.info(f"  [SEND-ORIGINAL-ALL] Processando TODOS os {len(cpf_data)} CPFs do escopo atual")
+        else:
+            error_cpfs, cpf_error_msgs = _load_error_cpfs(per_apur)
+            recibo_cpfs = {cpf for cpf, msg in cpf_error_msgs.items()
+                           if "recibo" in msg.lower() or "duplicidade" in msg.lower()}
+            log.info(f"  [SEND-ORIGINAL] {len(recibo_cpfs)} CPFs com erro de recibo/duplicidade (S-1210 excluído)")
+            cpf_data = [d for d in cpf_data if d["cpf"] in recibo_cpfs]
+            log.info(f"  [SEND-ORIGINAL] {len(cpf_data)} CPFs encontrados no explorador")
         # Clear progress file to start fresh
         if os.path.exists(paths["progress"]):
             os.remove(paths["progress"])
@@ -707,11 +785,18 @@ def run_pipeline(per_apur: str, dry_run: bool = False, no_close: bool = False,
     total_lotes_remaining = (len(remaining) + LOTE_SIZE - 1) // LOTE_SIZE
     cpfs_ok = 0
     cpfs_erro = 0
+    aborted_by_low_ok_rate = False
 
     for lote_idx in range(0, len(remaining), LOTE_SIZE):
         batch = remaining[lote_idx:lote_idx + LOTE_SIZE]
         lote_num = (lote_idx // LOTE_SIZE) + 1
-        log.info(f"\n  Lote {lote_num}/{total_lotes_remaining} — {len(batch)} CPFs")
+        lote_num_global = ((len(cpf_data) - len(remaining)) // LOTE_SIZE) + lote_num
+        log.info(f"\n  Lote {lote_num}/{total_lotes_remaining} (geral {lote_num_global}/{total_lotes}) — {len(batch)} CPFs")
+
+        lote_ok_before = len(progress["cpfs_ok"])
+        lote_erro_before = len(progress["cpfs_erro"])
+        lote_error_counter = Counter()
+        lote_ok_sample_cpf = None
 
         _db_update_run(run_id, lote_atual=lote_num, cpfs_ok=len(progress["cpfs_ok"]),
                        cpfs_erro=len(progress["cpfs_erro"]))
@@ -786,7 +871,17 @@ def run_pipeline(per_apur: str, dry_run: bool = False, no_close: bool = False,
                         progress["cpfs_ok"].append(cpf_matched)
                         cpfs_ok += 1
                         log.info(f"    ✓ CPF {cpf_matched}: recibo={nr_recibo}")
+                        if lote_ok_sample_cpf is None:
+                            lote_ok_sample_cpf = cpf_matched
                         _db_update_cpf(run_id, cpf_matched, "ok", nr_recibo_novo=nr_recibo, lote_num=lote_num)
+                elif _is_duplicate_ok(evt, send_original):
+                    if cpf_matched:
+                        progress["cpfs_ok"].append(cpf_matched)
+                        cpfs_ok += 1
+                        log.info(f"    ✓ CPF {cpf_matched}: sucesso")
+                        if lote_ok_sample_cpf is None:
+                            lote_ok_sample_cpf = cpf_matched
+                        _db_update_cpf(run_id, cpf_matched, "ok", erro="[106] Duplicidade (já ativo)", lote_num=lote_num)
                 elif cod and cod not in ("201", "202"):
                     desc = evt.get("descricao", "")
                     ocorrencias = evt.get("ocorrencias", [])
@@ -797,6 +892,7 @@ def run_pipeline(per_apur: str, dry_run: bool = False, no_close: bool = False,
                     if cpf_matched:
                         progress["cpfs_erro"][cpf_matched] = desc
                         cpfs_erro += 1
+                        lote_error_counter[f"[{cod}] {desc}"] += 1
                         log.warning(f"    ✗ CPF {cpf_matched}: [{cod}] {desc}")
                         _db_update_cpf(run_id, cpf_matched, "erro", erro=desc, lote_num=lote_num)
 
@@ -815,11 +911,14 @@ def run_pipeline(per_apur: str, dry_run: bool = False, no_close: bool = False,
                             progress["cpfs_ok"].append(cpf_info["cpf"])
                             cpfs_ok += 1
                             log.info(f"    ✓ CPF {cpf_info['cpf']} (pos): recibo={nr_recibo}")
+                            if lote_ok_sample_cpf is None:
+                                lote_ok_sample_cpf = cpf_info["cpf"]
                             _db_update_cpf(run_id, cpf_info["cpf"], "ok", nr_recibo_novo=nr_recibo, lote_num=lote_num)
                         else:
                             desc = evt.get("descricao", "sem recibo")
                             progress["cpfs_erro"][cpf_info["cpf"]] = desc
                             cpfs_erro += 1
+                            lote_error_counter[desc] += 1
                             log.warning(f"    ✗ CPF {cpf_info['cpf']} (pos): {desc}")
                             _db_update_cpf(run_id, cpf_info["cpf"], "erro", erro=desc, lote_num=lote_num)
         else:
@@ -834,27 +933,71 @@ def run_pipeline(per_apur: str, dry_run: bool = False, no_close: bool = False,
                     progress["cpfs_ok"].append(cpf_matched)
                     cpfs_ok += 1
                     log.info(f"    ✓ CPF {cpf_matched} (partial): recibo={nr_recibo}")
+                    if lote_ok_sample_cpf is None:
+                        lote_ok_sample_cpf = cpf_matched
                     _db_update_cpf(run_id, cpf_matched, "ok", nr_recibo_novo=nr_recibo, lote_num=lote_num)
+                elif _is_duplicate_ok(evt, send_original) and cpf_matched:
+                    progress["cpfs_ok"].append(cpf_matched)
+                    cpfs_ok += 1
+                    log.info(f"    ✓ CPF {cpf_matched} (partial): sucesso")
+                    if lote_ok_sample_cpf is None:
+                        lote_ok_sample_cpf = cpf_matched
+                    _db_update_cpf(run_id, cpf_matched, "ok", erro="[106] Duplicidade (já ativo)", lote_num=lote_num)
 
             ok_cpfs = set(progress["cpfs_ok"])
             for ci in batch:
                 if ci["cpf"] not in ok_cpfs and ci["cpf"] not in progress["cpfs_erro"]:
                     progress["cpfs_erro"][ci["cpf"]] = desc
                     cpfs_erro += 1
+                    lote_error_counter[desc] += 1
                     _db_update_cpf(run_id, ci["cpf"], "erro", erro=desc, lote_num=lote_num)
 
         _save_progress(progress, paths["progress"])
+        lote_ok = len(progress["cpfs_ok"]) - lote_ok_before
+        lote_erro = len(progress["cpfs_erro"]) - lote_erro_before
+        lote_total = lote_ok + lote_erro
+        lote_ok_rate = (lote_ok / lote_total) if lote_total else 0.0
+
+        if lote_ok_sample_cpf:
+            log.info(f"    Exemplo sucesso no lote: CPF {lote_ok_sample_cpf}")
+
+        if lote_error_counter:
+            log.info("    Erros por tipo no lote:")
+            for err_msg, qtd in lote_error_counter.most_common(10):
+                log.info(f"      - {qtd}x {err_msg}")
+        else:
+            log.info("    Erros por tipo no lote: nenhum")
+
         _db_update_run(run_id, cpfs_ok=len(progress["cpfs_ok"]), cpfs_erro=len(progress["cpfs_erro"]),
                        lote_atual=lote_num)
-        log.info(f"  Lote {lote_num} concluído: OK={cpfs_ok}, Erro={cpfs_erro}, "
-                 f"Total processado={cpfs_ok + cpfs_erro}/{len(cpf_data)}")
+        log.info(
+            f"  Lote {lote_num} concluído: OK_lote={lote_ok}, Erro_lote={lote_erro}, "
+            f"Taxa_OK_lote={lote_ok_rate:.1%} | Geral={len(progress['cpfs_ok']) + len(progress['cpfs_erro'])}/{len(cpf_data)}"
+        )
 
-    log.info(f"\n  S-1210 retif concluído: {cpfs_ok} OK, {cpfs_erro} erros")
+        if stop_on_low_ok_rate and lote_total > 0 and lote_ok_rate < min_ok_rate:
+            aborted_by_low_ok_rate = True
+            msg_stop = (
+                f"Parada automática no lote {lote_num}: taxa de OK {lote_ok_rate:.1%} "
+                f"abaixo do limiar {min_ok_rate:.1%}"
+            )
+            log.error(f"  ✗ {msg_stop}")
+            _db_update_run(run_id, status="erro", erro_fatal=msg_stop)
+            break
+
+    if aborted_by_low_ok_rate:
+        log.warning(f"\n  S-1210 interrompido por limiar: {cpfs_ok} OK, {cpfs_erro} erros")
+    else:
+        log.info(f"\n  S-1210 retif concluído: {cpfs_ok} OK, {cpfs_erro} erros")
 
     # ════════════════════════════════════════════════════════════
     # STEP 3: S-1299 — Fechar período
     # ════════════════════════════════════════════════════════════
-    if no_close:
+    if aborted_by_low_ok_rate:
+        log.info(f"\n{'─'*60}")
+        log.info("  STEP 3: S-1299 PULADO (pipeline interrompido por limiar de OK)")
+        log.info(f"{'─'*60}")
+    elif no_close:
         log.info(f"\n{'─'*60}")
         log.info(f"  STEP 3: S-1299 PULADO (--no-close)")
         log.info(f"{'─'*60}")
@@ -896,11 +1039,14 @@ def run_pipeline(per_apur: str, dry_run: bool = False, no_close: bool = False,
         log.info("  [SEM SNAPSHOT] Pulando snapshot DEPOIS")
 
     # ═══════════════ RESUMO FINAL ═══════════════
-    final_status = "completo" if (
-        progress["s1298_done"]
-        and progress["s1299_done"]
-        and len(progress["cpfs_erro"]) == 0
-    ) else "parcial"
+    if aborted_by_low_ok_rate:
+        final_status = "erro"
+    else:
+        final_status = "completo" if (
+            progress["s1298_done"]
+            and progress["s1299_done"]
+            and len(progress["cpfs_erro"]) == 0
+        ) else "parcial"
 
     _db_update_run(
         run_id,
@@ -932,6 +1078,8 @@ def run_pipeline(per_apur: str, dry_run: bool = False, no_close: bool = False,
         "cpfs_erro": len(progress["cpfs_erro"]),
         "s1298_done": progress["s1298_done"],
         "s1299_done": progress["s1299_done"],
+        "cpf_filter_file": cpfs_json,
+        "cpf_filter_total": cpf_filter_count,
         "erros_detalhe": progress["cpfs_erro"],
         "timestamp": datetime.now().isoformat(),
     }
@@ -952,7 +1100,22 @@ def main():
     parser.add_argument("--fix-errors", action="store_true", help="Reprocessar APENAS CPFs com erro do último run")
     parser.add_argument("--no-snapshot", action="store_true", help="Pular snapshots S-5002 (mais rápido)")
     parser.add_argument("--send-original", action="store_true", help="Enviar S-1210 como ORIGINAL (indRetif=1) para CPFs cujo S-1210 foi excluído (S-3000)")
+    parser.add_argument("--send-original-all", action="store_true", help="Com --send-original, processar TODOS CPFs do escopo em modo original")
+    parser.add_argument("--cpfs-json", help="Arquivo JSON com lista de CPFs para limitar o processamento")
+    parser.add_argument("--min-ok-rate", type=float, default=0.80, help="Limiar mínimo de taxa de OK por lote (0.0 a 1.0). Padrão: 0.80")
+    parser.add_argument("--stop-on-low-ok-rate", dest="stop_on_low_ok_rate", action="store_true", default=True,
+                        help="Parar automaticamente se taxa de OK do lote ficar abaixo de --min-ok-rate")
+    parser.add_argument("--no-stop-on-low-ok-rate", dest="stop_on_low_ok_rate", action="store_false",
+                        help="Desliga a parada automática por taxa de OK")
     args = parser.parse_args()
+
+    if args.send_original_all and not args.send_original:
+        print("ERRO: --send-original-all exige --send-original")
+        sys.exit(1)
+
+    if not (0.0 <= args.min_ok_rate <= 1.0):
+        print("ERRO: --min-ok-rate deve estar entre 0.0 e 1.0")
+        sys.exit(1)
 
     # Validar formato
     if not re.match(r"^\d{4}-\d{2}$", args.periodo):
@@ -966,6 +1129,10 @@ def main():
         fix_errors=args.fix_errors,
         no_snapshot=args.no_snapshot,
         send_original=args.send_original,
+        send_original_all=args.send_original_all,
+        cpfs_json=args.cpfs_json,
+        min_ok_rate=args.min_ok_rate,
+        stop_on_low_ok_rate=args.stop_on_low_ok_rate,
     )
 
 

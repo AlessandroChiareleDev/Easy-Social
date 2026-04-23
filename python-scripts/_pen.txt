@@ -1,0 +1,13 @@
+﻿Total CPFs pensao DB: 134
+  2025-02: 57
+  2025-03: 43
+  2025-04: 34
+
+Escaneando 2025-02 (57 alvos) em 29429415 fev2025.zip...
+  2025-02: 0 XMLs com detPenAlim encontrados
+[!] ZIP nao encontrado: C:\Users\xandao\Downloads\29429415 mar2025.zip
+[!] ZIP nao encontrado: C:\Users\xandao\Downloads\29429415 abr2025.zip
+
+================================================================================
+RESULTADOS: 0 com 1 beneficiario, 0 com 2+
+================================================================================

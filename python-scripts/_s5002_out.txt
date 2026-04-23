@@ -1,0 +1,27 @@
+﻿ZIP: C:\Users\xandao\Downloads\29429415 fev2025.zip
+Total S-5002: 32404
+
+S-5002 para CPF=10567898679 perApur=2025-02: 3
+
+--- ID0020000000000000000000031292325228.S-5002.xml ---
+Id=ID0020000000000000000000031292325228  perApur=2025-02  size=6298
+  vrIR encontrados: []
+  vrRRA encontrados: []
+  infoIR: <tpInfoIR>11</tpInfoIR><valor>2733.36</valor>
+  infoIR: <tpInfoIR>7900</tpInfoIR><valor>-146.29</valor>
+  infoIR: <tpInfoIR>31</tpInfoIR><valor>12.07</valor>
+
+--- ID0020000000000000000000031450345647.S-5002.xml ---
+Id=ID0020000000000000000000031450345647  perApur=2025-02  size=6298
+  vrIR encontrados: []
+  vrRRA encontrados: []
+  infoIR: <tpInfoIR>11</tpInfoIR><valor>2733.36</valor>
+  infoIR: <tpInfoIR>7900</tpInfoIR><valor>-146.29</valor>
+  infoIR: <tpInfoIR>31</tpInfoIR><valor>12.07</valor>
+
+--- ID0020000000000000000000031448511756.S-5002.xml ---
+Id=ID0020000000000000000000031448511756  perApur=2025-02  size=4499
+  vrIR encontrados: []
+  vrRRA encontrados: []
+
+SALVO: C:\Users\xandao\Downloads\S-5002_10567898679_2025-02.xml  (6298 bytes)

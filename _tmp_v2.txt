@@ -1,0 +1,225 @@
+﻿
+======================================================================
+2025-02: 02. Fevereiro_2025_APPA certa.xlsx
+======================================================================
+
+[2025-02] GERAL 'Geral Para Envio_Lotes' header (8 cols):
+   [0] 'CodigoEmpresa'
+   [1] 'Competencia'
+   [2] 'CodigoLote'
+   [3] 'CodigoFilial'
+   [4] 'CodigoFuncionario'
+   [5] 'Concatenar'
+   [6] 'Lotes'
+   [7] 'CPF'
+[2025-02] GERAL total linhas: 11602
+[2025-02] Distribuicao por Lote (col 6):
+    '1║ Lote': 9473 linhas, 9472 CPFs unicos
+    '2║ Lote': 1390 linhas, 1390 CPFs unicos
+    '3║ Lote': 737 linhas, 737 CPFs unicos
+    '4║ Lote': 2 linhas, 2 CPFs unicos
+
+[2025-02] OPERADORAS 'Operadoras_012025' header (29 cols):
+   [0] 'CodigoEmpresa'
+   [1] 'Competencia'
+   [2] 'CodigoLote'
+   [3] 'CodigoFilial'
+   [4] 'CodigoFuncionario'
+   [5] None
+   [6] 'Sindicato'
+   [7] 'Plano MÚdico'
+   [8] 'CONCATENAR (EMPRESA + MATRICULA + RUBRICA)'
+   [9] 'CNPJ OPERADORA '
+   [10] 'CPD ANS'
+   [11] 'Natureza'
+   [12] 'CodigoEvento'
+   [13] 'Nome Evento'
+   [14] 'Natureza E-social'
+   [15] None
+   [16] None
+   [17] 'QtdEvento'
+   [18] 'ValorEvento'
+   [19] None
+   [20] 'TipoCalculo'
+   [21] 'TotalVen'
+   [22] 'TotalDes'
+   [23] 'Liquido'
+   [24] 'Analise da natureza'
+   [25] 'EB'
+   [26] 'Observaþ§es'
+   [27] 'CodigoEmpresa'
+   [28] 'Lote'
+[2025-02] OPERADORAS total linhas: 3322
+[2025-02] Top CodigoEvento (col 12):
+    '775': 1261
+    '774': 869
+    '522': 416
+    '516': 235
+    '605': 176
+    '619': 108
+    '631': 66
+    '490': 48
+    '638': 36
+    '607': 35
+    '950': 32
+    '621': 26
+    '537': 8
+    '779': 3
+    '228': 2
+[2025-02] Plano Medico (col 7):
+    'odontol¾gica': 1699
+    'MÚdica': 1521
+    'odontologica': 102
+[2025-02] Lote (ultima coluna):
+    '2║ Lote': 2447
+    '3║ Lote': 872
+    '4║ Lote': 3
+
+======================================================================
+2025-03: 03. Marco_2025_APPA.xlsx
+======================================================================
+
+[2025-03] GERAL 'Geral Para envio de Lotes' header (8 cols):
+   [0] 'CodigoEmpresa'
+   [1] 'Competencia'
+   [2] 'CodigoLote'
+   [3] 'CodigoFilial'
+   [4] 'CodigoFuncionario'
+   [5] 'Concatenar ( Empresa + Matricula)'
+   [6] 'Lotes Final'
+   [7] 'CPF'
+[2025-03] GERAL total linhas: 11186
+[2025-03] Distribuicao por Lote (col 6):
+    '1║ Lote': 8165 linhas, 8165 CPFs unicos
+    '3║ Lote': 1624 linhas, 1624 CPFs unicos
+    '2║ Lote': 1330 linhas, 1330 CPFs unicos
+    '2¬ Lote': 65 linhas, 65 CPFs unicos
+    '4║ Lote': 2 linhas, 2 CPFs unicos
+
+[2025-03] OPERADORAS 'Operadora 022025' header (31 cols):
+   [0] 'CodigoEmpresa'
+   [1] 'Competencia'
+   [2] 'CodigoLote'
+   [3] 'CodigoFilial'
+   [4] 'CodigoFuncionario'
+   [5] 'Concatenar'
+   [6] 'Sindicato'
+   [7] 'Tipo AssistÛncia'
+   [8] 'C¾d Operadora '
+   [9] 'Cod ANS '
+   [10] 'Natureza Rubrica_analisada pela situaþÒo do Plano'
+   [11] 'CodigoEvento'
+   [12] 'Nome Evento'
+   [13] 'Natureza E-social'
+   [14] '-'
+   [15] '-'
+   [16] 'QtdEvento'
+   [17] 'ValorEvento'
+   [18] '-'
+   [19] 'TipoCalculo'
+   [20] 'TotalVen'
+   [21] 'TotalDes'
+   [22] 'Liquido'
+   [23] 'Analise da natureza'
+   [24] 'EB'
+   [25] 'Observaþ§es'
+   [26] 'CodigoEmpresa'
+   [27] 'Numero Lote'
+   [28] None
+   [29] None
+   [30] None
+[2025-03] OPERADORAS total linhas: 7303
+[2025-03] Top CodigoEvento (col 12):
+    'ASSISTENCIA ODONTOLOGICA (INFORMATIIVO ESOCIAL)': 2090
+    'ASSISTENCIA MEDICA (INFORMATIIVO ESOCIAL)': 1725
+    'DESC. ASSIST. ODONTOLOGICA': 1256
+    'DESC. ASSIST. MEDICA': 888
+    'DESC. CO PARTICIPACAO A.M.': 701
+    'DESC. ASSIST. ODONTOLOGICA DEPENDENTE': 230
+    'DESC. ASSIST. ODONTO. DEPENDENTE': 176
+    'DESC. ASS. M╔DICA DEP.': 97
+    'DESC. ASSIST. ODONT. SINTACLUNS': 65
+    'DESC. ASSIST. ODONT. DEP. SINTACLUNS': 35
+    'DESC. BB DETAL': 25
+    'DIF. ASSISTENCIA MEDICA': 8
+    'DESC. ASSIST. MEDICA MES ANTERIOR': 3
+    'REEMB. DESC. ASSIST. MEDICA': 2
+    'REEMB. DESC. ASS. ODONTOLOGICA': 1
+[2025-03] Plano Medico (col 7):
+    'odontol¾gica': 3779
+    'MÚdica': 3425
+    '<vazio>': 99
+[2025-03] Lote (ultima coluna):
+    '<vazio>': 7303
+
+======================================================================
+2025-04: 04. Abril_2025_APPA.xlsx
+======================================================================
+
+[2025-04] GERAL 'Geral Envio para Lotes' header (8 cols):
+   [0] 'CodigoEmpresa'
+   [1] 'Competencia'
+   [2] 'CodigoLote'
+   [3] 'CodigoFilial'
+   [4] 'CodigoFuncionario'
+   [5] 'Concatenar (Empresa + Matricula)'
+   [6] 'Lote'
+   [7] 'CPF'
+[2025-04] GERAL total linhas: 10016
+[2025-04] Distribuicao por Lote (col 6):
+    '1║ Lote': 7142 linhas, 7142 CPFs unicos
+    '3║ Lote': 1498 linhas, 1498 CPFs unicos
+    '2║ Lote': 1376 linhas, 1376 CPFs unicos
+
+[2025-04] OPERADORAS 'Operadoras 032025' header (28 cols):
+   [0] 'CodigoEmpresa'
+   [1] 'Competencia'
+   [2] 'CodigoLote'
+   [3] 'CodigoFilial'
+   [4] 'CodigoFuncionario'
+   [5] None
+   [6] 'Sindicato'
+   [7] 'Tipo AssistÛncia'
+   [8] 'C¾d Operadora '
+   [9] 'Cod ANS '
+   [10] 'Natureza Rubrica_analisada pela situaþÒo do Plano'
+   [11] 'CodigoEvento'
+   [12] 'Nome Evento'
+   [13] 'Natureza E-social'
+   [14] None
+   [15] None
+   [16] 'QtdEvento'
+   [17] 'ValorEvento'
+   [18] None
+   [19] 'TipoCalculo'
+   [20] 'TotalVen'
+   [21] 'TotalDes'
+   [22] 'Liquido'
+   [23] 'Analise da natureza'
+   [24] 'EB'
+   [25] 'Observaþ§es'
+   [26] 'CodigoEmpresa'
+   [27] 'Lote'
+[2025-04] OPERADORAS total linhas: 7053
+[2025-04] Top CodigoEvento (col 12):
+    'ASSISTENCIA ODONTOLOGICA (INFORMATIIVO ESOCIAL)': 2073
+    'ASSISTENCIA MEDICA (INFORMATIIVO ESOCIAL)': 1708
+    'DESC. ASSIST. ODONTOLOGICA': 1256
+    'DESC. ASSIST. MEDICA': 868
+    'DESC. CO PARTICIPACAO A.M.': 522
+    'DESC. ASSIST. ODONTOLOGICA DEPENDENTE': 228
+    'DESC. ASSIST. ODONTO. DEPENDENTE': 176
+    'DESC. ASS. M╔DICA DEP.': 89
+    'DESC. ASSIST. ODONT. SINTACLUNS': 66
+    'DESC. ASSIST. ODONT. DEP. SINTACLUNS': 36
+    'DESC. BB DETAL': 25
+    'DESC. ASSIST. MEDICA MES ANTERIOR': 3
+    'REEMB. DESC. ASSIST. MEDICA': 2
+    'DESC. ASSIST. ODONTO. DEPENDENTE MES ANT': 1
+[2025-04] Plano Medico (col 7):
+    'odontol¾gica': 3759
+    'MÚdica': 3192
+    '<vazio>': 102
+[2025-04] Lote (ultima coluna):
+    '2║ Lote': 4328
+    '3║ Lote': 2725

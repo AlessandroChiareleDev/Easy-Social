@@ -1,0 +1,20 @@
+﻿Total S-5002 encontrados p/ CPF 10567898679 em 2025-02: 3
+
+[1.1.0000000031292325228] size=6298  arquivo_zip=ID0020000000000000000000031292325228.S-5002.xml
+  consolidApurMen: CRMen=056107  vlrRendTrib=2733.36  vlrCRMen(IR)=12.07
+  infoIR tpInfoIR=11 (Rend.Tributavel) valor=2733.36
+  infoIR tpInfoIR=7900 (Deducoes (prev/dep/pensao)) valor=-146.29
+  infoIR tpInfoIR=31 (IRRF Retido) valor=12.07
+  SALVO: C:\Users\xandao\Downloads\S-5002_10567898679_2025-02_1.1.0000000031292325228.xml
+
+[1.1.0000000031450345647] size=6298  arquivo_zip=ID0020000000000000000000031450345647.S-5002.xml
+  consolidApurMen: CRMen=056107  vlrRendTrib=2733.36  vlrCRMen(IR)=12.07
+  infoIR tpInfoIR=11 (Rend.Tributavel) valor=2733.36
+  infoIR tpInfoIR=7900 (Deducoes (prev/dep/pensao)) valor=-146.29
+  infoIR tpInfoIR=31 (IRRF Retido) valor=12.07
+  SALVO: C:\Users\xandao\Downloads\S-5002_10567898679_2025-02_1.1.0000000031450345647.xml
+
+[1.1.0000000031448511756] size=4499  arquivo_zip=ID0020000000000000000000031448511756.S-5002.xml
+  (sem consolidApurMen)
+  SALVO: C:\Users\xandao\Downloads\S-5002_10567898679_2025-02_1.1.0000000031448511756.xml
+

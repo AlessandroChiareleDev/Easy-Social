@@ -1,5 +1,33 @@
 ﻿# Easy e-Social
 
+---
+
+## ⛔ AGENTE / DESENVOLVEDOR: MISSÃO ATIVA S-1210 APPA
+
+**ANTES DE QUALQUER AÇÃO relacionada a S-1210, lotes, APPA, envio em massa dos 3 meses (fev/mar/abr 2025):**
+
+👉 **LEIA:** [docs/MISSAO_S1210_APPA_21-04-2026/LEIA_PRIMEIRO.md](docs/MISSAO_S1210_APPA_21-04-2026/LEIA_PRIMEIRO.md)
+
+Pasta contém:
+
+- `LEIA_PRIMEIRO.md` — 7 regras inegociáveis
+- `NORTE_S1210.md` — norte aprovado pelo usuário
+- `RESOLUCAO_S1200_3_MESES.md` — bíblia (12 porcarias, missão real, transcrição da call, parser rules)
+- `TAREFAS.md` — checklist da execução corrente
+
+**Regra nº 1:** NUNCA usar `explorador_eventos` como fonte de escopo. Escopo vem do XLSX da Ana.
+
+---
+
+## Backup Operacional (Lote 1 Pre-envio)
+
+Existe um backup operacional de estado 0 (pre-envio) separado por mes para o Lote 1.
+
+- Documentacao do backup: [docs/backup_preenvio_lote1/README.md](docs/backup_preenvio_lote1/README.md)
+- Pasta dos artefatos versionados: [docs/backup_preenvio_lote1](docs/backup_preenvio_lote1)
+
+Esse backup serve para auditoria, rastreabilidade e rollback operacional antes de qualquer envio.
+
 ### Developed By Xandao
 
 Sistema focado em eSocial e suas tabelas. Recebe o arquivo **Relatório DIRF.xlsx** (bíblia do sistema), divide em 6 tabelas normalizadas e disponibiliza para processamento, validação e integração com o portal eSocial.

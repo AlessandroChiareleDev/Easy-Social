@@ -1,0 +1,8 @@
+{
+  "periodo": "2025-03",
+  "total_registros": 8165,
+  "total_batches_50": 164,
+  "cpfs_unicos": 8165,
+  "json_base": "C:\\tmp\\appa_lote1_preenvio\\2025-03\\lote1_2025-03_base.json",
+  "csv_base": "C:\\tmp\\appa_lote1_preenvio\\2025-03\\lote1_2025-03_base.csv"
+}

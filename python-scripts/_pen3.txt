@@ -1,0 +1,78 @@
+﻿Alvos Fev pensao: 57
+Com penAlim: 31
+  1 beneficiario unico: 28
+  2+ beneficiarios unicos: 3
+
+========================================================================
+CASO MULTIPLOS BENEFICIARIOS #1
+========================================================================
+CPF trabalhador: 11448798680  (2 beneficiarios unicos)
+Arquivo: ID1059690710000002025031017035400001.S-1210.xml
+
+Blocos <penAlim> (2):
+  tpRend=11  cpfDep=15303964680  vlrDedPenAlim=607.2
+  tpRend=11  cpfDep=16123758632  vlrDedPenAlim=607.2
+  SOMA: R$ 1214.40
+  Total por beneficiario:
+    15303964680: R$ 607.20
+    16123758632: R$ 607.20
+
+========================================================================
+CASO MULTIPLOS BENEFICIARIOS #2
+========================================================================
+CPF trabalhador: 37904342804  (2 beneficiarios unicos)
+Arquivo: ID1059690710000002025030715591800002.S-1210.xml
+
+Blocos <penAlim> (5):
+  tpRend=11  cpfDep=51949263835  vlrDedPenAlim=436.9
+  tpRend=13  cpfDep=51949263835  vlrDedPenAlim=115.72
+  tpRend=12  cpfDep=51949263835  vlrDedPenAlim=26.76
+  tpRend=11  cpfDep=51949340848  vlrDedPenAlim=436.9
+  tpRend=12  cpfDep=51949340848  vlrDedPenAlim=26.76
+  SOMA: R$ 1043.04
+  Total por beneficiario:
+    51949263835: R$ 579.38
+    51949340848: R$ 463.66
+
+========================================================================
+CASO MULTIPLOS BENEFICIARIOS #3
+========================================================================
+CPF trabalhador: 07786350667  (2 beneficiarios unicos)
+Arquivo: ID1059690710000002025031813014600005.S-1210.xml
+
+Blocos <penAlim> (2):
+  tpRend=11  cpfDep=16767814636  vlrDedPenAlim=359.87
+  tpRend=11  cpfDep=18517956699  vlrDedPenAlim=359.87
+  SOMA: R$ 719.74
+  Total por beneficiario:
+    16767814636: R$ 359.87
+    18517956699: R$ 359.87
+
+========================================================================
+CASO 1 BENEFICIARIO #1
+========================================================================
+CPF trabalhador: 50705962504  (1 beneficiarios unicos)
+Arquivo: ID1059690710000002025031107193600002.S-1210.xml
+
+Blocos <penAlim> (1):
+  tpRend=11  cpfDep=10623733595  vlrDedPenAlim=383.37
+  SOMA: R$ 383.37
+  Total por beneficiario:
+    10623733595: R$ 383.37
+
+========================================================================
+CASO 1 BENEFICIARIO #2
+========================================================================
+CPF trabalhador: 05946583735  (1 beneficiarios unicos)
+Arquivo: ID1059690710000002025031015382300002.S-1210.xml
+
+Blocos <penAlim> (1):
+  tpRend=11  cpfDep=22531514759  vlrDedPenAlim=451.71
+  SOMA: R$ 451.71
+  Total por beneficiario:
+    22531514759: R$ 451.71
+
+========================================================================
+XML RAW ÔÇö primeiro caso multiplo (so o infoIRCR)
+========================================================================
+<infoIRCR><tpCR>056107</tpCR><dedDepen><tpRend>11</tpRend><cpfDep>15303964680</cpfDep><vlrDedDep>189.59</vlrDedDep></dedDepen><dedDepen><tpRend>11</tpRend><cpfDep>16123758632</cpfDep><vlrDedDep>189.59</vlrDedDep></dedDepen><penAlim><tpRend>11</tpRend><cpfDep>15303964680</cpfDep><vlrDedPenAlim>607.2</vlrDedPenAlim></penAlim><penAlim><tpRend>11</tpRend><cpfDep>16123758632</cpfDep><vlrDedPenAlim>607.2</vlrDedPenAlim></penAlim></infoIRCR>

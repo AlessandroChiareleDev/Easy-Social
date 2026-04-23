@@ -1,0 +1,5 @@
+﻿Alvos Fev: 57
+Arquivos S-1210 checados com hit de CPF: 114
+Com detPenAlim: 0
+  1 beneficiario: 0
+  2+ beneficiarios: 0

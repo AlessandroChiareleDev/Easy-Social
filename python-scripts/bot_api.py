@@ -32,7 +32,7 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origin_regex=r"^https://.*\.trycloudflare\.com$",
+    allow_origin_regex=r"^(https://.*\.trycloudflare\.com|http://(192\.168|10|172\.(1[6-9]|2\d|3[01]))\.[0-9.]+:\d+)$",
     allow_origins=[
         "http://localhost:5173",
         "http://localhost:5174",
@@ -82,6 +82,14 @@ app.include_router(audit_router)
 # Rotas Pipeline Batch (automação 98-10-99)
 from esocial.pipeline_batch_routes import router as pipeline_batch_router
 app.include_router(pipeline_batch_router)
+
+# Rotas S-1210 Missão APPA (3 meses × 4 lotes a partir das XLSX da Ana)
+from esocial.s1210_missao_routes import router as s1210_missao_router
+app.include_router(s1210_missao_router)
+
+# Rotas Repositório S-1210 (tela nova /repositorio-s1210)
+from esocial.s1210_repo_routes import router as s1210_repo_router
+app.include_router(s1210_repo_router)
 
 # Thread do bot
 bot_thread: threading.Thread | None = None

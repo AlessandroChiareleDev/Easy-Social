@@ -1,0 +1,6 @@
+﻿
+=== 2025-02 ÔÇö erros atuais NAO classificados ===
+  92x -> processamento_rejeitado | C├│digo 401: Conteudo do evento inv├ílido. | Conteudo do evento inv├ílido. | ocorrencias=[{"tipo": "1", "codigo": "157", "descricao": "Evento de Exclus├úo ou Retifica├º├úo dever├í s
+
+=== 2025-04 ÔÇö erros atuais NAO classificados ===
+  2x -> processamento_rejeitado | C├│digo 401: Conteudo do evento inv├ílido. | Conteudo do evento inv├ílido. | ocorrencias=[{"tipo": "1", "codigo": "157", "descricao": "Evento de Exclus├úo ou Retifica├º├úo dever├í s

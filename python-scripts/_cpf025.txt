@@ -1,0 +1,16 @@
+﻿Encontrados em scope: 3
+('02587975417', None, None, 1, '2025-02')
+('02587975417', None, None, 1, '2025-03')
+('02587975417', None, None, 1, '2025-04')
+
+Envios: 7
+('02587975417', '2025-04', 1, 'ok', '201', datetime.datetime(2026, 4, 22, 8, 53, 28, 198896, tzinfo=datetime.timezone.utc))
+('02587975417', '2025-04', 1, 'ok', '201', datetime.datetime(2026, 4, 22, 8, 53, 28, 198896, tzinfo=datetime.timezone.utc))
+('02587975417', '2025-03', 1, 'ok', '201', datetime.datetime(2026, 4, 22, 6, 55, 56, 503197, tzinfo=datetime.timezone.utc))
+('02587975417', '2025-03', 1, 'ok', '201', datetime.datetime(2026, 4, 22, 6, 55, 56, 503197, tzinfo=datetime.timezone.utc))
+('02587975417', '2025-03', 1, 'erro', '401', datetime.datetime(2026, 4, 22, 5, 56, 43, 396712, tzinfo=datetime.timezone.utc))
+('02587975417', '2025-03', 1, 'erro', '401', datetime.datetime(2026, 4, 22, 5, 56, 43, 396712, tzinfo=datetime.timezone.utc))
+('02587975417', '2025-02', 1, 'ok', '201', datetime.datetime(2026, 4, 21, 21, 44, 20, 51272, tzinfo=datetime.timezone.utc))
+
+CPFs com final 975417:
+02587975417

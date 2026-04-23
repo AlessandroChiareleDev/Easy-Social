@@ -64,6 +64,36 @@ const router = createRouter({
       meta: { requireEmpresa: true },
     },
     {
+      path: '/s1210-missao',
+      name: 's1210-missao',
+      component: () => import('../views/S1210MissaoView.vue'),
+      meta: { requireEmpresa: true },
+    },
+    {
+      path: '/repositorio-s1210',
+      name: 'repositorio-s1210',
+      component: () => import('../views/RepositorioS1210View.vue'),
+      meta: { requireEmpresa: true },
+    },
+    {
+      path: '/repositorio-s1210/por-lote',
+      name: 'repositorio-s1210-por-lote',
+      component: () => import('../views/RepositorioS1210PorLoteView.vue'),
+      meta: { requireEmpresa: true },
+    },
+    {
+      path: '/repositorio-s1210/por-lote/:lote/:mes',
+      name: 'repositorio-s1210-compartimento',
+      component: () => import('../views/RepositorioS1210CompartimentoView.vue'),
+      meta: { requireEmpresa: true },
+    },
+    {
+      path: '/s1210-anual',
+      name: 's1210-anual',
+      component: () => import('../views/S1210AnualView.vue'),
+      meta: { requireEmpresa: true },
+    },
+    {
       path: '/eb-cruzamento',
       name: 'eb-cruzamento',
       component: () => import('../views/EBSkillsCruzamentoView.vue'),

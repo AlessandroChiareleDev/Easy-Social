@@ -138,10 +138,7 @@
     <div v-if="selectedRun" class="run-detail-section">
       <button
         class="btn-back"
-        @click="
-          selectedRun = null
-          cpfResult = null
-        "
+        @click="selectedRun = null; cpfResult = null"
       >
         <svg
           width="16"
@@ -311,11 +308,7 @@
         <div class="filter-actions">
           <button
             class="btn-clear"
-            @click="
-              cpfSearch = ''
-              cpfStatusFilter = ''
-              buscarCpfs(1)
-            "
+            @click="cpfSearch = ''; cpfStatusFilter = ''; buscarCpfs(1)"
           >
             Limpar
           </button>

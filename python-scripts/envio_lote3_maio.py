@@ -87,6 +87,22 @@ def carregar_cpfs_pendentes() -> list[str]:
             return [r[0] for r in cur.fetchall()]
 
 
+def carregar_recibos_override_db() -> dict[str, str]:
+    """Para cada CPF, pega o nr_recibo_novo do ULTIMO envio OK no mesmo per_apur.
+    Isto cobre o caso 'Lote 1 ja retificou esse CPF em Maio -> recibo do ZIP invalido'.
+    """
+    sql = """
+        SELECT DISTINCT ON (cpf) cpf, nr_recibo_novo
+          FROM s1210_cpf_envios
+         WHERE empresa_id=%s AND per_apur=%s AND status='ok'
+           AND nr_recibo_novo IS NOT NULL
+         ORDER BY cpf, enviado_em DESC
+    """
+    with psycopg2.connect(**DB_CONFIG) as c, c.cursor() as cur:
+        cur.execute(sql, (EMPRESA_ID, PER_APUR))
+        return {cpf: rec for cpf, rec in cur.fetchall()}
+
+
 def carregar_recibos_override(xlsx: str, aba: str, col_cpf: int, col_recibo: int) -> dict[str, str]:
     from openpyxl import load_workbook
     wb = load_workbook(xlsx, read_only=True, data_only=True)
@@ -157,11 +173,17 @@ def main() -> None:
         print(f"[--max] reduzido a {len(cpfs)} CPFs")
 
     recibos_override: dict[str, str] = {}
+    # 1) DB: pega recibo_novo do ultimo envio OK por CPF (cobre Lote 1 Maio já retificado)
+    recibos_override.update(carregar_recibos_override_db())
+    print(f"[override DB] {len(recibos_override)} recibos vindos de s1210_cpf_envios")
+
+    # 2) XLSX opcional: sobrescreve overrides do DB quando informado
     if args.recibos_xlsx:
         if not args.aba:
             print("ERRO: --aba obrigatorio quando usa --recibos-xlsx"); return
-        recibos_override = carregar_recibos_override(args.recibos_xlsx, args.aba, args.col_cpf, args.col_recibo)
-        print(f"[override] {len(recibos_override)} recibos carregados de {args.recibos_xlsx}")
+        xlsx_over = carregar_recibos_override(args.recibos_xlsx, args.aba, args.col_cpf, args.col_recibo)
+        print(f"[override XLSX] {len(xlsx_over)} recibos carregados de {args.recibos_xlsx} (substitui DB)")
+        recibos_override.update(xlsx_over)
 
     if args.dry_run:
         print("[dry-run] primeiros 5 CPFs:", cpfs[:5])

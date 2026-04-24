@@ -108,64 +108,80 @@ O endpoint `POST /api/s1210-repo/enviar-lote-cpfs` em `python-scripts/esocial/s1
 
 ---
 
-## 5. Roteiro de execução (PC1-14)
+## 5. Roteiro de execução (PC1-15-v2 — OFICIAL)
 
-Disciplina obrigatória: **1 → 10 → 50 → resto**.
+Disciplina obrigatória: **1 → 10 → 50 → resto**, sempre **sequencial, 1 POST por bloco de 50 CPFs**.
 
-### Passo 0 — Pré-check (ESSENCIAL, descoberto 2026-04-24)
+### Parâmetros confirmados pelo PC1 (Fev/Mar/Abr APPA)
 
-Rodar `python-scripts/_precheck_lote3_maio.py`. Precisa dos 3 alvos populados:
+| Parâmetro | Valor |
+|---|---|
+| Batch size | **50 CPFs por POST** (passou liso, zero 1089) |
+| Concorrência no script | **1 thread sequencial** |
+| Workers internos | endpoint já tem 16 (ThreadPool interno) |
+| Retry no script | **não tem** |
+| Sleep entre POSTs | **não tem** |
+| `timeout` do requests | **600s** (subir pra 900 se estourar) |
+| Throughput real | **~22 CPFs/min** (50 CPFs em ~133s) |
+| Erro operacional (timeout/500/reset) | **zero** em todo dia de envio |
+| `tp_amb` no payload | NÃO mandar (backend é prod hardcoded) |
+| `confirmar_producao` | `True` |
+
+### Passo 0 — Pré-check (ESSENCIAL)
+
+Rodar `python-scripts/_precheck_lote3_maio.py`. Precisa:
 
 ```sql
-SELECT COUNT(*) FROM s1210_operadoras WHERE per_apur='2025-05' AND lote_num=3;    -- > 0
+SELECT COUNT(*) FROM s1210_operadoras WHERE per_apur='2025-05' AND lote_num=3;  -- > 0
 SELECT COUNT(*) FROM s1210_cpf_scope  WHERE per_apur='2025-05' AND lote_num=3 AND empresa_id=1;  -- ~1320
 ```
 
-**Se qualquer for 0 → upload do XLSX do lote + ZIP precisa ser feito ANTES.** O upload popula scope (aba "Lote Para Envio") + operadoras (aba "Assistencia Medica" agrega por CPF×CNPJ). Nos meses que fecharam (02/03/04) ambos estão populados — esse é o indicativo de que já estava uploadado.
+**Se qualquer for 0 → upload do XLSX + ZIP precisa ser feito ANTES.**
 
-Fluxo de upload (escolher UM):
+### Passo 1 — Upload (pré-requisito)
 
-- **Via UI**: tela "Repositório S-1210 > Por Lote > Upload" (a mesma que foi usada no Fev/Mar).
-- **Via endpoint**: `POST /api/s1210-repo/upload-xlsx` (ver `s1210_repo_routes.py` ~linha 691) com multipart: `file=<xlsx>`, `aba_geral="Lote Para Envio"`, `aba_operadoras="Assistencia Medica"`.
+1. **XLSX de scope do Maio** → popula `s1210_cpf_scope` + `s1210_operadoras`.
+   - Via UI ("Repositório S-1210 > Por Lote > Upload") ou rota `/api/s1210-repo/ingestao-scope-xlsx`.
+2. **ZIP `29429551-maio.zip`** → popula `s1210_zip_eventos` (usado pro chain walk de recibo).
+   - Via UI ou rota equivalente.
+3. **S-1298 reabertura Maio** → se o perApur ainda não está reaberto para a empresa, rota `/api/s1210-repo/reabrir-periodo`. NÃO misturar com o lote de CPFs.
 
-Além disso, o ZIP `29429551-maio.zip` precisa ser indexado pelo backend para ele localizar o S-1210 original de cada CPF (`info_pgtos` + `nrRecibo`).
+### Passo 2 — 1 CPF teste
 
-### Passo 1 — 1 CPF sem overrides
-
-```python
-r = requests.post(
-    "http://localhost:8000/api/s1210-repo/enviar-lote-cpfs",
-    json={
-        "per_apur": "2025-05",
-        "lote_num": 3,
-        "cpfs": [cpf],
-        "confirmar_producao": True,
-    },
-    timeout=180,
-)
-det = r.json()["resultados"][0]
-print(det.get("sucesso"), det.get("codigo_resposta"), det.get("descricao_resposta"))
+```
+cd python-scripts
+..\.venv\Scripts\python.exe envio_lote3_maio.py --max 1
 ```
 
-### Passo 2 — Interpretar resposta
+### Passo 3 — Interpretar resposta (ver tabela seção 5.X abaixo)
 
-| Código                            | Significado                                                | Ação                                                              |
-| --------------------------------- | ---------------------------------------------------------- | ----------------------------------------------------------------- |
-| `cdResp=201` sucesso              | Chain walk ok, natureza ok, reabertura ok                  | Escala 10 → 50 → resto                                            |
-| `ocorr=620` folha fechada         | Falta S-1298 reabertura Maio p/ empresa                    | Reabrir com S-1298, depois retomar                                |
-| `ocorr=459` recibo não ativo      | Chain walk desatualizado                                   | Próximo CPF com `recibo_override_por_cpf` (pedir pra Ana a lista) |
-| `ocorr=861` planSaude obrigatória | `plan_saude_por_cpf` vazio ou `s1210_operadoras` sem dados | Rodar com `plan_saude_por_cpf` preenchido (XLSX da Ana)           |
-| `ocorr=8` natureza/rubrica        | S-1010 reclass não vigente                                 | **PARAR.** Enviar S-1010 correção, esperar processar, retomar     |
-| `ocorr=1089` duplicado            | Envios em paralelo                                         | Ir por POST único de até 50 CPFs (sem threads)                    |
-| outro                             | Chamar PC1 com `codigo_resposta` + `descricao_resposta`    | —                                                                 |
+| Código | Significado | Ação |
+|---|---|---|
+| `cdResp=201` sucesso | Chain walk ok, natureza ok, reabertura ok | Escala 10 → 50 → resto |
+| `ocorr=620` folha fechada | Falta S-1298 reabertura Maio p/ empresa | Reabrir via `/reabrir-periodo`, retomar |
+| `ocorr=459` recibo não ativo | Chain walk desatualizado | Pedir XLSX da Ana com recibos ativos, rodar com `--recibos-xlsx` |
+| `ocorr=861` rescisão/planSaude | Casos de negócio | Marcar NAO_ENVIAR, avisar Ana |
+| `ocorr=8` natureza/rubrica | S-1010 reclass não vigente | **PARAR.** Enviar S-1010 correção, retomar |
+| outro | Chamar PC1 | — |
 
-### Passo 3 — Escalar
+### Passo 4 — Escalar
 
-- 10 CPFs (1 POST único, lista de 10)
-- 50 CPFs (1 POST único, lista de 50 — o eSocial aceita batch assim)
-- Resto em loop de POSTs de 50 em 50
+```
+..\.venv\Scripts\python.exe envio_lote3_maio.py --max 10
+..\.venv\Scripts\python.exe envio_lote3_maio.py             # resto em batches de 50
+```
 
-### Passo 4 — Monitorar
+### Passo 5 — Segunda rodada (só se sobrou `ocorr=459`)
+
+Pegar XLSX da Ana com recibos ativos. Layout varia por aba (Fev col[2], Mar col[1], Abr col[2] — inspecionar Maio antes):
+
+```
+..\.venv\Scripts\python.exe envio_lote3_maio.py `
+  --recibos-xlsx "C:\Users\NITRO\Downloads\Lote3_Erros_maio.xlsx" `
+  --aba Mai_2025 --col-cpf 0 --col-recibo 2
+```
+
+### Monitorar
 
 ```sql
 WITH lv AS (
@@ -232,3 +248,4 @@ Scripts de referência (ver, não copiar cegamente):
 - **2026-04-23 (pós PC1-14):** criação inicial. Baseado em PC1-11, PC1-13, PC1-14 e exploração do frontend (`RepositorioS1210PorLoteView.vue`, `S1210MissaoView.vue`) + backend (`s1210_missao_routes.py`, `s1210_repo_routes.py`).
 - **2026-04-23:** correção de erro conceitual do PC2. Antes pensava que "774 soma por fora do planSaude" e que era preciso `DELETE` em `s1210_cpf_scope` para dedup entre lotes. Errado: 774 é rubrica de plano de saúde e entra agregada em `vlrSaudeTit`; dedup entre lotes é resolvido pelo próprio eSocial via `indRetif=2` + recibo ativo (último envio prevalece).
 - **2026-04-24 (pré-check Maio):** descoberto que `s1210_operadoras` e `s1210_cpf_scope` estão VAZIOS para `(per_apur='2025-05', lote_num=3)`. Upload do XLSX `05 Maio_lote 003_APPA.xlsx` + indexação do ZIP `29429551-maio.zip` é pré-requisito obrigatório antes de qualquer envio. Passo 0 do roteiro ajustado. Script `_precheck_lote3_maio.py` criado pra automatizar a checagem.
+- **2026-04-24 (pós PC1-15-v2):** receita oficial do PC1 confirmada — batch=50 CPFs/POST, 1 thread sequencial, timeout=600, ~22 CPFs/min, zero erro operacional, sem retry, sem sleep. Endpoint com 16 workers internos gerencia tudo. Script `envio_lote3_maio.py` criado seguindo essa receita. Seção 5 totalmente reescrita.

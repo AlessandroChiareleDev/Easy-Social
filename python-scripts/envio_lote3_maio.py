@@ -1,0 +1,205 @@
+"""
+Envio Lote 3 Maio/2025 APPA (empresa_id=1) — receita PC1-15-v2.
+
+Fluxo:
+1. Le CPFs de s1210_cpf_scope (populado previamente via upload XLSX).
+2. Filtra CPFs que ainda NAO tem envio OK (via DISTINCT ON ult status).
+3. Fatia em blocos de BATCH_SIZE (50) e faz POST sequencial no endpoint
+   /api/s1210-repo/enviar-lote-cpfs, 1 POST por bloco, sem threads.
+4. Salva JSON de resposta de cada bloco em saida_lote3_maio/resp_<ts>.json.
+5. Parada automatica se acontecer:
+   - timeout de rede (sem retry)
+   - erro HTTP != 2xx
+   - codigo_resposta != '201' e != erro de negocio conhecido (459/861)
+
+Uso:
+  # Dry run — so mostra CPFs que seriam enviados, nao envia
+  python envio_lote3_maio.py --dry-run
+
+  # Rodar so 1 CPF (teste inicial)
+  python envio_lote3_maio.py --max 1
+
+  # Rodar primeiros 10
+  python envio_lote3_maio.py --max 10
+
+  # Rodar tudo (batches de 50)
+  python envio_lote3_maio.py
+
+  # Forcar override de recibo a partir de XLSX da Ana (quando houver)
+  python envio_lote3_maio.py --recibos-xlsx "C:\\...\\Lote3_Erros_maio.xlsx" --aba Mai_2025 --col-recibo 2
+
+Ref: Mensagem-PC1-15-v2.md
+"""
+from __future__ import annotations
+
+import argparse
+import json
+import os
+import sys
+import time
+from datetime import datetime
+
+try:
+    sys.stdout.reconfigure(encoding="utf-8")
+except Exception:
+    pass
+
+import requests
+
+ROOT = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, ROOT)
+
+import psycopg2
+import psycopg2.extras
+from db_config import DB_CONFIG
+
+PER_APUR = "2025-05"
+LOTE_NUM = 3
+EMPRESA_ID = 1
+API_URL = "http://localhost:8000/api/s1210-repo/enviar-lote-cpfs"
+BATCH_SIZE = 50
+TIMEOUT = 600
+OUTDIR = os.path.join(ROOT, "saida_lote3_maio")
+os.makedirs(OUTDIR, exist_ok=True)
+
+
+def carregar_cpfs_pendentes() -> list[str]:
+    """CPFs no scope que ainda NAO tem envio com status='ok'."""
+    with psycopg2.connect(**DB_CONFIG) as c:
+        with c.cursor() as cur:
+            cur.execute(
+                """
+                WITH lv AS (
+                  SELECT DISTINCT ON (cpf) cpf, status
+                  FROM s1210_cpf_envios
+                  WHERE empresa_id=%s AND per_apur=%s AND lote_num=%s
+                  ORDER BY cpf, enviado_em DESC NULLS LAST
+                )
+                SELECT s.cpf
+                FROM s1210_cpf_scope s
+                LEFT JOIN lv ON lv.cpf = s.cpf
+                WHERE s.empresa_id=%s AND s.per_apur=%s AND s.lote_num=%s
+                  AND (lv.status IS NULL OR lv.status <> 'ok')
+                ORDER BY s.cpf
+                """,
+                (EMPRESA_ID, PER_APUR, LOTE_NUM, EMPRESA_ID, PER_APUR, LOTE_NUM),
+            )
+            return [r[0] for r in cur.fetchall()]
+
+
+def carregar_recibos_override(xlsx: str, aba: str, col_cpf: int, col_recibo: int) -> dict[str, str]:
+    from openpyxl import load_workbook
+    wb = load_workbook(xlsx, read_only=True, data_only=True)
+    ws = wb[aba]
+    out: dict[str, str] = {}
+    for row in ws.iter_rows(min_row=2, values_only=True):
+        cpf_raw = row[col_cpf]
+        rec_raw = row[col_recibo]
+        if cpf_raw is None or rec_raw is None:
+            continue
+        cpf = "".join(ch for ch in str(cpf_raw) if ch.isdigit()).zfill(11)
+        rec = str(rec_raw).strip()
+        if len(cpf) == 11 and rec.startswith("1."):
+            out[cpf] = rec
+    return out
+
+
+def enviar_bloco(cpfs: list[str], recibos_override: dict[str, str]) -> dict:
+    payload = {
+        "per_apur": PER_APUR,
+        "lote_num": LOTE_NUM,
+        "cpfs": cpfs,
+        "confirmar_producao": True,
+    }
+    override_slice = {c: recibos_override[c] for c in cpfs if c in recibos_override}
+    if override_slice:
+        payload["recibo_override_por_cpf"] = override_slice
+
+    t0 = time.time()
+    r = requests.post(API_URL, json=payload, timeout=TIMEOUT)
+    r.raise_for_status()
+    dt = time.time() - t0
+    body = r.json()
+    body["_client_elapsed_s"] = round(dt, 1)
+    return body
+
+
+def resumir(body: dict) -> tuple[int, int, list[tuple[str, str, str]]]:
+    ok = err = 0
+    erros: list[tuple[str, str, str]] = []
+    for det in body.get("resultados", []):
+        cpf = det.get("cpf", "")
+        if det.get("sucesso"):
+            ok += 1
+        else:
+            err += 1
+            erros.append((cpf, str(det.get("codigo_resposta", "")), str(det.get("descricao_resposta") or det.get("erro") or "")[:120]))
+    return ok, err, erros
+
+
+def main() -> None:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--max", type=int, default=None, help="Limite de CPFs (debug)")
+    ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--batch", type=int, default=BATCH_SIZE)
+    ap.add_argument("--recibos-xlsx", default=None)
+    ap.add_argument("--aba", default=None)
+    ap.add_argument("--col-cpf", type=int, default=0)
+    ap.add_argument("--col-recibo", type=int, default=1)
+    args = ap.parse_args()
+
+    cpfs = carregar_cpfs_pendentes()
+    print(f"[scope pendente] {len(cpfs)} CPFs em {PER_APUR} lote={LOTE_NUM}")
+    if not cpfs:
+        print("nada a enviar"); return
+    if args.max:
+        cpfs = cpfs[: args.max]
+        print(f"[--max] reduzido a {len(cpfs)} CPFs")
+
+    recibos_override: dict[str, str] = {}
+    if args.recibos_xlsx:
+        if not args.aba:
+            print("ERRO: --aba obrigatorio quando usa --recibos-xlsx"); return
+        recibos_override = carregar_recibos_override(args.recibos_xlsx, args.aba, args.col_cpf, args.col_recibo)
+        print(f"[override] {len(recibos_override)} recibos carregados de {args.recibos_xlsx}")
+
+    if args.dry_run:
+        print("[dry-run] primeiros 5 CPFs:", cpfs[:5])
+        if recibos_override:
+            sample = {c: recibos_override[c] for c in cpfs[:5] if c in recibos_override}
+            print("[dry-run] overrides amostra:", sample)
+        return
+
+    total_ok = total_err = 0
+    batches = [cpfs[i : i + args.batch] for i in range(0, len(cpfs), args.batch)]
+    t_global = time.time()
+    for idx, bloco in enumerate(batches, 1):
+        print(f"\n=== bloco {idx}/{len(batches)} — {len(bloco)} CPFs ===")
+        try:
+            body = enviar_bloco(bloco, recibos_override)
+        except requests.exceptions.RequestException as e:
+            print(f"FALHA DE REDE no bloco {idx}: {type(e).__name__}: {e}")
+            print("PARANDO. Rode de novo depois de resolver.")
+            return
+
+        ok, err, erros = resumir(body)
+        total_ok += ok; total_err += err
+        dt = body.get("_client_elapsed_s", "?")
+        print(f"bloco {idx}: ok={ok} err={err} tempo={dt}s")
+        for cpf, cod, desc in erros[:10]:
+            print(f"  ERR {cpf} cod={cod} desc={desc}")
+
+        ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+        with open(os.path.join(OUTDIR, f"resp_bloco{idx:03d}_{ts}.json"), "w", encoding="utf-8") as f:
+            json.dump(body, f, ensure_ascii=False, indent=2)
+
+    t_dt = time.time() - t_global
+    print(f"\n========= TOTAL =========")
+    print(f"CPFs enviados: {total_ok + total_err}")
+    print(f"  ok:  {total_ok}")
+    print(f"  err: {total_err}")
+    print(f"tempo total: {t_dt:.1f}s ({(total_ok+total_err)/(t_dt/60):.1f} CPFs/min)")
+
+
+if __name__ == "__main__":
+    main()

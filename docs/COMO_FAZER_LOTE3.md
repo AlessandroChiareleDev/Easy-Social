@@ -249,3 +249,70 @@ Scripts de referência (ver, não copiar cegamente):
 - **2026-04-23:** correção de erro conceitual do PC2. Antes pensava que "774 soma por fora do planSaude" e que era preciso `DELETE` em `s1210_cpf_scope` para dedup entre lotes. Errado: 774 é rubrica de plano de saúde e entra agregada em `vlrSaudeTit`; dedup entre lotes é resolvido pelo próprio eSocial via `indRetif=2` + recibo ativo (último envio prevalece).
 - **2026-04-24 (pré-check Maio):** descoberto que `s1210_operadoras` e `s1210_cpf_scope` estão VAZIOS para `(per_apur='2025-05', lote_num=3)`. Upload do XLSX `05 Maio_lote 003_APPA.xlsx` + indexação do ZIP `29429551-maio.zip` é pré-requisito obrigatório antes de qualquer envio. Passo 0 do roteiro ajustado. Script `_precheck_lote3_maio.py` criado pra automatizar a checagem.
 - **2026-04-24 (pós PC1-15-v2):** receita oficial do PC1 confirmada — batch=50 CPFs/POST, 1 thread sequencial, timeout=600, ~22 CPFs/min, zero erro operacional, sem retry, sem sleep. Endpoint com 16 workers internos gerencia tudo. Script `envio_lote3_maio.py` criado seguindo essa receita. Seção 5 totalmente reescrita.
+
+---
+
+## 10. ⚠️ COMO NÃO TOMAR TIMEOUT (lição Lote 3 Agosto/2026-04-24)
+
+### O bug raiz do polling antigo
+
+`python-scripts/esocial/s1210_repo_routes.py` na fase 3 (poll consulta) tinha **2 falhas críticas**:
+
+1. **Total de espera curto** = 1+1.5+2+3+4+15×5 = **86s** (insuficiente quando eSocial está sob carga).
+2. **`break` no PRIMEIRO `eventos` não-vazio** — se eSocial respondesse parcial (ex: 10 dos 50 CPFs do batch), assumia que terminou e marcava os outros 40 como **timeout**.
+
+**Consequência destrutiva:** o evento ERA processado pelo eSocial, gerava recibo novo, mas a gente desistia antes da resposta. Resultado:
+- Status no nosso banco = `erro` (timeout)
+- No eSocial: recibo velho VIROU `excluído/retificado` (pq a retificação rolou)
+- Em qualquer retry posterior: **código 459** "Recibo não localizado ou excluído/retificado" — irrecuperável sem rebaixar ZIP.
+
+Foi exatamente isso que aconteceu nos 143 erros do Lote 3 Agosto/2025 (ver commit `458b36d`).
+
+### O fix (commit `<próximo>`)
+
+Polling rewrite — cumulativo + espera ALL CPFs:
+
+```python
+# ANTES: parava no 1º eventos não-vazio
+if cons.get("eventos"):
+    eventos_retorno = cons["eventos"]
+    break  # ❌ marca resto como timeout
+
+# DEPOIS: acumula até cobrir todo o batch (ou exaurir 5min)
+eventos_acumulados: dict[str, dict] = {}
+waits = [1.0, 1.5, 2.0, 3.0, 4.0] + [5.0] * 55  # ~5min total
+for attempt, wait in enumerate(waits, start=1):
+    sleep(wait)
+    cons = consultar_lote(protocolo, ...)
+    if cons.get("eventos"):
+        for evt in cons["eventos"]:
+            eventos_acumulados[evt["id"]] = evt  # acumula, não substitui
+        if len(eventos_acumulados) >= total_cpfs:
+            break  # ✅ só sai quando temos retorno pra todos
+```
+
+### Regras pra NÃO tomar timeout em lotes futuros
+
+1. **Patch acima é obrigatório** — verificar se está aplicado antes de envio massivo. Marcador no código: `eventos_acumulados: dict[str, dict] = {}`.
+2. **Workers paralelos** (`--workers 5`) ficam OK com batch=50 — cada worker faz 1 POST que internamente envia 50 CPFs num só envioLoteEventos eSocial. Pool DB Supabase aguenta até ~5 conexões simultâneas em modo session.
+3. **Não passar de `--workers 5`** — pool Supabase satura (`MaxClientsInSessionMode`). Se precisar de mais throughput, usar PgBouncer transaction mode ou Supavisor.
+4. **batch <= 50** — limite hard do envioLoteEventos eSocial.
+5. **timeout HTTP cliente >= 600s** — `envio_lote3_*.py` usa `TIMEOUT = 600`. Endpoint do bot pode levar até ~5min em batches lentos por causa do polling robusto. NÃO baixar.
+6. **Se ver `erro=timeout` no banco** — NÃO marcar como definitivo. Esperar 5min e fazer 1 consulta ConsultarIdentificadoresEventos pra ver se evento foi processado. Se foi, atualizar `nr_recibo_novo` no banco e marcar `ok`. Se não foi mesmo, retry.
+7. **Quanto mais tempo eSocial estiver lento**, mais essencial é ter `len(eventos_acumulados) >= total_cpfs`. NUNCA assumir que parcial = completo.
+
+### Erros que NÃO são timeout mas indicam problema upstream
+
+| Código | Significado | Ação |
+|---|---|---|
+| `1089` | Mesmo evento enviado em 2 lotes simultâneos | Esperar 30s e retry — geralmente o 1º foi processado |
+| `459` | Recibo retificado/excluído (recibo velho não vale mais) | **NÃO RETRIAR** — é sintoma de timeout falso anterior. Rebaixar ZIP atualizado e reindexar |
+| `543` | Idempotente — evento já existe igualzinho | Marcar como sucesso (já é tratado) |
+| `401 + ocorrência 459` | Mesmo que 459 puro | idem 459 |
+
+### Caso real Lote 3 Agosto/2025
+
+- 1ª rodada (5 workers, batch 50): 1100 OK / 153 timeout em 10min
+- Retry com 1 worker: TODOS os 153 viraram **código 459** (irrecuperáveis sem ZIP novo)
+- Diagnóstico: dos 153, **143 já estavam OK no eSocial** (timeout falso) e **10 não tinham S-1210 original** (CPFs sem L1)
+- Solução real: rebaixar `08- ago2025.zip` do portal eSocial → reindexar → 143 viram OK

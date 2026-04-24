@@ -1699,28 +1699,46 @@ def enviar_lote_cpfs(req: EnviarLoteCpfsReq):
     protocolo = envio.get("protocolo")
     log.info(f"âœ… Lote aceito. Protocolo: {protocolo}. Pollando consultaâ€¦")
 
-    # â”€â”€ Fase 3: pollar consulta (adaptativo â€” O2) â”€â”€
+    # ── Fase 3: pollar consulta (adaptativo — robusto v2) ──
+    # ANTES: parava no 1º 'eventos' não-vazio e marcava resto como timeout.
+    # AGORA: acumula e SO sai quando todos os CPFs do batch retornaram
+    # (ou esgota ~5min). Evita marcar como timeout um evento que o eSocial
+    # processou com sucesso — causa raiz do código 459 em retries.
     eventos_retorno: list[dict] = []
+    eventos_acumulados: dict[str, dict] = {}
     t_poll = _time.time()
+    total_cpfs = len(xmls_por_cpf)
     try:
         url_consulta = SOAPEnvelopeBuilder.url_consulta(producao=True)
         import time as __t
-        # Esperas progressivas: comeÃ§a rÃ¡pido (1s), cresce atÃ© 5s fixo.
-        waits = [1.0, 1.5, 2.0, 3.0, 4.0, 5.0, 5.0, 5.0, 5.0, 5.0,
-                 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0]
+        # Esperas: 1s→5s adaptativo, depois 5s fixo. Total máx ≈ 5min.
+        waits = [1.0, 1.5, 2.0, 3.0, 4.0] + [5.0] * 55
         for attempt, wait in enumerate(waits, start=1):
             __t.sleep(wait)
             cons = ESocialClient.consultar_lote(protocolo, pfx_data, senha, url=url_consulta)
             if cons.get("eventos"):
-                eventos_retorno = cons["eventos"]
-                print(f"[s1210-batch] Fase 3 (poll) resolveu em {_time.time()-t_poll:.1f}s Â· attempt {attempt}", flush=True)
-                break
+                for evt in cons["eventos"]:
+                    eid = evt.get("id")
+                    if eid:
+                        eventos_acumulados[eid] = evt
+                cobertura = len(eventos_acumulados)
+                if cobertura >= total_cpfs:
+                    print(f"[s1210-batch] Fase 3 (poll) COMPLETO {cobertura}/{total_cpfs} em {_time.time()-t_poll:.1f}s · attempt {attempt}", flush=True)
+                    break
+                else:
+                    log.info(f"⏳ poll parcial {cobertura}/{total_cpfs} (attempt {attempt}/{len(waits)})")
+                    continue
             elif cons.get("codigo_resposta") == "101":
-                log.info(f"â³ Lote ainda processando ({attempt}/{len(waits)})â€¦")
+                log.info(f"⏳ Lote ainda processando ({attempt}/{len(waits)})…")
                 continue
             else:
                 log.warning(f"consulta sem eventos e cd={cons.get('codigo_resposta')}")
+                if eventos_acumulados:
+                    continue
                 break
+        eventos_retorno = list(eventos_acumulados.values())
+        if len(eventos_retorno) < total_cpfs:
+            log.warning(f"poll exauriu: {len(eventos_retorno)}/{total_cpfs} CPFs em {_time.time()-t_poll:.1f}s")
     except Exception as e:
         for cpf in xmls_por_cpf:
             resultados[cpf].update({

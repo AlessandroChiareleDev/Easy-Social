@@ -120,7 +120,63 @@ def carregar_recibos_override(xlsx: str, aba: str, col_cpf: int, col_recibo: int
     return out
 
 
-def enviar_bloco(cpfs: list[str], recibos_override: dict[str, str]) -> dict:
+def carregar_plan_saude_xlsx(xlsx: str, aba: str = "Assistencia Medica") -> dict[str, list[dict]]:
+    """Le aba 'Assistencia Medica' do XLSX Ana (corrigida 24/04/2026 c/ cabecalhos).
+    Colunas:
+      [8]  CNPJ operadora (ou '-')
+      [9]  Registro ANS   (ou '-')
+      [11] CodigoEvento
+      [17] ValorEvento (centavos)
+      [29] CPF
+    Regra: linhas com CNPJ 14d + ANS numerico -> agrega em plan_saude.
+    Linhas com '-' nao entram (verba transitoria/informativa 9911/9299).
+    Multiplas rubricas mesmo CNPJ -> SOMA valor no mesmo detPlanSaude.
+    """
+    from openpyxl import load_workbook
+    from collections import defaultdict
+
+    # aba normalizada — pegar 'Assistencia Medica' com ou sem acento
+    wb = load_workbook(xlsx, read_only=True, data_only=True)
+    alvo = None
+    for sn in wb.sheetnames:
+        if sn.lower().startswith("assistencia") or sn.lower().startswith("assist"):
+            alvo = sn; break
+    if not alvo:
+        raise ValueError(f"Aba Assistencia Medica nao encontrada em {wb.sheetnames}")
+    ws = wb[alvo]
+
+    def _d(s): return "".join(c for c in str(s or "") if c.isdigit())
+
+    agg: dict[str, dict[str, dict]] = defaultdict(lambda: defaultdict(lambda: {"reg_ans": "", "vlr_cent": 0}))
+    for r in ws.iter_rows(min_row=2, values_only=True):
+        cpf = _d(r[29]).zfill(11)
+        if len(cpf) != 11:
+            continue
+        cnpj = _d(r[8])
+        ans = _d(r[9])
+        valor = r[17] or 0
+        if len(cnpj) != 14 or not ans or ans == "0":
+            continue
+        agg[cpf][cnpj]["reg_ans"] = ans
+        try:
+            agg[cpf][cnpj]["vlr_cent"] += int(valor)
+        except (TypeError, ValueError):
+            pass
+
+    out: dict[str, list[dict]] = {}
+    for cpf, cnpjs in agg.items():
+        entries = []
+        for cnpj, d in cnpjs.items():
+            entries.append({
+                "cnpjOper": cnpj,
+                "regANS": d["reg_ans"],
+                "vlrSaudeTit": round(d["vlr_cent"] / 100, 2),
+            })
+        out[cpf] = entries
+    return out
+
+
+def enviar_bloco(cpfs: list[str], recibos_override: dict[str, str], plan_saude_override: dict[str, list[dict]] | None = None) -> dict:
     payload = {
         "per_apur": PER_APUR,
         "lote_num": LOTE_NUM,
@@ -130,6 +186,10 @@ def enviar_bloco(cpfs: list[str], recibos_override: dict[str, str]) -> dict:
     override_slice = {c: recibos_override[c] for c in cpfs if c in recibos_override}
     if override_slice:
         payload["recibo_override_por_cpf"] = override_slice
+    if plan_saude_override:
+        ps_slice = {c: plan_saude_override[c] for c in cpfs if c in plan_saude_override}
+        if ps_slice:
+            payload["plan_saude_por_cpf"] = ps_slice
 
     t0 = time.time()
     r = requests.post(API_URL, json=payload, timeout=TIMEOUT)
@@ -162,6 +222,7 @@ def main() -> None:
     ap.add_argument("--aba", default=None)
     ap.add_argument("--col-cpf", type=int, default=0)
     ap.add_argument("--col-recibo", type=int, default=1)
+    ap.add_argument("--plan-saude-xlsx", default=None, help="XLSX Ana (aba Assistencia Medica) c/ CNPJ+ANS")
     args = ap.parse_args()
 
     cpfs = carregar_cpfs_pendentes()
@@ -185,6 +246,12 @@ def main() -> None:
         print(f"[override XLSX] {len(xlsx_over)} recibos carregados de {args.recibos_xlsx} (substitui DB)")
         recibos_override.update(xlsx_over)
 
+    # 3) plan_saude_por_cpf do XLSX Ana (aba Assistencia Medica com CNPJ+ANS)
+    plan_saude_override: dict[str, list[dict]] = {}
+    if args.plan_saude_xlsx:
+        plan_saude_override = carregar_plan_saude_xlsx(args.plan_saude_xlsx)
+        print(f"[plan_saude] {len(plan_saude_override)} CPFs com CNPJ+ANS carregados de {args.plan_saude_xlsx}")
+
     if args.dry_run:
         print("[dry-run] primeiros 5 CPFs:", cpfs[:5])
         if recibos_override:
@@ -198,7 +265,7 @@ def main() -> None:
     for idx, bloco in enumerate(batches, 1):
         print(f"\n=== bloco {idx}/{len(batches)} — {len(bloco)} CPFs ===")
         try:
-            body = enviar_bloco(bloco, recibos_override)
+            body = enviar_bloco(bloco, recibos_override, plan_saude_override)
         except requests.exceptions.RequestException as e:
             print(f"FALHA DE REDE no bloco {idx}: {type(e).__name__}: {e}")
             print("PARANDO. Rode de novo depois de resolver.")

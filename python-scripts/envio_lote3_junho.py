@@ -135,11 +135,15 @@ def carregar_plan_saude_xlsx(xlsx: str, aba: str = "Assistencia Medica") -> dict
     from openpyxl import load_workbook
     from collections import defaultdict
 
-    # aba normalizada — pegar 'Assistencia Medica' com ou sem acento
+    # aba normalizada — pegar 'Assistencia/Assitencia Medica' tolerante a typo/acento
+    import unicodedata
+    def _norm(s: str) -> str:
+        return "".join(c for c in unicodedata.normalize("NFKD", s.lower()) if not unicodedata.combining(c))
     wb = load_workbook(xlsx, read_only=True, data_only=True)
     alvo = None
     for sn in wb.sheetnames:
-        if sn.lower().startswith("assistencia") or sn.lower().startswith("assist"):
+        n = _norm(sn)
+        if "med" in n and ("assist" in n or "assit" in n):
             alvo = sn; break
     if not alvo:
         raise ValueError(f"Aba Assistencia Medica nao encontrada em {wb.sheetnames}")
@@ -223,6 +227,7 @@ def main() -> None:
     ap.add_argument("--col-cpf", type=int, default=0)
     ap.add_argument("--col-recibo", type=int, default=1)
     ap.add_argument("--plan-saude-xlsx", default=None, help="XLSX Ana (aba Assistencia Medica) c/ CNPJ+ANS")
+    ap.add_argument("--workers", type=int, default=1, help="Numero de workers paralelos (default 1=sequencial)")
     args = ap.parse_args()
 
     cpfs = carregar_cpfs_pendentes()
@@ -262,31 +267,84 @@ def main() -> None:
     total_ok = total_err = 0
     batches = [cpfs[i : i + args.batch] for i in range(0, len(cpfs), args.batch)]
     t_global = time.time()
-    for idx, bloco in enumerate(batches, 1):
-        print(f"\n=== bloco {idx}/{len(batches)} — {len(bloco)} CPFs ===")
-        try:
-            body = enviar_bloco(bloco, recibos_override, plan_saude_override)
-        except requests.exceptions.RequestException as e:
-            print(f"FALHA DE REDE no bloco {idx}: {type(e).__name__}: {e}")
-            print("PARANDO. Rode de novo depois de resolver.")
-            return
 
-        ok, err, erros = resumir(body)
-        total_ok += ok; total_err += err
-        dt = body.get("_client_elapsed_s", "?")
-        print(f"bloco {idx}: ok={ok} err={err} tempo={dt}s")
-        for cpf, cod, desc in erros[:10]:
-            print(f"  ERR {cpf} cod={cod} desc={desc}")
+    if args.workers > 1:
+        from concurrent.futures import ThreadPoolExecutor, as_completed
+        import threading
+        lock = threading.Lock()
+        progresso = {"feitos": 0, "ok": 0, "err": 0, "ultimo_marco": 0, "t_marco": t_global}
 
-        ts = datetime.now().strftime("%Y%m%d_%H%M%S")
-        with open(os.path.join(OUTDIR, f"resp_bloco{idx:03d}_{ts}.json"), "w", encoding="utf-8") as f:
-            json.dump(body, f, ensure_ascii=False, indent=2)
+        def _job(idx_bloco):
+            i, bloco = idx_bloco
+            try:
+                body = enviar_bloco(bloco, recibos_override, plan_saude_override)
+            except requests.exceptions.RequestException as e:
+                return (i, None, f"REDE {type(e).__name__}: {e}")
+            ok, err, erros = resumir(body)
+            ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+            with open(os.path.join(OUTDIR, f"resp_bloco{i:03d}_{ts}.json"), "w", encoding="utf-8") as f:
+                json.dump(body, f, ensure_ascii=False, indent=2)
+            return (i, (ok, err, erros, body.get("_client_elapsed_s", 0)), None)
+
+        with ThreadPoolExecutor(max_workers=args.workers) as ex:
+            futs = {ex.submit(_job, (i, b)): i for i, b in enumerate(batches, 1)}
+            for fut in as_completed(futs):
+                i, res, err_msg = fut.result()
+                if err_msg:
+                    print(f"[bloco {i}] FALHA REDE: {err_msg}")
+                    continue
+                ok, err, erros, dt_b = res
+                with lock:
+                    total_ok += ok; total_err += err
+                    progresso["feitos"] += ok + err
+                    progresso["ok"] += ok; progresso["err"] += err
+                    feitos = progresso["feitos"]
+                    print(f"[bloco {i:>3}] ok={ok} err={err} tempo={dt_b}s | acumulado ok={total_ok} err={total_err}")
+                    for cpf, cod, desc in erros[:3]:
+                        print(f"   ERR {cpf} cod={cod} desc={desc[:80]}")
+                    # marco a cada 500
+                    if feitos // 500 > progresso["ultimo_marco"] // 500:
+                        progresso["ultimo_marco"] = feitos
+                        agora = time.time()
+                        dt_seg = agora - progresso["t_marco"]
+                        cpfs_no_marco = feitos - (progresso["ultimo_marco"] - 500 if progresso["ultimo_marco"] >= 500 else 0)
+                        # taxa global
+                        dt_total = agora - t_global
+                        taxa_global = feitos / dt_total * 60 if dt_total else 0
+                        taxa_erro = total_err / max(feitos, 1) * 100
+                        eta_min = (len(cpfs) - feitos) / max(taxa_global, 0.01)
+                        print(f"\n>>> MARCO {feitos}/{len(cpfs)} | "
+                              f"ok={total_ok} err={total_err} "
+                              f"taxa_erro={taxa_erro:.2f}% | "
+                              f"velocidade={taxa_global:.1f} CPF/min | "
+                              f"ETA={eta_min:.1f} min\n")
+                        progresso["t_marco"] = agora
+    else:
+        for idx, bloco in enumerate(batches, 1):
+            print(f"\n=== bloco {idx}/{len(batches)} — {len(bloco)} CPFs ===")
+            try:
+                body = enviar_bloco(bloco, recibos_override, plan_saude_override)
+            except requests.exceptions.RequestException as e:
+                print(f"FALHA DE REDE no bloco {idx}: {type(e).__name__}: {e}")
+                print("PARANDO. Rode de novo depois de resolver.")
+                return
+            ok, err, erros = resumir(body)
+            total_ok += ok; total_err += err
+            dt = body.get("_client_elapsed_s", "?")
+            print(f"bloco {idx}: ok={ok} err={err} tempo={dt}s")
+            for cpf, cod, desc in erros[:10]:
+                print(f"  ERR {cpf} cod={cod} desc={desc}")
+            ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+            with open(os.path.join(OUTDIR, f"resp_bloco{idx:03d}_{ts}.json"), "w", encoding="utf-8") as f:
+                json.dump(body, f, ensure_ascii=False, indent=2)
 
     t_dt = time.time() - t_global
     print(f"\n========= TOTAL =========")
     print(f"CPFs enviados: {total_ok + total_err}")
     print(f"  ok:  {total_ok}")
     print(f"  err: {total_err}")
+    taxa_erro_final = total_err / max(total_ok+total_err, 1) * 100
+    print(f"  taxa_erro: {taxa_erro_final:.2f}%")
     print(f"tempo total: {t_dt:.1f}s ({(total_ok+total_err)/(t_dt/60):.1f} CPFs/min)")
 
 

@@ -65,6 +65,13 @@ FONTES = {
         "aba_oper":  "Assistencia Médica",
         "total_lote1": 0,
     },
+    "2025-06": {
+        "xlsx": DOWNLOADS / "06 Junho_lote 003_APPA.xlsx",
+        "zip":  DOWNLOADS / "29105225 Jun2025.zip",
+        "aba_geral": "Lote para Envio ",
+        "aba_oper":  "Assitencia Médica",
+        "total_lote1": 0,
+    },
 }
 
 # Cache em memória (evita reparsear XLSX/ZIP a cada request)

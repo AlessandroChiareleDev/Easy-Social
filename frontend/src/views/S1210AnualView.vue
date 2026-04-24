@@ -139,10 +139,6 @@ onMounted(carregar)
     <header class="head">
       <button class="btn-back" @click="voltarRepositorio">← Repositório S-1210</button>
       <h1>S-1210 ANUAL</h1>
-      <p class="sub">
-        Visão unificada de 11 meses (fev a dez) com 4 lotes. Dados atuais já populados para 2025-02,
-        2025-03 e 2025-04.
-      </p>
     </header>
 
     <section class="cards" v-if="!loading && !erro">
@@ -233,10 +229,6 @@ onMounted(carregar)
   color: #fff;
   letter-spacing: 0.4px;
   text-shadow: 0 0 20px rgba(79, 142, 245, 0.25);
-}
-.sub {
-  margin: 8px 0 0;
-  color: rgba(255, 255, 255, 0.74);
 }
 .btn-back {
   margin-bottom: 12px;

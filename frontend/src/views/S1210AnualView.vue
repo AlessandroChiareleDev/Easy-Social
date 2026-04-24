@@ -14,6 +14,7 @@ interface Celula {
   erro: number
   enviando: number
   pendente: number
+  na: number
   tem_xlsx: boolean
   estado:
     | 'sem_dados'
@@ -55,7 +56,7 @@ const mesesLabel: Record<string, string> = {
 
 const resumo = computed(() => {
   if (!overview.value) {
-    return { total: 0, ok: 0, erro: 0, pendente: 0, processando: 0, mesesAtivos: 0 }
+    return { total: 0, ok: 0, erro: 0, pendente: 0, processando: 0, na: 0, mesesAtivos: 0 }
   }
 
   let total = 0
@@ -63,11 +64,12 @@ const resumo = computed(() => {
   let erro = 0
   let pendente = 0
   let processando = 0
+  let na = 0
   let mesesAtivos = 0
 
   for (const mes of overview.value.meses) {
     const mesTemDados = mes.lotes.some(
-      (c) => c.total > 0 || c.ok > 0 || c.erro > 0 || c.pendente > 0 || c.enviando > 0,
+      (c) => c.total > 0 || c.ok > 0 || c.erro > 0 || c.pendente > 0 || c.enviando > 0 || (c.na ?? 0) > 0,
     )
     if (mesTemDados) mesesAtivos += 1
     for (const c of mes.lotes) {
@@ -76,10 +78,11 @@ const resumo = computed(() => {
       erro += c.erro
       pendente += c.pendente
       processando += c.enviando
+      na += c.na ?? 0
     }
   }
 
-  return { total, ok, erro, pendente, processando, mesesAtivos }
+  return { total, ok, erro, pendente, processando, na, mesesAtivos }
 })
 
 function classeEstado(estado: Celula['estado']) {
@@ -164,6 +167,10 @@ onMounted(carregar)
         <strong class="pend">{{ resumo.pendente.toLocaleString('pt-BR') }}</strong>
       </article>
       <article class="kpi">
+        <span class="k">N/A (Não aplica)</span>
+        <strong class="na">{{ resumo.na.toLocaleString('pt-BR') }}</strong>
+      </article>
+      <article class="kpi">
         <span class="k">Processando</span>
         <strong class="run">{{ resumo.processando.toLocaleString('pt-BR') }}</strong>
       </article>
@@ -201,6 +208,7 @@ onMounted(carregar)
             <span class="ok">{{ celula.ok }} ok</span>
             <span class="err">{{ celula.erro }} erro</span>
             <span class="pend">{{ celula.pendente + celula.enviando }} pend</span>
+            <span v-if="(celula.na ?? 0) > 0" class="na">{{ celula.na }} N/A</span>
           </div>
           <div v-if="celula.estado === 'aguardando_mapeamento'" class="hint">
             Clique para ver lista com identificador temporário
@@ -284,6 +292,9 @@ onMounted(carregar)
 }
 .kpi .pend {
   color: #ffd166;
+}
+.kpi .na {
+  color: #b3a8ff;
 }
 .kpi .run {
   color: #66d9ff;
@@ -418,6 +429,9 @@ onMounted(carregar)
 }
 .nums .pend {
   color: #ffd77a;
+}
+.nums .na {
+  color: #b3a8ff;
 }
 
 .hint {

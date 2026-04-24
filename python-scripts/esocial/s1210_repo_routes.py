@@ -358,6 +358,7 @@ class OverviewLote(BaseModel):
     erro: int
     enviando: int
     pendente: int
+    na: int = 0
     tem_xlsx: bool
 
 
@@ -375,6 +376,7 @@ class OverviewAnualCelula(BaseModel):
     erro: int
     enviando: int
     pendente: int
+    na: int = 0
     tem_xlsx: bool
     estado: str
 
@@ -421,7 +423,7 @@ def overview(empresa_id: int = DEFAULT_EMPRESA_ID):
             # Contadores da view
             cur.execute(
                 """
-                SELECT per_apur, lote_num, total, ok, erro, enviando, pendente
+                SELECT per_apur, lote_num, total, ok, erro, enviando, na, pendente
                   FROM v_s1210_contadores
                  WHERE empresa_id = %s
                 """,
@@ -444,6 +446,7 @@ def overview(empresa_id: int = DEFAULT_EMPRESA_ID):
                     erro=c["erro"] if c else 0,
                     enviando=c["enviando"] if c else 0,
                     pendente=c["pendente"] if c else 0,
+                    na=c["na"] if c else 0,
                     tem_xlsx=mes in meses_com_xlsx,
                 )
             )
@@ -484,7 +487,7 @@ def overview_anual(
 
             cur.execute(
                 """
-                SELECT per_apur, lote_num, total, ok, erro, enviando, pendente
+                SELECT per_apur, lote_num, total, ok, erro, enviando, na, pendente
                   FROM v_s1210_contadores
                  WHERE empresa_id = %s
                    AND per_apur LIKE %s
@@ -527,11 +530,12 @@ def overview_anual(
             erro = int(c["erro"]) if c else 0
             enviando = int(c["enviando"]) if c else 0
             pendente = int(c["pendente"]) if c else 0
+            na = int(c["na"]) if c else 0
             tem_xlsx = (mes in meses_com_xlsx) or (mes in meses_com_codfunc)
 
             # Fallback anual: meses novos com Lote 1 em layout por cÃ³digo de funcionÃ¡rio
             # ainda sem mapeamento para CPF.
-            if lote == 1 and total == 0 and ok == 0 and erro == 0 and enviando == 0 and pendente == 0:
+            if lote == 1 and total == 0 and ok == 0 and erro == 0 and enviando == 0 and pendente == 0 and na == 0:
                 fallback_l1 = total_codfunc_l1.get(mes, {"codfunc": 0, "cpf": 0})
                 cod_total = fallback_l1.get("codfunc", 0)
                 cpf_total = fallback_l1.get("cpf", 0)
@@ -541,7 +545,7 @@ def overview_anual(
                     estado = "pronto_para_processar" if cpf_total > 0 else "aguardando_mapeamento"
                 else:
                     estado = "sem_dados"
-            elif total == 0 and ok == 0 and erro == 0 and enviando == 0 and pendente == 0:
+            elif total == 0 and ok == 0 and erro == 0 and enviando == 0 and pendente == 0 and na == 0:
                 estado = "sem_dados"
             elif enviando > 0:
                 estado = "processando"
@@ -561,6 +565,7 @@ def overview_anual(
                     erro=erro,
                     enviando=enviando,
                     pendente=pendente,
+                    na=na,
                     tem_xlsx=tem_xlsx,
                     estado=estado,
                 )
@@ -893,7 +898,7 @@ def listar_cpfs_compartimento(
 ):
     if lote_num not in (1, 2, 3, 4):
         raise HTTPException(400, "lote_num invÃ¡lido")
-    if status not in (None, "todos", "ok", "erro", "pendente", "enviando"):
+    if status not in (None, "todos", "ok", "erro", "pendente", "enviando", "na"):
         raise HTTPException(400, "status invÃ¡lido")
     # Normaliza busca: dÃ­gitos puros viram padrÃ£o exato em cpf/matricula;
     # qualquer outra coisa cai em ILIKE no nome/matrÃ­cula/cpf.
@@ -1028,13 +1033,13 @@ def listar_cpfs_compartimento(
 
             # Totais do compartimento inteiro (via view jÃ¡ existente)
             cur.execute(
-                """SELECT total, ok, erro, enviando, pendente
+                """SELECT total, ok, erro, enviando, na, pendente
                      FROM v_s1210_contadores
                     WHERE empresa_id=%s AND per_apur=%s AND lote_num=%s""",
                 (empresa_id, per_apur, lote_num),
             )
             tot_row = cur.fetchone() or {
-                "total": 0, "ok": 0, "erro": 0, "enviando": 0, "pendente": 0,
+                "total": 0, "ok": 0, "erro": 0, "enviando": 0, "na": 0, "pendente": 0,
             }
 
             # Filtro opcional por status (server-side para nÃ£o depender da pÃ¡gina)
@@ -1096,6 +1101,7 @@ def listar_cpfs_compartimento(
                         WHEN 'ok'       THEN 1
                         WHEN 'erro'     THEN 2
                         WHEN 'enviando' THEN 3
+                        WHEN 'na'       THEN 5
                         ELSE 4
                     END,
                     u.enviado_em ASC NULLS LAST,
@@ -1111,8 +1117,11 @@ def listar_cpfs_compartimento(
             cur.execute(sql, params)
             rows = cur.fetchall()
 
-            # Total considerando filtros (para paginaÃ§Ã£o)
-            if q_has:
+            # Total considerando filtros (para paginacao).
+            # BUG #6 fix: antes, quando so havia filtro de status (sem q), o total vinha da
+            # view v_s1210_contadores, que pode divergir do CTE `ult` usado na listagem
+            # (ex.: CPFs removidos de cpf_envios). Agora sempre conta sobre a mesma CTE.
+            if q_has or (status and status != "todos"):
                 count_sql = f"""
                     WITH ult AS (
                         SELECT DISTINCT ON (cpf) cpf, status
@@ -1133,10 +1142,6 @@ def listar_cpfs_compartimento(
                     *busca_params,
                 ])
                 total_filtrado = cur.fetchone()["c"]
-            elif status and status != "todos":
-                mapa = {"ok": tot_row["ok"], "erro": tot_row["erro"],
-                        "pendente": tot_row["pendente"], "enviando": tot_row["enviando"]}
-                total_filtrado = mapa[status]
             else:
                 total_filtrado = tot_row["total"]
     finally:
@@ -1194,48 +1199,88 @@ def codigos_agregados_compartimento(
 
     # Agrega no formato que o frontend consome:
     # chave = "<cdResposta>/<codOcorrencia>" (igual a codigoChave() do .vue)
+    # BUG #3 fix: CPF com varias ocorrencias (ex.: [861, 726]) vira 1 bucket por ocorrencia.
+    # Antes so contava a primeira, escondendo codigos 726, 1043 etc. do funil.
     _re_oc = re.compile(r'ocorrencias=(\[.*\])')
-    def _parse_oc(txt):
-        if not txt: return ''
+    def _parse_ocorrencias(txt):
+        """Retorna lista de (codigo, descricao) de TODAS as ocorrencias."""
+        if not txt:
+            return []
         m = _re_oc.search(txt)
-        if not m: return ''
+        if not m:
+            return []
         try:
             arr = _json.loads(m.group(1))
-            if arr and isinstance(arr, list):
-                return str(arr[0].get('codigo') or '')
+            if isinstance(arr, list):
+                out = []
+                for item in arr:
+                    if not isinstance(item, dict):
+                        continue
+                    cod = str(item.get('codigo') or '')
+                    desc = str(item.get('descricao') or '')
+                    if cod:
+                        out.append((cod, desc))
+                return out
         except Exception:
-            return ''
-        return ''
+            return []
+        return []
 
     buckets = {}
+    total_cpfs = 0
     for r in rows:
         status = r['status']
         if status == 'pendente' or status == 'enviando':
             continue
+        total_cpfs += 1
         if status == 'ok':
             chave = f"{r.get('codigo_resposta') or '201'}/"
             desc_default = r.get('descricao_resposta') or 'Sucesso'
             tipo = 'ok'
+            b = buckets.get(chave)
+            if b:
+                b['qtd'] += 1
+            else:
+                buckets[chave] = {
+                    'chave': chave,
+                    'descricao': (desc_default or '')[:120],
+                    'qtd': 1,
+                    'tipo': tipo,
+                }
         elif status == 'erro':
-            oc = _parse_oc(r.get('erro_descricao'))
-            chave = f"{r.get('codigo_resposta') or 'erro'}/{oc}"
-            desc_default = r.get('descricao_resposta') or r.get('erro_descricao') or 'â€”'
-            tipo = 'err'
-        else:
-            continue
-        b = buckets.get(chave)
-        if b:
-            b['qtd'] += 1
-        else:
-            buckets[chave] = {
-                'chave': chave,
-                'descricao': (desc_default or '')[:120],
-                'qtd': 1,
-                'tipo': tipo,
-            }
+            cd_resp = r.get('codigo_resposta') or 'erro'
+            ocs = _parse_ocorrencias(r.get('erro_descricao'))
+            if not ocs:
+                # sem ocorrencias parseadas — mantem chave sem sufixo
+                chave = f"{cd_resp}/"
+                desc_default = r.get('descricao_resposta') or r.get('erro_descricao') or '—'
+                b = buckets.get(chave)
+                if b:
+                    b['qtd'] += 1
+                else:
+                    buckets[chave] = {
+                        'chave': chave,
+                        'descricao': (desc_default or '')[:120],
+                        'qtd': 1,
+                        'tipo': 'err',
+                    }
+            else:
+                # 1 linha do CPF entra em 1 bucket por ocorrencia
+                for cod, desc in ocs:
+                    chave = f"{cd_resp}/{cod}"
+                    b = buckets.get(chave)
+                    if b:
+                        b['qtd'] += 1
+                    else:
+                        buckets[chave] = {
+                            'chave': chave,
+                            'descricao': (desc or r.get('descricao_resposta') or '')[:120],
+                            'qtd': 1,
+                            'tipo': 'err',
+                        }
 
     lista = sorted(buckets.values(), key=lambda x: -x['qtd'])
-    return {'codigos': lista, 'total': sum(b['qtd'] for b in lista)}
+    # total = numero de CPFs (nao soma de buckets, pois CPF com N ocorrencias conta N vezes em buckets)
+    return {'codigos': lista, 'total': total_cpfs}
 
 
 # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
@@ -2297,3 +2342,108 @@ def remover_xlsx(xlsx_id: int, empresa_id: int = DEFAULT_EMPRESA_ID):
     if not row:
         raise HTTPException(404, "xlsx nÃ£o encontrada")
     return {"removido": xlsx_id, "per_apur": row[0], "storage_path": row[1]}
+
+# ════════════════════════════════════════════════════════════════════
+# Endpoints "Não Aplica" (N/A) — marca CPFs que não devem ser enviados
+# ao eSocial (demitidos, sem base IRRF, folha paga em outra
+# competência, etc.). Insere registro em s1210_cpf_envios com
+# status='na' e motivo em erro_descricao.
+# ════════════════════════════════════════════════════════════════════
+class MarcarNAItem(BaseModel):
+    cpf: str
+    motivo: str | None = None
+
+
+class MarcarNARequest(BaseModel):
+    per_apur: str
+    lote_num: int
+    itens: list[MarcarNAItem]
+
+
+class MarcarNAResponse(BaseModel):
+    per_apur: str
+    lote_num: int
+    marcados: int
+    ignorados_fora_escopo: int
+
+
+@router.post("/marcar-na", response_model=MarcarNAResponse)
+def marcar_na(req: MarcarNARequest, empresa_id: int = DEFAULT_EMPRESA_ID):
+    """
+    Marca uma lista de CPFs com status='na' (Não Aplica). Apenas CPFs
+    presentes no escopo (s1210_cpf_scope) do compartimento são marcados.
+    """
+    if req.lote_num not in (1, 2, 3, 4):
+        raise HTTPException(400, "lote_num inválido")
+    if not req.itens:
+        return MarcarNAResponse(per_apur=req.per_apur, lote_num=req.lote_num, marcados=0, ignorados_fora_escopo=0)
+
+    cpfs_norm = []
+    motivos = {}
+    for it in req.itens:
+        c = "".join(ch for ch in (it.cpf or "") if ch.isdigit()).zfill(11)
+        if len(c) == 11:
+            cpfs_norm.append(c)
+            motivos[c] = (it.motivo or "").strip() or "marcado como N/A"
+
+    conn = _db()
+    marcados = 0
+    fora = 0
+    try:
+        with conn.cursor() as cur:
+            cur.execute(
+                """SELECT cpf FROM s1210_cpf_scope
+                    WHERE empresa_id=%s AND per_apur=%s AND lote_num=%s
+                      AND cpf = ANY(%s)""",
+                (empresa_id, req.per_apur, req.lote_num, cpfs_norm),
+            )
+            no_escopo = {r[0] for r in cur.fetchall()}
+            fora = len(set(cpfs_norm) - no_escopo)
+            for c in no_escopo:
+                cur.execute(
+                    """INSERT INTO s1210_cpf_envios
+                        (empresa_id, per_apur, cpf, lote_num, status,
+                         erro_descricao, enviado_em)
+                       VALUES (%s, %s, %s, %s, 'na', %s, NOW())""",
+                    (empresa_id, req.per_apur, c, req.lote_num, motivos.get(c)),
+                )
+                marcados += 1
+        conn.commit()
+    finally:
+        conn.close()
+    return MarcarNAResponse(
+        per_apur=req.per_apur, lote_num=req.lote_num,
+        marcados=marcados, ignorados_fora_escopo=fora,
+    )
+
+
+class DesmarcarNARequest(BaseModel):
+    per_apur: str
+    lote_num: int
+    cpfs: list[str]
+
+
+@router.post("/desmarcar-na")
+def desmarcar_na(req: DesmarcarNARequest, empresa_id: int = DEFAULT_EMPRESA_ID):
+    """
+    Remove a marcação 'na' (apaga apenas as linhas de envio com status='na'
+    para os CPFs informados — preserva histórico de outras tentativas).
+    """
+    cpfs_norm = ["".join(ch for ch in c if ch.isdigit()).zfill(11) for c in req.cpfs]
+    cpfs_norm = [c for c in cpfs_norm if len(c) == 11]
+    if not cpfs_norm:
+        return {"removidos": 0}
+    conn = _db()
+    try:
+        with conn.cursor() as cur:
+            cur.execute(
+                """DELETE FROM s1210_cpf_envios
+                    WHERE empresa_id=%s AND per_apur=%s AND lote_num=%s
+                      AND status='na' AND cpf = ANY(%s)""",
+                (empresa_id, req.per_apur, req.lote_num, cpfs_norm),
+            )
+            n = cur.rowcount
+        conn.commit()
+    finally:
+        conn.close()
+    return {"removidos": n}

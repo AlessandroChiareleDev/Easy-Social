@@ -11,7 +11,7 @@ interface CPFRow {
   identificador?: string | null
   origem?: 'cpf_scope' | 'codfunc_scope' | string | null
   lote_num: number
-  status: 'pendente' | 'ok' | 'erro' | 'enviando'
+  status: 'pendente' | 'ok' | 'erro' | 'enviando' | 'na'
   nr_recibo_novo: string | null
   nr_recibo_usado: string | null
   erro_descricao: string | null
@@ -152,9 +152,9 @@ const loading = ref(true)
 const erro = ref('')
 const total = ref(0)
 const rows = ref<CPFRow[]>([])
-const totaisCompartimento = ref({ total: 0, ok: 0, erro: 0, enviando: 0, pendente: 0 })
+const totaisCompartimento = ref({ total: 0, ok: 0, erro: 0, enviando: 0, pendente: 0, na: 0 })
 const filtro = ref('')
-const statusFiltro = ref<'todos' | 'pendente' | 'ok' | 'erro'>('todos')
+const statusFiltro = ref<'todos' | 'pendente' | 'ok' | 'erro' | 'na'>('todos')
 const pagina = ref(0)
 const pageSize = 200
 
@@ -277,7 +277,7 @@ async function carregar() {
     if (q) params.q = q
     const resp = await axios.get<{
       total: number
-      totais: { total: number; ok: number; erro: number; enviando: number; pendente: number }
+      totais: { total: number; ok: number; erro: number; enviando: number; pendente: number; na?: number }
       cpfs: CPFRow[]
     }>(`${PYTHON_API}/api/s1210-repo/por-lote/${lote.value}/${mes.value}`, { params })
     total.value = resp.data.total
@@ -333,7 +333,7 @@ const linhasFiltradas = computed(() => {
   })
 })
 
-function setStatusFiltro(f: 'todos' | 'pendente' | 'ok' | 'erro') {
+function setStatusFiltro(f: 'todos' | 'pendente' | 'ok' | 'erro' | 'na') {
   if (statusFiltro.value === f) return
   statusFiltro.value = f
   pagina.value = 0
@@ -831,6 +831,10 @@ watch([lote, mes], () => {
             }}
           </span>
         </div>
+        <div class="kpi kpi--na">
+          <span class="kpi-label">N/A (não aplica)</span>
+          <span class="kpi-val">{{ (totaisCompartimento.na ?? 0).toLocaleString('pt-BR') }}</span>
+        </div>
       </div>
 
       <!-- ═══════ PAINEL DE COMANDO (player automático) ═══════ -->
@@ -969,7 +973,7 @@ watch([lote, mes], () => {
         </div>
         <div class="tabs">
           <button
-            v-for="f in ['todos', 'pendente', 'ok', 'erro'] as const"
+            v-for="f in ['todos', 'pendente', 'ok', 'erro', 'na'] as const"
             :key="f"
             class="tab"
             :class="{ 'tab--on': statusFiltro === f, [`tab--${f}`]: statusFiltro === f }"
@@ -1094,7 +1098,7 @@ watch([lote, mes], () => {
               <td>
                 <span class="st" :class="`st--${r.status}`">
                   <span class="st-dot" />
-                  {{ r.status }}
+                  {{ r.status === 'na' ? 'N/A' : r.status }}
                 </span>
               </td>
               <td class="recibo">
@@ -1135,16 +1139,19 @@ watch([lote, mes], () => {
                 <span v-else-if="r.status === 'ok'" class="motivo-ok">
                   {{ r.descricao_resposta || 'Sucesso' }}
                 </span>
+                <span v-else-if="r.status === 'na'" class="motivo-txt" :title="r.erro_descricao ?? ''">
+                  {{ r.erro_descricao || 'Não aplica' }}
+                </span>
                 <span v-else class="dim">—</span>
               </td>
               <td class="ac">
                 <button
                   class="enviar"
                   :class="{ 'enviar--re': r.status === 'ok' }"
-                  :disabled="r.status === 'enviando' || enviando || !r.cpf"
+                  :disabled="r.status === 'enviando' || r.status === 'na' || enviando || !r.cpf"
                   @click="abrirEnvio(r, $event)"
                 >
-                  {{ !r.cpf ? 'Aguardando CPF' : r.status === 'ok' ? 'Reenviar' : 'Enviar' }}
+                  {{ !r.cpf ? 'Aguardando CPF' : r.status === 'na' ? 'N/A' : r.status === 'ok' ? 'Reenviar' : 'Enviar' }}
                 </button>
               </td>
             </tr>
@@ -1791,6 +1798,9 @@ watch([lote, mes], () => {
 .kpi--sent::before {
   background: linear-gradient(90deg, #7cc4ff, transparent);
 }
+.kpi--na::before {
+  background: linear-gradient(90deg, #b3a8ff, transparent);
+}
 .kpi-label {
   font-size: 10.5px;
   color: rgba(255, 255, 255, 0.5);
@@ -1815,6 +1825,9 @@ watch([lote, mes], () => {
 }
 .kpi--sent .kpi-val {
   color: #7cc4ff;
+}
+.kpi--na .kpi-val {
+  color: #b3a8ff;
 }
 
 .toolbar {
@@ -1890,6 +1903,10 @@ watch([lote, mes], () => {
 .tab--pendente {
   background: rgba(243, 201, 105, 0.15);
   color: #f3c969;
+}
+.tab--na {
+  background: rgba(179, 168, 255, 0.18);
+  color: #b3a8ff;
 }
 
 .pag {
@@ -1976,6 +1993,9 @@ watch([lote, mes], () => {
 }
 .row-enviando {
   background: rgba(243, 201, 105, 0.06);
+}
+.row-na {
+  background: rgba(179, 168, 255, 0.05);
 }
 
 .num {
@@ -2227,6 +2247,11 @@ watch([lote, mes], () => {
   background: rgba(243, 201, 105, 0.12);
   color: #f3c969;
   border: 1px solid rgba(243, 201, 105, 0.3);
+}
+.st--na {
+  background: rgba(179, 168, 255, 0.14);
+  color: #b3a8ff;
+  border: 1px solid rgba(179, 168, 255, 0.3);
 }
 .st--enviando .st-dot {
   animation: pulse 1.1s ease-in-out infinite;

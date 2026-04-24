@@ -22,10 +22,10 @@ import psycopg2, psycopg2.extras
 from db_config import DB_CONFIG
 from openpyxl import load_workbook
 
-XLSX_PATH = Path(r"C:\Users\NITRO\Downloads\05 Maio_lote 003_APPA.xlsx")
-ABA_GERAL = "Lote Para Envio"
-ABA_OPER  = "Assistencia Médica"   # nao eh usada agora (sem CNPJ/ANS)
-PER_APUR  = "2025-05"
+XLSX_PATH = Path(r"C:\Users\NITRO\Downloads\06 Junho_lote 003_APPA.xlsx")
+ABA_GERAL = "Lote para Envio "
+ABA_OPER  = "Assitencia Médica"   # nao eh usada agora (sem CNPJ/ANS)
+PER_APUR  = "2025-06"
 EMPRESA_ID = 1
 LOTE_ALVO = 3  # ingere so o Lote 3 (o XLSX jah veio filtrado para o 3)
 

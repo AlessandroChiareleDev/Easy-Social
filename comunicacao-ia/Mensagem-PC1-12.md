@@ -43,11 +43,13 @@ Inspecionei 13346777863.xml e 11067218700.xml. Layout OK:
 Caminho A: **S-3000 do recibo MAIS ANTIGO primeiro, depois retif do mais recente.**
 
 Motivos:
+
 - Mais seguro fiscalmente (sem risco de gerar 3a duplicidade ou vrLiq=0 mal interpretado pela RFB)
 - S-3000 é o evento desenhado pela Receita exatamente pra isso (exclusao)
 - Caminho B (vrLiq=0) é gambiarra, poderia ser entendido como pagamento real de R$ 0 e gerar exigencia
 
 **Ordem por CPF:**
+
 1. S-3000 apontando pro recibo ATIVO mais antigo (zera duplicidade)
 2. Aguarda processamento do S-3000 (consultar lote/identificadores)
 3. S-1210 retif (indRetif=2, nrRecibo=ATIVO mais recente que sobrou)
@@ -73,6 +75,7 @@ Nao adapta `/testar-um-cpf` — usa direto:
 - `python-scripts/esocial/esocial_signer.py` (assina XML)
 
 Cria um wrapper offline tipo `enviar_retif.py --cpf <cpf> --dry-run` que:
+
 1. Le o XML ja gerado em `saida_retif_lote1_maio/xml/<cpf>.xml`
 2. Chama o signer
 3. Monta SOAP via soap_builder

@@ -156,7 +156,7 @@ onMounted(carregar)
       </article>
       <article class="kpi">
         <span class="k">OK</span>
-        <strong class="ok">{{ resumo.ok.toLocaleString('pt-BR') }}</strong>
+        <strong class="ok">{{ resumo.ok.toLocaleString('pt-BR') }} <span v-if="resumo.na > 0" class="na-inline" title="N/A (Não aplica)">({{ resumo.na.toLocaleString('pt-BR') }})</span></strong>
       </article>
       <article class="kpi">
         <span class="k">Erro</span>
@@ -165,10 +165,6 @@ onMounted(carregar)
       <article class="kpi">
         <span class="k">Pendente</span>
         <strong class="pend">{{ resumo.pendente.toLocaleString('pt-BR') }}</strong>
-      </article>
-      <article class="kpi">
-        <span class="k">N/A (Não aplica)</span>
-        <strong class="na">{{ resumo.na.toLocaleString('pt-BR') }}</strong>
       </article>
       <article class="kpi">
         <span class="k">Processando</span>
@@ -295,6 +291,12 @@ onMounted(carregar)
 }
 .kpi .na {
   color: #b3a8ff;
+}
+.kpi .na-inline {
+  color: #b3a8ff;
+  font-size: 0.7em;
+  font-weight: 600;
+  margin-left: 4px;
 }
 .kpi .run {
   color: #66d9ff;

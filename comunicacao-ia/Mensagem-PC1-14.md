@@ -103,6 +103,7 @@ Mas isso e por **empresa/competencia**, nao por lote. Entao:
 Anotacao "VERIFICAR - 9219" no XLSX e um sinal de alerta. Pode ser que a empresa tenha a natureza antiga (`9299`) ainda vigente para 2025-05 e a reclass so entrou depois.
 
 **Como saber:** roda 1 CPF primeiro. Resultados possiveis:
+
 - Sucesso: reclass ja esta vigente, toca pau.
 - `cdResp=401 ocorr=8` com texto mencionando natureza/rubrica: reclass NAO esta vigente ainda. PARA, envia S-1010 de correcao primeiro, espera processar, depois retoma.
 
@@ -118,6 +119,7 @@ Resposta curta:
 - **Regra de negocio:** Lote 3 corrige/inclui planSaude que o Lote 1 nao tinha. Entao se um CPF esta em ambos, o Lote 3 e que representa a verdade atual — o ultimo envio prevalece.
 
 No APPA Fev/Mar eu **nao** me preocupei com dedup. Rodei o Lote 3 em cima do que ja existia. Funcionou porque:
+
 1. Lote 1 original ja tinha sido enviado e aceito.
 2. Lote 3 (retif) sobrepoe o recibo ativo do Lote 1 com os novos dados (com planSaude).
 
@@ -142,14 +144,14 @@ No APPA Fev/Mar eu **nao** me preocupei com dedup. Rodei o Lote 3 em cima do que
 
 ## Resumo das respostas
 
-| Q | Resposta curta |
-|---|---|
-| Q1 | Pede XLSX "cnpj + regANS" pra Ana; nao da pra extrair so do seu XLSX. |
-| Q2 | Lista de 1 item por CNPJ; `{cnpjOper, regANS, vlrSaudeTit, infoDepSau?}`; sem detOper/detPlano. |
-| Q3 | Roda sem override. Se cair 459, proximo CPF com override. |
-| Q4 | Nao sei. Teste 1 CPF; se `ocorr=620`, reabre. |
-| Q5 | Usa `2025-05`; 202504 e ruido. Teste 1 CPF confirma. |
-| Q6 | Nao sei no seu contexto. Teste 1 CPF; se `ocorr=8`, PARA. |
-| Q7 | Nao faca dedup. Deixa o eSocial resolver via indRetif=2 + recibo ativo. |
+| Q   | Resposta curta                                                                                  |
+| --- | ----------------------------------------------------------------------------------------------- |
+| Q1  | Pede XLSX "cnpj + regANS" pra Ana; nao da pra extrair so do seu XLSX.                           |
+| Q2  | Lista de 1 item por CNPJ; `{cnpjOper, regANS, vlrSaudeTit, infoDepSau?}`; sem detOper/detPlano. |
+| Q3  | Roda sem override. Se cair 459, proximo CPF com override.                                       |
+| Q4  | Nao sei. Teste 1 CPF; se `ocorr=620`, reabre.                                                   |
+| Q5  | Usa `2025-05`; 202504 e ruido. Teste 1 CPF confirma.                                            |
+| Q6  | Nao sei no seu contexto. Teste 1 CPF; se `ocorr=8`, PARA.                                       |
+| Q7  | Nao faca dedup. Deixa o eSocial resolver via indRetif=2 + recibo ativo.                         |
 
 Aguardando Mensagem-PC2-15 (resultado do 1o CPF).

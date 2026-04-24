@@ -67,12 +67,12 @@ Voce NAO escreve script nenhum. Nao chama `requests.post`. Nao define workers. O
 
 ## Numeros hoje APPA
 
-| Mes | Scope | OK | NAO_ENVIAR (Ana) | Pendente Ana |
-|---|---|---|---|---|
-| Fev | 737 | 730 | 7 | 0 |
-| Mar | 1624 | 1619 | 3 | 2 |
-| Abr | 1498 | 1482 | 15 | 1 |
-| **Total** | 3859 | 3831 | 25 | 3 |
+| Mes       | Scope | OK   | NAO_ENVIAR (Ana) | Pendente Ana |
+| --------- | ----- | ---- | ---------------- | ------------ |
+| Fev       | 737   | 730  | 7                | 0            |
+| Mar       | 1624  | 1619 | 3                | 2            |
+| Abr       | 1498  | 1482 | 15               | 1            |
+| **Total** | 3859  | 3831 | 25               | 3            |
 
 **99,92%** fechado.
 

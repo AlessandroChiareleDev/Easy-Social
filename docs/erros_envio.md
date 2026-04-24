@@ -10,24 +10,24 @@
 
 ## Snapshot geral — 24/04/2026
 
-| Mês | Lote | Scope | OK | Erro | `nao_enviar_ana` | % fechado |
-|---|---:|---:|---:|---:|---:|---:|
-| 2025-02 | 1 | 9.471 | 8.599 | 872 | — | 90,8% |
-| 2025-02 | 2 | 1.390 | 1.279 | 21 | — | 92,0% |
-| 2025-02 | 3 | 737 | 730 | — | 7 | **100%** |
-| 2025-02 | 4 | 2 | — | — | — | — |
-| 2025-03 | 1 | 8.164 | 7.373 | 791 | — | 90,3% |
-| 2025-03 | 2 | 1.395 | 1.275 | 13 | — | 91,4% |
-| 2025-03 | 3 | 1.624 | 1.619 | 2 | 3 | **99,9%** |
-| 2025-03 | 4 | 2 | — | — | — | — |
-| 2025-04 | 1 | 7.142 | 6.221 | 921 | — | 87,1% |
-| 2025-04 | 2 | 1.376 | 1.123 | 147 | — | 81,6% |
-| 2025-04 | 3 | 1.498 | 1.482 | 1 | 15 | **99,9%** |
-| 2025-05 | 1 | 8.724 | 8.583 | **1.438** | — | 85,6% |
-| 2025-05 | 3 | 1.319 | 1.289 | 30 | — | 97,7% |
-| 2025-06 | 1 | 6.827 | 6.781 | 46 | — | 99,3% |
-| 2025-06 | 3 | 1.423 | — | — | — | ainda não enviado |
-| 2025-07 | 1 | 6.559 | 6.516 | 43 | — | 99,3% |
+| Mês     | Lote | Scope |    OK |      Erro | `nao_enviar_ana` |         % fechado |
+| ------- | ---: | ----: | ----: | --------: | ---------------: | ----------------: |
+| 2025-02 |    1 | 9.471 | 8.599 |       872 |                — |             90,8% |
+| 2025-02 |    2 | 1.390 | 1.279 |        21 |                — |             92,0% |
+| 2025-02 |    3 |   737 |   730 |         — |                7 |          **100%** |
+| 2025-02 |    4 |     2 |     — |         — |                — |                 — |
+| 2025-03 |    1 | 8.164 | 7.373 |       791 |                — |             90,3% |
+| 2025-03 |    2 | 1.395 | 1.275 |        13 |                — |             91,4% |
+| 2025-03 |    3 | 1.624 | 1.619 |         2 |                3 |         **99,9%** |
+| 2025-03 |    4 |     2 |     — |         — |                — |                 — |
+| 2025-04 |    1 | 7.142 | 6.221 |       921 |                — |             87,1% |
+| 2025-04 |    2 | 1.376 | 1.123 |       147 |                — |             81,6% |
+| 2025-04 |    3 | 1.498 | 1.482 |         1 |               15 |         **99,9%** |
+| 2025-05 |    1 | 8.724 | 8.583 | **1.438** |                — |             85,6% |
+| 2025-05 |    3 | 1.319 | 1.289 |        30 |                — |             97,7% |
+| 2025-06 |    1 | 6.827 | 6.781 |        46 |                — |             99,3% |
+| 2025-06 |    3 | 1.423 |     — |         — |                — | ainda não enviado |
+| 2025-07 |    1 | 6.559 | 6.516 |        43 |                — |             99,3% |
 
 ---
 
@@ -39,7 +39,7 @@
 - **Quando**: 23/04/2026 17:46 → 19:16 UTC (~1h30).
 - **Endpoint**: `POST /api/s1210-repo/enviar-lote-cpfs`.
 - **Causa raiz**: PC2 disparou retificação S-1210 em massa **sem popular `s1210_operadoras`** do Maio. Para os ~1.438 CPFs que tinham plano de saúde no evento original, o XML novo saiu sem o grupo `planSaude` → eSocial rejeitou com ocorrência código 8.
-- **Código eSocial**: `401` + ocorrência tipo 1 código 8: *"Grupo 'Plano de saúde coletivo' deve ser preenchido."*
+- **Código eSocial**: `401` + ocorrência tipo 1 código 8: _"Grupo 'Plano de saúde coletivo' deve ser preenchido."_
 - **Impacto**: 1.438 CPFs em `status='erro'`. Status original no eSocial **não foi alterado** (evento rejeitado antes de gravar).
 - **Ação corretiva pendente**:
   1. Popular `s1210_operadoras` Maio a partir do XLSX da Ana.
@@ -64,7 +64,7 @@
 
 ## Catálogo de erros recorrentes
 
-### Código 8 (tipo 1) — *"Grupo 'Plano de saúde coletivo' deve ser preenchido"*
+### Código 8 (tipo 1) — _"Grupo 'Plano de saúde coletivo' deve ser preenchido"_
 
 - **Quando acontece**: retificação sem `planSaude` enquanto o evento original TINHA.
 - **Correção**: popular `s1210_operadoras` (CNPJ operadora + regANS + valor titular + dependentes) e reenviar.

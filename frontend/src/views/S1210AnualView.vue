@@ -221,7 +221,7 @@ onMounted(carregar)
   --neon-b: #2d7dff;
   --neon-soft: rgba(79, 142, 245, 0.22);
   --card-bg: rgba(6, 18, 34, 0.72);
-  max-width: 1360px;
+  max-width: 1700px;
   margin: 0 auto;
   padding: 24px 26px 34px;
   background:

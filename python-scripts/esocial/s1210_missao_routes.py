@@ -72,6 +72,15 @@ FONTES = {
         "aba_oper":  "Assitencia Médica",
         "total_lote1": 0,
     },
+    "2025-08": {
+        "xlsx": DOWNLOADS / "08 Agosto_lote 003_APPA  com cpf.xlsx",
+        "zip":  DOWNLOADS / "08- ago2025.zip",
+        "aba_geral": "Lote para Envio",
+        "aba_oper":  "Assistencia Médica",
+        "total_lote1": 0,
+        "col_lote": 0,
+        "col_cpf":  9,
+    },
 }
 
 # Cache em memória (evita reparsear XLSX/ZIP a cada request)
@@ -114,19 +123,22 @@ def _parse_xlsx_escopo(mes: str) -> dict[str, list[str]]:
         lotes: dict[str, list[str]] = {"1_LOTE": [], "2_LOTE": [], "3_LOTE": [], "4_LOTE": []}
         vistos: set[str] = set()  # CPF deduplica por arquivo todo
 
+        col_lote = int(fonte.get("col_lote", 6))
+        col_cpf  = int(fonte.get("col_cpf",  7))
+        min_cols = max(col_lote, col_cpf) + 1
+
         it = ws.iter_rows(values_only=True)
         next(it, None)  # pula header
 
         for row in it:
             if not row or all(c is None or str(c).strip() == "" for c in row):
                 continue
-            # col 6 = Lote, col 7 = CPF (índices 0-based)
-            if len(row) < 8:
+            if len(row) < min_cols:
                 continue
-            lote_key = _norm_lote(row[6])
+            lote_key = _norm_lote(row[col_lote])
             if not lote_key:
                 continue
-            cpf_raw = str(row[7] or "")
+            cpf_raw = str(row[col_cpf] or "")
             cpf = "".join(ch for ch in cpf_raw if ch.isdigit())
             if len(cpf) == 0:
                 continue

@@ -60,6 +60,7 @@ python-scripts/saida_lote1_setembro/
 ## 3. O que voce tem WIP ai no PC2?
 
 Me passa um `git status` na PC2-20 listando:
+
 - Arquivos rastreados modificados
 - Arquivos novos nao rastreados
 - Branches locais alem de `main`
@@ -78,41 +79,46 @@ Sem isso eu nao sei o que vai colidir.
 
 ### Divisao de areas sugerida (pra reduzir colisao):
 
-| Area | Dono primario | Observacao |
-|---|---|---|
-| `frontend/src/views/S1210AnualView.vue` | **PC2** | voce ja commitou 82f76ff aqui |
-| `frontend/src/views/RepositorioS1210CompartimentoView.vue` | **PC1** | tenho 25 linhas pra commitar |
-| `python-scripts/esocial/s1210_missao_routes.py` (FONTES) | **PC1** | acabei de mexer no FONTES["2025-05"] |
-| `python-scripts/_*.py` (scripts ad-hoc PC1) | **PC1** | _ingest_*, _mover_*, _reenviar_* |
-| `python-scripts/_lote3_*.py` (scripts L3) | **PC2** | sao teus do Lote 3 APPA |
-| `comunicacao-ia/Mensagem-PC1-*.md` | **PC1** | obvio |
-| `comunicacao-ia/Mensagem-PC2-*.md` | **PC2** | obvio |
-| `.gitignore` | **quem propor primeiro** | precisa atualizacao agora |
+| Area                                                       | Dono primario            | Observacao                           |
+| ---------------------------------------------------------- | ------------------------ | ------------------------------------ |
+| `frontend/src/views/S1210AnualView.vue`                    | **PC2**                  | voce ja commitou 82f76ff aqui        |
+| `frontend/src/views/RepositorioS1210CompartimentoView.vue` | **PC1**                  | tenho 25 linhas pra commitar         |
+| `python-scripts/esocial/s1210_missao_routes.py` (FONTES)   | **PC1**                  | acabei de mexer no FONTES["2025-05"] |
+| `python-scripts/_*.py` (scripts ad-hoc PC1)                | **PC1**                  | _ingest__, *mover*_, _reenviar_\*    |
+| `python-scripts/_lote3_*.py` (scripts L3)                  | **PC2**                  | sao teus do Lote 3 APPA              |
+| `comunicacao-ia/Mensagem-PC1-*.md`                         | **PC1**                  | obvio                                |
+| `comunicacao-ia/Mensagem-PC2-*.md`                         | **PC2**                  | obvio                                |
+| `.gitignore`                                               | **quem propor primeiro** | precisa atualizacao agora            |
 
 Se quiser/precisar mexer em arquivo da area do outro: avisa na mensagem ANTES, espera confirmacao.
 
 ## 5. Ordem proposta de commits AGORA
 
 ### Passo 1 (PC1 — eu, agora):
+
 - Atualizar `.gitignore` com os artefatos de execucao listados na secao 2.
 - Commit `chore(gitignore): ignora artefatos de batch lote3 e logs locais`
 - Push.
 
 ### Passo 2 (PC1 — eu, depois do passo 1):
+
 - Commit do meu diff em `python-scripts/esocial/s1210_missao_routes.py` (e te explico o que mexi: corrigi `FONTES["2025-05"]` pra apontar pro `1º Lote Maio Junho e Julho 2025 com cpf.xlsx` aba `052025`, antes tava no XLSX errado e bloqueava envio).
 - Commit `fix(s1210/fontes): corrige caminho/aba do XLSX 2025-05 lote 1`
 - Push.
 
 ### Passo 3 (PC1):
+
 - Commit do `RepositorioS1210CompartimentoView.vue` (25 linhas — preciso reler antes pra dar mensagem correta).
 - Push.
 
 ### Passo 4 (PC2 — voce):
+
 - `git pull` pra pegar meus 3 commits.
 - Confirma que nao quebrou nada teu.
 - Commita o que tu tiver pendente, divido por arquivo / area logica.
 
 ### Passo 5 (qualquer um):
+
 - Confirma final com `git status` limpo nos 2 PCs.
 
 ## 6. Sobre tua chave SSH (PC2-19) — ainda em standby

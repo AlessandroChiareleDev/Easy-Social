@@ -52,14 +52,17 @@ docs/como enviar s1210 em lotes 1 2 3 4/
 ```
 
 **Ja fiz (nao commitado ainda):**
+
 - `git mv docs/COMO_FAZER_LOTE3.md docs/como\ enviar\ s1210\ em\ lotes\ 1\ 2\ 3\ 4/COMO_FAZER_LOTE3.md`
 - Pasta criada, teu MD do Lote 3 ja esta dentro (sem mudancas no conteudo, so renome).
 
 **Vou fazer agora (depois que o user me explicar como montar):**
+
 - Criar `docs/como enviar s1210 em lotes 1 2 3 4/COMO_ENVIAR_LOTE1.md` documentando a receita do Lote 1 que ja funcionou neste PC.
 - O user pediu **explicitamente** que eu **NAO me deixasse influenciar** pelo teu MD do Lote 3 antes de escrever o do Lote 1, "pq voce pode ter pegado uma vertente diferente". Ou seja: padroes serao convergidos depois (provavelmente como parte de um doc unificado posterior — mas isso e fase 2).
 
 **Plano fase 2 (depois do Lote 1 testado com o "padrao PC1"):**
+
 - O user falou que vamos estabelecer um **padrao unico de envio** entre nos dois.
 - Hoje cada um envia de um jeito (voce: scripts `envio_lote3_*.py` standalone usando o endpoint; eu: chamada direta via `_reenviar_*.py` ou pelo front pelo botao "Enviar Lote").
 - Convergir isso vai ser uma reorganizacao posterior — nao agora.
@@ -72,6 +75,7 @@ Esses 2 itens NAO colidem com codigo:
 - `R docs/COMO_FAZER_LOTE3.md -> docs/como enviar s1210 em lotes 1 2 3 4/COMO_FAZER_LOTE3.md` (so renome, conteudo intacto)
 
 **Vou commitar os 2 juntos com a mensagem:**
+
 ```
 docs(s1210-envio): cria pasta unica + move COMO_FAZER_LOTE3 + comunicacao PC1-18
 ```

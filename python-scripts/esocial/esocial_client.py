@@ -8,9 +8,37 @@ Baseado no código de referência do repositório Projeto (comprovado em homolog
 import os
 import re
 import tempfile
+import threading
+import time as _time_mod
+from datetime import datetime as _dt
+from pathlib import Path as _Path
 import requests
 import urllib3
 from lxml import etree
+
+# ── PATCH LOCAL 2026-04-25 (XMLs perdidos) ────────────────────
+# Quando env ESOCIAL_DUMP_XML_DIR está setado, salva XMLs crus de
+# enviar_lote() e consultar_lote() em <dir>/envios/ e <dir>/consultas/.
+# Ver ALERTA_CRITICO_XMLS_RETORNO_PERDIDOS.md.
+_DUMP_LOCK = threading.Lock()
+_CONSULTA_COUNTER: dict[str, int] = {}
+
+
+def _dump_xml(kind: str, content: str, tag: str) -> str | None:
+    """Salva XML cru em ESOCIAL_DUMP_XML_DIR/<kind>/. Retorna o path salvo (ou None)."""
+    base = os.environ.get("ESOCIAL_DUMP_XML_DIR")
+    if not base:
+        return None
+    try:
+        d = _Path(base) / kind
+        d.mkdir(parents=True, exist_ok=True)
+        ts = _dt.now().strftime("%Y%m%d_%H%M%S_%f")[:-3]
+        safe_tag = re.sub(r"[^A-Za-z0-9_.-]", "_", tag)[:80]
+        path = d / f"{kind}_{ts}_{safe_tag}.xml"
+        path.write_text(content, encoding="utf-8")
+        return str(path)
+    except Exception:
+        return None
 from cryptography.hazmat.primitives.serialization import (
     pkcs12,
     Encoding,
@@ -123,6 +151,8 @@ class ESocialClient:
                     "erro": str(e),
                 }
 
+            # PATCH: dump XML cru de envio (se ESOCIAL_DUMP_XML_DIR setado)
+            _dump_xml("envios", response.text, "envio")
             # Parsear resposta
             return ESocialClient._parsear_resposta_envio(response.text)
 
@@ -267,6 +297,12 @@ class ESocialClient:
                     "erro": str(e),
                 }
 
+            # PATCH: dump XML cru de consulta (se ESOCIAL_DUMP_XML_DIR setado)
+            with _DUMP_LOCK:
+                attempt = _CONSULTA_COUNTER.get(protocolo, 0) + 1
+                _CONSULTA_COUNTER[protocolo] = attempt
+            tag = f"proto_{protocolo[-12:]}_att{attempt:03d}"
+            _dump_xml("consultas", response.text, tag)
             resultado = ESocialClient._parsear_resposta_consulta(response.text)
             resultado["xml_resposta"] = response.text
             return resultado

@@ -2,6 +2,39 @@
 
 ---
 
+## � PENDÊNCIA — SYNC RECIBOS jun/2025 L2 plansaude (2026-05-05)
+
+**163 retificações S-1210 plansaude jun/2025 L2 enviadas em PROD (todas cod=201 aceito).**
+
+- Marcadas `status='ok'` no DB com flag `RECIBO_PENDENTE_SYNC|jun L2 plansaude` em `descricao_resposta`
+- `nr_recibo_novo` está NULL — não foi consultado para não esgotar cota diária do eSocial
+- Após fechamento do mês, rodar para popular recibos:
+  ```sql
+  SELECT cpf, protocolo FROM s1210_cpf_envios
+  WHERE descricao_resposta LIKE 'RECIBO_PENDENTE_SYNC%' AND nr_recibo_novo IS NULL;
+  ```
+- Loop: para cada protocolo, GET `/api/esocial/consultar/{proto}?ambiente=1` e UPDATE `nr_recibo_novo`
+- Arquivos: `python-scripts/saida_plansaude_jun_l2.json` (envios), `_marca_ok_jun_l2.py`, `_flag_recibo_pendente.py`
+
+### 🟠 42 CPFs restantes em ERRO no jun/2025 L2 (cod 401/459)
+
+**Erro idêntico nos 42:** `"Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado"`
+
+- Causa: o `nr_recibo_usado` na retificação aponta para um evento **já excluído/retificado** no eSocial — o recibo no DB está desatualizado
+- Solução: consultar identificadores ATIVOS no eSocial (`WsConsultarIdentificadoresEventos`) para descobrir o recibo vigente de cada CPF e re-retificar com ele
+- ⚠️ **Precisa autorização explícita** — gasta cota diária (limite 10/dia Download Cirúrgico)
+- Diagnóstico: `python-scripts/_erros_jun_l2.py`
+
+---
+
+## �🚨🔴 ALERTA CRÍTICO — XMLs DE RETORNO PERDIDOS (2026-04-25)
+
+**LEIA ANTES DE RODAR QUALQUER ENVIO:** [ALERTA_CRITICO_XMLS_RETORNO_PERDIDOS.md](ALERTA_CRITICO_XMLS_RETORNO_PERDIDOS.md)
+
+Resumo: todos os envios S-1210 até hoje (Fev–Out/2025) foram processados, mas o backend NÃO salvou os XMLs de retorno em disco — só os campos parseados no banco. **Ana precisa dos XMLs.** A partir do **L1 Novembro/2025** todo envio DEVE capturar os XMLs em `ARQUIVOS_RETORNO/<YYYY-MM>/`. Detalhes, plano de recuperação e patches no arquivo acima.
+
+---
+
 ## ⛔ AGENTE / DESENVOLVEDOR: MISSÃO ATIVA S-1210 APPA
 
 **ANTES DE QUALQUER AÇÃO relacionada a S-1210, lotes, APPA, envio em massa dos 3 meses (fev/mar/abr 2025):**

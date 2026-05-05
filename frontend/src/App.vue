@@ -15,32 +15,14 @@ const navGroups = [
   {
     id: 'arquivos',
     label: 'Arquivos, Folhas e Tabelas',
-    items: [
-      { to: '/tabelas', label: 'Tabelas', icon: 'table' },
-      { to: '/cruzamento', label: 'Cruzamento', icon: 'cruzamento' },
-      { to: '/depara', label: 'De-Para', icon: 'depara' },
-    ],
-  },
-  {
-    id: 'rubricas',
-    label: 'Rubricas',
-    items: [
-      { to: '/validador', label: 'Validador', icon: 'check' },
-      { to: '/confirmar', label: 'Confirmar', icon: 'confirm' },
-      { to: '/eb-cruzamento', label: 'EB Skills Cruzamentos', icon: 'cruzamento' },
-    ],
+    items: [{ to: '/tabelas', label: 'Tabelas', icon: 'table' }],
   },
   {
     id: 'automacao',
     label: 'Automação eSocial',
     items: [
-      { to: '/bot', label: 'Robô eSocial', icon: 'bot' },
       { to: '/esocial', label: 'eSocial S-1010', icon: 'esocial' },
-      { to: '/repositorio-s1210', label: 'Repositório S-1210', icon: 'esocial' },
       { to: '/s1210-anual', label: 'S-1210 Anual', icon: 'esocial' },
-      { to: '/s1210-missao', label: 'S-1210 Missão (legado)', icon: 'esocial' },
-      { to: '/explorador', label: 'Explorador', icon: 'explorador' },
-      { to: '/pipeline', label: 'Pipeline 98-10-99', icon: 'pipeline' },
     ],
   },
   {
@@ -51,7 +33,29 @@ const navGroups = [
       { to: '/problemas', label: 'Problemas', icon: 'problemas' },
     ],
   },
+  {
+    id: 'legado',
+    label: 'Sistema Legado',
+    collapsible: true,
+    items: [
+      { to: '/cruzamento', label: 'Cruzamento', icon: 'cruzamento' },
+      { to: '/depara', label: 'De-Para', icon: 'depara' },
+      { to: '/validador', label: 'Validador', icon: 'check' },
+      { to: '/confirmar', label: 'Confirmar', icon: 'confirm' },
+      { to: '/eb-cruzamento', label: 'EB Skills Cruzamentos', icon: 'cruzamento' },
+      { to: '/bot', label: 'Robô eSocial', icon: 'bot' },
+      { to: '/repositorio-s1210', label: 'Repositório S-1210', icon: 'esocial' },
+      { to: '/s1210-missao', label: 'S-1210 Missão (legado)', icon: 'esocial' },
+      { to: '/explorador', label: 'Explorador', icon: 'explorador' },
+      { to: '/pipeline', label: 'Pipeline 98-10-99', icon: 'pipeline' },
+    ],
+  },
 ]
+
+const openGroups = ref<Record<string, boolean>>({ legado: false })
+function toggleGroup(id: string) {
+  openGroups.value[id] = !openGroups.value[id]
+}
 
 const allNavItems = navGroups.flatMap((g) => g.items)
 
@@ -169,9 +173,31 @@ onUnmounted(() => {
 
         <!-- Grouped nav items -->
         <div v-for="(group, gi) in navGroups" :key="group.id" :class="gi > 0 ? 'mt-2' : ''">
-          <!-- Group header -->
+          <!-- Group header (collapsible) -->
+          <button
+            v-if="!sidebarCollapsed && group.collapsible"
+            type="button"
+            @click="toggleGroup(group.id)"
+            class="w-full flex items-center justify-between px-3 pt-3 pb-1.5 text-[10px] font-semibold uppercase tracking-wider text-slate-500 hover:text-slate-300 transition-colors"
+            style="border-top: 1px solid rgba(255, 255, 255, 0.06)"
+          >
+            <span>{{ group.label }}</span>
+            <svg
+              class="w-3.5 h-3.5 transition-transform duration-200"
+              :class="openGroups[group.id] ? 'rotate-90' : ''"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </button>
+          <!-- Group header (static) -->
           <div
-            v-if="!sidebarCollapsed"
+            v-else-if="!sidebarCollapsed"
             class="px-3 pt-3 pb-1.5 text-[10px] font-semibold uppercase tracking-wider text-slate-500"
             style="border-top: 1px solid rgba(255, 255, 255, 0.06)"
           >
@@ -181,6 +207,7 @@ onUnmounted(() => {
 
           <RouterLink
             v-for="item in group.items"
+            v-show="!group.collapsible || sidebarCollapsed || openGroups[group.id]"
             :key="item.to"
             :to="item.to"
             :class="[

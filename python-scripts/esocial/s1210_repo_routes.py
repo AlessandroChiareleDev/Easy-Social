@@ -469,7 +469,7 @@ def overview_anual(
     if ano < 2000 or ano > 2100:
         raise HTTPException(400, f"ano invÃ¡lido: {ano}")
 
-    meses = [f"{ano}-{m:02d}" for m in range(2, 13)]
+    meses = [f"{ano}-{m:02d}" for m in range(1, 13)]
     conn = _db()
     try:
         with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
@@ -1484,6 +1484,7 @@ class EnviarLoteCpfsReq(BaseModel):
     plan_saude_override: Optional[dict] = None  # {cnpjOper, regANS, vlrSaudeTit} aplicado a todos
     plan_saude_por_cpf: Optional[dict[str, list[dict]]] = None  # {cpf: [{cnpjOper, regANS, vlrSaudeTit}, ...]} â€” usado no Lote 2
     recibo_override_por_cpf: Optional[dict[str, str]] = None  # {cpf: nr_recibo} â€” forÃ§a recibo, bypass chain walk
+    forcar_inclusao: bool = False  # se True envia ind_retif=1 sem nrRecibo (caso evento foi excluido externamente)
 
 
 _MAX_CPFS_POR_LOTE = 50
@@ -1571,6 +1572,23 @@ def enviar_lote_cpfs(req: EnviarLoteCpfsReq):
         _CACHE_XLSX[req.per_apur] = _parse_xlsx_escopo(req.per_apur)
     cpfs_lote_xlsx = set(_CACHE_XLSX[req.per_apur].get(f"{req.lote_num}_LOTE", []))
 
+    # Fallback: aceita CPFs vindos de s1210_cpf_scope (caminho oficial p/ Lote 2/3/4
+    # cujo XLSX nao esta em FONTES). Une os dois conjuntos.
+    try:
+        conn_scope = _db()
+        try:
+            with conn_scope.cursor() as cur_sc:
+                cur_sc.execute(
+                    "SELECT cpf FROM s1210_cpf_scope "
+                    "WHERE empresa_id=%s AND per_apur=%s AND lote_num=%s",
+                    (DEFAULT_EMPRESA_ID, req.per_apur, req.lote_num),
+                )
+                cpfs_lote_xlsx |= {r[0] for r in cur_sc.fetchall()}
+        finally:
+            conn_scope.close()
+    except Exception as _e:
+        log.warning(f"[scope-fallback] falha consultando s1210_cpf_scope: {_e}")
+
     # Carrega cert uma vez
     try:
         cnpj, pfx_data, senha = _load_cert_ativo()
@@ -1644,13 +1662,15 @@ def enviar_lote_cpfs(req: EnviarLoteCpfsReq):
                 plan_saude_cpf = req.plan_saude_por_cpf[cpf]
             elif req.plan_saude_override:
                 plan_saude_cpf = req.plan_saude_override
+            _ind_retif = "1" if req.forcar_inclusao else "2"
+            _nr_rec = None if req.forcar_inclusao else prep["recibo_usado"]
             tarefas.append((
                 prep["seq"], cpf, empregador,
                 prep["per_apur_zip"],
                 prep["info_pgtos"],
                 prep["info_ir_cr"],
-                "2",                        # ind_retif
-                prep["recibo_usado"],
+                _ind_retif,                 # ind_retif
+                _nr_rec,
                 pfx_data, senha,
                 "1",                        # tp_amb
                 plan_saude_cpf,             # plan_saude (por CPF ou override global)

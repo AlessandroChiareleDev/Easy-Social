@@ -1,0 +1,873 @@
+cpf	categoria	status	codigo	descricao
+00050073648	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 00050073648
+00056143680	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 00056143680
+00092184758	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 00092184758
+00096529733	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 00096529733
+00118112775	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 00118112775
+00145366685	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 00145366685
+00192004719	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 00192004719
+00460956752	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 00460956752
+00475997662	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 00475997662
+00498309703	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 00498309703
+00508084601	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 00508084601
+00521525616	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 00521525616
+00694904732	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 00694904732
+00695959760	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 00695959760
+00734636717	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00743026128	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00744385652	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00748483640	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00748843604	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00750978775	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00751323705	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00752151797	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00757126790	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00757767583	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00763966495	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00768939100	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00778174948	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00788179519	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00792605195	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00794587500	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00794696554	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00801431131	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00804602590	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00804646538	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00805534512	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00806925590	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00820225509	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00821022601	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00821043609	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00822980509	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00825922682	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00826801757	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00830770143	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00835746542	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00837979048	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00839209940	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00839543506	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00840537557	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00841524513	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00844599565	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00850216524	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00851888593	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00857118536	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00861009550	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00863606555	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00863824110	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 00863824110
+00865114595	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+00879192810	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 00879192810
+00962501786	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 00962501786
+01174187654	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 01174187654
+01179232739	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 01179232739
+01326933728	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 01326933728
+01340805642	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 01340805642
+01355385725	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 01355385725
+01382014635	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 01382014635
+01385227664	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 01385227664
+01443790745	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 01443790745
+01500254754	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 01500254754
+01537251686	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 01537251686
+01609071441	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 01609071441
+01670674789	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 01670674789
+01815081767	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 01815081767
+01848048688	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 01848048688
+01871276977	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 01871276977
+01917926677	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 01917926677
+01941098797	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 01941098797
+02012571654	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 02012571654
+02118986351	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 02118986351
+02174452413	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 02174452413
+02322157740	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 02322157740
+02350695662	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 02350695662
+02366426690	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 02366426690
+02432910605	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 02432910605
+02536863778	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 02536863778
+02560544792	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 02560544792
+02657232647	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 02657232647
+02710481588	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 02710481588
+02795118769	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 02795118769
+02828546659	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 02828546659
+02832223010	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 02832223010
+02837512664	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 02837512664
+02904186662	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 02904186662
+02910648761	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 02910648761
+03001114100	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 03001114100
+03013228725	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 03013228725
+03048273557	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 03048273557
+03062656646	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 03062656646
+03090172704	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 03090172704
+03111951561	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 03111951561
+03122335581	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 03122335581
+03148582616	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 03148582616
+03185496973	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 03185496973
+03222485666	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 03222485666
+03258915750	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 03258915750
+03320302612	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 03320302612
+03365989714	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 03365989714
+03458557520	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 03458557520
+03540481630	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 03540481630
+03595443713	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 03595443713
+03598032617	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 03598032617
+03688052633	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 03688052633
+03691711529	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 03691711529
+03709420199	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 03709420199
+03727764694	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 03727764694
+03740754761	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 03740754761
+03743641682	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 03743641682
+03749023727	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 03749023727
+03782397673	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 03782397673
+03795899664	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 03795899664
+03804485723	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 03804485723
+03848942160	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 03848942160
+03905188910	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 03905188910
+03929126605	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 03929126605
+03955034690	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 03955034690
+03972847645	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 03972847645
+04002030148	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 04002030148
+04029456626	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 04029456626
+04031226608	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 04031226608
+04106702606	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 04106702606
+04173544600	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 04173544600
+04217346719	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 04217346719
+04270465727	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 04270465727
+04280272700	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 04280272700
+04292856710	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 04292856710
+04298282686	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 04298282686
+04304806602	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 04304806602
+04351486643	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 04351486643
+04358866654	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 04358866654
+04415848702	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 04415848702
+04433363774	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 04433363774
+04457431745	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 04457431745
+04547083940	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 04547083940
+04555810104	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 04555810104
+04672047644	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 04672047644
+04686244811	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 04686244811
+04739242508	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 04739242508
+04746789703	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 04746789703
+04769297416	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 04769297416
+04798863696	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 04798863696
+04819707540	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 04819707540
+04840306125	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 04840306125
+04860480120	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 04860480120
+04865199969	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 04865199969
+04911249617	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 04911249617
+04930063469	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 04930063469
+04952743136	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 04952743136
+04957765642	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 04957765642
+04976405621	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 04976405621
+05044317578	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05044317578
+05065598665	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05065598665
+05123332545	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05123332545
+05137508780	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05137508780
+05138032623	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05138032623
+05145544600	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05145544600
+05183775630	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05183775630
+05184012435	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05184012435
+05240195684	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05240195684
+05267908657	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05267908657
+05296485718	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05296485718
+05312431761	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05312431761
+05322716610	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05322716610
+05347985780	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05347985780
+05354125685	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05354125685
+05372226773	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05372226773
+05389066774	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05389066774
+05408092763	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05408092763
+05408619605	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05408619605
+05414115788	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05414115788
+05430065650	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05430065650
+05433472736	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05433472736
+05441475617	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05441475617
+05455171682	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05455171682
+05479117696	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05479117696
+05506909640	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05506909640
+05516100186	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05516100186
+05560986682	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05560986682
+05568442622	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05568442622
+05638169709	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05638169709
+05648143770	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05648143770
+05663145761	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05663145761
+05664059702	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05664059702
+05681678725	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05681678725
+05697769709	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05697769709
+05722011762	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05722011762
+05750386910	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05750386910
+05779846758	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05779846758
+05845619548	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05845619548
+05850790136	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05850790136
+05887387602	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05887387602
+05916431708	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05916431708
+05948030121	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05948030121
+05969936685	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05969936685
+05973078655	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 05973078655
+06017471945	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 06017471945
+06052273577	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 06052273577
+06064950102	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 06064950102
+06065628697	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 06065628697
+06065692603	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 06065692603
+06070040619	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 06070040619
+06086567123	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 06086567123
+06152387698	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 06152387698
+06157310669	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 06157310669
+06195620726	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 06195620726
+06196436503	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 06196436503
+06196595482	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 06196595482
+06201325158	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 06201325158
+06240571601	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 06240571601
+06261082170	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 06261082170
+06284901780	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 06284901780
+06338167523	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 06338167523
+06352051650	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 06352051650
+06379202609	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 06379202609
+06493952557	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 06493952557
+06534646650	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 06534646650
+06696656650	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 06696656650
+06751266650	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 06751266650
+06762523978	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 06762523978
+06769399610	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 06769399610
+06917699667	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 06917699667
+06954635197	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 06954635197
+06957517608	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 06957517608
+06958845650	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 06958845650
+06976014632	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 06976014632
+06995982657	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 06995982657
+07003698722	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 07003698722
+07015192586	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 07015192586
+07023750630	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 07023750630
+07070741774	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 07070741774
+07080169607	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 07080169607
+07083019169	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 07083019169
+07100568692	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 07100568692
+07102529783	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 07102529783
+07123845617	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 07123845617
+07132184792	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 07132184792
+07160977700	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 07160977700
+07200006610	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 07200006610
+07270525943	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 07270525943
+07298851780	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 07298851780
+07342082198	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 07342082198
+07388120483	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 07388120483
+07517161628	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 07517161628
+07518028670	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 07518028670
+07526414509	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 07526414509
+07528925764	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 07528925764
+07530385607	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 07530385607
+07536741731	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 07536741731
+07539387742	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 07539387742
+07585513631	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 07585513631
+07590906107	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 07590906107
+07620931708	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 07620931708
+07656945733	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 07656945733
+07700055432	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 07700055432
+07704803573	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 07704803573
+07729939630	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 07729939630
+07782710723	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 07782710723
+07843977910	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 07843977910
+07861933601	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 07861933601
+07911748756	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 07911748756
+08012640651	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08012640651
+08039238722	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08039238722
+08049774619	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08049774619
+08056166670	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08056166670
+08078820704	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08078820704
+08166724669	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08166724669
+08187406712	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08187406712
+08191269775	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08191269775
+08242101663	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08242101663
+08264385630	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08264385630
+08305302741	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08305302741
+08308158641	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08308158641
+08315486730	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08315486730
+08366443604	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08366443604
+08487091792	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08487091792
+08504537633	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08504537633
+08539408600	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08539408600
+08547566635	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08547566635
+08558470936	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08558470936
+08586048763	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08586048763
+08602564643	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08602564643
+08660613635	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08660613635
+08681763628	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08681763628
+08714825767	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08714825767
+08716585690	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08716585690
+08732268793	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08732268793
+08736298760	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08736298760
+08741118707	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08741118707
+08742728746	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08742728746
+08744138938	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08744138938
+08750760688	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08750760688
+08762602705	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08762602705
+08780975704	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08780975704
+08786176714	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08786176714
+08866240613	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08866240613
+08868876663	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08868876663
+08872205689	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08872205689
+08918493606	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08918493606
+08918684614	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08918684614
+08943957777	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08943957777
+08959267686	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08959267686
+08962523612	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08962523612
+08972619680	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 08972619680
+09060702794	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 09060702794
+09082225727	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 09082225727
+09105640601	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 09105640601
+09118863701	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 09118863701
+09124300608	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 09124300608
+09143239706	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 09143239706
+09147811625	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 09147811625
+09183564667	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 09183564667
+09189146638	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 09189146638
+09209418778	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 09209418778
+09216104759	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 09216104759
+09235084733	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 09235084733
+09267836617	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 09267836617
+09277059664	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 09277059664
+09334472723	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 09334472723
+09348116797	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 09348116797
+09384420905	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 09384420905
+09394411607	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 09394411607
+09418987767	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 09418987767
+09421743644	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 09421743644
+09441616699	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 09441616699
+09453614408	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 09453614408
+09497652607	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 09497652607
+09574319539	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 09574319539
+09632027663	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 09632027663
+09659003633	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 09659003633
+09687878940	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 09687878940
+09691268752	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 09691268752
+09701217683	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 09701217683
+09810581750	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 09810581750
+09828008785	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 09828008785
+09839738658	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 09839738658
+09894145663	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 09894145663
+09929442600	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 09929442600
+09933157710	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 09933157710
+09945308700	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 09945308700
+09994927990	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 09994927990
+10000622796	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10000622796
+10008631743	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10008631743
+10026186900	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10026186900
+10032650655	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10032650655
+10048241733	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10048241733
+10091956625	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10091956625
+10114499608	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10114499608
+10125926774	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10125926774
+10156559714	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10156559714
+10156938650	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10156938650
+10177210680	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10177210680
+10180309560	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10180309560
+10278518605	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10278518605
+10355826780	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10355826780
+10356662608	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10356662608
+10362634793	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10362634793
+10362687641	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10362687641
+10395211697	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10395211697
+10410386740	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10410386740
+10415665655	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10415665655
+10464068681	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10464068681
+10523971745	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10523971745
+10527283754	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10527283754
+10532016726	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10532016726
+10566776600	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10566776600
+10606134689	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10606134689
+10615807682	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10615807682
+10617548633	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10617548633
+10640104746	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10640104746
+10654278750	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10654278750
+10661063631	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10661063631
+10682102903	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10682102903
+10750067756	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10750067756
+10767604652	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10767604652
+10777051664	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10777051664
+10840835663	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10840835663
+10860547680	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10860547680
+10860647714	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10860647714
+10872043649	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10872043649
+10882156705	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10882156705
+10963879723	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10963879723
+10974945781	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 10974945781
+11006776745	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11006776745
+11049854705	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11049854705
+11052492711	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11052492711
+11053759789	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11053759789
+11067812601	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11067812601
+11137173602	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11137173602
+11151947636	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11151947636
+11160072663	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11160072663
+11172881618	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11172881618
+11211116700	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11211116700
+11220394688	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11220394688
+11221601784	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11221601784
+11254983740	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11254983740
+11278350764	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11278350764
+11284879771	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11284879771
+11321588690	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11321588690
+11357119763	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11357119763
+11396444750	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11396444750
+11407474600	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11407474600
+11432580612	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11432580612
+11448341710	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11448341710
+11519204795	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11519204795
+11558017763	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11558017763
+11574426761	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11574426761
+11633006670	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11633006670
+11648137733	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11648137733
+11702382621	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11702382621
+11786372630	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11786372630
+11822038766	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11822038766
+11854311603	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11854311603
+11876461721	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11876461721
+11881366669	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11881366669
+11891334743	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11891334743
+11912181630	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11912181630
+11923201662	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11923201662
+11931056765	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11931056765
+11936224763	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11936224763
+11944980601	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11944980601
+11952398665	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11952398665
+11997034786	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11997034786
+11997246708	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11997246708
+11998723500	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 11998723500
+12038361711	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 12038361711
+12138902684	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 12138902684
+12139233603	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 12139233603
+12176679628	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 12176679628
+12266115677	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 12266115677
+12301039617	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 12301039617
+12315836654	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 12315836654
+12395322709	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 12395322709
+12435257627	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 12435257627
+12473706662	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 12473706662
+12541742738	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 12541742738
+12543536663	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 12543536663
+12558820770	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 12558820770
+12561534600	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 12561534600
+12608245609	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 12608245609
+12638026646	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 12638026646
+12663607606	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 12663607606
+12702879667	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 12702879667
+12762184606	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 12762184606
+12801964751	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 12801964751
+12822431604	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 12822431604
+12847210601	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 12847210601
+12848692707	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 12848692707
+12849470686	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 12849470686
+12855255660	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 12855255660
+12881842631	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 12881842631
+12885373601	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 12885373601
+12889430677	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 12889430677
+12889550737	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 12889550737
+12896019685	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 12896019685
+12899254707	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 12899254707
+12905633654	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 12905633654
+12914993773	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 12914993773
+12921383608	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 12921383608
+12943760633	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 12943760633
+12951414692	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 12951414692
+12951469675	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 12951469675
+12951505655	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 12951505655
+12958934799	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 12958934799
+12985202663	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 12985202663
+13001758775	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13001758775
+13001898607	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13001898607
+13017890708	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13017890708
+13018724747	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13018724747
+13059855757	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13059855757
+13086981784	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13086981784
+13091641775	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13091641775
+13095954700	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13095954700
+13148298748	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13148298748
+13161858697	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13161858697
+13162090750	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13162090750
+13201480770	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13201480770
+13239294796	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13239294796
+13239579790	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13239579790
+13240959704	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13240959704
+13252684705	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13252684705
+13257787618	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13257787618
+13298816647	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13298816647
+13317438770	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13317438770
+13400238732	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13400238732
+13452579700	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13452579700
+13489731700	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13489731700
+13495210601	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13495210601
+13528741724	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13528741724
+13550878729	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13550878729
+13567432770	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13567432770
+13593759705	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13593759705
+13596370604	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13596370604
+13611333760	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13611333760
+13623074756	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13623074756
+13647924784	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13647924784
+13659121673	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13659121673
+13679085664	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13679085664
+13705817698	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13705817698
+13712001657	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13712001657
+13761786646	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13761786646
+13776130628	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13776130628
+13801685705	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13801685705
+13820900721	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13820900721
+13848583771	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13848583771
+13876254620	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13876254620
+13882174730	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13882174730
+13893923683	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13893923683
+13950072764	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13950072764
+13950659692	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 13950659692
+13999122757	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+14001672642	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14001672642
+14009443766	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+14013345714	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+14014399699	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+14014839761	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14014839761
+14016336848	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+14020690731	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+14021035737	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+14034503742	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+14034938714	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14034938714
+14042436587	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+14045533630	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14045533630
+14050222728	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+14079075650	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14079075650
+14081669686	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14081669686
+14099860710	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14099860710
+14109586712	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14109586712
+14128450685	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14128450685
+14177849626	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14177849626
+14184445705	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14184445705
+14205127650	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14205127650
+14208972688	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14208972688
+14213161617	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14213161617
+14220908684	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14220908684
+14242558724	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14242558724
+14258258776	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14258258776
+14262296660	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14262296660
+14265017738	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14265017738
+14297120747	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14297120747
+14322130755	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14322130755
+14363539631	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14363539631
+14379590674	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14379590674
+14388876712	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14388876712
+14423144786	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14423144786
+14433423785	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14433423785
+14444126639	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14444126639
+14463826721	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14463826721
+14482038725	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14482038725
+14483463713	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14483463713
+14502166766	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14502166766
+14502799700	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14502799700
+14520807638	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14520807638
+14523861706	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14523861706
+14532614783	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14532614783
+14542512711	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14542512711
+14564230611	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14564230611
+14604781770	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14604781770
+14647410773	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14647410773
+14663551742	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14663551742
+14803915652	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14803915652
+14820863606	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14820863606
+14876544727	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14876544727
+14935968702	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14935968702
+14946287752	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 14946287752
+15004845719	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 15004845719
+15038512810	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 15038512810
+15067934794	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 15067934794
+15151446746	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 15151446746
+15159215735	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 15159215735
+15181024688	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 15181024688
+15191053710	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 15191053710
+15211620771	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 15211620771
+15241236767	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 15241236767
+15366699894	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 15366699894
+15491883646	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 15491883646
+15496553610	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 15496553610
+15596035696	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 15596035696
+15610038758	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 15610038758
+15627692600	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 15627692600
+15630201735	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 15630201735
+15684207731	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 15684207731
+15688528788	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 15688528788
+15794756713	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 15794756713
+15803816698	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 15803816698
+15810978673	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 15810978673
+15810989608	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 15810989608
+15827699748	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 15827699748
+15842536730	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 15842536730
+15855726754	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 15855726754
+15891439735	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+15892465780	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 15892465780
+15928001738	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 15928001738
+15934643711	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 15934643711
+15945151661	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 15945151661
+15954806683	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 15954806683
+15989085613	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 15989085613
+16018987627	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 16018987627
+16067358611	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 16067358611
+16079057794	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 16079057794
+16108512776	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 16108512776
+16135523783	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 16135523783
+16143494797	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 16143494797
+16167448710	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 16167448710
+16211665628	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 16211665628
+16226744723	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 16226744723
+16241791770	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 16241791770
+16284994788	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 16284994788
+16423898707	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 16423898707
+16450267798	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 16450267798
+16470175643	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 16470175643
+16493653738	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 16493653738
+16505294732	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 16505294732
+16684011773	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 16684011773
+16686754633	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 16686754633
+16728112790	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 16728112790
+16768644742	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 16768644742
+16831164706	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 16831164706
+16833803633	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 16833803633
+16863536773	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 16863536773
+16899265702	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 16899265702
+16931033468	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 16931033468
+16969016692	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 16969016692
+17047582703	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 17047582703
+17061848677	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 17061848677
+17084742697	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 17084742697
+17204246756	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 17204246756
+17243089712	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 17243089712
+17250309692	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 17250309692
+17363055491	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 17363055491
+17509032709	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 17509032709
+17698883736	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 17698883736
+17748802700	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 17748802700
+17790820702	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 17790820702
+17814631742	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 17814631742
+17887172799	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 17887172799
+17937764740	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 17937764740
+18048938707	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 18048938707
+18077265685	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 18077265685
+18098792722	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 18098792722
+18260625725	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 18260625725
+18334368739	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 18334368739
+18555685788	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 18555685788
+18567072700	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 18567072700
+18647667786	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 18647667786
+18727938786	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 18727938786
+18738871750	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 18738871750
+18760541822	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 18760541822
+18857028763	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 18857028763
+19106681760	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 19106681760
+19122205713	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 19122205713
+19173028789	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 19173028789
+19226816794	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 19226816794
+19350809702	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 19350809702
+19417481711	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 19417481711
+19605514770	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 19605514770
+19815273892	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 19815273892
+19852239708	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 19852239708
+20754575730	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 20754575730
+21256975729	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 21256975729
+22446124739	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 22446124739
+25549499649	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 25549499649
+27132604856	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 27132604856
+27238895803	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 27238895803
+28558219591	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 28558219591
+30548972818	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 30548972818
+31948502615	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 31948502615
+32742430865	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 32742430865
+32859324810	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 32859324810
+33664504879	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 33664504879
+34463577934	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 34463577934
+34662906865	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 34662906865
+34921044520	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 34921044520
+34997865672	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 34997865672
+35210896811	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 35210896811
+35280527831	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 35280527831
+35714429893	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 35714429893
+36615483874	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 36615483874
+36629749839	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 36629749839
+37171180808	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 37171180808
+37279620892	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 37279620892
+37666541953	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 37666541953
+38383204841	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 38383204841
+38512335653	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 38512335653
+38683907821	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 38683907821
+39088427860	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 39088427860
+39367304749	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 39367304749
+39936783620	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 39936783620
+40136714846	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 40136714846
+40294927620	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 40294927620
+40486422860	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 40486422860
+40961027843	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 40961027843
+40962920282	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 40962920282
+41699971587	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 41699971587
+41742184634	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 41742184634
+41963610644	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 41963610644
+42034224850	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 42034224850
+42245628802	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 42245628802
+42523176653	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 42523176653
+43284060430	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 43284060430
+44487400805	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 44487400805
+44604025720	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 44604025720
+44639877846	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 44639877846
+45313005804	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 45313005804
+45664951753	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 45664951753
+46021036859	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 46021036859
+46207633814	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 46207633814
+46557958836	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 46557958836
+46916051850	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 46916051850
+47698858812	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 47698858812
+48443212772	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 48443212772
+48629170620	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 48629170620
+49394299890	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 49394299890
+49621920191	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 49621920191
+50377929832	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 50377929832
+51260581691	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 51260581691
+51387321889	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 51387321889
+52199321878	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 52199321878
+52357627700	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 52357627700
+52404757687	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 52404757687
+52756998672	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 52756998672
+52891203860	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 52891203860
+53494369534	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 53494369534
+53561945520	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 53561945520
+53814320620	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 53814320620
+54342300869	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 54342300869
+54818408808	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 54818408808
+56049074801	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 56049074801
+56131941572	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 56131941572
+56844659865	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 56844659865
+57198063187	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 57198063187
+57533121600	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 57533121600
+57626693604	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 57626693604
+57978505839	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 57978505839
+58517740610	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 58517740610
+59807490715	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 59807490715
+60698217691	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 60698217691
+60782447791	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 60782447791
+61374709620	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 61374709620
+61862039305	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 61862039305
+62923269772	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 62923269772
+63131897953	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 63131897953
+63136317653	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 63136317653
+63136341600	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 63136341600
+63312646634	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 63312646634
+67057012772	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 67057012772
+67152791600	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 67152791600
+67548261772	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 67548261772
+67601383687	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 67601383687
+67744990668	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 67744990668
+68840608672	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 68840608672
+69163448734	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 69163448734
+70328516651	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 70328516651
+70388157682	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 70388157682
+70403722667	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 70403722667
+70419604634	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 70419604634
+70480419604	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 70480419604
+70480435634	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 70480435634
+70708181651	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 70708181651
+71149911182	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 71149911182
+74017144691	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 74017144691
+74691767720	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 74691767720
+74798278068	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 74798278068
+76022129672	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 76022129672
+76282473772	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 76282473772
+76737810500	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 76737810500
+76793303791	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 76793303791
+76955818600	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 76955818600
+77568621634	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 77568621634
+77569296672	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 77569296672
+77760174691	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 77760174691
+77817729620	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 77817729620
+78924995553	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+78934125500	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+78942705553	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+78945453504	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+78950120534	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+78960193968	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+78969450530	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+78972655520	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+78984505587	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+78999154572	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+78999910563	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+79025005500	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+79035124553	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+79036562520	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+79044964534	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+79049168515	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+79059996534	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+79075380925	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+79083765172	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+79099939515	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+79103855520	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+79115004520	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+79154565553	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+79163165104	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+79175724553	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+79176330559	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+79176895572	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+79183336591	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+79185843504	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+79211682568	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+79214649715	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+79239200525	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+79252133704	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+79268927500	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+79270093549	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+79288553568	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+79303595734	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+79304206553	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+79331815549	C_401_CONTEUDO_INVALIDO	erro	401	"processamento_rejeitado | Código 401: Conteudo do evento inválido. | Conteudo do evento inválido. | ocorrencias=[{""tipo"": ""1"", ""codigo"": ""157"", ""descricao"": ""Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.""}]"
+79435599753	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 79435599753
+79819427568	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 79819427568
+80329365649	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 80329365649
+80329772600	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 80329772600
+80390730815	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 80390730815
+80873502604	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 80873502604
+80928072649	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 80928072649
+81456905600	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 81456905600
+81887370625	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 81887370625
+82509140663	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 82509140663
+83850511391	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 83850511391
+84463937787	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 84463937787
+84639474687	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 84639474687
+85196860797	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 85196860797
+85328200500	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 85328200500
+85778865570	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 85778865570
+85859215525	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 85859215525
+85961787753	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 85961787753
+85979160523	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 85979160523
+86203523500	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 86203523500
+86346872524	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 86346872524
+86545101536	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 86545101536
+86915746668	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 86915746668
+86915932615	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 86915932615
+87536722753	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 87536722753
+87987473634	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 87987473634
+88991318649	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 88991318649
+88991946615	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 88991946615
+89288726691	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 89288726691
+89288920668	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 89288920668
+89288998691	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 89288998691
+89647432704	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 89647432704
+90845609572	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 90845609572
+91064635687	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 91064635687
+91144523672	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 91144523672
+91959845772	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 91959845772
+92405509687	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 92405509687
+92452973734	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 92452973734
+93418493653	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 93418493653
+93591748749	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 93591748749
+93726066691	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 93726066691
+93739176687	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 93739176687
+93945779553	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 93945779553
+93992424634	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 93992424634
+95047654753	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 95047654753
+96125314553	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 96125314553
+97063894749	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 97063894749
+97713210644	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 97713210644
+97892734600	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 97892734600
+97939200682	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 97939200682
+98588990172	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 98588990172
+98654403004	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 98654403004
+99410346720	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 99410346720
+99564491720	A_RECIBO_AUSENTE_ZIP	erro		buscar_recibo | Nenhum S-1210 com nrRecibo encontrado no ZIP para CPF 99564491720

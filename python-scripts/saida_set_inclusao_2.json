@@ -1,0 +1,302 @@
+{
+  "protocolo": "1.1.202604.0000000013085193706",
+  "resumo": {
+    "ok": 0,
+    "ok_idempotente": 0,
+    "erro": 16,
+    "erro_retry": 0,
+    "enviados": 16,
+    "total": 16
+  },
+  "resultados": [
+    {
+      "cpf": "82866422520",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919214500001",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085193706",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inv\u00e1lido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscri\u00e7\u00e3o, N\u00famero de Inscri\u00e7\u00e3o, CPF do Trabalhador, Per\u00edodo de Apura\u00e7\u00e3o."
+        }
+      ],
+      "erro": "C\u00c3\u00b3digo 401: Conteudo do evento inv\u00e1lido."
+    },
+    {
+      "cpf": "82994609568",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919214500002",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085193706",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inv\u00e1lido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscri\u00e7\u00e3o, N\u00famero de Inscri\u00e7\u00e3o, CPF do Trabalhador, Per\u00edodo de Apura\u00e7\u00e3o."
+        }
+      ],
+      "erro": "C\u00c3\u00b3digo 401: Conteudo do evento inv\u00e1lido."
+    },
+    {
+      "cpf": "86180708584",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919214500003",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085193706",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inv\u00e1lido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscri\u00e7\u00e3o, N\u00famero de Inscri\u00e7\u00e3o, CPF do Trabalhador, Per\u00edodo de Apura\u00e7\u00e3o."
+        }
+      ],
+      "erro": "C\u00c3\u00b3digo 401: Conteudo do evento inv\u00e1lido."
+    },
+    {
+      "cpf": "87867532587",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919214500004",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085193706",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inv\u00e1lido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscri\u00e7\u00e3o, N\u00famero de Inscri\u00e7\u00e3o, CPF do Trabalhador, Per\u00edodo de Apura\u00e7\u00e3o."
+        }
+      ],
+      "erro": "C\u00c3\u00b3digo 401: Conteudo do evento inv\u00e1lido."
+    },
+    {
+      "cpf": "89804155591",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919214500005",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085193706",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inv\u00e1lido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscri\u00e7\u00e3o, N\u00famero de Inscri\u00e7\u00e3o, CPF do Trabalhador, Per\u00edodo de Apura\u00e7\u00e3o."
+        }
+      ],
+      "erro": "C\u00c3\u00b3digo 401: Conteudo do evento inv\u00e1lido."
+    },
+    {
+      "cpf": "90111150582",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919214500006",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085193706",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inv\u00e1lido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscri\u00e7\u00e3o, N\u00famero de Inscri\u00e7\u00e3o, CPF do Trabalhador, Per\u00edodo de Apura\u00e7\u00e3o."
+        }
+      ],
+      "erro": "C\u00c3\u00b3digo 401: Conteudo do evento inv\u00e1lido."
+    },
+    {
+      "cpf": "91162270500",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919214500007",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085193706",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inv\u00e1lido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscri\u00e7\u00e3o, N\u00famero de Inscri\u00e7\u00e3o, CPF do Trabalhador, Per\u00edodo de Apura\u00e7\u00e3o."
+        }
+      ],
+      "erro": "C\u00c3\u00b3digo 401: Conteudo do evento inv\u00e1lido."
+    },
+    {
+      "cpf": "91802504591",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919214500008",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085193706",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inv\u00e1lido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscri\u00e7\u00e3o, N\u00famero de Inscri\u00e7\u00e3o, CPF do Trabalhador, Per\u00edodo de Apura\u00e7\u00e3o."
+        }
+      ],
+      "erro": "C\u00c3\u00b3digo 401: Conteudo do evento inv\u00e1lido."
+    },
+    {
+      "cpf": "91862280568",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919214500009",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085193706",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inv\u00e1lido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscri\u00e7\u00e3o, N\u00famero de Inscri\u00e7\u00e3o, CPF do Trabalhador, Per\u00edodo de Apura\u00e7\u00e3o."
+        }
+      ],
+      "erro": "C\u00c3\u00b3digo 401: Conteudo do evento inv\u00e1lido."
+    },
+    {
+      "cpf": "92516971591",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919214500010",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085193706",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inv\u00e1lido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscri\u00e7\u00e3o, N\u00famero de Inscri\u00e7\u00e3o, CPF do Trabalhador, Per\u00edodo de Apura\u00e7\u00e3o."
+        }
+      ],
+      "erro": "C\u00c3\u00b3digo 401: Conteudo do evento inv\u00e1lido."
+    },
+    {
+      "cpf": "93354819553",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919214500011",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085193706",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inv\u00e1lido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscri\u00e7\u00e3o, N\u00famero de Inscri\u00e7\u00e3o, CPF do Trabalhador, Per\u00edodo de Apura\u00e7\u00e3o."
+        }
+      ],
+      "erro": "C\u00c3\u00b3digo 401: Conteudo do evento inv\u00e1lido."
+    },
+    {
+      "cpf": "93869576553",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919214500012",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085193706",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inv\u00e1lido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscri\u00e7\u00e3o, N\u00famero de Inscri\u00e7\u00e3o, CPF do Trabalhador, Per\u00edodo de Apura\u00e7\u00e3o."
+        }
+      ],
+      "erro": "C\u00c3\u00b3digo 401: Conteudo do evento inv\u00e1lido."
+    },
+    {
+      "cpf": "94417083568",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919214600013",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085193706",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inv\u00e1lido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscri\u00e7\u00e3o, N\u00famero de Inscri\u00e7\u00e3o, CPF do Trabalhador, Per\u00edodo de Apura\u00e7\u00e3o."
+        }
+      ],
+      "erro": "C\u00c3\u00b3digo 401: Conteudo do evento inv\u00e1lido."
+    },
+    {
+      "cpf": "95028331553",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919214600014",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085193706",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inv\u00e1lido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscri\u00e7\u00e3o, N\u00famero de Inscri\u00e7\u00e3o, CPF do Trabalhador, Per\u00edodo de Apura\u00e7\u00e3o."
+        }
+      ],
+      "erro": "C\u00c3\u00b3digo 401: Conteudo do evento inv\u00e1lido."
+    },
+    {
+      "cpf": "95699414568",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919214600015",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085193706",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inv\u00e1lido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscri\u00e7\u00e3o, N\u00famero de Inscri\u00e7\u00e3o, CPF do Trabalhador, Per\u00edodo de Apura\u00e7\u00e3o."
+        }
+      ],
+      "erro": "C\u00c3\u00b3digo 401: Conteudo do evento inv\u00e1lido."
+    },
+    {
+      "cpf": "99847302553",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919214600016",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085193706",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inv\u00e1lido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscri\u00e7\u00e3o, N\u00famero de Inscri\u00e7\u00e3o, CPF do Trabalhador, Per\u00edodo de Apura\u00e7\u00e3o."
+        }
+      ],
+      "erro": "C\u00c3\u00b3digo 401: Conteudo do evento inv\u00e1lido."
+    }
+  ],
+  "duracao_ms": 13274
+}

@@ -1607,10 +1607,29 @@ class DedDepenRequest(BaseModel):
     vlrDedDep: str
 
 
+class PenAlimRequest(BaseModel):
+    tpRend: str
+    cpfDep: str
+    vlrDedPenAlim: str
+
+
+class InfoDepSauRequest(BaseModel):
+    cpfDep: str
+    vlrSaudeDep: str
+
+
+class PlanSaudeRequest(BaseModel):
+    cnpjOper: str
+    regANS: str
+    vlrSaudeTit: str
+    infoDepSau: list[InfoDepSauRequest] | None = None
+
+
 class InfoIRCRRequest(BaseModel):
     tpCR: str
     vrCR: str | None = None
     dedDepen: list[DedDepenRequest] | None = None
+    penAlim: list[PenAlimRequest] | None = None
 
 
 class InfoIRComplemRequest(BaseModel):
@@ -1624,6 +1643,7 @@ class EnviarS1210Request(BaseModel):
     ind_retif: str = "1"        # "1" original, "2" retificação
     nr_recibo: str | None = None  # obrigatório se ind_retif=2
     info_ir_complem: InfoIRComplemRequest | None = None
+    plan_saude: list[PlanSaudeRequest] | None = None
     ambiente: str = "2"         # "1" produção, "2" homologação
 
 
@@ -1669,6 +1689,7 @@ async def enviar_s1210(req: EnviarS1210Request):
             beneficiario = {"cpfBenef": req.cpf_benef}
             info_pgtos = [p.model_dump(exclude_none=True) for p in req.info_pgtos]
             info_ir_complem = req.info_ir_complem.model_dump(exclude_none=True) if req.info_ir_complem else None
+            plan_saude = [p.model_dump(exclude_none=True) for p in req.plan_saude] if req.plan_saude else None
 
             # 2. Gerar XML S-1210
             xml_bytes = S1210XMLGenerator.gerar(
@@ -1679,15 +1700,16 @@ async def enviar_s1210(req: EnviarS1210Request):
                 ind_retif=req.ind_retif,
                 nr_recibo=req.nr_recibo,
                 info_ir_complem=info_ir_complem,
+                plan_saude=plan_saude,
                 tp_amb=req.ambiente,
             )
 
             # 3. Assinar
             xml_assinado = S1010XMLSigner.assinar(xml_bytes, pfx_data, senha)
 
-            # 4. Montar SOAP (grupo=1 para eventos por trabalhador/beneficiário)
+            # 4. Montar SOAP (grupo=3 para eventos periódicos S-1200/S-1210)
             soap_envelope = SOAPEnvelopeBuilder.montar_envio(
-                [xml_assinado], empregador, transmissor, grupo="1"
+                [xml_assinado], empregador, transmissor, grupo="3"
             )
 
             # 5. Enviar

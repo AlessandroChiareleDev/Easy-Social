@@ -41,6 +41,7 @@ const erro = ref('')
 const overview = ref<OverviewAnual | null>(null)
 
 const mesesLabel: Record<string, string> = {
+  '2025-01': 'Jan/2025',
   '2025-02': 'Fev/2025',
   '2025-03': 'Mar/2025',
   '2025-04': 'Abr/2025',
@@ -69,7 +70,13 @@ const resumo = computed(() => {
 
   for (const mes of overview.value.meses) {
     const mesTemDados = mes.lotes.some(
-      (c) => c.total > 0 || c.ok > 0 || c.erro > 0 || c.pendente > 0 || c.enviando > 0 || (c.na ?? 0) > 0,
+      (c) =>
+        c.total > 0 ||
+        c.ok > 0 ||
+        c.erro > 0 ||
+        c.pendente > 0 ||
+        c.enviando > 0 ||
+        (c.na ?? 0) > 0,
     )
     if (mesTemDados) mesesAtivos += 1
     for (const c of mes.lotes) {
@@ -152,7 +159,12 @@ onMounted(carregar)
       </article>
       <article class="kpi">
         <span class="k">OK</span>
-        <strong class="ok">{{ resumo.ok.toLocaleString('pt-BR') }} <span v-if="resumo.na > 0" class="na-inline" title="N/A (Não aplica)">({{ resumo.na.toLocaleString('pt-BR') }})</span></strong>
+        <strong class="ok"
+          >{{ resumo.ok.toLocaleString('pt-BR') }}
+          <span v-if="resumo.na > 0" class="na-inline" title="N/A (Não aplica)"
+            >({{ resumo.na.toLocaleString('pt-BR') }})</span
+          ></strong
+        >
       </article>
       <article class="kpi">
         <span class="k">Erro</span>

@@ -1,0 +1,914 @@
+{
+  "protocolo": "1.1.202604.0000000013085499527",
+  "resumo": {
+    "ok": 0,
+    "ok_idempotente": 0,
+    "erro": 50,
+    "erro_retry": 0,
+    "enviados": 50,
+    "total": 50
+  },
+  "resultados": [
+    {
+      "cpf": "00140303570",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919524600001",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "00820225509",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919524600002",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "01125947519",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919524600003",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "01292020539",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919524600004",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "02031561537",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919524600005",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "02330817550",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919524600006",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "02373806509",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919524600007",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "02872019537",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919524600008",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "03407350589",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919524700009",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "03549114575",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919524700010",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "03653576504",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919524700011",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "03655575521",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919524700012",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "03666833578",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919524700013",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "03677637538",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919524700014",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "03699472582",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919524700015",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "03700383550",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919524700016",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "03740983523",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919524700017",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "03880536589",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919524700018",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "04656099538",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919524700019",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "04980561551",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919524700020",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "06358492594",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919524800021",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "06404618591",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919524800022",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "07450107503",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919524800023",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "08769348740",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919524800024",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "16002814515",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919524800025",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "16316974710",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919524800026",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "26220466500",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919524800027",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "31381951805",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919524800028",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "34955810578",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919524800029",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "35414723591",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919524800030",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "43191290591",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919524800031",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "48757012504",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919524900032",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "49180515886",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919524900033",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "50668404515",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919524900034",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "50705962504",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919524900035",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "52019802791",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919524900036",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "54600243587",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919525000037",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "62915959587",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919525000038",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "67091202520",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919525000039",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "68262086520",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919525000040",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "77722922520",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919525000041",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "79536972549",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919525000042",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "79577580530",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919525000043",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "79641288504",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919525000044",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "80291341500",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919525000045",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "80865798591",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919525000046",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "80931960568",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919525100047",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "82454060582",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919525100048",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "82687650544",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919525100049",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    },
+    {
+      "cpf": "82866422520",
+      "nr_recibo_usado": null,
+      "evt_id": "ID1059690710000002026042919525100050",
+      "sucesso": false,
+      "etapa": "processamento_rejeitado",
+      "protocolo": "1.1.202604.0000000013085499527",
+      "codigo_resposta": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "tipo": "1",
+          "codigo": "106",
+          "descricao": "Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração."
+        }
+      ],
+      "erro": "CÃ³digo 401: Conteudo do evento inválido."
+    }
+  ],
+  "duracao_ms": 27696
+}

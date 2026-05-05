@@ -137,6 +137,7 @@ const lote = computed(() => Number(route.params.lote))
 const mes = computed(() => String(route.params.mes))
 
 const mesLabels: Record<string, string> = {
+  '2025-01': 'Jan/2025',
   '2025-02': 'Fev/2025',
   '2025-03': 'Mar/2025',
   '2025-04': 'Abr/2025',
@@ -277,7 +278,14 @@ async function carregar() {
     if (q) params.q = q
     const resp = await axios.get<{
       total: number
-      totais: { total: number; ok: number; erro: number; enviando: number; pendente: number; na?: number }
+      totais: {
+        total: number
+        ok: number
+        erro: number
+        enviando: number
+        pendente: number
+        na?: number
+      }
       cpfs: CPFRow[]
     }>(`${PYTHON_API}/api/s1210-repo/por-lote/${lote.value}/${mes.value}`, { params })
     total.value = resp.data.total
@@ -1139,7 +1147,11 @@ watch([lote, mes], () => {
                 <span v-else-if="r.status === 'ok'" class="motivo-ok">
                   {{ r.descricao_resposta || 'Sucesso' }}
                 </span>
-                <span v-else-if="r.status === 'na'" class="motivo-txt" :title="r.erro_descricao ?? ''">
+                <span
+                  v-else-if="r.status === 'na'"
+                  class="motivo-txt"
+                  :title="r.erro_descricao ?? ''"
+                >
                   {{ r.erro_descricao || 'Não aplica' }}
                 </span>
                 <span v-else class="dim">—</span>
@@ -1151,7 +1163,15 @@ watch([lote, mes], () => {
                   :disabled="r.status === 'enviando' || r.status === 'na' || enviando || !r.cpf"
                   @click="abrirEnvio(r, $event)"
                 >
-                  {{ !r.cpf ? 'Aguardando CPF' : r.status === 'na' ? 'N/A' : r.status === 'ok' ? 'Reenviar' : 'Enviar' }}
+                  {{
+                    !r.cpf
+                      ? 'Aguardando CPF'
+                      : r.status === 'na'
+                        ? 'N/A'
+                        : r.status === 'ok'
+                          ? 'Reenviar'
+                          : 'Enviar'
+                  }}
                 </button>
               </td>
             </tr>

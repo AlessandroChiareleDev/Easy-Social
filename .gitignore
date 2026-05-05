@@ -53,3 +53,17 @@ python-scripts/_*.xml
 python-scripts/_*.json
 python-scripts/last_request.json
 transcricoes-call/
+
+# XMLs de retorno do eSocial (volume grande, ver ALERTA_CRITICO_XMLS_RETORNO_PERDIDOS.md)
+ARQUIVOS_RETORNO/
+
+# Backups de banco de dados (NUNCA commitar — contem dados sensiveis)
+_backups_db/
+*.sql
+*.dump
+*.sql.zip
+*.sql.gz
+
+# Saidas de processamento de lotes (relatorios temporarios)
+python-scripts/saida_*/
+python-scripts/_lote*_xmls/

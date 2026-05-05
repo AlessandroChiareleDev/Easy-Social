@@ -91,6 +91,10 @@ app.include_router(s1210_missao_router)
 from esocial.s1210_repo_routes import router as s1210_repo_router
 app.include_router(s1210_repo_router)
 
+# Rotas Empresas (dropdown multi-tenant — usado pelo V2)
+from esocial.empresas_routes import router as empresas_router
+app.include_router(empresas_router)
+
 # Thread do bot
 bot_thread: threading.Thread | None = None
 

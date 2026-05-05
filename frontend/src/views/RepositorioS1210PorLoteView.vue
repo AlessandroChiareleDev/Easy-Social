@@ -29,6 +29,7 @@ const overview = ref<Overview | null>(null)
 const showInfoLotes = ref(false)
 
 const mesLabels: Record<string, string> = {
+  '2025-01': 'Jan/2025',
   '2025-02': 'Fev/2025',
   '2025-03': 'Mar/2025',
   '2025-04': 'Abr/2025',

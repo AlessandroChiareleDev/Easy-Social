@@ -39,47 +39,84 @@ DOWNLOADS = Path(os.environ.get("USERPROFILE", r"C:\Users\xandao")) / "Downloads
 FONTES = {
     "2025-02": {
         "xlsx": DOWNLOADS / "02. Fevereiro_2025_APPA certa.xlsx",
-        "zip":  DOWNLOADS / "29429415 fev2025.zip",
+        "zip":  DOWNLOADS / "xmls do e social mes a mes" / "02-fev2025.zip",
         "aba_geral": "Geral Para Envio_Lotes",
         "aba_oper":  "Operadoras_012025",
         "total_lote1": 9472,
     },
     "2025-03": {
         "xlsx": DOWNLOADS / "03. Marco_2025_APPA.xlsx",
-        "zip":  DOWNLOADS / "29429449 marc2025.zip",
+        "zip":  DOWNLOADS / "xmls do e social mes a mes" / "03-marc2025.zip",
         "aba_geral": "Geral Para envio de Lotes",
         "aba_oper":  "Operadora 022025",
         "total_lote1": 8165,
     },
     "2025-04": {
         "xlsx": DOWNLOADS / "04. Abril_2025_APPA.xlsx",
-        "zip":  DOWNLOADS / "29429512 abril2025.zip",
+        "zip":  DOWNLOADS / "xmls do e social mes a mes" / "04-abril2025.zip",
         "aba_geral": "Geral Envio para Lotes",
         "aba_oper":  "Operadoras 032025",
         "total_lote1": 7142,
     },
     "2025-05": {
-        "xlsx": DOWNLOADS / "05 Maio_lote 003_APPA.xlsx",
-        "zip":  DOWNLOADS / "29429551-maio.zip",
-        "aba_geral": "Lote Para Envio",
-        "aba_oper":  "Assistencia Médica",
-        "total_lote1": 0,
+        "xlsx": DOWNLOADS / "1º Lote Maio Junho e Julho 2025 com cpf.xlsx",
+        "zip":  DOWNLOADS / "xmls do e social mes a mes" / "05-maio.zip",
+        "aba_geral": "052025",
+        "aba_oper":  "",
+        "total_lote1": 8724,
     },
     "2025-06": {
-        "xlsx": DOWNLOADS / "06 Junho_lote 003_APPA.xlsx",
-        "zip":  DOWNLOADS / "29105225 Jun2025.zip",
-        "aba_geral": "Lote para Envio ",
-        "aba_oper":  "Assitencia Médica",
+        "xlsx": DOWNLOADS / "07 Julho_lote 003_APPA.xlsx",
+        "zip":  DOWNLOADS / "xmls do e social mes a mes" / "06-Jun2025.zip",
+        "aba_geral": "Lote para Envio",
+        "aba_oper":  "",
+        "total_lote1": 0,
+    },
+    "2025-07": {
+        "xlsx": DOWNLOADS / "08 Agosto_lote 003_APPA.xlsx",
+        "zip":  DOWNLOADS / "xmls do e social mes a mes" / "07- Jul2025.zip",
+        "aba_geral": "Lote para Envio",
+        "aba_oper":  "",
         "total_lote1": 0,
     },
     "2025-08": {
-        "xlsx": DOWNLOADS / "08 Agosto_lote 003_APPA  com cpf.xlsx",
-        "zip":  DOWNLOADS / "08- ago2025.zip",
-        "aba_geral": "Lote para Envio",
-        "aba_oper":  "Assistencia Médica",
-        "total_lote1": 0,
-        "col_lote": 0,
-        "col_cpf":  9,
+        "xlsx": DOWNLOADS / "1º Lote Agosto Setembro e Outubro 2025.xlsx",
+        "zip":  DOWNLOADS / "xmls do e social mes a mes" / "08- ago2025.zip",
+        "aba_geral": "AGOSTO ",  # aba tem espaco no fim no XLSX original
+        "aba_oper":  "",
+        "total_lote1": 5095,
+    },
+    "2025-09": {
+        "xlsx": DOWNLOADS / "1º Lote Agosto Setembro e Outubro 2025.xlsx",
+        "zip":  DOWNLOADS / "xmls do e social mes a mes" / "09-set2025.zip",
+        "aba_geral": "SETEMBRO",
+        "aba_oper":  "",
+        "total_lote1": 5847,
+    },
+    "2025-10": {
+        "xlsx": DOWNLOADS / "1º Lote Agosto Setembro e Outubro 2025.xlsx",
+        "zip":  DOWNLOADS / "xmls do e social mes a mes" / "10-out2025.zip",
+        "aba_geral": "OUTUBRO",
+        "aba_oper":  "",
+        "total_lote1": 5395,
+    },
+    "2025-11": {
+        "xlsx": DOWNLOADS / "1º Lote novembro 2025.xlsx",
+        "zip":  DOWNLOADS / "xmls do e social mes a mes" / "11-nov2025.zip",
+        "aba_geral": "Planilha1",
+        "aba_oper":  "",
+        "total_lote1": 4873,
+        "col_lote": 7,
+        "col_cpf": 8,
+    },
+    "2025-12": {
+        "xlsx": DOWNLOADS / "1º Lote Dezembro 2025.xlsx",
+        "zip":  DOWNLOADS / "xmls do e social mes a mes" / "12-dez2025.zip",
+        "aba_geral": "Planilha1",
+        "aba_oper":  "",
+        "total_lote1": 5083,
+        "col_lote": 0,   # col A = '1º Lote'
+        "col_cpf": 8,    # col I = CPF
     },
 }
 
@@ -123,8 +160,9 @@ def _parse_xlsx_escopo(mes: str) -> dict[str, list[str]]:
         lotes: dict[str, list[str]] = {"1_LOTE": [], "2_LOTE": [], "3_LOTE": [], "4_LOTE": []}
         vistos: set[str] = set()  # CPF deduplica por arquivo todo
 
-        col_lote = int(fonte.get("col_lote", 6))
-        col_cpf  = int(fonte.get("col_cpf",  7))
+        # Permite override de colunas em FONTES (ex: novembro tem 1 col extra)
+        col_lote = fonte.get("col_lote", 6)
+        col_cpf = fonte.get("col_cpf", 7)
         min_cols = max(col_lote, col_cpf) + 1
 
         it = ws.iter_rows(values_only=True)

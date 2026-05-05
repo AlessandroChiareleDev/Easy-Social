@@ -99,12 +99,25 @@ O endpoint `POST /api/s1210-repo/enviar-lote-cpfs` em `python-scripts/esocial/s1
    WHERE per_apur='2025-05' AND lote_num=3;
   ```
 
-### ZIP `29429551-maio.zip`
+### ZIP S-1210 original
 
-- 502 MB em `C:\Users\NITRO\Downloads\`.
-- Código de download/protocolo (não CNPJ).
+- **Pasta master (sempre a mesma):** `C:\Users\xandao\Downloads\xmls do e social mes a mes.zip` (~4.95 GB)
+  - Dentro tem **todos os meses 2025** já organizados:
+    - `01-jan2025.zip`
+    - `02-fev2025.zip`
+    - `03-marc2025.zip`
+    - `04-abril2025.zip`
+    - `05-maio.zip`
+    - `06-Jun2025.zip`
+    - `07- Jul2025.zip` (atenção ao espaço extra)
+    - `08- ago2025.zip` (atenção ao espaço extra)
+    - `09-set2025.zip`
+    - `10-out2025.zip`
+    - `11-nov2025.zip`
+    - `12-dez2025.zip`
+- **Não procurar em outros lugares.** Sempre extrair desse master ZIP.
+- Código no nome (ex.: `29429551-maio.zip` antigo) é só protocolo de download — agora padroniza pelo nome do mês.
 - Usado pelo backend para localizar o S-1210 original de cada CPF e extrair `info_pgtos` + `nrRecibo`.
-- Mesmo formato do ZIP do Lote 1 Maio (`29105250 Mai2025.zip`).
 
 ---
 
@@ -114,18 +127,18 @@ Disciplina obrigatória: **1 → 10 → 50 → resto**, sempre **sequencial, 1 P
 
 ### Parâmetros confirmados pelo PC1 (Fev/Mar/Abr APPA)
 
-| Parâmetro | Valor |
-|---|---|
-| Batch size | **50 CPFs por POST** (passou liso, zero 1089) |
-| Concorrência no script | **1 thread sequencial** |
-| Workers internos | endpoint já tem 16 (ThreadPool interno) |
-| Retry no script | **não tem** |
-| Sleep entre POSTs | **não tem** |
-| `timeout` do requests | **600s** (subir pra 900 se estourar) |
-| Throughput real | **~22 CPFs/min** (50 CPFs em ~133s) |
-| Erro operacional (timeout/500/reset) | **zero** em todo dia de envio |
-| `tp_amb` no payload | NÃO mandar (backend é prod hardcoded) |
-| `confirmar_producao` | `True` |
+| Parâmetro                            | Valor                                         |
+| ------------------------------------ | --------------------------------------------- |
+| Batch size                           | **50 CPFs por POST** (passou liso, zero 1089) |
+| Concorrência no script               | **1 thread sequencial**                       |
+| Workers internos                     | endpoint já tem 16 (ThreadPool interno)       |
+| Retry no script                      | **não tem**                                   |
+| Sleep entre POSTs                    | **não tem**                                   |
+| `timeout` do requests                | **600s** (subir pra 900 se estourar)          |
+| Throughput real                      | **~22 CPFs/min** (50 CPFs em ~133s)           |
+| Erro operacional (timeout/500/reset) | **zero** em todo dia de envio                 |
+| `tp_amb` no payload                  | NÃO mandar (backend é prod hardcoded)         |
+| `confirmar_producao`                 | `True`                                        |
 
 ### Passo 0 — Pré-check (ESSENCIAL)
 
@@ -155,14 +168,14 @@ cd python-scripts
 
 ### Passo 3 — Interpretar resposta (ver tabela seção 5.X abaixo)
 
-| Código | Significado | Ação |
-|---|---|---|
-| `cdResp=201` sucesso | Chain walk ok, natureza ok, reabertura ok | Escala 10 → 50 → resto |
-| `ocorr=620` folha fechada | Falta S-1298 reabertura Maio p/ empresa | Reabrir via `/reabrir-periodo`, retomar |
-| `ocorr=459` recibo não ativo | Chain walk desatualizado | Pedir XLSX da Ana com recibos ativos, rodar com `--recibos-xlsx` |
-| `ocorr=861` rescisão/planSaude | Casos de negócio | Marcar NAO_ENVIAR, avisar Ana |
-| `ocorr=8` natureza/rubrica | S-1010 reclass não vigente | **PARAR.** Enviar S-1010 correção, retomar |
-| outro | Chamar PC1 | — |
+| Código                         | Significado                               | Ação                                                             |
+| ------------------------------ | ----------------------------------------- | ---------------------------------------------------------------- |
+| `cdResp=201` sucesso           | Chain walk ok, natureza ok, reabertura ok | Escala 10 → 50 → resto                                           |
+| `ocorr=620` folha fechada      | Falta S-1298 reabertura Maio p/ empresa   | Reabrir via `/reabrir-periodo`, retomar                          |
+| `ocorr=459` recibo não ativo   | Chain walk desatualizado                  | Pedir XLSX da Ana com recibos ativos, rodar com `--recibos-xlsx` |
+| `ocorr=861` rescisão/planSaude | Casos de negócio                          | Marcar NAO_ENVIAR, avisar Ana                                    |
+| `ocorr=8` natureza/rubrica     | S-1010 reclass não vigente                | **PARAR.** Enviar S-1010 correção, retomar                       |
+| outro                          | Chamar PC1                                | —                                                                |
 
 ### Passo 4 — Escalar
 
@@ -262,6 +275,7 @@ Scripts de referência (ver, não copiar cegamente):
 2. **`break` no PRIMEIRO `eventos` não-vazio** — se eSocial respondesse parcial (ex: 10 dos 50 CPFs do batch), assumia que terminou e marcava os outros 40 como **timeout**.
 
 **Consequência destrutiva:** o evento ERA processado pelo eSocial, gerava recibo novo, mas a gente desistia antes da resposta. Resultado:
+
 - Status no nosso banco = `erro` (timeout)
 - No eSocial: recibo velho VIROU `excluído/retificado` (pq a retificação rolou)
 - Em qualquer retry posterior: **código 459** "Recibo não localizado ou excluído/retificado" — irrecuperável sem rebaixar ZIP.
@@ -303,12 +317,12 @@ for attempt, wait in enumerate(waits, start=1):
 
 ### Erros que NÃO são timeout mas indicam problema upstream
 
-| Código | Significado | Ação |
-|---|---|---|
-| `1089` | Mesmo evento enviado em 2 lotes simultâneos | Esperar 30s e retry — geralmente o 1º foi processado |
-| `459` | Recibo retificado/excluído (recibo velho não vale mais) | **NÃO RETRIAR** — é sintoma de timeout falso anterior. Rebaixar ZIP atualizado e reindexar |
-| `543` | Idempotente — evento já existe igualzinho | Marcar como sucesso (já é tratado) |
-| `401 + ocorrência 459` | Mesmo que 459 puro | idem 459 |
+| Código                 | Significado                                             | Ação                                                                                       |
+| ---------------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| `1089`                 | Mesmo evento enviado em 2 lotes simultâneos             | Esperar 30s e retry — geralmente o 1º foi processado                                       |
+| `459`                  | Recibo retificado/excluído (recibo velho não vale mais) | **NÃO RETRIAR** — é sintoma de timeout falso anterior. Rebaixar ZIP atualizado e reindexar |
+| `543`                  | Idempotente — evento já existe igualzinho               | Marcar como sucesso (já é tratado)                                                         |
+| `401 + ocorrência 459` | Mesmo que 459 puro                                      | idem 459                                                                                   |
 
 ### Caso real Lote 3 Agosto/2025
 

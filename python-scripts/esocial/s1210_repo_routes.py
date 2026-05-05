@@ -39,6 +39,7 @@ from openpyxl import load_workbook
 from pydantic import BaseModel
 
 from db_config import DB_CONFIG
+from esocial.tenant import connect_for_empresa, DEFAULT_EMPRESA_ID
 # Reusa o parser jÃ¡ testado da missÃ£o legada
 from esocial.s1210_missao_routes import _parse_xlsx_escopo, FONTES
 
@@ -46,7 +47,6 @@ log = logging.getLogger("s1210-repo")
 router = APIRouter(prefix="/api/s1210-repo", tags=["s1210-repo"])
 
 # Empresa padrÃ£o (APPA) enquanto nÃ£o implementamos multi-tenant na tela nova.
-DEFAULT_EMPRESA_ID = 1
 
 # Storage local (mesmo contrato que bucket Supabase â€” path relativo).
 # Quando migrarmos para Supabase Storage, sÃ³ troca a implementaÃ§Ã£o de
@@ -55,10 +55,9 @@ STORAGE_ROOT = Path(__file__).resolve().parent.parent.parent / "backend" / "uplo
 STORAGE_ROOT.mkdir(parents=True, exist_ok=True)
 
 
-def _db():
-    conn = psycopg2.connect(**DB_CONFIG)
-    conn.autocommit = False
-    return conn
+def _db(empresa_id: int | None = None):
+    """Conexao roteada por empresa_id (default = APPA/Supabase)."""
+    return connect_for_empresa(empresa_id if empresa_id is not None else DEFAULT_EMPRESA_ID)
 
 
 # â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
@@ -384,6 +383,7 @@ class OverviewAnualCelula(BaseModel):
 class OverviewAnualMes(BaseModel):
     per_apur: str
     lotes: list[OverviewAnualCelula]
+    fechado: bool = False
 
 
 class OverviewAnualResponse(BaseModel):
@@ -407,7 +407,7 @@ def overview(empresa_id: int = DEFAULT_EMPRESA_ID):
     mostrar â€œingerir XLSXâ€.
     """
     meses = ["2025-02", "2025-03", "2025-04"]
-    conn = _db()
+    conn = _db(empresa_id)
     try:
         with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
             # Quais (per_apur) tÃªm XLSX ingerida
@@ -470,7 +470,7 @@ def overview_anual(
         raise HTTPException(400, f"ano invÃ¡lido: {ano}")
 
     meses = [f"{ano}-{m:02d}" for m in range(1, 13)]
-    conn = _db()
+    conn = _db(empresa_id)
     try:
         with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
             cur.execute(
@@ -517,13 +517,44 @@ def overview_anual(
                 for r in cur.fetchall()
             }
             meses_com_codfunc = set(total_codfunc_l1.keys())
+
+            # Meses fechados (S-1299 confirmado)
+            meses_fechados: set[str] = set()
+            try:
+                cur.execute(
+                    """
+                    SELECT per_apur FROM s1299_fechamento_status
+                     WHERE empresa_id = %s AND fechado = TRUE
+                    """,
+                    (empresa_id,),
+                )
+                meses_fechados = {r["per_apur"] for r in cur.fetchall()}
+            except Exception:
+                meses_fechados = set()
     finally:
         conn.close()
 
     out_meses: list[OverviewAnualMes] = []
+    # APPA (empresa_id=1) usa o padrao historico de 4 lotes fixos.
+    # Demais empresas (Solucoes em diante) usam lotes dinamicos:
+    # mostra apenas os lotes que existem em scope; se nao houver nenhum,
+    # mostra 1 lote vazio (padrao novo do sistema).
+    APPA_ID = 1
     for mes in meses:
+        if empresa_id == APPA_ID:
+            lotes_a_mostrar = [1, 2, 3, 4]
+        else:
+            existentes = sorted({
+                int(lote)
+                for (per, lote) in contadores.keys()
+                if per == mes
+            })
+            if not existentes:
+                lotes_a_mostrar = [1]
+            else:
+                lotes_a_mostrar = existentes
         lotes: list[OverviewAnualCelula] = []
-        for lote in (1, 2, 3, 4):
+        for lote in lotes_a_mostrar:
             c = contadores.get((mes, lote))
             total = int(c["total"]) if c else 0
             ok = int(c["ok"]) if c else 0
@@ -570,7 +601,7 @@ def overview_anual(
                     estado=estado,
                 )
             )
-        out_meses.append(OverviewAnualMes(per_apur=mes, lotes=lotes))
+        out_meses.append(OverviewAnualMes(per_apur=mes, lotes=lotes, fechado=(mes in meses_fechados)))
 
     return OverviewAnualResponse(empresa_id=empresa_id, ano=ano, meses=out_meses)
 
@@ -2467,3 +2498,263 @@ def desmarcar_na(req: DesmarcarNARequest, empresa_id: int = DEFAULT_EMPRESA_ID):
     finally:
         conn.close()
     return {"removidos": n}
+
+
+# ════════════════════════════════════════════════════════════════════
+# GET /cpfs-do-mes  → lista CPFs de um mês/lote com status atual
+# ════════════════════════════════════════════════════════════════════
+@router.get("/cpfs-do-mes")
+def cpfs_do_mes(
+    per_apur: str,
+    empresa_id: int = DEFAULT_EMPRESA_ID,
+    lote_num: Optional[int] = None,
+):
+    """Retorna CPFs do escopo do mês com status atual (último envio) e flag tem_xml.
+
+    tem_xml = True quando raw_row contém 'xml_path' (caso da empresa Soluções,
+    onde indexamos os XMLs de retorno do explorador de eventos).
+    """
+    conn = _db(empresa_id)
+    try:
+        with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+            params: list = [empresa_id, per_apur]
+            where_lote = ""
+            if lote_num is not None:
+                where_lote = " AND s.lote_num = %s"
+                params.append(lote_num)
+            cur.execute(
+                f"""
+                WITH ult AS (
+                    SELECT DISTINCT ON (empresa_id, per_apur, lote_num, cpf)
+                           empresa_id, per_apur, lote_num, cpf,
+                           status, nr_recibo_usado, nr_recibo_novo,
+                           descricao_resposta, erro_descricao, enviado_em
+                      FROM s1210_cpf_envios
+                     WHERE empresa_id = %s AND per_apur = %s
+                     ORDER BY empresa_id, per_apur, lote_num, cpf,
+                              enviado_em DESC NULLS LAST, id DESC
+                )
+                SELECT s.cpf, s.nome, s.matricula, s.lote_num, s.row_number,
+                       (s.raw_row ? 'xml_path') AS tem_xml,
+                       (s.raw_row ->> 'nr_recibo') AS nr_recibo_xml,
+                       u.status,
+                       u.nr_recibo_usado,
+                       u.nr_recibo_novo,
+                       u.descricao_resposta,
+                       u.erro_descricao,
+                       u.enviado_em
+                  FROM s1210_cpf_scope s
+                  LEFT JOIN ult u
+                    ON u.empresa_id = s.empresa_id
+                   AND u.per_apur = s.per_apur
+                   AND u.lote_num = s.lote_num
+                   AND u.cpf = s.cpf
+                 WHERE s.empresa_id = %s AND s.per_apur = %s{where_lote}
+                 ORDER BY s.lote_num, s.row_number NULLS LAST, s.cpf
+                """,
+                (empresa_id, per_apur, *params),
+            )
+            rows = cur.fetchall()
+    finally:
+        conn.close()
+    # Normaliza: cpf vem como char(11), pode ter padding
+    out = []
+    for r in rows:
+        d = dict(r)
+        d["cpf"] = (d.get("cpf") or "").strip()
+        # status efetivo: 'pendente' quando não há envio
+        if not d.get("status"):
+            d["status"] = "pendente"
+        out.append(d)
+    return {"empresa_id": empresa_id, "per_apur": per_apur, "total": len(out), "cpfs": out}
+
+
+# ════════════════════════════════════════════════════════════════════
+# GET /xml-cpf  → baixa o XML de retorno (S-1210) de um CPF específico
+# ════════════════════════════════════════════════════════════════════
+@router.get("/xml-cpf")
+def baixar_xml_cpf(
+    per_apur: str,
+    cpf: str,
+    empresa_id: int = DEFAULT_EMPRESA_ID,
+):
+    """Retorna o XML armazenado em raw_row.xml_path (Soluções)."""
+    cpf_norm = "".join(ch for ch in cpf if ch.isdigit()).zfill(11)
+    if len(cpf_norm) != 11:
+        raise HTTPException(status_code=400, detail="cpf inválido")
+
+    conn = _db(empresa_id)
+    try:
+        with conn.cursor() as cur:
+            cur.execute(
+                """
+                SELECT raw_row ->> 'xml_path'
+                  FROM s1210_cpf_scope
+                 WHERE empresa_id=%s AND per_apur=%s AND cpf=%s
+                 LIMIT 1
+                """,
+                (empresa_id, per_apur, cpf_norm),
+            )
+            row = cur.fetchone()
+    finally:
+        conn.close()
+
+    if not row or not row[0]:
+        raise HTTPException(status_code=404, detail="XML não disponível para este CPF")
+
+    xml_path = Path(row[0])
+    if not xml_path.is_file():
+        raise HTTPException(status_code=404, detail=f"arquivo não encontrado: {xml_path}")
+
+    try:
+        data = xml_path.read_bytes()
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"erro lendo XML: {e}")
+
+    fname = f"{cpf_norm}_{per_apur}_S-1210.xml"
+    return Response(
+        content=data,
+        media_type="application/xml",
+        headers={"Content-Disposition": f'attachment; filename="{fname}"'},
+    )
+
+
+# ════════════════════════════════════════════════════════════════════
+# POST /anual/dividir-lote → divide CPFs de um lote em 2 lotes iguais
+# ════════════════════════════════════════════════════════════════════
+class DividirLoteRequest(BaseModel):
+    per_apur: str
+    lote_origem: int = 1
+    lote_destino: int = 2
+
+
+@router.post("/anual/dividir-lote")
+def dividir_lote(req: DividirLoteRequest, empresa_id: int = DEFAULT_EMPRESA_ID):
+    """Move metade dos CPFs do lote_origem para lote_destino.
+
+    Bloqueia APPA (empresa_id=1) — fluxo legado usa 4 lotes fixos.
+    """
+    if empresa_id == 1:
+        raise HTTPException(400, "Operação não disponível para APPA (lotes fixos)")
+    if req.lote_origem == req.lote_destino:
+        raise HTTPException(400, "lote_origem e lote_destino devem ser diferentes")
+    if not (1 <= req.lote_destino <= 4):
+        raise HTTPException(400, "lote_destino fora do intervalo 1..4")
+
+    conn = _db(empresa_id)
+    try:
+        with conn.cursor() as cur:
+            cur.execute(
+                "SELECT cpf FROM s1210_cpf_scope WHERE empresa_id=%s AND per_apur=%s AND lote_num=%s ORDER BY row_number NULLS LAST, cpf",
+                (empresa_id, req.per_apur, req.lote_origem),
+            )
+            cpfs = [r[0] for r in cur.fetchall()]
+            if not cpfs:
+                raise HTTPException(404, f"lote {req.lote_origem} vazio em {req.per_apur}")
+
+            # destino nao pode ja existir
+            cur.execute(
+                "SELECT COUNT(*) FROM s1210_cpf_scope WHERE empresa_id=%s AND per_apur=%s AND lote_num=%s",
+                (empresa_id, req.per_apur, req.lote_destino),
+            )
+            if cur.fetchone()[0] > 0:
+                raise HTTPException(409, f"lote_destino {req.lote_destino} já existe em {req.per_apur}")
+
+            metade = len(cpfs) // 2
+            mover = cpfs[metade:]  # segunda metade vai pro novo lote
+
+            cur.execute(
+                """UPDATE s1210_cpf_scope
+                      SET lote_num = %s
+                    WHERE empresa_id=%s AND per_apur=%s AND lote_num=%s
+                      AND cpf = ANY(%s)""",
+                (req.lote_destino, empresa_id, req.per_apur, req.lote_origem, mover),
+            )
+            movidos_scope = cur.rowcount
+
+            # tambem move historico de envios pra manter consistencia da view
+            cur.execute(
+                """UPDATE s1210_cpf_envios
+                      SET lote_num = %s
+                    WHERE empresa_id=%s AND per_apur=%s AND lote_num=%s
+                      AND cpf = ANY(%s)""",
+                (req.lote_destino, empresa_id, req.per_apur, req.lote_origem, mover),
+            )
+            movidos_envios = cur.rowcount
+        conn.commit()
+    finally:
+        conn.close()
+
+    return {
+        "ok": True,
+        "per_apur": req.per_apur,
+        "lote_origem": req.lote_origem,
+        "lote_destino": req.lote_destino,
+        "total_origem_antes": len(cpfs),
+        "movidos_scope": movidos_scope,
+        "movidos_envios": movidos_envios,
+        "restantes_origem": len(cpfs) - movidos_scope,
+    }
+
+
+# ════════════════════════════════════════════════════════════════════
+# POST /anual/unir-lotes → desfaz divisão (move tudo do lote N pro 1)
+# ════════════════════════════════════════════════════════════════════
+class UnirLotesRequest(BaseModel):
+    per_apur: str
+    lote_destino: int = 1
+    lote_origem: int = 2
+
+
+@router.post("/anual/unir-lotes")
+def unir_lotes(req: UnirLotesRequest, empresa_id: int = DEFAULT_EMPRESA_ID):
+    """Move todos os CPFs do lote_origem para o lote_destino (default: 2 → 1)."""
+    if empresa_id == 1:
+        raise HTTPException(400, "Operação não disponível para APPA (lotes fixos)")
+    if req.lote_origem == req.lote_destino:
+        raise HTTPException(400, "lote_origem e lote_destino devem ser diferentes")
+
+    conn = _db(empresa_id)
+    try:
+        with conn.cursor() as cur:
+            # checa colisao de cpfs entre os dois lotes (UNIQUE empresa_id, per_apur, cpf)
+            cur.execute(
+                """SELECT COUNT(*) FROM (
+                       SELECT cpf FROM s1210_cpf_scope
+                        WHERE empresa_id=%s AND per_apur=%s AND lote_num=%s
+                       INTERSECT
+                       SELECT cpf FROM s1210_cpf_scope
+                        WHERE empresa_id=%s AND per_apur=%s AND lote_num=%s
+                   ) x""",
+                (empresa_id, req.per_apur, req.lote_origem,
+                 empresa_id, req.per_apur, req.lote_destino),
+            )
+            colisoes = cur.fetchone()[0]
+            if colisoes > 0:
+                raise HTTPException(
+                    409,
+                    f"{colisoes} CPFs estão duplicados entre lote {req.lote_origem} e {req.lote_destino}",
+                )
+
+            cur.execute(
+                """UPDATE s1210_cpf_scope SET lote_num=%s
+                    WHERE empresa_id=%s AND per_apur=%s AND lote_num=%s""",
+                (req.lote_destino, empresa_id, req.per_apur, req.lote_origem),
+            )
+            movidos_scope = cur.rowcount
+            cur.execute(
+                """UPDATE s1210_cpf_envios SET lote_num=%s
+                    WHERE empresa_id=%s AND per_apur=%s AND lote_num=%s""",
+                (req.lote_destino, empresa_id, req.per_apur, req.lote_origem),
+            )
+            movidos_envios = cur.rowcount
+        conn.commit()
+    finally:
+        conn.close()
+
+    return {
+        "ok": True,
+        "per_apur": req.per_apur,
+        "movidos_scope": movidos_scope,
+        "movidos_envios": movidos_envios,
+    }

@@ -67,3 +67,6 @@ _backups_db/
 # Saidas de processamento de lotes (relatorios temporarios)
 python-scripts/saida_*/
 python-scripts/_lote*_xmls/
+
+# Certificados A1 locais (NUNCA commitar)
+_certificados_locais/

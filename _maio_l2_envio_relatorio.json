@@ -1,0 +1,35 @@
+[
+  {
+    "fase": "A (1 cpf)",
+    "total": 1,
+    "ok": 0,
+    "erro": 1,
+    "dur": 15.35469675064087,
+    "throughput": 0.0651266525311392,
+    "codes": {
+      "401": 1
+    },
+    "batch_size": 1,
+    "workers": 1,
+    "resultados": [
+      {
+        "cpf": "00056394764",
+        "nr_recibo_usado": "1.1.0000000033045336232",
+        "evt_id": "ID1059690710000002026050515243200001",
+        "sucesso": false,
+        "etapa": "processamento_rejeitado",
+        "protocolo": "1.1.202605.0000000013109045597",
+        "codigo_resposta": "401",
+        "descricao": "Conteudo do evento inválido.",
+        "ocorrencias": [
+          {
+            "tipo": "1",
+            "codigo": "8",
+            "descricao": "Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute."
+          }
+        ],
+        "erro": "CÃ³digo 401: Conteudo do evento inválido."
+      }
+    ]
+  }
+]

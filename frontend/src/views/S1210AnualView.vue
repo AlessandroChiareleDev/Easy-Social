@@ -28,6 +28,7 @@ interface Celula {
 interface MesLinha {
   per_apur: string
   lotes: Celula[]
+  fechado?: boolean
 }
 
 interface OverviewAnual {
@@ -192,9 +193,19 @@ onMounted(carregar)
         <div class="col">Lote 4</div>
       </div>
 
-      <div v-for="mes in overview.meses" :key="mes.per_apur" class="grid-row">
+      <div
+        v-for="mes in overview.meses"
+        :key="mes.per_apur"
+        class="grid-row"
+        :class="{ 'row-fechado': mes.fechado }"
+      >
         <div class="col col-mes">
-          <div class="mes-label">{{ mesesLabel[mes.per_apur] ?? mes.per_apur }}</div>
+          <div class="mes-label">
+            {{ mesesLabel[mes.per_apur] ?? mes.per_apur }}
+            <span v-if="mes.fechado" class="badge-fechado" title="Mês fechado (S-1299)"
+              >FECHADO</span
+            >
+          </div>
           <div class="mes-sub">{{ mes.per_apur }}</div>
         </div>
 
@@ -335,6 +346,24 @@ onMounted(carregar)
 }
 .grid-row:nth-child(even) {
   background: rgba(255, 255, 255, 0.018);
+}
+.grid-row.row-fechado {
+  outline: 2px solid #22c55e;
+  outline-offset: -2px;
+  background: rgba(34, 197, 94, 0.08) !important;
+  box-shadow: inset 0 0 18px rgba(34, 197, 94, 0.18);
+}
+.badge-fechado {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 8px;
+  background: #22c55e;
+  color: #04210f;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  vertical-align: middle;
 }
 .col {
   padding: 12px 13px;

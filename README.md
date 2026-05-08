@@ -2,12 +2,48 @@
 
 ---
 
-## � PENDÊNCIA — SYNC RECIBOS jun/2025 L2 plansaude (2026-05-05)
+## 📊 LEITURA DO DASHBOARD S-1210 ANUAL (2026-05-06)
+
+O painel S-1210 ANUAL separa o escopo total em 4 cards. Para a APPA hoje:
+
+```
+Total escopo:  110.651
+  ├─ OK:          105.768   (4.619 deles N/A real)
+  ├─ Erro:            107
+  └─ Pendente:        157   ← ATENÇÃO: NÃO é erro do eSocial
+```
+
+**O que é "Pendente: 157":** são CPFs marcados no DB com `status='na'` + `codigo_resposta='MOVIDO_L3'` (descrição "Movido para Lote 3 - aguarda correção rubricas"). Estão aguardando a Ana corrigir rubricas no Domínio antes de reprocessar como Lote 3 — **não é falha técnica, é workflow contábil**.
+
+**Auditoria de recibos** (script `python-scripts/_audit_status_correto.py`):
+
+- Dos 105.768 OK, 105.093 (99,36%) têm `nr_recibo_novo` salvo
+- 675 OK estão sem recibo gravado (parse falhou na resposta) — concentrados em mai/2025 L2 a dez/2025 L2
+- Maiores buracos: set/2025 L1 (189), jun/2025 L2 (172), ago/2025 L1 (65), dez/2025 L1 (64)
+
+**IMPORTANTE — diferença entre tabelas:**
+
+- `s1210_cpf_envios` é LOG (1 linha por POST) → 218.953 linhas para APPA, com retentativas/chain walk
+- `s1210_cpf_scope` é a lista mestre única (1 linha por CPF+período) → 110.651 (= total escopo do painel)
+- Sempre auditar com `DISTINCT ON (cpf, per_apur) ORDER BY enviado_em DESC` para pegar o último estado real
+
+---
+
+## 🔴 ERROS PENDENTES HOJE (107 CPFs — verificado 2026-05-06)
+
+- **jan/2025 L1: 10 CPFs em erro** (último envio = `status='erro'`)
+- **set/2025 L2: 97 CPFs em erro**
+- Demais meses (fev/mar/abr/mai/jun/jul/ago/out/nov/dez 2025): zero erro pendente
+
+---
+
+## 🟡 PENDÊNCIA — SYNC RECIBOS jun/2025 L2 plansaude (2026-05-05)
 
 **163 retificações S-1210 plansaude jun/2025 L2 enviadas em PROD (todas cod=201 aceito).**
 
 - Marcadas `status='ok'` no DB com flag `RECIBO_PENDENTE_SYNC|jun L2 plansaude` em `descricao_resposta`
 - `nr_recibo_novo` está NULL — não foi consultado para não esgotar cota diária do eSocial
+- Validado em 2026-05-06: ainda 163 com flag, 172 OK total sem recibo em jun/2025 L2
 - Após fechamento do mês, rodar para popular recibos:
   ```sql
   SELECT cpf, protocolo FROM s1210_cpf_envios
@@ -16,14 +52,9 @@
 - Loop: para cada protocolo, GET `/api/esocial/consultar/{proto}?ambiente=1` e UPDATE `nr_recibo_novo`
 - Arquivos: `python-scripts/saida_plansaude_jun_l2.json` (envios), `_marca_ok_jun_l2.py`, `_flag_recibo_pendente.py`
 
-### 🟠 42 CPFs restantes em ERRO no jun/2025 L2 (cod 401/459)
+### ✅ 42 CPFs erro jun/2025 L2 — RESOLVIDO (2026-05-06)
 
-**Erro idêntico nos 42:** `"Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado"`
-
-- Causa: o `nr_recibo_usado` na retificação aponta para um evento **já excluído/retificado** no eSocial — o recibo no DB está desatualizado
-- Solução: consultar identificadores ATIVOS no eSocial (`WsConsultarIdentificadoresEventos`) para descobrir o recibo vigente de cada CPF e re-retificar com ele
-- ⚠️ **Precisa autorização explícita** — gasta cota diária (limite 10/dia Download Cirúrgico)
-- Diagnóstico: `python-scripts/_erros_jun_l2.py`
+Os 42 CPFs com erro 401/459 ("recibo entregue inválido / retificado") em jun/2025 L2 não existem mais. Auditoria do dia 2026-05-06 confirma **zero erro pendente em jun/2025 L2**.
 
 ---
 
@@ -35,20 +66,19 @@ Resumo: todos os envios S-1210 até hoje (Fev–Out/2025) foram processados, mas
 
 ---
 
-## ⛔ AGENTE / DESENVOLVEDOR: MISSÃO ATIVA S-1210 APPA
+## ✅ MISSÃO S-1210 APPA fev/mar/abr 2025 — CONCLUÍDA (2026-05-06)
 
-**ANTES DE QUALQUER AÇÃO relacionada a S-1210, lotes, APPA, envio em massa dos 3 meses (fev/mar/abr 2025):**
+A missão dos 3 meses (fev/mar/abr 2025) está **fechada**. Auditoria 06/05 mostra zero erro pendente nesses períodos:
 
-👉 **LEIA:** [docs/MISSAO_S1210_APPA_21-04-2026/LEIA_PRIMEIRO.md](docs/MISSAO_S1210_APPA_21-04-2026/LEIA_PRIMEIRO.md)
+```
+2025-02 → todos OK ou N/A (8 lotes, ~11 mil CPFs)
+2025-03 → todos OK ou N/A (8 lotes, ~11 mil CPFs)
+2025-04 → todos OK ou N/A (8 lotes, ~10 mil CPFs)
+```
 
-Pasta contém:
+Documentação histórica da missão (manter para auditoria, regras ainda valem para qualquer envio S-1210 futuro): [docs/MISSAO_S1210_APPA_21-04-2026/LEIA_PRIMEIRO.md](docs/MISSAO_S1210_APPA_21-04-2026/LEIA_PRIMEIRO.md)
 
-- `LEIA_PRIMEIRO.md` — 7 regras inegociáveis
-- `NORTE_S1210.md` — norte aprovado pelo usuário
-- `RESOLUCAO_S1200_3_MESES.md` — bíblia (12 porcarias, missão real, transcrição da call, parser rules)
-- `TAREFAS.md` — checklist da execução corrente
-
-**Regra nº 1:** NUNCA usar `explorador_eventos` como fonte de escopo. Escopo vem do XLSX da Ana.
+**Regra nº 1 permanente:** NUNCA usar `explorador_eventos` como fonte de escopo. Escopo vem do XLSX da Ana.
 
 ---
 

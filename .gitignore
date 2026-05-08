@@ -54,6 +54,16 @@ python-scripts/_*.json
 python-scripts/last_request.json
 transcricoes-call/
 
+# Scripts de analise temporarios na raiz (dados operacionais APPA)
+_tmp_*.py
+_tmp_*.txt
+_tmp_*.json
+_resp_*.xml
+_maio_*.json
+
+# Notas pessoais em backend/src/config (nao vai pro repo)
+backend/src/config/XANDAO.MD
+
 # XMLs de retorno do eSocial (volume grande, ver ALERTA_CRITICO_XMLS_RETORNO_PERDIDOS.md)
 ARQUIVOS_RETORNO/
 

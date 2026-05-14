@@ -1,0 +1,71 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - link "es Easy-Social v2 · cérebro" [ref=e5] [cursor=pointer]:
+      - /url: /
+      - generic [ref=e6]: es
+      - generic [ref=e7]: Easy-Social
+      - generic [ref=e8]: v2 · cérebro
+    - generic "verificado 16:37:56" [ref=e9]: backend · online · 60ms
+    - button "SOLUCOES SERVICOS TERCEIRIZADOS LTDA trocar" [ref=e10] [cursor=pointer]:
+      - generic [ref=e12]: SOLUCOES SERVICOS TERCEIRIZADOS LTDA
+      - generic [ref=e13]: trocar
+    - button "A Ana" [ref=e14] [cursor=pointer]:
+      - generic [ref=e15]: A
+      - generic [ref=e16]: Ana
+  - main [ref=e17]:
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - generic [ref=e20]:
+          - heading "Explorador de Arquivos" [level=1] [ref=e21]
+          - paragraph [ref=e22]: Suba os zips de retorno do eSocial. Eles ficam guardados, indexados por evento e CPF, e podem ser explorados visualmente.
+        - generic [ref=e25]: SOLUCOES
+      - generic [ref=e26]:
+        - heading "Enviar zip" [level=2] [ref=e27]
+        - generic [ref=e30] [cursor=pointer]:
+          - generic [ref=e31]: ⬆
+          - generic [ref=e32]: Arraste um arquivo .zip do eSocial aqui
+          - generic [ref=e33]: ou clique para selecionar
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - heading "Zips enviados" [level=2] [ref=e36]
+          - button "↻ atualizar" [ref=e37] [cursor=pointer]
+        - generic [ref=e76]:
+          - generic [ref=e77]: 📁
+          - generic [ref=e78]: Nenhum zip enviado ainda
+          - generic [ref=e79]: Suba o primeiro arquivo acima para começar.
+      - generic [ref=e41]:
+        - generic [ref=e42]:
+          - generic [ref=e43]:
+            - heading "📜 Chain Walk — timeline mensal de S-1210" [level=2] [ref=e44]
+            - paragraph [ref=e45]: Cada bolinha é um envio. Versões antigas são imutáveis. HEAD é o estado atual.
+          - generic [ref=e46]:
+            - generic [ref=e47]: "perApur:"
+            - combobox [disabled] [ref=e48]:
+              - option "— sem dados —" [selected]
+        - generic [ref=e80]: Sem timeline ainda. Suba e extraia um zip do eSocial — a primeira régua aparece automaticamente.
+      - generic [ref=e51]:
+        - generic [ref=e52]:
+          - generic [ref=e53]:
+            - heading "📜 Histórico de atividade" [level=3] [ref=e54]
+            - paragraph [ref=e55]: Tudo que foi enviado, extraído ou excluído fica registrado aqui.
+          - button "↻ atualizar" [ref=e81] [cursor=pointer]
+        - generic [ref=e57]:
+          - generic [ref=e58]:
+            - generic [ref=e59]: "0"
+            - generic [ref=e60]: Uploads
+          - generic [ref=e61]:
+            - generic [ref=e62]: 0 B
+            - generic [ref=e63]: Enviado total
+          - generic [ref=e64]:
+            - generic [ref=e65]: "0"
+            - generic [ref=e66]: Exclusões
+          - generic [ref=e67]:
+            - generic [ref=e68]: 0 B
+            - generic [ref=e69]: Liberado
+          - generic [ref=e70]:
+            - generic [ref=e71]: "0"
+            - generic [ref=e72]: Extrações
+          - generic [ref=e73]:
+            - generic [ref=e74]: "0"
+            - generic [ref=e75]: Duplicados
+        - generic [ref=e82]: Nenhum evento registrado ainda.

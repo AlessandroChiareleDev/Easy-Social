@@ -1,0 +1,84 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - link "es Easy-Social v2 · cérebro" [ref=e5] [cursor=pointer]:
+      - /url: /
+      - generic [ref=e6]: es
+      - generic [ref=e7]: Easy-Social
+      - generic [ref=e8]: v2 · cérebro
+    - generic "verificado 14:42:55" [ref=e9]: backend · online · 69ms
+    - button "APPA SERVICOS TEMPORARIOS LTDA trocar" [ref=e10] [cursor=pointer]:
+      - generic [ref=e12]: APPA SERVICOS TEMPORARIOS LTDA
+      - generic [ref=e13]: trocar
+    - button "A Ana" [ref=e14] [cursor=pointer]:
+      - generic [ref=e15]: A
+      - generic [ref=e16]: Ana
+  - main [ref=e17]:
+    - main [ref=e18]:
+      - generic [ref=e19]:
+        - generic [ref=e20]: Cérebro Operacional · APPA · 2026
+        - heading "Boa tarde, Ana" [level=1] [ref=e21]
+        - paragraph [ref=e22]: 11 de maio de 2026 · sincronizado há 2 min
+      - generic [ref=e23]:
+        - generic [ref=e24]:
+          - img "Cérebro Operacional" [ref=e25]
+          - img
+        - generic [ref=e26]: — CPFs
+        - generic [ref=e27]: — ok
+        - generic [ref=e28]: S-1210 · —
+        - generic [ref=e29]: — pendentes
+      - generic [ref=e30]:
+        - img
+        - generic [ref=e31]:
+          - link "Tabelas S-1000 · S-1005 · S-1010 · rubricas · lotações — tabelas" [ref=e32] [cursor=pointer]:
+            - /url: /tabelas
+            - img [ref=e34]
+            - generic [ref=e39]: Tabelas
+            - generic [ref=e40]: S-1000 · S-1005 · S-1010 · rubricas · lotações
+            - img [ref=e42]
+            - generic [ref=e45]:
+              - generic [ref=e46]: —
+              - generic [ref=e47]: tabelas
+          - link "eSocial S-1010 rubricas · webservice · envio — lotes" [ref=e48] [cursor=pointer]:
+            - /url: /esocial/s1010
+            - img [ref=e50]
+            - generic [ref=e53]: eSocial S-1010
+            - generic [ref=e54]: rubricas · webservice · envio
+            - img [ref=e56]
+            - generic [ref=e59]:
+              - generic [ref=e60]: —
+              - generic [ref=e61]: lotes
+          - link "S-1210 Anual eventos anuais · validação — ok" [ref=e62] [cursor=pointer]:
+            - /url: /esocial/s1210-anual
+            - img [ref=e64]
+            - generic [ref=e67]: S-1210 Anual
+            - generic [ref=e68]: eventos anuais · validação
+            - img [ref=e70]
+            - generic [ref=e73]:
+              - generic [ref=e74]: —
+              - generic [ref=e75]: ok
+          - link "Logs de Sistema auditoria · histórico · respostas eSocial — eventos" [ref=e76] [cursor=pointer]:
+            - /url: /logs
+            - img [ref=e78]
+            - generic [ref=e81]: Logs de Sistema
+            - generic [ref=e82]: auditoria · histórico · respostas eSocial
+            - img [ref=e84]
+            - generic [ref=e87]:
+              - generic [ref=e88]: —
+              - generic [ref=e89]: eventos
+          - link "Explorador de Arquivos subir zips · indexar XMLs · explorar por tipo novo ferramenta" [ref=e90] [cursor=pointer]:
+            - /url: /explorador
+            - img [ref=e92]
+            - generic [ref=e94]: Explorador de Arquivos
+            - generic [ref=e95]: subir zips · indexar XMLs · explorar por tipo
+            - img [ref=e97]
+            - generic [ref=e100]:
+              - generic [ref=e101]: novo
+              - generic [ref=e102]: ferramenta
+        - link "Problemas erros L1 / L2 · pendências · reenvios — abertos" [ref=e103] [cursor=pointer]:
+          - /url: /problemas
+          - img [ref=e105]
+          - generic [ref=e108]:
+            - generic [ref=e109]: Problemas
+            - generic [ref=e110]: erros L1 / L2 · pendências · reenvios
+          - generic [ref=e111]: — abertos
+        - generic [ref=e112]: ● Easy-Social v2 · backend express:3333 · postgres supabase

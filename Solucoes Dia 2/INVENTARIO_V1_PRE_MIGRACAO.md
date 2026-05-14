@@ -8,15 +8,15 @@
 
 ## 0. TL;DR — descobertas críticas
 
-| 🔴 Achado | Impacto | Ação |
-|---|---|---|
-| **Dados de produção da APPA NÃO estão no PC1** | risco zero aqui, mas precisa garantir backup PC2 + VPS antes de migrar | confirmar (no PC2) onde está o DB APPA "vivo" hoje (PC2 local? VPS?) — fazer 2 dumps independentes antes de qualquer ação |
-| **V1 já é multi-DB**, não tenant-por-linha como pensávamos | arquitetura V1 ↔ V2 mais próxima do que parecia | confere: `easy_social_db` (APPA) + `easy_social_db_emp2` (SOLUCOES), com `master_empresas` mestre — **a estratégia "1 DB por empresa" do V2 é evolução natural, não disruptura** |
-| **Cert APPA fora da pasta padrão** | cert mora em `python-scripts/certificados/cert_05969071000110_45C7EBE84F3FE665.pfx`, não em `_certificados_locais/` | mover/centralizar para `_certificados_locais/` antes da migração |
-| **ARQUIVOS_RETORNO só tem out-dez/2025** | XMLs de retorno fev-set/2025 da APPA **NÃO foram salvos** | confirma o que [`MIGRACAO_V1_V2.md` §3.2](./MIGRACAO_V1_V2.md) já documentou: APPA migra com metadados only, sem XML completo histórico |
-| **`backend/uploads/` tem 1.1 GB** | XLSX de DIRF, cruzamento, ficha financeira — anexos importados via UI V1 | decidir: migrar pra Supabase Storage? Manter local? Descartar (> 6 meses)? |
-| **`_backups_db/` 505 MB** | backups Postgres de meses passados — ouro pra reconciliação ETL | preservar como read-only durante toda a migração |
-| **APPA cert vence quando?** | coluna `validade` não existe mais — coluna foi removida | verificar PFX direto com OpenSSL antes de migrar |
+| 🔴 Achado                                                  | Impacto                                                                                                             | Ação                                                                                                                                                                             |
+| ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Dados de produção da APPA NÃO estão no PC1**             | risco zero aqui, mas precisa garantir backup PC2 + VPS antes de migrar                                              | confirmar (no PC2) onde está o DB APPA "vivo" hoje (PC2 local? VPS?) — fazer 2 dumps independentes antes de qualquer ação                                                        |
+| **V1 já é multi-DB**, não tenant-por-linha como pensávamos | arquitetura V1 ↔ V2 mais próxima do que parecia                                                                     | confere: `easy_social_db` (APPA) + `easy_social_db_emp2` (SOLUCOES), com `master_empresas` mestre — **a estratégia "1 DB por empresa" do V2 é evolução natural, não disruptura** |
+| **Cert APPA fora da pasta padrão**                         | cert mora em `python-scripts/certificados/cert_05969071000110_45C7EBE84F3FE665.pfx`, não em `_certificados_locais/` | mover/centralizar para `_certificados_locais/` antes da migração                                                                                                                 |
+| **ARQUIVOS_RETORNO só tem out-dez/2025**                   | XMLs de retorno fev-set/2025 da APPA **NÃO foram salvos**                                                           | confirma o que [`MIGRACAO_V1_V2.md` §3.2](./MIGRACAO_V1_V2.md) já documentou: APPA migra com metadados only, sem XML completo histórico                                          |
+| **`backend/uploads/` tem 1.1 GB**                          | XLSX de DIRF, cruzamento, ficha financeira — anexos importados via UI V1                                            | decidir: migrar pra Supabase Storage? Manter local? Descartar (> 6 meses)?                                                                                                       |
+| **`_backups_db/` 505 MB**                                  | backups Postgres de meses passados — ouro pra reconciliação ETL                                                     | preservar como read-only durante toda a migração                                                                                                                                 |
+| **APPA cert vence quando?**                                | coluna `validade` não existe mais — coluna foi removida                                                             | verificar PFX direto com OpenSSL antes de migrar                                                                                                                                 |
 
 ---
 
@@ -49,13 +49,13 @@ C:\Users\xandao\Documents\GitHub\Easy-Social\
 
 ## 2. Bancos de dados Postgres (localhost:5432)
 
-| Banco | Tamanho | Conteúdo | Estado |
-|---|---|---|---|
-| **`easy_social_solucoes`** | **2829 MB** | V2 vivo (Soluções): 184k explorador_eventos, 16k timeline_envio_item, 162 envios | 🟢 produção atual |
-| **`easy_social_db`** | 19 MB | V1 da APPA (estrutura) — só tem 1 row em master_empresas, certificados_a1, config_esocial; resto vazio | ⚠️ casca — dados reais não estão aqui |
-| **`easy_social_master`** | 8 MB | usuarios + empresas + usuario_empresa + naturezas — todas com **0 linhas** | ⚠️ DDL antigo abandonado |
-| coffee_candles | 8 MB | (irrelevante — outro projeto) | — |
-| postgres | 8 MB | template — | — |
+| Banco                      | Tamanho     | Conteúdo                                                                                               | Estado                                |
+| -------------------------- | ----------- | ------------------------------------------------------------------------------------------------------ | ------------------------------------- |
+| **`easy_social_solucoes`** | **2829 MB** | V2 vivo (Soluções): 184k explorador_eventos, 16k timeline_envio_item, 162 envios                       | 🟢 produção atual                     |
+| **`easy_social_db`**       | 19 MB       | V1 da APPA (estrutura) — só tem 1 row em master_empresas, certificados_a1, config_esocial; resto vazio | ⚠️ casca — dados reais não estão aqui |
+| **`easy_social_master`**   | 8 MB        | usuarios + empresas + usuario_empresa + naturezas — todas com **0 linhas**                             | ⚠️ DDL antigo abandonado              |
+| coffee_candles             | 8 MB        | (irrelevante — outro projeto)                                                                          | —                                     |
+| postgres                   | 8 MB        | template —                                                                                             | —                                     |
 
 ### 2.1. Tabela mestre `master_empresas` (no banco `easy_social_db`)
 
@@ -69,18 +69,18 @@ id | nome                                              | cnpj               | db
 
 ### 2.2. Tabelas no banco `easy_social_solucoes` (V2 vivo — top 10)
 
-| Tabela | Linhas | Tamanho |
-|---|---|---|
-| explorador_eventos | 184.769 | 201 MB |
-| timeline_envio_item | 16.103 | 4.4 MB |
-| timeline_envio | 162 | 144 KB |
-| explorador_atividade | 3 | 48 KB |
-| explorador_importacoes | 3 | 32 KB |
-| empresa_zips_brutos | 1 | 80 KB |
-| master_empresas | 1 | 64 KB (só Soluções!) |
-| timeline_mes | 1 | 56 KB |
-| certificados_a1 | 0 | — |
-| pipeline_cpf_results | 0 | — |
+| Tabela                 | Linhas  | Tamanho              |
+| ---------------------- | ------- | -------------------- |
+| explorador_eventos     | 184.769 | 201 MB               |
+| timeline_envio_item    | 16.103  | 4.4 MB               |
+| timeline_envio         | 162     | 144 KB               |
+| explorador_atividade   | 3       | 48 KB                |
+| explorador_importacoes | 3       | 32 KB                |
+| empresa_zips_brutos    | 1       | 80 KB                |
+| master_empresas        | 1       | 64 KB (só Soluções!) |
+| timeline_mes           | 1       | 56 KB                |
+| certificados_a1        | 0       | —                    |
+| pipeline_cpf_results   | 0       | —                    |
 
 ### 2.3. Tabelas V1 que existem na estrutura mas estão **vazias** em ambos DBs
 
@@ -92,14 +92,15 @@ id | nome                                              | cnpj               | db
 
 ## 3. Certificados digitais
 
-| Path | CNPJ | Empresa | Tamanho | Última mod |
-|---|---|---|---|---|
-| `_certificados_locais/SOLUCOES_SERVICOS_TERCEIRIZADOS_09445502000109.pfx` | 09445502000109 | Soluções | 3.7 KB | 04/05/2026 |
-| `python-scripts/certificados/cert_05969071000110_45C7EBE84F3FE665.pfx` | **05969071000110** | **APPA** | 3.9 KB | 28/03/2026 |
-| `python-scripts/certificados/cert_unknown_45C7EBE84F3FE665.pfx` | desconhecido | ? | 3.9 KB | 28/03/2026 |
-| `python-scripts/tests/fixtures/certs/...` (2 arquivos) | fixtures | teste | — | — |
+| Path                                                                      | CNPJ               | Empresa  | Tamanho | Última mod |
+| ------------------------------------------------------------------------- | ------------------ | -------- | ------- | ---------- |
+| `_certificados_locais/SOLUCOES_SERVICOS_TERCEIRIZADOS_09445502000109.pfx` | 09445502000109     | Soluções | 3.7 KB  | 04/05/2026 |
+| `python-scripts/certificados/cert_05969071000110_45C7EBE84F3FE665.pfx`    | **05969071000110** | **APPA** | 3.9 KB  | 28/03/2026 |
+| `python-scripts/certificados/cert_unknown_45C7EBE84F3FE665.pfx`           | desconhecido       | ?        | 3.9 KB  | 28/03/2026 |
+| `python-scripts/tests/fixtures/certs/...` (2 arquivos)                    | fixtures           | teste    | —       | —          |
 
 **Ação migração**:
+
 1. Mover/copiar o cert APPA para `_certificados_locais/APPA_SERVICOS_TEMPORARIOS_05969071000110.pfx`.
 2. Validar a senha (idem `Sol500424` para Soluções; APPA pode ter outra).
 3. Verificar validade com OpenSSL: `openssl pkcs12 -in <pfx> -nodes -nokeys | openssl x509 -noout -dates`.
@@ -110,15 +111,15 @@ id | nome                                              | cnpj               | db
 
 ## 4. ARQUIVOS_RETORNO/ — XMLs do governo
 
-| Mês | XMLs | MB |
-|---|---|---|
-| 2025-02 | 0 | 5.78 (só relatórios soltos) |
-| 2025-10 | 360 | 16.7 |
-| 2025-11 | 1.333 | 75.7 |
-| 2025-12 | 1.871 | 100.4 |
-| relatorios_lote1 | 0 | 1.0 |
-| relatorios_por_lote | 0 | 22.9 |
-| **TOTAL** | **3.564** | ~222 |
+| Mês                 | XMLs      | MB                          |
+| ------------------- | --------- | --------------------------- |
+| 2025-02             | 0         | 5.78 (só relatórios soltos) |
+| 2025-10             | 360       | 16.7                        |
+| 2025-11             | 1.333     | 75.7                        |
+| 2025-12             | 1.871     | 100.4                       |
+| relatorios_lote1    | 0         | 1.0                         |
+| relatorios_por_lote | 0         | 22.9                        |
+| **TOTAL**           | **3.564** | ~222                        |
 
 ### Implicações
 
@@ -162,24 +163,24 @@ id | nome                                              | cnpj               | db
 
 ## 7. `backend/` (V1 Node + frontend builds + uploads)
 
-| Subpasta | MB | Observação |
-|---|---|---|
-| `uploads/` | **1109 MB** | XLSX importados pela UI V1 (DIRF, cruzamento) — investigar política |
-| `node_modules/` | 126 | descartável (recria com `npm install`) |
-| `src/` | 0.26 | **CÓDIGO REAL — 23 arquivos** |
-| `dist/` | 0.24 | build TS — descartável |
+| Subpasta        | MB          | Observação                                                          |
+| --------------- | ----------- | ------------------------------------------------------------------- |
+| `uploads/`      | **1109 MB** | XLSX importados pela UI V1 (DIRF, cruzamento) — investigar política |
+| `node_modules/` | 126         | descartável (recria com `npm install`)                              |
+| `src/`          | 0.26        | **CÓDIGO REAL — 23 arquivos**                                       |
+| `dist/`         | 0.24        | build TS — descartável                                              |
 
 ### 7.1. Rotas V1 (`backend/src/routes/`)
 
-| Rota | KB | Função |
-|---|---|---|
-| `adminRoutes.ts` | 13.7 | painel admin |
-| `cruzamentoRoutes.ts` | 15.3 | cruzamento natureza/rubrica |
-| `tableRoutes.ts` | 10.5 | leitura/escrita das tabelas mestras |
-| `naturezaRoutes.ts` | 6.8 | naturezas eSocial |
-| `validationRoutes.ts` | 4.9 | validações |
-| `authRoutes.ts` | 4.7 | login + JWT (bcrypt) |
-| `upload.routes.ts` + `uploadRoutes.ts` | 3.2 | upload XLSX (multer) |
+| Rota                                   | KB   | Função                              |
+| -------------------------------------- | ---- | ----------------------------------- |
+| `adminRoutes.ts`                       | 13.7 | painel admin                        |
+| `cruzamentoRoutes.ts`                  | 15.3 | cruzamento natureza/rubrica         |
+| `tableRoutes.ts`                       | 10.5 | leitura/escrita das tabelas mestras |
+| `naturezaRoutes.ts`                    | 6.8  | naturezas eSocial                   |
+| `validationRoutes.ts`                  | 4.9  | validações                          |
+| `authRoutes.ts`                        | 4.7  | login + JWT (bcrypt)                |
+| `upload.routes.ts` + `uploadRoutes.ts` | 3.2  | upload XLSX (multer)                |
 
 ### 7.2. `backend/uploads/` — 22 arquivos grandes
 
@@ -204,6 +205,7 @@ id | nome                                              | cnpj               | db
 ### 9.1. `docs/` — 88 arquivos / 69 MDs
 
 #### Subpastas
+
 - `backup_preenvio_lote1/` (9 arquivos)
 - `como enviar s1210 em lotes 1 2 3 4/` (3)
 - `missao-08-04-2026/` (3)
@@ -213,6 +215,7 @@ id | nome                                              | cnpj               | db
 - `RELATORIOS_L2_2025/` (13)
 
 #### Top-level recentes (mais relevantes)
+
 - `GUIA_MONTAGEM_S1210.md` (19.3 KB) — guia técnico vivo
 - `explicacao envio s1210 por cpf.md` (10.7 KB)
 - `explicacao todos eventos que vem mes a mes do esocial.md` (16.9 KB)
@@ -239,40 +242,41 @@ Casos clínicos de bugs/exceções específicas da APPA. Todos relevantes para v
 - `VERBAS_INDENIZATORIAS_RESCISAO_ZERADAS.md`
 - `OPERADORA_MUDANCA_SETEMBRO_2025.md`
 - `PROBLEMA_APPA.md` (root case)
-- + 19 outros
+- - 19 outros
 
 > Estes MDs descrevem **regras de negócio** da APPA. Devem virar **checklist de validação** pós-ETL. Cada MD = 1 cenário de teste a reproduzir no V2.
 
 ### 9.3. `missoes/`
+
 5 arquivos: `MISSAO.md`, `MISSAO_14_04.md`, `MISSAO_15_04.md`, `MISSAO_16_04.md`, `MISSAO_774_607.md`.
 
 ---
 
 ## 10. Outras pastas relevantes
 
-| Pasta | Conteúdo | Migração? |
-|---|---|---|
-| `relatorio_ana/` | HTMLs gerados (relatórios de fechamento) | manter como artefatos históricos |
-| `transcricoes-call/` | transcrições de calls (Ana e outros) | manter — contexto de regras |
-| `comunicacao-ia-geral/` | trocas com IA (Enviada/Recebida) | descartável após migração |
-| `setup-inicial/` | scripts de setup ambiente | atualizar/portar |
-| `supabase/` | **investigar** — pode ser exploração inicial Supabase já feita | revisar antes de Phase 2 |
-| `_certificados_locais/` | só Soluções — APPA precisa entrar | mover cert APPA pra cá |
-| `Solucoes Dia 1/` | Guard rail 543/202 + relatórios agosto | já documentação V2 |
-| `Solucoes Dia 2/` | esta missão (3 MDs) | atual |
+| Pasta                   | Conteúdo                                                       | Migração?                        |
+| ----------------------- | -------------------------------------------------------------- | -------------------------------- |
+| `relatorio_ana/`        | HTMLs gerados (relatórios de fechamento)                       | manter como artefatos históricos |
+| `transcricoes-call/`    | transcrições de calls (Ana e outros)                           | manter — contexto de regras      |
+| `comunicacao-ia-geral/` | trocas com IA (Enviada/Recebida)                               | descartável após migração        |
+| `setup-inicial/`        | scripts de setup ambiente                                      | atualizar/portar                 |
+| `supabase/`             | **investigar** — pode ser exploração inicial Supabase já feita | revisar antes de Phase 2         |
+| `_certificados_locais/` | só Soluções — APPA precisa entrar                              | mover cert APPA pra cá           |
+| `Solucoes Dia 1/`       | Guard rail 543/202 + relatórios agosto                         | já documentação V2               |
+| `Solucoes Dia 2/`       | esta missão (3 MDs)                                            | atual                            |
 
 ---
 
 ## 11. O que está **fora do PC1** (precisa confirmar quando estiver no PC2)
 
-| Item | Onde provavelmente está | Como confirmar |
-|---|---|---|
-| **DB APPA produção real** | PC2 ou VPS Hostinger | rodar `\l` no Postgres do PC2 + `\dt` em `easy_social_db` lá |
-| **Certificados APPA atualizados** | PC2 ou VPS | comparar SHA dos PFX |
-| **XMLs de retorno fev-set/2025** | provável que **não foram salvos** em parte alguma | aceitar perda — V2 só com metadados |
-| **XMLs de retorno jan-abr/2026** | PC2 (`ARQUIVOS_RETORNO/`) | sincronizar antes da migração |
-| **Logs de envio históricos** | PC2 | sincronizar |
-| **Configurações VPS atual** | servidor Hostinger | dump de `/opt/easy-social` (V1 hoje rodando) + Nginx config + systemd |
+| Item                              | Onde provavelmente está                           | Como confirmar                                                        |
+| --------------------------------- | ------------------------------------------------- | --------------------------------------------------------------------- |
+| **DB APPA produção real**         | PC2 ou VPS Hostinger                              | rodar `\l` no Postgres do PC2 + `\dt` em `easy_social_db` lá          |
+| **Certificados APPA atualizados** | PC2 ou VPS                                        | comparar SHA dos PFX                                                  |
+| **XMLs de retorno fev-set/2025**  | provável que **não foram salvos** em parte alguma | aceitar perda — V2 só com metadados                                   |
+| **XMLs de retorno jan-abr/2026**  | PC2 (`ARQUIVOS_RETORNO/`)                         | sincronizar antes da migração                                         |
+| **Logs de envio históricos**      | PC2                                               | sincronizar                                                           |
+| **Configurações VPS atual**       | servidor Hostinger                                | dump de `/opt/easy-social` (V1 hoje rodando) + Nginx config + systemd |
 
 ---
 
@@ -305,7 +309,7 @@ Casos clínicos de bugs/exceções específicas da APPA. Todos relevantes para v
    - `_backups_db/appa_v1_pre_migracao_2026-05-08.sql.gz` (PC1)
    - cópia segunda em pendrive/cloud
 4. 🟡 **Mover cert APPA** de `python-scripts/certificados/` para `_certificados_locais/APPA_*.pfx`.
-5. 🟡 **Verificar `.gitignore`**: PFX, .env, _backups_db/, ARQUIVOS_RETORNO/ todos blindados.
+5. 🟡 **Verificar `.gitignore`**: PFX, .env, \_backups_db/, ARQUIVOS_RETORNO/ todos blindados.
 6. 🟡 **Fase 0 da MIGRACAO_V1_V2.md** (commits emergenciais V2 backend) — separado mas concorrente.
 7. 🟡 **Confirmar pendências APPA**: lista de pendências em aberto (Problemas APPA/) que NÃO podem ficar sem solução pós-migração.
 
@@ -313,14 +317,14 @@ Casos clínicos de bugs/exceções específicas da APPA. Todos relevantes para v
 
 ## 14. Riscos identificados
 
-| Risco | Probabilidade | Impacto | Mitigação |
-|---|---|---|---|
-| Dump APPA corrompido/incompleto | baixa | catastrófico | 2 dumps independentes + validar com `pg_restore --list` |
-| Cert APPA vencido durante migração | média | alto (não consegue enviar) | renovar antes de iniciar; ter cert reserva |
-| 31 casos de "Problemas APPA" não cobertos no V2 | alta | médio (validações falham na UI) | virar suite de testes de aceitação |
-| ETL perder linhas por encoding/charset | média | alto | comparar `COUNT(*)` por tabela origem vs destino |
-| XLSX `backend/uploads/` perdidos | baixa (são duplicados) | baixo | deduplicar e arquivar |
-| Timeline V1 (218k tentativas) explodir tabela V2 | média | médio | criar `historico_tentativas_cpf` separado, manter HEAD em `timeline_envio_item` |
+| Risco                                            | Probabilidade          | Impacto                         | Mitigação                                                                       |
+| ------------------------------------------------ | ---------------------- | ------------------------------- | ------------------------------------------------------------------------------- |
+| Dump APPA corrompido/incompleto                  | baixa                  | catastrófico                    | 2 dumps independentes + validar com `pg_restore --list`                         |
+| Cert APPA vencido durante migração               | média                  | alto (não consegue enviar)      | renovar antes de iniciar; ter cert reserva                                      |
+| 31 casos de "Problemas APPA" não cobertos no V2  | alta                   | médio (validações falham na UI) | virar suite de testes de aceitação                                              |
+| ETL perder linhas por encoding/charset           | média                  | alto                            | comparar `COUNT(*)` por tabela origem vs destino                                |
+| XLSX `backend/uploads/` perdidos                 | baixa (são duplicados) | baixo                           | deduplicar e arquivar                                                           |
+| Timeline V1 (218k tentativas) explodir tabela V2 | média                  | médio                           | criar `historico_tentativas_cpf` separado, manter HEAD em `timeline_envio_item` |
 
 ---
 

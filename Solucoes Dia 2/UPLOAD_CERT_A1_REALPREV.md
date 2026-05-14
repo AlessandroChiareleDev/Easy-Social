@@ -6,18 +6,18 @@
 
 ## 1. Por que Real Prev e não V1?
 
-| Aspecto | V1 Easy-Social | Real Prev | Vencedor |
-|---|---|---|---|
-| Validação PFX | Fernet + cryptography ✅ | Fernet + cryptography ✅ | empate |
-| Multi-tenant | nenhum (cert global) | `tenant_token` SHA-256 do CNPJ ✅ | **Real Prev** |
-| Suporte e-CPF | só e-CNPJ | e-CPF + e-CNPJ ✅ | **Real Prev** |
-| Procuração eletrônica | não | sim — cert pode ser de contador para múltiplos empregadores ✅ | **Real Prev** |
-| Status visual (vencido/expirando/válido) | não | sim, com `dias_restantes` ✅ | **Real Prev** |
-| Lock anti-duplicata | não | sim (`numero_serie` único) ✅ | **Real Prev** |
-| Endpoint listar por empregador | não | sim (`/por-empregador`) ✅ | **Real Prev** |
-| Senha senha-salva temporária | sim (24h) | só `senha_encrypted` permanente | empate funcional |
-| Assinatura XML | `XMLSigner` custom | `signxml.XMLSigner` + URI vazio (regra eSocial) ✅ | **Real Prev** |
-| Bibliotecas | cryptography, lxml, custom | `signxml`, `cryptography`, `lxml` ✅ | **Real Prev** |
+| Aspecto                                  | V1 Easy-Social             | Real Prev                                                      | Vencedor         |
+| ---------------------------------------- | -------------------------- | -------------------------------------------------------------- | ---------------- |
+| Validação PFX                            | Fernet + cryptography ✅   | Fernet + cryptography ✅                                       | empate           |
+| Multi-tenant                             | nenhum (cert global)       | `tenant_token` SHA-256 do CNPJ ✅                              | **Real Prev**    |
+| Suporte e-CPF                            | só e-CNPJ                  | e-CPF + e-CNPJ ✅                                              | **Real Prev**    |
+| Procuração eletrônica                    | não                        | sim — cert pode ser de contador para múltiplos empregadores ✅ | **Real Prev**    |
+| Status visual (vencido/expirando/válido) | não                        | sim, com `dias_restantes` ✅                                   | **Real Prev**    |
+| Lock anti-duplicata                      | não                        | sim (`numero_serie` único) ✅                                  | **Real Prev**    |
+| Endpoint listar por empregador           | não                        | sim (`/por-empregador`) ✅                                     | **Real Prev**    |
+| Senha senha-salva temporária             | sim (24h)                  | só `senha_encrypted` permanente                                | empate funcional |
+| Assinatura XML                           | `XMLSigner` custom         | `signxml.XMLSigner` + URI vazio (regra eSocial) ✅             | **Real Prev**    |
+| Bibliotecas                              | cryptography, lxml, custom | `signxml`, `cryptography`, `lxml` ✅                           | **Real Prev**    |
 
 ---
 
@@ -30,7 +30,9 @@ Projeto/python-backend/esocial/certificate_manager.py
 Projeto/python-backend/esocial/certificate_extractor.py
 Projeto/python-backend/esocial/xml_signer.py
 ```
+
 → destino:
+
 ```
 Easy-eSocial-v2/backend/app/certificate_manager.py
 Easy-eSocial-v2/backend/app/certificate_extractor.py
@@ -41,14 +43,14 @@ Easy-eSocial-v2/backend/app/xml_signer.py
 
 ### 2.2. Endpoints a recriar (extrair de `Projeto/python-backend/main.py` linhas 9465-9831)
 
-| Endpoint Real Prev | Função | V2 destino |
-|---|---|---|
-| `POST /api/certificado/upload` | upload + valida + persiste | `backend/app/cert_routes.py` |
-| `GET /api/certificado/ativo` | retorna cert ativo do tenant (com fallback) | `cert_routes.py` |
-| `GET /api/certificados/listar-ativos` | lista todos do tenant | `cert_routes.py` |
-| `GET /api/certificados/por-empregador` | dropdown UI: empregador + status cert | `cert_routes.py` |
-| `GET /api/certificado/info-completa` | detalhe completo cert ativo | `cert_routes.py` |
-| `DELETE /api/certificado/{id}` | remove (com `check_tenant_access`) | `cert_routes.py` |
+| Endpoint Real Prev                     | Função                                      | V2 destino                   |
+| -------------------------------------- | ------------------------------------------- | ---------------------------- |
+| `POST /api/certificado/upload`         | upload + valida + persiste                  | `backend/app/cert_routes.py` |
+| `GET /api/certificado/ativo`           | retorna cert ativo do tenant (com fallback) | `cert_routes.py`             |
+| `GET /api/certificados/listar-ativos`  | lista todos do tenant                       | `cert_routes.py`             |
+| `GET /api/certificados/por-empregador` | dropdown UI: empregador + status cert       | `cert_routes.py`             |
+| `GET /api/certificado/info-completa`   | detalhe completo cert ativo                 | `cert_routes.py`             |
+| `DELETE /api/certificado/{id}`         | remove (com `check_tenant_access`)          | `cert_routes.py`             |
 
 ---
 
@@ -273,45 +275,55 @@ def select_active_certificate(db, current_user, certificado_id=None):
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
-import api from '@/api'
-import { useCertStore } from '@/stores/cert'
+import { ref } from "vue";
+import api from "@/api";
+import { useCertStore } from "@/stores/cert";
 
-const file = ref<File | null>(null)
-const senha = ref('')
-const erro = ref('')
-const enviando = ref(false)
-const store = useCertStore()
+const file = ref<File | null>(null);
+const senha = ref("");
+const erro = ref("");
+const enviando = ref(false);
+const store = useCertStore();
 
 async function enviar() {
-  if (!file.value || !senha.value) return
-  erro.value = ''
-  enviando.value = true
-  const fd = new FormData()
-  fd.append('file', file.value)
-  fd.append('senha', senha.value)
+  if (!file.value || !senha.value) return;
+  erro.value = "";
+  enviando.value = true;
+  const fd = new FormData();
+  fd.append("file", file.value);
+  fd.append("senha", senha.value);
   try {
-    const { data } = await api.post('/api/certificado/upload', fd, {
-      headers: { 'Content-Type': 'multipart/form-data' },
-    })
-    store.setAtivo(data.certificado)
-    senha.value = ''  // nunca persiste no client
-    file.value = null
+    const { data } = await api.post("/api/certificado/upload", fd, {
+      headers: { "Content-Type": "multipart/form-data" },
+    });
+    store.setAtivo(data.certificado);
+    senha.value = ""; // nunca persiste no client
+    file.value = null;
   } catch (e: any) {
-    erro.value = e?.response?.data?.detail ?? 'Erro no upload'
+    erro.value = e?.response?.data?.detail ?? "Erro no upload";
   } finally {
-    enviando.value = false
+    enviando.value = false;
   }
 }
 </script>
 
 <template>
   <div class="cert-upload">
-    <input type="file" accept=".pfx,.p12"
-           @change="e => file = (e.target as HTMLInputElement).files?.[0] ?? null">
-    <input type="password" v-model="senha" placeholder="Senha do certificado" autocomplete="off">
+    <input
+      type="file"
+      accept=".pfx,.p12"
+      @change="
+        (e) => (file = (e.target as HTMLInputElement).files?.[0] ?? null)
+      "
+    />
+    <input
+      type="password"
+      v-model="senha"
+      placeholder="Senha do certificado"
+      autocomplete="off"
+    />
     <button :disabled="!file || !senha || enviando" @click="enviar">
-      {{ enviando ? 'Enviando…' : 'Enviar certificado' }}
+      {{ enviando ? "Enviando…" : "Enviar certificado" }}
     </button>
     <p v-if="erro" class="erro">{{ erro }}</p>
   </div>
@@ -319,6 +331,7 @@ async function enviar() {
 ```
 
 **Política client-side**:
+
 - Senha **nunca** vai pra localStorage / sessionStorage
 - `autocomplete="off"` no input password
 - Limpar `senha.value` após sucesso ou falha
@@ -359,15 +372,15 @@ lxml>=5.1
 
 ## 9. Riscos / gotchas conhecidos
 
-| # | Problema | Mitigação |
-|---|---|---|
-| 1 | Hardcoded `_ENCRYPTION_KEY = b'VeO-WGEJAv51ZXFdGO0MV06Bl2lI1XkYMiqV_WOpy_g='` | mover pra env `SECRET_KEY` em produção, mas **manter compat** pra descriptografar senhas antigas |
-| 2 | `arquivo_path` salva path absoluto Windows no Real Prev | em produção (Linux VPS) normalizar com `ntpath.basename()` + path relativo (Real Prev já faz isso nas linhas 7823-7831) |
-| 3 | Validação de senha NÃO inclui re-assinar test → senha pode "abrir" o PFX mas falhar na hora de assinar | adicionar mini-test de assinatura sobre XML dummy no momento do upload |
-| 4 | Sem rate-limit no `/upload` | adicionar nginx `limit_req_zone` (5/min/IP) |
-| 5 | Cert salvo no filesystem do servidor — não Supabase Storage | OK pra V1 mas considerar S3-compat com server-side encryption no futuro |
-| 6 | `signxml` é grande (puxa pyOpenSSL etc.) | aceitar — é o único maduro pra XMLDSig BR |
-| 7 | Procuração eletrônica adiciona complexidade — V2 começa SEM ela, depois importa do Real Prev | feature deferred para Phase 2+ |
+| #   | Problema                                                                                               | Mitigação                                                                                                               |
+| --- | ------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------- |
+| 1   | Hardcoded `_ENCRYPTION_KEY = b'VeO-WGEJAv51ZXFdGO0MV06Bl2lI1XkYMiqV_WOpy_g='`                          | mover pra env `SECRET_KEY` em produção, mas **manter compat** pra descriptografar senhas antigas                        |
+| 2   | `arquivo_path` salva path absoluto Windows no Real Prev                                                | em produção (Linux VPS) normalizar com `ntpath.basename()` + path relativo (Real Prev já faz isso nas linhas 7823-7831) |
+| 3   | Validação de senha NÃO inclui re-assinar test → senha pode "abrir" o PFX mas falhar na hora de assinar | adicionar mini-test de assinatura sobre XML dummy no momento do upload                                                  |
+| 4   | Sem rate-limit no `/upload`                                                                            | adicionar nginx `limit_req_zone` (5/min/IP)                                                                             |
+| 5   | Cert salvo no filesystem do servidor — não Supabase Storage                                            | OK pra V1 mas considerar S3-compat com server-side encryption no futuro                                                 |
+| 6   | `signxml` é grande (puxa pyOpenSSL etc.)                                                               | aceitar — é o único maduro pra XMLDSig BR                                                                               |
+| 7   | Procuração eletrônica adiciona complexidade — V2 começa SEM ela, depois importa do Real Prev           | feature deferred para Phase 2+                                                                                          |
 
 ---
 
@@ -397,11 +410,11 @@ lxml>=5.1
 
 ## Apêndice — referências exatas no Real Prev
 
-| Caminho | Linhas |
-|---|---|
-| `Projeto/python-backend/esocial/certificate_manager.py` | 1-185 |
-| `Projeto/python-backend/esocial/certificate_extractor.py` | 1-220 |
-| `Projeto/python-backend/esocial/xml_signer.py` | 1-260 |
-| `Projeto/python-backend/main.py` | 9465-9831 (endpoints) |
-| `Projeto/python-backend/main.py` | 747-771 (`select_active_certificate`) |
-| `Projeto/python-backend/migrations/migrate_tenancy.py` | 1-150 (`tenant_token` SHA-256) |
+| Caminho                                                   | Linhas                                |
+| --------------------------------------------------------- | ------------------------------------- |
+| `Projeto/python-backend/esocial/certificate_manager.py`   | 1-185                                 |
+| `Projeto/python-backend/esocial/certificate_extractor.py` | 1-220                                 |
+| `Projeto/python-backend/esocial/xml_signer.py`            | 1-260                                 |
+| `Projeto/python-backend/main.py`                          | 9465-9831 (endpoints)                 |
+| `Projeto/python-backend/main.py`                          | 747-771 (`select_active_certificate`) |
+| `Projeto/python-backend/migrations/migrate_tenancy.py`    | 1-150 (`tenant_token` SHA-256)        |

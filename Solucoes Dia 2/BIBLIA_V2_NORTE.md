@@ -40,6 +40,7 @@
 **O que vou construir, em uma frase**: um sistema web (Vue 3 + FastAPI) hospedado no VPS atual da Hostinger, onde cada empresa tem **seu próprio banco Supabase**, com upload de certificado A1 estilo Real Prev, login por usuário, multi-empresa por usuário, e capaz de tudo que o V1 fazia + envio S-1210/S-1298/S-1010 + chain walk + XML completo do governo armazenado.
 
 **Como cheguei aqui**:
+
 - O V1 funciona mas é Node antigo, multi-tenant frágil (por linha), sem XML completo, schema misturado.
 - O V2 nasceu pra resolver tudo isso. Já tem o **núcleo de envio** validado (CICLO100 fechou Soluções).
 - Falta **periferia**: auth, multi-tenant runtime, upload cert, frontend ligado, deploy.
@@ -58,35 +59,35 @@
 
 ## 2. Decisões já travadas (não rediscutir)
 
-| # | Decisão | Razão |
-|---|---|---|
-| D1 | Backend = FastAPI Python | já existe + envio paralelo + chain walk validado |
-| D2 | Frontend = Vue 3 + TS strict + Tailwind v4 | já existe (Liquid Glass / Ghost Green) |
-| D3 | DB = Supabase (managed) | backup + HA + Postgres puro |
-| D4 | 1 DB por empresa | isolamento total LGPD/auditoria |
-| D5 | DB Sistema separado (3º banco) | routing + users + audit_log |
-| D6 | Pattern cert A1 = Real Prev (não V1) | mais maduro, multi-tenant nativo |
-| D7 | XML completo via `lobject` Postgres + gzip | rastreabilidade |
-| D8 | Cutover via subdomain `v2.easyesocial.com.br` por 7 dias | rollback safe |
-| D9 | V1 fica read-only após cutover, archive 12 meses | LGPD + sanidade |
-| D10 | Senha cert criptografada Fernet, **nunca** em plaintext | Real Prev pattern |
-| D11 | URI vazio na assinatura XMLDSig | exigência eSocial (erro 142) |
-| D12 | `signxml` lib (não custom) | maturo, BR-friendly |
+| #   | Decisão                                                  | Razão                                            |
+| --- | -------------------------------------------------------- | ------------------------------------------------ |
+| D1  | Backend = FastAPI Python                                 | já existe + envio paralelo + chain walk validado |
+| D2  | Frontend = Vue 3 + TS strict + Tailwind v4               | já existe (Liquid Glass / Ghost Green)           |
+| D3  | DB = Supabase (managed)                                  | backup + HA + Postgres puro                      |
+| D4  | 1 DB por empresa                                         | isolamento total LGPD/auditoria                  |
+| D5  | DB Sistema separado (3º banco)                           | routing + users + audit_log                      |
+| D6  | Pattern cert A1 = Real Prev (não V1)                     | mais maduro, multi-tenant nativo                 |
+| D7  | XML completo via `lobject` Postgres + gzip               | rastreabilidade                                  |
+| D8  | Cutover via subdomain `v2.easyesocial.com.br` por 7 dias | rollback safe                                    |
+| D9  | V1 fica read-only após cutover, archive 12 meses         | LGPD + sanidade                                  |
+| D10 | Senha cert criptografada Fernet, **nunca** em plaintext  | Real Prev pattern                                |
+| D11 | URI vazio na assinatura XMLDSig                          | exigência eSocial (erro 142)                     |
+| D12 | `signxml` lib (não custom)                               | maturo, BR-friendly                              |
 
 ---
 
 ## 3. Decisões pendentes (preciso responder antes de Phase 2)
 
-| # | Pergunta | Opções | Recomendação |
-|---|---|---|---|
-| P1 | Supabase Cloud ou self-hosted no VPS? | a) Cloud b) self-hosted | **Cloud** — backup/HA out-of-the-box |
-| P2 | Sistema DB no Supabase Cloud separado, ou junto com APPA? | a) separado b) junto APPA | **separado** — desacoplamento |
-| P3 | Onde a chave Fernet vive em produção? | a) `.env` b) Supabase Vault c) Hashicorp Vault | **a + rotacionar pra `.env` enquanto não migra pra Vault**; manter compat com chave hardcoded Real Prev pra descriptografar senhas existentes |
-| P4 | Storage de XML > 24m (frio) | a) S3-compat (Hostinger Object Storage) b) só comprimido no Postgres | **a** — quente 24m no DB, frio S3 |
-| P5 | Auth: importar bcrypt do V1 ou recriar usuários? | a) importar b) recriar | **importar** — Rafa não troca senha |
-| P6 | Tela de seleção empresa: dropdown ou cards? | a) dropdown b) cards visuais | **cards** — mais bonito, condiz com Liquid Glass |
-| P7 | Logs estruturados | a) loguru b) stdlib logging c) structlog | **loguru** — DX melhor, JSON pronto |
-| P8 | Pool de conexão | a) `psycopg2.pool` b) `asyncpg` c) SQLAlchemy session | **a** — leve, casa com FastAPI sync routes que já existem |
+| #   | Pergunta                                                  | Opções                                                               | Recomendação                                                                                                                                  |
+| --- | --------------------------------------------------------- | -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| P1  | Supabase Cloud ou self-hosted no VPS?                     | a) Cloud b) self-hosted                                              | **Cloud** — backup/HA out-of-the-box                                                                                                          |
+| P2  | Sistema DB no Supabase Cloud separado, ou junto com APPA? | a) separado b) junto APPA                                            | **separado** — desacoplamento                                                                                                                 |
+| P3  | Onde a chave Fernet vive em produção?                     | a) `.env` b) Supabase Vault c) Hashicorp Vault                       | **a + rotacionar pra `.env` enquanto não migra pra Vault**; manter compat com chave hardcoded Real Prev pra descriptografar senhas existentes |
+| P4  | Storage de XML > 24m (frio)                               | a) S3-compat (Hostinger Object Storage) b) só comprimido no Postgres | **a** — quente 24m no DB, frio S3                                                                                                             |
+| P5  | Auth: importar bcrypt do V1 ou recriar usuários?          | a) importar b) recriar                                               | **importar** — Rafa não troca senha                                                                                                           |
+| P6  | Tela de seleção empresa: dropdown ou cards?               | a) dropdown b) cards visuais                                         | **cards** — mais bonito, condiz com Liquid Glass                                                                                              |
+| P7  | Logs estruturados                                         | a) loguru b) stdlib logging c) structlog                             | **loguru** — DX melhor, JSON pronto                                                                                                           |
+| P8  | Pool de conexão                                           | a) `psycopg2.pool` b) `asyncpg` c) SQLAlchemy session                | **a** — leve, casa com FastAPI sync routes que já existem                                                                                     |
 
 > **Bloqueio**: Phase 2 só começa quando P1, P2 e P5 estiverem respondidos.
 
@@ -213,18 +214,19 @@ F1 (limpeza V2) ──► F2 (schema único)
 
 ### Tarefas
 
-| # | Ação | Comando |
-|---|---|---|
-| 1.1 | Mover todos `_*.py` e `_*.log` da raiz `backend/` pra `backend/_archive/` | `mkdir _archive ; mv _*.py _*.log _*.txt _*.err _archive/` |
-| 1.2 | Adicionar `_archive/` ao `.gitignore` | edit |
-| 1.3 | Auditar `backend/app/` — qual file é vivo, qual é zombie? | leitura + lista |
-| 1.4 | Apagar `envio_v1*.{log,err}` da raiz (são logs antigos, não código) | rm |
-| 1.5 | Confirmar `migrations/001..004` aplicáveis ao Supabase puro (sem psql `\d` etc.) | review |
-| 1.6 | Remover `backend/app/envio_teste_100.py` se obsoleto | review + rm |
-| 1.7 | Frontend: rodar `npm run build` localmente — confirmar que builda sem erro | `npm run build` |
-| 1.8 | Frontend: deletar pastas `dist/` antes de commit | rm |
+| #   | Ação                                                                             | Comando                                                    |
+| --- | -------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| 1.1 | Mover todos `_*.py` e `_*.log` da raiz `backend/` pra `backend/_archive/`        | `mkdir _archive ; mv _*.py _*.log _*.txt _*.err _archive/` |
+| 1.2 | Adicionar `_archive/` ao `.gitignore`                                            | edit                                                       |
+| 1.3 | Auditar `backend/app/` — qual file é vivo, qual é zombie?                        | leitura + lista                                            |
+| 1.4 | Apagar `envio_v1*.{log,err}` da raiz (são logs antigos, não código)              | rm                                                         |
+| 1.5 | Confirmar `migrations/001..004` aplicáveis ao Supabase puro (sem psql `\d` etc.) | review                                                     |
+| 1.6 | Remover `backend/app/envio_teste_100.py` se obsoleto                             | review + rm                                                |
+| 1.7 | Frontend: rodar `npm run build` localmente — confirmar que builda sem erro       | `npm run build`                                            |
+| 1.8 | Frontend: deletar pastas `dist/` antes de commit                                 | rm                                                         |
 
 ### Critério de pronto
+
 - `git status` mostra só código vivo + docs.
 - Build front roda sem warning.
 
@@ -314,6 +316,7 @@ python -m app.migrate status
 ```
 
 ### Critério de pronto
+
 - 2 SQLs versionados existem.
 - Migration runner aplica em DB local de teste sem erro.
 - `status` mostra versão correta em cada DB.
@@ -324,12 +327,12 @@ python -m app.migrate status
 
 ### Arquivos a criar/atualizar em `backend/app/`
 
-| Arquivo | Função |
-|---|---|
-| `sistema_db.py` | conexão pool **só** ao Sistema DB; queries de routing |
+| Arquivo                           | Função                                                  |
+| --------------------------------- | ------------------------------------------------------- |
+| `sistema_db.py`                   | conexão pool **só** ao Sistema DB; queries de routing   |
 | `tenant.py` (já existe — auditar) | pool por empresa + `empresa_conn(cnpj)` context manager |
-| `middlewares.py` | auth_middleware + tenant_middleware |
-| `auth.py` | JWT encode/decode + `get_current_user` Depends |
+| `middlewares.py`                  | auth_middleware + tenant_middleware                     |
+| `auth.py`                         | JWT encode/decode + `get_current_user` Depends          |
 
 ### Esqueleto
 
@@ -416,6 +419,7 @@ async def tenant_middleware(request: Request, call_next):
 ```
 
 ### Critério de pronto
+
 - `curl -H "Authorization: Bearer <jwt>" -H "X-Empresa-CNPJ: 09445502000109" /api/explorador/eventos` funciona.
 - Sem JWT → 401. JWT válido + CNPJ não permitido → 403.
 
@@ -427,26 +431,26 @@ async def tenant_middleware(request: Request, call_next):
 
 ### 4.A — Auth
 
-| # | Tarefa |
-|---|---|
-| 4.A.1 | `pip install pyjwt[crypto] passlib[bcrypt] python-multipart` |
+| #     | Tarefa                                                                                            |
+| ----- | ------------------------------------------------------------------------------------------------- |
+| 4.A.1 | `pip install pyjwt[crypto] passlib[bcrypt] python-multipart`                                      |
 | 4.A.2 | `app/auth.py`: `hash_password`, `verify_password`, `encode_jwt`, `decode_jwt`, `get_current_user` |
-| 4.A.3 | `app/auth_routes.py`: `POST /api/auth/login` → retorna `{token, empresas:[{cnpj,razao,papel}]}` |
-| 4.A.4 | Seed: 1 super_admin + 1 user APPA + 1 user Soluções no Sistema DB |
-| 4.A.5 | Teste: login retorna token, token decodifica, lista empresas correta |
+| 4.A.3 | `app/auth_routes.py`: `POST /api/auth/login` → retorna `{token, empresas:[{cnpj,razao,papel}]}`   |
+| 4.A.4 | Seed: 1 super_admin + 1 user APPA + 1 user Soluções no Sistema DB                                 |
+| 4.A.5 | Teste: login retorna token, token decodifica, lista empresas correta                              |
 
 ### 4.B — Cert A1 (porta do Real Prev)
 
-| # | Tarefa |
-|---|---|
-| 4.B.1 | `pip install cryptography signxml lxml` (signxml é o que falta) |
+| #     | Tarefa                                                                                                      |
+| ----- | ----------------------------------------------------------------------------------------------------------- |
+| 4.B.1 | `pip install cryptography signxml lxml` (signxml é o que falta)                                             |
 | 4.B.2 | Copiar `Projeto/python-backend/esocial/certificate_manager.py` → `app/certificate_manager.py` (sem mudança) |
-| 4.B.3 | Copiar `certificate_extractor.py` → `app/certificate_extractor.py` |
-| 4.B.4 | **Substituir** `app/xml_signer.py` atual pelo do Real Prev |
-| 4.B.5 | Criar `app/cert_routes.py` com 6 endpoints (extrair de `Projeto/main.py` 9465-9831) |
-| 4.B.6 | Adaptar pra usar `empresa_conn()` ao invés de session global |
-| 4.B.7 | Mover chave Fernet pra `os.environ['FERNET_KEY']` (default = chave Real Prev pra compat) |
-| 4.B.8 | Refatorar `envio_paralelo_v2.py`: substituir flag `--cert/--senha` por busca via DB:
+| 4.B.3 | Copiar `certificate_extractor.py` → `app/certificate_extractor.py`                                          |
+| 4.B.4 | **Substituir** `app/xml_signer.py` atual pelo do Real Prev                                                  |
+| 4.B.5 | Criar `app/cert_routes.py` com 6 endpoints (extrair de `Projeto/main.py` 9465-9831)                         |
+| 4.B.6 | Adaptar pra usar `empresa_conn()` ao invés de session global                                                |
+| 4.B.7 | Mover chave Fernet pra `os.environ['FERNET_KEY']` (default = chave Real Prev pra compat)                    |
+| 4.B.8 | Refatorar `envio_paralelo_v2.py`: substituir flag `--cert/--senha` por busca via DB:                        |
 
 ```python
 cert = select_active_certificate(empresa_db, current_user)
@@ -455,6 +459,7 @@ cert_path = cert.arquivo_path
 ```
 
 ### Critério de pronto
+
 - `POST /api/certificado/upload` aceita PFX + senha, valida, salva, registra em `certificados`.
 - `GET /api/certificado/ativo` retorna o cert ativo do tenant ativo.
 - `envio_paralelo_v2 --per-apur 2025-08 --limite 10` (sem `--cert`/`--senha`) funciona usando cert do DB.
@@ -465,16 +470,17 @@ cert_path = cert.arquivo_path
 
 > **Pré-requisito**: P1, P2 respondidos.
 
-| # | Ação |
-|---|---|
+| #   | Ação                                                             |
+| --- | ---------------------------------------------------------------- |
 | 5.1 | Criar projeto Supabase `easy-esocial-sistema` (região São Paulo) |
-| 5.2 | Criar projeto Supabase `easy-esocial-appa` |
-| 5.3 | Criar projeto Supabase `easy-esocial-solucoes` |
-| 5.4 | Anotar `db_url` (com pooler 6543) de cada um em `.env` local |
-| 5.5 | Aplicar `sistema_v1.0.0.sql` no Sistema DB |
-| 5.6 | Aplicar `empresa_v1.0.0.sql` no APPA DB |
-| 5.7 | Aplicar `empresa_v1.0.0.sql` no Soluções DB |
-| 5.8 | Inserir registros em `empresas_routing`:
+| 5.2 | Criar projeto Supabase `easy-esocial-appa`                       |
+| 5.3 | Criar projeto Supabase `easy-esocial-solucoes`                   |
+| 5.4 | Anotar `db_url` (com pooler 6543) de cada um em `.env` local     |
+| 5.5 | Aplicar `sistema_v1.0.0.sql` no Sistema DB                       |
+| 5.6 | Aplicar `empresa_v1.0.0.sql` no APPA DB                          |
+| 5.7 | Aplicar `empresa_v1.0.0.sql` no Soluções DB                      |
+| 5.8 | Inserir registros em `empresas_routing`:                         |
+
 ```sql
 INSERT INTO empresas_routing (cnpj, razao_social, db_url, schema_version, flags) VALUES
 ('05969071000110', 'APPA SERVICOS TEMPORARIOS LTDA',
@@ -484,6 +490,7 @@ INSERT INTO empresas_routing (cnpj, razao_social, db_url, schema_version, flags)
  'postgresql://...', '1.0.0',
  '{"tem_xml_completo": true, "origem":"v2_nativo"}');
 ```
+
 | 5.9 | Smoke test do migration runner: `python -m app.migrate status` mostra ambos como 1.0.0 |
 
 ---
@@ -515,18 +522,19 @@ Reconciliação:
 
 ### Mapping V1 → V2 (resumo, detalhe na Phase 6 da MIGRACAO)
 
-| V1 | V2 | Transformação |
-|---|---|---|
-| `s1210_cpf_envios` (218k linhas) | `timeline_envio_item` (HEAD) + `historico_tentativas_cpf` (full) | DISTINCT ON (cpf, per_apur) ORDER BY enviado_em DESC |
-| `s1210_cpf_scope` | `pipeline_cpf_results` | direto |
-| `users` | Sistema DB `users` | manter `password_hash` bcrypt |
-| `master_empresas` | Sistema DB `empresas_routing` | já fazendo |
-| `rubricas`, `naturezas` | idem no APPA DB | direto |
-| `s1010_*` | idem | direto |
-| (não tem XML por evento) | `explorador_eventos` com `xml_oid=NULL` | popula só metadados |
-| `ARQUIVOS_RETORNO/2025-1[0-2]/*.xml` | `explorador_eventos.xml_oid` (parsed) | parse + lobject |
+| V1                                   | V2                                                               | Transformação                                        |
+| ------------------------------------ | ---------------------------------------------------------------- | ---------------------------------------------------- |
+| `s1210_cpf_envios` (218k linhas)     | `timeline_envio_item` (HEAD) + `historico_tentativas_cpf` (full) | DISTINCT ON (cpf, per_apur) ORDER BY enviado_em DESC |
+| `s1210_cpf_scope`                    | `pipeline_cpf_results`                                           | direto                                               |
+| `users`                              | Sistema DB `users`                                               | manter `password_hash` bcrypt                        |
+| `master_empresas`                    | Sistema DB `empresas_routing`                                    | já fazendo                                           |
+| `rubricas`, `naturezas`              | idem no APPA DB                                                  | direto                                               |
+| `s1010_*`                            | idem                                                             | direto                                               |
+| (não tem XML por evento)             | `explorador_eventos` com `xml_oid=NULL`                          | popula só metadados                                  |
+| `ARQUIVOS_RETORNO/2025-1[0-2]/*.xml` | `explorador_eventos.xml_oid` (parsed)                            | parse + lobject                                      |
 
 ### Critério de pronto
+
 - Reconciliação 100% (ou divergências documentadas e aceitas).
 - Rafa abre 5 CPFs de meses diferentes, batem com V1.
 
@@ -536,13 +544,13 @@ Reconciliação:
 
 > Hoje Soluções vive em `easy_social_solucoes` Postgres local PC1 (2.8 GB). Move pro Supabase.
 
-| # | Ação |
-|---|---|
-| 7.1 | `pg_dump --format=custom -d easy_social_solucoes -f solucoes_local.dump` |
-| 7.2 | `pg_restore -d <supabase-solucoes-url> solucoes_local.dump` |
+| #   | Ação                                                                                          |
+| --- | --------------------------------------------------------------------------------------------- |
+| 7.1 | `pg_dump --format=custom -d easy_social_solucoes -f solucoes_local.dump`                      |
+| 7.2 | `pg_restore -d <supabase-solucoes-url> solucoes_local.dump`                                   |
 | 7.3 | Validar contagens: 184.769 explorador_eventos, 16.103 timeline_envio_item, 162 timeline_envio |
-| 7.4 | Apontar `.env` SOLUCOES_DB_URL pro Supabase |
-| 7.5 | Smoke: rodar `envio_paralelo_v2 --limite 5` apontando pro Supabase Soluções |
+| 7.4 | Apontar `.env` SOLUCOES_DB_URL pro Supabase                                                   |
+| 7.5 | Smoke: rodar `envio_paralelo_v2 --limite 5` apontando pro Supabase Soluções                   |
 
 ---
 
@@ -550,14 +558,14 @@ Reconciliação:
 
 Portar do V1 Node → V2 Python:
 
-| # | Funcionalidade | V1 origem | V2 destino |
-|---|---|---|---|
-| 8.1 | Upload XLSX Domínio | `Easy-Social/backend/src/routes/uploadRoutes.ts` | `app/upload_dominio.py` (openpyxl) |
-| 8.2 | Validação rubrica | `services/rubrica-validation-service.ts` | `app/validacao_rubrica.py` |
-| 8.3 | Validação natureza | `services/natureza-validation-service.ts` | `app/validacao_natureza.py` |
-| 8.4 | Cruzamento contábil | `cruzamentoRoutes.ts` | `app/cruzamento.py` |
-| 8.5 | Tabelas mestras (S-1000/1005/1010) | `tableRoutes.ts` | auditar `app/explorador.py` |
-| 8.6 | Auth UI seed | manual | `scripts/seed_users.py` |
+| #   | Funcionalidade                     | V1 origem                                        | V2 destino                         |
+| --- | ---------------------------------- | ------------------------------------------------ | ---------------------------------- |
+| 8.1 | Upload XLSX Domínio                | `Easy-Social/backend/src/routes/uploadRoutes.ts` | `app/upload_dominio.py` (openpyxl) |
+| 8.2 | Validação rubrica                  | `services/rubrica-validation-service.ts`         | `app/validacao_rubrica.py`         |
+| 8.3 | Validação natureza                 | `services/natureza-validation-service.ts`        | `app/validacao_natureza.py`        |
+| 8.4 | Cruzamento contábil                | `cruzamentoRoutes.ts`                            | `app/cruzamento.py`                |
+| 8.5 | Tabelas mestras (S-1000/1005/1010) | `tableRoutes.ts`                                 | auditar `app/explorador.py`        |
+| 8.6 | Auth UI seed                       | manual                                           | `scripts/seed_users.py`            |
 
 > **Cada item = 1 PR isolado**. Não misturar.
 
@@ -565,20 +573,21 @@ Portar do V1 Node → V2 Python:
 
 ## Fase 9 — Frontend conectado
 
-| # | Tarefa |
-|---|---|
-| 9.1 | `src/services/api.ts`: axios instance com interceptor (Authorization + X-Empresa-CNPJ) |
-| 9.2 | `src/stores/auth.ts`: Pinia, salva token + empresas em localStorage |
-| 9.3 | `src/stores/empresa.ts`: empresa ativa |
-| 9.4 | `src/views/LoginView.vue`: form, chama `/api/auth/login` |
-| 9.5 | `src/views/EmpresaSelectView.vue`: cards (P6) com razão social + badge de status |
-| 9.6 | Router guard: sem token → /login. Sem empresa selecionada → /empresas |
-| 9.7 | `src/components/CertificadoUpload.vue` (ver `UPLOAD_CERT_A1_REALPREV.md` §6) |
-| 9.8 | `src/views/ConfigCertificado.vue`: usa upload + lista atual + delete |
-| 9.9 | Apontar todos os services pra `/api/*` (proxy via Vite dev) |
-| 9.10 | Build prod: `npm run build` → `dist/` |
+| #    | Tarefa                                                                                 |
+| ---- | -------------------------------------------------------------------------------------- |
+| 9.1  | `src/services/api.ts`: axios instance com interceptor (Authorization + X-Empresa-CNPJ) |
+| 9.2  | `src/stores/auth.ts`: Pinia, salva token + empresas em localStorage                    |
+| 9.3  | `src/stores/empresa.ts`: empresa ativa                                                 |
+| 9.4  | `src/views/LoginView.vue`: form, chama `/api/auth/login`                               |
+| 9.5  | `src/views/EmpresaSelectView.vue`: cards (P6) com razão social + badge de status       |
+| 9.6  | Router guard: sem token → /login. Sem empresa selecionada → /empresas                  |
+| 9.7  | `src/components/CertificadoUpload.vue` (ver `UPLOAD_CERT_A1_REALPREV.md` §6)           |
+| 9.8  | `src/views/ConfigCertificado.vue`: usa upload + lista atual + delete                   |
+| 9.9  | Apontar todos os services pra `/api/*` (proxy via Vite dev)                            |
+| 9.10 | Build prod: `npm run build` → `dist/`                                                  |
 
 ### Critério de pronto
+
 - Login funciona em `localhost:5173`.
 - Seleção empresa muda header automaticamente.
 - Explorador carrega dados do Supabase certo.
@@ -655,6 +664,7 @@ server {
 ```
 
 ### Critério de pronto
+
 - `https://v2.easyesocial.com.br` carrega login.
 - Rafa loga, vê APPA, abre Explorador, vê 110k CPFs.
 - Soluções loga, faz envio S-1210 de teste (limite 5) em homologação.
@@ -665,18 +675,19 @@ server {
 
 > **Janela mínima de 7 dias** com V2 em `v2.` paralelo antes de derrubar V1.
 
-| Dia | Ação |
-|---|---|
-| D0 | Anúncio Rafa+Ana: usar V2 em paralelo, reportar bugs |
-| D+3 | Review bugs reportados — fix |
-| D+5 | Smoke test final |
-| D+7 | Apontar DNS `easyesocial.com.br` → mesma VPS, mesmo Nginx, agora servindo V2 |
-| D+7 | V1 systemd `stop` + `disable` |
-| D+8 | V1 repo GitHub → archived |
-| D+30 | Backup final V1 DB → S3 frio |
-| D+30 | Drop DB V1 do Postgres do VPS |
+| Dia  | Ação                                                                         |
+| ---- | ---------------------------------------------------------------------------- |
+| D0   | Anúncio Rafa+Ana: usar V2 em paralelo, reportar bugs                         |
+| D+3  | Review bugs reportados — fix                                                 |
+| D+5  | Smoke test final                                                             |
+| D+7  | Apontar DNS `easyesocial.com.br` → mesma VPS, mesmo Nginx, agora servindo V2 |
+| D+7  | V1 systemd `stop` + `disable`                                                |
+| D+8  | V1 repo GitHub → archived                                                    |
+| D+30 | Backup final V1 DB → S3 frio                                                 |
+| D+30 | Drop DB V1 do Postgres do VPS                                                |
 
 ### Critério de pronto
+
 - DNS aponta pra V2.
 - V1 process não responde.
 - Rafa fechou pelo menos 1 mês inteiro pelo V2.
@@ -848,6 +859,7 @@ pg_dump -h localhost -p 5432 -U postgres -d easy_social_db `
 ## Anexo D — Critérios de "pronto"
 
 ### Pronto pra Phase 5 (provisionar Supabase)
+
 - [ ] Phase 0 ✅
 - [ ] Phase 1 ✅ (V2 limpo)
 - [ ] Phase 2 ✅ (schemas SQL versionados)
@@ -856,6 +868,7 @@ pg_dump -h localhost -p 5432 -U postgres -d easy_social_db `
 - [ ] P1, P2, P5 respondidos
 
 ### Pronto pra Phase 10 (deploy)
+
 - [ ] Phase 5 ✅ (3 Supabase ativos)
 - [ ] Phase 6 ✅ (APPA reconciliada)
 - [ ] Phase 7 ✅ (Soluções migrada)
@@ -864,6 +877,7 @@ pg_dump -h localhost -p 5432 -U postgres -d easy_social_db `
 - [ ] Smoke test local end-to-end
 
 ### Pronto pra Phase 11 (cutover)
+
 - [ ] Phase 10 ✅
 - [ ] 7 dias paralelo sem bugs P1
 - [ ] Rafa autorizou
@@ -908,11 +922,11 @@ pg_dump -h localhost -p 5432 -U postgres -d easy_social_db `
 
 ## Documentos relacionados nesta pasta
 
-| Doc | Função |
-|---|---|
-| [`INVENTARIO_V1_PRE_MIGRACAO.md`](./INVENTARIO_V1_PRE_MIGRACAO.md) | o que existe no PC1 hoje |
-| [`MIGRACAO_V1_V2.md`](./MIGRACAO_V1_V2.md) | missão de migrar V1→V2 (visão narrativa) |
-| [`ARQUITETURA_MULTI_EMPRESA.md`](./ARQUITETURA_MULTI_EMPRESA.md) | detalhe técnico multi-DB |
-| [`UPLOAD_CERT_A1_REALPREV.md`](./UPLOAD_CERT_A1_REALPREV.md) | pattern cert A1 do Real Prev |
-| [`ciclo100.md`](./ciclo100.md) | técnica de envio massivo já validada |
-| **`BIBLIA_V2_NORTE.md`** (este) | **plano operacional executável — começa por aqui** |
+| Doc                                                                | Função                                             |
+| ------------------------------------------------------------------ | -------------------------------------------------- |
+| [`INVENTARIO_V1_PRE_MIGRACAO.md`](./INVENTARIO_V1_PRE_MIGRACAO.md) | o que existe no PC1 hoje                           |
+| [`MIGRACAO_V1_V2.md`](./MIGRACAO_V1_V2.md)                         | missão de migrar V1→V2 (visão narrativa)           |
+| [`ARQUITETURA_MULTI_EMPRESA.md`](./ARQUITETURA_MULTI_EMPRESA.md)   | detalhe técnico multi-DB                           |
+| [`UPLOAD_CERT_A1_REALPREV.md`](./UPLOAD_CERT_A1_REALPREV.md)       | pattern cert A1 do Real Prev                       |
+| [`ciclo100.md`](./ciclo100.md)                                     | técnica de envio massivo já validada               |
+| **`BIBLIA_V2_NORTE.md`** (este)                                    | **plano operacional executável — começa por aqui** |

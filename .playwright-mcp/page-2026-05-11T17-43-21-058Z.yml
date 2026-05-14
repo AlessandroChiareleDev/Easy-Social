@@ -1,0 +1,63 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - link "es Easy-Social v2 · cérebro" [ref=e5] [cursor=pointer]:
+      - /url: /
+      - generic [ref=e6]: es
+      - generic [ref=e7]: Easy-Social
+      - generic [ref=e8]: v2 · cérebro
+    - generic [ref=e9]: backend · verificando…
+    - button "SOLUCOES SERVICOS TERCEIRIZADOS LTDA trocar" [ref=e10] [cursor=pointer]:
+      - generic [ref=e12]: SOLUCOES SERVICOS TERCEIRIZADOS LTDA
+      - generic [ref=e13]: trocar
+    - button "A Ana" [ref=e14] [cursor=pointer]:
+      - generic [ref=e15]: A
+      - generic [ref=e16]: Ana
+  - main [ref=e17]:
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - generic [ref=e20]:
+          - generic [ref=e21]: REPOSITÓRIO · S-1210 · ANUAL
+          - generic [ref=e22]:
+            - text: S-1210 Anual
+            - generic "overview sincronizado" [ref=e23]: repo sincronizado
+        - tablist "Ano" [ref=e24]:
+          - tab "2024" [ref=e25] [cursor=pointer]
+          - tab "2025" [selected] [ref=e26] [cursor=pointer]
+          - tab "2026" [ref=e27] [cursor=pointer]
+        - generic [ref=e28]:
+          - button "Atualizar" [disabled] [ref=e29]:
+            - img [ref=e30]
+          - button "Sincronizar estado de fechamento (S-1299/S-1298) a partir dos eventos do eSocial" [disabled] [ref=e33]:
+            - img [ref=e34]
+          - button "Processar lotes" [disabled] [ref=e38]:
+            - img [ref=e39]
+            - text: Processar lotes
+      - generic [ref=e42]:
+        - heading "Visão Anual 2025" [level=1] [ref=e43]
+        - paragraph [ref=e44]:
+          - button "← REPOSITÓRIO S-1210" [ref=e45] [cursor=pointer]
+          - text: · 12 meses · 4 lotes por mês
+      - generic [ref=e46]: carregando visão anual…
+      - generic [ref=e48]:
+        - generic [ref=e49]:
+          - generic [ref=e50]: Meses ativos
+          - generic [ref=e51]: 0 / 12
+        - generic [ref=e52]:
+          - generic [ref=e53]: Total escopo
+          - generic [ref=e54]: "0"
+        - generic [ref=e55]:
+          - generic [ref=e56]:
+            - text: OK
+            - generic [ref=e57]: (N/A)
+          - generic [ref=e58]:
+            - text: "0"
+            - generic [ref=e59]: (0)
+        - generic [ref=e60]:
+          - generic [ref=e61]: Erro
+          - generic [ref=e62]: "0"
+        - generic [ref=e63]:
+          - generic [ref=e64]: Pendente
+          - generic [ref=e65]: "0"
+        - generic [ref=e66]:
+          - generic [ref=e67]: Processando
+          - generic [ref=e68]: "0"

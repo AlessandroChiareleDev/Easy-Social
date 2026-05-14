@@ -1,0 +1,366 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - link "es Easy-Social v2 · cérebro" [ref=e5] [cursor=pointer]:
+      - /url: /
+      - generic [ref=e6]: es
+      - generic [ref=e7]: Easy-Social
+      - generic [ref=e8]: v2 · cérebro
+    - generic "verificado 12:24:32" [ref=e9]: backend · online · 40ms
+    - button "APPA SERVICOS TEMPORARIOS LTDA trocar" [ref=e10] [cursor=pointer]:
+      - generic [ref=e12]: APPA SERVICOS TEMPORARIOS LTDA
+      - generic [ref=e13]: trocar
+    - button "A Ana" [ref=e14] [cursor=pointer]:
+      - generic [ref=e15]: A
+      - generic [ref=e16]: Ana
+  - main [ref=e17]:
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - generic [ref=e20]:
+          - generic [ref=e21]: REPOSITÓRIO · S-1210 · ANUAL
+          - generic [ref=e22]:
+            - text: S-1210 Anual
+            - generic "overview sincronizado" [ref=e23]: repo sincronizado
+        - tablist "Ano" [ref=e24]:
+          - tab "2024" [ref=e25] [cursor=pointer]
+          - tab "2025" [selected] [ref=e26] [cursor=pointer]
+          - tab "2026" [ref=e27] [cursor=pointer]
+        - generic [ref=e28]:
+          - button "Atualizar" [ref=e29] [cursor=pointer]:
+            - img [ref=e30]
+          - button "🔒" [ref=e33] [cursor=pointer]
+          - button "Processar lotes" [ref=e34] [cursor=pointer]:
+            - img [ref=e35]
+            - text: Processar lotes
+      - generic [ref=e38]:
+        - heading "Visão Anual 2025" [level=1] [ref=e39]
+        - paragraph [ref=e40]:
+          - button "← REPOSITÓRIO S-1210" [ref=e41] [cursor=pointer]
+          - text: · 12 meses · 4 lotes por mês
+      - generic [ref=e44]:
+        - generic [ref=e45]:
+          - generic [ref=e46]: Meses ativos
+          - generic [ref=e47]: 12 / 12
+        - generic [ref=e65]:
+          - generic [ref=e66]: 🔒 Meses fechados
+          - generic [ref=e67]: 3 / 12
+        - generic [ref=e48]:
+          - generic [ref=e49]: Total escopo
+          - generic [ref=e50]: "110.651"
+        - generic [ref=e51]:
+          - generic [ref=e52]:
+            - text: OK
+            - generic [ref=e53]: (N/A)
+          - generic [ref=e54]:
+            - text: "106.020"
+            - generic [ref=e55]: (4.631)
+        - generic [ref=e56]:
+          - generic [ref=e57]: Erro
+          - generic [ref=e58]: "0"
+        - generic [ref=e59]:
+          - generic [ref=e60]: Pendente
+          - generic [ref=e61]: "0"
+        - generic [ref=e62]:
+          - generic [ref=e63]: Processando
+          - generic [ref=e64]: "0"
+      - generic [ref=e68]:
+        - generic [ref=e69]:
+          - generic [ref=e70]:
+            - heading "Timeline 12 × 4" [level=3] [ref=e71]
+            - paragraph [ref=e72]: cada célula representa um lote · clique para abrir
+          - generic [ref=e73]:
+            - generic [ref=e74]: Concluído
+            - generic [ref=e76]: C/ erro
+            - generic [ref=e78]: Pronto
+            - generic [ref=e80]: Processando
+            - generic [ref=e82]: Map. CPF
+            - generic [ref=e84]: Sem dados
+        - generic [ref=e86]:
+          - generic [ref=e87]: Mês
+          - generic [ref=e88]: Lote 1
+          - generic [ref=e89]: Lote 2
+          - generic [ref=e90]: Lote 3
+          - generic [ref=e91]: Lote 4
+          - generic [ref=e92]:
+            - 'generic "MÊS FECHADO (S-1299) Recibo: 1.1.0000000030914503432 Fechado em: 2025-02-17 16:54:18 Origem: sync" [ref=e93]':
+              - generic [ref=e94]:
+                - text: Jan / 2025
+                - generic "Mês fechado (S-1299)" [ref=e95]: FECHADO
+              - generic [ref=e96]: 2025-01
+              - generic "99.9% ok" [ref=e97]
+              - generic [ref=e99]: "R: 0914503432"
+            - button "Concluído 11.290 escopo 11.280 ok 10 N/A" [ref=e100] [cursor=pointer]:
+              - generic [ref=e101]: Concluído
+              - generic [ref=e102]:
+                - generic [ref=e103]: 11.290 escopo
+                - generic [ref=e104]: 11.280 ok
+                - generic [ref=e105]: 10 N/A
+          - generic [ref=e109]:
+            - 'generic "MÊS FECHADO (S-1299) Recibo: 1.1.0000000031450968699 Fechado em: 2025-03-18 13:40:45 Origem: sync" [ref=e110]':
+              - generic [ref=e111]:
+                - text: Fev / 2025
+                - generic "Mês fechado (S-1299)" [ref=e112]: FECHADO
+              - generic [ref=e113]: 2025-02
+              - generic "92.8% ok" [ref=e114]
+              - generic [ref=e116]: "R: 1450968699"
+            - button "Concluído 9.471 escopo 8.669 ok 802 N/A" [ref=e117] [cursor=pointer]:
+              - generic [ref=e118]: Concluído
+              - generic [ref=e119]:
+                - generic [ref=e120]: 9.471 escopo
+                - generic [ref=e121]: 8.669 ok
+                - generic [ref=e122]: 802 N/A
+            - button "Concluído 1.390 escopo 1.365 ok 25 N/A" [ref=e123] [cursor=pointer]:
+              - generic [ref=e124]: Concluído
+              - generic [ref=e125]:
+                - generic [ref=e126]: 1.390 escopo
+                - generic [ref=e127]: 1.365 ok
+                - generic [ref=e128]: 25 N/A
+            - button "Concluído 737 escopo 730 ok 7 N/A" [ref=e129] [cursor=pointer]:
+              - generic [ref=e130]: Concluído
+              - generic [ref=e131]:
+                - generic [ref=e132]: 737 escopo
+                - generic [ref=e133]: 730 ok
+                - generic [ref=e134]: 7 N/A
+            - button "Concluído 2 escopo 0 ok 2 N/A" [ref=e135] [cursor=pointer]:
+              - generic [ref=e136]: Concluído
+              - generic [ref=e137]:
+                - generic [ref=e138]: 2 escopo
+                - generic [ref=e139]: 0 ok
+                - generic [ref=e140]: 2 N/A
+          - generic [ref=e141]:
+            - generic "MÊS ABERTO" [ref=e142]:
+              - generic [ref=e143]: Mar / 2025
+              - generic [ref=e144]: 2025-03
+              - generic "92.7% ok" [ref=e145]
+            - button "Concluído 8.164 escopo 7.374 ok 790 N/A" [ref=e147] [cursor=pointer]:
+              - generic [ref=e148]: Concluído
+              - generic [ref=e149]:
+                - generic [ref=e150]: 8.164 escopo
+                - generic [ref=e151]: 7.374 ok
+                - generic [ref=e152]: 790 N/A
+            - button "Concluído 1.395 escopo 1.378 ok 17 N/A" [ref=e153] [cursor=pointer]:
+              - generic [ref=e154]: Concluído
+              - generic [ref=e155]:
+                - generic [ref=e156]: 1.395 escopo
+                - generic [ref=e157]: 1.378 ok
+                - generic [ref=e158]: 17 N/A
+            - button "Concluído 1.624 escopo 1.620 ok 4 N/A" [ref=e159] [cursor=pointer]:
+              - generic [ref=e160]: Concluído
+              - generic [ref=e161]:
+                - generic [ref=e162]: 1.624 escopo
+                - generic [ref=e163]: 1.620 ok
+                - generic [ref=e164]: 4 N/A
+            - button "Concluído 2 escopo 0 ok 2 N/A" [ref=e165] [cursor=pointer]:
+              - generic [ref=e166]: Concluído
+              - generic [ref=e167]:
+                - generic [ref=e168]: 2 escopo
+                - generic [ref=e169]: 0 ok
+                - generic [ref=e170]: 2 N/A
+          - generic [ref=e171]:
+            - generic "MÊS ABERTO" [ref=e172]:
+              - generic [ref=e173]: Abr / 2025
+              - generic [ref=e174]: 2025-04
+              - generic "89.1% ok" [ref=e175]
+            - button "Concluído 7.142 escopo 6.222 ok 920 N/A" [ref=e177] [cursor=pointer]:
+              - generic [ref=e178]: Concluído
+              - generic [ref=e179]:
+                - generic [ref=e180]: 7.142 escopo
+                - generic [ref=e181]: 6.222 ok
+                - generic [ref=e182]: 920 N/A
+            - button "Concluído 1.376 escopo 1.218 ok 158 N/A" [ref=e183] [cursor=pointer]:
+              - generic [ref=e184]: Concluído
+              - generic [ref=e185]:
+                - generic [ref=e186]: 1.376 escopo
+                - generic [ref=e187]: 1.218 ok
+                - generic [ref=e188]: 158 N/A
+            - button "Concluído 1.498 escopo 1.482 ok 16 N/A" [ref=e189] [cursor=pointer]:
+              - generic [ref=e190]: Concluído
+              - generic [ref=e191]:
+                - generic [ref=e192]: 1.498 escopo
+                - generic [ref=e193]: 1.482 ok
+                - generic [ref=e194]: 16 N/A
+          - generic [ref=e196]:
+            - generic "MÊS ABERTO" [ref=e197]:
+              - generic [ref=e198]: Mai / 2025
+              - generic [ref=e199]: 2025-05
+              - generic "99.1% ok" [ref=e200]
+            - button "Concluído 7.499 escopo 7.492 ok 7 N/A" [ref=e202] [cursor=pointer]:
+              - generic [ref=e203]: Concluído
+              - generic [ref=e204]:
+                - generic [ref=e205]: 7.499 escopo
+                - generic [ref=e206]: 7.492 ok
+                - generic [ref=e207]: 7 N/A
+            - button "Concluído 1.256 escopo 1.195 ok 61 N/A" [ref=e208] [cursor=pointer]:
+              - generic [ref=e209]: Concluído
+              - generic [ref=e210]:
+                - generic [ref=e211]: 1.256 escopo
+                - generic [ref=e212]: 1.195 ok
+                - generic [ref=e213]: 61 N/A
+            - button "Concluído 1.319 escopo 1.297 ok 22 N/A" [ref=e214] [cursor=pointer]:
+              - generic [ref=e215]: Concluído
+              - generic [ref=e216]:
+                - generic [ref=e217]: 1.319 escopo
+                - generic [ref=e218]: 1.297 ok
+                - generic [ref=e219]: 22 N/A
+          - generic [ref=e221]:
+            - generic "MÊS ABERTO" [ref=e222]:
+              - generic [ref=e223]: Jun / 2025
+              - generic [ref=e224]: 2025-06
+              - generic "99.5% ok" [ref=e225]
+            - button "Concluído 6.827 escopo 6.825 ok 2 N/A" [ref=e227] [cursor=pointer]:
+              - generic [ref=e228]: Concluído
+              - generic [ref=e229]:
+                - generic [ref=e230]: 6.827 escopo
+                - generic [ref=e231]: 6.825 ok
+                - generic [ref=e232]: 2 N/A
+            - button "Concluído 1.225 escopo 1.206 ok 19 N/A" [ref=e233] [cursor=pointer]:
+              - generic [ref=e234]: Concluído
+              - generic [ref=e235]:
+                - generic [ref=e236]: 1.225 escopo
+                - generic [ref=e237]: 1.206 ok
+                - generic [ref=e238]: 19 N/A
+            - button "Concluído 1.423 escopo 1.399 ok 24 N/A" [ref=e239] [cursor=pointer]:
+              - generic [ref=e240]: Concluído
+              - generic [ref=e241]:
+                - generic [ref=e242]: 1.423 escopo
+                - generic [ref=e243]: 1.399 ok
+                - generic [ref=e244]: 24 N/A
+          - generic [ref=e246]:
+            - generic "MÊS ABERTO" [ref=e247]:
+              - generic [ref=e248]: Jul / 2025
+              - generic [ref=e249]: 2025-07
+              - generic "98.9% ok" [ref=e250]
+            - button "Concluído 6.559 escopo 6.559 ok" [ref=e252] [cursor=pointer]:
+              - generic [ref=e253]: Concluído
+              - generic [ref=e254]:
+                - generic [ref=e255]: 6.559 escopo
+                - generic [ref=e256]: 6.559 ok
+            - button "Concluído 1.198 escopo 1.112 ok 86 N/A" [ref=e257] [cursor=pointer]:
+              - generic [ref=e258]: Concluído
+              - generic [ref=e259]:
+                - generic [ref=e260]: 1.198 escopo
+                - generic [ref=e261]: 1.112 ok
+                - generic [ref=e262]: 86 N/A
+            - button "Concluído 1.263 escopo 1.246 ok 17 N/A" [ref=e263] [cursor=pointer]:
+              - generic [ref=e264]: Concluído
+              - generic [ref=e265]:
+                - generic [ref=e266]: 1.263 escopo
+                - generic [ref=e267]: 1.246 ok
+                - generic [ref=e268]: 17 N/A
+          - generic [ref=e270]:
+            - generic "MÊS ABERTO" [ref=e271]:
+              - generic [ref=e272]: Ago / 2025
+              - generic [ref=e273]: 2025-08
+              - generic "99.3% ok" [ref=e274]
+            - button "Concluído 5.095 escopo 5.088 ok 7 N/A" [ref=e276] [cursor=pointer]:
+              - generic [ref=e277]: Concluído
+              - generic [ref=e278]:
+                - generic [ref=e279]: 5.095 escopo
+                - generic [ref=e280]: 5.088 ok
+                - generic [ref=e281]: 7 N/A
+            - button "Concluído 1.129 escopo 1.097 ok 32 N/A" [ref=e282] [cursor=pointer]:
+              - generic [ref=e283]: Concluído
+              - generic [ref=e284]:
+                - generic [ref=e285]: 1.129 escopo
+                - generic [ref=e286]: 1.097 ok
+                - generic [ref=e287]: 32 N/A
+            - button "Concluído 1.253 escopo 1.242 ok 11 N/A" [ref=e288] [cursor=pointer]:
+              - generic [ref=e289]: Concluído
+              - generic [ref=e290]:
+                - generic [ref=e291]: 1.253 escopo
+                - generic [ref=e292]: 1.242 ok
+                - generic [ref=e293]: 11 N/A
+          - generic [ref=e295]:
+            - 'generic "MÊS FECHADO (S-1299) Recibo: 1.1.0000000035299651093 Fechado em: 2025-10-24 14:04:47 Origem: sync" [ref=e296]':
+              - generic [ref=e297]:
+                - text: Set / 2025
+                - generic "Mês fechado (S-1299)" [ref=e298]: FECHADO
+              - generic [ref=e299]: 2025-09
+              - generic "93.9% ok" [ref=e300]
+              - generic [ref=e302]: "R: 5299651093"
+            - button "Concluído 5.690 escopo 5.339 ok 351 N/A" [ref=e303] [cursor=pointer]:
+              - generic [ref=e304]: Concluído
+              - generic [ref=e305]:
+                - generic [ref=e306]: 5.690 escopo
+                - generic [ref=e307]: 5.339 ok
+                - generic [ref=e308]: 351 N/A
+            - button "Concluído 1.115 escopo 1.008 ok 107 N/A" [ref=e309] [cursor=pointer]:
+              - generic [ref=e310]: Concluído
+              - generic [ref=e311]:
+                - generic [ref=e312]: 1.115 escopo
+                - generic [ref=e313]: 1.008 ok
+                - generic [ref=e314]: 107 N/A
+            - button "Concluído 1.322 escopo 1.286 ok 36 N/A" [ref=e315] [cursor=pointer]:
+              - generic [ref=e316]: Concluído
+              - generic [ref=e317]:
+                - generic [ref=e318]: 1.322 escopo
+                - generic [ref=e319]: 1.286 ok
+                - generic [ref=e320]: 36 N/A
+          - generic [ref=e322]:
+            - generic "MÊS ABERTO" [ref=e323]:
+              - generic [ref=e324]: Out / 2025
+              - generic [ref=e325]: 2025-10
+              - generic "93.9% ok" [ref=e326]
+            - button "Concluído 5.395 escopo 5.146 ok 249 N/A" [ref=e328] [cursor=pointer]:
+              - generic [ref=e329]: Concluído
+              - generic [ref=e330]:
+                - generic [ref=e331]: 5.395 escopo
+                - generic [ref=e332]: 5.146 ok
+                - generic [ref=e333]: 249 N/A
+            - button "Concluído 1.066 escopo 865 ok 201 N/A" [ref=e334] [cursor=pointer]:
+              - generic [ref=e335]: Concluído
+              - generic [ref=e336]:
+                - generic [ref=e337]: 1.066 escopo
+                - generic [ref=e338]: 865 ok
+                - generic [ref=e339]: 201 N/A
+            - button "Concluído 1.361 escopo 1.336 ok 25 N/A" [ref=e340] [cursor=pointer]:
+              - generic [ref=e341]: Concluído
+              - generic [ref=e342]:
+                - generic [ref=e343]: 1.361 escopo
+                - generic [ref=e344]: 1.336 ok
+                - generic [ref=e345]: 25 N/A
+          - generic [ref=e347]:
+            - generic "MÊS ABERTO" [ref=e348]:
+              - generic [ref=e349]: Nov / 2025
+              - generic [ref=e350]: 2025-11
+              - generic "96.4% ok" [ref=e351]
+            - button "Concluído 4.872 escopo 4.859 ok 13 N/A" [ref=e353] [cursor=pointer]:
+              - generic [ref=e354]: Concluído
+              - generic [ref=e355]:
+                - generic [ref=e356]: 4.872 escopo
+                - generic [ref=e357]: 4.859 ok
+                - generic [ref=e358]: 13 N/A
+            - button "Concluído 857 escopo 668 ok 189 N/A" [ref=e359] [cursor=pointer]:
+              - generic [ref=e360]: Concluído
+              - generic [ref=e361]:
+                - generic [ref=e362]: 857 escopo
+                - generic [ref=e363]: 668 ok
+                - generic [ref=e364]: 189 N/A
+            - button "Concluído 1.413 escopo 1.359 ok 54 N/A" [ref=e365] [cursor=pointer]:
+              - generic [ref=e366]: Concluído
+              - generic [ref=e367]:
+                - generic [ref=e368]: 1.413 escopo
+                - generic [ref=e369]: 1.359 ok
+                - generic [ref=e370]: 54 N/A
+          - generic [ref=e372]:
+            - generic "MÊS ABERTO" [ref=e373]:
+              - generic [ref=e374]: Dez / 2025
+              - generic [ref=e375]: 2025-12
+              - generic "95.1% ok" [ref=e376]
+            - button "Concluído 5.083 escopo 4.800 ok 283 N/A" [ref=e378] [cursor=pointer]:
+              - generic [ref=e379]: Concluído
+              - generic [ref=e380]:
+                - generic [ref=e381]: 5.083 escopo
+                - generic [ref=e382]: 4.800 ok
+                - generic [ref=e383]: 283 N/A
+            - button "Concluído 1.001 escopo 955 ok 46 N/A" [ref=e384] [cursor=pointer]:
+              - generic [ref=e385]: Concluído
+              - generic [ref=e386]:
+                - generic [ref=e387]: 1.001 escopo
+                - generic [ref=e388]: 955 ok
+                - generic [ref=e389]: 46 N/A
+            - button "Concluído 1.339 escopo 1.303 ok 36 N/A" [ref=e390] [cursor=pointer]:
+              - generic [ref=e391]: Concluído
+              - generic [ref=e392]:
+                - generic [ref=e393]: 1.339 escopo
+                - generic [ref=e394]: 1.303 ok
+                - generic [ref=e395]: 36 N/A

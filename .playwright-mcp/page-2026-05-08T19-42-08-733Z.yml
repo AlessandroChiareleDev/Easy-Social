@@ -1,0 +1,1475 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - link "es Easy-Social v2 · cérebro" [ref=e5] [cursor=pointer]:
+      - /url: /
+      - generic [ref=e6]: es
+      - generic [ref=e7]: Easy-Social
+      - generic [ref=e8]: v2 · cérebro
+    - generic "verificado 16:41:48" [ref=e76]: backend · online · 41ms
+    - button "SOLUCOES SERVICOS TERCEIRIZADOS LTDA trocar" [ref=e10] [cursor=pointer]:
+      - generic [ref=e12]: SOLUCOES SERVICOS TERCEIRIZADOS LTDA
+      - generic [ref=e13]: trocar
+    - button "A Ana" [ref=e14] [cursor=pointer]:
+      - generic [ref=e15]: A
+      - generic [ref=e16]: Ana
+  - main [ref=e17]:
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - generic [ref=e20]:
+          - heading "Explorador de Arquivos" [level=1] [ref=e21]
+          - paragraph [ref=e22]: Suba os zips de retorno do eSocial. Eles ficam guardados, indexados por evento e CPF, e podem ser explorados visualmente.
+        - generic [ref=e25]: SOLUCOES
+      - generic [ref=e26]:
+        - heading "Enviar zip" [level=2] [ref=e27]
+        - generic [ref=e30] [cursor=pointer]:
+          - generic [ref=e31]: ⬆
+          - generic [ref=e32]: Arraste um arquivo .zip do eSocial aqui
+          - generic [ref=e33]: ou clique para selecionar
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - heading "Zips enviados" [level=2] [ref=e36]
+          - button "↻ atualizar" [ref=e37] [cursor=pointer]
+        - generic [ref=e78]:
+          - generic [ref=e79]:
+            - generic [ref=e80]: 2025-08
+            - generic [ref=e81]: indexado
+          - generic "SOLUCOES_2025-08.zip" [ref=e82]
+          - generic [ref=e83]:
+            - generic [ref=e84]:
+              - generic [ref=e85]: Tamanho
+              - generic [ref=e86]: 809.7 MB
+            - generic [ref=e87]:
+              - generic [ref=e88]: XMLs
+              - generic [ref=e89]: "198153"
+            - generic [ref=e90]:
+              - generic [ref=e91]: PerApur
+              - generic [ref=e92]: 2025-08
+            - generic [ref=e93]:
+              - generic [ref=e94]: Enviado
+              - generic [ref=e95]: 07/05/26, 04:09
+          - generic [ref=e96]:
+            - button "🔍 Visualizar eventos" [ref=e97] [cursor=pointer]
+            - link "⬇ Baixar zip" [ref=e98] [cursor=pointer]:
+              - /url: /api/explorador/zips/8/download
+            - button "🗑 Excluir" [ref=e99] [cursor=pointer]
+      - generic [ref=e41]:
+        - generic [ref=e42]:
+          - generic [ref=e43]:
+            - heading "📜 Chain Walk — timeline mensal de S-1210" [level=2] [ref=e44]
+            - paragraph [ref=e45]: Cada bolinha é um envio. Versões antigas são imutáveis. HEAD é o estado atual.
+          - generic [ref=e46]:
+            - generic [ref=e47]: "perApur:"
+            - combobox [ref=e48]:
+              - option "2025-08 (162 envios)" [selected]
+        - generic [ref=e100]:
+          - generic [ref=e101]:
+            - generic [ref=e102]: 📜 Linha do tempo de envios
+            - generic [ref=e103]:
+              - button "◀" [ref=e104] [cursor=pointer]
+              - button "▶" [ref=e105] [cursor=pointer]
+              - button "● AGORA" [disabled] [ref=e106]
+          - generic [ref=e107]:
+            - generic [ref=e108]:
+              - button "v0" [ref=e109] [cursor=pointer]:
+                - generic [ref=e110]: v0
+              - generic [ref=e111]:
+                - generic [ref=e112]: estado inicial
+                - generic [ref=e113]: 07/05, 04:59
+            - generic [ref=e114]:
+              - button "×8" [ref=e116] [cursor=pointer]:
+                - generic [ref=e117]: ×8
+              - generic [ref=e118]:
+                - generic [ref=e119]: ▶ tentativas falhadas
+                - generic [ref=e120]: v1–v8
+                - generic [ref=e122]: 323 erro
+            - generic [ref=e123]:
+              - button "v9" [ref=e125] [cursor=pointer]:
+                - generic [ref=e126]: v9
+              - generic [ref=e127]:
+                - generic [ref=e128]: envio em massa
+                - generic [ref=e129]: 07/05, 12:28
+                - generic [ref=e130]:
+                  - generic [ref=e131]: "+6"
+                  - generic [ref=e132]: 4 erro
+            - generic [ref=e133]:
+              - button "v10" [ref=e135] [cursor=pointer]:
+                - generic [ref=e136]: v10
+              - generic [ref=e137]:
+                - generic [ref=e138]: envio em massa
+                - generic [ref=e139]: 07/05, 12:49
+                - generic [ref=e140]:
+                  - generic [ref=e141]: "+11"
+                  - generic [ref=e142]: 79 erro
+            - generic [ref=e143]:
+              - button "v11" [ref=e145] [cursor=pointer]:
+                - generic [ref=e146]: v11
+              - generic [ref=e147]:
+                - generic [ref=e148]: envio em massa
+                - generic [ref=e149]: 07/05, 15:08
+                - generic [ref=e150]:
+                  - generic [ref=e151]: "+125"
+                  - generic [ref=e152]: 19 erro
+                  - generic [ref=e153]: HEAD
+            - generic [ref=e154]:
+              - button "v12" [ref=e156] [cursor=pointer]:
+                - generic [ref=e157]: v12
+              - generic [ref=e158]:
+                - generic [ref=e159]: envio em massa
+                - generic [ref=e160]: 07/05, 15:55
+            - generic [ref=e161]:
+              - button "v13" [ref=e163] [cursor=pointer]:
+                - generic [ref=e164]: v13
+              - generic [ref=e165]:
+                - generic [ref=e166]: envio em massa
+                - generic [ref=e167]: 07/05, 16:08
+                - generic [ref=e168]:
+                  - generic [ref=e169]: "+97"
+                  - generic [ref=e170]: 3 erro
+            - generic [ref=e171]:
+              - button "v14" [ref=e173] [cursor=pointer]:
+                - generic [ref=e174]: v14
+              - generic [ref=e175]:
+                - generic [ref=e176]: envio em massa
+                - generic [ref=e177]: 07/05, 16:25
+                - generic [ref=e178]:
+                  - generic [ref=e179]: "+97"
+                  - generic [ref=e180]: 3 erro
+            - generic [ref=e181]:
+              - button "v15" [ref=e183] [cursor=pointer]:
+                - generic [ref=e184]: v15
+              - generic [ref=e185]:
+                - generic [ref=e186]: envio em massa
+                - generic [ref=e187]: 07/05, 16:35
+                - generic [ref=e188]:
+                  - generic [ref=e189]: "+487"
+                  - generic [ref=e190]: 13 erro
+            - generic [ref=e191]:
+              - button "v16" [ref=e193] [cursor=pointer]:
+                - generic [ref=e194]: v16
+              - generic [ref=e195]:
+                - generic [ref=e196]: envio em massa
+                - generic [ref=e197]: 07/05, 17:21
+                - generic [ref=e198]:
+                  - generic [ref=e199]: "+4"
+                  - generic [ref=e200]: 1 erro
+            - generic [ref=e201]:
+              - button "v17" [ref=e203] [cursor=pointer]:
+                - generic [ref=e204]: v17
+              - generic [ref=e205]:
+                - generic [ref=e206]: envio em massa
+                - generic [ref=e207]: 07/05, 17:22
+                - generic [ref=e208]:
+                  - generic [ref=e209]: "+279"
+                  - generic [ref=e210]: 74 erro
+            - generic [ref=e211]:
+              - button "v18" [ref=e213] [cursor=pointer]:
+                - generic [ref=e214]: v18
+              - generic [ref=e215]:
+                - generic [ref=e216]: envio em massa
+                - generic [ref=e217]: 07/05, 17:52
+                - generic [ref=e218]:
+                  - generic [ref=e219]: "+104"
+                  - generic [ref=e220]: 96 erro
+            - generic [ref=e221]:
+              - button "v19" [ref=e223] [cursor=pointer]:
+                - generic [ref=e224]: v19
+              - generic [ref=e225]:
+                - generic [ref=e226]: envio em massa
+                - generic [ref=e227]: 07/05, 18:15
+                - generic [ref=e228]:
+                  - generic [ref=e229]: "+80"
+                  - generic [ref=e230]: 2 erro
+            - generic [ref=e231]:
+              - button "v20" [ref=e233] [cursor=pointer]:
+                - generic [ref=e234]: v20
+              - generic [ref=e235]:
+                - generic [ref=e236]: envio em massa
+                - generic [ref=e237]: 07/05, 18:25
+                - generic [ref=e238]:
+                  - generic [ref=e239]: "+87"
+                  - generic [ref=e240]: 6 erro
+            - generic [ref=e241]:
+              - button "v21" [ref=e243] [cursor=pointer]:
+                - generic [ref=e244]: v21
+              - generic [ref=e245]:
+                - generic [ref=e246]: envio em massa
+                - generic [ref=e247]: 07/05, 18:36
+                - generic [ref=e248]:
+                  - generic [ref=e249]: "+80"
+                  - generic [ref=e250]: 20 erro
+            - generic [ref=e251]:
+              - button "v22" [ref=e253] [cursor=pointer]:
+                - generic [ref=e254]: v22
+              - generic [ref=e255]:
+                - generic [ref=e256]: envio em massa
+                - generic [ref=e257]: 07/05, 19:15
+                - generic [ref=e259]: 100 erro
+            - generic [ref=e260]:
+              - button "v23" [ref=e262] [cursor=pointer]:
+                - generic [ref=e263]: v23
+              - generic [ref=e264]:
+                - generic [ref=e265]: envio em massa
+                - generic [ref=e266]: 07/05, 19:40
+            - generic [ref=e267]:
+              - button "v24" [ref=e269] [cursor=pointer]:
+                - generic [ref=e270]: v24
+              - generic [ref=e271]:
+                - generic [ref=e272]: envio em massa
+                - generic [ref=e273]: 07/05, 19:40
+            - generic [ref=e274]:
+              - button "v25" [ref=e276] [cursor=pointer]:
+                - generic [ref=e277]: v25
+              - generic [ref=e278]:
+                - generic [ref=e279]: envio em massa
+                - generic [ref=e280]: 07/05, 20:02
+                - generic [ref=e281]:
+                  - generic [ref=e282]: "+98"
+                  - generic [ref=e283]: 2 erro
+            - generic [ref=e284]:
+              - button "v26" [ref=e286] [cursor=pointer]:
+                - generic [ref=e287]: v26
+              - generic [ref=e288]:
+                - generic [ref=e289]: envio em massa
+                - generic [ref=e290]: 07/05, 20:10
+                - generic [ref=e291]:
+                  - generic [ref=e292]: "+98"
+                  - generic [ref=e293]: 2 erro
+            - generic [ref=e294]:
+              - button "v27" [ref=e296] [cursor=pointer]:
+                - generic [ref=e297]: v27
+              - generic [ref=e298]:
+                - generic [ref=e299]: envio em massa
+                - generic [ref=e300]: 07/05, 20:19
+                - generic [ref=e301]:
+                  - generic [ref=e302]: "+92"
+                  - generic [ref=e303]: 8 erro
+            - generic [ref=e304]:
+              - button "v28" [ref=e306] [cursor=pointer]:
+                - generic [ref=e307]: v28
+              - generic [ref=e308]:
+                - generic [ref=e309]: envio em massa
+                - generic [ref=e310]: 07/05, 20:20
+                - generic [ref=e311]:
+                  - generic [ref=e312]: "+98"
+                  - generic [ref=e313]: 2 erro
+            - generic [ref=e314]:
+              - button "v29" [ref=e316] [cursor=pointer]:
+                - generic [ref=e317]: v29
+              - generic [ref=e318]:
+                - generic [ref=e319]: envio em massa
+                - generic [ref=e320]: 07/05, 20:21
+                - generic [ref=e321]:
+                  - generic [ref=e322]: "+99"
+                  - generic [ref=e323]: 1 erro
+            - generic [ref=e324]:
+              - button "v30" [ref=e326] [cursor=pointer]:
+                - generic [ref=e327]: v30
+              - generic [ref=e328]:
+                - generic [ref=e329]: envio em massa
+                - generic [ref=e330]: 07/05, 20:22
+                - generic [ref=e331]:
+                  - generic [ref=e332]: "+96"
+                  - generic [ref=e333]: 4 erro
+            - generic [ref=e334]:
+              - button "v31" [ref=e336] [cursor=pointer]:
+                - generic [ref=e337]: v31
+              - generic [ref=e338]:
+                - generic [ref=e339]: envio em massa
+                - generic [ref=e340]: 07/05, 20:23
+                - generic [ref=e342]: "+100"
+            - generic [ref=e343]:
+              - button "v32" [ref=e345] [cursor=pointer]:
+                - generic [ref=e346]: v32
+              - generic [ref=e347]:
+                - generic [ref=e348]: envio em massa
+                - generic [ref=e349]: 07/05, 20:24
+                - generic [ref=e350]:
+                  - generic [ref=e351]: "+96"
+                  - generic [ref=e352]: 4 erro
+            - generic [ref=e353]:
+              - button "v33" [ref=e355] [cursor=pointer]:
+                - generic [ref=e356]: v33
+              - generic [ref=e357]:
+                - generic [ref=e358]: envio em massa
+                - generic [ref=e359]: 07/05, 20:25
+                - generic [ref=e360]:
+                  - generic [ref=e361]: "+94"
+                  - generic [ref=e362]: 6 erro
+            - generic [ref=e363]:
+              - button "v34" [ref=e365] [cursor=pointer]:
+                - generic [ref=e366]: v34
+              - generic [ref=e367]:
+                - generic [ref=e368]: envio em massa
+                - generic [ref=e369]: 07/05, 20:27
+                - generic [ref=e370]:
+                  - generic [ref=e371]: "+98"
+                  - generic [ref=e372]: 2 erro
+            - generic [ref=e373]:
+              - button "v35" [ref=e375] [cursor=pointer]:
+                - generic [ref=e376]: v35
+              - generic [ref=e377]:
+                - generic [ref=e378]: envio em massa
+                - generic [ref=e379]: 07/05, 20:31
+                - generic [ref=e380]:
+                  - generic [ref=e381]: "+97"
+                  - generic [ref=e382]: 3 erro
+            - generic [ref=e383]:
+              - button "v36" [ref=e385] [cursor=pointer]:
+                - generic [ref=e386]: v36
+              - generic [ref=e387]:
+                - generic [ref=e388]: envio em massa
+                - generic [ref=e389]: 07/05, 20:33
+                - generic [ref=e390]:
+                  - generic [ref=e391]: "+96"
+                  - generic [ref=e392]: 4 erro
+            - generic [ref=e393]:
+              - button "v37" [ref=e395] [cursor=pointer]:
+                - generic [ref=e396]: v37
+              - generic [ref=e397]:
+                - generic [ref=e398]: envio em massa
+                - generic [ref=e399]: 07/05, 20:34
+                - generic [ref=e400]:
+                  - generic [ref=e401]: "+97"
+                  - generic [ref=e402]: 3 erro
+            - generic [ref=e403]:
+              - button "v38" [ref=e405] [cursor=pointer]:
+                - generic [ref=e406]: v38
+              - generic [ref=e407]:
+                - generic [ref=e408]: envio em massa
+                - generic [ref=e409]: 07/05, 20:35
+                - generic [ref=e410]:
+                  - generic [ref=e411]: "+96"
+                  - generic [ref=e412]: 4 erro
+            - generic [ref=e413]:
+              - button "v39" [ref=e415] [cursor=pointer]:
+                - generic [ref=e416]: v39
+              - generic [ref=e417]:
+                - generic [ref=e418]: envio em massa
+                - generic [ref=e419]: 07/05, 20:37
+                - generic [ref=e420]:
+                  - generic [ref=e421]: "+96"
+                  - generic [ref=e422]: 4 erro
+            - generic [ref=e423]:
+              - button "v40" [ref=e425] [cursor=pointer]:
+                - generic [ref=e426]: v40
+              - generic [ref=e427]:
+                - generic [ref=e428]: envio em massa
+                - generic [ref=e429]: 07/05, 20:38
+                - generic [ref=e430]:
+                  - generic [ref=e431]: "+95"
+                  - generic [ref=e432]: 5 erro
+            - generic [ref=e433]:
+              - button "v41" [ref=e435] [cursor=pointer]:
+                - generic [ref=e436]: v41
+              - generic [ref=e437]:
+                - generic [ref=e438]: envio em massa
+                - generic [ref=e439]: 07/05, 20:39
+                - generic [ref=e440]:
+                  - generic [ref=e441]: "+96"
+                  - generic [ref=e442]: 4 erro
+            - generic [ref=e443]:
+              - button "v42" [ref=e445] [cursor=pointer]:
+                - generic [ref=e446]: v42
+              - generic [ref=e447]:
+                - generic [ref=e448]: envio em massa
+                - generic [ref=e449]: 07/05, 20:41
+                - generic [ref=e450]:
+                  - generic [ref=e451]: "+99"
+                  - generic [ref=e452]: 1 erro
+            - generic [ref=e453]:
+              - button "v43" [ref=e455] [cursor=pointer]:
+                - generic [ref=e456]: v43
+              - generic [ref=e457]:
+                - generic [ref=e458]: envio em massa
+                - generic [ref=e459]: 07/05, 20:42
+                - generic [ref=e460]:
+                  - generic [ref=e461]: "+91"
+                  - generic [ref=e462]: 9 erro
+            - generic [ref=e463]:
+              - button "v44" [ref=e465] [cursor=pointer]:
+                - generic [ref=e466]: v44
+              - generic [ref=e467]:
+                - generic [ref=e468]: envio em massa
+                - generic [ref=e469]: 07/05, 20:44
+                - generic [ref=e470]:
+                  - generic [ref=e471]: "+98"
+                  - generic [ref=e472]: 2 erro
+            - generic [ref=e473]:
+              - button "v45" [ref=e475] [cursor=pointer]:
+                - generic [ref=e476]: v45
+              - generic [ref=e477]:
+                - generic [ref=e478]: envio em massa
+                - generic [ref=e479]: 07/05, 20:45
+                - generic [ref=e480]:
+                  - generic [ref=e481]: "+96"
+                  - generic [ref=e482]: 4 erro
+            - generic [ref=e483]:
+              - button "v46" [ref=e485] [cursor=pointer]:
+                - generic [ref=e486]: v46
+              - generic [ref=e487]:
+                - generic [ref=e488]: envio em massa
+                - generic [ref=e489]: 07/05, 20:46
+                - generic [ref=e490]:
+                  - generic [ref=e491]: "+97"
+                  - generic [ref=e492]: 3 erro
+            - generic [ref=e493]:
+              - button "v47" [ref=e495] [cursor=pointer]:
+                - generic [ref=e496]: v47
+              - generic [ref=e497]:
+                - generic [ref=e498]: envio em massa
+                - generic [ref=e499]: 07/05, 20:47
+                - generic [ref=e500]:
+                  - generic [ref=e501]: "+99"
+                  - generic [ref=e502]: 1 erro
+            - generic [ref=e503]:
+              - button "v48" [ref=e505] [cursor=pointer]:
+                - generic [ref=e506]: v48
+              - generic [ref=e507]:
+                - generic [ref=e508]: envio em massa
+                - generic [ref=e509]: 07/05, 20:49
+                - generic [ref=e510]:
+                  - generic [ref=e511]: "+97"
+                  - generic [ref=e512]: 3 erro
+            - generic [ref=e513]:
+              - button "v49" [ref=e515] [cursor=pointer]:
+                - generic [ref=e516]: v49
+              - generic [ref=e517]:
+                - generic [ref=e518]: envio em massa
+                - generic [ref=e519]: 07/05, 20:50
+                - generic [ref=e520]:
+                  - generic [ref=e521]: "+95"
+                  - generic [ref=e522]: 5 erro
+            - generic [ref=e523]:
+              - button "v50" [ref=e525] [cursor=pointer]:
+                - generic [ref=e526]: v50
+              - generic [ref=e527]:
+                - generic [ref=e528]: envio em massa
+                - generic [ref=e529]: 07/05, 20:51
+                - generic [ref=e530]:
+                  - generic [ref=e531]: "+98"
+                  - generic [ref=e532]: 2 erro
+            - generic [ref=e533]:
+              - button "v51" [ref=e535] [cursor=pointer]:
+                - generic [ref=e536]: v51
+              - generic [ref=e537]:
+                - generic [ref=e538]: envio em massa
+                - generic [ref=e539]: 07/05, 20:52
+                - generic [ref=e540]:
+                  - generic [ref=e541]: "+98"
+                  - generic [ref=e542]: 2 erro
+            - generic [ref=e543]:
+              - button "v52" [ref=e545] [cursor=pointer]:
+                - generic [ref=e546]: v52
+              - generic [ref=e547]:
+                - generic [ref=e548]: envio em massa
+                - generic [ref=e549]: 07/05, 20:53
+                - generic [ref=e550]:
+                  - generic [ref=e551]: "+97"
+                  - generic [ref=e552]: 3 erro
+            - generic [ref=e553]:
+              - button "v53" [ref=e555] [cursor=pointer]:
+                - generic [ref=e556]: v53
+              - generic [ref=e557]:
+                - generic [ref=e558]: envio em massa
+                - generic [ref=e559]: 07/05, 20:55
+                - generic [ref=e560]:
+                  - generic [ref=e561]: "+98"
+                  - generic [ref=e562]: 2 erro
+            - generic [ref=e563]:
+              - button "v54" [ref=e565] [cursor=pointer]:
+                - generic [ref=e566]: v54
+              - generic [ref=e567]:
+                - generic [ref=e568]: envio em massa
+                - generic [ref=e569]: 07/05, 20:56
+                - generic [ref=e570]:
+                  - generic [ref=e571]: "+95"
+                  - generic [ref=e572]: 5 erro
+            - generic [ref=e573]:
+              - button "v55" [ref=e575] [cursor=pointer]:
+                - generic [ref=e576]: v55
+              - generic [ref=e577]:
+                - generic [ref=e578]: envio em massa
+                - generic [ref=e579]: 07/05, 20:57
+                - generic [ref=e580]:
+                  - generic [ref=e581]: "+95"
+                  - generic [ref=e582]: 5 erro
+            - generic [ref=e583]:
+              - button "v56" [ref=e585] [cursor=pointer]:
+                - generic [ref=e586]: v56
+              - generic [ref=e587]:
+                - generic [ref=e588]: envio em massa
+                - generic [ref=e589]: 07/05, 20:58
+                - generic [ref=e590]:
+                  - generic [ref=e591]: "+99"
+                  - generic [ref=e592]: 1 erro
+            - generic [ref=e593]:
+              - button "v57" [ref=e595] [cursor=pointer]:
+                - generic [ref=e596]: v57
+              - generic [ref=e597]:
+                - generic [ref=e598]: envio em massa
+                - generic [ref=e599]: 07/05, 20:59
+                - generic [ref=e600]:
+                  - generic [ref=e601]: "+94"
+                  - generic [ref=e602]: 6 erro
+            - generic [ref=e603]:
+              - button "v58" [ref=e605] [cursor=pointer]:
+                - generic [ref=e606]: v58
+              - generic [ref=e607]:
+                - generic [ref=e608]: envio em massa
+                - generic [ref=e609]: 07/05, 21:00
+                - generic [ref=e610]:
+                  - generic [ref=e611]: "+96"
+                  - generic [ref=e612]: 4 erro
+            - generic [ref=e613]:
+              - button "v59" [ref=e615] [cursor=pointer]:
+                - generic [ref=e616]: v59
+              - generic [ref=e617]:
+                - generic [ref=e618]: envio em massa
+                - generic [ref=e619]: 07/05, 21:35
+                - generic [ref=e620]:
+                  - generic [ref=e621]: "+96"
+                  - generic [ref=e622]: 4 erro
+            - generic [ref=e623]:
+              - button "v60" [ref=e625] [cursor=pointer]:
+                - generic [ref=e626]: v60
+              - generic [ref=e627]:
+                - generic [ref=e628]: envio em massa
+                - generic [ref=e629]: 07/05, 21:36
+                - generic [ref=e630]:
+                  - generic [ref=e631]: "+98"
+                  - generic [ref=e632]: 2 erro
+            - generic [ref=e633]:
+              - button "v61" [ref=e635] [cursor=pointer]:
+                - generic [ref=e636]: v61
+              - generic [ref=e637]:
+                - generic [ref=e638]: envio em massa
+                - generic [ref=e639]: 07/05, 21:37
+                - generic [ref=e640]:
+                  - generic [ref=e641]: "+95"
+                  - generic [ref=e642]: 5 erro
+            - generic [ref=e643]:
+              - button "v62" [ref=e645] [cursor=pointer]:
+                - generic [ref=e646]: v62
+              - generic [ref=e647]:
+                - generic [ref=e648]: envio em massa
+                - generic [ref=e649]: 07/05, 21:38
+                - generic [ref=e650]:
+                  - generic [ref=e651]: "+97"
+                  - generic [ref=e652]: 3 erro
+            - generic [ref=e653]:
+              - button "v63" [ref=e655] [cursor=pointer]:
+                - generic [ref=e656]: v63
+              - generic [ref=e657]:
+                - generic [ref=e658]: envio em massa
+                - generic [ref=e659]: 07/05, 21:39
+                - generic [ref=e660]:
+                  - generic [ref=e661]: "+92"
+                  - generic [ref=e662]: 8 erro
+            - generic [ref=e663]:
+              - button "v64" [ref=e665] [cursor=pointer]:
+                - generic [ref=e666]: v64
+              - generic [ref=e667]:
+                - generic [ref=e668]: envio em massa
+                - generic [ref=e669]: 07/05, 21:41
+                - generic [ref=e670]:
+                  - generic [ref=e671]: "+96"
+                  - generic [ref=e672]: 4 erro
+            - generic [ref=e673]:
+              - button "v65" [ref=e675] [cursor=pointer]:
+                - generic [ref=e676]: v65
+              - generic [ref=e677]:
+                - generic [ref=e678]: envio em massa
+                - generic [ref=e679]: 07/05, 21:42
+                - generic [ref=e680]:
+                  - generic [ref=e681]: "+97"
+                  - generic [ref=e682]: 3 erro
+            - generic [ref=e683]:
+              - button "v66" [ref=e685] [cursor=pointer]:
+                - generic [ref=e686]: v66
+              - generic [ref=e687]:
+                - generic [ref=e688]: envio em massa
+                - generic [ref=e689]: 07/05, 21:43
+                - generic [ref=e690]:
+                  - generic [ref=e691]: "+96"
+                  - generic [ref=e692]: 4 erro
+            - generic [ref=e693]:
+              - button "v67" [ref=e695] [cursor=pointer]:
+                - generic [ref=e696]: v67
+              - generic [ref=e697]:
+                - generic [ref=e698]: envio em massa
+                - generic [ref=e699]: 07/05, 21:44
+                - generic [ref=e701]: "+100"
+            - generic [ref=e702]:
+              - button "v68" [ref=e704] [cursor=pointer]:
+                - generic [ref=e705]: v68
+              - generic [ref=e706]:
+                - generic [ref=e707]: envio em massa
+                - generic [ref=e708]: 07/05, 21:45
+                - generic [ref=e709]:
+                  - generic [ref=e710]: "+96"
+                  - generic [ref=e711]: 4 erro
+            - generic [ref=e712]:
+              - button "v69" [ref=e714] [cursor=pointer]:
+                - generic [ref=e715]: v69
+              - generic [ref=e716]:
+                - generic [ref=e717]: envio em massa
+                - generic [ref=e718]: 07/05, 21:46
+                - generic [ref=e719]:
+                  - generic [ref=e720]: "+98"
+                  - generic [ref=e721]: 2 erro
+            - generic [ref=e722]:
+              - button "v70" [ref=e724] [cursor=pointer]:
+                - generic [ref=e725]: v70
+              - generic [ref=e726]:
+                - generic [ref=e727]: envio em massa
+                - generic [ref=e728]: 07/05, 21:47
+                - generic [ref=e730]: "+100"
+            - generic [ref=e731]:
+              - button "v71" [ref=e733] [cursor=pointer]:
+                - generic [ref=e734]: v71
+              - generic [ref=e735]:
+                - generic [ref=e736]: envio em massa
+                - generic [ref=e737]: 07/05, 21:48
+                - generic [ref=e738]:
+                  - generic [ref=e739]: "+97"
+                  - generic [ref=e740]: 3 erro
+            - generic [ref=e741]:
+              - button "v72" [ref=e743] [cursor=pointer]:
+                - generic [ref=e744]: v72
+              - generic [ref=e745]:
+                - generic [ref=e746]: envio em massa
+                - generic [ref=e747]: 07/05, 21:50
+                - generic [ref=e748]:
+                  - generic [ref=e749]: "+96"
+                  - generic [ref=e750]: 4 erro
+            - generic [ref=e751]:
+              - button "v73" [ref=e753] [cursor=pointer]:
+                - generic [ref=e754]: v73
+              - generic [ref=e755]:
+                - generic [ref=e756]: envio em massa
+                - generic [ref=e757]: 07/05, 21:52
+                - generic [ref=e758]:
+                  - generic [ref=e759]: "+95"
+                  - generic [ref=e760]: 5 erro
+            - generic [ref=e761]:
+              - button "v74" [ref=e763] [cursor=pointer]:
+                - generic [ref=e764]: v74
+              - generic [ref=e765]:
+                - generic [ref=e766]: envio em massa
+                - generic [ref=e767]: 07/05, 21:53
+                - generic [ref=e768]:
+                  - generic [ref=e769]: "+97"
+                  - generic [ref=e770]: 3 erro
+            - generic [ref=e771]:
+              - button "v75" [ref=e773] [cursor=pointer]:
+                - generic [ref=e774]: v75
+              - generic [ref=e775]:
+                - generic [ref=e776]: envio em massa
+                - generic [ref=e777]: 07/05, 21:54
+                - generic [ref=e778]:
+                  - generic [ref=e779]: "+96"
+                  - generic [ref=e780]: 4 erro
+            - generic [ref=e781]:
+              - button "v76" [ref=e783] [cursor=pointer]:
+                - generic [ref=e784]: v76
+              - generic [ref=e785]:
+                - generic [ref=e786]: envio em massa
+                - generic [ref=e787]: 07/05, 21:55
+                - generic [ref=e788]:
+                  - generic [ref=e789]: "+93"
+                  - generic [ref=e790]: 7 erro
+            - generic [ref=e791]:
+              - button "v77" [ref=e793] [cursor=pointer]:
+                - generic [ref=e794]: v77
+              - generic [ref=e795]:
+                - generic [ref=e796]: envio em massa
+                - generic [ref=e797]: 07/05, 21:56
+                - generic [ref=e798]:
+                  - generic [ref=e799]: "+99"
+                  - generic [ref=e800]: 1 erro
+            - generic [ref=e801]:
+              - button "v78" [ref=e803] [cursor=pointer]:
+                - generic [ref=e804]: v78
+              - generic [ref=e805]:
+                - generic [ref=e806]: envio em massa
+                - generic [ref=e807]: 07/05, 21:57
+                - generic [ref=e808]:
+                  - generic [ref=e809]: "+97"
+                  - generic [ref=e810]: 3 erro
+            - generic [ref=e811]:
+              - button "v79" [ref=e813] [cursor=pointer]:
+                - generic [ref=e814]: v79
+              - generic [ref=e815]:
+                - generic [ref=e816]: envio em massa
+                - generic [ref=e817]: 07/05, 22:03
+                - generic [ref=e818]:
+                  - generic [ref=e819]: "+95"
+                  - generic [ref=e820]: 5 erro
+            - generic [ref=e821]:
+              - button "v80" [ref=e823] [cursor=pointer]:
+                - generic [ref=e824]: v80
+              - generic [ref=e825]:
+                - generic [ref=e826]: envio em massa
+                - generic [ref=e827]: 07/05, 22:05
+                - generic [ref=e828]:
+                  - generic [ref=e829]: "+96"
+                  - generic [ref=e830]: 4 erro
+            - generic [ref=e831]:
+              - button "v81" [ref=e833] [cursor=pointer]:
+                - generic [ref=e834]: v81
+              - generic [ref=e835]:
+                - generic [ref=e836]: envio em massa
+                - generic [ref=e837]: 07/05, 22:06
+                - generic [ref=e838]:
+                  - generic [ref=e839]: "+99"
+                  - generic [ref=e840]: 1 erro
+            - generic [ref=e841]:
+              - button "v82" [ref=e843] [cursor=pointer]:
+                - generic [ref=e844]: v82
+              - generic [ref=e845]:
+                - generic [ref=e846]: envio em massa
+                - generic [ref=e847]: 07/05, 22:07
+                - generic [ref=e848]:
+                  - generic [ref=e849]: "+97"
+                  - generic [ref=e850]: 3 erro
+            - generic [ref=e851]:
+              - button "v83" [ref=e853] [cursor=pointer]:
+                - generic [ref=e854]: v83
+              - generic [ref=e855]:
+                - generic [ref=e856]: envio em massa
+                - generic [ref=e857]: 07/05, 22:08
+                - generic [ref=e858]:
+                  - generic [ref=e859]: "+99"
+                  - generic [ref=e860]: 1 erro
+            - generic [ref=e861]:
+              - button "v84" [ref=e863] [cursor=pointer]:
+                - generic [ref=e864]: v84
+              - generic [ref=e865]:
+                - generic [ref=e866]: envio em massa
+                - generic [ref=e867]: 07/05, 22:09
+                - generic [ref=e868]:
+                  - generic [ref=e869]: "+96"
+                  - generic [ref=e870]: 4 erro
+            - generic [ref=e871]:
+              - button "v85" [ref=e873] [cursor=pointer]:
+                - generic [ref=e874]: v85
+              - generic [ref=e875]:
+                - generic [ref=e876]: envio em massa
+                - generic [ref=e877]: 07/05, 22:10
+                - generic [ref=e878]:
+                  - generic [ref=e879]: "+99"
+                  - generic [ref=e880]: 1 erro
+            - generic [ref=e881]:
+              - button "v86" [ref=e883] [cursor=pointer]:
+                - generic [ref=e884]: v86
+              - generic [ref=e885]:
+                - generic [ref=e886]: envio em massa
+                - generic [ref=e887]: 07/05, 22:11
+                - generic [ref=e888]:
+                  - generic [ref=e889]: "+96"
+                  - generic [ref=e890]: 4 erro
+            - generic [ref=e891]:
+              - button "v87" [ref=e893] [cursor=pointer]:
+                - generic [ref=e894]: v87
+              - generic [ref=e895]:
+                - generic [ref=e896]: envio em massa
+                - generic [ref=e897]: 07/05, 22:12
+                - generic [ref=e898]:
+                  - generic [ref=e899]: "+95"
+                  - generic [ref=e900]: 5 erro
+            - generic [ref=e901]:
+              - button "v88" [ref=e903] [cursor=pointer]:
+                - generic [ref=e904]: v88
+              - generic [ref=e905]:
+                - generic [ref=e906]: envio em massa
+                - generic [ref=e907]: 07/05, 22:13
+                - generic [ref=e908]:
+                  - generic [ref=e909]: "+94"
+                  - generic [ref=e910]: 6 erro
+            - generic [ref=e911]:
+              - button "v89" [ref=e913] [cursor=pointer]:
+                - generic [ref=e914]: v89
+              - generic [ref=e915]:
+                - generic [ref=e916]: envio em massa
+                - generic [ref=e917]: 07/05, 22:15
+                - generic [ref=e918]:
+                  - generic [ref=e919]: "+97"
+                  - generic [ref=e920]: 3 erro
+            - generic [ref=e921]:
+              - button "v90" [ref=e923] [cursor=pointer]:
+                - generic [ref=e924]: v90
+              - generic [ref=e925]:
+                - generic [ref=e926]: envio em massa
+                - generic [ref=e927]: 07/05, 22:16
+                - generic [ref=e928]:
+                  - generic [ref=e929]: "+99"
+                  - generic [ref=e930]: 1 erro
+            - generic [ref=e931]:
+              - button "v91" [ref=e933] [cursor=pointer]:
+                - generic [ref=e934]: v91
+              - generic [ref=e935]:
+                - generic [ref=e936]: envio em massa
+                - generic [ref=e937]: 07/05, 22:17
+                - generic [ref=e938]:
+                  - generic [ref=e939]: "+95"
+                  - generic [ref=e940]: 5 erro
+            - generic [ref=e941]:
+              - button "v92" [ref=e943] [cursor=pointer]:
+                - generic [ref=e944]: v92
+              - generic [ref=e945]:
+                - generic [ref=e946]: envio em massa
+                - generic [ref=e947]: 07/05, 22:18
+                - generic [ref=e948]:
+                  - generic [ref=e949]: "+93"
+                  - generic [ref=e950]: 7 erro
+            - generic [ref=e951]:
+              - button "v93" [ref=e953] [cursor=pointer]:
+                - generic [ref=e954]: v93
+              - generic [ref=e955]:
+                - generic [ref=e956]: envio em massa
+                - generic [ref=e957]: 07/05, 22:19
+                - generic [ref=e958]:
+                  - generic [ref=e959]: "+94"
+                  - generic [ref=e960]: 6 erro
+            - generic [ref=e961]:
+              - button "v94" [ref=e963] [cursor=pointer]:
+                - generic [ref=e964]: v94
+              - generic [ref=e965]:
+                - generic [ref=e966]: envio em massa
+                - generic [ref=e967]: 07/05, 22:20
+                - generic [ref=e968]:
+                  - generic [ref=e969]: "+98"
+                  - generic [ref=e970]: 2 erro
+            - generic [ref=e971]:
+              - button "v95" [ref=e973] [cursor=pointer]:
+                - generic [ref=e974]: v95
+              - generic [ref=e975]:
+                - generic [ref=e976]: envio em massa
+                - generic [ref=e977]: 07/05, 22:21
+                - generic [ref=e978]:
+                  - generic [ref=e979]: "+96"
+                  - generic [ref=e980]: 4 erro
+            - generic [ref=e981]:
+              - button "v96" [ref=e983] [cursor=pointer]:
+                - generic [ref=e984]: v96
+              - generic [ref=e985]:
+                - generic [ref=e986]: envio em massa
+                - generic [ref=e987]: 07/05, 22:22
+                - generic [ref=e988]:
+                  - generic [ref=e989]: "+96"
+                  - generic [ref=e990]: 4 erro
+            - generic [ref=e991]:
+              - button "v97" [ref=e993] [cursor=pointer]:
+                - generic [ref=e994]: v97
+              - generic [ref=e995]:
+                - generic [ref=e996]: envio em massa
+                - generic [ref=e997]: 07/05, 22:24
+                - generic [ref=e998]:
+                  - generic [ref=e999]: "+94"
+                  - generic [ref=e1000]: 6 erro
+            - generic [ref=e1001]:
+              - button "v98" [ref=e1003] [cursor=pointer]:
+                - generic [ref=e1004]: v98
+              - generic [ref=e1005]:
+                - generic [ref=e1006]: envio em massa
+                - generic [ref=e1007]: 07/05, 22:25
+                - generic [ref=e1008]:
+                  - generic [ref=e1009]: "+97"
+                  - generic [ref=e1010]: 3 erro
+            - generic [ref=e1011]:
+              - button "v99" [ref=e1013] [cursor=pointer]:
+                - generic [ref=e1014]: v99
+              - generic [ref=e1015]:
+                - generic [ref=e1016]: envio em massa
+                - generic [ref=e1017]: 07/05, 22:28
+                - generic [ref=e1018]:
+                  - generic [ref=e1019]: "+99"
+                  - generic [ref=e1020]: 1 erro
+            - generic [ref=e1021]:
+              - button "v100" [ref=e1023] [cursor=pointer]:
+                - generic [ref=e1024]: v100
+              - generic [ref=e1025]:
+                - generic [ref=e1026]: envio em massa
+                - generic [ref=e1027]: 07/05, 22:29
+                - generic [ref=e1028]:
+                  - generic [ref=e1029]: "+98"
+                  - generic [ref=e1030]: 2 erro
+            - generic [ref=e1031]:
+              - button "v101" [ref=e1033] [cursor=pointer]:
+                - generic [ref=e1034]: v101
+              - generic [ref=e1035]:
+                - generic [ref=e1036]: envio em massa
+                - generic [ref=e1037]: 07/05, 22:30
+                - generic [ref=e1038]:
+                  - generic [ref=e1039]: "+97"
+                  - generic [ref=e1040]: 3 erro
+            - generic [ref=e1041]:
+              - button "v102" [ref=e1043] [cursor=pointer]:
+                - generic [ref=e1044]: v102
+              - generic [ref=e1045]:
+                - generic [ref=e1046]: envio em massa
+                - generic [ref=e1047]: 07/05, 22:31
+                - generic [ref=e1048]:
+                  - generic [ref=e1049]: "+93"
+                  - generic [ref=e1050]: 7 erro
+            - generic [ref=e1051]:
+              - button "v103" [ref=e1053] [cursor=pointer]:
+                - generic [ref=e1054]: v103
+              - generic [ref=e1055]:
+                - generic [ref=e1056]: envio em massa
+                - generic [ref=e1057]: 07/05, 22:32
+                - generic [ref=e1058]:
+                  - generic [ref=e1059]: "+94"
+                  - generic [ref=e1060]: 6 erro
+            - generic [ref=e1061]:
+              - button "v104" [ref=e1063] [cursor=pointer]:
+                - generic [ref=e1064]: v104
+              - generic [ref=e1065]:
+                - generic [ref=e1066]: envio em massa
+                - generic [ref=e1067]: 07/05, 22:34
+                - generic [ref=e1068]:
+                  - generic [ref=e1069]: "+96"
+                  - generic [ref=e1070]: 4 erro
+            - generic [ref=e1071]:
+              - button "v105" [ref=e1073] [cursor=pointer]:
+                - generic [ref=e1074]: v105
+              - generic [ref=e1075]:
+                - generic [ref=e1076]: envio em massa
+                - generic [ref=e1077]: 07/05, 22:35
+                - generic [ref=e1078]:
+                  - generic [ref=e1079]: "+98"
+                  - generic [ref=e1080]: 2 erro
+            - generic [ref=e1081]:
+              - button "v106" [ref=e1083] [cursor=pointer]:
+                - generic [ref=e1084]: v106
+              - generic [ref=e1085]:
+                - generic [ref=e1086]: envio em massa
+                - generic [ref=e1087]: 07/05, 22:36
+                - generic [ref=e1088]:
+                  - generic [ref=e1089]: "+95"
+                  - generic [ref=e1090]: 5 erro
+            - generic [ref=e1091]:
+              - button "v107" [ref=e1093] [cursor=pointer]:
+                - generic [ref=e1094]: v107
+              - generic [ref=e1095]:
+                - generic [ref=e1096]: envio em massa
+                - generic [ref=e1097]: 07/05, 22:37
+                - generic [ref=e1098]:
+                  - generic [ref=e1099]: "+98"
+                  - generic [ref=e1100]: 2 erro
+            - generic [ref=e1101]:
+              - button "v108" [ref=e1103] [cursor=pointer]:
+                - generic [ref=e1104]: v108
+              - generic [ref=e1105]:
+                - generic [ref=e1106]: envio em massa
+                - generic [ref=e1107]: 07/05, 22:38
+                - generic [ref=e1108]:
+                  - generic [ref=e1109]: "+97"
+                  - generic [ref=e1110]: 3 erro
+            - generic [ref=e1111]:
+              - button "v109" [ref=e1113] [cursor=pointer]:
+                - generic [ref=e1114]: v109
+              - generic [ref=e1115]:
+                - generic [ref=e1116]: envio em massa
+                - generic [ref=e1117]: 07/05, 22:39
+                - generic [ref=e1118]:
+                  - generic [ref=e1119]: "+96"
+                  - generic [ref=e1120]: 4 erro
+            - generic [ref=e1121]:
+              - button "v110" [ref=e1123] [cursor=pointer]:
+                - generic [ref=e1124]: v110
+              - generic [ref=e1125]:
+                - generic [ref=e1126]: envio em massa
+                - generic [ref=e1127]: 07/05, 22:40
+                - generic [ref=e1128]:
+                  - generic [ref=e1129]: "+99"
+                  - generic [ref=e1130]: 1 erro
+            - generic [ref=e1131]:
+              - button "v111" [ref=e1133] [cursor=pointer]:
+                - generic [ref=e1134]: v111
+              - generic [ref=e1135]:
+                - generic [ref=e1136]: envio em massa
+                - generic [ref=e1137]: 07/05, 22:42
+                - generic [ref=e1138]:
+                  - generic [ref=e1139]: "+98"
+                  - generic [ref=e1140]: 2 erro
+            - generic [ref=e1141]:
+              - button "v112" [ref=e1143] [cursor=pointer]:
+                - generic [ref=e1144]: v112
+              - generic [ref=e1145]:
+                - generic [ref=e1146]: envio em massa
+                - generic [ref=e1147]: 07/05, 22:43
+                - generic [ref=e1148]:
+                  - generic [ref=e1149]: "+95"
+                  - generic [ref=e1150]: 5 erro
+            - generic [ref=e1151]:
+              - button "v113" [ref=e1153] [cursor=pointer]:
+                - generic [ref=e1154]: v113
+              - generic [ref=e1155]:
+                - generic [ref=e1156]: envio em massa
+                - generic [ref=e1157]: 07/05, 22:44
+                - generic [ref=e1158]:
+                  - generic [ref=e1159]: "+99"
+                  - generic [ref=e1160]: 1 erro
+            - generic [ref=e1161]:
+              - button "v114" [ref=e1163] [cursor=pointer]:
+                - generic [ref=e1164]: v114
+              - generic [ref=e1165]:
+                - generic [ref=e1166]: envio em massa
+                - generic [ref=e1167]: 07/05, 22:45
+                - generic [ref=e1168]:
+                  - generic [ref=e1169]: "+98"
+                  - generic [ref=e1170]: 2 erro
+            - generic [ref=e1171]:
+              - button "v115" [ref=e1173] [cursor=pointer]:
+                - generic [ref=e1174]: v115
+              - generic [ref=e1175]:
+                - generic [ref=e1176]: envio em massa
+                - generic [ref=e1177]: 07/05, 22:46
+                - generic [ref=e1178]:
+                  - generic [ref=e1179]: "+98"
+                  - generic [ref=e1180]: 2 erro
+            - generic [ref=e1181]:
+              - button "v116" [ref=e1183] [cursor=pointer]:
+                - generic [ref=e1184]: v116
+              - generic [ref=e1185]:
+                - generic [ref=e1186]: envio em massa
+                - generic [ref=e1187]: 07/05, 22:48
+                - generic [ref=e1188]:
+                  - generic [ref=e1189]: "+97"
+                  - generic [ref=e1190]: 3 erro
+            - generic [ref=e1191]:
+              - button "v117" [ref=e1193] [cursor=pointer]:
+                - generic [ref=e1194]: v117
+              - generic [ref=e1195]:
+                - generic [ref=e1196]: envio em massa
+                - generic [ref=e1197]: 07/05, 22:49
+                - generic [ref=e1198]:
+                  - generic [ref=e1199]: "+97"
+                  - generic [ref=e1200]: 3 erro
+            - generic [ref=e1201]:
+              - button "v118" [ref=e1203] [cursor=pointer]:
+                - generic [ref=e1204]: v118
+              - generic [ref=e1205]:
+                - generic [ref=e1206]: envio em massa
+                - generic [ref=e1207]: 07/05, 22:51
+                - generic [ref=e1208]:
+                  - generic [ref=e1209]: "+99"
+                  - generic [ref=e1210]: 1 erro
+            - generic [ref=e1211]:
+              - button "v119" [ref=e1213] [cursor=pointer]:
+                - generic [ref=e1214]: v119
+              - generic [ref=e1215]:
+                - generic [ref=e1216]: envio em massa
+                - generic [ref=e1217]: 07/05, 22:53
+                - generic [ref=e1218]:
+                  - generic [ref=e1219]: "+98"
+                  - generic [ref=e1220]: 2 erro
+            - generic [ref=e1221]:
+              - button "v120" [ref=e1223] [cursor=pointer]:
+                - generic [ref=e1224]: v120
+              - generic [ref=e1225]:
+                - generic [ref=e1226]: envio em massa
+                - generic [ref=e1227]: 07/05, 22:55
+                - generic [ref=e1229]: "+100"
+            - generic [ref=e1230]:
+              - button "v121" [ref=e1232] [cursor=pointer]:
+                - generic [ref=e1233]: v121
+              - generic [ref=e1234]:
+                - generic [ref=e1235]: envio em massa
+                - generic [ref=e1236]: 07/05, 22:56
+                - generic [ref=e1237]:
+                  - generic [ref=e1238]: "+97"
+                  - generic [ref=e1239]: 3 erro
+            - generic [ref=e1240]:
+              - button "v122" [ref=e1242] [cursor=pointer]:
+                - generic [ref=e1243]: v122
+              - generic [ref=e1244]:
+                - generic [ref=e1245]: envio em massa
+                - generic [ref=e1246]: 07/05, 22:57
+                - generic [ref=e1248]: "+100"
+            - generic [ref=e1249]:
+              - button "v123" [ref=e1251] [cursor=pointer]:
+                - generic [ref=e1252]: v123
+              - generic [ref=e1253]:
+                - generic [ref=e1254]: envio em massa
+                - generic [ref=e1255]: 07/05, 22:58
+                - generic [ref=e1256]:
+                  - generic [ref=e1257]: "+99"
+                  - generic [ref=e1258]: 1 erro
+            - generic [ref=e1259]:
+              - button "v124" [ref=e1261] [cursor=pointer]:
+                - generic [ref=e1262]: v124
+              - generic [ref=e1263]:
+                - generic [ref=e1264]: envio em massa
+                - generic [ref=e1265]: 07/05, 22:59
+                - generic [ref=e1266]:
+                  - generic [ref=e1267]: "+99"
+                  - generic [ref=e1268]: 1 erro
+            - generic [ref=e1269]:
+              - button "v125" [ref=e1271] [cursor=pointer]:
+                - generic [ref=e1272]: v125
+              - generic [ref=e1273]:
+                - generic [ref=e1274]: envio em massa
+                - generic [ref=e1275]: 07/05, 23:01
+                - generic [ref=e1276]:
+                  - generic [ref=e1277]: "+99"
+                  - generic [ref=e1278]: 1 erro
+            - generic [ref=e1279]:
+              - button "v126" [ref=e1281] [cursor=pointer]:
+                - generic [ref=e1282]: v126
+              - generic [ref=e1283]:
+                - generic [ref=e1284]: envio em massa
+                - generic [ref=e1285]: 07/05, 23:02
+                - generic [ref=e1287]: "+100"
+            - generic [ref=e1288]:
+              - button "v127" [ref=e1290] [cursor=pointer]:
+                - generic [ref=e1291]: v127
+              - generic [ref=e1292]:
+                - generic [ref=e1293]: envio em massa
+                - generic [ref=e1294]: 07/05, 23:03
+                - generic [ref=e1295]:
+                  - generic [ref=e1296]: "+97"
+                  - generic [ref=e1297]: 3 erro
+            - generic [ref=e1298]:
+              - button "v128" [ref=e1300] [cursor=pointer]:
+                - generic [ref=e1301]: v128
+              - generic [ref=e1302]:
+                - generic [ref=e1303]: envio em massa
+                - generic [ref=e1304]: 07/05, 23:04
+                - generic [ref=e1306]: "+100"
+            - generic [ref=e1307]:
+              - button "v129" [ref=e1309] [cursor=pointer]:
+                - generic [ref=e1310]: v129
+              - generic [ref=e1311]:
+                - generic [ref=e1312]: envio em massa
+                - generic [ref=e1313]: 07/05, 23:05
+                - generic [ref=e1314]:
+                  - generic [ref=e1315]: "+98"
+                  - generic [ref=e1316]: 2 erro
+            - generic [ref=e1317]:
+              - button "v130" [ref=e1319] [cursor=pointer]:
+                - generic [ref=e1320]: v130
+              - generic [ref=e1321]:
+                - generic [ref=e1322]: envio em massa
+                - generic [ref=e1323]: 07/05, 23:07
+                - generic [ref=e1324]:
+                  - generic [ref=e1325]: "+99"
+                  - generic [ref=e1326]: 1 erro
+            - generic [ref=e1327]:
+              - button "v131" [ref=e1329] [cursor=pointer]:
+                - generic [ref=e1330]: v131
+              - generic [ref=e1331]:
+                - generic [ref=e1332]: envio em massa
+                - generic [ref=e1333]: 07/05, 23:08
+                - generic [ref=e1334]:
+                  - generic [ref=e1335]: "+99"
+                  - generic [ref=e1336]: 1 erro
+            - generic [ref=e1337]:
+              - button "v132" [ref=e1339] [cursor=pointer]:
+                - generic [ref=e1340]: v132
+              - generic [ref=e1341]:
+                - generic [ref=e1342]: envio em massa
+                - generic [ref=e1343]: 07/05, 23:09
+                - generic [ref=e1344]:
+                  - generic [ref=e1345]: "+98"
+                  - generic [ref=e1346]: 2 erro
+            - generic [ref=e1347]:
+              - button "v133" [ref=e1349] [cursor=pointer]:
+                - generic [ref=e1350]: v133
+              - generic [ref=e1351]:
+                - generic [ref=e1352]: envio em massa
+                - generic [ref=e1353]: 07/05, 23:10
+                - generic [ref=e1354]:
+                  - generic [ref=e1355]: "+98"
+                  - generic [ref=e1356]: 2 erro
+            - generic [ref=e1357]:
+              - button "v134" [ref=e1359] [cursor=pointer]:
+                - generic [ref=e1360]: v134
+              - generic [ref=e1361]:
+                - generic [ref=e1362]: envio em massa
+                - generic [ref=e1363]: 07/05, 23:11
+                - generic [ref=e1364]:
+                  - generic [ref=e1365]: "+99"
+                  - generic [ref=e1366]: 1 erro
+            - generic [ref=e1367]:
+              - button "v135" [ref=e1369] [cursor=pointer]:
+                - generic [ref=e1370]: v135
+              - generic [ref=e1371]:
+                - generic [ref=e1372]: envio em massa
+                - generic [ref=e1373]: 07/05, 23:12
+                - generic [ref=e1374]:
+                  - generic [ref=e1375]: "+99"
+                  - generic [ref=e1376]: 1 erro
+            - generic [ref=e1377]:
+              - button "v136" [ref=e1379] [cursor=pointer]:
+                - generic [ref=e1380]: v136
+              - generic [ref=e1381]:
+                - generic [ref=e1382]: envio em massa
+                - generic [ref=e1383]: 07/05, 23:14
+                - generic [ref=e1384]:
+                  - generic [ref=e1385]: "+99"
+                  - generic [ref=e1386]: 1 erro
+            - generic [ref=e1387]:
+              - button "v137" [ref=e1389] [cursor=pointer]:
+                - generic [ref=e1390]: v137
+              - generic [ref=e1391]:
+                - generic [ref=e1392]: envio em massa
+                - generic [ref=e1393]: 07/05, 23:15
+                - generic [ref=e1394]:
+                  - generic [ref=e1395]: "+99"
+                  - generic [ref=e1396]: 1 erro
+            - generic [ref=e1397]:
+              - button "v138" [ref=e1399] [cursor=pointer]:
+                - generic [ref=e1400]: v138
+              - generic [ref=e1401]:
+                - generic [ref=e1402]: envio em massa
+                - generic [ref=e1403]: 07/05, 23:16
+                - generic [ref=e1404]:
+                  - generic [ref=e1405]: "+99"
+                  - generic [ref=e1406]: 1 erro
+            - generic [ref=e1407]:
+              - button "v139" [ref=e1409] [cursor=pointer]:
+                - generic [ref=e1410]: v139
+              - generic [ref=e1411]:
+                - generic [ref=e1412]: envio em massa
+                - generic [ref=e1413]: 07/05, 23:19
+                - generic [ref=e1414]:
+                  - generic [ref=e1415]: "+98"
+                  - generic [ref=e1416]: 2 erro
+            - generic [ref=e1417]:
+              - button "v140" [ref=e1419] [cursor=pointer]:
+                - generic [ref=e1420]: v140
+              - generic [ref=e1421]:
+                - generic [ref=e1422]: envio em massa
+                - generic [ref=e1423]: 07/05, 23:20
+                - generic [ref=e1424]:
+                  - generic [ref=e1425]: "+97"
+                  - generic [ref=e1426]: 3 erro
+            - generic [ref=e1427]:
+              - button "v141" [ref=e1429] [cursor=pointer]:
+                - generic [ref=e1430]: v141
+              - generic [ref=e1431]:
+                - generic [ref=e1432]: envio em massa
+                - generic [ref=e1433]: 07/05, 23:21
+                - generic [ref=e1434]:
+                  - generic [ref=e1435]: "+98"
+                  - generic [ref=e1436]: 2 erro
+            - generic [ref=e1437]:
+              - button "v142" [ref=e1439] [cursor=pointer]:
+                - generic [ref=e1440]: v142
+              - generic [ref=e1441]:
+                - generic [ref=e1442]: envio em massa
+                - generic [ref=e1443]: 07/05, 23:23
+                - generic [ref=e1445]: "+100"
+            - generic [ref=e1446]:
+              - button "v143" [ref=e1448] [cursor=pointer]:
+                - generic [ref=e1449]: v143
+              - generic [ref=e1450]:
+                - generic [ref=e1451]: envio em massa
+                - generic [ref=e1452]: 07/05, 23:24
+                - generic [ref=e1453]:
+                  - generic [ref=e1454]: "+98"
+                  - generic [ref=e1455]: 2 erro
+            - generic [ref=e1456]:
+              - button "v144" [ref=e1458] [cursor=pointer]:
+                - generic [ref=e1459]: v144
+              - generic [ref=e1460]:
+                - generic [ref=e1461]: envio em massa
+                - generic [ref=e1462]: 07/05, 23:25
+                - generic [ref=e1463]:
+                  - generic [ref=e1464]: "+99"
+                  - generic [ref=e1465]: 1 erro
+            - generic [ref=e1466]:
+              - button "v145" [ref=e1468] [cursor=pointer]:
+                - generic [ref=e1469]: v145
+              - generic [ref=e1470]:
+                - generic [ref=e1471]: envio em massa
+                - generic [ref=e1472]: 07/05, 23:26
+                - generic [ref=e1473]:
+                  - generic [ref=e1474]: "+99"
+                  - generic [ref=e1475]: 1 erro
+            - generic [ref=e1476]:
+              - button "v146" [ref=e1478] [cursor=pointer]:
+                - generic [ref=e1479]: v146
+              - generic [ref=e1480]:
+                - generic [ref=e1481]: envio em massa
+                - generic [ref=e1482]: 07/05, 23:27
+                - generic [ref=e1483]:
+                  - generic [ref=e1484]: "+99"
+                  - generic [ref=e1485]: 1 erro
+            - generic [ref=e1486]:
+              - button "v147" [ref=e1488] [cursor=pointer]:
+                - generic [ref=e1489]: v147
+              - generic [ref=e1490]:
+                - generic [ref=e1491]: envio em massa
+                - generic [ref=e1492]: 07/05, 23:28
+                - generic [ref=e1493]:
+                  - generic [ref=e1494]: "+99"
+                  - generic [ref=e1495]: 1 erro
+            - generic [ref=e1496]:
+              - button "v148" [ref=e1498] [cursor=pointer]:
+                - generic [ref=e1499]: v148
+              - generic [ref=e1500]:
+                - generic [ref=e1501]: envio em massa
+                - generic [ref=e1502]: 07/05, 23:29
+                - generic [ref=e1504]: "+100"
+            - generic [ref=e1505]:
+              - button "v149" [ref=e1507] [cursor=pointer]:
+                - generic [ref=e1508]: v149
+              - generic [ref=e1509]:
+                - generic [ref=e1510]: envio em massa
+                - generic [ref=e1511]: 07/05, 23:30
+                - generic [ref=e1512]:
+                  - generic [ref=e1513]: "+98"
+                  - generic [ref=e1514]: 2 erro
+            - generic [ref=e1515]:
+              - button "v150" [ref=e1517] [cursor=pointer]:
+                - generic [ref=e1518]: v150
+              - generic [ref=e1519]:
+                - generic [ref=e1520]: envio em massa
+                - generic [ref=e1521]: 07/05, 23:31
+                - generic [ref=e1522]:
+                  - generic [ref=e1523]: "+96"
+                  - generic [ref=e1524]: 4 erro
+            - generic [ref=e1525]:
+              - button "v151" [ref=e1527] [cursor=pointer]:
+                - generic [ref=e1528]: v151
+              - generic [ref=e1529]:
+                - generic [ref=e1530]: envio em massa
+                - generic [ref=e1531]: 07/05, 23:32
+                - generic [ref=e1532]:
+                  - generic [ref=e1533]: "+98"
+                  - generic [ref=e1534]: 2 erro
+            - generic [ref=e1535]:
+              - button "v152" [ref=e1537] [cursor=pointer]:
+                - generic [ref=e1538]: v152
+              - generic [ref=e1539]:
+                - generic [ref=e1540]: envio em massa
+                - generic [ref=e1541]: 07/05, 23:33
+                - generic [ref=e1543]: "+100"
+            - generic [ref=e1544]:
+              - button "v153" [ref=e1546] [cursor=pointer]:
+                - generic [ref=e1547]: v153
+              - generic [ref=e1548]:
+                - generic [ref=e1549]: envio em massa
+                - generic [ref=e1550]: 07/05, 23:34
+                - generic [ref=e1551]:
+                  - generic [ref=e1552]: "+99"
+                  - generic [ref=e1553]: 1 erro
+            - generic [ref=e1554]:
+              - button "v154" [ref=e1556] [cursor=pointer]:
+                - generic [ref=e1557]: v154
+              - generic [ref=e1558]:
+                - generic [ref=e1559]: envio em massa
+                - generic [ref=e1560]: 07/05, 23:36
+                - generic [ref=e1561]:
+                  - generic [ref=e1562]: "+99"
+                  - generic [ref=e1563]: 1 erro
+            - generic [ref=e1564]:
+              - button "v155" [ref=e1566] [cursor=pointer]:
+                - generic [ref=e1567]: v155
+              - generic [ref=e1568]:
+                - generic [ref=e1569]: envio em massa
+                - generic [ref=e1570]: 07/05, 23:37
+                - generic [ref=e1571]:
+                  - generic [ref=e1572]: "+97"
+                  - generic [ref=e1573]: 3 erro
+            - generic [ref=e1574]:
+              - button "v156" [ref=e1576] [cursor=pointer]:
+                - generic [ref=e1577]: v156
+              - generic [ref=e1578]:
+                - generic [ref=e1579]: envio em massa
+                - generic [ref=e1580]: 07/05, 23:38
+                - generic [ref=e1581]:
+                  - generic [ref=e1582]: "+98"
+                  - generic [ref=e1583]: 2 erro
+            - generic [ref=e1584]:
+              - button "v157" [ref=e1586] [cursor=pointer]:
+                - generic [ref=e1587]: v157
+              - generic [ref=e1588]:
+                - generic [ref=e1589]: envio em massa
+                - generic [ref=e1590]: 07/05, 23:39
+                - generic [ref=e1592]: "+100"
+            - generic [ref=e1593]:
+              - button "v158" [ref=e1595] [cursor=pointer]:
+                - generic [ref=e1596]: v158
+              - generic [ref=e1597]:
+                - generic [ref=e1598]: envio em massa
+                - generic [ref=e1599]: 07/05, 23:40
+                - generic [ref=e1600]:
+                  - generic [ref=e1601]: "+98"
+                  - generic [ref=e1602]: 2 erro
+            - generic [ref=e1603]:
+              - button "v159" [ref=e1605] [cursor=pointer]:
+                - generic [ref=e1606]: v159
+              - generic [ref=e1607]:
+                - generic [ref=e1608]: envio em massa
+                - generic [ref=e1609]: 07/05, 23:49
+                - generic [ref=e1610]:
+                  - generic [ref=e1611]: "+97"
+                  - generic [ref=e1612]: 3 erro
+            - generic [ref=e1613]:
+              - button "v160" [ref=e1615] [cursor=pointer]:
+                - generic [ref=e1616]: v160
+              - generic [ref=e1617]:
+                - generic [ref=e1618]: envio em massa
+                - generic [ref=e1619]: 07/05, 23:51
+                - generic [ref=e1620]:
+                  - generic [ref=e1621]: "+96"
+                  - generic [ref=e1622]: 4 erro
+            - generic [ref=e1623]:
+              - button "v161" [ref=e1625] [cursor=pointer]:
+                - generic [ref=e1626]: v161
+              - generic [ref=e1627]:
+                - generic [ref=e1628]: envio em massa
+                - generic [ref=e1629]: 07/05, 23:52
+                - generic [ref=e1630]:
+                  - generic [ref=e1631]: "+45"
+                  - generic [ref=e1632]: 1 erro
+        - textbox "filtrar CPF…" [ref=e1635]
+      - generic [ref=e51]:
+        - generic [ref=e52]:
+          - generic [ref=e53]:
+            - heading "📜 Histórico de atividade" [level=3] [ref=e54]
+            - paragraph [ref=e55]: Tudo que foi enviado, extraído ou excluído fica registrado aqui.
+          - button "↻ atualizar" [ref=e1636] [cursor=pointer]
+        - generic [ref=e57]:
+          - generic [ref=e58]:
+            - generic [ref=e59]: "1"
+            - generic [ref=e60]: Uploads
+          - generic [ref=e61]:
+            - generic [ref=e62]: 809.7 MB
+            - generic [ref=e63]: Enviado total
+          - generic [ref=e64]:
+            - generic [ref=e65]: "1"
+            - generic [ref=e66]: Exclusões
+          - generic [ref=e67]:
+            - generic [ref=e68]: 809.7 MB
+            - generic [ref=e69]: Liberado
+          - generic [ref=e70]:
+            - generic [ref=e71]: "1"
+            - generic [ref=e72]: Extrações
+          - generic [ref=e73]:
+            - generic [ref=e74]: "0"
+            - generic [ref=e75]: Duplicados
+        - list [ref=e1637]:
+          - listitem [ref=e1638]:
+            - generic [ref=e1639]: ⚡ Extração
+            - generic [ref=e1640]:
+              - generic [ref=e1641]: SOLUCOES_2025-08.zip · 809.7 MB · 198153 XMLs
+              - generic [ref=e1642]:
+                - generic [ref=e1643]: 07/05/2026, 04:13:15
+                - generic [ref=e1644]: 198028 indexados · 125 falhas · perApur 2025-08
+          - listitem [ref=e1645]:
+            - generic [ref=e1646]: ⬆ Upload
+            - generic [ref=e1647]:
+              - generic [ref=e1648]: SOLUCOES_2025-08.zip · 809.7 MB
+              - generic [ref=e1650]: 07/05/2026, 04:09:47
+          - listitem [ref=e1651]:
+            - generic [ref=e1652]: 🗑 Exclusão
+            - generic [ref=e1653]:
+              - generic [ref=e1654]: SOLUCOES_2025-08.zip · 809.7 MB · 198153 XMLs
+              - generic [ref=e1655]:
+                - generic [ref=e1656]: 07/05/2026, 04:06:58
+                - generic [ref=e1657]: 184769 eventos apagados

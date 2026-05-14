@@ -1,0 +1,41 @@
+- generic [ref=e3]:
+  - generic [ref=e5]:
+    - generic [ref=e7]:
+      - img "Cérebro Operacional" [ref=e8]
+      - img
+    - heading "Easy e-Social" [level=1] [ref=e9]:
+      - text: Easy
+      - text: e-Social
+    - paragraph [ref=e10]: Gestão eSocial simplificada
+  - generic [ref=e12]:
+    - heading "Entrar" [level=2] [ref=e13]
+    - paragraph [ref=e14]: Acesse sua conta Easy e-Social
+    - generic [ref=e15]:
+      - generic [ref=e16]:
+        - generic [ref=e17]: Usuário
+        - generic [ref=e18]:
+          - generic:
+            - img
+          - textbox "Usuário" [ref=e19]:
+            - /placeholder: seu usuário
+      - generic [ref=e20]:
+        - generic [ref=e21]: Senha
+        - generic [ref=e22]:
+          - textbox "Senha" [ref=e23]:
+            - /placeholder: ••••••••
+          - button "Mostrar senha" [ref=e24] [cursor=pointer]:
+            - img [ref=e25]
+      - button "Entrar" [ref=e28] [cursor=pointer]:
+        - generic [ref=e29]: Entrar
+    - separator "ou continue com" [ref=e30]:
+      - generic [ref=e31]: ou continue com
+    - generic [ref=e32]:
+      - button "Entrar com Google" [ref=e33] [cursor=pointer]:
+        - img [ref=e34]
+        - generic [ref=e39]: Google
+      - button "Entrar com GitHub" [ref=e40] [cursor=pointer]:
+        - img [ref=e41]
+        - generic [ref=e43]: GitHub
+      - button "Entrar com Apple" [ref=e44] [cursor=pointer]:
+        - img [ref=e45]
+        - generic [ref=e47]: Apple

@@ -9,11 +9,11 @@
 
 ### 1.1. Por que não multi-tenant por linha (V1) ou por schema?
 
-| Estratégia | Prós | Contras | Veredito |
-|---|---|---|---|
-| **Tenant por linha** (V1: coluna `empresa_id` em todas as tabelas) | simples, JOIN direto entre empresas | risco vazamento (esquecer 1 `WHERE empresa_id=X`); LGPD frágil; índices crescem com mistura; migration impacta todos | ❌ — V1 já provou que cresce ruim |
-| **Tenant por schema** (1 schema Postgres por empresa, mesmo banco) | isolamento médio; sem `empresa_id` em queries | manutenção pesada; backup e restore travam todo o banco; migration tem que iterar schemas | ⚠️ |
-| **Tenant por banco** (1 Supabase DB por empresa) | **isolamento total**; backup/restore independentes; quotas independentes; dump específico para auditoria; LGPD por design | precisa router de conexão; precisa migration runner que percorre N bancos | ✅ **escolhido** |
+| Estratégia                                                         | Prós                                                                                                                      | Contras                                                                                                              | Veredito                          |
+| ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | --------------------------------- |
+| **Tenant por linha** (V1: coluna `empresa_id` em todas as tabelas) | simples, JOIN direto entre empresas                                                                                       | risco vazamento (esquecer 1 `WHERE empresa_id=X`); LGPD frágil; índices crescem com mistura; migration impacta todos | ❌ — V1 já provou que cresce ruim |
+| **Tenant por schema** (1 schema Postgres por empresa, mesmo banco) | isolamento médio; sem `empresa_id` em queries                                                                             | manutenção pesada; backup e restore travam todo o banco; migration tem que iterar schemas                            | ⚠️                                |
+| **Tenant por banco** (1 Supabase DB por empresa)                   | **isolamento total**; backup/restore independentes; quotas independentes; dump específico para auditoria; LGPD por design | precisa router de conexão; precisa migration runner que percorre N bancos                                            | ✅ **escolhido**                  |
 
 ### 1.2. Implicações imediatas
 
@@ -118,16 +118,16 @@ CREATE TABLE audit_log (
 
 **Idêntico em todas as empresas.** Versionado por arquivo `schema_v{X.Y.Z}.sql`. As tabelas vivas hoje no V2 (já validadas pela Soluções):
 
-| Tabela | Função | Dados V1 importáveis? |
-|---|---|---|
-| `empresa_zips_brutos` | ZIPs do governo brutos por importação | parcial (V1 não guardou ZIPs todos) |
-| `explorador_eventos` | 1 linha por evento extraído (S-1200/1210/2200/2299/5001/5002/5003/3000) | ✅ metadados; ❌ `xml_oid` (V1 não tem XML completo) |
-| `timeline_mes` | agregador `(per_apur)` | ✅ |
-| `timeline_envio` | 1 linha por execução de envio (CICLO100 = 1 envio = 100 CPFs) | ✅ |
-| `timeline_envio_item` | 1 linha por CPF dentro do envio (status, recibo, erro) | ✅ |
-| `rubricas`, `naturezas` | tabelas mestras | ✅ |
-| `s1010_envios`, `s1010_eventos` | controle S-1010 | ✅ |
-| `pipeline_cpf_results` | resultado consolidado HEAD por CPF | ✅ |
+| Tabela                          | Função                                                                  | Dados V1 importáveis?                                |
+| ------------------------------- | ----------------------------------------------------------------------- | ---------------------------------------------------- |
+| `empresa_zips_brutos`           | ZIPs do governo brutos por importação                                   | parcial (V1 não guardou ZIPs todos)                  |
+| `explorador_eventos`            | 1 linha por evento extraído (S-1200/1210/2200/2299/5001/5002/5003/3000) | ✅ metadados; ❌ `xml_oid` (V1 não tem XML completo) |
+| `timeline_mes`                  | agregador `(per_apur)`                                                  | ✅                                                   |
+| `timeline_envio`                | 1 linha por execução de envio (CICLO100 = 1 envio = 100 CPFs)           | ✅                                                   |
+| `timeline_envio_item`           | 1 linha por CPF dentro do envio (status, recibo, erro)                  | ✅                                                   |
+| `rubricas`, `naturezas`         | tabelas mestras                                                         | ✅                                                   |
+| `s1010_envios`, `s1010_eventos` | controle S-1010                                                         | ✅                                                   |
+| `pipeline_cpf_results`          | resultado consolidado HEAD por CPF                                      | ✅                                                   |
 
 ### 2.3. O que muda entre APPA e Soluções no mesmo schema?
 
@@ -171,14 +171,14 @@ CREATE TABLE audit_log (
 
 ### 3.3. Storage de XML — política
 
-| Item | Política |
-|---|---|
-| Local | `lobject` Postgres (suporta nativo, transação igual a row) |
-| Compressão | gzip aplicado antes de gravar (eSocial XML = ~70% redução) |
-| Backup | mesma frequência que o resto do DB Supabase (diário automático) |
-| Retenção quente | 24 meses no DB principal |
-| Retenção fria | 24+ meses → exportar pra `archive_xml/{cnpj}/{YYYY}/{tipo_evento}.tar.zst` em storage S3-compat |
-| Acesso UI | endpoint autenticado `GET /api/eventos/{id}/xml` → baixa stream |
+| Item            | Política                                                                                        |
+| --------------- | ----------------------------------------------------------------------------------------------- |
+| Local           | `lobject` Postgres (suporta nativo, transação igual a row)                                      |
+| Compressão      | gzip aplicado antes de gravar (eSocial XML = ~70% redução)                                      |
+| Backup          | mesma frequência que o resto do DB Supabase (diário automático)                                 |
+| Retenção quente | 24 meses no DB principal                                                                        |
+| Retenção fria   | 24+ meses → exportar pra `archive_xml/{cnpj}/{YYYY}/{tipo_evento}.tar.zst` em storage S3-compat |
+| Acesso UI       | endpoint autenticado `GET /api/eventos/{id}/xml` → baixa stream                                 |
 
 ---
 
@@ -272,6 +272,7 @@ def apply(version: str, cnpj: str | None = None):
 ```
 
 **Regras:**
+
 1. SQL é idempotente sempre que possível (`CREATE TABLE IF NOT EXISTS`, `ALTER TABLE ... IF EXISTS`).
 2. Cada migration é uma transação por empresa (rollback automático se falhar).
 3. O `schema_versions` no DB sistema garante que ninguém aplica versão errada.
@@ -285,15 +286,15 @@ def apply(version: str, cnpj: str | None = None):
 
 ### 6.1. Inventário de tabelas V1 envolvidas
 
-| Tabela V1 (Postgres legacy) | Tabela V2 destino |
-|---|---|
-| `s1210_cpf_envios` | `timeline_envio_item` (1:N → 1:1 com agrupamento por envio) |
-| `s1210_cpf_scope` | `pipeline_cpf_results` |
-| `users` | `users` (Sistema DB) |
-| `empresas` | `empresas_routing` (Sistema DB) |
-| `rubricas`, `naturezas` | `rubricas`, `naturezas` (no Supabase APPA) |
-| `s1010_*` | `s1010_*` (no Supabase APPA) |
-| (não tem) `explorador_eventos` | popular **só metadados** com `xml_oid=NULL` |
+| Tabela V1 (Postgres legacy)    | Tabela V2 destino                                           |
+| ------------------------------ | ----------------------------------------------------------- |
+| `s1210_cpf_envios`             | `timeline_envio_item` (1:N → 1:1 com agrupamento por envio) |
+| `s1210_cpf_scope`              | `pipeline_cpf_results`                                      |
+| `users`                        | `users` (Sistema DB)                                        |
+| `empresas`                     | `empresas_routing` (Sistema DB)                             |
+| `rubricas`, `naturezas`        | `rubricas`, `naturezas` (no Supabase APPA)                  |
+| `s1010_*`                      | `s1010_*` (no Supabase APPA)                                |
+| (não tem) `explorador_eventos` | popular **só metadados** com `xml_oid=NULL`                 |
 
 ### 6.2. Estratégia de execução
 
@@ -331,11 +332,11 @@ A regra de **HEAD** já implementada no V2 (`DISTINCT ON (cpf) ORDER BY enviado_
 
 ### 7.2. Badges de estado
 
-| Empresa | Badge no painel |
-|---|---|
-| APPA | "📦 histórico V1 — XMLs antigos sem download" |
-| Soluções | "🔓 V2 nativo — XML completo disponível" |
-| Outras | conforme `flags` |
+| Empresa  | Badge no painel                               |
+| -------- | --------------------------------------------- |
+| APPA     | "📦 histórico V1 — XMLs antigos sem download" |
+| Soluções | "🔓 V2 nativo — XML completo disponível"      |
+| Outras   | conforme `flags`                              |
 
 ### 7.3. Componentes existentes na V2 que já encaixam
 
@@ -418,47 +419,47 @@ WantedBy=multi-user.target
 
 ## 9. Segurança — hardening obrigatório
 
-| Item | Detalhe |
-|---|---|
-| **Certificados .pfx** | nunca no git (já blindado em `.gitignore`). Em produção, `chmod 600` + `chown esocial:esocial`. Path absoluto via env `CERT_BASE_PATH`. |
-| **Connection strings Supabase** | env apenas. Nunca em código. |
-| **JWT secret** | mínimo 64 chars random. Rotacionar a cada 90 dias. |
-| **bcrypt cost** | 12 (padrão V1 mantém compat). |
-| **Rate limit** | nginx `limit_req_zone` para `/api/auth/login` (5/min/IP) e `/api/envio/*` (60/min/user). |
-| **CORS** | só `easyesocial.com.br` em produção. |
-| **Audit log** | toda ação sensível (login, envio_lote, export_xml, mudança_empresa) grava em `audit_log` no Sistema DB. |
-| **Backup Supabase** | snapshot diário automático + dump manual mensal pra storage offsite. |
-| **HTTPS only** | nginx redireciona `:80 → :443`. HSTS habilitado. |
-| **LGPD** | banco por empresa = isolamento por design. Direito ao esquecimento → DROP DATABASE da empresa. |
+| Item                            | Detalhe                                                                                                                                 |
+| ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| **Certificados .pfx**           | nunca no git (já blindado em `.gitignore`). Em produção, `chmod 600` + `chown esocial:esocial`. Path absoluto via env `CERT_BASE_PATH`. |
+| **Connection strings Supabase** | env apenas. Nunca em código.                                                                                                            |
+| **JWT secret**                  | mínimo 64 chars random. Rotacionar a cada 90 dias.                                                                                      |
+| **bcrypt cost**                 | 12 (padrão V1 mantém compat).                                                                                                           |
+| **Rate limit**                  | nginx `limit_req_zone` para `/api/auth/login` (5/min/IP) e `/api/envio/*` (60/min/user).                                                |
+| **CORS**                        | só `easyesocial.com.br` em produção.                                                                                                    |
+| **Audit log**                   | toda ação sensível (login, envio_lote, export_xml, mudança_empresa) grava em `audit_log` no Sistema DB.                                 |
+| **Backup Supabase**             | snapshot diário automático + dump manual mensal pra storage offsite.                                                                    |
+| **HTTPS only**                  | nginx redireciona `:80 → :443`. HSTS habilitado.                                                                                        |
+| **LGPD**                        | banco por empresa = isolamento por design. Direito ao esquecimento → DROP DATABASE da empresa.                                          |
 
 ---
 
 ## 10. Roadmap de testes antes do go-live
 
-| Tipo | Cobertura mínima |
-|---|---|
-| **Smoke** | login → seleção empresa → painel S-1210 anual carrega → 1 envio teste |
-| **Schema** | migration runner aplica `schema_v1.0.0` num DB vazio sem erro |
-| **ETL APPA** | 100% dos CPFs APPA do V1 batem na contagem do Supabase APPA |
-| **Multi-tenant isolation** | usuário com permissão em APPA tenta acessar Soluções → 403 |
-| **Envio paralelo (CICLO100)** | rodar 1 leva de 100 CPFs no Supabase Soluções e validar `timeline_envio` |
-| **Upload Domínio** | upload do mesmo XLSX que a Rafa usou na última semana → resultado idêntico |
-| **XML completo** | enviar 1 S-1210, confirmar `xml_oid` populado, baixar XML pela UI |
-| **Backup/Restore** | restaurar dump APPA num DB novo do zero e validar |
+| Tipo                          | Cobertura mínima                                                           |
+| ----------------------------- | -------------------------------------------------------------------------- |
+| **Smoke**                     | login → seleção empresa → painel S-1210 anual carrega → 1 envio teste      |
+| **Schema**                    | migration runner aplica `schema_v1.0.0` num DB vazio sem erro              |
+| **ETL APPA**                  | 100% dos CPFs APPA do V1 batem na contagem do Supabase APPA                |
+| **Multi-tenant isolation**    | usuário com permissão em APPA tenta acessar Soluções → 403                 |
+| **Envio paralelo (CICLO100)** | rodar 1 leva de 100 CPFs no Supabase Soluções e validar `timeline_envio`   |
+| **Upload Domínio**            | upload do mesmo XLSX que a Rafa usou na última semana → resultado idêntico |
+| **XML completo**              | enviar 1 S-1210, confirmar `xml_oid` populado, baixar XML pela UI          |
+| **Backup/Restore**            | restaurar dump APPA num DB novo do zero e validar                          |
 
 ---
 
 ## 11. Glossário
 
-| Termo | Significado |
-|---|---|
-| **Banco Sistema** | DB Supabase central com `users`, `empresas_routing`, `audit_log`. Não tem dados operacionais. |
-| **Banco da Empresa** | DB Supabase exclusivo de 1 empresa. Contém todos os eventos, envios, rubricas. |
-| **lobject** | Large Object do Postgres — usado pra guardar XML completo de evento (não é coluna BYTEA, é um stream com OID). |
-| **CICLO100** | técnica documentada em `ciclo100.md` — envio em levas de 100 CPFs. |
-| **HEAD** | última versão de um evento por (cpf, per_apur), filtrada por `retificado_por_id IS NULL`. |
-| **Chain walk** | navegação entre eventos relacionados de um CPF (S-2200 → S-1200 → S-1210 → S-2299). |
-| **Schema padrão** | DDL idêntico aplicado em todos os DBs de empresa, versionado. |
+| Termo                | Significado                                                                                                    |
+| -------------------- | -------------------------------------------------------------------------------------------------------------- |
+| **Banco Sistema**    | DB Supabase central com `users`, `empresas_routing`, `audit_log`. Não tem dados operacionais.                  |
+| **Banco da Empresa** | DB Supabase exclusivo de 1 empresa. Contém todos os eventos, envios, rubricas.                                 |
+| **lobject**          | Large Object do Postgres — usado pra guardar XML completo de evento (não é coluna BYTEA, é um stream com OID). |
+| **CICLO100**         | técnica documentada em `ciclo100.md` — envio em levas de 100 CPFs.                                             |
+| **HEAD**             | última versão de um evento por (cpf, per_apur), filtrada por `retificado_por_id IS NULL`.                      |
+| **Chain walk**       | navegação entre eventos relacionados de um CPF (S-2200 → S-1200 → S-1210 → S-2299).                            |
+| **Schema padrão**    | DDL idêntico aplicado em todos os DBs de empresa, versionado.                                                  |
 
 ---
 

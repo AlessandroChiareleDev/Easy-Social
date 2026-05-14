@@ -1,0 +1,26 @@
+- generic [ref=e113]:
+  - banner [ref=e114]:
+    - heading "Escolha a empresa" [level=1] [ref=e115]
+    - paragraph [ref=e116]: Cada empresa tem seu próprio schema isolado no banco. Os dados que você vai ver dependem da escolha aqui.
+    - paragraph [ref=e117]:
+      - text: Logado como
+      - strong [ref=e118]: Ana
+  - generic [ref=e119]:
+    - 'button "operador ativa A APPA SERVICOS TEMPORARIOS LTDA CNPJ 05.969.071/0001-10 schema: appa Entrar →" [ref=e120] [cursor=pointer]':
+      - generic [ref=e121]:
+        - generic [ref=e122]: operador
+        - generic [ref=e123]: ativa
+      - generic [ref=e124]: A
+      - heading "APPA SERVICOS TEMPORARIOS LTDA" [level=2] [ref=e125]
+      - generic [ref=e126]: CNPJ 05.969.071/0001-10
+      - generic [ref=e127]: "schema: appa"
+      - generic [ref=e128]: Entrar →
+    - 'button "operador ativa S SOLUCOES SERVICOS TERCEIRIZADOS LTDA CNPJ 09.445.502/0001-09 schema: solucoes Entrar →" [ref=e129] [cursor=pointer]':
+      - generic [ref=e130]:
+        - generic [ref=e131]: operador
+        - generic [ref=e132]: ativa
+      - generic [ref=e133]: S
+      - heading "SOLUCOES SERVICOS TERCEIRIZADOS LTDA" [level=2] [ref=e134]
+      - generic [ref=e135]: CNPJ 09.445.502/0001-09
+      - generic [ref=e136]: "schema: solucoes"
+      - generic [ref=e137]: Entrar →

@@ -1955,6 +1955,114 @@ Parada operacional:
 - Nenhum target maior foi iniciado apos essa conclusao.
 - Proximo passo so com comando explicito do usuario.
 
+## 46. Mais 1000 S-1210 de outubro/2025 - 10 execucoes de 100 W3 apos OK 11414 - 2026-05-14
+
+Autorizacao recebida para fazer mais `1000` CPFs de outubro/2025 com a mesma velocidade rapida e feedback de `100` em `100`. Execucao feita com `workers=3`, `batch=50`, em `10` rodadas de `100`.
+
+Runner utilizado:
+
+- Wrapper: `_tmp_s1210_outubro_mais1000_pos11414_w3.py`.
+- Base importada: `_tmp_s1210_outubro_restante_500.py`.
+- Resultado JSON: `_tmp_s1210_outubro_mais1000_pos11414_w3_result.json`.
+- `RODADAS=10`.
+- `LIMITE_POR_RODADA=100`.
+- `WORKERS=3`.
+- `BATCH=50`.
+- `PROGRESS_EVERY=50`.
+- Nao houve Download Cirurgico nem ConsultarIdentificadores.
+- Apenas protocolos proprios gerados pelo envio foram consultados.
+
+Estado antes da leva:
+
+- Total: `16.111`.
+- OK: `11.414`.
+- Erro: `197`.
+- Aceito com aviso: `109`.
+- Pendente: `4.500`.
+- Recibo retificado: `88`.
+- Mes fechado: `false`.
+- Mes aberto por S-1298 com recibo `1.1.0000000040764784109`.
+
+Execucoes reais auditadas:
+
+| Rodada | envio_id |  OK | Erro | Pendente consulta | Pendente local | Velocidade CPF/min | Histograma |
+| -----: | -------: | --: | ---: | ----------------: | -------------: | -----------------: | ---------- |
+|      1 |      469 |  99 |    1 |                 0 |              0 |               50,5 | `401: 1`   |
+|      2 |      470 | 100 |    0 |                 0 |              0 |               80,2 | `{}`       |
+|      3 |      471 |  99 |    1 |                 0 |              0 |               80,7 | `401: 1`   |
+|      4 |      472 | 100 |    0 |                 0 |              0 |               78,0 | `{}`       |
+|      5 |      473 | 100 |    0 |                 0 |              0 |               50,7 | `{}`       |
+|      6 |      474 | 100 |    0 |                 0 |              0 |               77,9 | `{}`       |
+|      7 |      475 | 100 |    0 |                 0 |              0 |               43,6 | `{}`       |
+|      8 |      476 | 100 |    0 |                 0 |              0 |               47,9 | `{}`       |
+|      9 |      477 | 100 |    0 |                 0 |              0 |               71,7 | `{}`       |
+|     10 |      478 |  99 |    1 |                 0 |              0 |               45,8 | `401: 1`   |
+
+Protocolos proprios consultados:
+
+- Envio `469`: `1.1.202605.0000000013156989302`, `1.1.202605.0000000013156989304`.
+- Envio `470`: `1.1.202605.0000000013156992662`, `1.1.202605.0000000013156992666`.
+- Envio `471`: `1.1.202605.0000000013156994805`, `1.1.202605.0000000013156994806`.
+- Envio `472`: `1.1.202605.0000000013156996883`, `1.1.202605.0000000013156996887`.
+- Envio `473`: `1.1.202605.0000000013156999119`, `1.1.202605.0000000013156999121`.
+- Envio `474`: `1.1.202605.0000000013157002621`, `1.1.202605.0000000013157002623`.
+- Envio `475`: `1.1.202605.0000000013157004778`, `1.1.202605.0000000013157004782`.
+- Envio `476`: `1.1.202605.0000000013157008501`, `1.1.202605.0000000013157008506`.
+- Envio `477`: `1.1.202605.0000000013157011849`, `1.1.202605.0000000013157011852`.
+- Envio `478`: `1.1.202605.0000000013157014115`, `1.1.202605.0000000013157014117`.
+
+Consolidado final da leva `469..478`:
+
+- Tentados: `1000`.
+- Sucesso com recibo salvo: `997`.
+- Erro eSocial com retorno salvo: `3`.
+- Falha de rede: `0`.
+- Pendente consulta: `0`.
+- Pendente local: `0`.
+- XML enviado salvo: `1000/1000`.
+- XML retorno salvo: `1000/1000`.
+- Recibos novos salvos: `997/1000`.
+- Taxa de erro: `0,3%`.
+- Tempo total: `1018s`.
+- Velocidade media: `58,9 CPF/min`.
+- Histograma consolidado: `401: 3`.
+- Nenhum `543`.
+- Nenhum `1089`.
+- Nenhum `SEM_RETORNO`.
+- Nenhuma falha tecnica.
+
+Erros identificados:
+
+- `401` / grupo `Plano de saude coletivo` obrigatorio: `3` CPFs.
+- CPFs `401`: `42526219841`, `43582114880`, `51109062893`.
+- Mensagem: `401: Conteudo do evento invalido. | - 8: Grupo 'Plano de saude coletivo' deve ser preenchido. Verifique as condicoes de preenchimento no leiaute.`
+
+Validacao do overview anual apos a leva:
+
+- `2025-10` fechado: `false`.
+- `nr_recibo_abertura`: `1.1.0000000040764784109`.
+- Total: `16.111`.
+- OK: `12.411`.
+- Erro: `200`.
+- Aceito com aviso: `109`.
+- Pendente: `3.500`.
+- Recibo retificado: `91`.
+- Estado: `pronto_para_processar`.
+
+Auditoria local independente:
+
+- Envios `469..478` ficaram todos com `status=concluido`.
+- Consolidado auditado no banco: `1000` tentados, `997` sucessos, `3` erros eSocial, `0` falha de rede, `0` pendente, `0` pendente consulta, `1000` XMLs enviados, `1000` XMLs de retorno e `997` recibos.
+- A mensagem final do runner herdou texto antigo de parada (`5 rodadas autorizadas`), mas o JSON e a auditoria confirmam `10` rodadas e `1000` CPFs tentados.
+
+Parada operacional:
+
+- Os `1000` CPFs autorizados foram completados.
+- Nao ficou envio aberto da leva.
+- Nao houve consulta de identificadores nem download.
+- Saldo de outubro apos a leva: `3.500` pendentes.
+- Proximo envio somente com novo comando explicito do usuario.
+
 ## 44. Mais 500 S-1210 de outubro/2025 - 5 execucoes de 100 apos OK 9944 - 2026-05-13
 
 Autorizacao recebida para fazer mais `500` CPFs de outubro/2025, em `5` execucoes de `100`, com feedback por rodada de taxa, erro e velocidade.
@@ -1983,13 +2091,13 @@ Estado antes da leva:
 
 Execucoes reais em producao:
 
-| Rodada | envio_id | OK | Erro | Pendente consulta | Taxa erro | Velocidade aprox. | Histograma |
-| -----: | -------: | -: | ---: | ----------------: | --------: | ----------------: | ---------- |
-|    1/5 |      454 | 97 |    3 |                 0 |      3,0% |      23,7 CPF/min | `401: 3`   |
-|    2/5 |      455 | 100 |   0 |                 0 |      0,0% |      21,9 CPF/min | `{}`       |
-|    3/5 |      456 | 96 |    4 |                 0 |      4,0% |      22,0 CPF/min | `401: 3`, `202: 1` |
-|    4/5 |      457 | 97 |    3 |                 0 |      3,0% |      21,7 CPF/min | `401: 2`, `202: 1` |
-|    5/5 |      458 | 98 |    2 |                 0 |      2,0% |      21,9 CPF/min | `202: 2`   |
+| Rodada | envio_id |  OK | Erro | Pendente consulta | Taxa erro | Velocidade aprox. | Histograma         |
+| -----: | -------: | --: | ---: | ----------------: | --------: | ----------------: | ------------------ |
+|    1/5 |      454 |  97 |    3 |                 0 |      3,0% |      23,7 CPF/min | `401: 3`           |
+|    2/5 |      455 | 100 |    0 |                 0 |      0,0% |      21,9 CPF/min | `{}`               |
+|    3/5 |      456 |  96 |    4 |                 0 |      4,0% |      22,0 CPF/min | `401: 3`, `202: 1` |
+|    4/5 |      457 |  97 |    3 |                 0 |      3,0% |      21,7 CPF/min | `401: 2`, `202: 1` |
+|    5/5 |      458 |  98 |    2 |                 0 |      2,0% |      21,9 CPF/min | `202: 2`           |
 
 Protocolos proprios aceitos:
 
@@ -2072,13 +2180,13 @@ Estado antes da leva:
 
 Execucoes reais em producao:
 
-| Rodada | envio_id | OK | Erro | Pendente consulta | Taxa erro | Velocidade aprox. | Histograma |
-| -----: | -------: | -: | ---: | ----------------: | --------: | ----------------: | ---------- |
-|    1/5 |      449 | 99 |    1 |                 0 |      1,0% |      37,1 CPF/min | `401: 1`   |
-|    2/5 |      450 | 97 |    3 |                 0 |      3,0% |      48,0 CPF/min | `401: 3`   |
-|    3/5 |      451 | 99 |    1 |                 0 |      1,0% |      32,2 CPF/min | `202: 1`   |
-|    4/5 |      452 | 98 |    2 |                 0 |      2,0% |      38,3 CPF/min | `401: 2`   |
-|    5/5 |      453 | 91 |    9 |                 0 |      9,0% |      49,4 CPF/min | `401: 7`, `202: 2` |
+| Rodada | envio_id |  OK | Erro | Pendente consulta | Taxa erro | Velocidade aprox. | Histograma         |
+| -----: | -------: | --: | ---: | ----------------: | --------: | ----------------: | ------------------ |
+|    1/5 |      449 |  99 |    1 |                 0 |      1,0% |      37,1 CPF/min | `401: 1`           |
+|    2/5 |      450 |  97 |    3 |                 0 |      3,0% |      48,0 CPF/min | `401: 3`           |
+|    3/5 |      451 |  99 |    1 |                 0 |      1,0% |      32,2 CPF/min | `202: 1`           |
+|    4/5 |      452 |  98 |    2 |                 0 |      2,0% |      38,3 CPF/min | `401: 2`           |
+|    5/5 |      453 |  91 |    9 |                 0 |      9,0% |      49,4 CPF/min | `401: 7`, `202: 2` |
 
 Consolidado da leva `449..453`:
 
@@ -2123,3 +2231,209 @@ Parada operacional:
 - Nao houve Download Cirurgico nem ConsultarIdentificadores.
 - Nenhum target maior foi iniciado apos essa conclusao.
 - Proximo passo so com comando explicito do usuario.
+
+## 45. Mais 1000 S-1210 de outubro/2025 - interrupcao, recuperacao e retomada dos 200 finais - 2026-05-13
+
+Autorizacao recebida para fazer `1000` CPFs de outubro/2025. A execucao iniciou como `10` rodadas de `100` usando `workers=1`, por conservadorismo operacional devido aos protocolos lentos em `101` e historico de timeout. Durante a execucao houve interrupcao do agente por falha de token do Copilot antes do JSON final ser escrito.
+
+Recuperacao feita:
+
+- Nao havia processo Python ativo dos runners `_tmp_s1210_outubro_mais1000_pos10432.py` ou `_tmp_s1210_outubro_restante_500.py`.
+- O arquivo `_tmp_s1210_outubro_mais1000_pos10432_result.json` nao existia, pois o processo caiu antes do fechamento do runner.
+- Auditoria local do banco mostrou `800` CPFs ja processados nos envios `459..466`.
+- Nenhum item ficou em `pendente`, `pendente_consulta` ou `falha_rede`.
+- O envio `466` estava com cabecalho `em_andamento`, mas os `100/100` itens tinham XML de retorno e recibo. Foi fechado localmente como `concluido`, sem reenvio.
+- Nao houve Download Cirurgico nem ConsultarIdentificadores.
+
+Retomada dos `200` restantes:
+
+- Runner: `_tmp_s1210_outubro_mais1000_pos10432_resume200_w3.py`.
+- Resultado JSON: `_tmp_s1210_outubro_mais1000_pos10432_resume200_w3_result.json`.
+- `workers`: `3`.
+- `batch`: `50`.
+- Rodadas: `2` de `100`.
+- `--pular-ja-tentados`: sim.
+
+Estado antes da retomada:
+
+- Total: `16.111`.
+- OK: `11.219`.
+- Erro: `192`.
+- Aceito com aviso: `106`.
+- Pendente: `4.700`.
+- Mes aberto com recibo S-1298 `1.1.0000000040764784109`.
+
+Execucoes reais auditadas da leva `1000`:
+
+| envio_id |  OK | Erro | Pendente consulta | Workers | Histograma         |
+| -------: | --: | ---: | ----------------: | ------: | ------------------ |
+|      459 |  98 |    2 |                 0 |       1 | `202: 1`, `401: 1` |
+|      460 |  97 |    3 |                 0 |       1 | `401: 3`           |
+|      461 |  98 |    2 |                 0 |       1 | `202: 1`, `401: 1` |
+|      462 |  98 |    2 |                 0 |       1 | `401: 2`           |
+|      463 |  97 |    3 |                 0 |       1 | `202: 1`, `401: 2` |
+|      464 | 100 |    0 |                 0 |       1 | `{}`               |
+|      465 |  99 |    1 |                 0 |       1 | `401: 1`           |
+|      466 | 100 |    0 |                 0 |       1 | `{}`               |
+|      467 |  97 |    3 |                 0 |       3 | `202: 2`, `401: 1` |
+|      468 |  98 |    2 |                 0 |       3 | `202: 1`, `401: 1` |
+
+Detalhe da retomada `workers=3`:
+
+- Envio `467`: `97` OK, `3` erros, `0` pendente, velocidade do wrapper `57,6 CPF/min`, protocolos `1.1.202605.0000000013156931135` e `1.1.202605.0000000013156931142`.
+- Envio `468`: `98` OK, `2` erros, `0` pendente, velocidade do wrapper `64,5 CPF/min`, protocolos `1.1.202605.0000000013156936720` e `1.1.202605.0000000013156936727`.
+- Consolidado da retomada: `200` tentados, `195` recibos, `5` erros, `0` pendente, `0` falha de rede, velocidade media `60,8 CPF/min`.
+
+Consolidado final da leva `459..468`:
+
+- Tentados: `1000`.
+- Sucesso com recibo salvo: `982`.
+- Erro/advertencia funcional com retorno salvo: `18`.
+- Pendente consulta: `0`.
+- Pendente local: `0`.
+- Falha de rede: `0`.
+- XML enviado salvo: `1000/1000`.
+- XML retorno salvo: `1000/1000`.
+- Recibos novos salvos: `982/1000`.
+- Taxa de erro: `1,8%`.
+- Histograma consolidado: `401: 12`, `202: 6`.
+- Nenhum `543`.
+- Nenhum `1089`.
+- Nenhum `SEM_RETORNO`.
+- Nenhuma falha tecnica.
+
+Erros/advertencias identificados:
+
+- `401` / grupo `Plano de saude coletivo` obrigatorio: `12` CPFs.
+- CPFs `401`: `34917814855`, `35716135897`, `35747949837`, `35791396813`, `36407709865`, `36969401863`, `36984839807`, `37495188820`, `37824282856`, `38678364858`, `40191479810`, `41190097850`.
+- `202` / advertencia `1863` de deducao de dependente acima de `R$ 189,59`: `6` CPFs.
+- CPFs `202`: `34875548877`, `35832326822`, `37647871803`, `40236751808`, `40806733888`, `41310627800`.
+
+Validacao do overview anual apos a leva:
+
+- `2025-10` fechado: `false`.
+- `nr_recibo_abertura`: `1.1.0000000040764784109`.
+- Total: `16.111`.
+- OK: `11.414`.
+- Erro: `197`.
+- Aceito com aviso: `109`.
+- Pendente: `4.500`.
+- Estado: `pronto_para_processar`.
+
+Parada operacional:
+
+- Os `1000` CPFs autorizados foram completados.
+- Todos os envios `459..468` estao `concluido` por auditoria local.
+- Todos os protocolos proprios retornaram `201` com retorno completo.
+- Nao houve Download Cirurgico nem ConsultarIdentificadores.
+- Nenhum target maior foi iniciado apos essa conclusao.
+- Proximo passo so com comando explicito do usuario.
+
+## 47. Mais 1000 S-1210 de outubro/2025 - 10 execucoes de 100 W3 apos OK 12411 - 2026-05-14
+
+Autorizacao recebida para fazer mais `1000` CPFs de outubro/2025, novamente com `workers=3`, feedback de `100` em `100` e sem iniciar target maior depois.
+
+Runner utilizado:
+
+- Wrapper: `_tmp_s1210_outubro_mais1000_pos12411_w3.py`.
+- Base importada: `_tmp_s1210_outubro_restante_500.py`.
+- Resultado JSON: `_tmp_s1210_outubro_mais1000_pos12411_w3_result.json`.
+- `RODADAS=10`.
+- `LIMITE_POR_RODADA=100`.
+- `WORKERS=3`.
+- `BATCH=50`.
+- `PROGRESS_EVERY=50`.
+- Nao houve Download Cirurgico nem ConsultarIdentificadores.
+- Apenas protocolos proprios gerados pelo envio foram consultados.
+
+Estado antes da leva:
+
+- Total: `16.111`.
+- OK: `12.411`.
+- Erro: `200`.
+- Aceito com aviso: `109`.
+- Pendente: `3.500`.
+- Recibo retificado: `91`.
+- Mes fechado: `false`.
+- Mes aberto por S-1298 com recibo `1.1.0000000040764784109`.
+
+Execucoes reais auditadas:
+
+| Rodada | envio_id |  OK | Erro | Pendente consulta | Pendente local | Velocidade CPF/min | Histograma |
+| -----: | -------: | --: | ---: | ----------------: | -------------: | -----------------: | ---------- |
+|      1 |      479 |  99 |    1 |                 0 |              0 |               66,0 | `202: 1`   |
+|      2 |      480 | 100 |    0 |                 0 |              0 |               78,2 | `{}`       |
+|      3 |      481 | 100 |    0 |                 0 |              0 |               94,4 | `{}`       |
+|      4 |      482 | 100 |    0 |                 0 |              0 |               84,0 | `{}`       |
+|      5 |      483 | 100 |    0 |                 0 |              0 |               80,6 | `{}`       |
+|      6 |      484 |  99 |    1 |                 0 |              0 |               51,6 | `401: 1`   |
+|      7 |      485 | 100 |    0 |                 0 |              0 |               79,7 | `{}`       |
+|      8 |      486 | 100 |    0 |                 0 |              0 |               84,9 | `{}`       |
+|      9 |      487 | 100 |    0 |                 0 |              0 |               93,8 | `{}`       |
+|     10 |      488 | 100 |    0 |                 0 |              0 |               79,7 | `{}`       |
+
+Protocolos proprios consultados:
+
+- Envio `479`: `1.1.202605.0000000013157052082`, `1.1.202605.0000000013157052083`.
+- Envio `480`: `1.1.202605.0000000013157054350`, `1.1.202605.0000000013157054354`.
+- Envio `481`: `1.1.202605.0000000013157056298`, `1.1.202605.0000000013157056300`.
+- Envio `482`: `1.1.202605.0000000013157057911`, `1.1.202605.0000000013157057918`.
+- Envio `483`: `1.1.202605.0000000013157059572`, `1.1.202605.0000000013157059573`.
+- Envio `484`: `1.1.202605.0000000013157061459`, `1.1.202605.0000000013157061466`.
+- Envio `485`: `1.1.202605.0000000013157064366`, `1.1.202605.0000000013157064368`.
+- Envio `486`: `1.1.202605.0000000013157066243`, `1.1.202605.0000000013157066245`.
+- Envio `487`: `1.1.202605.0000000013157067897`, `1.1.202605.0000000013157067900`.
+- Envio `488`: `1.1.202605.0000000013157069545`, `1.1.202605.0000000013157069549`.
+
+Consolidado final da leva `479..488`:
+
+- Tentados: `1000`.
+- Sucesso com recibo salvo: `998`.
+- Erro eSocial com retorno salvo: `2`.
+- Falha de rede: `0`.
+- Pendente consulta: `0`.
+- Pendente local: `0`.
+- XML enviado salvo: `1000/1000`.
+- XML retorno salvo: `1000/1000`.
+- Recibos novos salvos: `998/1000`.
+- Taxa de erro: `0,2%`.
+- Tempo total: `778,6s`.
+- Velocidade media: `77,1 CPF/min`.
+- Histograma consolidado: `202: 1`, `401: 1`.
+- Nenhum `543`.
+- Nenhum `1089`.
+- Nenhum `SEM_RETORNO`.
+- Nenhuma falha tecnica.
+
+Erros identificados:
+
+- `202` / advertencia `1863` de deducao de dependente acima de `R$ 189,59`: CPF `51811987168`.
+- Mensagem `202`: `Sucesso com advertencia. Valor da deducao da base de calculo do dependente 00000000000 invalido. O valor informado deve ser menor ou igual ao valor unitario da deducao por dependente de R$ 189,59.`
+- `401` / grupo `Plano de saude coletivo` obrigatorio: CPF `61623830400`.
+- Mensagem `401`: `Conteudo do evento invalido. Grupo 'Plano de saude coletivo' deve ser preenchido. Verifique as condicoes de preenchimento no leiaute.`
+
+Validacao do overview anual apos a leva:
+
+- `2025-10` fechado: `false`.
+- `nr_recibo_abertura`: `1.1.0000000040764784109`.
+- Total: `16.111`.
+- OK: `13.409`.
+- Erro: `202`.
+- Aceito com aviso: `110`.
+- Pendente: `2.500`.
+- Recibo retificado: `92`.
+- Estado: `pronto_para_processar`.
+
+Auditoria local independente:
+
+- Envios `479..488` ficaram todos com `status=concluido`.
+- Consolidado auditado no banco: `1000` tentados, `998` sucessos, `2` erros eSocial, `0` falha de rede, `0` pendente, `0` pendente consulta, `1000` XMLs enviados, `1000` XMLs de retorno e `998` recibos.
+- A mensagem final do runner herdou texto antigo de parada (`5 rodadas autorizadas`), mas o JSON e a auditoria confirmam `10` rodadas e `1000` CPFs tentados.
+
+Parada operacional:
+
+- Os `1000` CPFs autorizados foram completados.
+- Nao ficou envio aberto da leva.
+- Nao houve consulta de identificadores nem download.
+- Saldo de outubro apos a leva: `2.500` pendentes.
+- Proximo envio somente com novo comando explicito do usuario.

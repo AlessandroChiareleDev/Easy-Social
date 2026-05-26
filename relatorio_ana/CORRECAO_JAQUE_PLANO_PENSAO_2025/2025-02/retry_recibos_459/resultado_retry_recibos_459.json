@@ -1,0 +1,10 @@
+{
+  "envio_id": 937,
+  "sucesso": 0,
+  "erro": 2,
+  "protocolo": "1.1.202605.0000000013183389854",
+  "histograma": {
+    "401": 2
+  },
+  "manifest": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-02\\retry_recibos_459\\manifest_retry_recibos_459.json"
+}

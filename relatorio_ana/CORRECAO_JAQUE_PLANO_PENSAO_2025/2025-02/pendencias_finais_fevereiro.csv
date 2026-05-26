@@ -1,0 +1,6 @@
+tipo_pendencia,cpf,detalhe
+PENDENTE_VALOR_ZERO,28710124829,PENSAO sem valor positivo na resposta da Jaque; XML com vlrDedPenAlim=0.00 e invalido no XSD
+PENDENTE_VALOR_ZERO,71985883104,PENSAO sem valor positivo na resposta da Jaque; XML com vlrDedPenAlim=0.00 e invalido no XSD
+FALTANTE_RESPOSTA_VALIDA,30729903877,PLANO com cnpj_operadora/registro_ans/valor_titular ausentes ou invalidos
+FALTANTE_RESPOSTA_VALIDA,33163519814,PLANO com cnpj_operadora/registro_ans/valor_titular ausentes ou invalidos
+FALTANTE_RESPOSTA_VALIDA,42852580802,PLANO com cnpj_operadora/registro_ans/valor_titular ausentes ou invalidos

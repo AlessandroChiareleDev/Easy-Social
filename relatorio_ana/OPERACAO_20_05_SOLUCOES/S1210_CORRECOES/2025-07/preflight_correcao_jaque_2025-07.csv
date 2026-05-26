@@ -1,0 +1,4 @@
+cpf,has_plano,has_pensao,generated,reason,status,codigo,nr_recibo,info_pgtos,plan_entries,pensao_entries,xml
+14193059804,True,False,True,OK,erro_esocial,401,1.1.0000000034167953789,1,1,0,C:\Users\xandao\Documents\GitHub\Easy-Social\relatorio_ana\OPERACAO_20_05_SOLUCOES\S1210_CORRECOES\2025-07\xml_unsigned\S1210_2025-07_14193059804_jaque_unsigned.xml
+30729903877,True,False,True,OK,erro_esocial,401,1.1.0000000034167950396,1,1,0,C:\Users\xandao\Documents\GitHub\Easy-Social\relatorio_ana\OPERACAO_20_05_SOLUCOES\S1210_CORRECOES\2025-07\xml_unsigned\S1210_2025-07_30729903877_jaque_unsigned.xml
+32393572830,True,False,True,OK,erro_esocial,401,1.1.0000000034167946386,2,1,0,C:\Users\xandao\Documents\GitHub\Easy-Social\relatorio_ana\OPERACAO_20_05_SOLUCOES\S1210_CORRECOES\2025-07\xml_unsigned\S1210_2025-07_32393572830_jaque_unsigned.xml

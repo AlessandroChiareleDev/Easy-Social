@@ -1,0 +1,250 @@
+{
+  "generated_at": "2026-05-19T13:27:44",
+  "fonte": "schema solucoes: explorador_eventos HEAD + latest timeline_envio_item por per_apur/cpf; sem consulta eSocial",
+  "operacao_aplicada": "timeline_envio_item S-1210 com status=erro_esocial e erro_codigo=202 foi reclassificado para status=sucesso, mantendo erro_codigo/mensagem para auditoria",
+  "regra_operacional": "202 = sucesso com advertencia, nao erro pendente",
+  "totals": {
+    "months_populated": 13,
+    "head_cpfs": 205606,
+    "latest_timeline_cpfs": 154826,
+    "success_total": 153612,
+    "success_with_202_warning": 1109,
+    "real_errors": 937,
+    "pending_latest": 0,
+    "sem_mudanca_latest": 277,
+    "remaining_202_as_error_anywhere": 0,
+    "real_error_codes": {
+      "401": 937
+    }
+  },
+  "months": [
+    {
+      "per_apur": "2022-06",
+      "head_cpfs": 1,
+      "head_eventos": 1,
+      "head_eventos_com_recibo": 1,
+      "latest_timeline_cpfs": 0,
+      "status_counts_after_reclass": {},
+      "success_total": 0,
+      "success_with_202_warning": 0,
+      "real_errors": 0,
+      "pending_latest": 0,
+      "sem_mudanca_latest": 0,
+      "real_error_codes": {}
+    },
+    {
+      "per_apur": "2025-01",
+      "head_cpfs": 18328,
+      "head_eventos": 36442,
+      "head_eventos_com_recibo": 36442,
+      "latest_timeline_cpfs": 0,
+      "status_counts_after_reclass": {},
+      "success_total": 0,
+      "success_with_202_warning": 0,
+      "real_errors": 0,
+      "pending_latest": 0,
+      "sem_mudanca_latest": 0,
+      "real_error_codes": {}
+    },
+    {
+      "per_apur": "2025-02",
+      "head_cpfs": 18754,
+      "head_eventos": 37530,
+      "head_eventos_com_recibo": 37530,
+      "latest_timeline_cpfs": 18754,
+      "status_counts_after_reclass": {
+        "sucesso": 18640,
+        "erro_esocial": 114
+      },
+      "success_total": 18640,
+      "success_with_202_warning": 151,
+      "real_errors": 114,
+      "pending_latest": 0,
+      "sem_mudanca_latest": 0,
+      "real_error_codes": {
+        "401": 114
+      }
+    },
+    {
+      "per_apur": "2025-03",
+      "head_cpfs": 19055,
+      "head_eventos": 38114,
+      "head_eventos_com_recibo": 38114,
+      "latest_timeline_cpfs": 19055,
+      "status_counts_after_reclass": {
+        "sucesso": 18905,
+        "erro_esocial": 150
+      },
+      "success_total": 18905,
+      "success_with_202_warning": 126,
+      "real_errors": 150,
+      "pending_latest": 0,
+      "sem_mudanca_latest": 0,
+      "real_error_codes": {
+        "401": 150
+      }
+    },
+    {
+      "per_apur": "2025-04",
+      "head_cpfs": 19244,
+      "head_eventos": 38382,
+      "head_eventos_com_recibo": 38382,
+      "latest_timeline_cpfs": 19244,
+      "status_counts_after_reclass": {
+        "sucesso": 19135,
+        "erro_esocial": 109
+      },
+      "success_total": 19135,
+      "success_with_202_warning": 144,
+      "real_errors": 109,
+      "pending_latest": 0,
+      "sem_mudanca_latest": 0,
+      "real_error_codes": {
+        "401": 109
+      }
+    },
+    {
+      "per_apur": "2025-05",
+      "head_cpfs": 19047,
+      "head_eventos": 38128,
+      "head_eventos_com_recibo": 38128,
+      "latest_timeline_cpfs": 19047,
+      "status_counts_after_reclass": {
+        "sucesso": 18941,
+        "erro_esocial": 106
+      },
+      "success_total": 18941,
+      "success_with_202_warning": 136,
+      "real_errors": 106,
+      "pending_latest": 0,
+      "sem_mudanca_latest": 0,
+      "real_error_codes": {
+        "401": 106
+      }
+    },
+    {
+      "per_apur": "2025-06",
+      "head_cpfs": 15347,
+      "head_eventos": 15646,
+      "head_eventos_com_recibo": 15646,
+      "latest_timeline_cpfs": 15347,
+      "status_counts_after_reclass": {
+        "sucesso": 15238,
+        "erro_esocial": 109
+      },
+      "success_total": 15238,
+      "success_with_202_warning": 116,
+      "real_errors": 109,
+      "pending_latest": 0,
+      "sem_mudanca_latest": 0,
+      "real_error_codes": {
+        "401": 109
+      }
+    },
+    {
+      "per_apur": "2025-07",
+      "head_cpfs": 15856,
+      "head_eventos": 31729,
+      "head_eventos_com_recibo": 31729,
+      "latest_timeline_cpfs": 15856,
+      "status_counts_after_reclass": {
+        "sucesso": 15748,
+        "erro_esocial": 108
+      },
+      "success_total": 15748,
+      "success_with_202_warning": 130,
+      "real_errors": 108,
+      "pending_latest": 0,
+      "sem_mudanca_latest": 0,
+      "real_error_codes": {
+        "401": 108
+      }
+    },
+    {
+      "per_apur": "2025-08",
+      "head_cpfs": 15495,
+      "head_eventos": 15495,
+      "head_eventos_com_recibo": 15495,
+      "latest_timeline_cpfs": 15495,
+      "status_counts_after_reclass": {
+        "sem_mudanca": 277,
+        "sucesso": 15174,
+        "erro_esocial": 44
+      },
+      "success_total": 15174,
+      "success_with_202_warning": 70,
+      "real_errors": 44,
+      "pending_latest": 0,
+      "sem_mudanca_latest": 277,
+      "real_error_codes": {
+        "401": 44
+      }
+    },
+    {
+      "per_apur": "2025-09",
+      "head_cpfs": 15917,
+      "head_eventos": 32171,
+      "head_eventos_com_recibo": 32171,
+      "latest_timeline_cpfs": 15917,
+      "status_counts_after_reclass": {
+        "sucesso": 15816,
+        "erro_esocial": 101
+      },
+      "success_total": 15816,
+      "success_with_202_warning": 119,
+      "real_errors": 101,
+      "pending_latest": 0,
+      "sem_mudanca_latest": 0,
+      "real_error_codes": {
+        "401": 101
+      }
+    },
+    {
+      "per_apur": "2025-10",
+      "head_cpfs": 16111,
+      "head_eventos": 32319,
+      "head_eventos_com_recibo": 32319,
+      "latest_timeline_cpfs": 16111,
+      "status_counts_after_reclass": {
+        "sucesso": 16015,
+        "erro_esocial": 96
+      },
+      "success_total": 16015,
+      "success_with_202_warning": 117,
+      "real_errors": 96,
+      "pending_latest": 0,
+      "sem_mudanca_latest": 0,
+      "real_error_codes": {
+        "401": 96
+      }
+    },
+    {
+      "per_apur": "2025-11",
+      "head_cpfs": 16254,
+      "head_eventos": 58434,
+      "head_eventos_com_recibo": 58434,
+      "latest_timeline_cpfs": 0,
+      "status_counts_after_reclass": {},
+      "success_total": 0,
+      "success_with_202_warning": 0,
+      "real_errors": 0,
+      "pending_latest": 0,
+      "sem_mudanca_latest": 0,
+      "real_error_codes": {}
+    },
+    {
+      "per_apur": "2025-12",
+      "head_cpfs": 16197,
+      "head_eventos": 32394,
+      "head_eventos_com_recibo": 32394,
+      "latest_timeline_cpfs": 0,
+      "status_counts_after_reclass": {},
+      "success_total": 0,
+      "success_with_202_warning": 0,
+      "real_errors": 0,
+      "pending_latest": 0,
+      "sem_mudanca_latest": 0,
+      "real_error_codes": {}
+    }
+  ]
+}

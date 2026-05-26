@@ -1,0 +1,180 @@
+{
+  "manifest": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1210_CORRECOES_RECIBOS_ATIVOS\\2025-04\\manifest_correcao_jaque_2025-04.json",
+  "validation": {
+    "total_validated": 10,
+    "wrong": [],
+    "sample": [
+      {
+        "cpf": "14193059804",
+        "indRetif": "2",
+        "nrRecibo": "1.1.0000000040920610852",
+        "recibo_esperado": "1.1.0000000040920610852",
+        "perApur": "2025-04",
+        "planSaude": 1,
+        "signature": false
+      },
+      {
+        "cpf": "14285875861",
+        "indRetif": "2",
+        "nrRecibo": "1.1.0000000040920611148",
+        "recibo_esperado": "1.1.0000000040920611148",
+        "perApur": "2025-04",
+        "planSaude": 1,
+        "signature": false
+      },
+      {
+        "cpf": "14417604827",
+        "indRetif": "2",
+        "nrRecibo": "1.1.0000000040920611526",
+        "recibo_esperado": "1.1.0000000040920611526",
+        "perApur": "2025-04",
+        "planSaude": 1,
+        "signature": false
+      },
+      {
+        "cpf": "15146736812",
+        "indRetif": "2",
+        "nrRecibo": "1.1.0000000040920611946",
+        "recibo_esperado": "1.1.0000000040920611946",
+        "perApur": "2025-04",
+        "planSaude": 1,
+        "signature": false
+      },
+      {
+        "cpf": "17251076861",
+        "indRetif": "2",
+        "nrRecibo": "1.1.0000000040920612626",
+        "recibo_esperado": "1.1.0000000040920612626",
+        "perApur": "2025-04",
+        "planSaude": 1,
+        "signature": false
+      },
+      {
+        "cpf": "30729903877",
+        "indRetif": "2",
+        "nrRecibo": "1.1.0000000040920612932",
+        "recibo_esperado": "1.1.0000000040920612932",
+        "perApur": "2025-04",
+        "planSaude": 1,
+        "signature": false
+      },
+      {
+        "cpf": "32393572830",
+        "indRetif": "2",
+        "nrRecibo": "1.1.0000000040920613923",
+        "recibo_esperado": "1.1.0000000040920613923",
+        "perApur": "2025-04",
+        "planSaude": 1,
+        "signature": false
+      },
+      {
+        "cpf": "33163519814",
+        "indRetif": "2",
+        "nrRecibo": "1.1.0000000040920614464",
+        "recibo_esperado": "1.1.0000000040920614464",
+        "perApur": "2025-04",
+        "planSaude": 1,
+        "signature": false
+      },
+      {
+        "cpf": "37843870806",
+        "indRetif": "2",
+        "nrRecibo": "1.1.0000000040920614797",
+        "recibo_esperado": "1.1.0000000040920614797",
+        "perApur": "2025-04",
+        "planSaude": 1,
+        "signature": false
+      },
+      {
+        "cpf": "42852580802",
+        "indRetif": "2",
+        "nrRecibo": "1.1.0000000040920615280",
+        "recibo_esperado": "1.1.0000000040920615280",
+        "perApur": "2025-04",
+        "planSaude": 1,
+        "signature": false
+      }
+    ]
+  },
+  "execute": {
+    "envio_id": 1235,
+    "sucesso": 10,
+    "erro": 0,
+    "protocolos": [
+      "1.1.202605.0000000013187396527"
+    ],
+    "histograma": {}
+  },
+  "after": {
+    "erros": 0,
+    "codigos": {},
+    "cpfs": [],
+    "rows": []
+  },
+  "closing": {
+    "ok": true,
+    "id_evento": "ID1094455020000002026052019180600001",
+    "protocolo": "1.1.202605.0000000013187399208",
+    "codigo": "201",
+    "descricao": "Sucesso.",
+    "nr_recibo": "1.1.0000000040924242847",
+    "evento_db_id": 3483536,
+    "ocorrencias": [],
+    "manifest": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1299_FECHAMENTOS\\2025-04\\manifest_fechamento_s1299_2025-04_solucoes.json",
+    "preflight": {
+      "empresa_id_externo": 2,
+      "empresa_id_interno": 1,
+      "per_apur": "2025-04",
+      "s1210_stats": [
+        {
+          "status": "sucesso",
+          "erro_codigo": "",
+          "total": 19100
+        },
+        {
+          "status": "sucesso",
+          "erro_codigo": "202",
+          "total": 144
+        }
+      ],
+      "pendencias_s1210": 0,
+      "fechamento_status_atual": {
+        "empresa_id": 1,
+        "per_apur": "2025-04",
+        "fechado": false,
+        "protocolo": "1.1.202605.0000000013183484265",
+        "nr_recibo": "1.1.0000000040833841375",
+        "origem": "s1298_ja_aberto",
+        "confirmado_em": "2026-05-19 23:47:33.300057+00:00"
+      },
+      "eventos_s1298_s1299_periodo": [
+        {
+          "tipo_evento": "S-1298",
+          "cd_resposta": "201",
+          "total": 3,
+          "ultimo": "2026-05-15 16:46:27.153178+00:00"
+        },
+        {
+          "tipo_evento": "S-1298",
+          "cd_resposta": "401",
+          "total": 1,
+          "ultimo": "2026-05-19 23:47:33.300057+00:00"
+        },
+        {
+          "tipo_evento": "S-1299",
+          "cd_resposta": "201",
+          "total": 2,
+          "ultimo": "2025-05-28 15:02:09.603000+00:00"
+        },
+        {
+          "tipo_evento": "S-1299",
+          "cd_resposta": "202",
+          "total": 1,
+          "ultimo": "2025-05-15 16:45:23.300000+00:00"
+        }
+      ],
+      "certificado_ok": true,
+      "senha_ok": true
+    }
+  }
+}

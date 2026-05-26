@@ -1,0 +1,114 @@
+{
+  "per_apur": "2025-06",
+  "abertura": {
+    "ja_aberto": false,
+    "xml_path": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OBJETIVA_JUN_NOV_2025\\2025-06\\s1298_reabertura_2025-06_objetiva_assinado.xml",
+    "validation": {
+      "id_evento": "ID1108745230000002026052119163400001",
+      "per_apur": "2025-06",
+      "tp_amb": "1",
+      "nr_insc": "10874523",
+      "signature_count": 1,
+      "bytes": 4308
+    },
+    "envio_codigo": "201",
+    "protocolo": "1.1.202605.0000000013192142032",
+    "consulta_codigo": "201",
+    "salvo": {
+      "evento_db_id": 169267,
+      "codigo": "201",
+      "descricao": "Sucesso.",
+      "nr_recibo": "1.1.0000000040946564210",
+      "ocorrencias": []
+    }
+  },
+  "dry_run": {
+    "ok": true,
+    "xml_path": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OBJETIVA_JUN_NOV_2025\\2025-06\\s1210_dryrun_2025-06_00060729503.xml",
+    "validation": {
+      "ind_retif": "2",
+      "nr_recibo": "1.1.0000000033584661579",
+      "per_apur": "2025-06",
+      "tp_amb": "1",
+      "nr_insc": "10874523",
+      "cpf": "00060729503",
+      "info_pgto_count": 1,
+      "signature_count": 1,
+      "bytes": 4881
+    }
+  },
+  "before": {
+    "fechamento": [
+      false,
+      "1.1.202605.0000000013192142032",
+      "1.1.0000000040946564210",
+      "2026-05-21 19:16:39.917674+00:00",
+      "s1298_envio"
+    ],
+    "heads": [
+      1994,
+      996
+    ],
+    "timeline_itens": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "selecionaveis": 996,
+    "amostra_cpf": [
+      "00060729503",
+      "00137622570",
+      "00175494932",
+      "00209745584",
+      "00219692564"
+    ]
+  },
+  "envio": {
+    "ok": true,
+    "envio_id": 21,
+    "sucesso": 909,
+    "erro": 87,
+    "pendente_consulta": 0,
+    "histograma": {
+      "401": 87
+    },
+    "elapsed_s": 305.98870754241943
+  },
+  "after": {
+    "fechamento": [
+      false,
+      "1.1.202605.0000000013192142032",
+      "1.1.0000000040946564210",
+      "2026-05-21 19:16:39.917674+00:00",
+      "s1298_envio"
+    ],
+    "heads": [
+      1994,
+      996
+    ],
+    "timeline_itens": [
+      996,
+      909,
+      87,
+      0,
+      0,
+      996,
+      996,
+      909
+    ],
+    "selecionaveis": 0,
+    "amostra_cpf": []
+  },
+  "erros": {
+    "csv_path": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OBJETIVA_JUN_NOV_2025\\erros_s1210_objetiva_2025-06.csv",
+    "total_erros": 87,
+    "categorias": {
+      "plano_saude_coletivo_obrigatorio": 87
+    }
+  }
+}

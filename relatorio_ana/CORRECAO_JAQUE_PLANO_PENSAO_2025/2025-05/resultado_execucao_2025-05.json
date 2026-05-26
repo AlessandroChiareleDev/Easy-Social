@@ -1,0 +1,1032 @@
+{
+  "ok": true,
+  "per_apur": "2025-05",
+  "manifest": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-05\\manifest_correcao_jaque_2025-05.json",
+  "reabertura": {
+    "evento_db_id": 3483522,
+    "codigo": "401",
+    "descricao": "Conteudo do evento inválido.",
+    "nr_recibo": null,
+    "ocorrencias": [
+      {
+        "codigo": "715",
+        "descricao": "A folha de pagamento do período 2025-05 já está aberta.\nAção Sugerida: Permitir que o contribuinte envie os eventos que irão compor sua folha de pagamento.",
+        "tipo": "1"
+      }
+    ],
+    "open_ok": true,
+    "origem": "s1298_ja_aberto"
+  },
+  "envio": {
+    "envio_id": 945,
+    "sucesso": 91,
+    "erro": 8,
+    "protocolos": [
+      "1.1.202605.0000000013183507743",
+      "1.1.202605.0000000013183508478",
+      "1.1.202605.0000000013183509153"
+    ],
+    "histograma": {
+      "401": 8
+    }
+  },
+  "latest": {
+    "total": 99,
+    "by_status_codigo": {
+      "erro_esocial|401": 8,
+      "sucesso|": 91
+    },
+    "rows": [
+      {
+        "cpf": "00555440370",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1867: Quando o valor relativo a dedução do rendimento tributável correspondente a pagamento a plano de saúde do titular (vlrSaudeTit) for igual a zero, deve existir pelo menos um registro filho relativo a dependentes (infoDepSau).\nAção sugerida: Reveja o valor do campo ou insira o(s) respectivo(s) grupo(s) relativo ao(s) dependente(s).",
+        "nr_recibo_novo": null,
+        "item_id": 157860,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "02346385832",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906883317",
+        "item_id": 157861,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "02713285844",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906883532",
+        "item_id": 157862,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "02979332305",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906883729",
+        "item_id": 157863,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "06749244874",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906883918",
+        "item_id": 157864,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "07463327850",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906884106",
+        "item_id": 157865,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "07634291714",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906884302",
+        "item_id": 157866,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "07861242889",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906884487",
+        "item_id": 157867,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "07863498830",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906884660",
+        "item_id": 157868,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "07863548870",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906884853",
+        "item_id": 157869,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "08551918486",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1861: CPF do dependente 09345921443 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+        "nr_recibo_novo": null,
+        "item_id": 157870,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "08865298839",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906885093",
+        "item_id": 157871,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "09548614855",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906885265",
+        "item_id": 157872,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "09552153824",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906885431",
+        "item_id": 157873,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "09559713817",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906885617",
+        "item_id": 157874,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "09612497656",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906885844",
+        "item_id": 157875,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "10213292823",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906886009",
+        "item_id": 157876,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "10639034837",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906886186",
+        "item_id": 157877,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "11438810873",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906886363",
+        "item_id": 157878,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "11746677880",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906886533",
+        "item_id": 157879,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "11984250833",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906886695",
+        "item_id": 157880,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "11999740807",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906886853",
+        "item_id": 157881,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "12265702838",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906887039",
+        "item_id": 157882,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "12537867718",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1861: CPF do dependente 08693309773 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+        "nr_recibo_novo": null,
+        "item_id": 157883,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "12601629827",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906887243",
+        "item_id": 157884,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "12611014809",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906887386",
+        "item_id": 157885,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "13660429805",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906887550",
+        "item_id": 157886,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "13696451800",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906887713",
+        "item_id": 157887,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "13705060821",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906887848",
+        "item_id": 157888,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "13711160832",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906888000",
+        "item_id": 157889,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "14285875861",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906888382",
+        "item_id": 157890,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "14418818839",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906888518",
+        "item_id": 157891,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "15057517805",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906888650",
+        "item_id": 157892,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "15509458828",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906888776",
+        "item_id": 157893,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "17251076861",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906889012",
+        "item_id": 157894,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "17725269835",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906889155",
+        "item_id": 157895,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "18401846803",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906889278",
+        "item_id": 157896,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "20315573864",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906889387",
+        "item_id": 157897,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "21288302819",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906889496",
+        "item_id": 157898,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "21653555831",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906889604",
+        "item_id": 157899,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "21804920819",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906891835",
+        "item_id": 157900,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "21899082808",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906891896",
+        "item_id": 157901,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "22229832824",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906891966",
+        "item_id": 157902,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "22617602800",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906892045",
+        "item_id": 157903,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "22617893863",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906892115",
+        "item_id": 157904,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "22647816883",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906892165",
+        "item_id": 157905,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "22730253866",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906892228",
+        "item_id": 157906,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "24945783888",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906892266",
+        "item_id": 157907,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "25169797893",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906892329",
+        "item_id": 157908,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "25585996827",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906892385",
+        "item_id": 157909,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "26349271858",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906892451",
+        "item_id": 157910,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "26662467871",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906892488",
+        "item_id": 157911,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "26903366857",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906892529",
+        "item_id": 157912,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "27156659898",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906892567",
+        "item_id": 157913,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "27206786863",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906892619",
+        "item_id": 157914,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "27984880875",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906892678",
+        "item_id": 157915,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "28102078871",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906892723",
+        "item_id": 157916,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "28328079844",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906892745",
+        "item_id": 157917,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "29014861850",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906892788",
+        "item_id": 157918,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "29813948353",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906892840",
+        "item_id": 157919,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "29928815895",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906892875",
+        "item_id": 157920,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "30516064215",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906892909",
+        "item_id": 157921,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "30748912894",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906892953",
+        "item_id": 157922,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "30761016848",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906892980",
+        "item_id": 157923,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "30815823851",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906893012",
+        "item_id": 157924,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "30877919895",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906893048",
+        "item_id": 157925,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "31268487880",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906893091",
+        "item_id": 157926,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "32393572830",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906893139",
+        "item_id": 157927,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "32394567880",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906893175",
+        "item_id": 157928,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "32875046810",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906893223",
+        "item_id": 157929,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "33030723372",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906893263",
+        "item_id": 157930,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "33163519814",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906893301",
+        "item_id": 157931,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "33387996837",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906893348",
+        "item_id": 157932,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "33593392828",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906893400",
+        "item_id": 157933,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "34212228866",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906893487",
+        "item_id": 157934,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "34917814855",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906893527",
+        "item_id": 157935,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "35716135897",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906893557",
+        "item_id": 157936,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "35791396813",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906893607",
+        "item_id": 157937,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "36984839807",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906893646",
+        "item_id": 157938,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "37495188820",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1867: Quando o valor relativo a dedução do rendimento tributável correspondente a pagamento a plano de saúde do titular (vlrSaudeTit) for igual a zero, deve existir pelo menos um registro filho relativo a dependentes (infoDepSau).\nAção sugerida: Reveja o valor do campo ou insira o(s) respectivo(s) grupo(s) relativo ao(s) dependente(s).",
+        "nr_recibo_novo": null,
+        "item_id": 157939,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "37824282856",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906894724",
+        "item_id": 157940,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "38072051873",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906894760",
+        "item_id": 157941,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "38678364858",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906894804",
+        "item_id": 157942,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "38870126404",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1867: Quando o valor relativo a dedução do rendimento tributável correspondente a pagamento a plano de saúde do titular (vlrSaudeTit) for igual a zero, deve existir pelo menos um registro filho relativo a dependentes (infoDepSau).\nAção sugerida: Reveja o valor do campo ou insira o(s) respectivo(s) grupo(s) relativo ao(s) dependente(s).",
+        "nr_recibo_novo": null,
+        "item_id": 157943,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "39428963895",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1861: CPF do dependente 15576137884 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+        "nr_recibo_novo": null,
+        "item_id": 157944,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "40805764801",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906894867",
+        "item_id": 157945,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "41190097850",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906894904",
+        "item_id": 157946,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "42526219841",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906894951",
+        "item_id": 157947,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "42852580802",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906894997",
+        "item_id": 157948,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "43582114880",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906895043",
+        "item_id": 157949,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "44752439808",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906895081",
+        "item_id": 157950,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "45244860895",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906895129",
+        "item_id": 157951,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "51109062893",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906895164",
+        "item_id": 157952,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "61623830400",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906895197",
+        "item_id": 157953,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "67578284568",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906895231",
+        "item_id": 157954,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "73902209372",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1867: Quando o valor relativo a dedução do rendimento tributável correspondente a pagamento a plano de saúde do titular (vlrSaudeTit) for igual a zero, deve existir pelo menos um registro filho relativo a dependentes (infoDepSau).\nAção sugerida: Reveja o valor do campo ou insira o(s) respectivo(s) grupo(s) relativo ao(s) dependente(s).",
+        "nr_recibo_novo": null,
+        "item_id": 157955,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "87041065472",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906895258",
+        "item_id": 157956,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "90578570904",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906895297",
+        "item_id": 157957,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      },
+      {
+        "cpf": "94881898434",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1861: CPF do dependente 03880026467 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+        "nr_recibo_novo": null,
+        "item_id": 157958,
+        "envio_id": 945,
+        "criado_em": "2026-05-20 00:03:09.972482"
+      }
+    ]
+  }
+}

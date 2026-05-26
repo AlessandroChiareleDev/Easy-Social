@@ -1,0 +1,41 @@
+{
+  "generated_at": "2026-05-20T19:08:28",
+  "empresa_id": 2,
+  "per_apur": "2025-11",
+  "cnpj": "09445502000109",
+  "ambiente": "producao",
+  "xmls": {
+    "unsigned_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\FECHAMENTO_NOVEMBRO_SOLUCOES\\S1299_2025-11_SOLUCOES_unsigned.xml",
+    "signed_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\FECHAMENTO_NOVEMBRO_SOLUCOES\\S1299_2025-11_SOLUCOES_signed.xml",
+    "unsigned": {
+      "id_evento": "ID1094455020000002026052022062500001",
+      "per_apur": "2025-11",
+      "tp_amb": "1",
+      "nr_insc": "09445502",
+      "signed": false,
+      "size_bytes": 584
+    },
+    "signed": {
+      "id_evento": "ID1094455020000002026052022062500001",
+      "per_apur": "2025-11",
+      "tp_amb": "1",
+      "nr_insc": "09445502",
+      "signed": true,
+      "size_bytes": 4567
+    }
+  },
+  "resultado": {
+    "ok": true,
+    "id_evento": "ID1094455020000002026052022062500001",
+    "protocolo": "1.1.202605.0000000013188275471",
+    "codigo_lote": "201",
+    "descricao_lote": "Lote processado com sucesso.",
+    "codigo": "201",
+    "descricao": "Sucesso.",
+    "nr_recibo": "1.1.0000000040928822916",
+    "evento_db_id": 3483538,
+    "ocorrencias": [],
+    "manifest": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\FECHAMENTO_NOVEMBRO_SOLUCOES\\manifest_fechamento_s1299_novembro_solucoes.json"
+  },
+  "repoll_at": "2026-05-20T19:09:28"
+}

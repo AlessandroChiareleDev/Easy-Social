@@ -1,0 +1,50 @@
+{
+  "empresa_id": 2,
+  "per_apur": "2025-03",
+  "generated_at": "2026-05-20T14:51:39",
+  "respostas_validas_csv": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\inputs_jaque_resposta_final.csv",
+  "faltantes_csv": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\faltantes_vazio.csv",
+  "out_dir": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1210_CORRECOES\\2025-03",
+  "response_rows": 1,
+  "response_type_counts": {
+    "PLANO": 1
+  },
+  "target_cpfs": 1,
+  "xmls_generated": 1,
+  "xml_type_counts": {
+    "plano": 1,
+    "pensao": 0
+  },
+  "blocked_count": 0,
+  "missing_valid_responses": [],
+  "targets": [
+    {
+      "cpf": "13209279802",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1210_CORRECOES\\2025-03\\xml_unsigned\\S1210_2025-03_13209279802_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2973734,
+      "item_id": 191760,
+      "envio_id": 1225,
+      "codigo": "301",
+      "status": "erro_esocial",
+      "erro_mensagem": "301: Código do erro: 301.3. Hash: 8AE41EDD68B5B1B8A9AB2FC3A650E9DAE03CA95C. Identificador: 099217cb-5fbd-4dd6-b696-747ab5bd247b. A solicitação não pode ser atendida devido a uma falha não identificada que pode ou não ser temporária. Favor tentar novamente mais tarde. Caso o erro permaneça por um período superior a 6 (seis) horas, favor acessar o Portal do eSocial através do endereço https://www.gov.br/esocial/pt-br/canais_atendimento/formularios/empresas/Erro-301",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000031994035532",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    }
+  ]
+}

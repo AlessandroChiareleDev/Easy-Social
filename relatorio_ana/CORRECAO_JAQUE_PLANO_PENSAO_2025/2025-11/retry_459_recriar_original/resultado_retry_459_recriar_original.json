@@ -1,0 +1,79 @@
+{
+  "per_apur": "2025-11",
+  "envio_id": 1239,
+  "sucesso": 6,
+  "erro": 0,
+  "protocolos": [
+    "1.1.202605.0000000013188174287"
+  ],
+  "histograma": {},
+  "manifest": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-11\\retry_459_recriar_original\\manifest_retry_459_recriar_original.json",
+  "latest": {
+    "total": 6,
+    "by_status_codigo": {
+      "sucesso|": 6
+    },
+    "rows": [
+      {
+        "cpf": "00426401646",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040928236832",
+        "item_id": 191942,
+        "envio_id": 1239,
+        "criado_em": "2026-05-20 21:24:44.721670"
+      },
+      {
+        "cpf": "00548440298",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040928236899",
+        "item_id": 191943,
+        "envio_id": 1239,
+        "criado_em": "2026-05-20 21:24:44.721670"
+      },
+      {
+        "cpf": "01556900350",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040928236986",
+        "item_id": 191944,
+        "envio_id": 1239,
+        "criado_em": "2026-05-20 21:24:44.721670"
+      },
+      {
+        "cpf": "03568399237",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040928237036",
+        "item_id": 191945,
+        "envio_id": 1239,
+        "criado_em": "2026-05-20 21:24:44.721670"
+      },
+      {
+        "cpf": "04380956776",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040928237134",
+        "item_id": 191946,
+        "envio_id": 1239,
+        "criado_em": "2026-05-20 21:24:44.721670"
+      },
+      {
+        "cpf": "06553932182",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040928237190",
+        "item_id": 191947,
+        "envio_id": 1239,
+        "criado_em": "2026-05-20 21:24:44.721670"
+      }
+    ]
+  }
+}

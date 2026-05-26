@@ -1,0 +1,229 @@
+{
+  "timestamp": "2026-05-20T20:49:34",
+  "db_config": {
+    "host": "aws-1-us-east-2.pooler.supabase.com",
+    "port": 5432,
+    "database": "postgres",
+    "user": "postgres.zpizibafccwsjgvplcum",
+    "password": "***",
+    "sslmode": "require"
+  },
+  "local_db_config": {
+    "host": "localhost",
+    "port": 5432,
+    "database": "easy_social_db",
+    "user": "easy_social_user",
+    "password": "***"
+  },
+  "certificados_a1_columns": [
+    {
+      "column_name": "id",
+      "data_type": "integer"
+    },
+    {
+      "column_name": "cnpj",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "titular",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "emissor",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "numero_serie",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "validade_inicio",
+      "data_type": "timestamp without time zone"
+    },
+    {
+      "column_name": "validade_fim",
+      "data_type": "timestamp without time zone"
+    },
+    {
+      "column_name": "arquivo_path",
+      "data_type": "character varying"
+    },
+    {
+      "column_name": "senha_encrypted",
+      "data_type": "text"
+    },
+    {
+      "column_name": "ativo",
+      "data_type": "boolean"
+    },
+    {
+      "column_name": "created_at",
+      "data_type": "timestamp without time zone"
+    },
+    {
+      "column_name": "updated_at",
+      "data_type": "timestamp without time zone"
+    },
+    {
+      "column_name": "empresa_id",
+      "data_type": "integer"
+    }
+  ],
+  "certificados_a1": [
+    {
+      "id": 139,
+      "cnpj": "05969071000110",
+      "titular": "APPA SERVICOS TEMPORARIOS E EFETIVOS LTDA:05969071000110",
+      "ativo": true,
+      "arquivo_path_exists": true,
+      "basename": "cert_05969071000110_45C7EBE84F3FE665.pfx"
+    },
+    {
+      "id": 179,
+      "cnpj": "09445502000109",
+      "titular": "SOLUCOES SERVICOS TERCEIRIZADOS LTDA",
+      "ativo": false,
+      "arquivo_path_exists": true,
+      "basename": "SOLUCOES_SERVICOS_TERCEIRIZADOS_09445502000109.pfx"
+    },
+    {
+      "id": 177,
+      "cnpj": "12345678000190",
+      "titular": "TESTE EMPRESA LTDA",
+      "ativo": false,
+      "arquivo_path_exists": false,
+      "basename": "cert_12345678000190_4E636048DE67CCD5A307C651907389CFCB7F001F.pfx"
+    },
+    {
+      "id": 176,
+      "cnpj": "12345678000190",
+      "titular": "TESTE EMPRESA LTDA",
+      "ativo": false,
+      "arquivo_path_exists": false,
+      "basename": "cert_12345678000190_4E636048DE67CCD5A307C651907389CFCB7F001F.pfx"
+    },
+    {
+      "id": 174,
+      "cnpj": "12345678000190",
+      "titular": "TESTE EMPRESA LTDA",
+      "ativo": false,
+      "arquivo_path_exists": false,
+      "basename": "cert_12345678000190_4E636048DE67CCD5A307C651907389CFCB7F001F.pfx"
+    },
+    {
+      "id": 173,
+      "cnpj": "12345678000190",
+      "titular": "TESTE EMPRESA LTDA",
+      "ativo": false,
+      "arquivo_path_exists": false,
+      "basename": "cert_12345678000190_4E636048DE67CCD5A307C651907389CFCB7F001F.pfx"
+    },
+    {
+      "id": 171,
+      "cnpj": "12345678000190",
+      "titular": "TESTE EMPRESA LTDA",
+      "ativo": false,
+      "arquivo_path_exists": false,
+      "basename": "cert_12345678000190_4E636048DE67CCD5A307C651907389CFCB7F001F.pfx"
+    },
+    {
+      "id": 170,
+      "cnpj": "12345678000190",
+      "titular": "TESTE EMPRESA LTDA",
+      "ativo": false,
+      "arquivo_path_exists": false,
+      "basename": "cert_12345678000190_4E636048DE67CCD5A307C651907389CFCB7F001F.pfx"
+    },
+    {
+      "id": 168,
+      "cnpj": "12345678000190",
+      "titular": "TESTE EMPRESA LTDA",
+      "ativo": false,
+      "arquivo_path_exists": false,
+      "basename": "cert_12345678000190_4E636048DE67CCD5A307C651907389CFCB7F001F.pfx"
+    },
+    {
+      "id": 167,
+      "cnpj": "12345678000190",
+      "titular": "TESTE EMPRESA LTDA",
+      "ativo": false,
+      "arquivo_path_exists": false,
+      "basename": "cert_12345678000190_4E636048DE67CCD5A307C651907389CFCB7F001F.pfx"
+    }
+  ],
+  "main_error": "OperationalError('connection to server at \"aws-1-us-east-2.pooler.supabase.com\" (3.148.140.216), port 5432 failed: FATAL:  (ENOTFOUND) tenant/user postgres.zpizibafccwsjgvplcum not found\\n')",
+  "derived_status": [
+    {
+      "per_apur": "2025-01",
+      "state": "desconhecido_sem_evento_local",
+      "status_table": null,
+      "last_periodic": null
+    },
+    {
+      "per_apur": "2025-02",
+      "state": "desconhecido_sem_evento_local",
+      "status_table": null,
+      "last_periodic": null
+    },
+    {
+      "per_apur": "2025-03",
+      "state": "desconhecido_sem_evento_local",
+      "status_table": null,
+      "last_periodic": null
+    },
+    {
+      "per_apur": "2025-04",
+      "state": "desconhecido_sem_evento_local",
+      "status_table": null,
+      "last_periodic": null
+    },
+    {
+      "per_apur": "2025-05",
+      "state": "desconhecido_sem_evento_local",
+      "status_table": null,
+      "last_periodic": null
+    },
+    {
+      "per_apur": "2025-06",
+      "state": "desconhecido_sem_evento_local",
+      "status_table": null,
+      "last_periodic": null
+    },
+    {
+      "per_apur": "2025-07",
+      "state": "desconhecido_sem_evento_local",
+      "status_table": null,
+      "last_periodic": null
+    },
+    {
+      "per_apur": "2025-08",
+      "state": "desconhecido_sem_evento_local",
+      "status_table": null,
+      "last_periodic": null
+    },
+    {
+      "per_apur": "2025-09",
+      "state": "desconhecido_sem_evento_local",
+      "status_table": null,
+      "last_periodic": null
+    },
+    {
+      "per_apur": "2025-10",
+      "state": "desconhecido_sem_evento_local",
+      "status_table": null,
+      "last_periodic": null
+    },
+    {
+      "per_apur": "2025-11",
+      "state": "desconhecido_sem_evento_local",
+      "status_table": null,
+      "last_periodic": null
+    },
+    {
+      "per_apur": "2025-12",
+      "state": "desconhecido_sem_evento_local",
+      "status_table": null,
+      "last_periodic": null
+    }
+  ]
+}

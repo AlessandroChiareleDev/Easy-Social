@@ -1,0 +1,45 @@
+{
+  "empresa_id": 2,
+  "generated_at": "2026-05-19T23:13:45",
+  "total": 1,
+  "regra": "reenviar inclusao S-1210 CPF 06042642405 ajustando ideDmDev mensal para S-1200 ativo e removendo feria sem S-1200 ativo",
+  "targets": [
+    {
+      "per_apur": "2025-04",
+      "cpf": "06042642405",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_RECIBOS_2025\\ajuste_060_724\\xml_unsigned\\S1210_2025-04_06042642405_ajuste_724_unsigned.xml",
+      "evento_id": 2595915,
+      "nr_recibo": null,
+      "id_evento": "ID1094455020000002026052002134500001",
+      "validation": {
+        "cpf": "06042642405",
+        "per_apur": "2025-04",
+        "new_id": "ID1094455020000002026052002134500001",
+        "indRetif": "1",
+        "nrRecibo": "",
+        "kept": [
+          {
+            "from": "1.101.1938MENSA",
+            "to": "1.101.1938MENSA",
+            "dtPgto": "2025-04-04",
+            "vrLiq": "1288.77"
+          }
+        ],
+        "removed": [
+          {
+            "ideDmDev": "1.101.2231FERIA",
+            "dtPgto": "2025-04-10",
+            "vrLiq": "1864.6"
+          }
+        ],
+        "remaining_ideDmDev": [
+          "1.101.1938MENSA"
+        ],
+        "latest_envio_id": 971,
+        "latest_item_id": 158394,
+        "latest_status": "erro_esocial",
+        "latest_codigo": "401"
+      }
+    }
+  ]
+}

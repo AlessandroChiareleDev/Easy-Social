@@ -1,0 +1,29 @@
+{
+  "per_apur": "2025-12",
+  "envio_id": 1241,
+  "sucesso": 1,
+  "erro": 0,
+  "protocolos": [
+    "1.1.202605.0000000013188305896"
+  ],
+  "histograma": {},
+  "manifest": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-12\\retry_penalim_infodep_1861\\manifest_retry_penalim_infodep_1861.json",
+  "latest": {
+    "total": 1,
+    "by_status_codigo": {
+      "sucesso|": 1
+    },
+    "rows": [
+      {
+        "cpf": "08551918486",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929110133",
+        "item_id": 192068,
+        "envio_id": 1241,
+        "criado_em": "2026-05-20 22:23:09.264648"
+      }
+    ]
+  }
+}

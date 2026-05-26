@@ -1,0 +1,87 @@
+{
+  "modo": "send",
+  "limite": 982,
+  "workers": 5,
+  "batch": 50,
+  "before": {
+    "schema": "objetiva",
+    "empresa_id": 3,
+    "internal_empresa_id": 3,
+    "per_apur": "2025-03",
+    "fechamento": [
+      false,
+      "1.1.202605.0000000013191817408",
+      "1.1.0000000040944985891",
+      "2026-05-21 18:35:18.314642+00:00",
+      "s1298_envio"
+    ],
+    "heads": [
+      1964,
+      982,
+      0,
+      0,
+      1964
+    ],
+    "timeline_itens": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "selecionaveis_pular_ja_tentados": 982,
+    "amostra_cpf": [
+      "00060729503",
+      "00137622570",
+      "00175494932",
+      "00209745584",
+      "00219692564"
+    ]
+  },
+  "result": {
+    "ok": true,
+    "envio_id": 18,
+    "sucesso": 910,
+    "erro": 72,
+    "pendente_consulta": 0,
+    "histograma": {
+      "401": 72
+    },
+    "elapsed_s": 285.1594879627228
+  },
+  "after": {
+    "schema": "objetiva",
+    "empresa_id": 3,
+    "internal_empresa_id": 3,
+    "per_apur": "2025-03",
+    "fechamento": [
+      false,
+      "1.1.202605.0000000013191817408",
+      "1.1.0000000040944985891",
+      "2026-05-21 18:35:18.314642+00:00",
+      "s1298_envio"
+    ],
+    "heads": [
+      1964,
+      982,
+      0,
+      0,
+      1964
+    ],
+    "timeline_itens": [
+      982,
+      910,
+      72,
+      0,
+      0,
+      982,
+      982,
+      910
+    ],
+    "selecionaveis_pular_ja_tentados": 0,
+    "amostra_cpf": []
+  }
+}

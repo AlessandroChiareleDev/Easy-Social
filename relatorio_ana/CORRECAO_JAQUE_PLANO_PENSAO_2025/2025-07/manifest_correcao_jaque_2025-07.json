@@ -1,0 +1,2876 @@
+{
+  "empresa_id": 2,
+  "per_apur": "2025-07",
+  "generated_at": "2026-05-19T21:33:42",
+  "respostas_validas_csv": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\AUDITORIA_RESPOSTAS_JAQUE_PLANO_PENSAO_2025\\respostas_validas_final.csv",
+  "faltantes_csv": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\AUDITORIA_RESPOSTAS_JAQUE_PLANO_PENSAO_2025\\faltantes_final.csv",
+  "out_dir": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07",
+  "response_rows": 101,
+  "response_type_counts": {
+    "PLANO": 98,
+    "PENSAO": 3
+  },
+  "target_cpfs": 101,
+  "xmls_generated": 101,
+  "xml_type_counts": {
+    "plano": 98,
+    "pensao": 3
+  },
+  "blocked_count": 0,
+  "missing_valid_responses": [
+    {
+      "per_apur": "2025-07",
+      "cpf": "14193059804",
+      "tipo": "PLANO",
+      "linhas_resposta": "1",
+      "motivos_invalidos": "registro_ans;valor_titular:1",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute."
+    },
+    {
+      "per_apur": "2025-07",
+      "cpf": "30729903877",
+      "tipo": "PLANO",
+      "linhas_resposta": "1",
+      "motivos_invalidos": "registro_ans;valor_titular:1",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute."
+    },
+    {
+      "per_apur": "2025-07",
+      "cpf": "32393572830",
+      "tipo": "PLANO",
+      "linhas_resposta": "1",
+      "motivos_invalidos": "registro_ans;valor_titular:1",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute."
+    }
+  ],
+  "targets": [
+    {
+      "cpf": "00555440370",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_00555440370_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2151914,
+      "item_id": 48783,
+      "envio_id": 517,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167960905",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 4,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 4,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "02346385832",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_02346385832_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2150166,
+      "item_id": 49966,
+      "envio_id": 529,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167950250",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "02713285844",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_02713285844_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2150204,
+      "item_id": 50197,
+      "envio_id": 531,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167950447",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "02979332305",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_02979332305_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2150206,
+      "item_id": 50385,
+      "envio_id": 533,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167950467",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "04224010569",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_04224010569_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2096656,
+      "item_id": 51315,
+      "envio_id": 543,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168094783",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 1,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 1,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "06749244874",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_06749244874_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2164288,
+      "item_id": 52928,
+      "envio_id": 559,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168013011",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "07463327850",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_07463327850_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2151816,
+      "item_id": 53323,
+      "envio_id": 563,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167960169",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "07634291714",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_07634291714_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2164512,
+      "item_id": 53425,
+      "envio_id": 564,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168013467",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "07861242889",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_07861242889_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2151766,
+      "item_id": 53560,
+      "envio_id": 565,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167959826",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "07863498830",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_07863498830_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2164516,
+      "item_id": 53562,
+      "envio_id": 565,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168013475",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "07863548870",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_07863548870_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2164404,
+      "item_id": 53563,
+      "envio_id": 565,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168013244",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "08551918486",
+      "has_plano": false,
+      "has_pensao": true,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_08551918486_jaque_unsigned.xml",
+      "plan_entries": 0,
+      "pensao_entries": 1,
+      "evento_id": 2168108,
+      "item_id": 53906,
+      "envio_id": 569,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168027305",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 1
+      }
+    },
+    {
+      "cpf": "08865298839",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_08865298839_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2149915,
+      "item_id": 54050,
+      "envio_id": 570,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167948791",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "09548614855",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_09548614855_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2164530,
+      "item_id": 54381,
+      "envio_id": 573,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168013514",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "09552153824",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_09552153824_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2164604,
+      "item_id": 54383,
+      "envio_id": 573,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168013652",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "09559713817",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_09559713817_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2151806,
+      "item_id": 54389,
+      "envio_id": 573,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167960079",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "09612497656",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_09612497656_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2164290,
+      "item_id": 54416,
+      "envio_id": 574,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168013015",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 4,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 4,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "10213292823",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_10213292823_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2164309,
+      "item_id": 54732,
+      "envio_id": 577,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168013047",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "10639034837",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_10639034837_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2167352,
+      "item_id": 54930,
+      "envio_id": 579,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168018904",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "11438810873",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_11438810873_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2149991,
+      "item_id": 55321,
+      "envio_id": 583,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167949266",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "11746677880",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_11746677880_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2164676,
+      "item_id": 55441,
+      "envio_id": 584,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168013814",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "11984250833",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_11984250833_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2164632,
+      "item_id": 55547,
+      "envio_id": 585,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168013700",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "11999740807",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_11999740807_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2164478,
+      "item_id": 55551,
+      "envio_id": 585,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168013408",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "12265702838",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_12265702838_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2150146,
+      "item_id": 55627,
+      "envio_id": 586,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167950136",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "12537867718",
+      "has_plano": false,
+      "has_pensao": true,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_12537867718_jaque_unsigned.xml",
+      "plan_entries": 0,
+      "pensao_entries": 1,
+      "evento_id": 2160281,
+      "item_id": 55720,
+      "envio_id": 587,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167997384",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 1
+      }
+    },
+    {
+      "cpf": "12601629827",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_12601629827_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2150138,
+      "item_id": 55737,
+      "envio_id": 587,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167950095",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "12611014809",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_12611014809_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2164562,
+      "item_id": 55742,
+      "envio_id": 587,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168013570",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "13660429805",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_13660429805_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2173465,
+      "item_id": 56049,
+      "envio_id": 592,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168045736",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "13696451800",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_13696451800_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2153633,
+      "item_id": 56065,
+      "envio_id": 592,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167962699",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "13705060821",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_13705060821_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2167186,
+      "item_id": 56070,
+      "envio_id": 592,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168018117",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "13711160832",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_13711160832_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2164732,
+      "item_id": 56076,
+      "envio_id": 592,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168013990",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "14418818839",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_14418818839_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2149427,
+      "item_id": 56252,
+      "envio_id": 594,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167946066",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "15057517805",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_15057517805_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2150048,
+      "item_id": 56396,
+      "envio_id": 595,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167949592",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "15509458828",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_15509458828_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2164542,
+      "item_id": 56508,
+      "envio_id": 596,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168013535",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "17725269835",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_17725269835_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2164369,
+      "item_id": 56905,
+      "envio_id": 600,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168013179",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 1,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 1,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "18401846803",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_18401846803_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2150098,
+      "item_id": 57030,
+      "envio_id": 602,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167949867",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "20315573864",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_20315573864_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2151834,
+      "item_id": 57196,
+      "envio_id": 603,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167960353",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "21288302819",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_21288302819_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2176010,
+      "item_id": 57225,
+      "envio_id": 604,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168060585",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "21653555831",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_21653555831_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2169074,
+      "item_id": 57269,
+      "envio_id": 604,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168035168",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "21777491827",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_21777491827_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2153591,
+      "item_id": 57281,
+      "envio_id": 604,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167962384",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "21804920819",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_21804920819_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2154345,
+      "item_id": 57284,
+      "envio_id": 604,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167968045",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "21899082808",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_21899082808_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2174425,
+      "item_id": 57299,
+      "envio_id": 604,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168050521",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "22229832824",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_22229832824_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2169390,
+      "item_id": 57334,
+      "envio_id": 605,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168036336",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "22455023885",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_22455023885_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2167310,
+      "item_id": 57374,
+      "envio_id": 605,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168018737",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 1,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 1,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "22617602800",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_22617602800_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2164668,
+      "item_id": 57407,
+      "envio_id": 605,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168013785",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "22617893863",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_22617893863_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2164654,
+      "item_id": 57408,
+      "envio_id": 605,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168013762",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "22647816883",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_22647816883_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2162137,
+      "item_id": 57414,
+      "envio_id": 605,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168006601",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "22730253866",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_22730253866_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2171229,
+      "item_id": 57423,
+      "envio_id": 606,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168039552",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "24945783888",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_24945783888_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2151798,
+      "item_id": 57550,
+      "envio_id": 607,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167960009",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "25169797893",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_25169797893_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2174633,
+      "item_id": 57581,
+      "envio_id": 607,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168051791",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "25585996827",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_25585996827_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2154371,
+      "item_id": 57630,
+      "envio_id": 608,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167968230",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "26176873843",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_26176873843_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2153627,
+      "item_id": 57688,
+      "envio_id": 608,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167962641",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "26349271858",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_26349271858_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2149417,
+      "item_id": 57722,
+      "envio_id": 609,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167946032",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "26662467871",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_26662467871_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2149437,
+      "item_id": 57764,
+      "envio_id": 609,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167946112",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "26903366857",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_26903366857_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2163714,
+      "item_id": 57797,
+      "envio_id": 609,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168011549",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "27156659898",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_27156659898_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2164458,
+      "item_id": 57836,
+      "envio_id": 610,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168013362",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "27206786863",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_27206786863_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2149889,
+      "item_id": 57843,
+      "envio_id": 610,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167948673",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 1,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 1,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "27244289863",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_27244289863_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2096122,
+      "item_id": 57852,
+      "envio_id": 610,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168090933",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "27984880875",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_27984880875_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2173251,
+      "item_id": 57964,
+      "envio_id": 611,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168044796",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "28102078871",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_28102078871_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2150210,
+      "item_id": 57979,
+      "envio_id": 611,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167950519",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "28328079844",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_28328079844_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2164262,
+      "item_id": 58019,
+      "envio_id": 612,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168012946",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "29014861850",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_29014861850_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2149901,
+      "item_id": 58122,
+      "envio_id": 613,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167948723",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "29813948353",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_29813948353_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2149969,
+      "item_id": 58236,
+      "envio_id": 614,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167949098",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "29928815895",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_29928815895_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2151820,
+      "item_id": 58247,
+      "envio_id": 614,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167960268",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "30516064215",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_30516064215_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2164544,
+      "item_id": 58319,
+      "envio_id": 615,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168013543",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "30748912894",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_30748912894_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2149979,
+      "item_id": 58353,
+      "envio_id": 615,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167949182",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "30761016848",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_30761016848_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2164462,
+      "item_id": 58356,
+      "envio_id": 615,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168013370",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "30815823851",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_30815823851_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2150020,
+      "item_id": 58366,
+      "envio_id": 615,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167949437",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 1,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 1,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "30877919895",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_30877919895_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2173349,
+      "item_id": 58371,
+      "envio_id": 615,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168045260",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "31268487880",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_31268487880_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2150136,
+      "item_id": 58416,
+      "envio_id": 616,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167950081",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "31428650806",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_31428650806_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2096098,
+      "item_id": 58438,
+      "envio_id": 616,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168090756",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 1,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 1,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "31798008874",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_31798008874_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2171197,
+      "item_id": 58480,
+      "envio_id": 616,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168039455",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 2,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 2,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "32394567880",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_32394567880_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2151848,
+      "item_id": 58574,
+      "envio_id": 617,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167960442",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "32875046810",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_32875046810_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2151940,
+      "item_id": 58646,
+      "envio_id": 618,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167961092",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "33030723372",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_33030723372_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2173387,
+      "item_id": 58666,
+      "envio_id": 618,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168045417",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "33387996837",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_33387996837_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2167238,
+      "item_id": 58730,
+      "envio_id": 619,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168018353",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 4,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 4,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "33593392828",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_33593392828_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2164706,
+      "item_id": 58759,
+      "envio_id": 619,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168013920",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 3,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 3,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "34212228866",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_34212228866_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2164590,
+      "item_id": 58850,
+      "envio_id": 620,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168013629",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 1,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 1,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "34917814855",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_34917814855_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2164350,
+      "item_id": 58989,
+      "envio_id": 621,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168013142",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "35716135897",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_35716135897_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2153611,
+      "item_id": 59096,
+      "envio_id": 622,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167962512",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "35791396813",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_35791396813_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2151754,
+      "item_id": 59106,
+      "envio_id": 622,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167959761",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 4,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 4,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "36984839807",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_36984839807_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2150074,
+      "item_id": 59290,
+      "envio_id": 624,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167949744",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "37495188820",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_37495188820_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2151984,
+      "item_id": 59364,
+      "envio_id": 625,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167961351",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "37824282856",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_37824282856_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2164408,
+      "item_id": 59413,
+      "envio_id": 625,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168013257",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "38072051873",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_38072051873_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2164446,
+      "item_id": 59443,
+      "envio_id": 626,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168013328",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "38678364858",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_38678364858_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2150036,
+      "item_id": 59531,
+      "envio_id": 627,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167949529",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "38870126404",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_38870126404_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2164218,
+      "item_id": 59560,
+      "envio_id": 627,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168012864",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "39428963895",
+      "has_plano": false,
+      "has_pensao": true,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_39428963895_jaque_unsigned.xml",
+      "plan_entries": 0,
+      "pensao_entries": 1,
+      "evento_id": 2175176,
+      "item_id": 59633,
+      "envio_id": 628,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168055561",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 4,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 4,
+        "penAlim": 1
+      }
+    },
+    {
+      "cpf": "40805764801",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_40805764801_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2169196,
+      "item_id": 59817,
+      "envio_id": 630,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168035593",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "41190097850",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_41190097850_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2164434,
+      "item_id": 59862,
+      "envio_id": 630,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168013306",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "42526219841",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_42526219841_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2164358,
+      "item_id": 60017,
+      "envio_id": 632,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168013165",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 2,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 2,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "43582114880",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_43582114880_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2149465,
+      "item_id": 60147,
+      "envio_id": 633,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167946248",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "44752439808",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_44752439808_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2164430,
+      "item_id": 60282,
+      "envio_id": 634,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168013301",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 2,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 2,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "45244860895",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_45244860895_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2171139,
+      "item_id": 60345,
+      "envio_id": 635,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168039240",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 4,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 4,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "51109062893",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_51109062893_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2150005,
+      "item_id": 60914,
+      "envio_id": 640,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167949359",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "61623830400",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_61623830400_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2150034,
+      "item_id": 61502,
+      "envio_id": 646,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167949511",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "67578284568",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_67578284568_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2174551,
+      "item_id": 61764,
+      "envio_id": 649,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168051281",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "73902209372",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_73902209372_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2164338,
+      "item_id": 62240,
+      "envio_id": 654,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168013119",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 2,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 2,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "87041065472",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_87041065472_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2174273,
+      "item_id": 63675,
+      "envio_id": 668,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168049593",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "90578570904",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_90578570904_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2150044,
+      "item_id": 63903,
+      "envio_id": 670,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034167949565",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "98234110187",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-07\\xml_unsigned\\S1210_2025-07_98234110187_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2105615,
+      "item_id": 64380,
+      "envio_id": 675,
+      "codigo": "401",
+      "status": "erro_esocial",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000034168119022",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    }
+  ]
+}

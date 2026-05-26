@@ -1,0 +1,44 @@
+{
+  "empresa_id": 2,
+  "per_apur": "2025-12",
+  "regra": "401/459 com recibo excluido por S-3000: recriar S-1210 como original indRetif=1 sem nrRecibo",
+  "target_cpfs_filter": [
+    "19877666790"
+  ],
+  "total_current_459": 1,
+  "total_retry": 1,
+  "total_skipped": 0,
+  "targets": [
+    {
+      "cpf": "19877666790",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-12\\retry_459_recriar_original\\xml_unsigned\\S1210_2025-12_19877666790_original_pos_s3000_unsigned.xml",
+      "evento_id": null,
+      "nr_recibo": null,
+      "id_evento": "ID1094455020000002026052023080400001",
+      "latest_item_id": 191750,
+      "latest_envio_id": 1222,
+      "receipt_excluded": "1.1.0000000037099702094",
+      "s3000_proof": {
+        "s3000_id": 3025939,
+        "s3000_recibo": "1.1.0000000037202036033",
+        "s3000_id_evento": "ID1094455020000002026011413101862752",
+        "s3000_dt": "2026-01-14 13:10:19.647000+00:00",
+        "s3000_xml": "ID1094455020000002026011413101862752.S-3000.xml",
+        "s3000_source": "zip:SOLUCOES_2025-12(01-15)).zip",
+        "nrRecEvt": "1.1.0000000037099702094"
+      },
+      "validation": {
+        "cpf": "19877666790",
+        "source_id": "ID1094455020000002026052017185000001",
+        "new_id": "ID1094455020000002026052023080400001",
+        "indRetif": "1",
+        "nrRecibo": "",
+        "perApur": "2025-12",
+        "tpAmb": "1",
+        "removed_receipt": "1.1.0000000037099702094"
+      },
+      "generated": true
+    }
+  ],
+  "skipped": []
+}

@@ -1,0 +1,108 @@
+{
+  "universo": "S-1210 SOLUCOES empresa_id=2, latest atual por CPF x mes, erros reais atuais; sucesso e 202 excluidos",
+  "total_erros_reais": 893,
+  "categorias": [
+    {
+      "categoria": "Plano de saude coletivo ausente",
+      "quantidade": 754,
+      "percentual": 84.43
+    },
+    {
+      "categoria": "Pensao alimenticia - beneficiarios ausentes",
+      "quantidade": 106,
+      "percentual": 11.87
+    },
+    {
+      "categoria": "Dependente/IRRF - CPF dependente invalido ou sem infoDep",
+      "quantidade": 21,
+      "percentual": 2.35
+    },
+    {
+      "categoria": "Recibo anterior nao localizado",
+      "quantidade": 12,
+      "percentual": 1.34
+    }
+  ],
+  "por_mes": [
+    {
+      "per_apur": "2025-02",
+      "quantidade": 114,
+      "percentual": 12.77
+    },
+    {
+      "per_apur": "2025-03",
+      "quantidade": 150,
+      "percentual": 16.8
+    },
+    {
+      "per_apur": "2025-04",
+      "quantidade": 109,
+      "percentual": 12.21
+    },
+    {
+      "per_apur": "2025-05",
+      "quantidade": 106,
+      "percentual": 11.87
+    },
+    {
+      "per_apur": "2025-06",
+      "quantidade": 109,
+      "percentual": 12.21
+    },
+    {
+      "per_apur": "2025-07",
+      "quantidade": 108,
+      "percentual": 12.09
+    },
+    {
+      "per_apur": "2025-09",
+      "quantidade": 101,
+      "percentual": 11.31
+    },
+    {
+      "per_apur": "2025-10",
+      "quantidade": 96,
+      "percentual": 10.75
+    }
+  ],
+  "categorias_por_mes": {
+    "Pensao alimenticia - beneficiarios ausentes": {
+      "2025-02": 44,
+      "2025-03": 45,
+      "2025-04": 4,
+      "2025-05": 4,
+      "2025-06": 3,
+      "2025-07": 3,
+      "2025-09": 2,
+      "2025-10": 1
+    },
+    "Plano de saude coletivo ausente": {
+      "2025-02": 65,
+      "2025-03": 100,
+      "2025-04": 97,
+      "2025-05": 97,
+      "2025-06": 103,
+      "2025-07": 101,
+      "2025-09": 97,
+      "2025-10": 94
+    },
+    "Dependente/IRRF - CPF dependente invalido ou sem infoDep": {
+      "2025-02": 3,
+      "2025-03": 3,
+      "2025-04": 4,
+      "2025-05": 4,
+      "2025-06": 3,
+      "2025-07": 2,
+      "2025-09": 1,
+      "2025-10": 1
+    },
+    "Recibo anterior nao localizado": {
+      "2025-02": 2,
+      "2025-03": 2,
+      "2025-04": 4,
+      "2025-05": 1,
+      "2025-07": 2,
+      "2025-09": 1
+    }
+  }
+}

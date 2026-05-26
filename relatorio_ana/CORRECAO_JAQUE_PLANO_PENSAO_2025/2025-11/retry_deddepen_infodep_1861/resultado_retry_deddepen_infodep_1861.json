@@ -1,0 +1,29 @@
+{
+  "per_apur": "2025-11",
+  "envio_id": 1237,
+  "sucesso": 1,
+  "erro": 0,
+  "protocolos": [
+    "1.1.202605.0000000013188131332"
+  ],
+  "histograma": {},
+  "manifest": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-11\\retry_deddepen_infodep_1861\\manifest_retry_deddepen_infodep_1861.json",
+  "latest": {
+    "total": 1,
+    "by_status_codigo": {
+      "sucesso|": 1
+    },
+    "rows": [
+      {
+        "cpf": "81529368553",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040927972738",
+        "item_id": 191940,
+        "envio_id": 1237,
+        "criado_em": "2026-05-20 21:08:38.080018"
+      }
+    ]
+  }
+}

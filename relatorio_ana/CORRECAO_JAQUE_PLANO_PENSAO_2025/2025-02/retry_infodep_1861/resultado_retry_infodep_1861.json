@@ -1,0 +1,11 @@
+{
+  "envio_id": 932,
+  "sucesso": 32,
+  "erro": 0,
+  "protocolos": [
+    "1.1.202605.0000000013183290724"
+  ],
+  "histograma": {},
+  "manifest": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-02\\retry_infodep_1861\\manifest_retry_infodep_1861.json",
+  "pendentes_zero": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-02\\retry_infodep_1861\\pendentes_valor_zero.csv"
+}

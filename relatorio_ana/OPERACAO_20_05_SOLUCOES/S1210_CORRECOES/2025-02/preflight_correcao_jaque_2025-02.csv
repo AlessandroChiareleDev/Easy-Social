@@ -1,0 +1,6 @@
+cpf,has_plano,has_pensao,generated,reason,status,codigo,nr_recibo,info_pgtos,plan_entries,pensao_entries,xml
+28710124829,False,True,True,OK,erro_esocial,401,1.1.0000000031463733871,2,0,1,C:\Users\xandao\Documents\GitHub\Easy-Social\relatorio_ana\OPERACAO_20_05_SOLUCOES\S1210_CORRECOES\2025-02\xml_unsigned\S1210_2025-02_28710124829_jaque_unsigned.xml
+30729903877,True,False,True,OK,erro_esocial,401,1.1.0000000031463474483,1,1,0,C:\Users\xandao\Documents\GitHub\Easy-Social\relatorio_ana\OPERACAO_20_05_SOLUCOES\S1210_CORRECOES\2025-02\xml_unsigned\S1210_2025-02_30729903877_jaque_unsigned.xml
+33163519814,True,False,True,OK,erro_esocial,401,1.1.0000000031463812983,2,1,0,C:\Users\xandao\Documents\GitHub\Easy-Social\relatorio_ana\OPERACAO_20_05_SOLUCOES\S1210_CORRECOES\2025-02\xml_unsigned\S1210_2025-02_33163519814_jaque_unsigned.xml
+42852580802,True,False,True,OK,erro_esocial,401,1.1.0000000031463669216,1,1,0,C:\Users\xandao\Documents\GitHub\Easy-Social\relatorio_ana\OPERACAO_20_05_SOLUCOES\S1210_CORRECOES\2025-02\xml_unsigned\S1210_2025-02_42852580802_jaque_unsigned.xml
+71985883104,False,True,True,OK,erro_esocial,401,1.1.0000000031463669385,1,0,2,C:\Users\xandao\Documents\GitHub\Easy-Social\relatorio_ana\OPERACAO_20_05_SOLUCOES\S1210_CORRECOES\2025-02\xml_unsigned\S1210_2025-02_71985883104_jaque_unsigned.xml

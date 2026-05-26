@@ -1,0 +1,58 @@
+{
+  "empresa_id": 2,
+  "per_apur": "2025-12",
+  "regra": "retry 401/1861 de penAlim: inserir infoDep/cpfDep para CPFs ja usados em penAlim",
+  "total_current_1861": 2,
+  "total_retry": 1,
+  "total_skipped": 1,
+  "targets": [
+    {
+      "cpf": "08551918486",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-12\\retry_penalim_infodep_1861\\xml_unsigned\\S1210_2025-12_08551918486_penalim_infodep_1861_unsigned.xml",
+      "evento_id": 3377639,
+      "nr_recibo": "1.1.0000000037286862017",
+      "id_evento": "ID1094455020000002026052022230400001",
+      "latest_item_id": 191961,
+      "latest_envio_id": 1240,
+      "dependentes": [
+        "09345921443"
+      ],
+      "dependentes_mensagem": [
+        "09345921443"
+      ],
+      "validation": {
+        "source_id": "ID1094455020000002026052022172100014",
+        "new_id": "ID1094455020000002026052022230400001",
+        "nrRecibo": "1.1.0000000037286862017",
+        "penAlim": [
+          "09345921443"
+        ],
+        "dependentes_mensagem": [
+          "09345921443"
+        ],
+        "infoDep_inserted": [
+          "09345921443"
+        ],
+        "infoDep": [
+          "09345921443"
+        ]
+      }
+    }
+  ],
+  "skipped": [
+    {
+      "item_id": 190171,
+      "envio_id": 1217,
+      "cpf": "81529368553",
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 1861: CPF do dependente 09274837500 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento. |   - 1861: CPF do dependente 09274813597 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento. |   - 1861: CPF do dependente 09274813597 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento. |   - 1861: CPF do dependente 09274837500 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+      "nr_recibo_anterior": "1.1.0000000037286779799",
+      "nr_recibo_novo": null,
+      "versao_anterior_id": 3419143,
+      "xml_enviado_oid": 2493529,
+      "criado_em": "2026-05-20 16:15:12.315872",
+      "reason": "RuntimeError: penAlim ausente"
+    }
+  ]
+}

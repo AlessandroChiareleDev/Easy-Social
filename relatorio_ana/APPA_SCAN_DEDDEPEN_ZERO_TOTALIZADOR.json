@@ -1,0 +1,2228 @@
+{
+  "elapsed_s": 26.2,
+  "source_dir": "C:\\Users\\xandao\\Downloads\\xmls do e social mes a mes",
+  "valor_dependente": "189.59",
+  "summary_by_zip": [
+    {
+      "zip": "01-jan2025.zip",
+      "entries": 141005,
+      "s1210_entries": 22687,
+      "appa_s1210_candidates": 22687,
+      "zero_groups": 251,
+      "mixed_zero_real": 32,
+      "mixed_zero_equals_real_sum": 28,
+      "mixed_zero_integer_multiple": 32,
+      "zero_only": 219,
+      "zero_only_integer_multiple": 219
+    },
+    {
+      "zip": "02-fev2025.NOVO-NAOAJUDOU.zip",
+      "entries": 141005,
+      "s1210_entries": 22687,
+      "appa_s1210_candidates": 22687,
+      "zero_groups": 251,
+      "mixed_zero_real": 32,
+      "mixed_zero_equals_real_sum": 28,
+      "mixed_zero_integer_multiple": 32,
+      "zero_only": 219,
+      "zero_only_integer_multiple": 219
+    },
+    {
+      "zip": "02-fev2025.zip",
+      "entries": 136743,
+      "s1210_entries": 21602,
+      "appa_s1210_candidates": 21602,
+      "zero_groups": 248,
+      "mixed_zero_real": 32,
+      "mixed_zero_equals_real_sum": 28,
+      "mixed_zero_integer_multiple": 32,
+      "zero_only": 216,
+      "zero_only_integer_multiple": 216
+    },
+    {
+      "zip": "03-marc2025.zip",
+      "entries": 135194,
+      "s1210_entries": 20772,
+      "appa_s1210_candidates": 20772,
+      "zero_groups": 240,
+      "mixed_zero_real": 32,
+      "mixed_zero_equals_real_sum": 28,
+      "mixed_zero_integer_multiple": 32,
+      "zero_only": 208,
+      "zero_only_integer_multiple": 208
+    },
+    {
+      "zip": "04-abril2025.zip",
+      "entries": 135671,
+      "s1210_entries": 20169,
+      "appa_s1210_candidates": 20169,
+      "zero_groups": 234,
+      "mixed_zero_real": 28,
+      "mixed_zero_equals_real_sum": 24,
+      "mixed_zero_integer_multiple": 28,
+      "zero_only": 206,
+      "zero_only_integer_multiple": 206
+    },
+    {
+      "zip": "05-maio.zip",
+      "entries": 125883,
+      "s1210_entries": 20510,
+      "appa_s1210_candidates": 20510,
+      "zero_groups": 230,
+      "mixed_zero_real": 28,
+      "mixed_zero_equals_real_sum": 24,
+      "mixed_zero_integer_multiple": 28,
+      "zero_only": 202,
+      "zero_only_integer_multiple": 202
+    },
+    {
+      "zip": "06-Jun2025.zip",
+      "entries": 117723,
+      "s1210_entries": 19234,
+      "appa_s1210_candidates": 19234,
+      "zero_groups": 215,
+      "mixed_zero_real": 27,
+      "mixed_zero_equals_real_sum": 23,
+      "mixed_zero_integer_multiple": 27,
+      "zero_only": 188,
+      "zero_only_integer_multiple": 188
+    },
+    {
+      "zip": "07- Jul2025.zip",
+      "entries": 111322,
+      "s1210_entries": 18327,
+      "appa_s1210_candidates": 18327,
+      "zero_groups": 218,
+      "mixed_zero_real": 28,
+      "mixed_zero_equals_real_sum": 24,
+      "mixed_zero_integer_multiple": 28,
+      "zero_only": 190,
+      "zero_only_integer_multiple": 190
+    },
+    {
+      "zip": "08- ago2025.zip",
+      "entries": 101072,
+      "s1210_entries": 16264,
+      "appa_s1210_candidates": 16264,
+      "zero_groups": 134,
+      "mixed_zero_real": 14,
+      "mixed_zero_equals_real_sum": 12,
+      "mixed_zero_integer_multiple": 14,
+      "zero_only": 120,
+      "zero_only_integer_multiple": 120
+    },
+    {
+      "zip": "09-set2025.zip",
+      "entries": 98240,
+      "s1210_entries": 15542,
+      "appa_s1210_candidates": 15542,
+      "zero_groups": 130,
+      "mixed_zero_real": 14,
+      "mixed_zero_equals_real_sum": 12,
+      "mixed_zero_integer_multiple": 14,
+      "zero_only": 116,
+      "zero_only_integer_multiple": 116
+    },
+    {
+      "zip": "10-out2025.zip",
+      "entries": 43766,
+      "s1210_entries": 7733,
+      "appa_s1210_candidates": 7733,
+      "zero_groups": 67,
+      "mixed_zero_real": 8,
+      "mixed_zero_equals_real_sum": 7,
+      "mixed_zero_integer_multiple": 8,
+      "zero_only": 59,
+      "zero_only_integer_multiple": 59
+    },
+    {
+      "zip": "11-nov2025.zip",
+      "entries": 57997,
+      "s1210_entries": 7018,
+      "appa_s1210_candidates": 7018,
+      "zero_groups": 52,
+      "mixed_zero_real": 6,
+      "mixed_zero_equals_real_sum": 4,
+      "mixed_zero_integer_multiple": 6,
+      "zero_only": 46,
+      "zero_only_integer_multiple": 46
+    },
+    {
+      "zip": "12-dez2025.zip",
+      "entries": 46525,
+      "s1210_entries": 7959,
+      "appa_s1210_candidates": 7959,
+      "zero_groups": 48,
+      "mixed_zero_real": 6,
+      "mixed_zero_equals_real_sum": 4,
+      "mixed_zero_integer_multiple": 6,
+      "zero_only": 42,
+      "zero_only_integer_multiple": 42
+    }
+  ],
+  "totals": {
+    "entries": 1392146,
+    "s1210_entries": 220504,
+    "appa_s1210_candidates": 220504,
+    "zero_groups": 2318,
+    "mixed_zero_real": 287,
+    "mixed_zero_equals_real_sum": 246,
+    "mixed_zero_integer_multiple": 287,
+    "zero_only": 2031,
+    "zero_only_integer_multiple": 2031
+  },
+  "samples_mixed_zero_equals_real_sum": [
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021016153700001.S-1210.xml",
+      "cpfBenef": "09741185758",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07",
+        "2025-01-16"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "21245321706",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021016160000002.S-1210.xml",
+      "cpfBenef": "09970334794",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "09772209748",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021016163700001.S-1210.xml",
+      "cpfBenef": "10328225703",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "22524247708",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021016171700002.S-1210.xml",
+      "cpfBenef": "10798666714",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "15516305756",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021014333700001.S-1210.xml",
+      "cpfBenef": "05964203663",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "17343981676",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021014310900002.S-1210.xml",
+      "cpfBenef": "01329059654",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "10051018683",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021016063300002.S-1210.xml",
+      "cpfBenef": "01452181713",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "14483387782",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021716224600006.S-1210.xml",
+      "cpfBenef": "01604415606",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "18469305611",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021716223700010.S-1210.xml",
+      "cpfBenef": "00354364685",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "70217745679",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021716224200010.S-1210.xml",
+      "cpfBenef": "01329059654",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "10051018683",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021716231600001.S-1210.xml",
+      "cpfBenef": "05964203663",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "17343981676",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021716233100005.S-1210.xml",
+      "cpfBenef": "07942921603",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "17066511638",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021716245100002.S-1210.xml",
+      "cpfBenef": "80789528649",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "25608216806",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021716241500004.S-1210.xml",
+      "cpfBenef": "13954254697",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "19218385666",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021014344300002.S-1210.xml",
+      "cpfBenef": "07942921603",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "17066511638",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021014304300001.S-1210.xml",
+      "cpfBenef": "00354364685",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "70217745679",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021014403100002.S-1210.xml",
+      "cpfBenef": "80789528649",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "25608216806",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021716282600011.S-1210.xml",
+      "cpfBenef": "01452181713",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "14483387782",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021014380800003.S-1210.xml",
+      "cpfBenef": "13954254697",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "19218385666",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021014312400002.S-1210.xml",
+      "cpfBenef": "01604415606",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "18469305611",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    }
+  ],
+  "samples_mixed_zero_real": [
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021016153700001.S-1210.xml",
+      "cpfBenef": "09741185758",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07",
+        "2025-01-16"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "21245321706",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021016160000002.S-1210.xml",
+      "cpfBenef": "09970334794",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "09772209748",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021016163700001.S-1210.xml",
+      "cpfBenef": "10328225703",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "22524247708",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021016164200001.S-1210.xml",
+      "cpfBenef": "10394333756",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 2,
+      "zero_sum": "189.59",
+      "real_sum": "379.18",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "2.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": false,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "20902036769",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "cpfDep": "21744356750",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021016171700002.S-1210.xml",
+      "cpfBenef": "10798666714",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "15516305756",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021014333700001.S-1210.xml",
+      "cpfBenef": "05964203663",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "17343981676",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021014310900002.S-1210.xml",
+      "cpfBenef": "01329059654",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "10051018683",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021016063300002.S-1210.xml",
+      "cpfBenef": "01452181713",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "14483387782",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021716224600006.S-1210.xml",
+      "cpfBenef": "01604415606",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "18469305611",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021716223700010.S-1210.xml",
+      "cpfBenef": "00354364685",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "70217745679",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021716224200010.S-1210.xml",
+      "cpfBenef": "01329059654",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "10051018683",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021716231600001.S-1210.xml",
+      "cpfBenef": "05964203663",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "17343981676",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021716233100005.S-1210.xml",
+      "cpfBenef": "07942921603",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "17066511638",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021716244100004.S-1210.xml",
+      "cpfBenef": "68523971653",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 2,
+      "zero_sum": "189.59",
+      "real_sum": "379.18",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "2.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": false,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "18401710650",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "cpfDep": "18401728606",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021716245100002.S-1210.xml",
+      "cpfBenef": "80789528649",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "25608216806",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021716241500004.S-1210.xml",
+      "cpfBenef": "13954254697",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "19218385666",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021014344300002.S-1210.xml",
+      "cpfBenef": "07942921603",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "17066511638",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021014304300001.S-1210.xml",
+      "cpfBenef": "00354364685",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "70217745679",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021014394800002.S-1210.xml",
+      "cpfBenef": "68523971653",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 2,
+      "zero_sum": "189.59",
+      "real_sum": "379.18",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "2.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": false,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "18401710650",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "cpfDep": "18401728606",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021014403100002.S-1210.xml",
+      "cpfBenef": "80789528649",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "25608216806",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021716282600011.S-1210.xml",
+      "cpfBenef": "01452181713",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "14483387782",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021014380800003.S-1210.xml",
+      "cpfBenef": "13954254697",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "19218385666",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021014312400002.S-1210.xml",
+      "cpfBenef": "01604415606",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "18469305611",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021716285600010.S-1210.xml",
+      "cpfBenef": "04245769700",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07",
+        "2025-01-17"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "15581074798",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021716285600011.S-1210.xml",
+      "cpfBenef": "04250063798",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07",
+        "2025-01-13"
+      ],
+      "tpCR": "056107",
+      "zero_count": 2,
+      "real_count": 2,
+      "zero_sum": "379.18",
+      "real_sum": "379.18",
+      "zero_mult_189_59": "2.0000",
+      "real_mult_189_59": "2.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "13064539760",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "cpfDep": "13064539760",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021016090400002.S-1210.xml",
+      "cpfBenef": "04245769700",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07",
+        "2025-01-17"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "15581074798",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021016090500001.S-1210.xml",
+      "cpfBenef": "04250063798",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07",
+        "2025-01-13"
+      ],
+      "tpCR": "056107",
+      "zero_count": 2,
+      "real_count": 2,
+      "zero_sum": "379.18",
+      "real_sum": "379.18",
+      "zero_mult_189_59": "2.0000",
+      "real_mult_189_59": "2.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "13064539760",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "cpfDep": "13064539760",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021716302100002.S-1210.xml",
+      "cpfBenef": "09970334794",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "09772209748",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021716301600009.S-1210.xml",
+      "cpfBenef": "09741185758",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07",
+        "2025-01-16"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "21245321706",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021716303600006.S-1210.xml",
+      "cpfBenef": "10798666714",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 1,
+      "zero_sum": "189.59",
+      "real_sum": "189.59",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "1.0000",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": true,
+      "zero_equals_real_sum": true,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": [
+        {
+          "cpfDep": "15516305756",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    }
+  ],
+  "samples_zero_only": [
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021716344900006.S-1210.xml",
+      "cpfBenef": "99980657715",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 0,
+      "zero_sum": "189.59",
+      "real_sum": "0.00",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "0",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": false,
+      "zero_equals_real_sum": false,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": []
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021716342800006.S-1210.xml",
+      "cpfBenef": "90084209704",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 0,
+      "zero_sum": "189.59",
+      "real_sum": "0.00",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "0",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": false,
+      "zero_equals_real_sum": false,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": []
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021716310800012.S-1210.xml",
+      "cpfBenef": "12469802741",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 0,
+      "zero_sum": "189.59",
+      "real_sum": "0.00",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "0",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": false,
+      "zero_equals_real_sum": false,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": []
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021716343300010.S-1210.xml",
+      "cpfBenef": "93977492772",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 0,
+      "zero_sum": "189.59",
+      "real_sum": "0.00",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "0",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": false,
+      "zero_equals_real_sum": false,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": []
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021716312200014.S-1210.xml",
+      "cpfBenef": "13155004770",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07",
+        "2025-01-13"
+      ],
+      "tpCR": "056107",
+      "zero_count": 2,
+      "real_count": 0,
+      "zero_sum": "379.18",
+      "real_sum": "0.00",
+      "zero_mult_189_59": "2.0000",
+      "real_mult_189_59": "0",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": false,
+      "zero_equals_real_sum": false,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": []
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021716313700012.S-1210.xml",
+      "cpfBenef": "13913572724",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07",
+        "2025-01-13"
+      ],
+      "tpCR": "056107",
+      "zero_count": 2,
+      "real_count": 0,
+      "zero_sum": "379.18",
+      "real_sum": "0.00",
+      "zero_mult_189_59": "2.0000",
+      "real_mult_189_59": "0",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": false,
+      "zero_equals_real_sum": false,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": []
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021716314600016.S-1210.xml",
+      "cpfBenef": "14247299719",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 0,
+      "zero_sum": "189.59",
+      "real_sum": "0.00",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "0",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": false,
+      "zero_equals_real_sum": false,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": []
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021716313300011.S-1210.xml",
+      "cpfBenef": "13705396730",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 0,
+      "zero_sum": "189.59",
+      "real_sum": "0.00",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "0",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": false,
+      "zero_equals_real_sum": false,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": []
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021716321300005.S-1210.xml",
+      "cpfBenef": "15208703700",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 0,
+      "zero_sum": "189.59",
+      "real_sum": "0.00",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "0",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": false,
+      "zero_equals_real_sum": false,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": []
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021716322000011.S-1210.xml",
+      "cpfBenef": "15510709790",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 0,
+      "zero_sum": "189.59",
+      "real_sum": "0.00",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "0",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": false,
+      "zero_equals_real_sum": false,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": []
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021716330000013.S-1210.xml",
+      "cpfBenef": "17770730732",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 0,
+      "zero_sum": "189.59",
+      "real_sum": "0.00",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "0",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": false,
+      "zero_equals_real_sum": false,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": []
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021716333800005.S-1210.xml",
+      "cpfBenef": "43917887720",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07",
+        "2025-01-10"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 0,
+      "zero_sum": "189.59",
+      "real_sum": "0.00",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "0",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": false,
+      "zero_equals_real_sum": false,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": []
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021014401700001.S-1210.xml",
+      "cpfBenef": "75511975672",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 0,
+      "zero_sum": "189.59",
+      "real_sum": "0.00",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "0",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": false,
+      "zero_equals_real_sum": false,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": []
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021016142300002.S-1210.xml",
+      "cpfBenef": "09045018764",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 0,
+      "zero_sum": "189.59",
+      "real_sum": "0.00",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "0",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": false,
+      "zero_equals_real_sum": false,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": []
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021014385400002.S-1210.xml",
+      "cpfBenef": "27987868604",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 0,
+      "zero_sum": "189.59",
+      "real_sum": "0.00",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "0",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": false,
+      "zero_equals_real_sum": false,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": []
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021014404200002.S-1210.xml",
+      "cpfBenef": "86257382653",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 0,
+      "zero_sum": "189.59",
+      "real_sum": "0.00",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "0",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": false,
+      "zero_equals_real_sum": false,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": []
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021716334900015.S-1210.xml",
+      "cpfBenef": "67685056704",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 0,
+      "zero_sum": "189.59",
+      "real_sum": "0.00",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "0",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": false,
+      "zero_equals_real_sum": false,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": []
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021716334500011.S-1210.xml",
+      "cpfBenef": "62821130759",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07",
+        "2025-01-16"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 0,
+      "zero_sum": "189.59",
+      "real_sum": "0.00",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "0",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": false,
+      "zero_equals_real_sum": false,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": []
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021716334100004.S-1210.xml",
+      "cpfBenef": "52303160715",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 0,
+      "zero_sum": "189.59",
+      "real_sum": "0.00",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "0",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": false,
+      "zero_equals_real_sum": false,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": []
+    },
+    {
+      "source": "01-jan2025.zip!ID1059690710000002025021016322200001.S-1210.xml",
+      "cpfBenef": "43917887720",
+      "perApur": "2025-01",
+      "dtPgtos": [
+        "2025-01-07",
+        "2025-01-10"
+      ],
+      "tpCR": "056107",
+      "zero_count": 1,
+      "real_count": 0,
+      "zero_sum": "189.59",
+      "real_sum": "0.00",
+      "zero_mult_189_59": "1.0000",
+      "real_mult_189_59": "0",
+      "zero_is_integer_multiple": true,
+      "real_is_integer_multiple": false,
+      "zero_equals_real_sum": false,
+      "zero_items": [
+        {
+          "cpfDep": "00000000000",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "real_items": []
+    }
+  ]
+}

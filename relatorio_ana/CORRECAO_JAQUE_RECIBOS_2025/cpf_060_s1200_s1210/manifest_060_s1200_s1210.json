@@ -1,0 +1,69 @@
+{
+  "empresa_id": 2,
+  "generated_at": "2026-05-19T23:12:03",
+  "regra": "reenviar S-1200 original e depois S-1210 original alinhado ao S-1200 para CPF 06042642405",
+  "targets": [
+    {
+      "tipo_evento": "S-1200",
+      "per_apur": "2025-04",
+      "cpf": "06042642405",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_RECIBOS_2025\\cpf_060_s1200_s1210\\xml_unsigned\\S1200_2025-04_06042642405_reinclusao_unsigned.xml",
+      "evento_id": null,
+      "nr_recibo": null,
+      "id_evento": "ID1094455020000002026052002120300001",
+      "validation": {
+        "tipo_evento": "S-1200",
+        "cpf": "06042642405",
+        "per_apur": "2025-04",
+        "old_id": "ID1094455020000002025050719102010280",
+        "new_id": "ID1094455020000002026052002120300001",
+        "ideDmDev": [
+          "1.101.2234MENSA",
+          "1.101.2231FERIA"
+        ],
+        "indRetif": "1",
+        "nrRecibo": ""
+      }
+    },
+    {
+      "tipo_evento": "S-1210",
+      "per_apur": "2025-04",
+      "cpf": "06042642405",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_RECIBOS_2025\\cpf_060_s1200_s1210\\xml_unsigned\\S1210_2025-04_06042642405_reinclusao_unsigned.xml",
+      "evento_id": null,
+      "nr_recibo": null,
+      "id_evento": "ID1094455020000002026052002120300002",
+      "validation": {
+        "tipo_evento": "S-1210",
+        "cpf": "06042642405",
+        "per_apur": "2025-04",
+        "old_id": "ID1094455020000002025050916075329069",
+        "new_id": "ID1094455020000002026052002120300002",
+        "mapped": [
+          {
+            "from": "1.101.1938MENSA",
+            "to": "1.101.2234MENSA",
+            "dtPgto": "2025-04-04",
+            "vrLiq": "1288.77"
+          },
+          {
+            "from": "1.101.2231FERIA",
+            "to": "1.101.2231FERIA",
+            "dtPgto": "2025-04-10",
+            "vrLiq": "1864.6"
+          }
+        ],
+        "ideDmDev": [
+          "1.101.2234MENSA",
+          "1.101.2231FERIA"
+        ],
+        "vrLiq": [
+          "1288.77",
+          "1864.6"
+        ],
+        "indRetif": "1",
+        "nrRecibo": ""
+      }
+    }
+  ]
+}

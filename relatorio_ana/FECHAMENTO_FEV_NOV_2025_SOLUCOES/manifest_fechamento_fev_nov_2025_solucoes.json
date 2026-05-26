@@ -1,0 +1,347 @@
+{
+  "generated_at": "2026-05-20T08:29:14",
+  "dry_run": true,
+  "empresa_id": 2,
+  "cnpj": "09445502000109",
+  "ambiente": "producao",
+  "cert_id": "179",
+  "cert_path": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\_certificados_locais\\SOLUCOES_SERVICOS_TERCEIRIZADOS_09445502000109.pfx",
+  "meses": [
+    "2025-02",
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-06",
+    "2025-07",
+    "2025-08",
+    "2025-09",
+    "2025-10",
+    "2025-11"
+  ],
+  "preflight": [
+    {
+      "mes": "2025-02",
+      "status_local": {
+        "empresa_id": 1,
+        "per_apur": "2025-02",
+        "fechado": false,
+        "protocolo": "1.1.202605.0000000013183275852",
+        "nr_recibo": "1.1.0000000040847627972",
+        "origem": "s1298_ja_aberto",
+        "confirmado_em": "2026-05-19T21:51:26.784397+00:00"
+      },
+      "s1210_latest": {
+        "total": 18754,
+        "sucesso": 18746,
+        "erro_esocial": 8,
+        "pendente_consulta": 0,
+        "falha_rede": 0
+      },
+      "s1299_explorador": [
+        {
+          "cd_resposta": "201",
+          "total": 2,
+          "ultimo": "2025-03-19T15:00:58.270000+00:00",
+          "ultimo_recibo": "1.1.0000000031464369243"
+        },
+        {
+          "cd_resposta": "202",
+          "total": 4,
+          "ultimo": "2025-03-17T08:11:54.500000+00:00",
+          "ultimo_recibo": "1.1.0000000031428796045"
+        }
+      ]
+    },
+    {
+      "mes": "2025-03",
+      "status_local": {
+        "empresa_id": 1,
+        "per_apur": "2025-03",
+        "fechado": false,
+        "protocolo": "1.1.202605.0000000013183424134",
+        "nr_recibo": "1.1.0000000040845465686",
+        "origem": "s1298_ja_aberto",
+        "confirmado_em": "2026-05-19T23:08:14.407696+00:00"
+      },
+      "s1210_latest": {
+        "total": 19055,
+        "sucesso": 19042,
+        "erro_esocial": 13,
+        "pendente_consulta": 0,
+        "falha_rede": 0
+      },
+      "s1299_explorador": [
+        {
+          "cd_resposta": "201",
+          "total": 1,
+          "ultimo": "2025-04-17T09:18:50.027000+00:00",
+          "ultimo_recibo": "1.1.0000000031994717429"
+        },
+        {
+          "cd_resposta": "202",
+          "total": 4,
+          "ultimo": "2025-04-14T17:12:32.180000+00:00",
+          "ultimo_recibo": "1.1.0000000031955575515"
+        }
+      ]
+    },
+    {
+      "mes": "2025-04",
+      "status_local": {
+        "empresa_id": 1,
+        "per_apur": "2025-04",
+        "fechado": false,
+        "protocolo": "1.1.202605.0000000013183484265",
+        "nr_recibo": "1.1.0000000040833841375",
+        "origem": "s1298_ja_aberto",
+        "confirmado_em": "2026-05-19T23:47:33.300057+00:00"
+      },
+      "s1210_latest": {
+        "total": 19244,
+        "sucesso": 19234,
+        "erro_esocial": 10,
+        "pendente_consulta": 0,
+        "falha_rede": 0
+      },
+      "s1299_explorador": [
+        {
+          "cd_resposta": "201",
+          "total": 2,
+          "ultimo": "2025-05-28T15:02:09.603000+00:00",
+          "ultimo_recibo": "1.1.0000000032623761754"
+        },
+        {
+          "cd_resposta": "202",
+          "total": 1,
+          "ultimo": "2025-05-15T16:45:23.300000+00:00",
+          "ultimo_recibo": "1.1.0000000032499395101"
+        }
+      ]
+    },
+    {
+      "mes": "2025-05",
+      "status_local": {
+        "empresa_id": 1,
+        "per_apur": "2025-05",
+        "fechado": false,
+        "protocolo": "1.1.202605.0000000013183506717",
+        "nr_recibo": "1.1.0000000040822472641",
+        "origem": "s1298_ja_aberto",
+        "confirmado_em": "2026-05-20T00:02:57.460292+00:00"
+      },
+      "s1210_latest": {
+        "total": 19047,
+        "sucesso": 19045,
+        "erro_esocial": 2,
+        "pendente_consulta": 0,
+        "falha_rede": 0
+      },
+      "s1299_explorador": [
+        {
+          "cd_resposta": "201",
+          "total": 2,
+          "ultimo": "2025-06-18T20:30:43.800000+00:00",
+          "ultimo_recibo": "1.1.0000000033078760038"
+        },
+        {
+          "cd_resposta": "202",
+          "total": 2,
+          "ultimo": "2025-06-16T20:26:29.730000+00:00",
+          "ultimo_recibo": "1.1.0000000033054209169"
+        }
+      ]
+    },
+    {
+      "mes": "2025-06",
+      "status_local": {
+        "empresa_id": 1,
+        "per_apur": "2025-06",
+        "fechado": false,
+        "protocolo": "1.1.202605.0000000013183533028",
+        "nr_recibo": "1.1.0000000040811310537",
+        "origem": "s1298_ja_aberto",
+        "confirmado_em": "2026-05-20T00:23:32.091690+00:00"
+      },
+      "s1210_latest": {
+        "total": 15347,
+        "sucesso": 15342,
+        "erro_esocial": 5,
+        "pendente_consulta": 0,
+        "falha_rede": 0
+      },
+      "s1299_explorador": [
+        {
+          "cd_resposta": "201",
+          "total": 1,
+          "ultimo": "2025-07-11T16:59:40.450000+00:00",
+          "ultimo_recibo": "1.1.0000000033527612307"
+        },
+        {
+          "cd_resposta": "202",
+          "total": 1,
+          "ultimo": "2025-07-11T20:10:26.110000+00:00",
+          "ultimo_recibo": "1.1.0000000033530425698"
+        }
+      ]
+    },
+    {
+      "mes": "2025-07",
+      "status_local": {
+        "empresa_id": 1,
+        "per_apur": "2025-07",
+        "fechado": false,
+        "protocolo": "1.1.202605.0000000013183547400",
+        "nr_recibo": "1.1.0000000040907111665",
+        "origem": "s1298_envio",
+        "confirmado_em": "2026-05-20T00:33:52.433102+00:00"
+      },
+      "s1210_latest": {
+        "total": 15856,
+        "sucesso": 15853,
+        "erro_esocial": 3,
+        "pendente_consulta": 0,
+        "falha_rede": 0
+      },
+      "s1299_explorador": [
+        {
+          "cd_resposta": "201",
+          "total": 5,
+          "ultimo": "2026-05-14T20:17:09.985793+00:00",
+          "ultimo_recibo": "1.1.0000000040810296251"
+        },
+        {
+          "cd_resposta": "202",
+          "total": 1,
+          "ultimo": "2025-08-12T16:33:00.023000+00:00",
+          "ultimo_recibo": "1.1.0000000034062383903"
+        }
+      ]
+    },
+    {
+      "mes": "2025-08",
+      "status_local": {
+        "empresa_id": 1,
+        "per_apur": "2025-08",
+        "fechado": true,
+        "protocolo": "1.1.202605.0000000013183106342",
+        "nr_recibo": "1.1.0000000040904436372",
+        "origem": "s1299_envio",
+        "confirmado_em": "2026-05-19T21:06:55.812156+00:00"
+      },
+      "s1210_latest": {
+        "total": 15495,
+        "sucesso": 15495,
+        "erro_esocial": 0,
+        "pendente_consulta": 0,
+        "falha_rede": 0
+      },
+      "s1299_explorador": [
+        {
+          "cd_resposta": "201",
+          "total": 2,
+          "ultimo": "2026-05-19T21:06:55.812156+00:00",
+          "ultimo_recibo": "1.1.0000000040904436372"
+        }
+      ]
+    },
+    {
+      "mes": "2025-09",
+      "status_local": {
+        "empresa_id": 1,
+        "per_apur": "2025-09",
+        "fechado": false,
+        "protocolo": "1.1.202605.0000000013183586881",
+        "nr_recibo": "1.1.0000000040747878940",
+        "origem": "s1298_ja_aberto",
+        "confirmado_em": "2026-05-20T00:59:22.150309+00:00"
+      },
+      "s1210_latest": {
+        "total": 15917,
+        "sucesso": 15911,
+        "erro_esocial": 6,
+        "pendente_consulta": 0,
+        "falha_rede": 0
+      },
+      "s1299_explorador": [
+        {
+          "cd_resposta": "201",
+          "total": 3,
+          "ultimo": "2025-10-27T09:45:46.710000+00:00",
+          "ultimo_recibo": "1.1.0000000035315422011"
+        },
+        {
+          "cd_resposta": "202",
+          "total": 1,
+          "ultimo": "2025-10-10T21:09:02.193000+00:00",
+          "ultimo_recibo": "1.1.0000000035143803711"
+        }
+      ]
+    },
+    {
+      "mes": "2025-10",
+      "status_local": {
+        "empresa_id": 1,
+        "per_apur": "2025-10",
+        "fechado": false,
+        "protocolo": "1.1.202605.0000000013183596214",
+        "nr_recibo": "1.1.0000000040764784109",
+        "origem": "s1298_ja_aberto",
+        "confirmado_em": "2026-05-20T01:06:16.740517+00:00"
+      },
+      "s1210_latest": {
+        "total": 16111,
+        "sucesso": 16108,
+        "erro_esocial": 3,
+        "pendente_consulta": 0,
+        "falha_rede": 0
+      },
+      "s1299_explorador": [
+        {
+          "cd_resposta": "201",
+          "total": 4,
+          "ultimo": "2025-11-17T20:53:17.287000+00:00",
+          "ultimo_recibo": "1.1.0000000035823957290"
+        },
+        {
+          "cd_resposta": "202",
+          "total": 1,
+          "ultimo": "2025-11-19T07:49:13.130000+00:00",
+          "ultimo_recibo": "1.1.0000000035840261423"
+        }
+      ]
+    },
+    {
+      "mes": "2025-11",
+      "status_local": {
+        "empresa_id": 1,
+        "per_apur": "2025-11",
+        "fechado": false,
+        "protocolo": "1.1.202605.0000000013153641030",
+        "nr_recibo": "1.1.0000000040763112909",
+        "origem": "s1298_envio",
+        "confirmado_em": "2026-05-13T15:20:55.869903+00:00"
+      },
+      "s1210_latest": {
+        "total": 16254,
+        "sucesso": 16140,
+        "erro_esocial": 114,
+        "pendente_consulta": 0,
+        "falha_rede": 0
+      },
+      "s1299_explorador": [
+        {
+          "cd_resposta": "201",
+          "total": 2,
+          "ultimo": "2025-12-23T09:47:49.680000+00:00",
+          "ultimo_recibo": "1.1.0000000036740641883"
+        },
+        {
+          "cd_resposta": "202",
+          "total": 3,
+          "ultimo": "2025-12-15T20:51:24.967000+00:00",
+          "ultimo_recibo": "1.1.0000000036533429538"
+        }
+      ]
+    }
+  ]
+}

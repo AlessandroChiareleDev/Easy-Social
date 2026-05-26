@@ -1,0 +1,1242 @@
+{
+  "ok": true,
+  "per_apur": "2025-12",
+  "manifest": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-12\\manifest_correcao_jaque_2025-12.json",
+  "reabertura": {
+    "evento_db_id": 3483540,
+    "codigo": "401",
+    "descricao": "Conteudo do evento inválido.",
+    "nr_recibo": null,
+    "ocorrencias": [
+      {
+        "codigo": "715",
+        "descricao": "A folha de pagamento do período 2025-12 já está aberta.\nAção Sugerida: Permitir que o contribuinte envie os eventos que irão compor sua folha de pagamento.",
+        "tipo": "1"
+      }
+    ],
+    "open_ok": true,
+    "origem": "s1298_ja_aberto"
+  },
+  "envio": {
+    "envio_id": 1240,
+    "sucesso": 119,
+    "erro": 1,
+    "protocolos": [
+      "1.1.202605.0000000013188299251",
+      "1.1.202605.0000000013188300530",
+      "1.1.202605.0000000013188301794"
+    ],
+    "histograma": {
+      "401": 1
+    }
+  },
+  "latest": {
+    "total": 120,
+    "by_status_codigo": {
+      "sucesso|": 119,
+      "erro_esocial|401": 1
+    },
+    "rows": [
+      {
+        "cpf": "00555440370",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929064054",
+        "item_id": 191948,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "02346385832",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929064226",
+        "item_id": 191949,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "02713285844",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929064377",
+        "item_id": 191950,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "02979332305",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929064546",
+        "item_id": 191951,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "03476711102",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929064749",
+        "item_id": 191952,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "03687307786",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929064885",
+        "item_id": 191953,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "04224010569",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929065025",
+        "item_id": 191954,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "05104134555",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929065245",
+        "item_id": 191955,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "05198889792",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929065361",
+        "item_id": 191956,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "05736133709",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929065512",
+        "item_id": 191957,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "07463327850",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929065700",
+        "item_id": 191958,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "07634291714",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929065905",
+        "item_id": 191959,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "07863548870",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929066104",
+        "item_id": 191960,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "08551918486",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1861: CPF do dependente 09345921443 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+        "nr_recibo_novo": null,
+        "item_id": 191961,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "08617192984",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929066258",
+        "item_id": 191962,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "08865298839",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929066445",
+        "item_id": 191963,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "08882149870",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929066634",
+        "item_id": 191964,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "09552153824",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929066784",
+        "item_id": 191965,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "09555377898",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929066888",
+        "item_id": 191966,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "09612497656",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929067097",
+        "item_id": 191967,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "10213292823",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929067295",
+        "item_id": 191968,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "10639034837",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929067469",
+        "item_id": 191969,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "11438810873",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929067666",
+        "item_id": 191970,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "11746677880",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929067782",
+        "item_id": 191971,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "11746946881",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929067903",
+        "item_id": 191972,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "11845088794",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929068100",
+        "item_id": 191973,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "11984250833",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929068220",
+        "item_id": 191974,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "11999740807",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929068407",
+        "item_id": 191975,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "12265702838",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929068605",
+        "item_id": 191976,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "12601629827",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929068772",
+        "item_id": 191977,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "12611014809",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929068921",
+        "item_id": 191978,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "13660429805",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929069070",
+        "item_id": 191979,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "13696451800",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929069205",
+        "item_id": 191980,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "13697069799",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929069391",
+        "item_id": 191981,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "13705060821",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929069489",
+        "item_id": 191982,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "13711160832",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929069658",
+        "item_id": 191983,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "14129552899",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929069862",
+        "item_id": 191984,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "14193059804",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929069989",
+        "item_id": 191985,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "14418818839",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929070103",
+        "item_id": 191986,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "15046466813",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929070247",
+        "item_id": 191987,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "15057517805",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929074868",
+        "item_id": 191988,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "15509458828",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929075148",
+        "item_id": 191989,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "16003714859",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929075433",
+        "item_id": 191990,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "17725269835",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929075718",
+        "item_id": 191991,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "18401846803",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929075981",
+        "item_id": 191992,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "19816734826",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929076203",
+        "item_id": 191993,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "20178870803",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929076401",
+        "item_id": 191994,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "20252389832",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929076614",
+        "item_id": 191995,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "20315573864",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929076783",
+        "item_id": 191996,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "21288302819",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929076887",
+        "item_id": 191997,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "21777491827",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929077050",
+        "item_id": 191998,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "21804920819",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929077145",
+        "item_id": 191999,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "21899082808",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929077289",
+        "item_id": 192000,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "22229832824",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929077511",
+        "item_id": 192001,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "22455023885",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929077621",
+        "item_id": 192002,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "22617602800",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929077794",
+        "item_id": 192003,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "22730253866",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929077983",
+        "item_id": 192004,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "23357036843",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929078157",
+        "item_id": 192005,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "25169797893",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929078257",
+        "item_id": 192006,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "26176873843",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929078359",
+        "item_id": 192007,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "26534955890",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929078469",
+        "item_id": 192008,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "26662467871",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929078631",
+        "item_id": 192009,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "26903366857",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929078745",
+        "item_id": 192010,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "26998625847",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929078920",
+        "item_id": 192011,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "27156659898",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929079095",
+        "item_id": 192012,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "27206786863",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929079306",
+        "item_id": 192013,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "27244289863",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929079488",
+        "item_id": 192014,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "27984880875",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929079642",
+        "item_id": 192015,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "28102078871",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929079806",
+        "item_id": 192016,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "28328079844",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929079947",
+        "item_id": 192017,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "29813948353",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929080098",
+        "item_id": 192018,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "29830922839",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929080244",
+        "item_id": 192019,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "29928815895",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929080397",
+        "item_id": 192020,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "30322235120",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929080507",
+        "item_id": 192021,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "30516064215",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929080617",
+        "item_id": 192022,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "30622848895",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929080715",
+        "item_id": 192023,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "30729903877",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929080868",
+        "item_id": 192024,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "30748912894",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929081053",
+        "item_id": 192025,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "30761016848",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929081177",
+        "item_id": 192026,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "30815823851",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929081362",
+        "item_id": 192027,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "30877919895",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929083797",
+        "item_id": 192028,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "31268487880",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929083951",
+        "item_id": 192029,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "31428650806",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929084086",
+        "item_id": 192030,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "31798008874",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929084185",
+        "item_id": 192031,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "32706842822",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929084353",
+        "item_id": 192032,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "32875046810",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929084514",
+        "item_id": 192033,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "32945497840",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929084684",
+        "item_id": 192034,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "33030723372",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929084863",
+        "item_id": 192035,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "33387996837",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929085021",
+        "item_id": 192036,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "33593392828",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929085211",
+        "item_id": 192037,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "34228705120",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929085329",
+        "item_id": 192038,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "34917814855",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929085479",
+        "item_id": 192039,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "35716135897",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929085604",
+        "item_id": 192040,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "35747949837",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929085787",
+        "item_id": 192041,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "35791396813",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929085998",
+        "item_id": 192042,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "36969401863",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929086161",
+        "item_id": 192043,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "36984839807",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929086372",
+        "item_id": 192044,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "37404579880",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929086588",
+        "item_id": 192045,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "37495188820",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929086723",
+        "item_id": 192046,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "37824282856",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929086909",
+        "item_id": 192047,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "38678364858",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929087110",
+        "item_id": 192048,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "40191479810",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929087246",
+        "item_id": 192049,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "41190097850",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929087381",
+        "item_id": 192050,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "42526219841",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929087625",
+        "item_id": 192051,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "43494883831",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929087873",
+        "item_id": 192052,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "51109062893",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929088092",
+        "item_id": 192053,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "61623830400",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929088295",
+        "item_id": 192054,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "73425230115",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929088478",
+        "item_id": 192055,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "73902209372",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929088692",
+        "item_id": 192056,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "76483363168",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929088822",
+        "item_id": 192057,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "77824067149",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929088993",
+        "item_id": 192058,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "79204775149",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929089135",
+        "item_id": 192059,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "84195940168",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929089290",
+        "item_id": 192060,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "84378093120",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929089399",
+        "item_id": 192061,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "85400360378",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929089503",
+        "item_id": 192062,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "87041065472",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929089646",
+        "item_id": 192063,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "89824300163",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929089760",
+        "item_id": 192064,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "90578570904",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929089918",
+        "item_id": 192065,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "90970187149",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929090064",
+        "item_id": 192066,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      },
+      {
+        "cpf": "93707908100",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929090189",
+        "item_id": 192067,
+        "envio_id": 1240,
+        "criado_em": "2026-05-20 22:17:54.862309"
+      }
+    ]
+  }
+}

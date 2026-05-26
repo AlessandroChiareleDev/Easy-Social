@@ -1,0 +1,515 @@
+{
+  "generated_at": "2026-05-20T20:26:48",
+  "empresa_id_externo": 2,
+  "empresa_id_interno": 1,
+  "razao_social_usada": "SOLUCOES SERVICOS TERCEIRIZADOS LTDA",
+  "cnpj": "09.445.502/0001-09",
+  "periodo": "2025-02 a 2025-12",
+  "meses": [
+    "2025-02",
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-06",
+    "2025-07",
+    "2025-08",
+    "2025-09",
+    "2025-10",
+    "2025-11",
+    "2025-12"
+  ],
+  "totais_finais_ultimo_status_por_cpf": {
+    "escopo": 187277,
+    "ok": 187277,
+    "erro": 0,
+    "pendente": 0,
+    "total_tentativas_s1210": 191857,
+    "meses_fechados": 11
+  },
+  "por_mes": [
+    {
+      "per_apur": "2025-02",
+      "escopo": 18754,
+      "ok": 18754,
+      "erro": 0,
+      "pendente": 0,
+      "histograma": {
+        "sucesso|": 18603,
+        "sucesso|202": 151
+      },
+      "total_tentativas_s1210": 18910,
+      "s1299_fechado": true,
+      "s1299_protocolo": "1.1.202605.0000000013186641532",
+      "s1299_recibo": "1.1.0000000040920505692"
+    },
+    {
+      "per_apur": "2025-03",
+      "escopo": 19055,
+      "ok": 19055,
+      "erro": 0,
+      "pendente": 0,
+      "histograma": {
+        "sucesso|": 18929,
+        "sucesso|202": 126
+      },
+      "total_tentativas_s1210": 19242,
+      "s1299_fechado": true,
+      "s1299_protocolo": "1.1.202605.0000000013186696633",
+      "s1299_recibo": "1.1.0000000040920741237"
+    },
+    {
+      "per_apur": "2025-04",
+      "escopo": 19244,
+      "ok": 19244,
+      "erro": 0,
+      "pendente": 0,
+      "histograma": {
+        "sucesso|": 19100,
+        "sucesso|202": 144
+      },
+      "total_tentativas_s1210": 19443,
+      "s1299_fechado": true,
+      "s1299_protocolo": "1.1.202605.0000000013187399208",
+      "s1299_recibo": "1.1.0000000040924242847"
+    },
+    {
+      "per_apur": "2025-05",
+      "escopo": 19047,
+      "ok": 19047,
+      "erro": 0,
+      "pendente": 0,
+      "histograma": {
+        "sucesso|": 18911,
+        "sucesso|202": 136
+      },
+      "total_tentativas_s1210": 19262,
+      "s1299_fechado": true,
+      "s1299_protocolo": "1.1.202605.0000000013186725851",
+      "s1299_recibo": "1.1.0000000040920895245"
+    },
+    {
+      "per_apur": "2025-06",
+      "escopo": 15347,
+      "ok": 15347,
+      "erro": 0,
+      "pendente": 0,
+      "histograma": {
+        "sucesso|": 15231,
+        "sucesso|202": 116
+      },
+      "total_tentativas_s1210": 15459,
+      "s1299_fechado": true,
+      "s1299_protocolo": "1.1.202605.0000000013186752516",
+      "s1299_recibo": "1.1.0000000040921049888"
+    },
+    {
+      "per_apur": "2025-07",
+      "escopo": 15856,
+      "ok": 15856,
+      "erro": 0,
+      "pendente": 0,
+      "histograma": {
+        "sucesso|": 15726,
+        "sucesso|202": 130
+      },
+      "total_tentativas_s1210": 15970,
+      "s1299_fechado": true,
+      "s1299_protocolo": "1.1.202605.0000000013186766277",
+      "s1299_recibo": "1.1.0000000040921103182"
+    },
+    {
+      "per_apur": "2025-08",
+      "escopo": 15495,
+      "ok": 15495,
+      "erro": 0,
+      "pendente": 0,
+      "histograma": {
+        "sucesso|": 15391,
+        "sucesso|202": 104
+      },
+      "total_tentativas_s1210": 17503,
+      "s1299_fechado": true,
+      "s1299_protocolo": "1.1.202605.0000000013183106342",
+      "s1299_recibo": "1.1.0000000040904436372"
+    },
+    {
+      "per_apur": "2025-09",
+      "escopo": 15917,
+      "ok": 15917,
+      "erro": 0,
+      "pendente": 0,
+      "histograma": {
+        "sucesso|": 15797,
+        "sucesso|202": 120
+      },
+      "total_tentativas_s1210": 16071,
+      "s1299_fechado": true,
+      "s1299_protocolo": "1.1.202605.0000000013186790496",
+      "s1299_recibo": "1.1.0000000040921211777"
+    },
+    {
+      "per_apur": "2025-10",
+      "escopo": 16111,
+      "ok": 16111,
+      "erro": 0,
+      "pendente": 0,
+      "histograma": {
+        "sucesso|": 15994,
+        "sucesso|202": 117
+      },
+      "total_tentativas_s1210": 16408,
+      "s1299_fechado": true,
+      "s1299_protocolo": "1.1.202605.0000000013186812229",
+      "s1299_recibo": "1.1.0000000040921314346"
+    },
+    {
+      "per_apur": "2025-11",
+      "escopo": 16254,
+      "ok": 16254,
+      "erro": 0,
+      "pendente": 0,
+      "histograma": {
+        "sucesso|": 16155,
+        "sucesso|202": 99
+      },
+      "total_tentativas_s1210": 16369,
+      "s1299_fechado": true,
+      "s1299_protocolo": "1.1.202605.0000000013188275471",
+      "s1299_recibo": "1.1.0000000040928822916"
+    },
+    {
+      "per_apur": "2025-12",
+      "escopo": 16197,
+      "ok": 16197,
+      "erro": 0,
+      "pendente": 0,
+      "histograma": {
+        "sucesso|": 16062,
+        "sucesso|202": 36,
+        "sucesso|459_SEM_RECIBO": 99
+      },
+      "total_tentativas_s1210": 17220,
+      "s1299_fechado": true,
+      "s1299_protocolo": "1.1.202605.0000000013188387831",
+      "s1299_recibo": "1.1.0000000040929555762"
+    }
+  ],
+  "problemas_reais_amostra": [],
+  "tabelas_nome_empresa_amostra": {
+    "appa.config_esocial": [
+      {
+        "id": 1,
+        "cnpj": "05969071000110",
+        "ini_valid_padrao": "2018-02",
+        "auto_detected": true,
+        "updated_at": "2026-04-17 00:08:25.661515+00:00"
+      },
+      {
+        "id": 134,
+        "cnpj": "09445502000109",
+        "ini_valid_padrao": "2018-02",
+        "auto_detected": false,
+        "updated_at": "2026-05-05 06:34:54.745148+00:00"
+      }
+    ],
+    "appa.empresa_zips_brutos": [],
+    "appa.master_empresas": [
+      {
+        "id": 1,
+        "nome": "APPA SERVICOS TEMPORARIOS E EFETIVOS LTDA",
+        "cnpj": "05.969.071/0001-10",
+        "db_name": "easy_social_db",
+        "db_host": "localhost",
+        "db_port": 5432,
+        "ativo": true,
+        "criado_em": "2026-03-26 13:02:31.091730+00:00",
+        "tipo_estado": "estado_1"
+      },
+      {
+        "id": 2,
+        "nome": "SOLUCOES SERVICOS TERCEIRIZADOS LTDA",
+        "cnpj": "09.445.502/0001-09",
+        "db_name": "easy_social_db_emp2",
+        "db_host": "localhost",
+        "db_port": 5432,
+        "ativo": true,
+        "criado_em": "2026-05-05 06:34:53.840987+00:00",
+        "tipo_estado": "estado_1"
+      }
+    ],
+    "appa.master_usuario_empresa": [
+      {
+        "id": 2,
+        "usuario_id": 2,
+        "empresa_id": 1,
+        "role_emp": "operador",
+        "criado_em": "2026-03-26 14:15:37.612470+00:00"
+      },
+      {
+        "id": 3,
+        "usuario_id": 3,
+        "empresa_id": 1,
+        "role_emp": "operador",
+        "criado_em": "2026-03-27 11:45:42.517343+00:00"
+      },
+      {
+        "id": 4,
+        "usuario_id": 5,
+        "empresa_id": 1,
+        "role_emp": "admin",
+        "criado_em": "2026-04-04 23:47:58.207110+00:00"
+      }
+    ],
+    "legado.config_esocial": [],
+    "legado.empresa_zips_brutos": [],
+    "legado.master_empresas": [],
+    "legado.master_usuario_empresa": [],
+    "pg_catalog.pg_ts_config": [
+      {
+        "oid": 3748,
+        "cfgname": "simple",
+        "cfgnamespace": 11,
+        "cfgowner": 10,
+        "cfgparser": 3722
+      },
+      {
+        "oid": 13200,
+        "cfgname": "arabic",
+        "cfgnamespace": 11,
+        "cfgowner": 10,
+        "cfgparser": 3722
+      },
+      {
+        "oid": 13202,
+        "cfgname": "armenian",
+        "cfgnamespace": 11,
+        "cfgowner": 10,
+        "cfgparser": 3722
+      },
+      {
+        "oid": 13204,
+        "cfgname": "basque",
+        "cfgnamespace": 11,
+        "cfgowner": 10,
+        "cfgparser": 3722
+      },
+      {
+        "oid": 13206,
+        "cfgname": "catalan",
+        "cfgnamespace": 11,
+        "cfgowner": 10,
+        "cfgparser": 3722
+      }
+    ],
+    "pg_catalog.pg_ts_config_map": [
+      {
+        "mapcfg": 3748,
+        "maptokentype": 1,
+        "mapseqno": 1,
+        "mapdict": 3765
+      },
+      {
+        "mapcfg": 3748,
+        "maptokentype": 2,
+        "mapseqno": 1,
+        "mapdict": 3765
+      },
+      {
+        "mapcfg": 3748,
+        "maptokentype": 3,
+        "mapseqno": 1,
+        "mapdict": 3765
+      },
+      {
+        "mapcfg": 3748,
+        "maptokentype": 4,
+        "mapseqno": 1,
+        "mapdict": 3765
+      },
+      {
+        "mapcfg": 3748,
+        "maptokentype": 5,
+        "mapseqno": 1,
+        "mapdict": 3765
+      }
+    ],
+    "sistema.empresas_routing": [
+      {
+        "cnpj": "05969071000110",
+        "razao_social": "APPA SERVICOS TEMPORARIOS LTDA",
+        "schema_name": "appa",
+        "schema_version": "1.1.0",
+        "flags": {
+          "origem": "v1_legado",
+          "tem_xml_completo": false
+        },
+        "ativo": true,
+        "criado_em": "2026-05-08 06:10:01.972404+00:00",
+        "atualizado_em": "2026-05-08 15:02:59.790781+00:00"
+      },
+      {
+        "cnpj": "09445502000109",
+        "razao_social": "SOLUCOES SERVICOS TERCEIRIZADOS LTDA",
+        "schema_name": "solucoes",
+        "schema_version": "1.1.0",
+        "flags": {
+          "origem": "v2_nativo",
+          "tem_xml_completo": true
+        },
+        "ativo": true,
+        "criado_em": "2026-05-08 06:10:01.972404+00:00",
+        "atualizado_em": "2026-05-08 15:02:59.790781+00:00"
+      }
+    ],
+    "sistema.user_empresas": [
+      {
+        "user_id": "63ababeb-e90b-4de2-8e0f-f00cb3e0d4ba",
+        "cnpj": "05969071000110",
+        "papel": "operador",
+        "criado_em": "2026-05-08 17:33:58.466016+00:00"
+      },
+      {
+        "user_id": "63ababeb-e90b-4de2-8e0f-f00cb3e0d4ba",
+        "cnpj": "09445502000109",
+        "papel": "operador",
+        "criado_em": "2026-05-08 17:33:58.466016+00:00"
+      }
+    ],
+    "solucoes.config_esocial": [],
+    "solucoes.empresa_zips_brutos": [
+      {
+        "id": 67,
+        "empresa_id": 1,
+        "dt_ini": "2025-12-22",
+        "dt_fim": "2025-12-31",
+        "sequencial_esocial": null,
+        "nome_arquivo_original": "SOLUCOES_2025-12(22-31).zip",
+        "sha256": "0a553138683efee8d9a0169c77dcaba65876b1227b12a6adb1b032b622298efa",
+        "tamanho_bytes": 694671574,
+        "conteudo_oid": 2396374,
+        "total_xmls": 165348,
+        "perapur_dominante": "2025-11",
+        "enviado_em": "2026-05-19 06:50:32.448796",
+        "extraido_em": "2026-05-19 06:54:37.531714",
+        "extracao_status": "ok",
+        "extracao_erro": null,
+        "extracao_progresso": {
+          "ok": 110235,
+          "etapa": "ok",
+          "total": 165348,
+          "falhas": 0,
+          "duplicados": 55113,
+          "processados": 165348
+        }
+      },
+      {
+        "id": 8,
+        "empresa_id": 1,
+        "dt_ini": "2025-08-01",
+        "dt_fim": "2025-08-31",
+        "sequencial_esocial": null,
+        "nome_arquivo_original": "SOLUCOES_2025-08.zip",
+        "sha256": "04797cd8a6b8d92899bdd2ce9dec53c53344f46273c76059cbf1c26def84b8c1",
+        "tamanho_bytes": 849026627,
+        "conteudo_oid": 131946,
+        "total_xmls": 198153,
+        "perapur_dominante": "2025-08",
+        "enviado_em": "2026-05-07 04:09:22.271268",
+        "extraido_em": "2026-05-07 04:13:15.019367",
+        "extracao_status": "erro",
+        "extracao_erro": "Aguardando reupload do ZIP (LO antigo perdido)",
+        "extracao_progresso": null
+      },
+      {
+        "id": 68,
+        "empresa_id": 1,
+        "dt_ini": "2026-01-15",
+        "dt_fim": "2026-01-31",
+        "sequencial_esocial": null,
+        "nome_arquivo_original": "SOLUCOES_2026-01(15-31).zip",
+        "sha256": "6245f1496ac59a2b43ca389e9c120f0a24b06c3c2d0c0308aa5f4f6b06625609",
+        "tamanho_bytes": 505945003,
+        "conteudo_oid": 2396375,
+        "total_xmls": 116542,
+        "perapur_dominante": "2025-12",
+        "enviado_em": "2026-05-19 06:54:38.018277",
+        "extraido_em": "2026-05-19 06:57:45.287077",
+        "extracao_status": "ok",
+        "extracao_erro": null,
+        "extracao_progresso": {
+          "ok": 116235,
+          "etapa": "ok",
+          "total": 116542,
+          "falhas": 0,
+          "duplicados": 307,
+          "processados": 116542
+        }
+      },
+      {
+        "id": 15,
+        "empresa_id": 1,
+        "dt_ini": "2025-02-01",
+        "dt_fim": "2025-02-28",
+        "sequencial_esocial": null,
+        "nome_arquivo_original": "SOLUCOES_2025-02(01-14).zip",
+        "sha256": "d48313e3fdb563785c78da392562707831ecfbc04d462ffdc903d2c442bd59ae",
+        "tamanho_bytes": 372392496,
+        "conteudo_oid": 62392,
+        "total_xmls": 91301,
+        "perapur_dominante": "2025-01",
+        "enviado_em": "2026-05-12 14:57:06.845516",
+        "extraido_em": "2026-05-12 17:32:29.863522",
+        "extracao_status": "ok",
+        "extracao_erro": null,
+        "extracao_progresso": {
+          "ok": 91301,
+          "etapa": "ok",
+          "total": 91301,
+          "falhas": 0,
+          "duplicados": 0,
+          "updated_at": "2026-05-12T17:32:29.284480Z",
+          "processados": 91301
+        }
+      },
+      {
+        "id": 65,
+        "empresa_id": 1,
+        "dt_ini": "2025-12-01",
+        "dt_fim": "2025-12-15",
+        "sequencial_esocial": null,
+        "nome_arquivo_original": "SOLUCOES_2025-12(01-15)).zip",
+        "sha256": "a385753af53bb263d145626b10e7dfb7e26b1c427f40afb665e6fdccc3a4816c",
+        "tamanho_bytes": 339321719,
+        "conteudo_oid": 2396368,
+        "total_xmls": 76762,
+        "perapur_dominante": "2025-12",
+        "enviado_em": "2026-05-19 06:44:24.504787",
+        "extraido_em": "2026-05-19 06:47:26.923460",
+        "extracao_status": "ok",
+        "extracao_erro": null,
+        "extracao_progresso": {
+          "ok": 76762,
+          "etapa": "ok",
+          "total": 76762,
+          "falhas": 0,
+          "duplicados": 0,
+          "processados": 76762
+        }
+      }
+    ],
+    "solucoes.master_empresas": [
+      {
+        "id": 1,
+        "nome": "SOLUCOES SERVICOS TERCEIRIZADOS LTDA",
+        "cnpj": "09.445.502/0001-09",
+        "db_name": "easy_social_solucoes",
+        "db_host": "localhost",
+        "db_port": 5432,
+        "ativo": true,
+        "criado_em": "2026-05-05 06:48:44.841634+00:00",
+        "tipo_estado": "estado_1"
+      }
+    ],
+    "solucoes.master_usuario_empresa": []
+  }
+}

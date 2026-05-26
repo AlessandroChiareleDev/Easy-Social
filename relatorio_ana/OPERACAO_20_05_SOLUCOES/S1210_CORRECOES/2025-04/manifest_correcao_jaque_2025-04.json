@@ -1,0 +1,302 @@
+{
+  "empresa_id": 2,
+  "per_apur": "2025-04",
+  "generated_at": "2026-05-20T14:54:42",
+  "respostas_validas_csv": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\inputs_jaque_resposta_final.csv",
+  "faltantes_csv": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\faltantes_vazio.csv",
+  "out_dir": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1210_CORRECOES\\2025-04",
+  "response_rows": 10,
+  "response_type_counts": {
+    "PLANO": 10
+  },
+  "target_cpfs": 10,
+  "xmls_generated": 10,
+  "xml_type_counts": {
+    "plano": 10,
+    "pensao": 0
+  },
+  "blocked_count": 0,
+  "missing_valid_responses": [],
+  "targets": [
+    {
+      "cpf": "14193059804",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1210_CORRECOES\\2025-04\\xml_unsigned\\S1210_2025-04_14193059804_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2713948,
+      "item_id": 191773,
+      "envio_id": 1226,
+      "codigo": null,
+      "status": "pendente",
+      "erro_mensagem": null,
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000032620475767",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "14285875861",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1210_CORRECOES\\2025-04\\xml_unsigned\\S1210_2025-04_14285875861_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2707625,
+      "item_id": 191774,
+      "envio_id": 1226,
+      "codigo": null,
+      "status": "pendente",
+      "erro_mensagem": null,
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000032620939522",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "14417604827",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1210_CORRECOES\\2025-04\\xml_unsigned\\S1210_2025-04_14417604827_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2687349,
+      "item_id": 191775,
+      "envio_id": 1226,
+      "codigo": null,
+      "status": "pendente",
+      "erro_mensagem": null,
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000032620791225",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "15146736812",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1210_CORRECOES\\2025-04\\xml_unsigned\\S1210_2025-04_15146736812_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2702181,
+      "item_id": 191776,
+      "envio_id": 1226,
+      "codigo": null,
+      "status": "pendente",
+      "erro_mensagem": null,
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000032620900430",
+      "info_pgtos": 2,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "17251076861",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1210_CORRECOES\\2025-04\\xml_unsigned\\S1210_2025-04_17251076861_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2710549,
+      "item_id": 191777,
+      "envio_id": 1226,
+      "codigo": null,
+      "status": "pendente",
+      "erro_mensagem": null,
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000032620963035",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "30729903877",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1210_CORRECOES\\2025-04\\xml_unsigned\\S1210_2025-04_30729903877_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2711911,
+      "item_id": 191778,
+      "envio_id": 1226,
+      "codigo": null,
+      "status": "pendente",
+      "erro_mensagem": null,
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000032620458699",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "32393572830",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1210_CORRECOES\\2025-04\\xml_unsigned\\S1210_2025-04_32393572830_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2709660,
+      "item_id": 191779,
+      "envio_id": 1226,
+      "codigo": null,
+      "status": "pendente",
+      "erro_mensagem": null,
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000032620443938",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "33163519814",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1210_CORRECOES\\2025-04\\xml_unsigned\\S1210_2025-04_33163519814_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2707461,
+      "item_id": 191780,
+      "envio_id": 1226,
+      "codigo": null,
+      "status": "pendente",
+      "erro_mensagem": null,
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000032620935915",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "37843870806",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1210_CORRECOES\\2025-04\\xml_unsigned\\S1210_2025-04_37843870806_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2714323,
+      "item_id": 191781,
+      "envio_id": 1226,
+      "codigo": null,
+      "status": "pendente",
+      "erro_mensagem": null,
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000032620969904",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    },
+    {
+      "cpf": "42852580802",
+      "has_plano": true,
+      "has_pensao": false,
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1210_CORRECOES\\2025-04\\xml_unsigned\\S1210_2025-04_42852580802_jaque_unsigned.xml",
+      "plan_entries": 1,
+      "pensao_entries": 0,
+      "evento_id": 2676974,
+      "item_id": 191782,
+      "envio_id": 1226,
+      "codigo": null,
+      "status": "pendente",
+      "erro_mensagem": null,
+      "reason": "OK",
+      "nr_recibo": "1.1.0000000032620738050",
+      "info_pgtos": 1,
+      "ir_before": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      },
+      "ir_after": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "penAlim": 0
+      }
+    }
+  ]
+}

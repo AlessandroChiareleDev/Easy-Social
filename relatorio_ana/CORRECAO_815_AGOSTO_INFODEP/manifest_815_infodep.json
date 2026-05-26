@@ -1,0 +1,59 @@
+{
+  "empresa_id": 2,
+  "per_apur": "2025-08",
+  "generated_at": "2026-05-19T15:56:43",
+  "total": 1,
+  "targets": [
+    {
+      "cpf": "81529368553",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_815_AGOSTO_INFODEP\\xml_unsigned\\S1210_2025-08_81529368553_infodep_unsigned.xml",
+      "evento_id": 222338,
+      "nr_recibo": "1.1.0000000034695370156",
+      "id_evento": "ID1094455020000002026051918564300001",
+      "source_xml": "C:\\Users\\xandao\\Downloads\\solucoes\\ARQUIVOS 1210\\ARQUIVOS 1210\\SETEMBRO\\ID1094455020000002025091819113100010.S-1210.xml",
+      "source_id": "ID1094455020000002025091819113100010",
+      "latest_item_id": 14836,
+      "latest_envio_id": 149,
+      "correcao": "inserir infoDep para dependentes usados em dedDepen 401/1861",
+      "dependentes": [
+        {
+          "cpfDep": "09274813597",
+          "dtNascto": "2003-08-08",
+          "nome": "GABRIEL CERQUEIRA E SILVA RODRIGUES",
+          "depIRRF": "S",
+          "tpDep": "03"
+        },
+        {
+          "cpfDep": "09274837500",
+          "dtNascto": "2006-04-28",
+          "nome": "CAUA CERQUEIRA E SILVA RODRIGUES",
+          "depIRRF": "S",
+          "tpDep": "03"
+        }
+      ],
+      "validation": {
+        "source_id": "ID1094455020000002025091819113100010",
+        "new_id": "ID1094455020000002026051918564300001",
+        "indRetif": "2",
+        "nrRecibo": "1.1.0000000034695370156",
+        "infoDep_inserted": 2,
+        "infoDep": [
+          "09274813597",
+          "09274837500"
+        ],
+        "dedDepen": [
+          {
+            "tpRend": "11",
+            "cpfDep": "09274837500",
+            "vlrDedDep": "189.59"
+          },
+          {
+            "tpRend": "11",
+            "cpfDep": "09274813597",
+            "vlrDedDep": "189.59"
+          }
+        ]
+      }
+    }
+  ]
+}

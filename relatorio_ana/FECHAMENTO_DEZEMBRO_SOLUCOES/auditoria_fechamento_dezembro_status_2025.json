@@ -1,0 +1,146 @@
+{
+  "empresa_id_externo": 2,
+  "empresa_id_interno": 1,
+  "months": [
+    {
+      "per_apur": "2025-01",
+      "fechado": null
+    },
+    {
+      "per_apur": "2025-02",
+      "empresa_id": 1,
+      "fechado": true,
+      "protocolo": "1.1.202605.0000000013186641532",
+      "nr_recibo": "1.1.0000000040920505692",
+      "origem": "s1299_envio",
+      "confirmado_em": "2026-05-20 18:13:56.508702+00:00"
+    },
+    {
+      "per_apur": "2025-03",
+      "empresa_id": 1,
+      "fechado": true,
+      "protocolo": "1.1.202605.0000000013186696633",
+      "nr_recibo": "1.1.0000000040920741237",
+      "origem": "s1299_envio",
+      "confirmado_em": "2026-05-20 17:54:42.915646+00:00"
+    },
+    {
+      "per_apur": "2025-04",
+      "empresa_id": 1,
+      "fechado": true,
+      "protocolo": "1.1.202605.0000000013187399208",
+      "nr_recibo": "1.1.0000000040924242847",
+      "origem": "s1299_envio",
+      "confirmado_em": "2026-05-20 19:21:13.159730+00:00"
+    },
+    {
+      "per_apur": "2025-05",
+      "empresa_id": 1,
+      "fechado": true,
+      "protocolo": "1.1.202605.0000000013186725851",
+      "nr_recibo": "1.1.0000000040920895245",
+      "origem": "s1299_envio",
+      "confirmado_em": "2026-05-20 17:57:57.783531+00:00"
+    },
+    {
+      "per_apur": "2025-06",
+      "empresa_id": 1,
+      "fechado": true,
+      "protocolo": "1.1.202605.0000000013186752516",
+      "nr_recibo": "1.1.0000000040921049888",
+      "origem": "s1299_envio",
+      "confirmado_em": "2026-05-20 17:59:23.492771+00:00"
+    },
+    {
+      "per_apur": "2025-07",
+      "empresa_id": 1,
+      "fechado": true,
+      "protocolo": "1.1.202605.0000000013186766277",
+      "nr_recibo": "1.1.0000000040921103182",
+      "origem": "s1299_envio",
+      "confirmado_em": "2026-05-20 18:02:18.628929+00:00"
+    },
+    {
+      "per_apur": "2025-08",
+      "empresa_id": 1,
+      "fechado": true,
+      "protocolo": "1.1.202605.0000000013183106342",
+      "nr_recibo": "1.1.0000000040904436372",
+      "origem": "s1299_envio",
+      "confirmado_em": "2026-05-19 21:06:55.812156+00:00"
+    },
+    {
+      "per_apur": "2025-09",
+      "empresa_id": 1,
+      "fechado": true,
+      "protocolo": "1.1.202605.0000000013186790496",
+      "nr_recibo": "1.1.0000000040921211777",
+      "origem": "s1299_envio",
+      "confirmado_em": "2026-05-20 18:04:58.132997+00:00"
+    },
+    {
+      "per_apur": "2025-10",
+      "empresa_id": 1,
+      "fechado": true,
+      "protocolo": "1.1.202605.0000000013186812229",
+      "nr_recibo": "1.1.0000000040921314346",
+      "origem": "s1299_envio",
+      "confirmado_em": "2026-05-20 18:07:53.325379+00:00"
+    },
+    {
+      "per_apur": "2025-11",
+      "empresa_id": 1,
+      "fechado": true,
+      "protocolo": "1.1.202605.0000000013188275471",
+      "nr_recibo": "1.1.0000000040928822916",
+      "origem": "s1299_envio",
+      "confirmado_em": "2026-05-20 22:09:24.597827+00:00"
+    },
+    {
+      "per_apur": "2025-12",
+      "empresa_id": 1,
+      "fechado": true,
+      "protocolo": "1.1.202605.0000000013188387831",
+      "nr_recibo": "1.1.0000000040929555762",
+      "origem": "s1299_envio",
+      "confirmado_em": "2026-05-20 23:15:42.527741+00:00"
+    }
+  ],
+  "closed_except_january": true,
+  "not_closed_non_january": [],
+  "dec_s1299_latest": [
+    {
+      "id": 3483541,
+      "tipo_evento": "S-1299",
+      "id_evento": "ID1094455020000002026052023130400001",
+      "nr_recibo": "1.1.0000000040929555762",
+      "cd_resposta": "201",
+      "dt_processamento": "2026-05-20 23:15:42.527741+00:00",
+      "arquivo_origem": "s1299_fechamento_2025-12_solucoes.xml",
+      "protocolo_json": "1.1.202605.0000000013188387831",
+      "origem_json": "envio_s1299_2025-12_solucoes"
+    },
+    {
+      "id": 3429269,
+      "tipo_evento": "S-1299",
+      "id_evento": "ID1094455020000002026011918295700001",
+      "nr_recibo": "1.1.0000000037287136859",
+      "cd_resposta": "201",
+      "dt_processamento": "2026-01-19 18:29:59.343000+00:00",
+      "arquivo_origem": "ID1094455020000002026011918295700001.S-1299.xml",
+      "protocolo_json": null,
+      "origem_json": null
+    },
+    {
+      "id": 3457875,
+      "tipo_evento": "S-1299",
+      "id_evento": "ID1094455020000002026011913280500001",
+      "nr_recibo": "1.1.0000000037278896886",
+      "cd_resposta": "201",
+      "dt_processamento": "2026-01-19 13:28:07.687000+00:00",
+      "arquivo_origem": "ID1094455020000002026011913280500001.S-1299.xml",
+      "protocolo_json": null,
+      "origem_json": null
+    }
+  ]
+}

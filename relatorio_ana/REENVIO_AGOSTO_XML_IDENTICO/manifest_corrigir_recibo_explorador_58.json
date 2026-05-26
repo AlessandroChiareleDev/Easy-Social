@@ -1,0 +1,1053 @@
+{
+  "empresa_id": 2,
+  "per_apur": "2025-08",
+  "generated_at": "2026-05-19T16:51:30",
+  "total": 58,
+  "regra": "corrigir erro 157/459 usando recibo da versao_anterior_id ativa do explorador",
+  "targets": [
+    {
+      "cpf": "00001931946",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00001931946_fix459_unsigned.xml",
+      "evento_id": 247842,
+      "nr_recibo": "1.1.0000000034695453274",
+      "id_evento": "ID1094455020000002026051919512900001",
+      "validation": {
+        "cpf": "00001931946",
+        "source_error_item_id": 157312,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397019,
+        "old_id": "ID1094455020000002026051919454000001",
+        "new_id": "ID1094455020000002026051919512900001",
+        "wrong_receipt": "1.1.0000000040822635493",
+        "chosen_receipt": "1.1.0000000034695453274",
+        "chosen_source": "explorador_eventos:247842"
+      }
+    },
+    {
+      "cpf": "00004179129",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00004179129_fix459_unsigned.xml",
+      "evento_id": 214748,
+      "nr_recibo": "1.1.0000000034695359470",
+      "id_evento": "ID1094455020000002026051919512900002",
+      "validation": {
+        "cpf": "00004179129",
+        "source_error_item_id": 157313,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397020,
+        "old_id": "ID1094455020000002026051919454000002",
+        "new_id": "ID1094455020000002026051919512900002",
+        "wrong_receipt": "1.1.0000000040847675255",
+        "chosen_receipt": "1.1.0000000034695359470",
+        "chosen_source": "explorador_eventos:214748"
+      }
+    },
+    {
+      "cpf": "00005083575",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00005083575_fix459_unsigned.xml",
+      "evento_id": 225916,
+      "nr_recibo": "1.1.0000000034695375738",
+      "id_evento": "ID1094455020000002026051919512900003",
+      "validation": {
+        "cpf": "00005083575",
+        "source_error_item_id": 157314,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397021,
+        "old_id": "ID1094455020000002026051919454000003",
+        "new_id": "ID1094455020000002026051919512900003",
+        "wrong_receipt": "1.1.0000000040847675332",
+        "chosen_receipt": "1.1.0000000034695375738",
+        "chosen_source": "explorador_eventos:225916"
+      }
+    },
+    {
+      "cpf": "00007197225",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00007197225_fix459_unsigned.xml",
+      "evento_id": 230372,
+      "nr_recibo": "1.1.0000000034695391980",
+      "id_evento": "ID1094455020000002026051919512900004",
+      "validation": {
+        "cpf": "00007197225",
+        "source_error_item_id": 157315,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397022,
+        "old_id": "ID1094455020000002026051919454000004",
+        "new_id": "ID1094455020000002026051919512900004",
+        "wrong_receipt": "1.1.0000000040847675381",
+        "chosen_receipt": "1.1.0000000034695391980",
+        "chosen_source": "explorador_eventos:230372"
+      }
+    },
+    {
+      "cpf": "00010526757",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00010526757_fix459_unsigned.xml",
+      "evento_id": 210436,
+      "nr_recibo": "1.1.0000000034695352486",
+      "id_evento": "ID1094455020000002026051919512900005",
+      "validation": {
+        "cpf": "00010526757",
+        "source_error_item_id": 157316,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397023,
+        "old_id": "ID1094455020000002026051919454000005",
+        "new_id": "ID1094455020000002026051919512900005",
+        "wrong_receipt": "1.1.0000000040847675504",
+        "chosen_receipt": "1.1.0000000034695352486",
+        "chosen_source": "explorador_eventos:210436"
+      }
+    },
+    {
+      "cpf": "00011072598",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00011072598_fix459_unsigned.xml",
+      "evento_id": 230332,
+      "nr_recibo": "1.1.0000000034695391826",
+      "id_evento": "ID1094455020000002026051919512900006",
+      "validation": {
+        "cpf": "00011072598",
+        "source_error_item_id": 157317,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397024,
+        "old_id": "ID1094455020000002026051919454000006",
+        "new_id": "ID1094455020000002026051919512900006",
+        "wrong_receipt": "1.1.0000000040847675584",
+        "chosen_receipt": "1.1.0000000034695391826",
+        "chosen_source": "explorador_eventos:230332"
+      }
+    },
+    {
+      "cpf": "00237457709",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00237457709_fix459_unsigned.xml",
+      "evento_id": 228885,
+      "nr_recibo": "1.1.0000000034695386396",
+      "id_evento": "ID1094455020000002026051919512900007",
+      "validation": {
+        "cpf": "00237457709",
+        "source_error_item_id": 157318,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397025,
+        "old_id": "ID1094455020000002026051919454000007",
+        "new_id": "ID1094455020000002026051919512900007",
+        "wrong_receipt": "1.1.0000000040847685847",
+        "chosen_receipt": "1.1.0000000034695386396",
+        "chosen_source": "explorador_eventos:228885"
+      }
+    },
+    {
+      "cpf": "00290546729",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00290546729_fix459_unsigned.xml",
+      "evento_id": 231724,
+      "nr_recibo": "1.1.0000000034695397351",
+      "id_evento": "ID1094455020000002026051919512900008",
+      "validation": {
+        "cpf": "00290546729",
+        "source_error_item_id": 157319,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397026,
+        "old_id": "ID1094455020000002026051919454000008",
+        "new_id": "ID1094455020000002026051919512900008",
+        "wrong_receipt": "1.1.0000000040847687292",
+        "chosen_receipt": "1.1.0000000034695397351",
+        "chosen_source": "explorador_eventos:231724"
+      }
+    },
+    {
+      "cpf": "00297302795",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00297302795_fix459_unsigned.xml",
+      "evento_id": 208454,
+      "nr_recibo": "1.1.0000000034695343620",
+      "id_evento": "ID1094455020000002026051919512900009",
+      "validation": {
+        "cpf": "00297302795",
+        "source_error_item_id": 157320,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397027,
+        "old_id": "ID1094455020000002026051919454000009",
+        "new_id": "ID1094455020000002026051919512900009",
+        "wrong_receipt": "1.1.0000000040847687769",
+        "chosen_receipt": "1.1.0000000034695343620",
+        "chosen_source": "explorador_eventos:208454"
+      }
+    },
+    {
+      "cpf": "00299556700",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00299556700_fix459_unsigned.xml",
+      "evento_id": 246998,
+      "nr_recibo": "1.1.0000000034695449382",
+      "id_evento": "ID1094455020000002026051919512900010",
+      "validation": {
+        "cpf": "00299556700",
+        "source_error_item_id": 157321,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397028,
+        "old_id": "ID1094455020000002026051919454000010",
+        "new_id": "ID1094455020000002026051919512900010",
+        "wrong_receipt": "1.1.0000000040834025095",
+        "chosen_receipt": "1.1.0000000034695449382",
+        "chosen_source": "explorador_eventos:246998"
+      }
+    },
+    {
+      "cpf": "00341063592",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00341063592_fix459_unsigned.xml",
+      "evento_id": 246752,
+      "nr_recibo": "1.1.0000000034695448461",
+      "id_evento": "ID1094455020000002026051919512900011",
+      "validation": {
+        "cpf": "00341063592",
+        "source_error_item_id": 157322,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397029,
+        "old_id": "ID1094455020000002026051919454000011",
+        "new_id": "ID1094455020000002026051919512900011",
+        "wrong_receipt": "1.1.0000000040845873524",
+        "chosen_receipt": "1.1.0000000034695448461",
+        "chosen_source": "explorador_eventos:246752"
+      }
+    },
+    {
+      "cpf": "00350288151",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00350288151_fix459_unsigned.xml",
+      "evento_id": 228845,
+      "nr_recibo": "1.1.0000000034695386263",
+      "id_evento": "ID1094455020000002026051919512900012",
+      "validation": {
+        "cpf": "00350288151",
+        "source_error_item_id": 157323,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397030,
+        "old_id": "ID1094455020000002026051919454000012",
+        "new_id": "ID1094455020000002026051919512900012",
+        "wrong_receipt": "1.1.0000000040847724151",
+        "chosen_receipt": "1.1.0000000034695386263",
+        "chosen_source": "explorador_eventos:228845"
+      }
+    },
+    {
+      "cpf": "00371133564",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00371133564_fix459_unsigned.xml",
+      "evento_id": 209414,
+      "nr_recibo": "1.1.0000000034695348107",
+      "id_evento": "ID1094455020000002026051919512900013",
+      "validation": {
+        "cpf": "00371133564",
+        "source_error_item_id": 157324,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397031,
+        "old_id": "ID1094455020000002026051919454000013",
+        "new_id": "ID1094455020000002026051919512900013",
+        "wrong_receipt": "1.1.0000000040847724903",
+        "chosen_receipt": "1.1.0000000034695348107",
+        "chosen_source": "explorador_eventos:209414"
+      }
+    },
+    {
+      "cpf": "00391021141",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00391021141_fix459_unsigned.xml",
+      "evento_id": 226262,
+      "nr_recibo": "1.1.0000000034695377347",
+      "id_evento": "ID1094455020000002026051919512900014",
+      "validation": {
+        "cpf": "00391021141",
+        "source_error_item_id": 157325,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397032,
+        "old_id": "ID1094455020000002026051919454000014",
+        "new_id": "ID1094455020000002026051919512900014",
+        "wrong_receipt": "1.1.0000000040847725311",
+        "chosen_receipt": "1.1.0000000034695377347",
+        "chosen_source": "explorador_eventos:226262"
+      }
+    },
+    {
+      "cpf": "00403524989",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00403524989_fix459_unsigned.xml",
+      "evento_id": 229340,
+      "nr_recibo": "1.1.0000000034695388146",
+      "id_evento": "ID1094455020000002026051919512900015",
+      "validation": {
+        "cpf": "00403524989",
+        "source_error_item_id": 157326,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397033,
+        "old_id": "ID1094455020000002026051919454000015",
+        "new_id": "ID1094455020000002026051919512900015",
+        "wrong_receipt": "1.1.0000000040847726018",
+        "chosen_receipt": "1.1.0000000034695388146",
+        "chosen_source": "explorador_eventos:229340"
+      }
+    },
+    {
+      "cpf": "00428392547",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00428392547_fix459_unsigned.xml",
+      "evento_id": 219469,
+      "nr_recibo": "1.1.0000000034695367236",
+      "id_evento": "ID1094455020000002026051919512900016",
+      "validation": {
+        "cpf": "00428392547",
+        "source_error_item_id": 157327,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397034,
+        "old_id": "ID1094455020000002026051919454000016",
+        "new_id": "ID1094455020000002026051919512900016",
+        "wrong_receipt": "1.1.0000000040847727038",
+        "chosen_receipt": "1.1.0000000034695367236",
+        "chosen_source": "explorador_eventos:219469"
+      }
+    },
+    {
+      "cpf": "00433131918",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00433131918_fix459_unsigned.xml",
+      "evento_id": 228415,
+      "nr_recibo": "1.1.0000000034695384535",
+      "id_evento": "ID1094455020000002026051919512900017",
+      "validation": {
+        "cpf": "00433131918",
+        "source_error_item_id": 157328,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397035,
+        "old_id": "ID1094455020000002026051919454000017",
+        "new_id": "ID1094455020000002026051919512900017",
+        "wrong_receipt": "1.1.0000000040847727280",
+        "chosen_receipt": "1.1.0000000034695384535",
+        "chosen_source": "explorador_eventos:228415"
+      }
+    },
+    {
+      "cpf": "00437592979",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00437592979_fix459_unsigned.xml",
+      "evento_id": 244732,
+      "nr_recibo": "1.1.0000000034695441219",
+      "id_evento": "ID1094455020000002026051919512900018",
+      "validation": {
+        "cpf": "00437592979",
+        "source_error_item_id": 157329,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397036,
+        "old_id": "ID1094455020000002026051919454000018",
+        "new_id": "ID1094455020000002026051919512900018",
+        "wrong_receipt": "1.1.0000000040847727497",
+        "chosen_receipt": "1.1.0000000034695441219",
+        "chosen_source": "explorador_eventos:244732"
+      }
+    },
+    {
+      "cpf": "00438201230",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00438201230_fix459_unsigned.xml",
+      "evento_id": 209666,
+      "nr_recibo": "1.1.0000000034695349682",
+      "id_evento": "ID1094455020000002026051919512900019",
+      "validation": {
+        "cpf": "00438201230",
+        "source_error_item_id": 157330,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397037,
+        "old_id": "ID1094455020000002026051919454000019",
+        "new_id": "ID1094455020000002026051919512900019",
+        "wrong_receipt": "1.1.0000000040847727617",
+        "chosen_receipt": "1.1.0000000034695349682",
+        "chosen_source": "explorador_eventos:209666"
+      }
+    },
+    {
+      "cpf": "00438789547",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00438789547_fix459_unsigned.xml",
+      "evento_id": 228919,
+      "nr_recibo": "1.1.0000000034695386529",
+      "id_evento": "ID1094455020000002026051919512900020",
+      "validation": {
+        "cpf": "00438789547",
+        "source_error_item_id": 157331,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397038,
+        "old_id": "ID1094455020000002026051919454000020",
+        "new_id": "ID1094455020000002026051919512900020",
+        "wrong_receipt": "1.1.0000000040847727700",
+        "chosen_receipt": "1.1.0000000034695386529",
+        "chosen_source": "explorador_eventos:228919"
+      }
+    },
+    {
+      "cpf": "00439368731",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00439368731_fix459_unsigned.xml",
+      "evento_id": 206612,
+      "nr_recibo": "1.1.0000000034695340116",
+      "id_evento": "ID1094455020000002026051919512900021",
+      "validation": {
+        "cpf": "00439368731",
+        "source_error_item_id": 157332,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397039,
+        "old_id": "ID1094455020000002026051919454000021",
+        "new_id": "ID1094455020000002026051919512900021",
+        "wrong_receipt": "1.1.0000000040847727848",
+        "chosen_receipt": "1.1.0000000034695340116",
+        "chosen_source": "explorador_eventos:206612"
+      }
+    },
+    {
+      "cpf": "00442181760",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00442181760_fix459_unsigned.xml",
+      "evento_id": 213300,
+      "nr_recibo": "1.1.0000000034695354907",
+      "id_evento": "ID1094455020000002026051919512900022",
+      "validation": {
+        "cpf": "00442181760",
+        "source_error_item_id": 157333,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397040,
+        "old_id": "ID1094455020000002026051919454000022",
+        "new_id": "ID1094455020000002026051919512900022",
+        "wrong_receipt": "1.1.0000000040847727954",
+        "chosen_receipt": "1.1.0000000034695354907",
+        "chosen_source": "explorador_eventos:213300"
+      }
+    },
+    {
+      "cpf": "00442241763",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00442241763_fix459_unsigned.xml",
+      "evento_id": 238408,
+      "nr_recibo": "1.1.0000000034695416200",
+      "id_evento": "ID1094455020000002026051919512900023",
+      "validation": {
+        "cpf": "00442241763",
+        "source_error_item_id": 157334,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397041,
+        "old_id": "ID1094455020000002026051919454000023",
+        "new_id": "ID1094455020000002026051919512900023",
+        "wrong_receipt": "1.1.0000000040847728052",
+        "chosen_receipt": "1.1.0000000034695416200",
+        "chosen_source": "explorador_eventos:238408"
+      }
+    },
+    {
+      "cpf": "00444023500",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00444023500_fix459_unsigned.xml",
+      "evento_id": 245748,
+      "nr_recibo": "1.1.0000000034695444628",
+      "id_evento": "ID1094455020000002026051919512900024",
+      "validation": {
+        "cpf": "00444023500",
+        "source_error_item_id": 157335,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397042,
+        "old_id": "ID1094455020000002026051919454000024",
+        "new_id": "ID1094455020000002026051919512900024",
+        "wrong_receipt": "1.1.0000000040845884036",
+        "chosen_receipt": "1.1.0000000034695444628",
+        "chosen_source": "explorador_eventos:245748"
+      }
+    },
+    {
+      "cpf": "00444362541",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00444362541_fix459_unsigned.xml",
+      "evento_id": 238528,
+      "nr_recibo": "1.1.0000000034695416644",
+      "id_evento": "ID1094455020000002026051919512900025",
+      "validation": {
+        "cpf": "00444362541",
+        "source_error_item_id": 157336,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397043,
+        "old_id": "ID1094455020000002026051919454000025",
+        "new_id": "ID1094455020000002026051919512900025",
+        "wrong_receipt": "1.1.0000000040847728172",
+        "chosen_receipt": "1.1.0000000034695416644",
+        "chosen_source": "explorador_eventos:238528"
+      }
+    },
+    {
+      "cpf": "00453172164",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00453172164_fix459_unsigned.xml",
+      "evento_id": 219253,
+      "nr_recibo": "1.1.0000000034695366551",
+      "id_evento": "ID1094455020000002026051919512900026",
+      "validation": {
+        "cpf": "00453172164",
+        "source_error_item_id": 157337,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397044,
+        "old_id": "ID1094455020000002026051919454000026",
+        "new_id": "ID1094455020000002026051919512900026",
+        "wrong_receipt": "1.1.0000000040847728380",
+        "chosen_receipt": "1.1.0000000034695366551",
+        "chosen_source": "explorador_eventos:219253"
+      }
+    },
+    {
+      "cpf": "00454378580",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00454378580_fix459_unsigned.xml",
+      "evento_id": 246376,
+      "nr_recibo": "1.1.0000000034695446783",
+      "id_evento": "ID1094455020000002026051919512900027",
+      "validation": {
+        "cpf": "00454378580",
+        "source_error_item_id": 157338,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397045,
+        "old_id": "ID1094455020000002026051919454000027",
+        "new_id": "ID1094455020000002026051919512900027",
+        "wrong_receipt": "1.1.0000000040845884865",
+        "chosen_receipt": "1.1.0000000034695446783",
+        "chosen_source": "explorador_eventos:246376"
+      }
+    },
+    {
+      "cpf": "00455249555",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00455249555_fix459_unsigned.xml",
+      "evento_id": 229022,
+      "nr_recibo": "1.1.0000000034695386894",
+      "id_evento": "ID1094455020000002026051919512900028",
+      "validation": {
+        "cpf": "00455249555",
+        "source_error_item_id": 157339,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397046,
+        "old_id": "ID1094455020000002026051919454000028",
+        "new_id": "ID1094455020000002026051919512900028",
+        "wrong_receipt": "1.1.0000000040847728499",
+        "chosen_receipt": "1.1.0000000034695386894",
+        "chosen_source": "explorador_eventos:229022"
+      }
+    },
+    {
+      "cpf": "00457118016",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00457118016_fix459_unsigned.xml",
+      "evento_id": 240528,
+      "nr_recibo": "1.1.0000000034695426565",
+      "id_evento": "ID1094455020000002026051919512900029",
+      "validation": {
+        "cpf": "00457118016",
+        "source_error_item_id": 157340,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397047,
+        "old_id": "ID1094455020000002026051919454000029",
+        "new_id": "ID1094455020000002026051919512900029",
+        "wrong_receipt": "1.1.0000000040847728620",
+        "chosen_receipt": "1.1.0000000034695426565",
+        "chosen_source": "explorador_eventos:240528"
+      }
+    },
+    {
+      "cpf": "00458928909",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00458928909_fix459_unsigned.xml",
+      "evento_id": 228757,
+      "nr_recibo": "1.1.0000000034695385937",
+      "id_evento": "ID1094455020000002026051919512900030",
+      "validation": {
+        "cpf": "00458928909",
+        "source_error_item_id": 157341,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397048,
+        "old_id": "ID1094455020000002026051919454000030",
+        "new_id": "ID1094455020000002026051919512900030",
+        "wrong_receipt": "1.1.0000000040847728773",
+        "chosen_receipt": "1.1.0000000034695385937",
+        "chosen_source": "explorador_eventos:228757"
+      }
+    },
+    {
+      "cpf": "00480580170",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00480580170_fix459_unsigned.xml",
+      "evento_id": 231768,
+      "nr_recibo": "1.1.0000000034695397542",
+      "id_evento": "ID1094455020000002026051919512900031",
+      "validation": {
+        "cpf": "00480580170",
+        "source_error_item_id": 157342,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397049,
+        "old_id": "ID1094455020000002026051919454000031",
+        "new_id": "ID1094455020000002026051919512900031",
+        "wrong_receipt": "1.1.0000000040847729347",
+        "chosen_receipt": "1.1.0000000034695397542",
+        "chosen_source": "explorador_eventos:231768"
+      }
+    },
+    {
+      "cpf": "00481915150",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00481915150_fix459_unsigned.xml",
+      "evento_id": 250157,
+      "nr_recibo": "1.1.0000000034695463561",
+      "id_evento": "ID1094455020000002026051919512900032",
+      "validation": {
+        "cpf": "00481915150",
+        "source_error_item_id": 157343,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397050,
+        "old_id": "ID1094455020000002026051919454100001",
+        "new_id": "ID1094455020000002026051919512900032",
+        "wrong_receipt": "1.1.0000000040765880634",
+        "chosen_receipt": "1.1.0000000034695463561",
+        "chosen_source": "explorador_eventos:250157"
+      }
+    },
+    {
+      "cpf": "00484906950",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00484906950_fix459_unsigned.xml",
+      "evento_id": 226385,
+      "nr_recibo": "1.1.0000000034695377757",
+      "id_evento": "ID1094455020000002026051919512900033",
+      "validation": {
+        "cpf": "00484906950",
+        "source_error_item_id": 157344,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397051,
+        "old_id": "ID1094455020000002026051919454100002",
+        "new_id": "ID1094455020000002026051919512900033",
+        "wrong_receipt": "1.1.0000000040847729477",
+        "chosen_receipt": "1.1.0000000034695377757",
+        "chosen_source": "explorador_eventos:226385"
+      }
+    },
+    {
+      "cpf": "00486262103",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00486262103_fix459_unsigned.xml",
+      "evento_id": 226016,
+      "nr_recibo": "1.1.0000000034695376270",
+      "id_evento": "ID1094455020000002026051919512900034",
+      "validation": {
+        "cpf": "00486262103",
+        "source_error_item_id": 157345,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397052,
+        "old_id": "ID1094455020000002026051919454100003",
+        "new_id": "ID1094455020000002026051919512900034",
+        "wrong_receipt": "1.1.0000000040847729610",
+        "chosen_receipt": "1.1.0000000034695376270",
+        "chosen_source": "explorador_eventos:226016"
+      }
+    },
+    {
+      "cpf": "00486729206",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00486729206_fix459_unsigned.xml",
+      "evento_id": 226383,
+      "nr_recibo": "1.1.0000000034695377753",
+      "id_evento": "ID1094455020000002026051919512900035",
+      "validation": {
+        "cpf": "00486729206",
+        "source_error_item_id": 157346,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397053,
+        "old_id": "ID1094455020000002026051919454100004",
+        "new_id": "ID1094455020000002026051919512900035",
+        "wrong_receipt": "1.1.0000000040847729716",
+        "chosen_receipt": "1.1.0000000034695377753",
+        "chosen_source": "explorador_eventos:226383"
+      }
+    },
+    {
+      "cpf": "00490974155",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00490974155_fix459_unsigned.xml",
+      "evento_id": 234814,
+      "nr_recibo": "1.1.0000000034695404347",
+      "id_evento": "ID1094455020000002026051919512900036",
+      "validation": {
+        "cpf": "00490974155",
+        "source_error_item_id": 157347,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397054,
+        "old_id": "ID1094455020000002026051919454100005",
+        "new_id": "ID1094455020000002026051919512900036",
+        "wrong_receipt": "1.1.0000000040847723873",
+        "chosen_receipt": "1.1.0000000034695404347",
+        "chosen_source": "explorador_eventos:234814"
+      }
+    },
+    {
+      "cpf": "00492090513",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00492090513_fix459_unsigned.xml",
+      "evento_id": 210212,
+      "nr_recibo": "1.1.0000000034695351645",
+      "id_evento": "ID1094455020000002026051919512900037",
+      "validation": {
+        "cpf": "00492090513",
+        "source_error_item_id": 157348,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397055,
+        "old_id": "ID1094455020000002026051919454100006",
+        "new_id": "ID1094455020000002026051919512900037",
+        "wrong_receipt": "1.1.0000000040847723990",
+        "chosen_receipt": "1.1.0000000034695351645",
+        "chosen_source": "explorador_eventos:210212"
+      }
+    },
+    {
+      "cpf": "00493933328",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00493933328_fix459_unsigned.xml",
+      "evento_id": 218679,
+      "nr_recibo": "1.1.0000000034695364348",
+      "id_evento": "ID1094455020000002026051919512900038",
+      "validation": {
+        "cpf": "00493933328",
+        "source_error_item_id": 157349,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397056,
+        "old_id": "ID1094455020000002026051919454100007",
+        "new_id": "ID1094455020000002026051919512900038",
+        "wrong_receipt": "1.1.0000000040847724064",
+        "chosen_receipt": "1.1.0000000034695364348",
+        "chosen_source": "explorador_eventos:218679"
+      }
+    },
+    {
+      "cpf": "00494935316",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00494935316_fix459_unsigned.xml",
+      "evento_id": 214462,
+      "nr_recibo": "1.1.0000000034695358544",
+      "id_evento": "ID1094455020000002026051919512900039",
+      "validation": {
+        "cpf": "00494935316",
+        "source_error_item_id": 157350,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397057,
+        "old_id": "ID1094455020000002026051919454100008",
+        "new_id": "ID1094455020000002026051919512900039",
+        "wrong_receipt": "1.1.0000000040847724331",
+        "chosen_receipt": "1.1.0000000034695358544",
+        "chosen_source": "explorador_eventos:214462"
+      }
+    },
+    {
+      "cpf": "00495870137",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00495870137_fix459_unsigned.xml",
+      "evento_id": 214496,
+      "nr_recibo": "1.1.0000000034695358641",
+      "id_evento": "ID1094455020000002026051919512900040",
+      "validation": {
+        "cpf": "00495870137",
+        "source_error_item_id": 157351,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397058,
+        "old_id": "ID1094455020000002026051919454100009",
+        "new_id": "ID1094455020000002026051919512900040",
+        "wrong_receipt": "1.1.0000000040847724415",
+        "chosen_receipt": "1.1.0000000034695358641",
+        "chosen_source": "explorador_eventos:214496"
+      }
+    },
+    {
+      "cpf": "00497808595",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00497808595_fix459_unsigned.xml",
+      "evento_id": 223860,
+      "nr_recibo": "1.1.0000000034695372158",
+      "id_evento": "ID1094455020000002026051919512900041",
+      "validation": {
+        "cpf": "00497808595",
+        "source_error_item_id": 157352,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397059,
+        "old_id": "ID1094455020000002026051919454100010",
+        "new_id": "ID1094455020000002026051919512900041",
+        "wrong_receipt": "1.1.0000000040847724637",
+        "chosen_receipt": "1.1.0000000034695372158",
+        "chosen_source": "explorador_eventos:223860"
+      }
+    },
+    {
+      "cpf": "00500774579",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00500774579_fix459_unsigned.xml",
+      "evento_id": 250153,
+      "nr_recibo": "1.1.0000000034695463556",
+      "id_evento": "ID1094455020000002026051919513000001",
+      "validation": {
+        "cpf": "00500774579",
+        "source_error_item_id": 157353,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397060,
+        "old_id": "ID1094455020000002026051919454100011",
+        "new_id": "ID1094455020000002026051919513000001",
+        "wrong_receipt": "1.1.0000000040783728351",
+        "chosen_receipt": "1.1.0000000034695463556",
+        "chosen_source": "explorador_eventos:250153"
+      }
+    },
+    {
+      "cpf": "00500997527",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00500997527_fix459_unsigned.xml",
+      "evento_id": 224058,
+      "nr_recibo": "1.1.0000000034695372806",
+      "id_evento": "ID1094455020000002026051919513000002",
+      "validation": {
+        "cpf": "00500997527",
+        "source_error_item_id": 157354,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397061,
+        "old_id": "ID1094455020000002026051919454100012",
+        "new_id": "ID1094455020000002026051919513000002",
+        "wrong_receipt": "1.1.0000000040847724748",
+        "chosen_receipt": "1.1.0000000034695372806",
+        "chosen_source": "explorador_eventos:224058"
+      }
+    },
+    {
+      "cpf": "00505195143",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00505195143_fix459_unsigned.xml",
+      "evento_id": 247246,
+      "nr_recibo": "1.1.0000000034695450671",
+      "id_evento": "ID1094455020000002026051919513000003",
+      "validation": {
+        "cpf": "00505195143",
+        "source_error_item_id": 157355,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397062,
+        "old_id": "ID1094455020000002026051919454100013",
+        "new_id": "ID1094455020000002026051919513000003",
+        "wrong_receipt": "1.1.0000000040834134192",
+        "chosen_receipt": "1.1.0000000034695450671",
+        "chosen_source": "explorador_eventos:247246"
+      }
+    },
+    {
+      "cpf": "00511224990",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00511224990_fix459_unsigned.xml",
+      "evento_id": 226341,
+      "nr_recibo": "1.1.0000000034695377603",
+      "id_evento": "ID1094455020000002026051919513000004",
+      "validation": {
+        "cpf": "00511224990",
+        "source_error_item_id": 157356,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397063,
+        "old_id": "ID1094455020000002026051919454100014",
+        "new_id": "ID1094455020000002026051919513000004",
+        "wrong_receipt": "1.1.0000000040847724987",
+        "chosen_receipt": "1.1.0000000034695377603",
+        "chosen_source": "explorador_eventos:226341"
+      }
+    },
+    {
+      "cpf": "00511443790",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00511443790_fix459_unsigned.xml",
+      "evento_id": 218811,
+      "nr_recibo": "1.1.0000000034695364795",
+      "id_evento": "ID1094455020000002026051919513000005",
+      "validation": {
+        "cpf": "00511443790",
+        "source_error_item_id": 157357,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397064,
+        "old_id": "ID1094455020000002026051919454100015",
+        "new_id": "ID1094455020000002026051919513000005",
+        "wrong_receipt": "1.1.0000000040847725207",
+        "chosen_receipt": "1.1.0000000034695364795",
+        "chosen_source": "explorador_eventos:218811"
+      }
+    },
+    {
+      "cpf": "00515611743",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00515611743_fix459_unsigned.xml",
+      "evento_id": 236952,
+      "nr_recibo": "1.1.0000000034695409859",
+      "id_evento": "ID1094455020000002026051919513000006",
+      "validation": {
+        "cpf": "00515611743",
+        "source_error_item_id": 157358,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397065,
+        "old_id": "ID1094455020000002026051919454100016",
+        "new_id": "ID1094455020000002026051919513000006",
+        "wrong_receipt": "1.1.0000000040847725316",
+        "chosen_receipt": "1.1.0000000034695409859",
+        "chosen_source": "explorador_eventos:236952"
+      }
+    },
+    {
+      "cpf": "00515638196",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00515638196_fix459_unsigned.xml",
+      "evento_id": 205976,
+      "nr_recibo": "1.1.0000000034695337414",
+      "id_evento": "ID1094455020000002026051919513000007",
+      "validation": {
+        "cpf": "00515638196",
+        "source_error_item_id": 157359,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397066,
+        "old_id": "ID1094455020000002026051919454100017",
+        "new_id": "ID1094455020000002026051919513000007",
+        "wrong_receipt": "1.1.0000000040847725410",
+        "chosen_receipt": "1.1.0000000034695337414",
+        "chosen_source": "explorador_eventos:205976"
+      }
+    },
+    {
+      "cpf": "00517292700",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00517292700_fix459_unsigned.xml",
+      "evento_id": 210718,
+      "nr_recibo": "1.1.0000000034695353319",
+      "id_evento": "ID1094455020000002026051919513000008",
+      "validation": {
+        "cpf": "00517292700",
+        "source_error_item_id": 157360,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397067,
+        "old_id": "ID1094455020000002026051919454100018",
+        "new_id": "ID1094455020000002026051919513000008",
+        "wrong_receipt": "1.1.0000000040847725508",
+        "chosen_receipt": "1.1.0000000034695353319",
+        "chosen_source": "explorador_eventos:210718"
+      }
+    },
+    {
+      "cpf": "00522731724",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00522731724_fix459_unsigned.xml",
+      "evento_id": 210584,
+      "nr_recibo": "1.1.0000000034695352923",
+      "id_evento": "ID1094455020000002026051919513000009",
+      "validation": {
+        "cpf": "00522731724",
+        "source_error_item_id": 157361,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397068,
+        "old_id": "ID1094455020000002026051919454100019",
+        "new_id": "ID1094455020000002026051919513000009",
+        "wrong_receipt": "1.1.0000000040847725601",
+        "chosen_receipt": "1.1.0000000034695352923",
+        "chosen_source": "explorador_eventos:210584"
+      }
+    },
+    {
+      "cpf": "00524997586",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00524997586_fix459_unsigned.xml",
+      "evento_id": 235772,
+      "nr_recibo": "1.1.0000000034695409233",
+      "id_evento": "ID1094455020000002026051919513000010",
+      "validation": {
+        "cpf": "00524997586",
+        "source_error_item_id": 157362,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397069,
+        "old_id": "ID1094455020000002026051919454100020",
+        "new_id": "ID1094455020000002026051919513000010",
+        "wrong_receipt": "1.1.0000000040847725687",
+        "chosen_receipt": "1.1.0000000034695409233",
+        "chosen_source": "explorador_eventos:235772"
+      }
+    },
+    {
+      "cpf": "00525356142",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00525356142_fix459_unsigned.xml",
+      "evento_id": 218599,
+      "nr_recibo": "1.1.0000000034695364081",
+      "id_evento": "ID1094455020000002026051919513000011",
+      "validation": {
+        "cpf": "00525356142",
+        "source_error_item_id": 157363,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397070,
+        "old_id": "ID1094455020000002026051919454100021",
+        "new_id": "ID1094455020000002026051919513000011",
+        "wrong_receipt": "1.1.0000000040847725794",
+        "chosen_receipt": "1.1.0000000034695364081",
+        "chosen_source": "explorador_eventos:218599"
+      }
+    },
+    {
+      "cpf": "00525756590",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00525756590_fix459_unsigned.xml",
+      "evento_id": 210684,
+      "nr_recibo": "1.1.0000000034695353206",
+      "id_evento": "ID1094455020000002026051919513000012",
+      "validation": {
+        "cpf": "00525756590",
+        "source_error_item_id": 157364,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397071,
+        "old_id": "ID1094455020000002026051919454100022",
+        "new_id": "ID1094455020000002026051919513000012",
+        "wrong_receipt": "1.1.0000000040847725891",
+        "chosen_receipt": "1.1.0000000034695353206",
+        "chosen_source": "explorador_eventos:210684"
+      }
+    },
+    {
+      "cpf": "00526548770",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00526548770_fix459_unsigned.xml",
+      "evento_id": 229674,
+      "nr_recibo": "1.1.0000000034695389704",
+      "id_evento": "ID1094455020000002026051919513000013",
+      "validation": {
+        "cpf": "00526548770",
+        "source_error_item_id": 157365,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397072,
+        "old_id": "ID1094455020000002026051919454100023",
+        "new_id": "ID1094455020000002026051919513000013",
+        "wrong_receipt": "1.1.0000000040847726012",
+        "chosen_receipt": "1.1.0000000034695389704",
+        "chosen_source": "explorador_eventos:229674"
+      }
+    },
+    {
+      "cpf": "00527328782",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00527328782_fix459_unsigned.xml",
+      "evento_id": 210752,
+      "nr_recibo": "1.1.0000000034695353441",
+      "id_evento": "ID1094455020000002026051919513000014",
+      "validation": {
+        "cpf": "00527328782",
+        "source_error_item_id": 157366,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397073,
+        "old_id": "ID1094455020000002026051919454100024",
+        "new_id": "ID1094455020000002026051919513000014",
+        "wrong_receipt": "1.1.0000000040847726113",
+        "chosen_receipt": "1.1.0000000034695353441",
+        "chosen_source": "explorador_eventos:210752"
+      }
+    },
+    {
+      "cpf": "00527956759",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00527956759_fix459_unsigned.xml",
+      "evento_id": 213242,
+      "nr_recibo": "1.1.0000000034695354694",
+      "id_evento": "ID1094455020000002026051919513000015",
+      "validation": {
+        "cpf": "00527956759",
+        "source_error_item_id": 157367,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397074,
+        "old_id": "ID1094455020000002026051919454100025",
+        "new_id": "ID1094455020000002026051919513000015",
+        "wrong_receipt": "1.1.0000000040847726222",
+        "chosen_receipt": "1.1.0000000034695354694",
+        "chosen_source": "explorador_eventos:213242"
+      }
+    },
+    {
+      "cpf": "00529606178",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_00529606178_fix459_unsigned.xml",
+      "evento_id": 231458,
+      "nr_recibo": "1.1.0000000034695396438",
+      "id_evento": "ID1094455020000002026051919513000016",
+      "validation": {
+        "cpf": "00529606178",
+        "source_error_item_id": 157368,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397075,
+        "old_id": "ID1094455020000002026051919454100026",
+        "new_id": "ID1094455020000002026051919513000016",
+        "wrong_receipt": "1.1.0000000040847726335",
+        "chosen_receipt": "1.1.0000000034695396438",
+        "chosen_source": "explorador_eventos:231458"
+      }
+    },
+    {
+      "cpf": "02022764579",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\REENVIO_AGOSTO_XML_IDENTICO\\xml_unsigned_recibo_explorador_fix\\S1210_2025-08_02022764579_fix459_unsigned.xml",
+      "evento_id": 240944,
+      "nr_recibo": "1.1.0000000034695428454",
+      "id_evento": "ID1094455020000002026051919513000017",
+      "validation": {
+        "cpf": "02022764579",
+        "source_error_item_id": 157369,
+        "source_error_envio_id": 928,
+        "source_xml_oid": 2397076,
+        "old_id": "ID1094455020000002026051919454100027",
+        "new_id": "ID1094455020000002026051919513000017",
+        "wrong_receipt": "1.1.0000000040847795781",
+        "chosen_receipt": "1.1.0000000034695428454",
+        "chosen_source": "explorador_eventos:240944"
+      }
+    }
+  ]
+}

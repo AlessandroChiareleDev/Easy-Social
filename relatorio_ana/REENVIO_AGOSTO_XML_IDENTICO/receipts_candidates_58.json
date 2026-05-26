@@ -1,0 +1,872 @@
+[
+  {
+    "cpf": "00001931946",
+    "error_item_id": 157035,
+    "receipt_used_wrong": "1.1.0000000034636459641",
+    "chosen_receipt": "1.1.0000000040822635493",
+    "chosen_source": "timeline_item:79796",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 79796,
+      "nr_recibo_novo": "1.1.0000000040822635493",
+      "criado_em": "2026-05-15T12:06:10.552242",
+      "envio_id": 833
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00004179129",
+    "error_item_id": 157036,
+    "receipt_used_wrong": "1.1.0000000034619811079",
+    "chosen_receipt": "1.1.0000000040847675255",
+    "chosen_source": "timeline_item:137293",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137293,
+      "nr_recibo_novo": "1.1.0000000040847675255",
+      "criado_em": "2026-05-15T23:33:44.533830",
+      "envio_id": 880
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00005083575",
+    "error_item_id": 157037,
+    "receipt_used_wrong": "1.1.0000000034632291632",
+    "chosen_receipt": "1.1.0000000040847675332",
+    "chosen_source": "timeline_item:137294",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137294,
+      "nr_recibo_novo": "1.1.0000000040847675332",
+      "criado_em": "2026-05-15T23:33:44.533830",
+      "envio_id": 880
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00007197225",
+    "error_item_id": 157038,
+    "receipt_used_wrong": "1.1.0000000034632597562",
+    "chosen_receipt": "1.1.0000000040847675381",
+    "chosen_source": "timeline_item:137295",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137295,
+      "nr_recibo_novo": "1.1.0000000040847675381",
+      "criado_em": "2026-05-15T23:33:44.533830",
+      "envio_id": 880
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00010526757",
+    "error_item_id": 157039,
+    "receipt_used_wrong": "1.1.0000000034619686116",
+    "chosen_receipt": "1.1.0000000040847675504",
+    "chosen_source": "timeline_item:137296",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137296,
+      "nr_recibo_novo": "1.1.0000000040847675504",
+      "criado_em": "2026-05-15T23:33:44.533830",
+      "envio_id": 880
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00011072598",
+    "error_item_id": 157040,
+    "receipt_used_wrong": "1.1.0000000034632602710",
+    "chosen_receipt": "1.1.0000000040847675584",
+    "chosen_source": "timeline_item:137297",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137297,
+      "nr_recibo_novo": "1.1.0000000040847675584",
+      "criado_em": "2026-05-15T23:33:44.533830",
+      "envio_id": 880
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00237457709",
+    "error_item_id": 157041,
+    "receipt_used_wrong": "1.1.0000000034632492533",
+    "chosen_receipt": "1.1.0000000040847685847",
+    "chosen_source": "timeline_item:137366",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137366,
+      "nr_recibo_novo": "1.1.0000000040847685847",
+      "criado_em": "2026-05-15T23:34:37.026747",
+      "envio_id": 881
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00290546729",
+    "error_item_id": 157042,
+    "receipt_used_wrong": "1.1.0000000034632670649",
+    "chosen_receipt": "1.1.0000000040847687292",
+    "chosen_source": "timeline_item:137382",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137382,
+      "nr_recibo_novo": "1.1.0000000040847687292",
+      "criado_em": "2026-05-15T23:34:37.026747",
+      "envio_id": 881
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00350288151",
+    "error_item_id": 157046,
+    "receipt_used_wrong": "1.1.0000000034632490195",
+    "chosen_receipt": "1.1.0000000040847724151",
+    "chosen_source": "timeline_item:137404",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137404,
+      "nr_recibo_novo": "1.1.0000000040847724151",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00371133564",
+    "error_item_id": 157047,
+    "receipt_used_wrong": "1.1.0000000034619586048",
+    "chosen_receipt": "1.1.0000000040847724903",
+    "chosen_source": "timeline_item:137410",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137410,
+      "nr_recibo_novo": "1.1.0000000040847724903",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00391021141",
+    "error_item_id": 157048,
+    "receipt_used_wrong": "1.1.0000000034632306377",
+    "chosen_receipt": "1.1.0000000040847725311",
+    "chosen_source": "timeline_item:137414",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137414,
+      "nr_recibo_novo": "1.1.0000000040847725311",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00403524989",
+    "error_item_id": 157051,
+    "receipt_used_wrong": "1.1.0000000034632523878",
+    "chosen_receipt": "1.1.0000000040847726018",
+    "chosen_source": "timeline_item:137420",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137420,
+      "nr_recibo_novo": "1.1.0000000040847726018",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00428392547",
+    "error_item_id": 157052,
+    "receipt_used_wrong": "1.1.0000000034619884240",
+    "chosen_receipt": "1.1.0000000040847727038",
+    "chosen_source": "timeline_item:137429",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137429,
+      "nr_recibo_novo": "1.1.0000000040847727038",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00438789547",
+    "error_item_id": 157056,
+    "receipt_used_wrong": "1.1.0000000034632503035",
+    "chosen_receipt": "1.1.0000000040847727700",
+    "chosen_source": "timeline_item:137435",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137435,
+      "nr_recibo_novo": "1.1.0000000040847727700",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00439368731",
+    "error_item_id": 157057,
+    "receipt_used_wrong": "1.1.0000000034619479938",
+    "chosen_receipt": "1.1.0000000040847727848",
+    "chosen_source": "timeline_item:137436",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137436,
+      "nr_recibo_novo": "1.1.0000000040847727848",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00444362541",
+    "error_item_id": 157061,
+    "receipt_used_wrong": "1.1.0000000034636223559",
+    "chosen_receipt": "1.1.0000000040847728172",
+    "chosen_source": "timeline_item:137439",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137439,
+      "nr_recibo_novo": "1.1.0000000040847728172",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00453172164",
+    "error_item_id": 157062,
+    "receipt_used_wrong": "1.1.0000000034619880480",
+    "chosen_receipt": "1.1.0000000040847728380",
+    "chosen_source": "timeline_item:137441",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137441,
+      "nr_recibo_novo": "1.1.0000000040847728380",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00486262103",
+    "error_item_id": 157070,
+    "receipt_used_wrong": "1.1.0000000034632295098",
+    "chosen_receipt": "1.1.0000000040847729610",
+    "chosen_source": "timeline_item:137450",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137450,
+      "nr_recibo_novo": "1.1.0000000040847729610",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00486729206",
+    "error_item_id": 157071,
+    "receipt_used_wrong": "1.1.0000000034632313214",
+    "chosen_receipt": "1.1.0000000040847729716",
+    "chosen_source": "timeline_item:137451",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137451,
+      "nr_recibo_novo": "1.1.0000000040847729716",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00494935316",
+    "error_item_id": 157075,
+    "receipt_used_wrong": "1.1.0000000034619804625",
+    "chosen_receipt": "1.1.0000000040847724331",
+    "chosen_source": "timeline_item:137457",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137457,
+      "nr_recibo_novo": "1.1.0000000040847724331",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00495870137",
+    "error_item_id": 157076,
+    "receipt_used_wrong": "1.1.0000000034619806421",
+    "chosen_receipt": "1.1.0000000040847724415",
+    "chosen_source": "timeline_item:137458",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137458,
+      "nr_recibo_novo": "1.1.0000000040847724415",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00515638196",
+    "error_item_id": 157084,
+    "receipt_used_wrong": "1.1.0000000034619460374",
+    "chosen_receipt": "1.1.0000000040847725410",
+    "chosen_source": "timeline_item:137467",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137467,
+      "nr_recibo_novo": "1.1.0000000040847725410",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00297302795",
+    "error_item_id": 157043,
+    "receipt_used_wrong": "1.1.0000000034619518454",
+    "chosen_receipt": "1.1.0000000040847687769",
+    "chosen_source": "timeline_item:137387",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137387,
+      "nr_recibo_novo": "1.1.0000000040847687769",
+      "criado_em": "2026-05-15T23:34:37.026747",
+      "envio_id": 881
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00299556700",
+    "error_item_id": 157044,
+    "receipt_used_wrong": "1.1.0000000034636444445",
+    "chosen_receipt": "1.1.0000000040834025095",
+    "chosen_source": "timeline_item:99042",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 99042,
+      "nr_recibo_novo": "1.1.0000000040834025095",
+      "criado_em": "2026-05-15T16:51:06.267380",
+      "envio_id": 852
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00341063592",
+    "error_item_id": 157045,
+    "receipt_used_wrong": "1.1.0000000034636434197",
+    "chosen_receipt": "1.1.0000000040845873524",
+    "chosen_source": "timeline_item:118348",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 118348,
+      "nr_recibo_novo": "1.1.0000000040845873524",
+      "criado_em": "2026-05-15T21:36:43.394570",
+      "envio_id": 868
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00433131918",
+    "error_item_id": 157053,
+    "receipt_used_wrong": "1.1.0000000034632465880",
+    "chosen_receipt": "1.1.0000000040847727280",
+    "chosen_source": "timeline_item:137431",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137431,
+      "nr_recibo_novo": "1.1.0000000040847727280",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00437592979",
+    "error_item_id": 157054,
+    "receipt_used_wrong": "1.1.0000000034636379545",
+    "chosen_receipt": "1.1.0000000040847727497",
+    "chosen_source": "timeline_item:137433",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137433,
+      "nr_recibo_novo": "1.1.0000000040847727497",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00438201230",
+    "error_item_id": 157055,
+    "receipt_used_wrong": "1.1.0000000034619601778",
+    "chosen_receipt": "1.1.0000000040847727617",
+    "chosen_source": "timeline_item:137434",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137434,
+      "nr_recibo_novo": "1.1.0000000040847727617",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00442181760",
+    "error_item_id": 157058,
+    "receipt_used_wrong": "1.1.0000000034619774231",
+    "chosen_receipt": "1.1.0000000040847727954",
+    "chosen_source": "timeline_item:137437",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137437,
+      "nr_recibo_novo": "1.1.0000000040847727954",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00442241763",
+    "error_item_id": 157059,
+    "receipt_used_wrong": "1.1.0000000034636219760",
+    "chosen_receipt": "1.1.0000000040847728052",
+    "chosen_source": "timeline_item:137438",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137438,
+      "nr_recibo_novo": "1.1.0000000040847728052",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00444023500",
+    "error_item_id": 157060,
+    "receipt_used_wrong": "1.1.0000000034636408866",
+    "chosen_receipt": "1.1.0000000040845884036",
+    "chosen_source": "timeline_item:118387",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 118387,
+      "nr_recibo_novo": "1.1.0000000040845884036",
+      "criado_em": "2026-05-15T21:36:43.394570",
+      "envio_id": 868
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00454378580",
+    "error_item_id": 157063,
+    "receipt_used_wrong": "1.1.0000000034636423516",
+    "chosen_receipt": "1.1.0000000040845884865",
+    "chosen_source": "timeline_item:118391",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 118391,
+      "nr_recibo_novo": "1.1.0000000040845884865",
+      "criado_em": "2026-05-15T21:36:43.394570",
+      "envio_id": 868
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00455249555",
+    "error_item_id": 157064,
+    "receipt_used_wrong": "1.1.0000000034632493830",
+    "chosen_receipt": "1.1.0000000040847728499",
+    "chosen_source": "timeline_item:137442",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137442,
+      "nr_recibo_novo": "1.1.0000000040847728499",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00457118016",
+    "error_item_id": 157065,
+    "receipt_used_wrong": "1.1.0000000034636285461",
+    "chosen_receipt": "1.1.0000000040847728620",
+    "chosen_source": "timeline_item:137443",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137443,
+      "nr_recibo_novo": "1.1.0000000040847728620",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00458928909",
+    "error_item_id": 157066,
+    "receipt_used_wrong": "1.1.0000000034632488198",
+    "chosen_receipt": "1.1.0000000040847728773",
+    "chosen_source": "timeline_item:137444",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137444,
+      "nr_recibo_novo": "1.1.0000000040847728773",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00480580170",
+    "error_item_id": 157067,
+    "receipt_used_wrong": "1.1.0000000034632663863",
+    "chosen_receipt": "1.1.0000000040847729347",
+    "chosen_source": "timeline_item:137448",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137448,
+      "nr_recibo_novo": "1.1.0000000040847729347",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00481915150",
+    "error_item_id": 157068,
+    "receipt_used_wrong": "1.1.0000000034636557693",
+    "chosen_receipt": "1.1.0000000040765880634",
+    "chosen_source": "timeline_item:32444",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 32444,
+      "nr_recibo_novo": "1.1.0000000040765880634",
+      "criado_em": "2026-05-13T16:40:24.853580",
+      "envio_id": 352
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00484906950",
+    "error_item_id": 157069,
+    "receipt_used_wrong": "1.1.0000000034632328346",
+    "chosen_receipt": "1.1.0000000040847729477",
+    "chosen_source": "timeline_item:137449",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137449,
+      "nr_recibo_novo": "1.1.0000000040847729477",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00490974155",
+    "error_item_id": 157072,
+    "receipt_used_wrong": "1.1.0000000034632747230",
+    "chosen_receipt": "1.1.0000000040847723873",
+    "chosen_source": "timeline_item:137453",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137453,
+      "nr_recibo_novo": "1.1.0000000040847723873",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00492090513",
+    "error_item_id": 157073,
+    "receipt_used_wrong": "1.1.0000000034619648973",
+    "chosen_receipt": "1.1.0000000040847723990",
+    "chosen_source": "timeline_item:137454",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137454,
+      "nr_recibo_novo": "1.1.0000000040847723990",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00493933328",
+    "error_item_id": 157074,
+    "receipt_used_wrong": "1.1.0000000034619856455",
+    "chosen_receipt": "1.1.0000000040847724064",
+    "chosen_source": "timeline_item:137455",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137455,
+      "nr_recibo_novo": "1.1.0000000040847724064",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00497808595",
+    "error_item_id": 157077,
+    "receipt_used_wrong": "1.1.0000000034632231882",
+    "chosen_receipt": "1.1.0000000040847724637",
+    "chosen_source": "timeline_item:137460",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137460,
+      "nr_recibo_novo": "1.1.0000000040847724637",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00500774579",
+    "error_item_id": 157078,
+    "receipt_used_wrong": "1.1.0000000034636549289",
+    "chosen_receipt": "1.1.0000000040783728351",
+    "chosen_source": "timeline_item:48758",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 48758,
+      "nr_recibo_novo": "1.1.0000000040783728351",
+      "criado_em": "2026-05-14T06:17:07.486917",
+      "envio_id": 517
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00500997527",
+    "error_item_id": 157079,
+    "receipt_used_wrong": "1.1.0000000034632243228",
+    "chosen_receipt": "1.1.0000000040847724748",
+    "chosen_source": "timeline_item:137461",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137461,
+      "nr_recibo_novo": "1.1.0000000040847724748",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00505195143",
+    "error_item_id": 157080,
+    "receipt_used_wrong": "1.1.0000000034636448065",
+    "chosen_receipt": "1.1.0000000040834134192",
+    "chosen_source": "timeline_item:99119",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 99119,
+      "nr_recibo_novo": "1.1.0000000040834134192",
+      "criado_em": "2026-05-15T16:54:37.390961",
+      "envio_id": 853
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00511224990",
+    "error_item_id": 157081,
+    "receipt_used_wrong": "1.1.0000000034632317707",
+    "chosen_receipt": "1.1.0000000040847724987",
+    "chosen_source": "timeline_item:137463",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137463,
+      "nr_recibo_novo": "1.1.0000000040847724987",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00511443790",
+    "error_item_id": 157082,
+    "receipt_used_wrong": "1.1.0000000034619859923",
+    "chosen_receipt": "1.1.0000000040847725207",
+    "chosen_source": "timeline_item:137465",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137465,
+      "nr_recibo_novo": "1.1.0000000040847725207",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00515611743",
+    "error_item_id": 157083,
+    "receipt_used_wrong": "1.1.0000000034636180976",
+    "chosen_receipt": "1.1.0000000040847725316",
+    "chosen_source": "timeline_item:137466",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137466,
+      "nr_recibo_novo": "1.1.0000000040847725316",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00517292700",
+    "error_item_id": 157085,
+    "receipt_used_wrong": "1.1.0000000034619699800",
+    "chosen_receipt": "1.1.0000000040847725508",
+    "chosen_source": "timeline_item:137468",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137468,
+      "nr_recibo_novo": "1.1.0000000040847725508",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00522731724",
+    "error_item_id": 157086,
+    "receipt_used_wrong": "1.1.0000000034619707344",
+    "chosen_receipt": "1.1.0000000040847725601",
+    "chosen_source": "timeline_item:137469",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137469,
+      "nr_recibo_novo": "1.1.0000000040847725601",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00524997586",
+    "error_item_id": 157087,
+    "receipt_used_wrong": "1.1.0000000034636175000",
+    "chosen_receipt": "1.1.0000000040847725687",
+    "chosen_source": "timeline_item:137470",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137470,
+      "nr_recibo_novo": "1.1.0000000040847725687",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00525356142",
+    "error_item_id": 157088,
+    "receipt_used_wrong": "1.1.0000000034619854290",
+    "chosen_receipt": "1.1.0000000040847725794",
+    "chosen_source": "timeline_item:137471",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137471,
+      "nr_recibo_novo": "1.1.0000000040847725794",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00525756590",
+    "error_item_id": 157089,
+    "receipt_used_wrong": "1.1.0000000034619694842",
+    "chosen_receipt": "1.1.0000000040847725891",
+    "chosen_source": "timeline_item:137472",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137472,
+      "nr_recibo_novo": "1.1.0000000040847725891",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00526548770",
+    "error_item_id": 157090,
+    "receipt_used_wrong": "1.1.0000000034632557180",
+    "chosen_receipt": "1.1.0000000040847726012",
+    "chosen_source": "timeline_item:137473",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137473,
+      "nr_recibo_novo": "1.1.0000000040847726012",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00527328782",
+    "error_item_id": 157091,
+    "receipt_used_wrong": "1.1.0000000034619735494",
+    "chosen_receipt": "1.1.0000000040847726113",
+    "chosen_source": "timeline_item:137474",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137474,
+      "nr_recibo_novo": "1.1.0000000040847726113",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00527956759",
+    "error_item_id": 157092,
+    "receipt_used_wrong": "1.1.0000000034619775222",
+    "chosen_receipt": "1.1.0000000040847726222",
+    "chosen_source": "timeline_item:137475",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137475,
+      "nr_recibo_novo": "1.1.0000000040847726222",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "00529606178",
+    "error_item_id": 157093,
+    "receipt_used_wrong": "1.1.0000000034632648113",
+    "chosen_receipt": "1.1.0000000040847726335",
+    "chosen_source": "timeline_item:137476",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 137476,
+      "nr_recibo_novo": "1.1.0000000040847726335",
+      "criado_em": "2026-05-15T23:38:05.768203",
+      "envio_id": 882
+    },
+    "active_explorador": null
+  },
+  {
+    "cpf": "02022764579",
+    "error_item_id": 157122,
+    "receipt_used_wrong": "1.1.0000000034636299900",
+    "chosen_receipt": "1.1.0000000040847795781",
+    "chosen_source": "timeline_item:138390",
+    "chosen_event_id": null,
+    "latest_success_row": {
+      "id": 138390,
+      "nr_recibo_novo": "1.1.0000000040847795781",
+      "criado_em": "2026-05-15T23:43:42.038136",
+      "envio_id": 883
+    },
+    "active_explorador": null
+  }
+]

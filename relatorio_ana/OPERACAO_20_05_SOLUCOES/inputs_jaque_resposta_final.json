@@ -1,0 +1,788 @@
+{
+  "2025-02": {
+    "plano": [],
+    "pensao": [],
+    "dependente": [
+      {
+        "per_apur": "2025-02",
+        "cpf": "10423668455",
+        "tipo": "DEPENDENTE",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-02_relatorio_final_jaque.xlsx",
+        "sheet": "Dependente invalido",
+        "row_number": 4,
+        "cpf_dependente": "17466625495",
+        "erro_original": ""
+      },
+      {
+        "per_apur": "2025-02",
+        "cpf": "38434368862",
+        "tipo": "DEPENDENTE",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-02_relatorio_final_jaque.xlsx",
+        "sheet": "Dependente invalido",
+        "row_number": 5,
+        "cpf_dependente": "56620089810",
+        "erro_original": ""
+      },
+      {
+        "per_apur": "2025-02",
+        "cpf": "38434368862",
+        "tipo": "DEPENDENTE",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-02_relatorio_final_jaque.xlsx",
+        "sheet": "Dependente invalido",
+        "row_number": 6,
+        "cpf_dependente": "56620089810",
+        "erro_original": ""
+      },
+      {
+        "per_apur": "2025-02",
+        "cpf": "81529368553",
+        "tipo": "DEPENDENTE",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-02_relatorio_final_jaque.xlsx",
+        "sheet": "Dependente invalido",
+        "row_number": 7,
+        "cpf_dependente": "09274837500",
+        "erro_original": ""
+      },
+      {
+        "per_apur": "2025-02",
+        "cpf": "81529368553",
+        "tipo": "DEPENDENTE",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-02_relatorio_final_jaque.xlsx",
+        "sheet": "Dependente invalido",
+        "row_number": 8,
+        "cpf_dependente": "09274837500",
+        "erro_original": ""
+      }
+    ],
+    "invalid": [
+      {
+        "per_apur": "2025-02",
+        "cpf": "00000002025",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-02_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 1,
+        "cnpj_operadora": "",
+        "registro_ans": "",
+        "valor_titular": "0.00",
+        "reason": "dados incompletos de plano de saude"
+      },
+      {
+        "per_apur": "2025-02",
+        "cpf": "30729903877",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-02_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 4,
+        "cnpj_operadora": "",
+        "registro_ans": "",
+        "valor_titular": "0.00",
+        "reason": "dados incompletos de plano de saude"
+      },
+      {
+        "per_apur": "2025-02",
+        "cpf": "33163519814",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-02_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 5,
+        "cnpj_operadora": "",
+        "registro_ans": "",
+        "valor_titular": "0.00",
+        "reason": "dados incompletos de plano de saude"
+      },
+      {
+        "per_apur": "2025-02",
+        "cpf": "42852580802",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-02_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 6,
+        "cnpj_operadora": "",
+        "registro_ans": "",
+        "valor_titular": "0.00",
+        "reason": "dados incompletos de plano de saude"
+      },
+      {
+        "per_apur": "2025-02",
+        "cpf": "00000002025",
+        "tipo": "PENSAO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-02_relatorio_final_jaque.xlsx",
+        "sheet": "Pensao alimenticia",
+        "row_number": 1,
+        "cpf_beneficiario": "",
+        "tipo_rendimento": "",
+        "percentual": "",
+        "valor_deduzido": "0.00",
+        "reason": "dados incompletos de pensao alimenticia"
+      },
+      {
+        "per_apur": "2025-02",
+        "cpf": "28710124829",
+        "tipo": "PENSAO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-02_relatorio_final_jaque.xlsx",
+        "sheet": "Pensao alimenticia",
+        "row_number": 4,
+        "cpf_beneficiario": "",
+        "tipo_rendimento": "",
+        "percentual": "",
+        "valor_deduzido": "0.00",
+        "reason": "dados incompletos de pensao alimenticia"
+      },
+      {
+        "per_apur": "2025-02",
+        "cpf": "71985883104",
+        "tipo": "PENSAO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-02_relatorio_final_jaque.xlsx",
+        "sheet": "Pensao alimenticia",
+        "row_number": 5,
+        "cpf_beneficiario": "",
+        "tipo_rendimento": "",
+        "percentual": "",
+        "valor_deduzido": "0.00",
+        "reason": "dados incompletos de pensao alimenticia"
+      },
+      {
+        "per_apur": "2025-02",
+        "cpf": "71985883104",
+        "tipo": "PENSAO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-02_relatorio_final_jaque.xlsx",
+        "sheet": "Pensao alimenticia",
+        "row_number": 6,
+        "cpf_beneficiario": "",
+        "tipo_rendimento": "",
+        "percentual": "",
+        "valor_deduzido": "0.00",
+        "reason": "dados incompletos de pensao alimenticia"
+      },
+      {
+        "per_apur": "2025-02",
+        "cpf": "00000002025",
+        "tipo": "DEPENDENTE",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-02_relatorio_final_jaque.xlsx",
+        "sheet": "Dependente invalido",
+        "row_number": 1,
+        "cpf_dependente": "",
+        "erro_original": "",
+        "reason": "cpf dependente ausente/invalido"
+      }
+    ]
+  },
+  "2025-03": {
+    "plano": [
+      {
+        "per_apur": "2025-03",
+        "cpf": "13209279802",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-03_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 4,
+        "cnpj_operadora": "02127779000136",
+        "registro_ans": "364592",
+        "valor_titular": "102.00"
+      },
+      {
+        "per_apur": "2025-03",
+        "cpf": "14193059804",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-03_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 5,
+        "cnpj_operadora": "63554067000198",
+        "registro_ans": "368253",
+        "valor_titular": "39.17"
+      },
+      {
+        "per_apur": "2025-03",
+        "cpf": "14285875861",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-03_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 6,
+        "cnpj_operadora": "02127779000136",
+        "registro_ans": "364592",
+        "valor_titular": "490.00"
+      },
+      {
+        "per_apur": "2025-03",
+        "cpf": "14417604827",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-03_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 7,
+        "cnpj_operadora": "63554067000198",
+        "registro_ans": "368253",
+        "valor_titular": "39.17"
+      },
+      {
+        "per_apur": "2025-03",
+        "cpf": "15146736812",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-03_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 8,
+        "cnpj_operadora": "02127779000136",
+        "registro_ans": "364592",
+        "valor_titular": "102.00"
+      },
+      {
+        "per_apur": "2025-03",
+        "cpf": "17251076861",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-03_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 9,
+        "cnpj_operadora": "63554067000198",
+        "registro_ans": "368253",
+        "valor_titular": "39.17"
+      },
+      {
+        "per_apur": "2025-03",
+        "cpf": "21318440858",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-03_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 10,
+        "cnpj_operadora": "63554067000198",
+        "registro_ans": "368253",
+        "valor_titular": "39.17"
+      },
+      {
+        "per_apur": "2025-03",
+        "cpf": "25768579818",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-03_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 11,
+        "cnpj_operadora": "02127779000136",
+        "registro_ans": "364592",
+        "valor_titular": "39.17"
+      },
+      {
+        "per_apur": "2025-03",
+        "cpf": "30729903877",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-03_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 12,
+        "cnpj_operadora": "58837188000107",
+        "registro_ans": "346276",
+        "valor_titular": "77.67"
+      },
+      {
+        "per_apur": "2025-03",
+        "cpf": "31532125895",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-03_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 13,
+        "cnpj_operadora": "58837188000107",
+        "registro_ans": "346276",
+        "valor_titular": "78.34"
+      },
+      {
+        "per_apur": "2025-03",
+        "cpf": "32393572830",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-03_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 14,
+        "cnpj_operadora": "63554067000198",
+        "registro_ans": "368253",
+        "valor_titular": "39.17"
+      },
+      {
+        "per_apur": "2025-03",
+        "cpf": "33163519814",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-03_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 15,
+        "cnpj_operadora": "63554067000198",
+        "registro_ans": "368253",
+        "valor_titular": "39.17"
+      },
+      {
+        "per_apur": "2025-03",
+        "cpf": "42852580802",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-03_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 16,
+        "cnpj_operadora": "63554067000198",
+        "registro_ans": "368253",
+        "valor_titular": "39.17"
+      }
+    ],
+    "pensao": [],
+    "dependente": [],
+    "invalid": [
+      {
+        "per_apur": "2025-03",
+        "cpf": "00000002025",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-03_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 1,
+        "cnpj_operadora": "",
+        "registro_ans": "",
+        "valor_titular": "0.00",
+        "reason": "dados incompletos de plano de saude"
+      }
+    ]
+  },
+  "2025-04": {
+    "plano": [
+      {
+        "per_apur": "2025-04",
+        "cpf": "14193059804",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-04_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 4,
+        "cnpj_operadora": "63554067000198",
+        "registro_ans": "368253",
+        "valor_titular": "39.17"
+      },
+      {
+        "per_apur": "2025-04",
+        "cpf": "14285875861",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-04_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 5,
+        "cnpj_operadora": "02127779000136",
+        "registro_ans": "364592",
+        "valor_titular": "490.00"
+      },
+      {
+        "per_apur": "2025-04",
+        "cpf": "14417604827",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-04_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 6,
+        "cnpj_operadora": "63554067000198",
+        "registro_ans": "368253",
+        "valor_titular": "39.17"
+      },
+      {
+        "per_apur": "2025-04",
+        "cpf": "15146736812",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-04_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 7,
+        "cnpj_operadora": "02127779000136",
+        "registro_ans": "364592",
+        "valor_titular": "102.00"
+      },
+      {
+        "per_apur": "2025-04",
+        "cpf": "17251076861",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-04_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 8,
+        "cnpj_operadora": "63554067000198",
+        "registro_ans": "368253",
+        "valor_titular": "39.17"
+      },
+      {
+        "per_apur": "2025-04",
+        "cpf": "30729903877",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-04_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 9,
+        "cnpj_operadora": "58837188000107",
+        "registro_ans": "346276",
+        "valor_titular": "39.17"
+      },
+      {
+        "per_apur": "2025-04",
+        "cpf": "32393572830",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-04_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 10,
+        "cnpj_operadora": "63554067000198",
+        "registro_ans": "368253",
+        "valor_titular": "39.17"
+      },
+      {
+        "per_apur": "2025-04",
+        "cpf": "33163519814",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-04_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 11,
+        "cnpj_operadora": "63554067000198",
+        "registro_ans": "368253",
+        "valor_titular": "39.17"
+      },
+      {
+        "per_apur": "2025-04",
+        "cpf": "37843870806",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-04_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 12,
+        "cnpj_operadora": "63554067000198",
+        "registro_ans": "368253",
+        "valor_titular": "39.17"
+      },
+      {
+        "per_apur": "2025-04",
+        "cpf": "42852580802",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-04_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 13,
+        "cnpj_operadora": "63554067000198",
+        "registro_ans": "368253",
+        "valor_titular": "39.17"
+      }
+    ],
+    "pensao": [],
+    "dependente": [],
+    "invalid": [
+      {
+        "per_apur": "2025-04",
+        "cpf": "00000002025",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-04_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 1,
+        "cnpj_operadora": "",
+        "registro_ans": "",
+        "valor_titular": "0.00",
+        "reason": "dados incompletos de plano de saude"
+      }
+    ]
+  },
+  "2025-05": {
+    "plano": [
+      {
+        "per_apur": "2025-05",
+        "cpf": "14193059804",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-05_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 4,
+        "cnpj_operadora": "63554067000198",
+        "registro_ans": "368253",
+        "valor_titular": "39.17"
+      },
+      {
+        "per_apur": "2025-05",
+        "cpf": "30729903877",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-05_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 5,
+        "cnpj_operadora": "58837188000107",
+        "registro_ans": "346276",
+        "valor_titular": "39.17"
+      }
+    ],
+    "pensao": [],
+    "dependente": [],
+    "invalid": [
+      {
+        "per_apur": "2025-05",
+        "cpf": "00000002025",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-05_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 1,
+        "cnpj_operadora": "",
+        "registro_ans": "",
+        "valor_titular": "0.00",
+        "reason": "dados incompletos de plano de saude"
+      }
+    ]
+  },
+  "2025-06": {
+    "plano": [
+      {
+        "per_apur": "2025-06",
+        "cpf": "14193059804",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-06_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 4,
+        "cnpj_operadora": "63554067000198",
+        "registro_ans": "368253",
+        "valor_titular": "39.17"
+      },
+      {
+        "per_apur": "2025-06",
+        "cpf": "30729903877",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-06_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 5,
+        "cnpj_operadora": "58837188000107",
+        "registro_ans": "346276",
+        "valor_titular": "39.17"
+      },
+      {
+        "per_apur": "2025-06",
+        "cpf": "32393572830",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-06_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 6,
+        "cnpj_operadora": "63554067000198",
+        "registro_ans": "368253",
+        "valor_titular": "39.17"
+      },
+      {
+        "per_apur": "2025-06",
+        "cpf": "33163519814",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-06_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 7,
+        "cnpj_operadora": "63554067000198",
+        "registro_ans": "368253",
+        "valor_titular": "39.17"
+      },
+      {
+        "per_apur": "2025-06",
+        "cpf": "42852580802",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-06_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 8,
+        "cnpj_operadora": "63554067000198",
+        "registro_ans": "368253",
+        "valor_titular": "39.17"
+      }
+    ],
+    "pensao": [],
+    "dependente": [],
+    "invalid": [
+      {
+        "per_apur": "2025-06",
+        "cpf": "00000002025",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-06_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 1,
+        "cnpj_operadora": "",
+        "registro_ans": "",
+        "valor_titular": "0.00",
+        "reason": "dados incompletos de plano de saude"
+      }
+    ]
+  },
+  "2025-07": {
+    "plano": [
+      {
+        "per_apur": "2025-07",
+        "cpf": "14193059804",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-07_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 4,
+        "cnpj_operadora": "63554067000198",
+        "registro_ans": "368253",
+        "valor_titular": "39.17"
+      },
+      {
+        "per_apur": "2025-07",
+        "cpf": "30729903877",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-07_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 5,
+        "cnpj_operadora": "58837188000107",
+        "registro_ans": "346276",
+        "valor_titular": "39.17"
+      },
+      {
+        "per_apur": "2025-07",
+        "cpf": "32393572830",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-07_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 6,
+        "cnpj_operadora": "63554067000198",
+        "registro_ans": "368253",
+        "valor_titular": "39.17"
+      }
+    ],
+    "pensao": [],
+    "dependente": [],
+    "invalid": [
+      {
+        "per_apur": "2025-07",
+        "cpf": "00000002025",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-07_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 1,
+        "cnpj_operadora": "",
+        "registro_ans": "",
+        "valor_titular": "0.00",
+        "reason": "dados incompletos de plano de saude"
+      }
+    ]
+  },
+  "2025-09": {
+    "plano": [
+      {
+        "per_apur": "2025-09",
+        "cpf": "14193059804",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-09_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 4,
+        "cnpj_operadora": "63554067000198",
+        "registro_ans": "368253",
+        "valor_titular": "41.40"
+      },
+      {
+        "per_apur": "2025-09",
+        "cpf": "30729903877",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-09_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 5,
+        "cnpj_operadora": "58837188000107",
+        "registro_ans": "346276",
+        "valor_titular": "41.40"
+      },
+      {
+        "per_apur": "2025-09",
+        "cpf": "34212228866",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-09_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 6,
+        "cnpj_operadora": "63554067000198",
+        "registro_ans": "368253",
+        "valor_titular": "39.17"
+      },
+      {
+        "per_apur": "2025-09",
+        "cpf": "73425230115",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-09_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 7,
+        "cnpj_operadora": "63554067000198",
+        "registro_ans": "368253",
+        "valor_titular": "283.07"
+      },
+      {
+        "per_apur": "2025-09",
+        "cpf": "81504411153",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-09_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 8,
+        "cnpj_operadora": "63554067000198",
+        "registro_ans": "368253",
+        "valor_titular": "193.54"
+      }
+    ],
+    "pensao": [
+      {
+        "per_apur": "2025-09",
+        "cpf": "39428963895",
+        "tipo": "PENSAO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-09_relatorio_final_jaque.xlsx",
+        "sheet": "Pensao alimenticia",
+        "row_number": 4,
+        "cpf_beneficiario": "15576137884",
+        "tipo_rendimento": "11",
+        "percentual": "20",
+        "valor_deduzido": "550.68"
+      }
+    ],
+    "dependente": [],
+    "invalid": [
+      {
+        "per_apur": "2025-09",
+        "cpf": "00000002025",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-09_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 1,
+        "cnpj_operadora": "",
+        "registro_ans": "",
+        "valor_titular": "0.00",
+        "reason": "dados incompletos de plano de saude"
+      },
+      {
+        "per_apur": "2025-09",
+        "cpf": "00000002025",
+        "tipo": "PENSAO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-09_relatorio_final_jaque.xlsx",
+        "sheet": "Pensao alimenticia",
+        "row_number": 1,
+        "cpf_beneficiario": "",
+        "tipo_rendimento": "",
+        "percentual": "",
+        "valor_deduzido": "0.00",
+        "reason": "dados incompletos de pensao alimenticia"
+      }
+    ]
+  },
+  "2025-10": {
+    "plano": [
+      {
+        "per_apur": "2025-10",
+        "cpf": "14193059804",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-10_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 4,
+        "cnpj_operadora": "63554067000198",
+        "registro_ans": "368253",
+        "valor_titular": "43.08"
+      },
+      {
+        "per_apur": "2025-10",
+        "cpf": "30729903877",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-10_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 5,
+        "cnpj_operadora": "58837188000107",
+        "registro_ans": "346276",
+        "valor_titular": "41.40"
+      },
+      {
+        "per_apur": "2025-10",
+        "cpf": "32945497840",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-10_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 6,
+        "cnpj_operadora": "02127779000136",
+        "registro_ans": "364592",
+        "valor_titular": "572.60"
+      }
+    ],
+    "pensao": [],
+    "dependente": [],
+    "invalid": [
+      {
+        "per_apur": "2025-10",
+        "cpf": "00000002025",
+        "tipo": "PLANO",
+        "source_file": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-10_relatorio_final_jaque.xlsx",
+        "sheet": "Plano de saude",
+        "row_number": 1,
+        "cnpj_operadora": "",
+        "registro_ans": "",
+        "valor_titular": "0.00",
+        "reason": "dados incompletos de plano de saude"
+      }
+    ]
+  }
+}

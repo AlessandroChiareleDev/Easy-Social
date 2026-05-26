@@ -1,0 +1,114 @@
+{
+  "empresa": "OBJETIVA SERVICOS TERCEIRIZADOS LTDA",
+  "cnpj": "10874523000110",
+  "periodos": [
+    {
+      "per_apur": "2025-01",
+      "fechado": false,
+      "protocolo_s1298": "1.1.202605.0000000013191675788",
+      "recibo_s1298": "1.1.0000000040944334300",
+      "origem_status": "s1298_envio",
+      "s1210_linhas_head": 1633,
+      "s1210_cpfs_head": 806,
+      "tentados": 806,
+      "sucesso": 736,
+      "erro_esocial": 70,
+      "pendente_consulta": 0,
+      "falha_rede": 0,
+      "xml_enviado": 806,
+      "xml_retorno": 806,
+      "recibos_novos": 736,
+      "categorias_erro": {
+        "recibo_459_nao_localizado_excluido_retificado": 1,
+        "plano_saude_coletivo_obrigatorio": 69
+      },
+      "csv_erros": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OBJETIVA_JAN_MAI_2025\\erros_s1210_objetiva_2025-01.csv"
+    },
+    {
+      "per_apur": "2025-02",
+      "fechado": false,
+      "protocolo_s1298": "1.1.202605.0000000013191780038",
+      "recibo_s1298": "1.1.0000000040944797851",
+      "origem_status": "s1298_envio",
+      "s1210_linhas_head": 1774,
+      "s1210_cpfs_head": 887,
+      "tentados": 887,
+      "sucesso": 820,
+      "erro_esocial": 67,
+      "pendente_consulta": 0,
+      "falha_rede": 0,
+      "xml_enviado": 887,
+      "xml_retorno": 887,
+      "recibos_novos": 820,
+      "categorias_erro": {
+        "plano_saude_coletivo_obrigatorio": 67
+      },
+      "csv_erros": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OBJETIVA_JAN_MAI_2025\\erros_s1210_objetiva_2025-02.csv"
+    },
+    {
+      "per_apur": "2025-03",
+      "fechado": false,
+      "protocolo_s1298": "1.1.202605.0000000013191817408",
+      "recibo_s1298": "1.1.0000000040944985891",
+      "origem_status": "s1298_envio",
+      "s1210_linhas_head": 1964,
+      "s1210_cpfs_head": 982,
+      "tentados": 982,
+      "sucesso": 910,
+      "erro_esocial": 72,
+      "pendente_consulta": 0,
+      "falha_rede": 0,
+      "xml_enviado": 982,
+      "xml_retorno": 982,
+      "recibos_novos": 910,
+      "categorias_erro": {
+        "plano_saude_coletivo_obrigatorio": 72
+      },
+      "csv_erros": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OBJETIVA_JAN_MAI_2025\\erros_s1210_objetiva_2025-03.csv"
+    },
+    {
+      "per_apur": "2025-04",
+      "fechado": false,
+      "protocolo_s1298": "1.1.202605.0000000013191863229",
+      "recibo_s1298": "1.1.0000000040945193455",
+      "origem_status": "s1298_envio",
+      "s1210_linhas_head": 1972,
+      "s1210_cpfs_head": 986,
+      "tentados": 986,
+      "sucesso": 896,
+      "erro_esocial": 90,
+      "pendente_consulta": 0,
+      "falha_rede": 0,
+      "xml_enviado": 986,
+      "xml_retorno": 986,
+      "recibos_novos": 896,
+      "categorias_erro": {
+        "plano_saude_coletivo_obrigatorio": 90
+      },
+      "csv_erros": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OBJETIVA_JAN_MAI_2025\\erros_s1210_objetiva_2025-04.csv"
+    },
+    {
+      "per_apur": "2025-05",
+      "fechado": false,
+      "protocolo_s1298": "1.1.202605.0000000013191905298",
+      "recibo_s1298": "1.1.0000000040945396855",
+      "origem_status": "s1298_envio",
+      "s1210_linhas_head": 1681,
+      "s1210_cpfs_head": 840,
+      "tentados": 840,
+      "sucesso": 780,
+      "erro_esocial": 60,
+      "pendente_consulta": 0,
+      "falha_rede": 0,
+      "xml_enviado": 840,
+      "xml_retorno": 840,
+      "recibos_novos": 780,
+      "categorias_erro": {
+        "plano_saude_coletivo_obrigatorio": 60
+      },
+      "csv_erros": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OBJETIVA_JAN_MAI_2025\\erros_s1210_objetiva_2025-05.csv"
+    }
+  ],
+  "total_erros": 359,
+  "csv_erros_consolidado": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OBJETIVA_JAN_MAI_2025\\erros_s1210_objetiva_jan_maio_2025.csv"
+}

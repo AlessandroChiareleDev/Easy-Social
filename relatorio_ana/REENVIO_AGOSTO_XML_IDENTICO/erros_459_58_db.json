@@ -1,0 +1,625 @@
+{
+  "summary": {
+    "total_errors": 58,
+    "with_prev_success": 0,
+    "with_explorador_receipt": 58,
+    "latest_explorador_diff_from_used": 58,
+    "prev_success_diff_from_used": 0,
+    "sample_10": [
+      {
+        "cpf": "00001931946",
+        "tip_evt": "S-1210",
+        "item_id": 157035,
+        "receipt_used": "1.1.0000000034636459641",
+        "prev_success_receipt": null,
+        "explorador_receipt": "1.1.0000000037287002803",
+        "explorador_id": 3398476
+      },
+      {
+        "cpf": "00004179129",
+        "tip_evt": "S-1210",
+        "item_id": 157036,
+        "receipt_used": "1.1.0000000034619811079",
+        "prev_success_receipt": null,
+        "explorador_receipt": "1.1.0000000037286752640",
+        "explorador_id": 3416207
+      },
+      {
+        "cpf": "00005083575",
+        "tip_evt": "S-1210",
+        "item_id": 157037,
+        "receipt_used": "1.1.0000000034632291632",
+        "prev_success_receipt": null,
+        "explorador_receipt": "1.1.0000000037286792889",
+        "explorador_id": 3421262
+      },
+      {
+        "cpf": "00007197225",
+        "tip_evt": "S-1210",
+        "item_id": 157038,
+        "receipt_used": "1.1.0000000034632597562",
+        "prev_success_receipt": null,
+        "explorador_receipt": "1.1.0000000037286841037",
+        "explorador_id": 3375217
+      },
+      {
+        "cpf": "00010526757",
+        "tip_evt": "S-1210",
+        "item_id": 157039,
+        "receipt_used": "1.1.0000000034619686116",
+        "prev_success_receipt": null,
+        "explorador_receipt": "1.1.0000000037286730155",
+        "explorador_id": 3413976
+      },
+      {
+        "cpf": "00011072598",
+        "tip_evt": "S-1210",
+        "item_id": 157040,
+        "receipt_used": "1.1.0000000034632602710",
+        "prev_success_receipt": null,
+        "explorador_receipt": "1.1.0000000037286838882",
+        "explorador_id": 3374978
+      },
+      {
+        "cpf": "00237457709",
+        "tip_evt": "S-1210",
+        "item_id": 157041,
+        "receipt_used": "1.1.0000000034632492533",
+        "prev_success_receipt": null,
+        "explorador_receipt": "1.1.0000000037286824226",
+        "explorador_id": 3424448
+      },
+      {
+        "cpf": "00290546729",
+        "tip_evt": "S-1210",
+        "item_id": 157042,
+        "receipt_used": "1.1.0000000034632670649",
+        "prev_success_receipt": null,
+        "explorador_receipt": "1.1.0000000037286854448",
+        "explorador_id": 3377217
+      },
+      {
+        "cpf": "00350288151",
+        "tip_evt": "S-1210",
+        "item_id": 157046,
+        "receipt_used": "1.1.0000000034632490195",
+        "prev_success_receipt": null,
+        "explorador_receipt": "1.1.0000000037286823536",
+        "explorador_id": 3424368
+      },
+      {
+        "cpf": "00371133564",
+        "tip_evt": "S-1210",
+        "item_id": 157047,
+        "receipt_used": "1.1.0000000034619586048",
+        "prev_success_receipt": null,
+        "explorador_receipt": "1.1.0000000037286698024",
+        "explorador_id": 3409397
+      }
+    ]
+  },
+  "all_records": [
+    {
+      "cpf": "00001931946",
+      "tip_evt": "S-1210",
+      "item_id": 157035,
+      "receipt_used": "1.1.0000000034636459641",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037287002803",
+      "explorador_id": 3398476
+    },
+    {
+      "cpf": "00004179129",
+      "tip_evt": "S-1210",
+      "item_id": 157036,
+      "receipt_used": "1.1.0000000034619811079",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286752640",
+      "explorador_id": 3416207
+    },
+    {
+      "cpf": "00005083575",
+      "tip_evt": "S-1210",
+      "item_id": 157037,
+      "receipt_used": "1.1.0000000034632291632",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286792889",
+      "explorador_id": 3421262
+    },
+    {
+      "cpf": "00007197225",
+      "tip_evt": "S-1210",
+      "item_id": 157038,
+      "receipt_used": "1.1.0000000034632597562",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286841037",
+      "explorador_id": 3375217
+    },
+    {
+      "cpf": "00010526757",
+      "tip_evt": "S-1210",
+      "item_id": 157039,
+      "receipt_used": "1.1.0000000034619686116",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286730155",
+      "explorador_id": 3413976
+    },
+    {
+      "cpf": "00011072598",
+      "tip_evt": "S-1210",
+      "item_id": 157040,
+      "receipt_used": "1.1.0000000034632602710",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286838882",
+      "explorador_id": 3374978
+    },
+    {
+      "cpf": "00237457709",
+      "tip_evt": "S-1210",
+      "item_id": 157041,
+      "receipt_used": "1.1.0000000034632492533",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286824226",
+      "explorador_id": 3424448
+    },
+    {
+      "cpf": "00290546729",
+      "tip_evt": "S-1210",
+      "item_id": 157042,
+      "receipt_used": "1.1.0000000034632670649",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286854448",
+      "explorador_id": 3377217
+    },
+    {
+      "cpf": "00350288151",
+      "tip_evt": "S-1210",
+      "item_id": 157046,
+      "receipt_used": "1.1.0000000034632490195",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286823536",
+      "explorador_id": 3424368
+    },
+    {
+      "cpf": "00371133564",
+      "tip_evt": "S-1210",
+      "item_id": 157047,
+      "receipt_used": "1.1.0000000034619586048",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286698024",
+      "explorador_id": 3409397
+    },
+    {
+      "cpf": "00391021141",
+      "tip_evt": "S-1210",
+      "item_id": 157048,
+      "receipt_used": "1.1.0000000034632306377",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286800463",
+      "explorador_id": 3421602
+    },
+    {
+      "cpf": "00403524989",
+      "tip_evt": "S-1210",
+      "item_id": 157051,
+      "receipt_used": "1.1.0000000034632523878",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286827067",
+      "explorador_id": 3424764
+    },
+    {
+      "cpf": "00428392547",
+      "tip_evt": "S-1210",
+      "item_id": 157052,
+      "receipt_used": "1.1.0000000034619884240",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286773782",
+      "explorador_id": 3418570
+    },
+    {
+      "cpf": "00438789547",
+      "tip_evt": "S-1210",
+      "item_id": 157056,
+      "receipt_used": "1.1.0000000034632503035",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286823253",
+      "explorador_id": 3424338
+    },
+    {
+      "cpf": "00439368731",
+      "tip_evt": "S-1210",
+      "item_id": 157057,
+      "receipt_used": "1.1.0000000034619479938",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286673061",
+      "explorador_id": 3406438
+    },
+    {
+      "cpf": "00444362541",
+      "tip_evt": "S-1210",
+      "item_id": 157061,
+      "receipt_used": "1.1.0000000034636223559",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286914727",
+      "explorador_id": 3384787
+    },
+    {
+      "cpf": "00453172164",
+      "tip_evt": "S-1210",
+      "item_id": 157062,
+      "receipt_used": "1.1.0000000034619880480",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286769718",
+      "explorador_id": 3418334
+    },
+    {
+      "cpf": "00486262103",
+      "tip_evt": "S-1210",
+      "item_id": 157070,
+      "receipt_used": "1.1.0000000034632295098",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286796477",
+      "explorador_id": 3421442
+    },
+    {
+      "cpf": "00486729206",
+      "tip_evt": "S-1210",
+      "item_id": 157071,
+      "receipt_used": "1.1.0000000034632313214",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286801977",
+      "explorador_id": 3421662
+    },
+    {
+      "cpf": "00494935316",
+      "tip_evt": "S-1210",
+      "item_id": 157075,
+      "receipt_used": "1.1.0000000034619804625",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286746910",
+      "explorador_id": 3415807
+    },
+    {
+      "cpf": "00495870137",
+      "tip_evt": "S-1210",
+      "item_id": 157076,
+      "receipt_used": "1.1.0000000034619806421",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286748905",
+      "explorador_id": 3415933
+    },
+    {
+      "cpf": "00515638196",
+      "tip_evt": "S-1210",
+      "item_id": 157084,
+      "receipt_used": "1.1.0000000034619460374",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286663098",
+      "explorador_id": 3403992
+    },
+    {
+      "cpf": "00297302795",
+      "tip_evt": "S-1210",
+      "item_id": 157043,
+      "receipt_used": "1.1.0000000034619518454",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286693363",
+      "explorador_id": 3409099
+    },
+    {
+      "cpf": "00299556700",
+      "tip_evt": "S-1210",
+      "item_id": 157044,
+      "receipt_used": "1.1.0000000034636444445",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037287001830",
+      "explorador_id": 3398416
+    },
+    {
+      "cpf": "00341063592",
+      "tip_evt": "S-1210",
+      "item_id": 157045,
+      "receipt_used": "1.1.0000000034636434197",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000036740153599",
+      "explorador_id": 3240364
+    },
+    {
+      "cpf": "00433131918",
+      "tip_evt": "S-1210",
+      "item_id": 157053,
+      "receipt_used": "1.1.0000000034632465880",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286818846",
+      "explorador_id": 3423898
+    },
+    {
+      "cpf": "00437592979",
+      "tip_evt": "S-1210",
+      "item_id": 157054,
+      "receipt_used": "1.1.0000000034636379545",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000036740142052",
+      "explorador_id": 3233281
+    },
+    {
+      "cpf": "00438201230",
+      "tip_evt": "S-1210",
+      "item_id": 157055,
+      "receipt_used": "1.1.0000000034619601778",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000035822445032",
+      "explorador_id": 1524779
+    },
+    {
+      "cpf": "00442181760",
+      "tip_evt": "S-1210",
+      "item_id": 157058,
+      "receipt_used": "1.1.0000000034619774231",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286735155",
+      "explorador_id": 3414420
+    },
+    {
+      "cpf": "00442241763",
+      "tip_evt": "S-1210",
+      "item_id": 157059,
+      "receipt_used": "1.1.0000000034636219760",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286914681",
+      "explorador_id": 3384785
+    },
+    {
+      "cpf": "00444023500",
+      "tip_evt": "S-1210",
+      "item_id": 157060,
+      "receipt_used": "1.1.0000000034636408866",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286986653",
+      "explorador_id": 3395294
+    },
+    {
+      "cpf": "00454378580",
+      "tip_evt": "S-1210",
+      "item_id": 157063,
+      "receipt_used": "1.1.0000000034636423516",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286993743",
+      "explorador_id": 3397826
+    },
+    {
+      "cpf": "00455249555",
+      "tip_evt": "S-1210",
+      "item_id": 157064,
+      "receipt_used": "1.1.0000000034632493830",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286825532",
+      "explorador_id": 3424576
+    },
+    {
+      "cpf": "00457118016",
+      "tip_evt": "S-1210",
+      "item_id": 157065,
+      "receipt_used": "1.1.0000000034636285461",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000035309786891",
+      "explorador_id": 1150078
+    },
+    {
+      "cpf": "00458928909",
+      "tip_evt": "S-1210",
+      "item_id": 157066,
+      "receipt_used": "1.1.0000000034632488198",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286821903",
+      "explorador_id": 3424202
+    },
+    {
+      "cpf": "00480580170",
+      "tip_evt": "S-1210",
+      "item_id": 157067,
+      "receipt_used": "1.1.0000000034632663863",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286851401",
+      "explorador_id": 3376953
+    },
+    {
+      "cpf": "00481915150",
+      "tip_evt": "S-1210",
+      "item_id": 157068,
+      "receipt_used": "1.1.0000000034636557693",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037287022702",
+      "explorador_id": 3401485
+    },
+    {
+      "cpf": "00484906950",
+      "tip_evt": "S-1210",
+      "item_id": 157069,
+      "receipt_used": "1.1.0000000034632328346",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286799130",
+      "explorador_id": 3421550
+    },
+    {
+      "cpf": "00490974155",
+      "tip_evt": "S-1210",
+      "item_id": 157072,
+      "receipt_used": "1.1.0000000034632747230",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286886300",
+      "explorador_id": 3379948
+    },
+    {
+      "cpf": "00492090513",
+      "tip_evt": "S-1210",
+      "item_id": 157073,
+      "receipt_used": "1.1.0000000034619648973",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286726601",
+      "explorador_id": 3413672
+    },
+    {
+      "cpf": "00493933328",
+      "tip_evt": "S-1210",
+      "item_id": 157074,
+      "receipt_used": "1.1.0000000034619856455",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000035309725763",
+      "explorador_id": 1133438
+    },
+    {
+      "cpf": "00497808595",
+      "tip_evt": "S-1210",
+      "item_id": 157077,
+      "receipt_used": "1.1.0000000034632231882",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286786126",
+      "explorador_id": 3419935
+    },
+    {
+      "cpf": "00500774579",
+      "tip_evt": "S-1210",
+      "item_id": 157078,
+      "receipt_used": "1.1.0000000034636549289",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037287021921",
+      "explorador_id": 3401369
+    },
+    {
+      "cpf": "00500997527",
+      "tip_evt": "S-1210",
+      "item_id": 157079,
+      "receipt_used": "1.1.0000000034632243228",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286786458",
+      "explorador_id": 3419981
+    },
+    {
+      "cpf": "00505195143",
+      "tip_evt": "S-1210",
+      "item_id": 157080,
+      "receipt_used": "1.1.0000000034636448065",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000035822676737",
+      "explorador_id": 1560884
+    },
+    {
+      "cpf": "00511224990",
+      "tip_evt": "S-1210",
+      "item_id": 157081,
+      "receipt_used": "1.1.0000000034632317707",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286800219",
+      "explorador_id": 3421596
+    },
+    {
+      "cpf": "00511443790",
+      "tip_evt": "S-1210",
+      "item_id": 157082,
+      "receipt_used": "1.1.0000000034619859923",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286763913",
+      "explorador_id": 3417551
+    },
+    {
+      "cpf": "00515611743",
+      "tip_evt": "S-1210",
+      "item_id": 157083,
+      "receipt_used": "1.1.0000000034636180976",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286906551",
+      "explorador_id": 3382934
+    },
+    {
+      "cpf": "00517292700",
+      "tip_evt": "S-1210",
+      "item_id": 157085,
+      "receipt_used": "1.1.0000000034619699800",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286731745",
+      "explorador_id": 3414116
+    },
+    {
+      "cpf": "00522731724",
+      "tip_evt": "S-1210",
+      "item_id": 157086,
+      "receipt_used": "1.1.0000000034619707344",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286728963",
+      "explorador_id": 3413864
+    },
+    {
+      "cpf": "00524997586",
+      "tip_evt": "S-1210",
+      "item_id": 157087,
+      "receipt_used": "1.1.0000000034636175000",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286900250",
+      "explorador_id": 3382444
+    },
+    {
+      "cpf": "00525356142",
+      "tip_evt": "S-1210",
+      "item_id": 157088,
+      "receipt_used": "1.1.0000000034619854290",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286766509",
+      "explorador_id": 3417859
+    },
+    {
+      "cpf": "00525756590",
+      "tip_evt": "S-1210",
+      "item_id": 157089,
+      "receipt_used": "1.1.0000000034619694842",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286721233",
+      "explorador_id": 3413234
+    },
+    {
+      "cpf": "00526548770",
+      "tip_evt": "S-1210",
+      "item_id": 157090,
+      "receipt_used": "1.1.0000000034632557180",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286834186",
+      "explorador_id": 3374542
+    },
+    {
+      "cpf": "00527328782",
+      "tip_evt": "S-1210",
+      "item_id": 157091,
+      "receipt_used": "1.1.0000000034619735494",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286727720",
+      "explorador_id": 3413758
+    },
+    {
+      "cpf": "00527956759",
+      "tip_evt": "S-1210",
+      "item_id": 157092,
+      "receipt_used": "1.1.0000000034619775222",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286734262",
+      "explorador_id": 3414332
+    },
+    {
+      "cpf": "00529606178",
+      "tip_evt": "S-1210",
+      "item_id": 157093,
+      "receipt_used": "1.1.0000000034632648113",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000037286848154",
+      "explorador_id": 3375937
+    },
+    {
+      "cpf": "02022764579",
+      "tip_evt": "S-1210",
+      "item_id": 157122,
+      "receipt_used": "1.1.0000000034636299900",
+      "prev_success_receipt": null,
+      "explorador_receipt": "1.1.0000000035822637814",
+      "explorador_id": 1549994
+    }
+  ]
+}

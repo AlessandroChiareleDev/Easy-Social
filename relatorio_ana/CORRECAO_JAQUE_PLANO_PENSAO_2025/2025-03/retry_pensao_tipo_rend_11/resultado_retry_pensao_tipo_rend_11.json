@@ -1,0 +1,39 @@
+{
+  "per_apur": "2025-03",
+  "envio_id": 941,
+  "sucesso": 2,
+  "erro": 0,
+  "protocolos": [
+    "1.1.202605.0000000013183475914"
+  ],
+  "histograma": {},
+  "manifest": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-03\\retry_pensao_tipo_rend_11\\manifest_retry_pensao_tipo_rend_11.json",
+  "latest": {
+    "total": 2,
+    "by_status_codigo": {
+      "sucesso|": 2
+    },
+    "rows": [
+      {
+        "cpf": "82541787472",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906594986",
+        "item_id": 157759,
+        "envio_id": 941,
+        "criado_em": "2026-05-19 23:41:14.977856"
+      },
+      {
+        "cpf": "94881898434",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906595078",
+        "item_id": 157760,
+        "envio_id": 941,
+        "criado_em": "2026-05-19 23:41:14.977856"
+      }
+    ]
+  }
+}

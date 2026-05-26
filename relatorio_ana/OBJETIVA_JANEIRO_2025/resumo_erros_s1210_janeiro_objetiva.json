@@ -1,0 +1,110 @@
+{
+  "total_erros": 70,
+  "categorias": {
+    "recibo_459_nao_localizado_excluido_retificado": 1,
+    "plano_saude_coletivo_obrigatorio": 69
+  },
+  "csv_path": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OBJETIVA_JANEIRO_2025\\erros_s1210_janeiro_objetiva.csv",
+  "amostra": [
+    {
+      "cpf": "00820996777",
+      "categoria": "recibo_459_nao_localizado_excluido_retificado",
+      "erro_codigo": "401",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado. Ação Sugerida: Deverá existir um Evento já recebido, \"Ativo\" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",
+      "nr_recibo_anterior": "1.1.0000000030926645288",
+      "nr_recibo_novo": null,
+      "timeline_envio_id": 15,
+      "item_id": 12
+    },
+    {
+      "cpf": "01369448503",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "erro_codigo": "401",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "nr_recibo_anterior": "1.1.0000000030926646079",
+      "nr_recibo_novo": null,
+      "timeline_envio_id": 15,
+      "item_id": 25
+    },
+    {
+      "cpf": "01431027537",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "erro_codigo": "401",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "nr_recibo_anterior": "1.1.0000000030926646237",
+      "nr_recibo_novo": null,
+      "timeline_envio_id": 15,
+      "item_id": 28
+    },
+    {
+      "cpf": "02524041573",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "erro_codigo": "401",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "nr_recibo_anterior": "1.1.0000000030926646021",
+      "nr_recibo_novo": null,
+      "timeline_envio_id": 15,
+      "item_id": 62
+    },
+    {
+      "cpf": "03852854504",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "erro_codigo": "401",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "nr_recibo_anterior": "1.1.0000000030926646398",
+      "nr_recibo_novo": null,
+      "timeline_envio_id": 15,
+      "item_id": 103
+    },
+    {
+      "cpf": "04136279850",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "erro_codigo": "401",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "nr_recibo_anterior": "1.1.0000000030926647030",
+      "nr_recibo_novo": null,
+      "timeline_envio_id": 16,
+      "item_id": 113
+    },
+    {
+      "cpf": "10059942851",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "erro_codigo": "401",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "nr_recibo_anterior": "1.1.0000000030926649580",
+      "nr_recibo_novo": null,
+      "timeline_envio_id": 16,
+      "item_id": 263
+    },
+    {
+      "cpf": "10477639828",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "erro_codigo": "401",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "nr_recibo_anterior": "1.1.0000000030926650044",
+      "nr_recibo_novo": null,
+      "timeline_envio_id": 16,
+      "item_id": 270
+    },
+    {
+      "cpf": "12377832830",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "erro_codigo": "401",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "nr_recibo_anterior": "1.1.0000000030926650924",
+      "nr_recibo_novo": null,
+      "timeline_envio_id": 16,
+      "item_id": 323
+    },
+    {
+      "cpf": "13361896819",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "erro_codigo": "401",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "nr_recibo_anterior": "1.1.0000000030926651464",
+      "nr_recibo_novo": null,
+      "timeline_envio_id": 16,
+      "item_id": 332
+    }
+  ]
+}

@@ -1,0 +1,3483 @@
+{
+  "empresa_id": 2,
+  "per_apur": "2025-08",
+  "dtPgto_target": "2025-08",
+  "generated_at": "2026-05-19T11:37:57",
+  "sem_consulta_esocial": true,
+  "sem_alteracao_xml": true,
+  "fonte_relatorio": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\resolvedor_quinzenais_dtpgto_agosto_202_deddepen.json",
+  "xml_dir": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip",
+  "evento_assinado_xml_dir": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip",
+  "total_alvos_202": 105,
+  "total_xmls_originais_extraidos": 105,
+  "total_eventos_assinados_extraidos": 105,
+  "total_falhas": 0,
+  "total_hashes_identicos": 105,
+  "total_eventos_assinados_literalmente_extraidos": 105,
+  "contexto_contagens": {
+    "target_cdResposta_202": 105,
+    "target_original_xml_local": 105,
+    "julho_event": 103,
+    "setembro_event": 103,
+    "any_adjacent_event": 103,
+    "both_adjacent_events": 103,
+    "adjacent_only_zero_or_no_real_cpfs": 68,
+    "resolver_status_pendente": 68,
+    "adjacent_real_cpfs": 35,
+    "target_original_real_cpfs": 37,
+    "resolver_status_pronto": 37
+  },
+  "cpfs_sem_ambos_meses_adjacentes": [
+    "09278365726",
+    "09981664723"
+  ],
+  "failures": [],
+  "targets": [
+    {
+      "cpf": "01987352190",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\001_S1210_2025-08_01987352190_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\001_S1210_2025-08_01987352190_evento_assinado_original_202.xml",
+      "sha256": "44351aad8c5dd6abc8cf6a924f53b8f357119b5760dfd7938e11b6d82a1dc709",
+      "evento_assinado_sha256": "b4ceb1a99f3a5318d93aa0d9cf550260a6e3b11f2ce5c81c98faf3a55ed6a263",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819081600002.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819081600002",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695358202",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105145088",
+      "source_dhProcessamento": "2025-09-18T19:08:32.193",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "02254091786",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\002_S1210_2025-08_02254091786_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\002_S1210_2025-08_02254091786_evento_assinado_original_202.xml",
+      "sha256": "e44f139c4fa145a9056623e6533914d78049c8f922274d8f8555a15e1a72737e",
+      "evento_assinado_sha256": "dca168791f36cb15447968597937b3abc2b985e2a5f659e6b121e8d8f3d2200a",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819102200012.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819102200012",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695365779",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105147624",
+      "source_dhProcessamento": "2025-09-18T19:10:35.863",
+      "dtPgtos": [
+        "2025-08-01"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pronto",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [
+        "06423506710",
+        "06423509735"
+      ],
+      "setembro_real_cpfs": [
+        "06423506710",
+        "06423509735"
+      ],
+      "target_real_cpfs": [
+        "06423506710",
+        "06423509735"
+      ],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "02691360539",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\003_S1210_2025-08_02691360539_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\003_S1210_2025-08_02691360539_evento_assinado_original_202.xml",
+      "sha256": "91544d331aceb8e61dba5d0f747a542e398db5e69f2b0fb23a0b1b99c911f724",
+      "evento_assinado_sha256": "e9ed431a5db8a94b2127e74893665c4810c7c787352135af8031e094ed76d4a4",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819095500003.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819095500003",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695363665",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105147111",
+      "source_dhProcessamento": "2025-09-18T19:10:04.53",
+      "dtPgtos": [
+        "2025-08-06",
+        "2025-08-08"
+      ],
+      "perRefs": [
+        "2025-07",
+        "2025-08"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "02708236385",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\004_S1210_2025-08_02708236385_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\004_S1210_2025-08_02708236385_evento_assinado_original_202.xml",
+      "sha256": "d197d14f2c05acb5b5887de39e374da4a2a4638c5889e79ccd2505a0e19619b8",
+      "evento_assinado_sha256": "c2d2c26300247826e8667d61462b6aceb627cc6b6a1b427c1c152861c7672f32",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819082500005.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819082500005",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695358403",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105145283",
+      "source_dhProcessamento": "2025-09-18T19:08:35.593",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "03415419584",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\005_S1210_2025-08_03415419584_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\005_S1210_2025-08_03415419584_evento_assinado_original_202.xml",
+      "sha256": "2cc0fd6fb8bd2633d7db4e695bf02dda255ef1897709d07f36acc208d5eaea1f",
+      "evento_assinado_sha256": "4389899a11dfd9093a0c4b791e223383ad242a48d9576da4a546a1b85cf0ed4d",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819114900003.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819114900003",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695371967",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105149444",
+      "source_dhProcessamento": "2025-09-18T19:12:05.36",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pronto",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [
+        "01485657512",
+        "08671801535",
+        "12885697504"
+      ],
+      "setembro_real_cpfs": [
+        "01485657512",
+        "08671801535",
+        "12885697504"
+      ],
+      "target_real_cpfs": [
+        "01485657512",
+        "08671801535",
+        "12885697504"
+      ],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "03418753418",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\006_S1210_2025-08_03418753418_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\006_S1210_2025-08_03418753418_evento_assinado_original_202.xml",
+      "sha256": "2d2bef2e6fe0292b022e1fc581e08f834829d3fbbb2e62e49583d2687023f529",
+      "evento_assinado_sha256": "00ea065765e844208a1950e81ca114adc4dea6f49abca01cd9cef0091fe1355e",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819092400005.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819092400005",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695362098",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105146413",
+      "source_dhProcessamento": "2025-09-18T19:09:37.07",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "03456861796",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\007_S1210_2025-08_03456861796_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\007_S1210_2025-08_03456861796_evento_assinado_original_202.xml",
+      "sha256": "d6ced295e0850c5e49af207a9c44392e4639a45919fce388dfe57f6b851acdb0",
+      "evento_assinado_sha256": "26050f83bbb9fbbda5986d7faf2ce7f63c895b8e1ea9d2e34bea693b343a6207",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819100600012.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819100600012",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695364701",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105147318",
+      "source_dhProcessamento": "2025-09-18T19:10:22.117",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pronto",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [
+        "18589975770"
+      ],
+      "setembro_real_cpfs": [
+        "18589975770"
+      ],
+      "target_real_cpfs": [
+        "18589975770"
+      ],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "03470657750",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\008_S1210_2025-08_03470657750_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\008_S1210_2025-08_03470657750_evento_assinado_original_202.xml",
+      "sha256": "7de06a4e2a2e6038bfaf0b974fe635d3076156968baae8dfa5828d405f6ab278",
+      "evento_assinado_sha256": "044ff36b9bf6b0628cdf22ae46bca20ec8401c7a7592e251056ffea940dc7093",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819144900002.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819144900002",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695386479",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105152970",
+      "source_dhProcessamento": "2025-09-18T19:15:09.1",
+      "dtPgtos": [
+        "2025-08-01"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pronto",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [
+        "15301330764"
+      ],
+      "setembro_real_cpfs": [
+        "15301330764"
+      ],
+      "target_real_cpfs": [
+        "15301330764"
+      ],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "03499760401",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\009_S1210_2025-08_03499760401_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\009_S1210_2025-08_03499760401_evento_assinado_original_202.xml",
+      "sha256": "5f3397ce148b3308d07985fa0501060d917e1bbb783e8ba65a9d826fb1e53421",
+      "evento_assinado_sha256": "17808c18a2b4b72e83a7a27ccc5eb82a90dd21c159a66b927c5f0dd3e2242a71",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819094100009.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819094100009",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695363587",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105146769",
+      "source_dhProcessamento": "2025-09-18T19:10:02.89",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "03551743169",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\010_S1210_2025-08_03551743169_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\010_S1210_2025-08_03551743169_evento_assinado_original_202.xml",
+      "sha256": "97e30e00fd2f7bcd72c1cde8ebe30423cd8c6044375151a86061f8fb965bc6d4",
+      "evento_assinado_sha256": "298e71e74ad41cc78f1fb6d51bc25c1d15fb5a87fab749a024ec2921c91a6878",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819083900001.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819083900001",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695358894",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105145588",
+      "source_dhProcessamento": "2025-09-18T19:08:44.12",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "03775596445",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\011_S1210_2025-08_03775596445_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\011_S1210_2025-08_03775596445_evento_assinado_original_202.xml",
+      "sha256": "34666b81ed63b4c82fc0246e3bb70e16e422e9cd0397ea8eaeb60906d5c26fd5",
+      "evento_assinado_sha256": "c6aa7b9587c1505a58d39dbf85094d8d20625a6f42381be706d6a298d84b9ebe",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819092500010.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819092500010",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695362602",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105146413",
+      "source_dhProcessamento": "2025-09-18T19:09:45.357",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "03884524470",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\012_S1210_2025-08_03884524470_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\012_S1210_2025-08_03884524470_evento_assinado_original_202.xml",
+      "sha256": "b84ae5ac2c378ca0bcd67e9635f374a6989b8c9043b8b2da685da017e53844c6",
+      "evento_assinado_sha256": "ba6b45251bb381abd6cf60cdaded6a50946d1a4921e8f15313548b151067e9d6",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819095600001.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819095600001",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695363907",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105147111",
+      "source_dhProcessamento": "2025-09-18T19:10:09.47",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "04102191429",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\013_S1210_2025-08_04102191429_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\013_S1210_2025-08_04102191429_evento_assinado_original_202.xml",
+      "sha256": "ccc5f784ad1943c9a6b57b9c37a1c03946fd730682fa0fc8ad245223c0f6d8db",
+      "evento_assinado_sha256": "563096aa417ba8b5e01e6624d73dda7efb4c4ad5ab1d20f7fe6870746d846cb6",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819092800003.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819092800003",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695361826",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105146541",
+      "source_dhProcessamento": "2025-09-18T19:09:33.62",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "04140693401",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\014_S1210_2025-08_04140693401_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\014_S1210_2025-08_04140693401_evento_assinado_original_202.xml",
+      "sha256": "46115a285232896d714550093f657609264a7f2da240e470ec05d1611caa6173",
+      "evento_assinado_sha256": "2ccd11c6a9067fa1be2daa97629e53a368f66b9949efd5028e3455e32a3c8547",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819094500002.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819094500002",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695363262",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105146881",
+      "source_dhProcessamento": "2025-09-18T19:09:56.733",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "04202911482",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\015_S1210_2025-08_04202911482_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\015_S1210_2025-08_04202911482_evento_assinado_original_202.xml",
+      "sha256": "3f381685ae90937ca57281ff16eb433cdcb0a5f9848a7fa861810262144ceb10",
+      "evento_assinado_sha256": "1770485339f78947298dea7df037dc5e2d70a1f015ee70c9ee53711e02751760",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819085800005.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819085800005",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695360470",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105145919",
+      "source_dhProcessamento": "2025-09-18T19:09:12.487",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pronto",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [
+        "18060495461"
+      ],
+      "setembro_real_cpfs": [
+        "18060495461"
+      ],
+      "target_real_cpfs": [
+        "18060495461"
+      ],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "04239333458",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\016_S1210_2025-08_04239333458_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\016_S1210_2025-08_04239333458_evento_assinado_original_202.xml",
+      "sha256": "24f6dc6bd3d4d128b16a4c31f04dbfcfde6d36c76a5f5d928e95c4cebef17ebd",
+      "evento_assinado_sha256": "59a8488720acec7a1809d9370356c3b3a41891ce2b3e0fe167d9cbe501608fdd",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819155200010.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819155200010",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695390734",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105154250",
+      "source_dhProcessamento": "2025-09-18T19:16:06.23",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pronto",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [
+        "71440622477",
+        "71440625492"
+      ],
+      "setembro_real_cpfs": [
+        "71440622477",
+        "71440625492"
+      ],
+      "target_real_cpfs": [
+        "71440622477",
+        "71440625492"
+      ],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "04240549493",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\017_S1210_2025-08_04240549493_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\017_S1210_2025-08_04240549493_evento_assinado_original_202.xml",
+      "sha256": "104b1e0e6c64131a869dd52c2049b2f4024fe3c92e8056ce9e6f4e0e37f3320a",
+      "evento_assinado_sha256": "ad5a56b6a34f777566ea819c64c038514760224206c4e1aabf2c65af0016a326",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819092400013.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819092400013",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695362328",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105146413",
+      "source_dhProcessamento": "2025-09-18T19:09:40.717",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "04240556430",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\018_S1210_2025-08_04240556430_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\018_S1210_2025-08_04240556430_evento_assinado_original_202.xml",
+      "sha256": "2d66f2a75ee8df92f4c638aa5d9b133039803b102488a1a1b7491d6b46b6769e",
+      "evento_assinado_sha256": "5da66b48f1194231df98ab3797d88f7369b823e930f6e757e3803e19e8c4b8c5",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819093000007.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819093000007",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695362717",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105146541",
+      "source_dhProcessamento": "2025-09-18T19:09:47.25",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "04260837419",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\019_S1210_2025-08_04260837419_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\019_S1210_2025-08_04260837419_evento_assinado_original_202.xml",
+      "sha256": "7e532e3d9a6fb42f3b0ef968c428cf89d67112e1ef792794ba877130bad7d167",
+      "evento_assinado_sha256": "b968c5de89943212ef9c6b596b12bbb3e5461ab47d249e7b2b597f0f37514cd8",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819100000011.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819100000011",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695363999",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105147216",
+      "source_dhProcessamento": "2025-09-18T19:10:11.25",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pronto",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [
+        "16959530458"
+      ],
+      "setembro_real_cpfs": [
+        "16959530458"
+      ],
+      "target_real_cpfs": [
+        "16959530458"
+      ],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "04472251469",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\020_S1210_2025-08_04472251469_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\020_S1210_2025-08_04472251469_evento_assinado_original_202.xml",
+      "sha256": "e43384b221768418aec209ff6c6e709692a5add61c6076793f4d157c10ae9b68",
+      "evento_assinado_sha256": "cb680abeda05c32333b82cb8052c87048db12d79bb5cfa9559e908029dd7d45c",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819093300012.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819093300012",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695362452",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105146659",
+      "source_dhProcessamento": "2025-09-18T19:09:42.783",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "04532926408",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\021_S1210_2025-08_04532926408_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\021_S1210_2025-08_04532926408_evento_assinado_original_202.xml",
+      "sha256": "66b2c735b77137b01c991e4fca8d5e9430cada798bc6cc653de892157a51bc94",
+      "evento_assinado_sha256": "c06e0ef2bfccfae30444a31ad833ea50c88fe6dc7f58bcc013269f9ba61b1fee",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819091900011.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819091900011",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695362113",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105146281",
+      "source_dhProcessamento": "2025-09-18T19:09:37.283",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "04575626414",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\022_S1210_2025-08_04575626414_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\022_S1210_2025-08_04575626414_evento_assinado_original_202.xml",
+      "sha256": "97b879ee93af0cb4eed1f5f061f691940bb57795ca79ad678eec73b5e800940c",
+      "evento_assinado_sha256": "a8a2d7c3e7f64fb1fa18c535ef74bbf12010d4f122ab7f6f277e160d5e765be3",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819094600004.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819094600004",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695363623",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105146881",
+      "source_dhProcessamento": "2025-09-18T19:10:03.813",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pronto",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [
+        "15416281448",
+        "15416325402"
+      ],
+      "setembro_real_cpfs": [
+        "15416281448",
+        "15416325402"
+      ],
+      "target_real_cpfs": [
+        "15416281448",
+        "15416325402"
+      ],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "04598209402",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\023_S1210_2025-08_04598209402_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\023_S1210_2025-08_04598209402_evento_assinado_original_202.xml",
+      "sha256": "53815666053751053883aa3ad66713a12fe9e5986c9e783c623a928c72ba9c9f",
+      "evento_assinado_sha256": "b35a5f4d29515d740f2cadc2f0f5b26e99c825d4ba6bd6ad79682aa005141836",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819091700008.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819091700008",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695361193",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105146281",
+      "source_dhProcessamento": "2025-09-18T19:09:24.773",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "04747697470",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\024_S1210_2025-08_04747697470_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\024_S1210_2025-08_04747697470_evento_assinado_original_202.xml",
+      "sha256": "e612a0ebe6a36778a27704a06d87705590746b1b1fd487f861dc01f1fa2f6a54",
+      "evento_assinado_sha256": "487d3ce80f65359bfa6d0fc7ceb4b73d4af568a75dd6139dfc4853d41a3c427c",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819092300011.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819092300011",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695361843",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105146413",
+      "source_dhProcessamento": "2025-09-18T19:09:33.79",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "04893823477",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\025_S1210_2025-08_04893823477_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\025_S1210_2025-08_04893823477_evento_assinado_original_202.xml",
+      "sha256": "9948838d476b5b33a1014e77fcaf43f71167c645b7237c3015c5a9ae113009d2",
+      "evento_assinado_sha256": "c04148bf0678119e0c242b7b2d5e96771c22c938ee3e2e1d2c01864c489ae2df",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819092400001.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819092400001",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695361967",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105146413",
+      "source_dhProcessamento": "2025-09-18T19:09:35.247",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "05161404426",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\026_S1210_2025-08_05161404426_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\026_S1210_2025-08_05161404426_evento_assinado_original_202.xml",
+      "sha256": "83772e1b5706259766eca9149c321d75e61f032381b0c9b84095f3a390bc2833",
+      "evento_assinado_sha256": "68fe17aeb1505ef994ca727ed05d7623f4f7c8b5731c3a06e2d0e73626f0968a",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819094200001.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819094200001",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695363670",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105146769",
+      "source_dhProcessamento": "2025-09-18T19:10:04.627",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "05365128761",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\027_S1210_2025-08_05365128761_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\027_S1210_2025-08_05365128761_evento_assinado_original_202.xml",
+      "sha256": "45eb358919e6e35fe0d9fb9cb19a1fa8cb3e14fc4abbafcaec4e2f01c672fecd",
+      "evento_assinado_sha256": "0a7efbe5464396acc71b8f3d80dcbd07438638caf9208830b94e01ac1536b410",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819074700009.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819074700009",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695356132",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105144506",
+      "source_dhProcessamento": "2025-09-18T19:07:58.027",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pronto",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [
+        "06492792718"
+      ],
+      "setembro_real_cpfs": [
+        "06492792718"
+      ],
+      "target_real_cpfs": [
+        "06492792718"
+      ],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "05390784766",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\028_S1210_2025-08_05390784766_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\028_S1210_2025-08_05390784766_evento_assinado_original_202.xml",
+      "sha256": "a35462f2de29ffdd8c125c996ca0dc69083faeb27f54d5da45146bdda22f65e1",
+      "evento_assinado_sha256": "01219e7754e40c33aae567a7857d362db5f9c4136260bbf52bc4b06504890bc0",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819145200001.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819145200001",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695385887",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105153061",
+      "source_dhProcessamento": "2025-09-18T19:14:59.867",
+      "dtPgtos": [
+        "2025-08-01"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pronto",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [
+        "19137580795",
+        "19137608711",
+        "20228682770"
+      ],
+      "setembro_real_cpfs": [
+        "19137580795",
+        "19137608711",
+        "20228682770"
+      ],
+      "target_real_cpfs": [
+        "19137580795",
+        "19137608711",
+        "20228682770"
+      ],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "05406893432",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\029_S1210_2025-08_05406893432_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\029_S1210_2025-08_05406893432_evento_assinado_original_202.xml",
+      "sha256": "cdbb74885b7626741e5f56faeaf40a4e83588767c9b49ae593cd03db284fb139",
+      "evento_assinado_sha256": "5d33fab7d9a95ca4455a3ff5d6c546d1c7fc7ec9278523cb4925d85f0902a63c",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819095500002.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819095500002",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695363624",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105147111",
+      "source_dhProcessamento": "2025-09-18T19:10:03.86",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "05488285474",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\030_S1210_2025-08_05488285474_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\030_S1210_2025-08_05488285474_evento_assinado_original_202.xml",
+      "sha256": "11afa0b765d941d3a663f6ded07b11793a3e6959b4efc505b8a962c737f27ea0",
+      "evento_assinado_sha256": "43022bdcdba8c21794b6f23d1e8e8a00729be7c61a0ad9ff8137e5e37c0b72c0",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819092200005.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819092200005",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695361469",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105146413",
+      "source_dhProcessamento": "2025-09-18T19:09:29.21",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "05513724430",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\031_S1210_2025-08_05513724430_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\031_S1210_2025-08_05513724430_evento_assinado_original_202.xml",
+      "sha256": "9b344661d53f9b125a354f692b5bd375f05ed8e8b16c196fc507f494f975ba15",
+      "evento_assinado_sha256": "29ce72b0e844c70cb0c99c3c99a9d2a38ca0d769c3e330fd15b2141f4aa9d169",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819092400006.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819092400006",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695362130",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105146413",
+      "source_dhProcessamento": "2025-09-18T19:09:37.547",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pronto",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [
+        "13380700452",
+        "13380713430"
+      ],
+      "setembro_real_cpfs": [
+        "13380700452",
+        "13380713430"
+      ],
+      "target_real_cpfs": [
+        "13380700452",
+        "13380713430"
+      ],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "05664595400",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\032_S1210_2025-08_05664595400_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\032_S1210_2025-08_05664595400_evento_assinado_original_202.xml",
+      "sha256": "62ca2c6e67a18de123c7b804e83543ebd541adb1dcf1747088f09ae756cec861",
+      "evento_assinado_sha256": "78253ce77e6f8cb88bd9974b46b5145ed9cda28c93975ad3e073368174d50746",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819085800003.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819085800003",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695360426",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105145919",
+      "source_dhProcessamento": "2025-09-18T19:09:11.72",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "05771971421",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\033_S1210_2025-08_05771971421_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\033_S1210_2025-08_05771971421_evento_assinado_original_202.xml",
+      "sha256": "5b305f3a5a766c50049d16922792c7b6c3bb7a5ce53b768d29e44df2640539ae",
+      "evento_assinado_sha256": "adea52b9a6cd75c7390a39368cadf2badd42fda2667b5bae5cd02436e95ef6b0",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819094100001.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819094100001",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695363414",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105146769",
+      "source_dhProcessamento": "2025-09-18T19:09:59.407",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "05774255794",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\034_S1210_2025-08_05774255794_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\034_S1210_2025-08_05774255794_evento_assinado_original_202.xml",
+      "sha256": "c163261123b199ca1a97290d6559539b5487d21ab72218dfda44dcb571c9d575",
+      "evento_assinado_sha256": "937c6db72eff278b922dbd4458b0c5204145ae9075c21a78f979f6a9cb234f80",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819124000001.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819124000001",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695374141",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105150503",
+      "source_dhProcessamento": "2025-09-18T19:12:44.423",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pronto",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [
+        "16597807723",
+        "22404489704"
+      ],
+      "setembro_real_cpfs": [
+        "16597807723",
+        "22404489704"
+      ],
+      "target_real_cpfs": [
+        "16597807723",
+        "22404489704"
+      ],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "05788537797",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\035_S1210_2025-08_05788537797_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\035_S1210_2025-08_05788537797_evento_assinado_original_202.xml",
+      "sha256": "d3a0bc5586740dc3884677c368095bb6e06c881f2629b1389e5c99da5c37d090",
+      "evento_assinado_sha256": "a76097ab321ed4cba39ae3d851972e6482de23685c1320f15a95c5c17158886f",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819064900012.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819064900012",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695352620",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105143351",
+      "source_dhProcessamento": "2025-09-18T19:06:59.26",
+      "dtPgtos": [
+        "2025-08-01"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pronto",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [
+        "16400420754"
+      ],
+      "setembro_real_cpfs": [
+        "16400420754"
+      ],
+      "target_real_cpfs": [
+        "16400420754"
+      ],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "05986727703",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\036_S1210_2025-08_05986727703_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\036_S1210_2025-08_05986727703_evento_assinado_original_202.xml",
+      "sha256": "71aa89094409bdb3deebb9b973dac8b0ef17679d32248f8bb68a0d250a1307bf",
+      "evento_assinado_sha256": "fb94e464bf097f932e0c5c713207fbda1fa830988f45db1cef9f31c55ee35be0",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819133200001.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819133200001",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695378344",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105151553",
+      "source_dhProcessamento": "2025-09-18T19:13:37.11",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pronto",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [
+        "15832548701"
+      ],
+      "setembro_real_cpfs": [
+        "15832548701"
+      ],
+      "target_real_cpfs": [
+        "15832548701"
+      ],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "06700501482",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\037_S1210_2025-08_06700501482_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\037_S1210_2025-08_06700501482_evento_assinado_original_202.xml",
+      "sha256": "736568b38ed82775b5a5f34b1dcfb8eccc1c82b5498a1bf7873e580f6b7cf521",
+      "evento_assinado_sha256": "5ce98c3c409d18c3fe057e55ed23699de2f9ff1b97ec53858550e57babc5347a",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819100100006.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819100100006",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695364251",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105147216",
+      "source_dhProcessamento": "2025-09-18T19:10:15.347",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "06721434458",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\038_S1210_2025-08_06721434458_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\038_S1210_2025-08_06721434458_evento_assinado_original_202.xml",
+      "sha256": "49a9b11fcb03f72fa74cff40bc60bf13f5554ba7263e05877c522734eaf161fe",
+      "evento_assinado_sha256": "c90a61fc9ea827c22510a2b3eb1d73f84b817f7a68038e42e4e64ed40f6fd86c",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819093600011.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819093600011",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695363416",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105146659",
+      "source_dhProcessamento": "2025-09-18T19:09:59.427",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "06838610426",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\039_S1210_2025-08_06838610426_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\039_S1210_2025-08_06838610426_evento_assinado_original_202.xml",
+      "sha256": "2b4fd27991ae79c961010fa5b185308003510a6278574fd429baf1b62b43f92c",
+      "evento_assinado_sha256": "d99cbb8e1d8e5e593aeea689cb0222489d14f51a007b2b14aa2f573062904244",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819092600005.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819092600005",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695362834",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105146413",
+      "source_dhProcessamento": "2025-09-18T19:09:49.1",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "06894360413",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\040_S1210_2025-08_06894360413_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\040_S1210_2025-08_06894360413_evento_assinado_original_202.xml",
+      "sha256": "93489c64ff457751097db099fe4a7af77f0cfb7ede181f2115393955ee54841b",
+      "evento_assinado_sha256": "bd86c845ec73982bbac91d83c1eb637f453cd39927d87181efaaccb2daeb8056",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819092800012.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819092800012",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695362118",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105146541",
+      "source_dhProcessamento": "2025-09-18T19:09:37.347",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "07010962413",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\041_S1210_2025-08_07010962413_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\041_S1210_2025-08_07010962413_evento_assinado_original_202.xml",
+      "sha256": "c82fe54b856b13caca2bb7b74969e0327ef4b5ca06dfa2c3b093db1ba4f7161e",
+      "evento_assinado_sha256": "032cf3606f83ffc76aab1b4903d291c5de80754ea04bfb635f34568c27305a2f",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819100000007.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819100000007",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695363932",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105147216",
+      "source_dhProcessamento": "2025-09-18T19:10:09.96",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "07047686401",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\042_S1210_2025-08_07047686401_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\042_S1210_2025-08_07047686401_evento_assinado_original_202.xml",
+      "sha256": "d4dcffa5cf968adb8bff912597d1e490e640351b940b9765fcab15cc1c9ff206",
+      "evento_assinado_sha256": "ff0004b00f47dfbd88aed84de99db65597f14b271b34c9e821d225708aa94e56",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819092000007.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819092000007",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695362325",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105146281",
+      "source_dhProcessamento": "2025-09-18T19:09:40.69",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "07161826454",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\043_S1210_2025-08_07161826454_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\043_S1210_2025-08_07161826454_evento_assinado_original_202.xml",
+      "sha256": "dd9c845efc6a012911c88252cc85579d03421eacca5e67f78cb1da869a52cc67",
+      "evento_assinado_sha256": "dd48edb581516df464efbbf300faec70553fd906bd873a963af8768c3ac02f2a",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819092500005.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819092500005",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695362463",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105146413",
+      "source_dhProcessamento": "2025-09-18T19:09:43.027",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "07196986423",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\044_S1210_2025-08_07196986423_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\044_S1210_2025-08_07196986423_evento_assinado_original_202.xml",
+      "sha256": "6de4d0b7f9612bf1d5049c0af5e1a8eef6719cb988db80f5ebe745bd41b72dee",
+      "evento_assinado_sha256": "7c056b4614dc500a57b55866f8ee3ef41578afdcfd05e6029725fd7c101de4b1",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819095600005.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819095600005",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695364007",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105147111",
+      "source_dhProcessamento": "2025-09-18T19:10:11.39",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "07506531402",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\045_S1210_2025-08_07506531402_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\045_S1210_2025-08_07506531402_evento_assinado_original_202.xml",
+      "sha256": "8d7395e6f21ebbabd9f39752cf0b2fbda366737c9f4d5125aace632c69e94ee5",
+      "evento_assinado_sha256": "8557c28c77022f12fbac1ca398ad935af8978eb0cf264c16ed43334cceaf76f8",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819092300002.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819092300002",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695361524",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105146413",
+      "source_dhProcessamento": "2025-09-18T19:09:30.163",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "07750537406",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\046_S1210_2025-08_07750537406_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\046_S1210_2025-08_07750537406_evento_assinado_original_202.xml",
+      "sha256": "8b2569ec27641fa0d69dda5778d35d47f80194a2274f1791adb31dac8b542946",
+      "evento_assinado_sha256": "4d92dfa6085963859a5286052ee05974dbb85fbeb14942431cdd918c9d05d945",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819094500006.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819094500006",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695363370",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105146881",
+      "source_dhProcessamento": "2025-09-18T19:09:58.587",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "07776275409",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\047_S1210_2025-08_07776275409_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\047_S1210_2025-08_07776275409_evento_assinado_original_202.xml",
+      "sha256": "55b978f0b56107c63d28267174b73557d3e4ac918f93116d08ca06a27a1f8c04",
+      "evento_assinado_sha256": "2d726009b2ede1ea2cc709d666a3a39a412bc083520f04aa37bcd439eb2cee44",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819092500002.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819092500002",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695362388",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105146413",
+      "source_dhProcessamento": "2025-09-18T19:09:41.673",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "07833429422",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\048_S1210_2025-08_07833429422_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\048_S1210_2025-08_07833429422_evento_assinado_original_202.xml",
+      "sha256": "a2576744e46514a0a646608abc44499eea6875ab786b1957b0e3867f515ea5c3",
+      "evento_assinado_sha256": "1f0f4bd91736c2b8331f05abe6274397ecdeda9e356862842c32f5841d444c52",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819092600003.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819092600003",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695362768",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105146413",
+      "source_dhProcessamento": "2025-09-18T19:09:48.153",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "07856021438",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\049_S1210_2025-08_07856021438_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\049_S1210_2025-08_07856021438_evento_assinado_original_202.xml",
+      "sha256": "bd7147f89f722ea352137cf425f65fe7ffeab5b4df921210a4cf3b7cacbd9f26",
+      "evento_assinado_sha256": "b80f3d524d0f46064d66ecb6f50dc8fbf4d9f77ab4a7b4c90fa61a46a2bece51",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819082300008.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819082300008",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695358098",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105145283",
+      "source_dhProcessamento": "2025-09-18T19:08:29.927",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "07923038490",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\050_S1210_2025-08_07923038490_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\050_S1210_2025-08_07923038490_evento_assinado_original_202.xml",
+      "sha256": "dbeb8018d9cc4d9f0a4792db9700341429617986da08f21183601a315afd68f3",
+      "evento_assinado_sha256": "8406960fafbd1ab7fc1b2b786105e9eb7b207d33184f339c17830cf75d881080",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819102700010.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819102700010",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695365889",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105147721",
+      "source_dhProcessamento": "2025-09-18T19:10:37.43",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "08353059452",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\051_S1210_2025-08_08353059452_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\051_S1210_2025-08_08353059452_evento_assinado_original_202.xml",
+      "sha256": "706db5a96eb11ff17cd95d2246a25625f6b30cb6acd11cbf6bbad2afaca0029a",
+      "evento_assinado_sha256": "fe3a3a041e4d9e6bdde3c891c7baab3bb81293762797269285d417a7ad60a453",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819094600013.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819094600013",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695363836",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105146881",
+      "source_dhProcessamento": "2025-09-18T19:10:08.16",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "08405088750",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\052_S1210_2025-08_08405088750_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\052_S1210_2025-08_08405088750_evento_assinado_original_202.xml",
+      "sha256": "b9e2faf687212624e53ff7fd5929f16a2f8eb4ebeabcbbf414b89e8177296e8c",
+      "evento_assinado_sha256": "46df3aaf8edfe6d90b38b1457c0aac74e968dc90db1dc9609bd55cc8badc2d38",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819084300003.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819084300003",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695359966",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105145588",
+      "source_dhProcessamento": "2025-09-18T19:09:03.717",
+      "dtPgtos": [
+        "2025-08-01"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pronto",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [
+        "19267023799",
+        "20673146707",
+        "20673171728"
+      ],
+      "setembro_real_cpfs": [
+        "19267023799",
+        "20673146707",
+        "20673171728"
+      ],
+      "target_real_cpfs": [
+        "19267023799",
+        "20673146707",
+        "20673171728"
+      ],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "08441489467",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\053_S1210_2025-08_08441489467_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\053_S1210_2025-08_08441489467_evento_assinado_original_202.xml",
+      "sha256": "4ebec735a94c4b82108e7602221480dcfdfa923433f11f212cf7a4000c8f1e20",
+      "evento_assinado_sha256": "50c80eb0915b225911d2aaf613e7f7548274f5870e350e7ad5028a9f7aebe24c",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819094700002.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819094700002",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695363893",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105146881",
+      "source_dhProcessamento": "2025-09-18T19:10:09.3",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "08554135733",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\054_S1210_2025-08_08554135733_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\054_S1210_2025-08_08554135733_evento_assinado_original_202.xml",
+      "sha256": "5b8d98ded8dcf7e91b8b173d3564ee705320a3d833f5c5a485aed20aa6dc3a46",
+      "evento_assinado_sha256": "e321a2c02d2dbbf30ca465e85653b57ca4b2bbe9b95abefc672abc1c1c795552",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819072800007.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819072800007",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695355753",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105144057",
+      "source_dhProcessamento": "2025-09-18T19:07:51.337",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pronto",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [
+        "18710630783"
+      ],
+      "setembro_real_cpfs": [
+        "18710630783"
+      ],
+      "target_real_cpfs": [
+        "18710630783"
+      ],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "08571172463",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\055_S1210_2025-08_08571172463_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\055_S1210_2025-08_08571172463_evento_assinado_original_202.xml",
+      "sha256": "374b92aa297ca078f82e981120c80de6ba6a5037f8a578c138fe153190fc07f4",
+      "evento_assinado_sha256": "e690c29ab791904aaff17042aa241b367f6edc3584eacff1dddba7e056ae5d74",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819101600005.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819101600005",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695364836",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105147528",
+      "source_dhProcessamento": "2025-09-18T19:10:24.103",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "08852402438",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\056_S1210_2025-08_08852402438_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\056_S1210_2025-08_08852402438_evento_assinado_original_202.xml",
+      "sha256": "4598f88b48d386a39bda947d2d183a64679b6eaf65bc24dc53f770099ad45bf4",
+      "evento_assinado_sha256": "f9c1d5cfcbe2f8287fb6b85387292207ea922ffaeb0937ba06593f294b1d4c2d",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819094300005.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819094300005",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695362871",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105146881",
+      "source_dhProcessamento": "2025-09-18T19:09:49.69",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "09278365726",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\057_S1210_2025-08_09278365726_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\057_S1210_2025-08_09278365726_evento_assinado_original_202.xml",
+      "sha256": "30c2fe7464bb06170773530e9c8b309e9a9ed6dd789fdd3655d2015a66b5d5cd",
+      "evento_assinado_sha256": "149a66d3fdda70abc4b9d985f5b03b5ccb198bbbf8c74ba211aa5a5261386392",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819123600004.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819123600004",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695374534",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105150369",
+      "source_dhProcessamento": "2025-09-18T19:12:49.483",
+      "dtPgtos": [
+        "2025-08-12"
+      ],
+      "perRefs": [
+        "2025-08"
+      ],
+      "status_resolvedor": "pronto",
+      "julho_event": false,
+      "setembro_event": false,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [
+        "22010723708"
+      ],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "09340578422",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\058_S1210_2025-08_09340578422_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\058_S1210_2025-08_09340578422_evento_assinado_original_202.xml",
+      "sha256": "52bd7ac68ce6f09c648a99591d1d062ec0a9ac1f842f3aba916d08a94acd1756",
+      "evento_assinado_sha256": "301266e7f9fd03fc3e030e15c1cb628bbcbf6b82214023ec1fd692b9ef6d02bf",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819095700007.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819095700007",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695364460",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105147111",
+      "source_dhProcessamento": "2025-09-18T19:10:18.433",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "09568580743",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\059_S1210_2025-08_09568580743_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\059_S1210_2025-08_09568580743_evento_assinado_original_202.xml",
+      "sha256": "290a9cd19c18a2d9a26adb438af02bb19dc2822cacca2f00e21253cd4211827e",
+      "evento_assinado_sha256": "9bfcbaa5de727bc789662ae9494bb52c0158b31cd6d272dfac61f3605cf87ccb",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819102700013.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819102700013",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695366028",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105147721",
+      "source_dhProcessamento": "2025-09-18T19:10:39.043",
+      "dtPgtos": [
+        "2025-08-01"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pronto",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [
+        "21044429747",
+        "21044471786"
+      ],
+      "setembro_real_cpfs": [
+        "21044429747",
+        "21044471786"
+      ],
+      "target_real_cpfs": [
+        "21044429747",
+        "21044471786"
+      ],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "09705541760",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\060_S1210_2025-08_09705541760_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\060_S1210_2025-08_09705541760_evento_assinado_original_202.xml",
+      "sha256": "1d5943f7ce6c17d263d2743d4e98fe5b273fa075a72229e1c47d9cc574d2278d",
+      "evento_assinado_sha256": "9106c32dd1498364b4c5d3f705847cc011dd62056bf9f4be102d79c17547456d",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819144800010.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819144800010",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695386340",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105152970",
+      "source_dhProcessamento": "2025-09-18T19:15:07.023",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pronto",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [
+        "16638222716"
+      ],
+      "setembro_real_cpfs": [
+        "16638222716"
+      ],
+      "target_real_cpfs": [
+        "16638222716"
+      ],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "09821166407",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\061_S1210_2025-08_09821166407_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\061_S1210_2025-08_09821166407_evento_assinado_original_202.xml",
+      "sha256": "ad49a8347726a62297f72379748fa7a29920fddeb190772d41f0dbd4be02baa0",
+      "evento_assinado_sha256": "f280ce0fc2473d53af719b319d4234b0178abb929e3807394e3fdb51e66f64fe",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819103900014.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819103900014",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695367135",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105147935",
+      "source_dhProcessamento": "2025-09-18T19:10:56.253",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "09849145790",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\062_S1210_2025-08_09849145790_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\062_S1210_2025-08_09849145790_evento_assinado_original_202.xml",
+      "sha256": "37fe85cf6400cbe0116d8a4c11b7e350c9c3100df28eb940cc2fd9961d16a26c",
+      "evento_assinado_sha256": "0b09e2eae6a3887d6ae61b03849021ef0b5b398d01bc81448602de34f1f015b2",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819101000008.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819101000008",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695364414",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105147433",
+      "source_dhProcessamento": "2025-09-18T19:10:17.8",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pronto",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [
+        "06390152710",
+        "19443383730",
+        "23080190777"
+      ],
+      "setembro_real_cpfs": [
+        "06390152710",
+        "19443383730",
+        "23080190777"
+      ],
+      "target_real_cpfs": [
+        "06390152710",
+        "19443383730",
+        "23080190777"
+      ],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "09981664723",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\063_S1210_2025-08_09981664723_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\063_S1210_2025-08_09981664723_evento_assinado_original_202.xml",
+      "sha256": "b17ddf3319c223c0c81a4fda2b537fe8307563576d41b1c5c813815dd6850467",
+      "evento_assinado_sha256": "d53c3fb42d85c278713c313d06a5a540246b59954ba23a551e10f5c97cd025e2",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819123600005.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819123600005",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695374572",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105150369",
+      "source_dhProcessamento": "2025-09-18T19:12:49.887",
+      "dtPgtos": [
+        "2025-08-12"
+      ],
+      "perRefs": [
+        "2025-08"
+      ],
+      "status_resolvedor": "pronto",
+      "julho_event": false,
+      "setembro_event": false,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [
+        "19571935735"
+      ],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "10057336431",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\064_S1210_2025-08_10057336431_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\064_S1210_2025-08_10057336431_evento_assinado_original_202.xml",
+      "sha256": "0fc69c189e236ca55313b97e820b58d4c3efa19bc79d862d59491ccf3688c0db",
+      "evento_assinado_sha256": "9c872495168f91fe02f1d823fd942fc83b270170e1ad06b2ba9e10f367656963",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819101700004.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819101700004",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695365298",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105147528",
+      "source_dhProcessamento": "2025-09-18T19:10:30.03",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "10108325490",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\065_S1210_2025-08_10108325490_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\065_S1210_2025-08_10108325490_evento_assinado_original_202.xml",
+      "sha256": "cfd0fe5bd0f8fc582cdd1a46d10a343204648c1dbe3d6b3d08acc7fa96d9a7ea",
+      "evento_assinado_sha256": "d9477da1c8ef921ad3f8e027cf62cea3bc523ad9364f40177073c78288aac27b",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819091300006.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819091300006",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695361191",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105146193",
+      "source_dhProcessamento": "2025-09-18T19:09:24.77",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "10154281425",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\066_S1210_2025-08_10154281425_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\066_S1210_2025-08_10154281425_evento_assinado_original_202.xml",
+      "sha256": "865bb9422c9f4aa0ff454c7870a24f751546816a8fc4378189f9ddf96d688fc2",
+      "evento_assinado_sha256": "dc3ee8d613314fec6d75e64dd62044451cdd74c49f694ed04ac5f387e7e8b678",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819093000006.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819093000006",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695362682",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105146541",
+      "source_dhProcessamento": "2025-09-18T19:09:46.733",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "10617805709",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\067_S1210_2025-08_10617805709_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\067_S1210_2025-08_10617805709_evento_assinado_original_202.xml",
+      "sha256": "8fc5a6418f42f1c3392de50cefe7388da9c62defb649318adfd85112f1c80f41",
+      "evento_assinado_sha256": "ad739a8481d69f1e49fb83241242d2b8775f1380c8e3ce9a0df99f3ef9b4b4a3",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819151500005.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819151500005",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695388036",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105153440",
+      "source_dhProcessamento": "2025-09-18T19:15:30.237",
+      "dtPgtos": [
+        "2025-08-01"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pronto",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [
+        "22063885702"
+      ],
+      "setembro_real_cpfs": [
+        "22063885702"
+      ],
+      "target_real_cpfs": [
+        "22063885702"
+      ],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "10703646494",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\068_S1210_2025-08_10703646494_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\068_S1210_2025-08_10703646494_evento_assinado_original_202.xml",
+      "sha256": "9ce5bc148715aa755e301875c6a8d885aac87b55d440f5209d78a4536689bc7f",
+      "evento_assinado_sha256": "486b85b177d2a8dd49ecc0bd4c0f8c61424503b3af5bc39e98c4b4730960fdaa",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819100000012.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819100000012",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695364026",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105147216",
+      "source_dhProcessamento": "2025-09-18T19:10:11.823",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "11191263711",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\069_S1210_2025-08_11191263711_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\069_S1210_2025-08_11191263711_evento_assinado_original_202.xml",
+      "sha256": "a2ac34e773be546f9e916644af58ab0f50577c065a8a71d30c508b0b4ff29f4e",
+      "evento_assinado_sha256": "af35362be8cf2576a0794f262fbfa9d1fc7159fe2b4eca0b2a8ee724b8984f83",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819040300007.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819040300007",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695339861",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105139672",
+      "source_dhProcessamento": "2025-09-18T19:04:22.053",
+      "dtPgtos": [
+        "2025-08-01"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pronto",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [
+        "20394818776"
+      ],
+      "setembro_real_cpfs": [
+        "20394818776"
+      ],
+      "target_real_cpfs": [
+        "20394818776"
+      ],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "11227994460",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\070_S1210_2025-08_11227994460_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\070_S1210_2025-08_11227994460_evento_assinado_original_202.xml",
+      "sha256": "7d5e0e4e73fd17c7807f5145aae8bd3d7cbdae84452df1cb91249e41642d30a8",
+      "evento_assinado_sha256": "657cb4d0f36e53c963e4d40aedab49506775963f0a0f1b87c69245758e874306",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819095600003.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819095600003",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695363959",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105147111",
+      "source_dhProcessamento": "2025-09-18T19:10:10.46",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "11500569755",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\071_S1210_2025-08_11500569755_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\071_S1210_2025-08_11500569755_evento_assinado_original_202.xml",
+      "sha256": "65c837c3b1dc899d3b17f8ac2a103405b5c31928b21a3dc42bf56a665cec4491",
+      "evento_assinado_sha256": "d26174f636e026d74fce97f53f7ea5cedebb6d8a4859503e803f90de21116c96",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819085000005.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819085000005",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695359560",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105145796",
+      "source_dhProcessamento": "2025-09-18T19:08:56.513",
+      "dtPgtos": [
+        "2025-08-01"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pronto",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [
+        "21231750723",
+        "21231757736"
+      ],
+      "setembro_real_cpfs": [
+        "21231750723",
+        "21231757736"
+      ],
+      "target_real_cpfs": [
+        "21231750723",
+        "21231757736"
+      ],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "11553980760",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\072_S1210_2025-08_11553980760_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\072_S1210_2025-08_11553980760_evento_assinado_original_202.xml",
+      "sha256": "d9b055cfedd648284de3caa73a4f7bcee0fefb3bf06799d1f02f7fd82cd455fa",
+      "evento_assinado_sha256": "27d537ee5a1563d50940991e58d4a6a127c806b27f6c106b0c71ea0b4f896249",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819074700006.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819074700006",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695356048",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105144506",
+      "source_dhProcessamento": "2025-09-18T19:07:56.597",
+      "dtPgtos": [
+        "2025-08-01"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pronto",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [
+        "21108762719"
+      ],
+      "setembro_real_cpfs": [
+        "21108762719"
+      ],
+      "target_real_cpfs": [
+        "21108762719"
+      ],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "11679938886",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\073_S1210_2025-08_11679938886_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\073_S1210_2025-08_11679938886_evento_assinado_original_202.xml",
+      "sha256": "0caa916bd17cc0bac263b2659927177e962ba409e218d21b79c3d6b1cb928c3d",
+      "evento_assinado_sha256": "495952acd2c4a8a167b6d9c02695296ac4f4837c954bc95d174f4d1bd673b6b1",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819081800011.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819081800011",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695357925",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105145176",
+      "source_dhProcessamento": "2025-09-18T19:08:26.933",
+      "dtPgtos": [
+        "2025-08-06",
+        "2025-08-08"
+      ],
+      "perRefs": [
+        "2025-07",
+        "2025-08"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "11915524709",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\074_S1210_2025-08_11915524709_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\074_S1210_2025-08_11915524709_evento_assinado_original_202.xml",
+      "sha256": "4c25a31be186a9c47c44ae16bc77bf62f60f9a3654dc0b288ca6f514037c6c18",
+      "evento_assinado_sha256": "746edc790d8165b0814588b2c862626a292b6726ca60b0f77fcfd0271f52123b",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819040400003.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819040400003",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695340278",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105139672",
+      "source_dhProcessamento": "2025-09-18T19:04:27.027",
+      "dtPgtos": [
+        "2025-08-01"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pronto",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [
+        "21874576726"
+      ],
+      "setembro_real_cpfs": [
+        "21874576726"
+      ],
+      "target_real_cpfs": [
+        "21874576726"
+      ],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "11994427477",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\075_S1210_2025-08_11994427477_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\075_S1210_2025-08_11994427477_evento_assinado_original_202.xml",
+      "sha256": "5d46b8b09df685de2fd5651a59906b12cdc1465fa2624f6de2c93bba70ef7e75",
+      "evento_assinado_sha256": "4cfe7da052619a217c97b1ddca9afa11cf9c96208ac1514f9cf0991c50e03856",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819090600002.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819090600002",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695360413",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105146096",
+      "source_dhProcessamento": "2025-09-18T19:09:11.507",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pronto",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [
+        "16795353400"
+      ],
+      "setembro_real_cpfs": [
+        "16795353400"
+      ],
+      "target_real_cpfs": [
+        "16795353400"
+      ],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "12501850769",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\076_S1210_2025-08_12501850769_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\076_S1210_2025-08_12501850769_evento_assinado_original_202.xml",
+      "sha256": "cf94dfb220a22ae778c7a135981ae66ecb67946c8e3192d4fa04139d9fd1fb75",
+      "evento_assinado_sha256": "3040de8c667780b04cde8f885801930bfb6f07090197c8e9947415aa8e7a8341",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819124500006.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819124500006",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695374775",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105150630",
+      "source_dhProcessamento": "2025-09-18T19:12:52.29",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pronto",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [
+        "18974292742",
+        "18974302721"
+      ],
+      "setembro_real_cpfs": [
+        "18974292742",
+        "18974302721"
+      ],
+      "target_real_cpfs": [
+        "18974292742",
+        "18974302721"
+      ],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "13182452738",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\077_S1210_2025-08_13182452738_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\077_S1210_2025-08_13182452738_evento_assinado_original_202.xml",
+      "sha256": "6bc8a96854ce3f00d2b6024167b3541f30c1e67350321a1638d7bbc134213905",
+      "evento_assinado_sha256": "76c0e07d67a623d25f0094e1b7d7da0099a3d795c4879824e20c3848a6703c4b",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819060300001.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819060300001",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695349383",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105142327",
+      "source_dhProcessamento": "2025-09-18T19:06:11.963",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pronto",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [
+        "19073815703",
+        "19104968719",
+        "19958972727",
+        "20241481740",
+        "20241503736",
+        "20241514770",
+        "22292850761"
+      ],
+      "setembro_real_cpfs": [
+        "19073815703",
+        "19104968719",
+        "19958972727",
+        "20241481740",
+        "20241503736",
+        "20241514770",
+        "22292850761"
+      ],
+      "target_real_cpfs": [
+        "19073815703",
+        "19104968719",
+        "19958972727",
+        "20241481740",
+        "20241503736",
+        "20241514770",
+        "22292850761"
+      ],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "15275584792",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\078_S1210_2025-08_15275584792_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\078_S1210_2025-08_15275584792_evento_assinado_original_202.xml",
+      "sha256": "5c107182618e714a26a1980b22d37d93e778312bcc71287e60c08884825116b9",
+      "evento_assinado_sha256": "a9cbfa304f09804a34f5636373337f012cbc3bf46340fca7946a6aa05eb180b1",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819104000006.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819104000006",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695367278",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105147935",
+      "source_dhProcessamento": "2025-09-18T19:10:58.943",
+      "dtPgtos": [
+        "2025-08-01"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pronto",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [
+        "22853460770"
+      ],
+      "setembro_real_cpfs": [
+        "22853460770"
+      ],
+      "target_real_cpfs": [
+        "22853460770"
+      ],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "15447916747",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\079_S1210_2025-08_15447916747_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\079_S1210_2025-08_15447916747_evento_assinado_original_202.xml",
+      "sha256": "4ddb90be62266a263ac66e22f1cd6e3fd406dd10b3e4d0e64936a7a7f992f597",
+      "evento_assinado_sha256": "1a0005a3195c7bdf6f383455648012ec6e659a87a30e267a431d0d3f110e2fb8",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819074700007.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819074700007",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695356074",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105144506",
+      "source_dhProcessamento": "2025-09-18T19:07:57.053",
+      "dtPgtos": [
+        "2025-08-01"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pronto",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [
+        "20374139717",
+        "20698806727"
+      ],
+      "setembro_real_cpfs": [
+        "20374139717",
+        "20698806727"
+      ],
+      "target_real_cpfs": [
+        "20374139717",
+        "20698806727"
+      ],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "15701224740",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\080_S1210_2025-08_15701224740_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\080_S1210_2025-08_15701224740_evento_assinado_original_202.xml",
+      "sha256": "42ae2cc8ea73c3a010eb9fed89a443edfcaff7db642a6795d95c43fde66ce71a",
+      "evento_assinado_sha256": "8a4586974cf36a11b1c8d18565f988199ec5abfc79ec2b12f385582aa0e762e8",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819081300010.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819081300010",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695357614",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105145088",
+      "source_dhProcessamento": "2025-09-18T19:08:22.103",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "17087835718",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\081_S1210_2025-08_17087835718_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\081_S1210_2025-08_17087835718_evento_assinado_original_202.xml",
+      "sha256": "80d83d9a84bbf595647ba77f39811c2b109a0baab65273ae30c51ffba0531108",
+      "evento_assinado_sha256": "fe2990c9aa71ff52eb50a860b7ad5d31b0c42665774500e018fbec875f5269a2",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819302800001.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819302800001",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695461759",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105170261",
+      "source_dhProcessamento": "2025-09-18T19:30:44.44",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pronto",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [
+        "23039241702"
+      ],
+      "setembro_real_cpfs": [
+        "23039241702"
+      ],
+      "target_real_cpfs": [
+        "23039241702"
+      ],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "17699409876",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\082_S1210_2025-08_17699409876_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\082_S1210_2025-08_17699409876_evento_assinado_original_202.xml",
+      "sha256": "dfd3378844fca79471a1b7d3de9375f6c2a5ee5bd521b9d0d1f4802e5b826715",
+      "evento_assinado_sha256": "f9172db165acc3bb4a62de185d84e8bee7f0aeec0e5420a4c7f2ea1da42954ad",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819082400012.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819082400012",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695358292",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105145283",
+      "source_dhProcessamento": "2025-09-18T19:08:33.943",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "19354014755",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\083_S1210_2025-08_19354014755_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\083_S1210_2025-08_19354014755_evento_assinado_original_202.xml",
+      "sha256": "d8d16027b7f05898687d14c161fa8d6e36cf571e08d71a9770ccbcf4f5088c3b",
+      "evento_assinado_sha256": "c0aa4c586b66492c2c3f2ef015470a4384c47e19b1fb0ad1fd03a37d8fa0dfe0",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819073700010.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819073700010",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695355772",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105144256",
+      "source_dhProcessamento": "2025-09-18T19:07:51.72",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pronto",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [
+        "20625296788"
+      ],
+      "setembro_real_cpfs": [
+        "20625296788"
+      ],
+      "target_real_cpfs": [
+        "20625296788"
+      ],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "25366903858",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\084_S1210_2025-08_25366903858_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\084_S1210_2025-08_25366903858_evento_assinado_original_202.xml",
+      "sha256": "ba84a91826e47c996d954b264262de64b0d890e98e63d6f8cd4bcd4877b4bec1",
+      "evento_assinado_sha256": "36510e9224328104da57f88b7aa2ec9deded4af5c0a55ea53dfb2f8396818e18",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819081300008.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819081300008",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695357569",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105145088",
+      "source_dhProcessamento": "2025-09-18T19:08:21.27",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "29387931897",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\085_S1210_2025-08_29387931897_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\085_S1210_2025-08_29387931897_evento_assinado_original_202.xml",
+      "sha256": "8ff0423d56f52148589efdcde8c9e649edbe53fc0e739788e2a98e2bbf576442",
+      "evento_assinado_sha256": "4859f5a98f488c158795ec174fb3e66806b91480906bf460462a11e2b733a4c3",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819085700003.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819085700003",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695360124",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105145919",
+      "source_dhProcessamento": "2025-09-18T19:09:06.31",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "30280615892",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\086_S1210_2025-08_30280615892_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\086_S1210_2025-08_30280615892_evento_assinado_original_202.xml",
+      "sha256": "f132e210ddeba889b72299811eec9985f40012f653784c8cb9a7f4c9a7847720",
+      "evento_assinado_sha256": "b69a141eb561769c0b72d9635ec0fae7fc32a0749a7f247d9624eecf49f589c6",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819082400006.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819082400006",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695358207",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105145283",
+      "source_dhProcessamento": "2025-09-18T19:08:32.303",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "30730892840",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\087_S1210_2025-08_30730892840_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\087_S1210_2025-08_30730892840_evento_assinado_original_202.xml",
+      "sha256": "33a1f36f855db8b985e962fbfe7112480844fcb72f540663ae3e4a4db2a6e97b",
+      "evento_assinado_sha256": "03b13cce431f0b32f9ea16cba62f954d70cfe6b1a171d4e7b498e8842440793f",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819081500006.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819081500006",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695358039",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105145088",
+      "source_dhProcessamento": "2025-09-18T19:08:28.947",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "32571450808",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\088_S1210_2025-08_32571450808_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\088_S1210_2025-08_32571450808_evento_assinado_original_202.xml",
+      "sha256": "7b8fff040162217e30962f419156213557373442e74acb50ed6a7b449fed6b7a",
+      "evento_assinado_sha256": "7c50fe298adb1dd79c4889a8f32e68a37a3e930b0175151fc3ca2b804e1cb88f",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819080900005.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819080900005",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695357464",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105144998",
+      "source_dhProcessamento": "2025-09-18T19:08:19.317",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "33681242852",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\089_S1210_2025-08_33681242852_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\089_S1210_2025-08_33681242852_evento_assinado_original_202.xml",
+      "sha256": "dad89b63583e4a7df3ee0eb11ab9d55d2a664b3b2a8a61e167e2618058ffdcb9",
+      "evento_assinado_sha256": "f9ab051c780237971a7c7879e4f28eda6494f0d000a35d8cbca678ac9d439668",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819082300003.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819082300003",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695358018",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105145283",
+      "source_dhProcessamento": "2025-09-18T19:08:28.66",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "33834306851",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\090_S1210_2025-08_33834306851_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\090_S1210_2025-08_33834306851_evento_assinado_original_202.xml",
+      "sha256": "a80a115a13da14d40cab60c60f1bae05d0f6573328ca2f01c3c20bcb25020fa0",
+      "evento_assinado_sha256": "edb7c246062f8484b3b8b99daa642ec66a41f749e1fe49aa3fb68fd645b9129d",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819100300006.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819100300006",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695365168",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105147216",
+      "source_dhProcessamento": "2025-09-18T19:10:28.13",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "34286723801",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\091_S1210_2025-08_34286723801_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\091_S1210_2025-08_34286723801_evento_assinado_original_202.xml",
+      "sha256": "9e55ccaa479f1d6c3be80eb7ddfb336455cc6f6da1d796b789d2939428da965c",
+      "evento_assinado_sha256": "8da491c8d5bb01f17b23d745811663f92255b3c9d8a5912e2a0185dd89e2135d",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819082400008.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819082400008",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695358229",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105145283",
+      "source_dhProcessamento": "2025-09-18T19:08:32.84",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "34875548877",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\092_S1210_2025-08_34875548877_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\092_S1210_2025-08_34875548877_evento_assinado_original_202.xml",
+      "sha256": "891c0f3f84834b1fd9247125473a01c544b6ef04ab3bfab27500df0d995f22f3",
+      "evento_assinado_sha256": "e2ddc942f6c03f7c302253b3139fe9c62f802081ab4b6310cd9641f379d98a21",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819083700010.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819083700010",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695359643",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105145478",
+      "source_dhProcessamento": "2025-09-18T19:08:57.953",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "35832326822",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\093_S1210_2025-08_35832326822_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\093_S1210_2025-08_35832326822_evento_assinado_original_202.xml",
+      "sha256": "44156ae83eab5019b2adff4b60d78d8b122644700c2978749151f31b80d267a3",
+      "evento_assinado_sha256": "ba1f48616aeba71684d763bb26a29694ee81c0acb972fb4f7cfc2ffddd93caa9",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819152500001.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819152500001",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695388412",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105153633",
+      "source_dhProcessamento": "2025-09-18T19:15:34.93",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pronto",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [
+        "56165716873",
+        "56509983885"
+      ],
+      "setembro_real_cpfs": [
+        "56165716873",
+        "56509983885"
+      ],
+      "target_real_cpfs": [
+        "56165716873",
+        "56509983885"
+      ],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "37647871803",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\094_S1210_2025-08_37647871803_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\094_S1210_2025-08_37647871803_evento_assinado_original_202.xml",
+      "sha256": "b43c33b571d3dcbc0e881f0fc0407a05f7869e5e2ad9961b95e2f7dae53516b0",
+      "evento_assinado_sha256": "b07a40b99fcf033c2f57e4e8974242b06829f9b77f595e8a74dc24ec7d806d51",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819081300001.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819081300001",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695357434",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105145088",
+      "source_dhProcessamento": "2025-09-18T19:08:18.803",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "40236751808",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\095_S1210_2025-08_40236751808_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\095_S1210_2025-08_40236751808_evento_assinado_original_202.xml",
+      "sha256": "9fec4c4b095f49f3f7b67ad1d6e44a0ac51e34a1a5ae4c931b44351eeb1eb3ed",
+      "evento_assinado_sha256": "ed1d683a9401b10ba5894d3c394db8fcf573b649fca61723b9f88cd5f17a9067",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819044600003.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819044600003",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695342812",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105140692",
+      "source_dhProcessamento": "2025-09-18T19:04:58.137",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pronto",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [
+        "53971605800",
+        "58045307803",
+        "58045328800"
+      ],
+      "setembro_real_cpfs": [
+        "53971605800",
+        "58045307803",
+        "58045328800"
+      ],
+      "target_real_cpfs": [
+        "53971605800",
+        "58045307803",
+        "58045328800"
+      ],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "40806733888",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\096_S1210_2025-08_40806733888_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\096_S1210_2025-08_40806733888_evento_assinado_original_202.xml",
+      "sha256": "1c09baf05ff64a7dae0fd90eac13a5b2986953ff34f16f227fa1f43f251f8bea",
+      "evento_assinado_sha256": "7d17c15c86523e066eb2e0c4e35a3d2383f73d95984e3520b74ba87818f32464",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819082100008.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819082100008",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695358794",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105145176",
+      "source_dhProcessamento": "2025-09-18T19:08:42.713",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "41310627800",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\097_S1210_2025-08_41310627800_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\097_S1210_2025-08_41310627800_evento_assinado_original_202.xml",
+      "sha256": "6994542ec8f836cb7ec593ab07c5aa674f37e9bc12e2352883f8f0c7f7e8deb4",
+      "evento_assinado_sha256": "07c41d3f8776562046abcb15d21d09d9913f772daad77cb244447d88846c5b14",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819065400006.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819065400006",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695352697",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105143443",
+      "source_dhProcessamento": "2025-09-18T19:07:00.337",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pronto",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [
+        "23997904804"
+      ],
+      "setembro_real_cpfs": [
+        "23997904804"
+      ],
+      "target_real_cpfs": [
+        "23997904804"
+      ],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "51811987168",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\098_S1210_2025-08_51811987168_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\098_S1210_2025-08_51811987168_evento_assinado_original_202.xml",
+      "sha256": "269b3bc6410738d3175a880aa00cfb4cfc8b65b453e5fd0facaddb6299a6e69d",
+      "evento_assinado_sha256": "efc5c332760e2c987324b7a7403812f9624afa661f6a1228103316365bfcac57",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819100700010.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819100700010",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695365094",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105147318",
+      "source_dhProcessamento": "2025-09-18T19:10:27.183",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "74838130163",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\099_S1210_2025-08_74838130163_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\099_S1210_2025-08_74838130163_evento_assinado_original_202.xml",
+      "sha256": "2c479bce8b2331cae7ed780be4c8514535390533a77e82ca2503b70bd0e8849d",
+      "evento_assinado_sha256": "08b66cd7e68a4255d00799f1f8bca96295edf8826894be758b9141c5cbedc9a1",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819082100003.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819082100003",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695358706",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105145176",
+      "source_dhProcessamento": "2025-09-18T19:08:41.233",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "85132993168",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\100_S1210_2025-08_85132993168_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\100_S1210_2025-08_85132993168_evento_assinado_original_202.xml",
+      "sha256": "78d756f16578f6eab9b0c544542e14f054f19d4897939e5f3cc4e85c93da9407",
+      "evento_assinado_sha256": "fa881bb371aeee441d00f96273d2adec38453935f1fea8f0ff365b0de38fbde9",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819081800012.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819081800012",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695357952",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105145176",
+      "source_dhProcessamento": "2025-09-18T19:08:27.47",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "88812090125",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\101_S1210_2025-08_88812090125_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\101_S1210_2025-08_88812090125_evento_assinado_original_202.xml",
+      "sha256": "b1092453245e9f94a0d0d99a2985dec6920b2114922c43934d0027be6742ceb9",
+      "evento_assinado_sha256": "bed97bbb82c1bfbc59c46e8489ea1e6f07fd99684a79d8c7d09ebd2af5ba501e",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819083500006.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819083500006",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695359050",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105145478",
+      "source_dhProcessamento": "2025-09-18T19:08:46.727",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "89107241534",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\102_S1210_2025-08_89107241534_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\102_S1210_2025-08_89107241534_evento_assinado_original_202.xml",
+      "sha256": "f633278f30aba8dff23ec29d2bce5061407664286935d9da4a1dd03f42469684",
+      "evento_assinado_sha256": "531c5f035b06e674a354e1ed174add69ab68d0e0a66a927d52db08517b60019f",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819072600011.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819072600011",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695354925",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105144057",
+      "source_dhProcessamento": "2025-09-18T19:07:39.733",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pronto",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [
+        "85906235566"
+      ],
+      "setembro_real_cpfs": [
+        "85906235566"
+      ],
+      "target_real_cpfs": [
+        "85906235566"
+      ],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "89258258487",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\103_S1210_2025-08_89258258487_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\103_S1210_2025-08_89258258487_evento_assinado_original_202.xml",
+      "sha256": "b0bdea8868ae5486d8ec6c4889c32564814c5b6575ae0b1c457e457d7015b6c1",
+      "evento_assinado_sha256": "75a8b414572a0eb812933cb4af7809bacb0d8700512d671a59d9b4a7f77977ea",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819095700013.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819095700013",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695364650",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105147111",
+      "source_dhProcessamento": "2025-09-18T19:10:21.45",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "94928495420",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\104_S1210_2025-08_94928495420_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\104_S1210_2025-08_94928495420_evento_assinado_original_202.xml",
+      "sha256": "3d9e23695e49c3b2a7e9da29afdbef84f4043b5150568a4c18df6de20ac0df5b",
+      "evento_assinado_sha256": "76d97bf8f7ef6df0586e2b702041b430204d35bc4130a9c5ebd12b06dae09cbd",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819091900010.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819091900010",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695362080",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105146281",
+      "source_dhProcessamento": "2025-09-18T19:09:36.797",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    },
+    {
+      "cpf": "98397435468",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_from_zip\\105_S1210_2025-08_98397435468_original_202.xml",
+      "evento_assinado_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_reenvio_original_agosto_202_evento_assinado_from_zip\\105_S1210_2025-08_98397435468_evento_assinado_original_202.xml",
+      "sha256": "fab02c94ab1f8daab3c6439730c4d86477ec6915cc4e0d600dcb41bacf41dc6b",
+      "evento_assinado_sha256": "8ec383a7a9ae9c379425062aad3f4ac13bb0ec199a1efc5b3443a1aaf00f8e6b",
+      "byte_identical_to_zip_entry": true,
+      "evento_assinado_extraido_literalmente_do_zip": true,
+      "source_zip": "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-09(16-30).zip",
+      "source_entry": "ID1094455020000002025091819092000010.S-1210.xml",
+      "source_event_id": "ID1094455020000002025091819092000010",
+      "source_indRetif": "1",
+      "source_nrRecibo": "1.1.0000000034695362419",
+      "source_cdResposta": "202",
+      "source_protocolo": "1.1.202509.0000000012105146281",
+      "source_dhProcessamento": "2025-09-18T19:09:42.163",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "status_resolvedor": "pendente",
+      "julho_event": true,
+      "setembro_event": true,
+      "julho_real_cpfs": [],
+      "setembro_real_cpfs": [],
+      "target_real_cpfs": [],
+      "observacao": "XML original extraido do ZIP local sem alteracao de conteudo; envio exige autorizacao explicita."
+    }
+  ]
+}

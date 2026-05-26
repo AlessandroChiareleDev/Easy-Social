@@ -1,0 +1,35 @@
+{
+  "per_apur": "2025-12",
+  "xlsx": "C:\\Users\\xandao\\Downloads\\resposta final\\2025-12_relatorio_final_jaque.xlsx",
+  "targets": {
+    "PLANO": 118,
+    "PENSAO": 2,
+    "DEPENDENTE": 1,
+    "RECIBO": 100
+  },
+  "target_total": 221,
+  "valid_rows_written": 120,
+  "plan_valid": 118,
+  "pension_valid": 2,
+  "dependent_valid": 0,
+  "missing_or_not_actionable": 101,
+  "missing_by_type": {
+    "DEPENDENTE": 1,
+    "RECIBO": 100
+  },
+  "invalid_rows": [
+    {
+      "cpf": "81529368553",
+      "tipo": "DEPENDENTE",
+      "motivo": "cpf_dependente_nao_informado"
+    }
+  ],
+  "plan_matches_target": {
+    "missing_in_xlsx": [],
+    "extra_in_xlsx": []
+  },
+  "pension_matches_target": {
+    "missing_in_xlsx": [],
+    "extra_in_xlsx": []
+  }
+}

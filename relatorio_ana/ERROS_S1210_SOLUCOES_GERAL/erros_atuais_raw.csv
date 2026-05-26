@@ -1,0 +1,942 @@
+﻿per_apur,cpf,status,erro_codigo,erro_mensagem,item_id,envio_id
+2025-02,00083268197,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,137324,881
+2025-02,00793730627,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,137609,882
+2025-02,01600865585,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,138098,883
+2025-02,02346385832,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,138640,883
+2025-02,02713285844,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,138862,883
+2025-02,03025522003,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,139062,884
+2025-02,03282809093,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,139272,884
+2025-02,03734938945,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,139599,884
+2025-02,04030623140,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,139822,884
+2025-02,04213972410,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,139958,884
+2025-02,04603055498,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,140282,884
+2025-02,06749244874,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,141655,885
+2025-02,07222885498,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,141906,885
+2025-02,07338460922,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,141984,885
+2025-02,07575441425,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,142111,885
+2025-02,07634291714,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,142146,885
+2025-02,07819709979,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,142268,885
+2025-02,07863498830,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,142298,885
+2025-02,07863548870,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,142299,885
+2025-02,08193739744,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,142474,885
+2025-02,08517868471,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,142658,885
+2025-02,08551918486,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,142685,885
+2025-02,08865298839,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,142866,885
+2025-02,09245657485,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,143065,886
+2025-02,09321030816,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,143103,886
+2025-02,09442696645,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,143179,886
+2025-02,09548614855,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,143233,886
+2025-02,09552153824,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,143236,886
+2025-02,09559713817,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,143242,886
+2025-02,09998186781,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,143495,886
+2025-02,10334489741,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,143641,886
+2025-02,10423668455,erro_esocial,401,"401: Conteudo do evento inválido. |   - 1861: CPF do dependente 17466625495 inválido.
+Ação sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",143704,886
+2025-02,11438810873,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,144229,886
+2025-02,11488285675,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,144253,886
+2025-02,11984250833,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,144489,886
+2025-02,11999740807,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,144494,886
+2025-02,12061471480,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,144519,886
+2025-02,12265702838,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,144576,886
+2025-02,12601629827,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,144700,886
+2025-02,12611014809,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,144705,886
+2025-02,13334011755,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,144995,887
+2025-02,13696451800,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,145118,887
+2025-02,13705060821,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,145121,887
+2025-02,13711160832,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,145124,887
+2025-02,14417604827,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,145318,887
+2025-02,14418818839,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,145319,887
+2025-02,15057517805,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,145495,887
+2025-02,17251076861,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,146032,887
+2025-02,17725269835,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,146132,887
+2025-02,18401846803,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,146277,887
+2025-02,20315573864,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,146492,887
+2025-02,21653555831,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,146587,887
+2025-02,22229832824,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,146686,887
+2025-02,22617602800,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,146792,887
+2025-02,22647816883,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,146806,887
+2025-02,22730253866,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,146834,887
+2025-02,24945783888,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,147076,888
+2025-02,25169797893,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,147115,888
+2025-02,25585996827,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,147199,888
+2025-02,26349271858,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,147357,888
+2025-02,26903366857,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,147478,888
+2025-02,27156659898,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,147535,888
+2025-02,28102078871,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,147745,888
+2025-02,28328079844,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,147802,888
+2025-02,28710124829,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,147888,888
+2025-02,29014861850,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,147956,888
+2025-02,29304390842,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,148015,888
+2025-02,29813948353,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,148129,888
+2025-02,29928815895,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,148152,888
+2025-02,30695631802,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,148297,888
+2025-02,30729903877,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,148307,888
+2025-02,30748912894,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,148313,888
+2025-02,30815823851,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,148329,888
+2025-02,30877919895,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,148341,888
+2025-02,31045012890,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,148385,888
+2025-02,31268487880,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,148419,888
+2025-02,31532125895,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,148466,888
+2025-02,31644156806,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,148491,888
+2025-02,32394567880,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,148681,888
+2025-02,33163519814,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,148869,888
+2025-02,33387996837,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,148926,889
+2025-02,33593392828,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,148973,889
+2025-02,33653549809,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,148989,889
+2025-02,34917814855,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,149304,889
+2025-02,35527258819,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,149444,889
+2025-02,36495227809,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,149684,889
+2025-02,36832724810,erro_esocial,401,"401: Conteudo do evento inválido. |   - 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.
+Ação Sugerida: Deverá existir um Evento já recebido, ""Ativo"" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",149769,889
+2025-02,37824282856,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,150024,889
+2025-02,37843870806,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,150028,889
+2025-02,38072051873,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,150078,889
+2025-02,38434368862,erro_esocial,401,"401: Conteudo do evento inválido. |   - 1861: CPF do dependente 56620089810 inválido.
+Ação sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento. |   - 1861: CPF do dependente 52159690864 inválido.
+Ação sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",150164,889
+2025-02,38678364858,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,150225,889
+2025-02,41190097850,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,150796,889
+2025-02,42852580802,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,151113,890
+2025-02,44752439808,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,151449,890
+2025-02,45244860895,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,151541,890
+2025-02,46500612884,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,151718,890
+2025-02,51109062893,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,152392,890
+2025-02,61623830400,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,153132,891
+2025-02,67578284568,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,153420,891
+2025-02,70473824108,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,153631,891
+2025-02,70633878120,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,153661,891
+2025-02,71234349191,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,153764,891
+2025-02,71985883104,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,153842,891
+2025-02,73292125987,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,153901,891
+2025-02,74353861034,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,153943,891
+2025-02,79686877487,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,154393,891
+2025-02,81529368553,erro_esocial,401,"401: Conteudo do evento inválido. |   - 1861: CPF do dependente 09274837500 inválido.
+Ação sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento. |   - 1861: CPF do dependente 09274813597 inválido.
+Ação sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",154596,891
+2025-02,82484660510,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,154718,891
+2025-02,82541787472,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,154733,891
+2025-02,87041065472,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,155281,892
+2025-02,92067689991,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,155612,892
+2025-02,93564139249,erro_esocial,401,"401: Conteudo do evento inválido. |   - 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.
+Ação Sugerida: Deverá existir um Evento já recebido, ""Ativo"" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",155719,892
+2025-02,94881898434,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,155815,892
+2025-03,00083268197,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,118271,867
+2025-03,00555440370,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,118436,868
+2025-03,00793730627,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,118569,868
+2025-03,01600865585,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,119091,869
+2025-03,02346385832,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,119667,869
+2025-03,02713285844,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,119909,870
+2025-03,02979332305,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,120100,870
+2025-03,03025522003,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,120126,870
+2025-03,03282809093,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,120324,870
+2025-03,03734938945,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,120672,870
+2025-03,04030623140,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,120902,870
+2025-03,04213972410,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,121043,870
+2025-03,04603055498,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,121379,870
+2025-03,06749244874,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,122795,871
+2025-03,07338460922,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,123136,871
+2025-03,07463327850,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,123200,871
+2025-03,07575441425,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,123272,871
+2025-03,07634291714,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,123305,871
+2025-03,07819709979,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,123426,871
+2025-03,07861242889,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,123455,871
+2025-03,07863498830,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,123458,871
+2025-03,07863548870,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,123459,871
+2025-03,08193739744,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,123642,871
+2025-03,08517868471,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,123824,871
+2025-03,08551918486,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,123849,872
+2025-03,08865298839,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,124021,872
+2025-03,09245657485,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,124212,872
+2025-03,09321030816,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,124256,872
+2025-03,09442696645,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,124328,872
+2025-03,09548614855,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,124385,872
+2025-03,09552153824,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,124388,872
+2025-03,09559713817,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,124395,872
+2025-03,09612497656,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,124424,872
+2025-03,09998186781,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,124642,872
+2025-03,10213292823,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,124746,872
+2025-03,10334489741,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,124795,872
+2025-03,10423668455,erro_esocial,401,"401: Conteudo do evento inválido. |   - 1861: CPF do dependente 17466625495 inválido.
+Ação sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",124850,872
+2025-03,10639034837,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,124968,872
+2025-03,11438810873,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,125376,872
+2025-03,11488285675,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,125400,872
+2025-03,11746677880,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,125531,872
+2025-03,11984250833,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,125631,872
+2025-03,11999740807,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,125637,872
+2025-03,12061471480,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,125667,872
+2025-03,12265702838,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,125720,872
+2025-03,12537867718,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,125820,872
+2025-03,12601629827,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,125851,873
+2025-03,12611014809,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,125855,873
+2025-03,13209279802,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,126089,873
+2025-03,13334011755,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,126150,873
+2025-03,13696451800,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,126275,873
+2025-03,13705060821,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,126278,873
+2025-03,13711160832,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,126283,873
+2025-03,14193059804,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,126417,873
+2025-03,14285875861,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,126450,873
+2025-03,14417604827,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,126488,873
+2025-03,14418818839,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,126489,873
+2025-03,15057517805,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,126668,873
+2025-03,15146736812,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,126704,873
+2025-03,15509458828,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,126810,873
+2025-03,17251076861,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,127190,873
+2025-03,17725269835,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,127295,873
+2025-03,18401846803,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,127448,873
+2025-03,18744806728,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,127496,873
+2025-03,20315573864,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,127660,873
+2025-03,21288302819,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,127696,873
+2025-03,21318440858,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,127699,873
+2025-03,21653555831,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,127753,873
+2025-03,21804920819,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,127786,873
+2025-03,21899082808,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,127802,873
+2025-03,22229832824,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,127853,874
+2025-03,22617602800,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,127965,874
+2025-03,22617893863,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,127966,874
+2025-03,22647816883,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,127979,874
+2025-03,22730253866,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,128006,874
+2025-03,24945783888,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,128251,874
+2025-03,25169797893,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,128287,874
+2025-03,25585996827,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,128371,874
+2025-03,25768579818,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,128394,874
+2025-03,26349271858,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,128520,874
+2025-03,26662467871,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,128593,874
+2025-03,26903366857,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,128643,874
+2025-03,27156659898,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,128697,874
+2025-03,27984880875,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,128888,874
+2025-03,28102078871,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,128905,874
+2025-03,28328079844,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,128961,874
+2025-03,29014861850,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,129114,874
+2025-03,29304390842,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,129170,874
+2025-03,29813948353,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,129280,874
+2025-03,29928815895,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,129303,874
+2025-03,30516064215,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,129410,874
+2025-03,30695631802,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,129444,874
+2025-03,30729903877,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,129454,874
+2025-03,30748912894,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,129460,874
+2025-03,30761016848,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,129465,874
+2025-03,30815823851,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,129476,874
+2025-03,30877919895,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,129485,874
+2025-03,31045012890,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,129522,874
+2025-03,31268487880,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,129556,874
+2025-03,31532125895,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,129603,874
+2025-03,31644156806,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,129628,874
+2025-03,32393572830,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,129807,874
+2025-03,32394567880,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,129808,874
+2025-03,32875046810,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,129920,875
+2025-03,33030723372,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,129955,875
+2025-03,33163519814,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,129998,875
+2025-03,33387996837,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,130053,875
+2025-03,33593392828,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,130101,875
+2025-03,33653549809,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,130114,875
+2025-03,34212228866,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,130231,875
+2025-03,34917814855,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,130426,875
+2025-03,35102168819,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,130459,875
+2025-03,35527258819,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,130564,875
+2025-03,35716135897,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,130611,875
+2025-03,35791396813,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,130628,875
+2025-03,36495227809,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,130801,875
+2025-03,37495188820,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,131046,875
+2025-03,37824282856,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,131125,875
+2025-03,37843870806,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,131129,875
+2025-03,38072051873,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,131175,875
+2025-03,38434368862,erro_esocial,401,"401: Conteudo do evento inválido. |   - 1861: CPF do dependente 56620089810 inválido.
+Ação sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento. |   - 1861: CPF do dependente 52159690864 inválido.
+Ação sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",131256,875
+2025-03,38678364858,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,131319,875
+2025-03,38870126404,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,131373,875
+2025-03,39428963895,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,131497,875
+2025-03,40805764801,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,131804,875
+2025-03,41190097850,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,131879,876
+2025-03,42526219841,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,132124,876
+2025-03,42852580802,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,132189,876
+2025-03,43582114880,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,132335,876
+2025-03,44234146862,erro_esocial,401,"401: Conteudo do evento inválido. |   - 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.
+Ação Sugerida: Deverá existir um Evento já recebido, ""Ativo"" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",132428,876
+2025-03,44752439808,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,132529,876
+2025-03,45244860895,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,132614,876
+2025-03,46500612884,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,132799,876
+2025-03,51109062893,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,133470,876
+2025-03,61623830400,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,134232,877
+2025-03,67578284568,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,134535,877
+2025-03,70473824108,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,134763,877
+2025-03,70633878120,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,134797,877
+2025-03,71234349191,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,134902,877
+2025-03,73292125987,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,135037,877
+2025-03,73902209372,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,135055,877
+2025-03,74353861034,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,135079,877
+2025-03,79686877487,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,135547,877
+2025-03,81529368553,erro_esocial,401,"401: Conteudo do evento inválido. |   - 1861: CPF do dependente 09274837500 inválido.
+Ação sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento. |   - 1861: CPF do dependente 09274813597 inválido.
+Ação sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",135758,877
+2025-03,82484660510,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,135883,878
+2025-03,82541787472,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,135899,878
+2025-03,87041065472,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,136481,878
+2025-03,92067689991,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,136833,878
+2025-03,94881898434,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,137050,878
+2025-03,98469878115,erro_esocial,401,"401: Conteudo do evento inválido. |   - 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.
+Ação Sugerida: Deverá existir um Evento já recebido, ""Ativo"" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",137222,878
+2025-04,00555440370,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,99148,853
+2025-04,02346385832,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,100382,854
+2025-04,02713285844,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,100623,855
+2025-04,02979332305,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,100818,855
+2025-04,06042642405,erro_esocial,401,"401: Conteudo do evento inválido. |   - 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.
+Ação Sugerida: Deverá existir um Evento já recebido, ""Ativo"" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",103096,856
+2025-04,06749244874,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,103538,856
+2025-04,07463327850,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,103954,856
+2025-04,07634291714,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,104068,856
+2025-04,07861242889,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,104224,856
+2025-04,07863498830,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,104227,856
+2025-04,07863548870,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,104228,856
+2025-04,08551918486,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,104614,857
+2025-04,08865298839,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,104789,857
+2025-04,09548614855,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,105182,857
+2025-04,09552153824,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,105184,857
+2025-04,09559713817,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,105192,857
+2025-04,09612497656,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,105219,857
+2025-04,10213292823,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,105549,857
+2025-04,10423668455,erro_esocial,401,"401: Conteudo do evento inválido. |   - 1861: CPF do dependente 17466625495 inválido.
+Ação sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento. |   - 1861: CPF do dependente 17466625495 inválido.
+Ação sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",105663,857
+2025-04,10639034837,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,105778,857
+2025-04,11438810873,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,106206,857
+2025-04,11746677880,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,106356,857
+2025-04,11984250833,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,106467,857
+2025-04,11999740807,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,106472,857
+2025-04,12061471480,erro_esocial,401,"401: Conteudo do evento inválido. |   - 1861: CPF do dependente 13523268419 inválido.
+Ação sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",106498,857
+2025-04,12265702838,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,106550,857
+2025-04,12537867718,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,106700,859
+2025-04,12601629827,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,106731,859
+2025-04,12611014809,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,106736,859
+2025-04,13696451800,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,107151,859
+2025-04,13705060821,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,107154,859
+2025-04,13711160832,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,107158,859
+2025-04,14193059804,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,107294,859
+2025-04,14285875861,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,107328,859
+2025-04,14417604827,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,107365,859
+2025-04,14418818839,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,107366,859
+2025-04,15057517805,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,107547,859
+2025-04,15146736812,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,107586,859
+2025-04,15509458828,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,107690,859
+2025-04,17251076861,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,108063,859
+2025-04,17725269835,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,108171,859
+2025-04,18401846803,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,108318,859
+2025-04,20315573864,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,108532,859
+2025-04,21288302819,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,108572,859
+2025-04,21653555831,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,108630,860
+2025-04,21804920819,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,108661,860
+2025-04,21899082808,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,108678,860
+2025-04,22229832824,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,108730,860
+2025-04,22617602800,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,108846,860
+2025-04,22617893863,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,108847,860
+2025-04,22647816883,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,108860,860
+2025-04,22730253866,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,108887,860
+2025-04,24945783888,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,109130,860
+2025-04,25169797893,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,109168,860
+2025-04,25585996827,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,109250,860
+2025-04,26349271858,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,109398,860
+2025-04,26662467871,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,109472,860
+2025-04,26903366857,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,109524,860
+2025-04,27156659898,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,109580,860
+2025-04,27206786863,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,109590,860
+2025-04,27984880875,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,109772,860
+2025-04,28102078871,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,109789,860
+2025-04,28328079844,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,109846,860
+2025-04,29014861850,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,110000,860
+2025-04,29813948353,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,110166,860
+2025-04,29928815895,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,110188,860
+2025-04,30516064215,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,110295,860
+2025-04,30729903877,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,110342,860
+2025-04,30748912894,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,110348,860
+2025-04,30761016848,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,110352,860
+2025-04,30815823851,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,110363,860
+2025-04,30877919895,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,110372,860
+2025-04,31268487880,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,110442,860
+2025-04,32393572830,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,110699,861
+2025-04,32394567880,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,110700,861
+2025-04,32875046810,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,110814,861
+2025-04,33030723372,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,110849,861
+2025-04,33163519814,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,110894,861
+2025-04,33387996837,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,110948,861
+2025-04,33593392828,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,110995,861
+2025-04,34212228866,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,111124,861
+2025-04,34917814855,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,111322,861
+2025-04,35716135897,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,111506,861
+2025-04,35791396813,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,111524,861
+2025-04,37495188820,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,111945,861
+2025-04,37824282856,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,112024,861
+2025-04,37843870806,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,112027,861
+2025-04,38072051873,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,112073,861
+2025-04,38434368862,erro_esocial,401,"401: Conteudo do evento inválido. |   - 1861: CPF do dependente 56620089810 inválido.
+Ação sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento. |   - 1861: CPF do dependente 52159690864 inválido.
+Ação sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",112157,861
+2025-04,38678364858,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,112219,861
+2025-04,38870126404,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,112270,861
+2025-04,39428963895,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,112395,861
+2025-04,39503742803,erro_esocial,401,"401: Conteudo do evento inválido. |   - 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.
+Ação Sugerida: Deverá existir um Evento já recebido, ""Ativo"" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",112409,861
+2025-04,40805764801,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,112700,862
+2025-04,41190097850,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,112775,862
+2025-04,42479397858,erro_esocial,401,"401: Conteudo do evento inválido. |   - 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.
+Ação Sugerida: Deverá existir um Evento já recebido, ""Ativo"" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",113009,862
+2025-04,42526219841,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,113019,862
+2025-04,42852580802,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,113085,862
+2025-04,43582114880,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,113232,862
+2025-04,44752439808,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,113433,862
+2025-04,45244860895,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,113519,862
+2025-04,47736044848,erro_esocial,401,"401: Conteudo do evento inválido. |   - 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.
+Ação Sugerida: Deverá existir um Evento já recebido, ""Ativo"" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",113889,862
+2025-04,51109062893,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,114393,862
+2025-04,61623830400,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,115151,863
+2025-04,67578284568,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,115450,863
+2025-04,73902209372,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,115977,863
+2025-04,81529368553,erro_esocial,401,"401: Conteudo do evento inválido. |   - 1861: CPF do dependente 09274837500 inválido.
+Ação sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento. |   - 1861: CPF do dependente 09274813597 inválido.
+Ação sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",116686,864
+2025-04,87041065472,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,117413,864
+2025-04,94881898434,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,117991,864
+2025-05,00555440370,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,79998,836
+2025-05,02346385832,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,81238,837
+2025-05,02713285844,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,81479,837
+2025-05,02979332305,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,81676,837
+2025-05,06749244874,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,84385,838
+2025-05,07463327850,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,84855,840
+2025-05,07634291714,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,84968,840
+2025-05,07861242889,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,85123,840
+2025-05,07863498830,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,85125,840
+2025-05,07863548870,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,85126,840
+2025-05,08551918486,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,85510,840
+2025-05,08865298839,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,85686,840
+2025-05,09548614855,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,86074,840
+2025-05,09552153824,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,86076,840
+2025-05,09559713817,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,86082,840
+2025-05,09612497656,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,86108,840
+2025-05,10213292823,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,86440,840
+2025-05,10423668455,erro_esocial,401,"401: Conteudo do evento inválido. |   - 1861: CPF do dependente 17466625495 inválido.
+Ação sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",86551,841
+2025-05,10639034837,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,86662,841
+2025-05,11438810873,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,87095,841
+2025-05,11746677880,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,87237,841
+2025-05,11984250833,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,87350,841
+2025-05,11999740807,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,87355,841
+2025-05,12265702838,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,87428,841
+2025-05,12537867718,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,87525,841
+2025-05,12601629827,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,87555,841
+2025-05,12611014809,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,87560,841
+2025-05,13660429805,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,87960,841
+2025-05,13696451800,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,87976,841
+2025-05,13705060821,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,87979,841
+2025-05,13711160832,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,87983,841
+2025-05,14193059804,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,88117,841
+2025-05,14285875861,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,88148,841
+2025-05,14418818839,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,88184,841
+2025-05,15057517805,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,88362,841
+2025-05,15509458828,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,88504,842
+2025-05,17251076861,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,88874,842
+2025-05,17725269835,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,88980,842
+2025-05,18401846803,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,89128,842
+2025-05,20315573864,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,89340,842
+2025-05,21288302819,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,89378,842
+2025-05,21653555831,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,89434,842
+2025-05,21804920819,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,89464,842
+2025-05,21899082808,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,89482,842
+2025-05,22229832824,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,89530,842
+2025-05,22617602800,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,89644,842
+2025-05,22617893863,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,89645,842
+2025-05,22647816883,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,89657,842
+2025-05,22730253866,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,89684,842
+2025-05,22735107809,erro_esocial,401,"401: Conteudo do evento inválido. |   - 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.
+Ação Sugerida: Deverá existir um Evento já recebido, ""Ativo"" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",89686,842
+2025-05,24945783888,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,89915,842
+2025-05,25169797893,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,89953,842
+2025-05,25585996827,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,90032,842
+2025-05,26349271858,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,90176,842
+2025-05,26662467871,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,90247,842
+2025-05,26903366857,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,90300,842
+2025-05,27156659898,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,90357,842
+2025-05,27206786863,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,90365,842
+2025-05,27984880875,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,90593,844
+2025-05,28102078871,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,90611,844
+2025-05,28328079844,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,90668,844
+2025-05,29014861850,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,90822,844
+2025-05,29813948353,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,90985,844
+2025-05,29928815895,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,91006,844
+2025-05,30516064215,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,91108,844
+2025-05,30729903877,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,91154,844
+2025-05,30748912894,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,91160,844
+2025-05,30761016848,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,91164,844
+2025-05,30815823851,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,91175,844
+2025-05,30877919895,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,91184,844
+2025-05,31268487880,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,91252,844
+2025-05,32393572830,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,91510,844
+2025-05,32394567880,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,91511,844
+2025-05,32875046810,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,91622,844
+2025-05,33030723372,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,91656,844
+2025-05,33163519814,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,91695,844
+2025-05,33387996837,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,91745,844
+2025-05,33593392828,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,91790,844
+2025-05,34212228866,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,91921,844
+2025-05,34917814855,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,92125,844
+2025-05,35716135897,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,92303,844
+2025-05,35791396813,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,92320,844
+2025-05,36984839807,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,92595,845
+2025-05,37495188820,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,92726,846
+2025-05,37824282856,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,92800,846
+2025-05,38072051873,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,92847,846
+2025-05,38434368862,erro_esocial,401,"401: Conteudo do evento inválido. |   - 1861: CPF do dependente 56620089810 inválido.
+Ação sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento. |   - 1861: CPF do dependente 52159690864 inválido.
+Ação sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",92932,846
+2025-05,38678364858,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,92991,846
+2025-05,38870126404,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,93042,846
+2025-05,39428963895,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,93158,846
+2025-05,40805764801,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,93459,846
+2025-05,41190097850,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,93530,846
+2025-05,41257665847,erro_esocial,401,"401: Conteudo do evento inválido. |   - 1861: CPF do dependente 56760354800 inválido.
+Ação sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento. |   - 1861: CPF do dependente 60084116846 inválido.
+Ação sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",93540,846
+2025-05,42526219841,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,93765,846
+2025-05,42852580802,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,93831,846
+2025-05,43582114880,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,93982,846
+2025-05,44752439808,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,94180,846
+2025-05,45244860895,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,94261,846
+2025-05,51109062893,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,95098,847
+2025-05,61623830400,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,95851,847
+2025-05,67578284568,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,96152,847
+2025-05,73902209372,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,96686,847
+2025-05,81529368553,erro_esocial,401,"401: Conteudo do evento inválido. |   - 1861: CPF do dependente 09274837500 inválido.
+Ação sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento. |   - 1861: CPF do dependente 09274813597 inválido.
+Ação sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",97397,848
+2025-05,87041065472,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,98124,848
+2025-05,90578570904,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,98381,848
+2025-05,94881898434,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,98698,848
+2025-06,00555440370,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,64627,680
+2025-06,02346385832,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,65762,692
+2025-06,02713285844,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,65984,694
+2025-06,02979332305,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,66171,696
+2025-06,04224010569,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,67049,704
+2025-06,06749244874,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,68603,720
+2025-06,07463327850,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,68979,724
+2025-06,07634291714,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,69072,725
+2025-06,07861242889,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,69202,726
+2025-06,07863498830,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,69204,726
+2025-06,07863548870,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,69205,726
+2025-06,08551918486,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,69532,729
+2025-06,08865298839,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,69665,731
+2025-06,09548614855,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,69954,733
+2025-06,09552153824,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,69956,733
+2025-06,09559713817,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,69962,734
+2025-06,09612497656,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,69983,734
+2025-06,10213292823,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,70267,737
+2025-06,10423668455,erro_esocial,401,"401: Conteudo do evento inválido. |   - 1861: CPF do dependente 17466625495 inválido.
+Ação sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",70347,737
+2025-06,10639034837,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,70442,738
+2025-06,11438810873,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,70794,742
+2025-06,11746677880,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,70906,743
+2025-06,11984250833,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,70995,744
+2025-06,11999740807,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,70999,744
+2025-06,12265702838,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,71064,745
+2025-06,12537867718,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,71143,745
+2025-06,12601629827,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,71158,745
+2025-06,12611014809,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,71162,746
+2025-06,13660429805,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,71457,748
+2025-06,13696451800,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,71470,749
+2025-06,13705060821,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,71475,749
+2025-06,13711160832,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,71479,749
+2025-06,14193059804,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,71597,750
+2025-06,14418818839,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,71640,750
+2025-06,15057517805,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,71782,752
+2025-06,15509458828,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,71883,753
+2025-06,17725269835,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,72260,757
+2025-06,18401846803,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,72380,758
+2025-06,20315573864,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,72542,759
+2025-06,21288302819,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,72572,760
+2025-06,21653555831,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,72615,760
+2025-06,21777491827,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,72627,760
+2025-06,21804920819,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,72630,760
+2025-06,21899082808,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,72644,760
+2025-06,22229832824,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,72681,761
+2025-06,22455023885,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,72721,761
+2025-06,22617602800,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,72753,761
+2025-06,22617893863,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,72754,761
+2025-06,22647816883,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,72760,762
+2025-06,22730253866,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,72771,762
+2025-06,24945783888,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,72900,763
+2025-06,25169797893,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,72930,763
+2025-06,25585996827,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,72979,764
+2025-06,26176873843,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,73038,764
+2025-06,26349271858,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,73073,765
+2025-06,26662467871,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,73120,765
+2025-06,26903366857,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,73152,765
+2025-06,27156659898,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,73191,766
+2025-06,27206786863,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,73198,766
+2025-06,27244289863,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,73207,766
+2025-06,27984880875,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,73323,767
+2025-06,28102078871,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,73336,767
+2025-06,28328079844,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,73376,768
+2025-06,29014861850,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,73481,769
+2025-06,29813948353,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,73594,770
+2025-06,29928815895,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,73605,770
+2025-06,30516064215,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,73675,771
+2025-06,30729903877,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,73706,771
+2025-06,30748912894,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,73712,771
+2025-06,30761016848,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,73715,771
+2025-06,30815823851,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,73725,771
+2025-06,30877919895,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,73730,771
+2025-06,31268487880,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,73775,772
+2025-06,31428650806,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,73796,772
+2025-06,31798008874,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,73836,772
+2025-06,32393572830,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,73932,773
+2025-06,32394567880,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,73933,773
+2025-06,32875046810,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,74006,774
+2025-06,33030723372,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,74028,774
+2025-06,33163519814,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,74054,774
+2025-06,33387996837,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,74088,775
+2025-06,33593392828,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,74115,775
+2025-06,34212228866,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,74208,776
+2025-06,34917814855,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,74344,777
+2025-06,35716135897,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,74451,778
+2025-06,35791396813,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,74461,779
+2025-06,36984839807,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,74640,780
+2025-06,37495188820,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,74715,781
+2025-06,37824282856,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,74763,782
+2025-06,38072051873,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,74793,782
+2025-06,38434368862,erro_esocial,401,"401: Conteudo do evento inválido. |   - 1861: CPF do dependente 56620089810 inválido.
+Ação sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento. |   - 1861: CPF do dependente 52159690864 inválido.
+Ação sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",74844,782
+2025-06,38678364858,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,74885,783
+2025-06,38870126404,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,74915,783
+2025-06,39428963895,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,74988,784
+2025-06,40805764801,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,75188,786
+2025-06,41190097850,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,75233,786
+2025-06,42526219841,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,75399,788
+2025-06,42852580802,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,75445,788
+2025-06,43582114880,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,75546,789
+2025-06,44752439808,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,75689,791
+2025-06,45244860895,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,75752,791
+2025-06,51109062893,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,76328,797
+2025-06,61623830400,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,76930,803
+2025-06,67578284568,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,77195,806
+2025-06,73902209372,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,77692,811
+2025-06,81529368553,erro_esocial,401,"401: Conteudo do evento inválido. |   - 1861: CPF do dependente 09274837500 inválido.
+Ação sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento. |   - 1861: CPF do dependente 09274813597 inválido.
+Ação sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",78365,818
+2025-06,87041065472,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,79053,824
+2025-06,90578570904,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,79279,827
+2025-06,98234110187,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,79726,831
+2025-07,00555440370,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,48783,517
+2025-07,02346385832,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,49966,529
+2025-07,02713285844,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,50197,531
+2025-07,02979332305,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,50385,533
+2025-07,04111405746,erro_esocial,401,"401: Conteudo do evento inválido. |   - 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.
+Ação Sugerida: Deverá existir um Evento já recebido, ""Ativo"" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",51230,542
+2025-07,04224010569,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,51315,543
+2025-07,06749244874,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,52928,559
+2025-07,07463327850,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,53323,563
+2025-07,07634291714,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,53425,564
+2025-07,07861242889,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,53560,565
+2025-07,07863498830,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,53562,565
+2025-07,07863548870,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,53563,565
+2025-07,08551918486,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,53906,569
+2025-07,08865298839,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,54050,570
+2025-07,09548614855,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,54381,573
+2025-07,09552153824,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,54383,573
+2025-07,09559713817,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,54389,573
+2025-07,09612497656,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,54416,574
+2025-07,10213292823,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,54732,577
+2025-07,10639034837,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,54930,579
+2025-07,11438810873,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,55321,583
+2025-07,11746677880,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,55441,584
+2025-07,11984250833,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,55547,585
+2025-07,11999740807,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,55551,585
+2025-07,12265702838,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,55627,586
+2025-07,12537867718,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,55720,587
+2025-07,12601629827,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,55737,587
+2025-07,12611014809,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,55742,587
+2025-07,13660429805,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,56049,592
+2025-07,13696451800,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,56065,592
+2025-07,13705060821,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,56070,592
+2025-07,13711160832,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,56076,592
+2025-07,14193059804,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,56202,593
+2025-07,14418818839,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,56252,594
+2025-07,15057517805,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,56396,595
+2025-07,15509458828,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,56508,596
+2025-07,17725269835,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,56905,600
+2025-07,18113495797,erro_esocial,401,"401: Conteudo do evento inválido. |   - 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.
+Ação Sugerida: Deverá existir um Evento já recebido, ""Ativo"" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",56980,601
+2025-07,18401846803,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,57030,602
+2025-07,20315573864,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,57196,603
+2025-07,21288302819,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,57225,604
+2025-07,21653555831,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,57269,604
+2025-07,21777491827,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,57281,604
+2025-07,21804920819,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,57284,604
+2025-07,21899082808,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,57299,604
+2025-07,22229832824,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,57334,605
+2025-07,22455023885,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,57374,605
+2025-07,22617602800,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,57407,605
+2025-07,22617893863,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,57408,605
+2025-07,22647816883,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,57414,605
+2025-07,22730253866,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,57423,606
+2025-07,24945783888,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,57550,607
+2025-07,25169797893,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,57581,607
+2025-07,25585996827,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,57630,608
+2025-07,26176873843,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,57688,608
+2025-07,26349271858,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,57722,609
+2025-07,26662467871,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,57764,609
+2025-07,26903366857,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,57797,609
+2025-07,27156659898,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,57836,610
+2025-07,27206786863,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,57843,610
+2025-07,27244289863,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,57852,610
+2025-07,27984880875,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,57964,611
+2025-07,28102078871,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,57979,611
+2025-07,28328079844,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,58019,612
+2025-07,29014861850,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,58122,613
+2025-07,29813948353,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,58236,614
+2025-07,29928815895,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,58247,614
+2025-07,30516064215,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,58319,615
+2025-07,30729903877,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,58348,615
+2025-07,30748912894,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,58353,615
+2025-07,30761016848,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,58356,615
+2025-07,30815823851,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,58366,615
+2025-07,30877919895,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,58371,615
+2025-07,31268487880,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,58416,616
+2025-07,31428650806,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,58438,616
+2025-07,31798008874,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,58480,616
+2025-07,32393572830,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,58573,617
+2025-07,32394567880,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,58574,617
+2025-07,32875046810,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,58646,618
+2025-07,33030723372,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,58666,618
+2025-07,33387996837,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,58730,619
+2025-07,33593392828,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,58759,619
+2025-07,34212228866,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,58850,620
+2025-07,34917814855,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,58989,621
+2025-07,35716135897,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,59096,622
+2025-07,35791396813,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,59106,622
+2025-07,36754702885,erro_esocial,401,"401: Conteudo do evento inválido. |   - 1861: CPF do dependente 09267530887 inválido.
+Ação sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",59261,624
+2025-07,36984839807,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,59290,624
+2025-07,37495188820,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,59364,625
+2025-07,37824282856,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,59413,625
+2025-07,38072051873,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,59443,626
+2025-07,38678364858,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,59531,627
+2025-07,38870126404,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,59560,627
+2025-07,39428963895,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,59633,628
+2025-07,40805764801,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,59817,630
+2025-07,41190097850,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,59862,630
+2025-07,42526219841,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,60017,632
+2025-07,43582114880,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,60147,633
+2025-07,44752439808,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,60282,634
+2025-07,45244860895,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,60345,635
+2025-07,51109062893,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,60914,640
+2025-07,61623830400,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,61502,646
+2025-07,67578284568,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,61764,649
+2025-07,73902209372,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,62240,654
+2025-07,81529368553,erro_esocial,401,"401: Conteudo do evento inválido. |   - 1861: CPF do dependente 09274837500 inválido.
+Ação sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento. |   - 1861: CPF do dependente 09274813597 inválido.
+Ação sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",62937,661
+2025-07,87041065472,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,63675,668
+2025-07,90578570904,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,63903,670
+2025-07,98234110187,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,64380,675
+2025-09,00555440370,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,16503,186
+2025-09,02346385832,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,17682,198
+2025-09,02713285844,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,17915,201
+2025-09,02979332305,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,18109,203
+2025-09,04224010569,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,19031,212
+2025-09,04239333458,erro_esocial,401,"401: Conteudo do evento inválido. |   - 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.
+Ação Sugerida: Deverá existir um Evento já recebido, ""Ativo"" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",19045,212
+2025-09,07463327850,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,21055,232
+2025-09,07634291714,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,21158,233
+2025-09,07863498830,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,21300,234
+2025-09,07863548870,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,21301,234
+2025-09,08865298839,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,21812,240
+2025-09,09548614855,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,22164,243
+2025-09,09552153824,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,22166,243
+2025-09,09612497656,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,22199,243
+2025-09,10213292823,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,22521,247
+2025-09,10639034837,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,22731,249
+2025-09,11438810873,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,23156,253
+2025-09,11746677880,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,23284,254
+2025-09,11984250833,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,23397,255
+2025-09,11999740807,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,23403,255
+2025-09,12265702838,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,23481,256
+2025-09,12537867718,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,23582,257
+2025-09,12601629827,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,23601,257
+2025-09,12611014809,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,23605,258
+2025-09,13660429805,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,23914,261
+2025-09,13696451800,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,23930,261
+2025-09,13705060821,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,23935,261
+2025-09,13711160832,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,23942,261
+2025-09,14193059804,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,24081,262
+2025-09,14418818839,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,24135,263
+2025-09,15057517805,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,24285,264
+2025-09,15509458828,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,24402,265
+2025-09,17725269835,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,24823,270
+2025-09,18401846803,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,24954,271
+2025-09,20315573864,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,25119,273
+2025-09,21288302819,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,25152,273
+2025-09,21653555831,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,25196,273
+2025-09,21777491827,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,25207,274
+2025-09,21804920819,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,25210,274
+2025-09,21899082808,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,25225,274
+2025-09,22229832824,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,25261,274
+2025-09,22455023885,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,25304,274
+2025-09,22617602800,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,25333,275
+2025-09,22617893863,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,25334,275
+2025-09,22647816883,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,25339,275
+2025-09,22730253866,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,25347,275
+2025-09,24945783888,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,25472,276
+2025-09,25169797893,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,25501,276
+2025-09,26176873843,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,25607,278
+2025-09,26349271858,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,25639,278
+2025-09,26662467871,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,25682,278
+2025-09,26903366857,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,25713,279
+2025-09,27156659898,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,25749,279
+2025-09,27206786863,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,25756,279
+2025-09,27244289863,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,25763,279
+2025-09,27984880875,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,25870,280
+2025-09,28102078871,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,25886,280
+2025-09,28328079844,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,25920,281
+2025-09,29014861850,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,26022,282
+2025-09,29813948353,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,26127,283
+2025-09,29928815895,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,26138,283
+2025-09,30516064215,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,26203,283
+2025-09,30729903877,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,26234,284
+2025-09,30748912894,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,26239,284
+2025-09,30761016848,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,26242,284
+2025-09,30815823851,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,26252,284
+2025-09,30877919895,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,26257,284
+2025-09,31268487880,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,26302,284
+2025-09,31428650806,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,26322,285
+2025-09,31798008874,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,26366,285
+2025-09,32394567880,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,26457,286
+2025-09,32875046810,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,26526,287
+2025-09,33030723372,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,26545,287
+2025-09,33387996837,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,26602,287
+2025-09,33593392828,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,26628,288
+2025-09,34212228866,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,26723,289
+2025-09,34917814855,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,26850,290
+2025-09,35716135897,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,26952,291
+2025-09,35791396813,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,26962,291
+2025-09,36984839807,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,27130,293
+2025-09,37495188820,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,27201,293
+2025-09,37824282856,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,27252,294
+2025-09,38072051873,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,27279,294
+2025-09,38678364858,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,27363,295
+2025-09,39428963895,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,27456,296
+2025-09,40805764801,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,27644,298
+2025-09,41190097850,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,27690,298
+2025-09,42526219841,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,27834,300
+2025-09,43582114880,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,27969,301
+2025-09,44752439808,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,28100,302
+2025-09,45244860895,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,28165,303
+2025-09,51109062893,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,28709,309
+2025-09,61623830400,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,29271,314
+2025-09,67578284568,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,29532,317
+2025-09,73425230115,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,30051,322
+2025-09,73902209372,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,30065,322
+2025-09,81504411153,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,30731,329
+2025-09,81529368553,erro_esocial,401,"401: Conteudo do evento inválido. |   - 1861: CPF do dependente 09274837500 inválido.
+Ação sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento. |   - 1861: CPF do dependente 09274813597 inválido.
+Ação sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",30734,329
+2025-09,87041065472,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,31451,336
+2025-09,90578570904,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,31680,338
+2025-09,98234110187,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,32146,343
+2025-10,00555440370,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,32482,352
+2025-10,02346385832,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,33664,364
+2025-10,02713285844,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,33901,367
+2025-10,02979332305,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,34096,369
+2025-10,03476711102,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,34478,372
+2025-10,04224010569,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,35027,378
+2025-10,05104134555,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,35620,384
+2025-10,07463327850,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,37047,398
+2025-10,07634291714,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,37154,399
+2025-10,07863548870,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,37297,401
+2025-10,08551918486,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,37662,404
+2025-10,08865298839,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,37816,406
+2025-10,09552153824,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,38179,409
+2025-10,09555377898,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,38183,409
+2025-10,09612497656,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,38212,410
+2025-10,10213292823,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,38546,413
+2025-10,10639034837,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,38761,415
+2025-10,11438810873,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,39194,420
+2025-10,11746677880,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,39326,421
+2025-10,11746946881,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,39327,421
+2025-10,11984250833,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,39437,422
+2025-10,11999740807,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,39443,422
+2025-10,12265702838,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,39523,423
+2025-10,12601629827,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,39646,424
+2025-10,12611014809,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,39651,424
+2025-10,13660429805,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,39975,427
+2025-10,13696451800,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,39992,427
+2025-10,13705060821,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,39997,428
+2025-10,13711160832,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,40004,428
+2025-10,14129552899,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,40134,429
+2025-10,14193059804,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,40145,429
+2025-10,14418818839,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,40207,430
+2025-10,15057517805,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,40364,431
+2025-10,15509458828,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,40483,432
+2025-10,17725269835,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,41122,439
+2025-10,18401846803,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,41260,440
+2025-10,20315573864,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,41438,442
+2025-10,21288302819,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,41473,442
+2025-10,21777491827,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,41530,443
+2025-10,21804920819,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,41533,443
+2025-10,21899082808,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,41548,443
+2025-10,22229832824,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,41584,443
+2025-10,22455023885,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,41626,444
+2025-10,22617602800,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,41655,444
+2025-10,22730253866,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,41672,444
+2025-10,23357036843,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,41724,445
+2025-10,24945783888,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,41800,446
+2025-10,25169797893,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,41825,446
+2025-10,26176873843,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,41934,447
+2025-10,26349271858,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,41967,447
+2025-10,26534955890,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,41990,447
+2025-10,26662467871,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,42012,448
+2025-10,26903366857,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,42044,448
+2025-10,27156659898,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,42080,448
+2025-10,27206786863,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,42087,448
+2025-10,27244289863,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,42094,449
+2025-10,27984880875,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,42197,450
+2025-10,28102078871,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,42213,450
+2025-10,28328079844,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,42248,450
+2025-10,29813948353,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,42451,452
+2025-10,29928815895,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,42462,452
+2025-10,30516064215,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,42527,453
+2025-10,30622848895,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,42547,453
+2025-10,30729903877,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,42558,453
+2025-10,30748912894,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,42563,453
+2025-10,30761016848,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,42566,453
+2025-10,30815823851,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,42576,453
+2025-10,30877919895,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,42582,453
+2025-10,31268487880,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,42627,454
+2025-10,31428650806,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,42646,454
+2025-10,31798008874,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,42689,454
+2025-10,32875046810,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,42857,456
+2025-10,32945497840,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,42866,456
+2025-10,33030723372,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,42878,456
+2025-10,33387996837,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,42933,457
+2025-10,33593392828,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,42959,457
+2025-10,34917814855,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,43176,459
+2025-10,35716135897,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,43278,460
+2025-10,35747949837,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,43283,460
+2025-10,35791396813,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,43290,460
+2025-10,36407709865,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,43385,461
+2025-10,36969401863,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,43454,462
+2025-10,36984839807,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,43457,462
+2025-10,37495188820,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,43533,463
+2025-10,37824282856,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,43589,463
+2025-10,38678364858,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,43707,465
+2025-10,40191479810,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,43908,467
+2025-10,41190097850,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,44036,468
+2025-10,42526219841,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,44183,469
+2025-10,43582114880,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,44323,471
+2025-10,51109062893,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,45071,478
+2025-10,61623830400,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,45635,484
+2025-10,73902209372,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,46450,492
+2025-10,81529368553,erro_esocial,401,"401: Conteudo do evento inválido. |   - 1861: CPF do dependente 09274837500 inválido.
+Ação sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento. |   - 1861: CPF do dependente 09274813597 inválido.
+Ação sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",47119,499
+2025-10,87041065472,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,47822,506
+2025-10,90578570904,erro_esocial,401,401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.,48051,508

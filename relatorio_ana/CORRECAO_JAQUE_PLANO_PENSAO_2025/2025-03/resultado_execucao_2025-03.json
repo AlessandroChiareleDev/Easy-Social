@@ -1,0 +1,1343 @@
+{
+  "ok": true,
+  "per_apur": "2025-03",
+  "manifest": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-03\\manifest_correcao_jaque_2025-03.json",
+  "reabertura": {
+    "evento_db_id": 3483520,
+    "codigo": "401",
+    "descricao": "Conteudo do evento inválido.",
+    "nr_recibo": null,
+    "ocorrencias": [
+      {
+        "codigo": "715",
+        "descricao": "A folha de pagamento do período 2025-03 já está aberta.\nAção Sugerida: Permitir que o contribuinte envie os eventos que irão compor sua folha de pagamento.",
+        "tipo": "1"
+      }
+    ],
+    "open_ok": true,
+    "origem": "s1298_ja_aberto"
+  },
+  "envio": {
+    "envio_id": 938,
+    "sucesso": 96,
+    "erro": 34,
+    "protocolos": [
+      "1.1.202605.0000000013183427924",
+      "1.1.202605.0000000013183428636",
+      "1.1.202605.0000000013183429292",
+      "1.1.202605.0000000013183429883"
+    ],
+    "histograma": {
+      "401": 34
+    }
+  },
+  "latest": {
+    "total": 130,
+    "by_status_codigo": {
+      "sucesso|": 96,
+      "erro_esocial|401": 34
+    },
+    "rows": [
+      {
+        "cpf": "00083268197",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906340875",
+        "item_id": 157592,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "00555440370",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906340957",
+        "item_id": 157593,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "00793730627",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906341122",
+        "item_id": 157594,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "01600865585",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1861: CPF do dependente 98513770582 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+        "nr_recibo_novo": null,
+        "item_id": 157595,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "02346385832",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906341225",
+        "item_id": 157596,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "02713285844",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906341306",
+        "item_id": 157597,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "02979332305",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906341410",
+        "item_id": 157598,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "03025522003",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1861: CPF do dependente 03223649069 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+        "nr_recibo_novo": null,
+        "item_id": 157599,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "03282809093",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906341544",
+        "item_id": 157600,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "03734938945",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1861: CPF do dependente 04060960900 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+        "nr_recibo_novo": null,
+        "item_id": 157601,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "04030623140",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906341671",
+        "item_id": 157602,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "04213972410",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1861: CPF do dependente 05524090496 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+        "nr_recibo_novo": null,
+        "item_id": 157603,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "04603055498",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1861: CPF do dependente 03330862440 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+        "nr_recibo_novo": null,
+        "item_id": 157604,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "06749244874",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906341827",
+        "item_id": 157605,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "07338460922",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1861: CPF do dependente 07023893903 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+        "nr_recibo_novo": null,
+        "item_id": 157606,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "07463327850",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906341920",
+        "item_id": 157607,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "07575441425",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1861: CPF do dependente 09663736429 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+        "nr_recibo_novo": null,
+        "item_id": 157608,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "07634291714",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906342029",
+        "item_id": 157609,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "07819709979",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1861: CPF do dependente 45586853000 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+        "nr_recibo_novo": null,
+        "item_id": 157610,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "07861242889",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906342139",
+        "item_id": 157611,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "07863498830",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906342210",
+        "item_id": 157612,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "07863548870",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906342355",
+        "item_id": 157613,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "08193739744",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1861: CPF do dependente 03371639797 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+        "nr_recibo_novo": null,
+        "item_id": 157614,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "08517868471",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1861: CPF do dependente 13997029474 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+        "nr_recibo_novo": null,
+        "item_id": 157615,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "08551918486",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1861: CPF do dependente 09345921443 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+        "nr_recibo_novo": null,
+        "item_id": 157616,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "08865298839",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906342529",
+        "item_id": 157617,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "09245657485",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1861: CPF do dependente 01704416442 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+        "nr_recibo_novo": null,
+        "item_id": 157618,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "09321030816",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1861: CPF do dependente 34166847880 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+        "nr_recibo_novo": null,
+        "item_id": 157619,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "09442696645",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1861: CPF do dependente 13327707626 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+        "nr_recibo_novo": null,
+        "item_id": 157620,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "09548614855",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906342697",
+        "item_id": 157621,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "09552153824",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906342781",
+        "item_id": 157622,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "09559713817",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906342867",
+        "item_id": 157623,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "09612497656",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906342971",
+        "item_id": 157624,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "09998186781",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1861: CPF do dependente 15567277717 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+        "nr_recibo_novo": null,
+        "item_id": 157625,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "10213292823",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906343113",
+        "item_id": 157626,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "10334489741",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1861: CPF do dependente 11879040743 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+        "nr_recibo_novo": null,
+        "item_id": 157627,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "10639034837",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906343233",
+        "item_id": 157628,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "11438810873",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906343306",
+        "item_id": 157629,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "11488285675",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1861: CPF do dependente 12645049931 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+        "nr_recibo_novo": null,
+        "item_id": 157630,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "11746677880",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906343427",
+        "item_id": 157631,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "11984250833",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906344681",
+        "item_id": 157632,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "11999740807",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906344741",
+        "item_id": 157633,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "12061471480",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1861: CPF do dependente 13523268419 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+        "nr_recibo_novo": null,
+        "item_id": 157634,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "12265702838",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906344826",
+        "item_id": 157635,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "12537867718",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1861: CPF do dependente 08693309773 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+        "nr_recibo_novo": null,
+        "item_id": 157636,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "12601629827",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906344916",
+        "item_id": 157637,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "12611014809",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906344980",
+        "item_id": 157638,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "13334011755",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1861: CPF do dependente 01510216510 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+        "nr_recibo_novo": null,
+        "item_id": 157639,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "13696451800",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906345094",
+        "item_id": 157640,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "13705060821",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906345169",
+        "item_id": 157641,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "13711160832",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906345249",
+        "item_id": 157642,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "14418818839",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906345345",
+        "item_id": 157643,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "15057517805",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906345449",
+        "item_id": 157644,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "15509458828",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906345524",
+        "item_id": 157645,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "17725269835",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906345611",
+        "item_id": 157646,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "18401846803",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906345695",
+        "item_id": 157647,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "18744806728",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1861: CPF do dependente 18949106728 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+        "nr_recibo_novo": null,
+        "item_id": 157648,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "20315573864",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906345826",
+        "item_id": 157649,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "21288302819",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906345922",
+        "item_id": 157650,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "21653555831",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906346007",
+        "item_id": 157651,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "21804920819",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906346104",
+        "item_id": 157652,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "21899082808",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906346188",
+        "item_id": 157653,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "22229832824",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906346271",
+        "item_id": 157654,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "22617602800",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906346354",
+        "item_id": 157655,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "22617893863",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906346444",
+        "item_id": 157656,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "22647816883",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906346528",
+        "item_id": 157657,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "22730253866",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906346624",
+        "item_id": 157658,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "24945783888",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906346708",
+        "item_id": 157659,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "25169797893",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906346802",
+        "item_id": 157660,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "25585996827",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906346885",
+        "item_id": 157661,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "26349271858",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906346971",
+        "item_id": 157662,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "26662467871",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906347055",
+        "item_id": 157663,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "26903366857",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906347126",
+        "item_id": 157664,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "27156659898",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906347209",
+        "item_id": 157665,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "27984880875",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906347310",
+        "item_id": 157666,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "28102078871",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906347417",
+        "item_id": 157667,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "28328079844",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906347502",
+        "item_id": 157668,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "29014861850",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906347590",
+        "item_id": 157669,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "29304390842",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1861: CPF do dependente 30160484855 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+        "nr_recibo_novo": null,
+        "item_id": 157670,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "29813948353",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906347711",
+        "item_id": 157671,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "29928815895",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906349070",
+        "item_id": 157672,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "30516064215",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906349130",
+        "item_id": 157673,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "30695631802",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1861: CPF do dependente 27364293892 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+        "nr_recibo_novo": null,
+        "item_id": 157674,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "30748912894",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906349254",
+        "item_id": 157675,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "30761016848",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906349327",
+        "item_id": 157676,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "30815823851",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906349408",
+        "item_id": 157677,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "30877919895",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906349473",
+        "item_id": 157678,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "31045012890",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1861: CPF do dependente 33181458821 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+        "nr_recibo_novo": null,
+        "item_id": 157679,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "31268487880",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906349585",
+        "item_id": 157680,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "31644156806",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906349712",
+        "item_id": 157681,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "32394567880",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906349789",
+        "item_id": 157682,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "32875046810",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906349892",
+        "item_id": 157683,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "33030723372",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906349971",
+        "item_id": 157684,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "33387996837",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906350064",
+        "item_id": 157685,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "33593392828",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906350140",
+        "item_id": 157686,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "33653549809",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1861: CPF do dependente 40288806883 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+        "nr_recibo_novo": null,
+        "item_id": 157687,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "34212228866",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906350259",
+        "item_id": 157688,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "34917814855",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906350363",
+        "item_id": 157689,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "35102168819",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1861: CPF do dependente 32861131829 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+        "nr_recibo_novo": null,
+        "item_id": 157690,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "35527258819",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1861: CPF do dependente 37117293802 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+        "nr_recibo_novo": null,
+        "item_id": 157691,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "35716135897",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906350515",
+        "item_id": 157692,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "35791396813",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906350607",
+        "item_id": 157693,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "36495227809",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1861: CPF do dependente 48029903839 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+        "nr_recibo_novo": null,
+        "item_id": 157694,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "37495188820",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906350781",
+        "item_id": 157695,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "37824282856",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906350873",
+        "item_id": 157696,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "37843870806",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906350982",
+        "item_id": 157697,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "38072051873",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906351087",
+        "item_id": 157698,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "38678364858",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906351200",
+        "item_id": 157699,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "38870126404",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906351306",
+        "item_id": 157700,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "39428963895",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1861: CPF do dependente 15576137884 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+        "nr_recibo_novo": null,
+        "item_id": 157701,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "40805764801",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906351476",
+        "item_id": 157702,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "41190097850",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906351588",
+        "item_id": 157703,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "42526219841",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906351688",
+        "item_id": 157704,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "43582114880",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906351784",
+        "item_id": 157705,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "44752439808",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906351886",
+        "item_id": 157706,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "45244860895",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906351975",
+        "item_id": 157707,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "46500612884",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1861: CPF do dependente 46890825888 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+        "nr_recibo_novo": null,
+        "item_id": 157708,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "51109062893",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906352105",
+        "item_id": 157709,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "61623830400",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906352204",
+        "item_id": 157710,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "67578284568",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906352303",
+        "item_id": 157711,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "70473824108",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1861: CPF do dependente 08796377143 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+        "nr_recibo_novo": null,
+        "item_id": 157712,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "70633878120",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1861: CPF do dependente 04503764195 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+        "nr_recibo_novo": null,
+        "item_id": 157713,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "71234349191",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906353689",
+        "item_id": 157714,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "73292125987",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906353853",
+        "item_id": 157715,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "73902209372",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906353942",
+        "item_id": 157716,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "74353861034",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1861: CPF do dependente 00223153060 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+        "nr_recibo_novo": null,
+        "item_id": 157717,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "79686877487",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906354117",
+        "item_id": 157718,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "82484660510",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 1861: CPF do dependente 01229590510 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+        "nr_recibo_novo": null,
+        "item_id": 157719,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "87041065472",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906354251",
+        "item_id": 157720,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      },
+      {
+        "cpf": "92067689991",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906354411",
+        "item_id": 157721,
+        "envio_id": 938,
+        "criado_em": "2026-05-19 23:10:04.257446"
+      }
+    ]
+  }
+}

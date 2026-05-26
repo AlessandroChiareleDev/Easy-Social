@@ -1,0 +1,59 @@
+{
+  "per_apur": "2025-05",
+  "envio_id": 947,
+  "sucesso": 4,
+  "erro": 0,
+  "protocolos": [
+    "1.1.202605.0000000013183511653"
+  ],
+  "histograma": {},
+  "manifest": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-05\\retry_deddepen_infodep_1861\\manifest_retry_deddepen_infodep_1861.json",
+  "latest": {
+    "total": 4,
+    "by_status_codigo": {
+      "sucesso|": 4
+    },
+    "rows": [
+      {
+        "cpf": "10423668455",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906908331",
+        "item_id": 157963,
+        "envio_id": 947,
+        "criado_em": "2026-05-20 00:06:13.184321"
+      },
+      {
+        "cpf": "38434368862",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906908399",
+        "item_id": 157964,
+        "envio_id": 947,
+        "criado_em": "2026-05-20 00:06:13.184321"
+      },
+      {
+        "cpf": "41257665847",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906908530",
+        "item_id": 157965,
+        "envio_id": 947,
+        "criado_em": "2026-05-20 00:06:13.184321"
+      },
+      {
+        "cpf": "81529368553",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040906908619",
+        "item_id": 157966,
+        "envio_id": 947,
+        "criado_em": "2026-05-20 00:06:13.184321"
+      }
+    ]
+  }
+}

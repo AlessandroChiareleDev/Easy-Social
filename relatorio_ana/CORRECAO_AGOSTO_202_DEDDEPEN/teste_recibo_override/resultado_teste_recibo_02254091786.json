@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "generated_at": "2026-05-19T00:07:21",
+  "envio_id": 918,
+  "timeline_mes_id": 1,
+  "cpf": "02254091786",
+  "recibo_override": "1.1.0000000040581570546",
+  "source_recibo": "1.1.0000000034695365779",
+  "protocolo": "1.1.202605.0000000013178594002",
+  "sucesso": 1,
+  "erro": 0,
+  "histograma": {},
+  "items": [
+    {
+      "cpf": "02254091786",
+      "status": "sucesso",
+      "erro_codigo": null,
+      "erro_mensagem": null,
+      "nr_recibo_anterior": "1.1.0000000040581570546",
+      "nr_recibo_novo": "1.1.0000000040883704639"
+    }
+  ]
+}

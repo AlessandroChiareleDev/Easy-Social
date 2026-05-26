@@ -1,0 +1,208 @@
+{
+  "envio_id": 928,
+  "total_errors": 58,
+  "code_histogram": {
+    "401": 58
+  },
+  "top_10_messages": [
+    {
+      "message": "401: Conteudo do evento inv\u00e1lido. | 157: Evento de Exclus\u00e3o ou Retifica\u00e7\u00e3o dever\u00e1 ser do mesmo tipo e se referir ao mesmo objeto do evento a ser exclu\u00eddo/retificado.",
+      "count": 58
+    }
+  ],
+  "first_20_rows": [
+    {
+      "id": 157312,
+      "cpf": "00001931946",
+      "erro_codigo": "401",
+      "erro_mensagem": "401: Conteudo do evento inv\u00e1lido. | 157: Evento de Exclus\u00e3o ou Retifica\u00e7\u00e3o dever\u00e1 ser do mesmo tipo e se referir ao mesmo objeto do evento a ser exclu\u00eddo/retificado.",
+      "nr_recibo_anterior": "1.1.0000000040822635493",
+      "versao_anterior_id": 247842,
+      "xml_enviado_oid": 2397019
+    },
+    {
+      "id": 157313,
+      "cpf": "00004179129",
+      "erro_codigo": "401",
+      "erro_mensagem": "401: Conteudo do evento inv\u00e1lido. | 157: Evento de Exclus\u00e3o ou Retifica\u00e7\u00e3o dever\u00e1 ser do mesmo tipo e se referir ao mesmo objeto do evento a ser exclu\u00eddo/retificado.",
+      "nr_recibo_anterior": "1.1.0000000040847675255",
+      "versao_anterior_id": 214748,
+      "xml_enviado_oid": 2397020
+    },
+    {
+      "id": 157314,
+      "cpf": "00005083575",
+      "erro_codigo": "401",
+      "erro_mensagem": "401: Conteudo do evento inv\u00e1lido. | 157: Evento de Exclus\u00e3o ou Retifica\u00e7\u00e3o dever\u00e1 ser do mesmo tipo e se referir ao mesmo objeto do evento a ser exclu\u00eddo/retificado.",
+      "nr_recibo_anterior": "1.1.0000000040847675332",
+      "versao_anterior_id": 225916,
+      "xml_enviado_oid": 2397021
+    },
+    {
+      "id": 157315,
+      "cpf": "00007197225",
+      "erro_codigo": "401",
+      "erro_mensagem": "401: Conteudo do evento inv\u00e1lido. | 157: Evento de Exclus\u00e3o ou Retifica\u00e7\u00e3o dever\u00e1 ser do mesmo tipo e se referir ao mesmo objeto do evento a ser exclu\u00eddo/retificado.",
+      "nr_recibo_anterior": "1.1.0000000040847675381",
+      "versao_anterior_id": 230372,
+      "xml_enviado_oid": 2397022
+    },
+    {
+      "id": 157316,
+      "cpf": "00010526757",
+      "erro_codigo": "401",
+      "erro_mensagem": "401: Conteudo do evento inv\u00e1lido. | 157: Evento de Exclus\u00e3o ou Retifica\u00e7\u00e3o dever\u00e1 ser do mesmo tipo e se referir ao mesmo objeto do evento a ser exclu\u00eddo/retificado.",
+      "nr_recibo_anterior": "1.1.0000000040847675504",
+      "versao_anterior_id": 210436,
+      "xml_enviado_oid": 2397023
+    },
+    {
+      "id": 157317,
+      "cpf": "00011072598",
+      "erro_codigo": "401",
+      "erro_mensagem": "401: Conteudo do evento inv\u00e1lido. | 157: Evento de Exclus\u00e3o ou Retifica\u00e7\u00e3o dever\u00e1 ser do mesmo tipo e se referir ao mesmo objeto do evento a ser exclu\u00eddo/retificado.",
+      "nr_recibo_anterior": "1.1.0000000040847675584",
+      "versao_anterior_id": 230332,
+      "xml_enviado_oid": 2397024
+    },
+    {
+      "id": 157318,
+      "cpf": "00237457709",
+      "erro_codigo": "401",
+      "erro_mensagem": "401: Conteudo do evento inv\u00e1lido. | 157: Evento de Exclus\u00e3o ou Retifica\u00e7\u00e3o dever\u00e1 ser do mesmo tipo e se referir ao mesmo objeto do evento a ser exclu\u00eddo/retificado.",
+      "nr_recibo_anterior": "1.1.0000000040847685847",
+      "versao_anterior_id": 228885,
+      "xml_enviado_oid": 2397025
+    },
+    {
+      "id": 157319,
+      "cpf": "00290546729",
+      "erro_codigo": "401",
+      "erro_mensagem": "401: Conteudo do evento inv\u00e1lido. | 157: Evento de Exclus\u00e3o ou Retifica\u00e7\u00e3o dever\u00e1 ser do mesmo tipo e se referir ao mesmo objeto do evento a ser exclu\u00eddo/retificado.",
+      "nr_recibo_anterior": "1.1.0000000040847687292",
+      "versao_anterior_id": 231724,
+      "xml_enviado_oid": 2397026
+    },
+    {
+      "id": 157320,
+      "cpf": "00297302795",
+      "erro_codigo": "401",
+      "erro_mensagem": "401: Conteudo do evento inv\u00e1lido. | 157: Evento de Exclus\u00e3o ou Retifica\u00e7\u00e3o dever\u00e1 ser do mesmo tipo e se referir ao mesmo objeto do evento a ser exclu\u00eddo/retificado.",
+      "nr_recibo_anterior": "1.1.0000000040847687769",
+      "versao_anterior_id": 208454,
+      "xml_enviado_oid": 2397027
+    },
+    {
+      "id": 157321,
+      "cpf": "00299556700",
+      "erro_codigo": "401",
+      "erro_mensagem": "401: Conteudo do evento inv\u00e1lido. | 157: Evento de Exclus\u00e3o ou Retifica\u00e7\u00e3o dever\u00e1 ser do mesmo tipo e se referir ao mesmo objeto do evento a ser exclu\u00eddo/retificado.",
+      "nr_recibo_anterior": "1.1.0000000040834025095",
+      "versao_anterior_id": 246998,
+      "xml_enviado_oid": 2397028
+    },
+    {
+      "id": 157322,
+      "cpf": "00341063592",
+      "erro_codigo": "401",
+      "erro_mensagem": "401: Conteudo do evento inv\u00e1lido. | 157: Evento de Exclus\u00e3o ou Retifica\u00e7\u00e3o dever\u00e1 ser do mesmo tipo e se referir ao mesmo objeto do evento a ser exclu\u00eddo/retificado.",
+      "nr_recibo_anterior": "1.1.0000000040845873524",
+      "versao_anterior_id": 246752,
+      "xml_enviado_oid": 2397029
+    },
+    {
+      "id": 157323,
+      "cpf": "00350288151",
+      "erro_codigo": "401",
+      "erro_mensagem": "401: Conteudo do evento inv\u00e1lido. | 157: Evento de Exclus\u00e3o ou Retifica\u00e7\u00e3o dever\u00e1 ser do mesmo tipo e se referir ao mesmo objeto do evento a ser exclu\u00eddo/retificado.",
+      "nr_recibo_anterior": "1.1.0000000040847724151",
+      "versao_anterior_id": 228845,
+      "xml_enviado_oid": 2397030
+    },
+    {
+      "id": 157324,
+      "cpf": "00371133564",
+      "erro_codigo": "401",
+      "erro_mensagem": "401: Conteudo do evento inv\u00e1lido. | 157: Evento de Exclus\u00e3o ou Retifica\u00e7\u00e3o dever\u00e1 ser do mesmo tipo e se referir ao mesmo objeto do evento a ser exclu\u00eddo/retificado.",
+      "nr_recibo_anterior": "1.1.0000000040847724903",
+      "versao_anterior_id": 209414,
+      "xml_enviado_oid": 2397031
+    },
+    {
+      "id": 157325,
+      "cpf": "00391021141",
+      "erro_codigo": "401",
+      "erro_mensagem": "401: Conteudo do evento inv\u00e1lido. | 157: Evento de Exclus\u00e3o ou Retifica\u00e7\u00e3o dever\u00e1 ser do mesmo tipo e se referir ao mesmo objeto do evento a ser exclu\u00eddo/retificado.",
+      "nr_recibo_anterior": "1.1.0000000040847725311",
+      "versao_anterior_id": 226262,
+      "xml_enviado_oid": 2397032
+    },
+    {
+      "id": 157326,
+      "cpf": "00403524989",
+      "erro_codigo": "401",
+      "erro_mensagem": "401: Conteudo do evento inv\u00e1lido. | 157: Evento de Exclus\u00e3o ou Retifica\u00e7\u00e3o dever\u00e1 ser do mesmo tipo e se referir ao mesmo objeto do evento a ser exclu\u00eddo/retificado.",
+      "nr_recibo_anterior": "1.1.0000000040847726018",
+      "versao_anterior_id": 229340,
+      "xml_enviado_oid": 2397033
+    },
+    {
+      "id": 157327,
+      "cpf": "00428392547",
+      "erro_codigo": "401",
+      "erro_mensagem": "401: Conteudo do evento inv\u00e1lido. | 157: Evento de Exclus\u00e3o ou Retifica\u00e7\u00e3o dever\u00e1 ser do mesmo tipo e se referir ao mesmo objeto do evento a ser exclu\u00eddo/retificado.",
+      "nr_recibo_anterior": "1.1.0000000040847727038",
+      "versao_anterior_id": 219469,
+      "xml_enviado_oid": 2397034
+    },
+    {
+      "id": 157328,
+      "cpf": "00433131918",
+      "erro_codigo": "401",
+      "erro_mensagem": "401: Conteudo do evento inv\u00e1lido. | 157: Evento de Exclus\u00e3o ou Retifica\u00e7\u00e3o dever\u00e1 ser do mesmo tipo e se referir ao mesmo objeto do evento a ser exclu\u00eddo/retificado.",
+      "nr_recibo_anterior": "1.1.0000000040847727280",
+      "versao_anterior_id": 228415,
+      "xml_enviado_oid": 2397035
+    },
+    {
+      "id": 157329,
+      "cpf": "00437592979",
+      "erro_codigo": "401",
+      "erro_mensagem": "401: Conteudo do evento inv\u00e1lido. | 157: Evento de Exclus\u00e3o ou Retifica\u00e7\u00e3o dever\u00e1 ser do mesmo tipo e se referir ao mesmo objeto do evento a ser exclu\u00eddo/retificado.",
+      "nr_recibo_anterior": "1.1.0000000040847727497",
+      "versao_anterior_id": 244732,
+      "xml_enviado_oid": 2397036
+    },
+    {
+      "id": 157330,
+      "cpf": "00438201230",
+      "erro_codigo": "401",
+      "erro_mensagem": "401: Conteudo do evento inv\u00e1lido. | 157: Evento de Exclus\u00e3o ou Retifica\u00e7\u00e3o dever\u00e1 ser do mesmo tipo e se referir ao mesmo objeto do evento a ser exclu\u00eddo/retificado.",
+      "nr_recibo_anterior": "1.1.0000000040847727617",
+      "versao_anterior_id": 209666,
+      "xml_enviado_oid": 2397037
+    },
+    {
+      "id": 157331,
+      "cpf": "00438789547",
+      "erro_codigo": "401",
+      "erro_mensagem": "401: Conteudo do evento inv\u00e1lido. | 157: Evento de Exclus\u00e3o ou Retifica\u00e7\u00e3o dever\u00e1 ser do mesmo tipo e se referir ao mesmo objeto do evento a ser exclu\u00eddo/retificado.",
+      "nr_recibo_anterior": "1.1.0000000040847727700",
+      "versao_anterior_id": 228919,
+      "xml_enviado_oid": 2397038
+    }
+  ],
+  "xml_diagnostic": {
+    "oid": 2397019,
+    "item_id": 157312,
+    "tag_order": [
+      "indRetif",
+      "nrRecibo",
+      "perApur",
+      "tpAmb",
+      "procEmi",
+      "verProc"
+    ],
+    "snippet_around_ide": "xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><evtPgtos Id=\"ID1094455020000002026051919454000001\"><ideEvento><indRetif>2</indRetif><nrRecibo>1.1.0000000040822635493</nrRecibo><perApur>2025-08</perApur><tpAmb>1</tpAmb><procEmi>1</procEmi><verProc>2024.08.23.0820</verProc></ideEvento><ideEmpregador><tpInsc>1</tpInsc><nrInsc>09445502</nrInsc></ideEmpregador><ideBenef><cpfBenef>00001931946</cpfBenef><infoPgto><dtPgto>2025-08-06</dtPgto><tpPgto>1</tpPgto><perRef>2025-07</perRef><ideDmDev>1.101.2437MENSA</ideDmDev><vrLiq>633.09</vrLiq></infoPgto><infoIRComplem><infoIRCR><tpCR>056107</tpCR></infoIRCR></infoIRComplem></ideBenef></evtPgtos><ds:Signature xmlns:ds=\"http://www.w3.org/2000/09/xmldsig#\"><ds:SignedInfo><ds:CanonicalizationMethod Algorithm=\"http://www.w3.org/TR/2001/REC-xml-c14n-2001031"
+  }
+}

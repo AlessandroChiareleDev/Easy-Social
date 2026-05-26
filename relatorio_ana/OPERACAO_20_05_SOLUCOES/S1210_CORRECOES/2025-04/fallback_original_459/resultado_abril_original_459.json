@@ -1,0 +1,241 @@
+{
+  "manifest": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1210_CORRECOES\\2025-04\\fallback_original_459\\manifest_abril_original_459.json",
+  "validation": {
+    "total": 10,
+    "wrong": [],
+    "sample": [
+      {
+        "cpf": "14193059804",
+        "indRetif": "1",
+        "nrRecibo": "",
+        "perApur": "2025-04",
+        "planSaude": 1,
+        "signature": false
+      },
+      {
+        "cpf": "14285875861",
+        "indRetif": "1",
+        "nrRecibo": "",
+        "perApur": "2025-04",
+        "planSaude": 1,
+        "signature": false
+      },
+      {
+        "cpf": "14417604827",
+        "indRetif": "1",
+        "nrRecibo": "",
+        "perApur": "2025-04",
+        "planSaude": 1,
+        "signature": false
+      },
+      {
+        "cpf": "15146736812",
+        "indRetif": "1",
+        "nrRecibo": "",
+        "perApur": "2025-04",
+        "planSaude": 1,
+        "signature": false
+      },
+      {
+        "cpf": "17251076861",
+        "indRetif": "1",
+        "nrRecibo": "",
+        "perApur": "2025-04",
+        "planSaude": 1,
+        "signature": false
+      },
+      {
+        "cpf": "30729903877",
+        "indRetif": "1",
+        "nrRecibo": "",
+        "perApur": "2025-04",
+        "planSaude": 1,
+        "signature": false
+      },
+      {
+        "cpf": "32393572830",
+        "indRetif": "1",
+        "nrRecibo": "",
+        "perApur": "2025-04",
+        "planSaude": 1,
+        "signature": false
+      },
+      {
+        "cpf": "33163519814",
+        "indRetif": "1",
+        "nrRecibo": "",
+        "perApur": "2025-04",
+        "planSaude": 1,
+        "signature": false
+      },
+      {
+        "cpf": "37843870806",
+        "indRetif": "1",
+        "nrRecibo": "",
+        "perApur": "2025-04",
+        "planSaude": 1,
+        "signature": false
+      },
+      {
+        "cpf": "42852580802",
+        "indRetif": "1",
+        "nrRecibo": "",
+        "perApur": "2025-04",
+        "planSaude": 1,
+        "signature": false
+      }
+    ]
+  },
+  "execute": {
+    "envio_id": 1234,
+    "sucesso": 0,
+    "erro": 10,
+    "protocolos": [
+      "1.1.202605.0000000013186878947"
+    ],
+    "histograma": {
+      "401": 10
+    }
+  },
+  "after": {
+    "erros": 10,
+    "codigos": {
+      "401": 10
+    },
+    "cpfs": [
+      "14193059804",
+      "14285875861",
+      "14417604827",
+      "15146736812",
+      "17251076861",
+      "30729903877",
+      "32393572830",
+      "33163519814",
+      "37843870806",
+      "42852580802"
+    ],
+    "rows": [
+      {
+        "per_apur": "2025-04",
+        "cpf": "14193059804",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 106: Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração.",
+        "nr_recibo_anterior": null,
+        "nr_recibo_novo": null,
+        "item_id": 191813,
+        "envio_id": 1234,
+        "criado_em": "2026-05-20 18:13:14.593809"
+      },
+      {
+        "per_apur": "2025-04",
+        "cpf": "14285875861",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 106: Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração.",
+        "nr_recibo_anterior": null,
+        "nr_recibo_novo": null,
+        "item_id": 191814,
+        "envio_id": 1234,
+        "criado_em": "2026-05-20 18:13:14.593809"
+      },
+      {
+        "per_apur": "2025-04",
+        "cpf": "14417604827",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 106: Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração.",
+        "nr_recibo_anterior": null,
+        "nr_recibo_novo": null,
+        "item_id": 191815,
+        "envio_id": 1234,
+        "criado_em": "2026-05-20 18:13:14.593809"
+      },
+      {
+        "per_apur": "2025-04",
+        "cpf": "15146736812",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 106: Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração.",
+        "nr_recibo_anterior": null,
+        "nr_recibo_novo": null,
+        "item_id": 191816,
+        "envio_id": 1234,
+        "criado_em": "2026-05-20 18:13:14.593809"
+      },
+      {
+        "per_apur": "2025-04",
+        "cpf": "17251076861",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 106: Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração.",
+        "nr_recibo_anterior": null,
+        "nr_recibo_novo": null,
+        "item_id": 191817,
+        "envio_id": 1234,
+        "criado_em": "2026-05-20 18:13:14.593809"
+      },
+      {
+        "per_apur": "2025-04",
+        "cpf": "30729903877",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 106: Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração.",
+        "nr_recibo_anterior": null,
+        "nr_recibo_novo": null,
+        "item_id": 191818,
+        "envio_id": 1234,
+        "criado_em": "2026-05-20 18:13:14.593809"
+      },
+      {
+        "per_apur": "2025-04",
+        "cpf": "32393572830",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 106: Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração.",
+        "nr_recibo_anterior": null,
+        "nr_recibo_novo": null,
+        "item_id": 191819,
+        "envio_id": 1234,
+        "criado_em": "2026-05-20 18:13:14.593809"
+      },
+      {
+        "per_apur": "2025-04",
+        "cpf": "33163519814",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 106: Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração.",
+        "nr_recibo_anterior": null,
+        "nr_recibo_novo": null,
+        "item_id": 191820,
+        "envio_id": 1234,
+        "criado_em": "2026-05-20 18:13:14.593809"
+      },
+      {
+        "per_apur": "2025-04",
+        "cpf": "37843870806",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 106: Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração.",
+        "nr_recibo_anterior": null,
+        "nr_recibo_novo": null,
+        "item_id": 191821,
+        "envio_id": 1234,
+        "criado_em": "2026-05-20 18:13:14.593809"
+      },
+      {
+        "per_apur": "2025-04",
+        "cpf": "42852580802",
+        "status": "erro_esocial",
+        "erro_codigo": "401",
+        "erro_mensagem": "401: Conteudo do evento inválido. | 106: Foi localizado no sistema um evento em duplicidade com o evento a ser enviado, mesmo Tipo de Inscrição, Número de Inscrição, CPF do Trabalhador, Período de Apuração.",
+        "nr_recibo_anterior": null,
+        "nr_recibo_novo": null,
+        "item_id": 191822,
+        "envio_id": 1234,
+        "criado_em": "2026-05-20 18:13:14.593809"
+      }
+    ]
+  },
+  "closing": null
+}

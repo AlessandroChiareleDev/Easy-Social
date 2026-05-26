@@ -1,0 +1,72 @@
+{
+  "empresa_id": 2,
+  "generated_at": "2026-05-19T23:25:34",
+  "total": 2,
+  "regra": "reenviar os 2 S-1210 originais de fevereiro como inclusao sem nrRecibo",
+  "targets": [
+    {
+      "ordem": 1,
+      "per_apur": "2025-02",
+      "cpf": "36832724810",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_RECIBOS_2025\\reinclusao_2_fevereiro\\xml_unsigned\\S1210_2025-02_36832724810_reinclusao_unsigned.xml",
+      "evento_id": 759464,
+      "nr_recibo": null,
+      "id_evento": "ID1094455020000002026052002253300001",
+      "validation": {
+        "cpf": "36832724810",
+        "per_apur": "2025-02",
+        "source_zip": "SOLUCOES_2025-03(01-15).zip",
+        "source_entry": "ID1094455020000002025030714514935064.S-1210.xml",
+        "recibo_exclusao_informado": "1.1.0000000031405347921",
+        "old_id": "ID1094455020000002025030714514935064",
+        "new_id": "ID1094455020000002026052002253300001",
+        "indRetif": "1",
+        "nrRecibo": "",
+        "infoPgto": [
+          {
+            "perRef": "2025-01",
+            "ideDmDev": "1.101.1936MENSA",
+            "dtPgto": "2025-02-06",
+            "vrLiq": "1562.77"
+          }
+        ],
+        "latest_envio_id": 937,
+        "latest_item_id": 157590,
+        "latest_status": "erro_esocial",
+        "latest_codigo": "401"
+      }
+    },
+    {
+      "ordem": 2,
+      "per_apur": "2025-02",
+      "cpf": "93564139249",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_RECIBOS_2025\\reinclusao_2_fevereiro\\xml_unsigned\\S1210_2025-02_93564139249_reinclusao_unsigned.xml",
+      "evento_id": 844225,
+      "nr_recibo": null,
+      "id_evento": "ID1094455020000002026052002253400001",
+      "validation": {
+        "cpf": "93564139249",
+        "per_apur": "2025-02",
+        "source_zip": "SOLUCOES_2025-03(01-15).zip",
+        "source_entry": "ID1094455020000002025030714072447183.S-1210.xml",
+        "recibo_exclusao_informado": "1.1.0000000031331770805",
+        "old_id": "ID1094455020000002025030714072447183",
+        "new_id": "ID1094455020000002026052002253400001",
+        "indRetif": "1",
+        "nrRecibo": "",
+        "infoPgto": [
+          {
+            "perRef": "2025-01",
+            "ideDmDev": "1.101.1936MENSA",
+            "dtPgto": "2025-02-06",
+            "vrLiq": "0"
+          }
+        ],
+        "latest_envio_id": 937,
+        "latest_item_id": 157591,
+        "latest_status": "erro_esocial",
+        "latest_codigo": "401"
+      }
+    }
+  ]
+}

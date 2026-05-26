@@ -1,0 +1,814 @@
+[
+  {
+    "cpf": "00495870137",
+    "error_item_id": 157351,
+    "receipt_used_wrong": "1.1.0000000040847724415",
+    "chosen_receipt": "1.1.0000000034695358641",
+    "chosen_source": "explorador_eventos:214496",
+    "chosen_event_id": "ID1094455020000002025091819082900010",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 214496,
+      "id_evento": "ID1094455020000002025091819082900010",
+      "nr_recibo": "1.1.0000000034695358641"
+    }
+  },
+  {
+    "cpf": "00500997527",
+    "error_item_id": 157354,
+    "receipt_used_wrong": "1.1.0000000040847724748",
+    "chosen_receipt": "1.1.0000000034695372806",
+    "chosen_source": "explorador_eventos:224058",
+    "chosen_event_id": "ID1094455020000002025091819121300005",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 224058,
+      "id_evento": "ID1094455020000002025091819121300005",
+      "nr_recibo": "1.1.0000000034695372806"
+    }
+  },
+  {
+    "cpf": "00524997586",
+    "error_item_id": 157362,
+    "receipt_used_wrong": "1.1.0000000040847725687",
+    "chosen_receipt": "1.1.0000000034695409233",
+    "chosen_source": "explorador_eventos:235772",
+    "chosen_event_id": "ID1094455020000002025091819194800012",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 235772,
+      "id_evento": "ID1094455020000002025091819194800012",
+      "nr_recibo": "1.1.0000000034695409233"
+    }
+  },
+  {
+    "cpf": "00001931946",
+    "error_item_id": 157312,
+    "receipt_used_wrong": "1.1.0000000040822635493",
+    "chosen_receipt": "1.1.0000000034695453274",
+    "chosen_source": "explorador_eventos:247842",
+    "chosen_event_id": "ID1094455020000002025091819283700008",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 247842,
+      "id_evento": "ID1094455020000002025091819283700008",
+      "nr_recibo": "1.1.0000000034695453274"
+    }
+  },
+  {
+    "cpf": "00004179129",
+    "error_item_id": 157313,
+    "receipt_used_wrong": "1.1.0000000040847675255",
+    "chosen_receipt": "1.1.0000000034695359470",
+    "chosen_source": "explorador_eventos:214748",
+    "chosen_event_id": "ID1094455020000002025091819083700002",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 214748,
+      "id_evento": "ID1094455020000002025091819083700002",
+      "nr_recibo": "1.1.0000000034695359470"
+    }
+  },
+  {
+    "cpf": "00010526757",
+    "error_item_id": 157316,
+    "receipt_used_wrong": "1.1.0000000040847675504",
+    "chosen_receipt": "1.1.0000000034695352486",
+    "chosen_source": "explorador_eventos:210436",
+    "chosen_event_id": "ID1094455020000002025091819064900007",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 210436,
+      "id_evento": "ID1094455020000002025091819064900007",
+      "nr_recibo": "1.1.0000000034695352486"
+    }
+  },
+  {
+    "cpf": "00011072598",
+    "error_item_id": 157317,
+    "receipt_used_wrong": "1.1.0000000040847675584",
+    "chosen_receipt": "1.1.0000000034695391826",
+    "chosen_source": "explorador_eventos:230332",
+    "chosen_event_id": "ID1094455020000002025091819161300002",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 230332,
+      "id_evento": "ID1094455020000002025091819161300002",
+      "nr_recibo": "1.1.0000000034695391826"
+    }
+  },
+  {
+    "cpf": "00237457709",
+    "error_item_id": 157318,
+    "receipt_used_wrong": "1.1.0000000040847685847",
+    "chosen_receipt": "1.1.0000000034695386396",
+    "chosen_source": "explorador_eventos:228885",
+    "chosen_event_id": "ID1094455020000002025091819145300006",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 228885,
+      "id_evento": "ID1094455020000002025091819145300006",
+      "nr_recibo": "1.1.0000000034695386396"
+    }
+  },
+  {
+    "cpf": "00290546729",
+    "error_item_id": 157319,
+    "receipt_used_wrong": "1.1.0000000040847687292",
+    "chosen_receipt": "1.1.0000000034695397351",
+    "chosen_source": "explorador_eventos:231724",
+    "chosen_event_id": "ID1094455020000002025091819172800013",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 231724,
+      "id_evento": "ID1094455020000002025091819172800013",
+      "nr_recibo": "1.1.0000000034695397351"
+    }
+  },
+  {
+    "cpf": "00371133564",
+    "error_item_id": 157324,
+    "receipt_used_wrong": "1.1.0000000040847724903",
+    "chosen_receipt": "1.1.0000000034695348107",
+    "chosen_source": "explorador_eventos:209414",
+    "chosen_event_id": "ID1094455020000002025091819054700012",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 209414,
+      "id_evento": "ID1094455020000002025091819054700012",
+      "nr_recibo": "1.1.0000000034695348107"
+    }
+  },
+  {
+    "cpf": "00391021141",
+    "error_item_id": 157325,
+    "receipt_used_wrong": "1.1.0000000040847725311",
+    "chosen_receipt": "1.1.0000000034695377347",
+    "chosen_source": "explorador_eventos:226262",
+    "chosen_event_id": "ID1094455020000002025091819130300010",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 226262,
+      "id_evento": "ID1094455020000002025091819130300010",
+      "nr_recibo": "1.1.0000000034695377347"
+    }
+  },
+  {
+    "cpf": "00428392547",
+    "error_item_id": 157327,
+    "receipt_used_wrong": "1.1.0000000040847727038",
+    "chosen_receipt": "1.1.0000000034695367236",
+    "chosen_source": "explorador_eventos:219469",
+    "chosen_event_id": "ID1094455020000002025091819104800013",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 219469,
+      "id_evento": "ID1094455020000002025091819104800013",
+      "nr_recibo": "1.1.0000000034695367236"
+    }
+  },
+  {
+    "cpf": "00438201230",
+    "error_item_id": 157330,
+    "receipt_used_wrong": "1.1.0000000040847727617",
+    "chosen_receipt": "1.1.0000000034695349682",
+    "chosen_source": "explorador_eventos:209666",
+    "chosen_event_id": "ID1094455020000002025091819055400008",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 209666,
+      "id_evento": "ID1094455020000002025091819055400008",
+      "nr_recibo": "1.1.0000000034695349682"
+    }
+  },
+  {
+    "cpf": "00481915150",
+    "error_item_id": 157343,
+    "receipt_used_wrong": "1.1.0000000040765880634",
+    "chosen_receipt": "1.1.0000000034695463561",
+    "chosen_source": "explorador_eventos:250157",
+    "chosen_event_id": "ID1094455020000002025091819305800001",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 250157,
+      "id_evento": "ID1094455020000002025091819305800001",
+      "nr_recibo": "1.1.0000000034695463561"
+    }
+  },
+  {
+    "cpf": "00484906950",
+    "error_item_id": 157344,
+    "receipt_used_wrong": "1.1.0000000040847729477",
+    "chosen_receipt": "1.1.0000000034695377757",
+    "chosen_source": "explorador_eventos:226385",
+    "chosen_event_id": "ID1094455020000002025091819132200007",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 226385,
+      "id_evento": "ID1094455020000002025091819132200007",
+      "nr_recibo": "1.1.0000000034695377757"
+    }
+  },
+  {
+    "cpf": "00486262103",
+    "error_item_id": 157345,
+    "receipt_used_wrong": "1.1.0000000040847729610",
+    "chosen_receipt": "1.1.0000000034695376270",
+    "chosen_source": "explorador_eventos:226016",
+    "chosen_event_id": "ID1094455020000002025091819125200014",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 226016,
+      "id_evento": "ID1094455020000002025091819125200014",
+      "nr_recibo": "1.1.0000000034695376270"
+    }
+  },
+  {
+    "cpf": "00005083575",
+    "error_item_id": 157314,
+    "receipt_used_wrong": "1.1.0000000040847675332",
+    "chosen_receipt": "1.1.0000000034695375738",
+    "chosen_source": "explorador_eventos:225916",
+    "chosen_event_id": "ID1094455020000002025091819125200002",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 225916,
+      "id_evento": "ID1094455020000002025091819125200002",
+      "nr_recibo": "1.1.0000000034695375738"
+    }
+  },
+  {
+    "cpf": "00007197225",
+    "error_item_id": 157315,
+    "receipt_used_wrong": "1.1.0000000040847675381",
+    "chosen_receipt": "1.1.0000000034695391980",
+    "chosen_source": "explorador_eventos:230372",
+    "chosen_event_id": "ID1094455020000002025091819160800014",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 230372,
+      "id_evento": "ID1094455020000002025091819160800014",
+      "nr_recibo": "1.1.0000000034695391980"
+    }
+  },
+  {
+    "cpf": "00297302795",
+    "error_item_id": 157320,
+    "receipt_used_wrong": "1.1.0000000040847687769",
+    "chosen_receipt": "1.1.0000000034695343620",
+    "chosen_source": "explorador_eventos:208454",
+    "chosen_event_id": "ID1094455020000002025091819044800001",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 208454,
+      "id_evento": "ID1094455020000002025091819044800001",
+      "nr_recibo": "1.1.0000000034695343620"
+    }
+  },
+  {
+    "cpf": "00299556700",
+    "error_item_id": 157321,
+    "receipt_used_wrong": "1.1.0000000040834025095",
+    "chosen_receipt": "1.1.0000000034695449382",
+    "chosen_source": "explorador_eventos:246998",
+    "chosen_event_id": "ID1094455020000002025091819280400003",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 246998,
+      "id_evento": "ID1094455020000002025091819280400003",
+      "nr_recibo": "1.1.0000000034695449382"
+    }
+  },
+  {
+    "cpf": "00341063592",
+    "error_item_id": 157322,
+    "receipt_used_wrong": "1.1.0000000040845873524",
+    "chosen_receipt": "1.1.0000000034695448461",
+    "chosen_source": "explorador_eventos:246752",
+    "chosen_event_id": "ID1094455020000002025091819274300013",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 246752,
+      "id_evento": "ID1094455020000002025091819274300013",
+      "nr_recibo": "1.1.0000000034695448461"
+    }
+  },
+  {
+    "cpf": "00350288151",
+    "error_item_id": 157323,
+    "receipt_used_wrong": "1.1.0000000040847724151",
+    "chosen_receipt": "1.1.0000000034695386263",
+    "chosen_source": "explorador_eventos:228845",
+    "chosen_event_id": "ID1094455020000002025091819145300002",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 228845,
+      "id_evento": "ID1094455020000002025091819145300002",
+      "nr_recibo": "1.1.0000000034695386263"
+    }
+  },
+  {
+    "cpf": "00438789547",
+    "error_item_id": 157331,
+    "receipt_used_wrong": "1.1.0000000040847727700",
+    "chosen_receipt": "1.1.0000000034695386529",
+    "chosen_source": "explorador_eventos:228919",
+    "chosen_event_id": "ID1094455020000002025091819150200007",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 228919,
+      "id_evento": "ID1094455020000002025091819150200007",
+      "nr_recibo": "1.1.0000000034695386529"
+    }
+  },
+  {
+    "cpf": "00439368731",
+    "error_item_id": 157332,
+    "receipt_used_wrong": "1.1.0000000040847727848",
+    "chosen_receipt": "1.1.0000000034695340116",
+    "chosen_source": "explorador_eventos:206612",
+    "chosen_event_id": "ID1094455020000002025091819040800010",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 206612,
+      "id_evento": "ID1094455020000002025091819040800010",
+      "nr_recibo": "1.1.0000000034695340116"
+    }
+  },
+  {
+    "cpf": "00442181760",
+    "error_item_id": 157333,
+    "receipt_used_wrong": "1.1.0000000040847727954",
+    "chosen_receipt": "1.1.0000000034695354907",
+    "chosen_source": "explorador_eventos:213300",
+    "chosen_event_id": "ID1094455020000002025091819072200001",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 213300,
+      "id_evento": "ID1094455020000002025091819072200001",
+      "nr_recibo": "1.1.0000000034695354907"
+    }
+  },
+  {
+    "cpf": "00442241763",
+    "error_item_id": 157334,
+    "receipt_used_wrong": "1.1.0000000040847728052",
+    "chosen_receipt": "1.1.0000000034695416200",
+    "chosen_source": "explorador_eventos:238408",
+    "chosen_event_id": "ID1094455020000002025091819210900003",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 238408,
+      "id_evento": "ID1094455020000002025091819210900003",
+      "nr_recibo": "1.1.0000000034695416200"
+    }
+  },
+  {
+    "cpf": "00493933328",
+    "error_item_id": 157349,
+    "receipt_used_wrong": "1.1.0000000040847724064",
+    "chosen_receipt": "1.1.0000000034695364348",
+    "chosen_source": "explorador_eventos:218679",
+    "chosen_event_id": "ID1094455020000002025091819100100009",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 218679,
+      "id_evento": "ID1094455020000002025091819100100009",
+      "nr_recibo": "1.1.0000000034695364348"
+    }
+  },
+  {
+    "cpf": "00497808595",
+    "error_item_id": 157352,
+    "receipt_used_wrong": "1.1.0000000040847724637",
+    "chosen_receipt": "1.1.0000000034695372158",
+    "chosen_source": "explorador_eventos:223860",
+    "chosen_event_id": "ID1094455020000002025091819120200003",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 223860,
+      "id_evento": "ID1094455020000002025091819120200003",
+      "nr_recibo": "1.1.0000000034695372158"
+    }
+  },
+  {
+    "cpf": "00500774579",
+    "error_item_id": 157353,
+    "receipt_used_wrong": "1.1.0000000040783728351",
+    "chosen_receipt": "1.1.0000000034695463556",
+    "chosen_source": "explorador_eventos:250153",
+    "chosen_event_id": "ID1094455020000002025091819304500003",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 250153,
+      "id_evento": "ID1094455020000002025091819304500003",
+      "nr_recibo": "1.1.0000000034695463556"
+    }
+  },
+  {
+    "cpf": "00511224990",
+    "error_item_id": 157356,
+    "receipt_used_wrong": "1.1.0000000040847724987",
+    "chosen_receipt": "1.1.0000000034695377603",
+    "chosen_source": "explorador_eventos:226341",
+    "chosen_event_id": "ID1094455020000002025091819131300006",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 226341,
+      "id_evento": "ID1094455020000002025091819131300006",
+      "nr_recibo": "1.1.0000000034695377603"
+    }
+  },
+  {
+    "cpf": "00511443790",
+    "error_item_id": 157357,
+    "receipt_used_wrong": "1.1.0000000040847725207",
+    "chosen_receipt": "1.1.0000000034695364795",
+    "chosen_source": "explorador_eventos:218811",
+    "chosen_event_id": "ID1094455020000002025091819100700003",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 218811,
+      "id_evento": "ID1094455020000002025091819100700003",
+      "nr_recibo": "1.1.0000000034695364795"
+    }
+  },
+  {
+    "cpf": "00515611743",
+    "error_item_id": 157358,
+    "receipt_used_wrong": "1.1.0000000040847725316",
+    "chosen_receipt": "1.1.0000000034695409859",
+    "chosen_source": "explorador_eventos:236952",
+    "chosen_event_id": "ID1094455020000002025091819195400007",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 236952,
+      "id_evento": "ID1094455020000002025091819195400007",
+      "nr_recibo": "1.1.0000000034695409859"
+    }
+  },
+  {
+    "cpf": "00403524989",
+    "error_item_id": 157326,
+    "receipt_used_wrong": "1.1.0000000040847726018",
+    "chosen_receipt": "1.1.0000000034695388146",
+    "chosen_source": "explorador_eventos:229340",
+    "chosen_event_id": "ID1094455020000002025091819151500008",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 229340,
+      "id_evento": "ID1094455020000002025091819151500008",
+      "nr_recibo": "1.1.0000000034695388146"
+    }
+  },
+  {
+    "cpf": "00433131918",
+    "error_item_id": 157328,
+    "receipt_used_wrong": "1.1.0000000040847727280",
+    "chosen_receipt": "1.1.0000000034695384535",
+    "chosen_source": "explorador_eventos:228415",
+    "chosen_event_id": "ID1094455020000002025091819143500006",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 228415,
+      "id_evento": "ID1094455020000002025091819143500006",
+      "nr_recibo": "1.1.0000000034695384535"
+    }
+  },
+  {
+    "cpf": "00437592979",
+    "error_item_id": 157329,
+    "receipt_used_wrong": "1.1.0000000040847727497",
+    "chosen_receipt": "1.1.0000000034695441219",
+    "chosen_source": "explorador_eventos:244732",
+    "chosen_event_id": "ID1094455020000002025091819255600008",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 244732,
+      "id_evento": "ID1094455020000002025091819255600008",
+      "nr_recibo": "1.1.0000000034695441219"
+    }
+  },
+  {
+    "cpf": "00444023500",
+    "error_item_id": 157335,
+    "receipt_used_wrong": "1.1.0000000040845884036",
+    "chosen_receipt": "1.1.0000000034695444628",
+    "chosen_source": "explorador_eventos:245748",
+    "chosen_event_id": "ID1094455020000002025091819265400005",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 245748,
+      "id_evento": "ID1094455020000002025091819265400005",
+      "nr_recibo": "1.1.0000000034695444628"
+    }
+  },
+  {
+    "cpf": "00444362541",
+    "error_item_id": 157336,
+    "receipt_used_wrong": "1.1.0000000040847728172",
+    "chosen_receipt": "1.1.0000000034695416644",
+    "chosen_source": "explorador_eventos:238528",
+    "chosen_event_id": "ID1094455020000002025091819211800012",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 238528,
+      "id_evento": "ID1094455020000002025091819211800012",
+      "nr_recibo": "1.1.0000000034695416644"
+    }
+  },
+  {
+    "cpf": "00453172164",
+    "error_item_id": 157337,
+    "receipt_used_wrong": "1.1.0000000040847728380",
+    "chosen_receipt": "1.1.0000000034695366551",
+    "chosen_source": "explorador_eventos:219253",
+    "chosen_event_id": "ID1094455020000002025091819104200002",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 219253,
+      "id_evento": "ID1094455020000002025091819104200002",
+      "nr_recibo": "1.1.0000000034695366551"
+    }
+  },
+  {
+    "cpf": "00454378580",
+    "error_item_id": 157338,
+    "receipt_used_wrong": "1.1.0000000040845884865",
+    "chosen_receipt": "1.1.0000000034695446783",
+    "chosen_source": "explorador_eventos:246376",
+    "chosen_event_id": "ID1094455020000002025091819272600010",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 246376,
+      "id_evento": "ID1094455020000002025091819272600010",
+      "nr_recibo": "1.1.0000000034695446783"
+    }
+  },
+  {
+    "cpf": "00455249555",
+    "error_item_id": 157339,
+    "receipt_used_wrong": "1.1.0000000040847728499",
+    "chosen_receipt": "1.1.0000000034695386894",
+    "chosen_source": "explorador_eventos:229022",
+    "chosen_event_id": "ID1094455020000002025091819145400008",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 229022,
+      "id_evento": "ID1094455020000002025091819145400008",
+      "nr_recibo": "1.1.0000000034695386894"
+    }
+  },
+  {
+    "cpf": "00457118016",
+    "error_item_id": 157340,
+    "receipt_used_wrong": "1.1.0000000040847728620",
+    "chosen_receipt": "1.1.0000000034695426565",
+    "chosen_source": "explorador_eventos:240528",
+    "chosen_event_id": "ID1094455020000002025091819230100003",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 240528,
+      "id_evento": "ID1094455020000002025091819230100003",
+      "nr_recibo": "1.1.0000000034695426565"
+    }
+  },
+  {
+    "cpf": "00458928909",
+    "error_item_id": 157341,
+    "receipt_used_wrong": "1.1.0000000040847728773",
+    "chosen_receipt": "1.1.0000000034695385937",
+    "chosen_source": "explorador_eventos:228757",
+    "chosen_event_id": "ID1094455020000002025091819145200003",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 228757,
+      "id_evento": "ID1094455020000002025091819145200003",
+      "nr_recibo": "1.1.0000000034695385937"
+    }
+  },
+  {
+    "cpf": "00480580170",
+    "error_item_id": 157342,
+    "receipt_used_wrong": "1.1.0000000040847729347",
+    "chosen_receipt": "1.1.0000000034695397542",
+    "chosen_source": "explorador_eventos:231768",
+    "chosen_event_id": "ID1094455020000002025091819171800013",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 231768,
+      "id_evento": "ID1094455020000002025091819171800013",
+      "nr_recibo": "1.1.0000000034695397542"
+    }
+  },
+  {
+    "cpf": "00486729206",
+    "error_item_id": 157346,
+    "receipt_used_wrong": "1.1.0000000040847729716",
+    "chosen_receipt": "1.1.0000000034695377753",
+    "chosen_source": "explorador_eventos:226383",
+    "chosen_event_id": "ID1094455020000002025091819130900001",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 226383,
+      "id_evento": "ID1094455020000002025091819130900001",
+      "nr_recibo": "1.1.0000000034695377753"
+    }
+  },
+  {
+    "cpf": "00490974155",
+    "error_item_id": 157347,
+    "receipt_used_wrong": "1.1.0000000040847723873",
+    "chosen_receipt": "1.1.0000000034695404347",
+    "chosen_source": "explorador_eventos:234814",
+    "chosen_event_id": "ID1094455020000002025091819185700007",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 234814,
+      "id_evento": "ID1094455020000002025091819185700007",
+      "nr_recibo": "1.1.0000000034695404347"
+    }
+  },
+  {
+    "cpf": "00492090513",
+    "error_item_id": 157348,
+    "receipt_used_wrong": "1.1.0000000040847723990",
+    "chosen_receipt": "1.1.0000000034695351645",
+    "chosen_source": "explorador_eventos:210212",
+    "chosen_event_id": "ID1094455020000002025091819063000004",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 210212,
+      "id_evento": "ID1094455020000002025091819063000004",
+      "nr_recibo": "1.1.0000000034695351645"
+    }
+  },
+  {
+    "cpf": "00494935316",
+    "error_item_id": 157350,
+    "receipt_used_wrong": "1.1.0000000040847724331",
+    "chosen_receipt": "1.1.0000000034695358544",
+    "chosen_source": "explorador_eventos:214462",
+    "chosen_event_id": "ID1094455020000002025091819082500011",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 214462,
+      "id_evento": "ID1094455020000002025091819082500011",
+      "nr_recibo": "1.1.0000000034695358544"
+    }
+  },
+  {
+    "cpf": "00505195143",
+    "error_item_id": 157355,
+    "receipt_used_wrong": "1.1.0000000040834134192",
+    "chosen_receipt": "1.1.0000000034695450671",
+    "chosen_source": "explorador_eventos:247246",
+    "chosen_event_id": "ID1094455020000002025091819281000011",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 247246,
+      "id_evento": "ID1094455020000002025091819281000011",
+      "nr_recibo": "1.1.0000000034695450671"
+    }
+  },
+  {
+    "cpf": "00515638196",
+    "error_item_id": 157359,
+    "receipt_used_wrong": "1.1.0000000040847725410",
+    "chosen_receipt": "1.1.0000000034695337414",
+    "chosen_source": "explorador_eventos:205976",
+    "chosen_event_id": "ID1094455020000002025091819034400003",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 205976,
+      "id_evento": "ID1094455020000002025091819034400003",
+      "nr_recibo": "1.1.0000000034695337414"
+    }
+  },
+  {
+    "cpf": "00517292700",
+    "error_item_id": 157360,
+    "receipt_used_wrong": "1.1.0000000040847725508",
+    "chosen_receipt": "1.1.0000000034695353319",
+    "chosen_source": "explorador_eventos:210718",
+    "chosen_event_id": "ID1094455020000002025091819065600002",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 210718,
+      "id_evento": "ID1094455020000002025091819065600002",
+      "nr_recibo": "1.1.0000000034695353319"
+    }
+  },
+  {
+    "cpf": "00522731724",
+    "error_item_id": 157361,
+    "receipt_used_wrong": "1.1.0000000040847725601",
+    "chosen_receipt": "1.1.0000000034695352923",
+    "chosen_source": "explorador_eventos:210584",
+    "chosen_event_id": "ID1094455020000002025091819065500002",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 210584,
+      "id_evento": "ID1094455020000002025091819065500002",
+      "nr_recibo": "1.1.0000000034695352923"
+    }
+  },
+  {
+    "cpf": "00525356142",
+    "error_item_id": 157363,
+    "receipt_used_wrong": "1.1.0000000040847725794",
+    "chosen_receipt": "1.1.0000000034695364081",
+    "chosen_source": "explorador_eventos:218599",
+    "chosen_event_id": "ID1094455020000002025091819095600008",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 218599,
+      "id_evento": "ID1094455020000002025091819095600008",
+      "nr_recibo": "1.1.0000000034695364081"
+    }
+  },
+  {
+    "cpf": "00525756590",
+    "error_item_id": 157364,
+    "receipt_used_wrong": "1.1.0000000040847725891",
+    "chosen_receipt": "1.1.0000000034695353206",
+    "chosen_source": "explorador_eventos:210684",
+    "chosen_event_id": "ID1094455020000002025091819065100006",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 210684,
+      "id_evento": "ID1094455020000002025091819065100006",
+      "nr_recibo": "1.1.0000000034695353206"
+    }
+  },
+  {
+    "cpf": "00526548770",
+    "error_item_id": 157365,
+    "receipt_used_wrong": "1.1.0000000040847726012",
+    "chosen_receipt": "1.1.0000000034695389704",
+    "chosen_source": "explorador_eventos:229674",
+    "chosen_event_id": "ID1094455020000002025091819154000013",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 229674,
+      "id_evento": "ID1094455020000002025091819154000013",
+      "nr_recibo": "1.1.0000000034695389704"
+    }
+  },
+  {
+    "cpf": "00527328782",
+    "error_item_id": 157366,
+    "receipt_used_wrong": "1.1.0000000040847726113",
+    "chosen_receipt": "1.1.0000000034695353441",
+    "chosen_source": "explorador_eventos:210752",
+    "chosen_event_id": "ID1094455020000002025091819070500003",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 210752,
+      "id_evento": "ID1094455020000002025091819070500003",
+      "nr_recibo": "1.1.0000000034695353441"
+    }
+  },
+  {
+    "cpf": "00527956759",
+    "error_item_id": 157367,
+    "receipt_used_wrong": "1.1.0000000040847726222",
+    "chosen_receipt": "1.1.0000000034695354694",
+    "chosen_source": "explorador_eventos:213242",
+    "chosen_event_id": "ID1094455020000002025091819072100007",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 213242,
+      "id_evento": "ID1094455020000002025091819072100007",
+      "nr_recibo": "1.1.0000000034695354694"
+    }
+  },
+  {
+    "cpf": "00529606178",
+    "error_item_id": 157368,
+    "receipt_used_wrong": "1.1.0000000040847726335",
+    "chosen_receipt": "1.1.0000000034695396438",
+    "chosen_source": "explorador_eventos:231458",
+    "chosen_event_id": "ID1094455020000002025091819170200007",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 231458,
+      "id_evento": "ID1094455020000002025091819170200007",
+      "nr_recibo": "1.1.0000000034695396438"
+    }
+  },
+  {
+    "cpf": "02022764579",
+    "error_item_id": 157369,
+    "receipt_used_wrong": "1.1.0000000040847795781",
+    "chosen_receipt": "1.1.0000000034695428454",
+    "chosen_source": "explorador_eventos:240944",
+    "chosen_event_id": "ID1094455020000002025091819232200011",
+    "latest_success_row": null,
+    "active_explorador": {
+      "id": 240944,
+      "id_evento": "ID1094455020000002025091819232200011",
+      "nr_recibo": "1.1.0000000034695428454"
+    }
+  }
+]

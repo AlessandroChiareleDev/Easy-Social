@@ -1,0 +1,332 @@
+[
+  {
+    "per_apur": "2025-06",
+    "envios": [
+      {
+        "id": 21,
+        "sequencia": 1,
+        "status": "concluido",
+        "total_tentados": 996,
+        "total_sucesso": 909,
+        "total_erro": 87,
+        "iniciado_em": "2026-05-21 19:16:41.245113",
+        "finalizado_em": "2026-05-21 19:21:59.156928",
+        "resumo": {
+          "modo": "real_homologacao",
+          "rotulo": "envio_teste_100",
+          "workers": 5,
+          "criterio": "100 primeiros HEAD ordem alfabetica de CPF",
+          "batch_size": 50,
+          "histograma_erros": {
+            "401": 87
+          },
+          "pendente_consulta": 0
+        }
+      }
+    ],
+    "counts": {
+      "sucesso": 909,
+      "erro_esocial": 87
+    },
+    "categorias": {
+      "plano_saude_coletivo_obrigatorio": 87
+    },
+    "fechamento": {
+      "protocolo": "1.1.202605.0000000013192142032",
+      "nr_recibo": "1.1.0000000040946564210",
+      "fechado": false,
+      "confirmado_em": "2026-05-21 19:16:39.917674+00:00",
+      "origem": "s1298_envio"
+    },
+    "s1298": {
+      "id": 169267,
+      "id_evento": "ID1108745230000002026052119163400001",
+      "nr_recibo": "1.1.0000000040946564210",
+      "cd_resposta": "201",
+      "dt_processamento": "2026-05-21 19:16:39.917674+00:00",
+      "protocolo": "1.1.202605.0000000013192142032"
+    },
+    "total_finais": 996
+  },
+  {
+    "per_apur": "2025-07",
+    "envios": [
+      {
+        "id": 22,
+        "sequencia": 1,
+        "status": "concluido",
+        "total_tentados": 995,
+        "total_sucesso": 908,
+        "total_erro": 87,
+        "iniciado_em": "2026-05-21 19:22:27.468286",
+        "finalizado_em": "2026-05-21 19:27:39.393201",
+        "resumo": {
+          "modo": "real_homologacao",
+          "rotulo": "envio_teste_100",
+          "workers": 5,
+          "criterio": "100 primeiros HEAD ordem alfabetica de CPF",
+          "batch_size": 50,
+          "histograma_erros": {
+            "401": 87
+          },
+          "pendente_consulta": 0
+        }
+      }
+    ],
+    "counts": {
+      "sucesso": 908,
+      "erro_esocial": 87
+    },
+    "categorias": {
+      "plano_saude_coletivo_obrigatorio": 87
+    },
+    "fechamento": {
+      "protocolo": "1.1.202605.0000000013192186055",
+      "nr_recibo": "1.1.0000000040946772638",
+      "fechado": false,
+      "confirmado_em": "2026-05-21 19:22:26.149946+00:00",
+      "origem": "s1298_envio"
+    },
+    "s1298": {
+      "id": 169268,
+      "id_evento": "ID1108745230000002026052119222000001",
+      "nr_recibo": "1.1.0000000040946772638",
+      "cd_resposta": "201",
+      "dt_processamento": "2026-05-21 19:22:26.149946+00:00",
+      "protocolo": "1.1.202605.0000000013192186055"
+    },
+    "total_finais": 995
+  },
+  {
+    "per_apur": "2025-08",
+    "envios": [
+      {
+        "id": 23,
+        "sequencia": 1,
+        "status": "concluido",
+        "total_tentados": 1057,
+        "total_sucesso": 961,
+        "total_erro": 96,
+        "iniciado_em": "2026-05-21 19:28:00.452464",
+        "finalizado_em": "2026-05-21 19:33:42.115529",
+        "resumo": {
+          "modo": "real_homologacao",
+          "rotulo": "envio_teste_100",
+          "workers": 5,
+          "criterio": "100 primeiros HEAD ordem alfabetica de CPF",
+          "batch_size": 50,
+          "histograma_erros": {
+            "401": 96
+          },
+          "pendente_consulta": 0
+        }
+      }
+    ],
+    "counts": {
+      "sucesso": 961,
+      "erro_esocial": 96
+    },
+    "categorias": {
+      "plano_saude_coletivo_obrigatorio": 96
+    },
+    "fechamento": {
+      "protocolo": "1.1.202605.0000000013192226977",
+      "nr_recibo": "1.1.0000000040946973523",
+      "fechado": false,
+      "confirmado_em": "2026-05-21 19:27:59.092422+00:00",
+      "origem": "s1298_envio"
+    },
+    "s1298": {
+      "id": 169269,
+      "id_evento": "ID1108745230000002026052119275300001",
+      "nr_recibo": "1.1.0000000040946973523",
+      "cd_resposta": "201",
+      "dt_processamento": "2026-05-21 19:27:59.092422+00:00",
+      "protocolo": "1.1.202605.0000000013192226977"
+    },
+    "total_finais": 1057
+  },
+  {
+    "per_apur": "2025-09",
+    "envios": [
+      {
+        "id": 24,
+        "sequencia": 1,
+        "status": "concluido",
+        "total_tentados": 1059,
+        "total_sucesso": 976,
+        "total_erro": 83,
+        "iniciado_em": "2026-05-21 19:34:04.859338",
+        "finalizado_em": "2026-05-21 19:39:53.087212",
+        "resumo": {
+          "modo": "real_homologacao",
+          "rotulo": "envio_teste_100",
+          "workers": 5,
+          "criterio": "100 primeiros HEAD ordem alfabetica de CPF",
+          "batch_size": 50,
+          "histograma_erros": {
+            "401": 83
+          },
+          "pendente_consulta": 0
+        }
+      }
+    ],
+    "counts": {
+      "sucesso": 976,
+      "erro_esocial": 83
+    },
+    "categorias": {
+      "plano_saude_coletivo_obrigatorio": 82,
+      "recibo_459_nao_localizado_excluido_retificado": 1
+    },
+    "fechamento": {
+      "protocolo": "1.1.202605.0000000013192269972",
+      "nr_recibo": "1.1.0000000040947177208",
+      "fechado": false,
+      "confirmado_em": "2026-05-21 19:34:03.206855+00:00",
+      "origem": "s1298_envio"
+    },
+    "s1298": {
+      "id": 169270,
+      "id_evento": "ID1108745230000002026052119335700001",
+      "nr_recibo": "1.1.0000000040947177208",
+      "cd_resposta": "201",
+      "dt_processamento": "2026-05-21 19:34:03.206855+00:00",
+      "protocolo": "1.1.202605.0000000013192269972"
+    },
+    "total_finais": 1059
+  },
+  {
+    "per_apur": "2025-10",
+    "envios": [
+      {
+        "id": 25,
+        "sequencia": 1,
+        "status": "concluido",
+        "total_tentados": 1226,
+        "total_sucesso": 1133,
+        "total_erro": 93,
+        "iniciado_em": "2026-05-21 19:40:16.250987",
+        "finalizado_em": "2026-05-21 19:52:59.580198",
+        "resumo": {
+          "modo": "real_homologacao",
+          "rotulo": "envio_teste_100",
+          "workers": 5,
+          "criterio": "100 primeiros HEAD ordem alfabetica de CPF",
+          "batch_size": 50,
+          "histograma_erros": {
+            "401": 93
+          },
+          "pendente_consulta": 0,
+          "reconsulta_protocolos": [
+            "1.1.202605.0000000013192328898",
+            "1.1.202605.0000000013192338097",
+            "1.1.202605.0000000013192345665",
+            "1.1.202605.0000000013192364532"
+          ],
+          "reconsulta_protocolos_em": "2026-05-21 19:57:35.062126+00",
+          "pendente_consulta_pos_reconsulta": 0
+        }
+      }
+    ],
+    "counts": {
+      "sucesso": 1133,
+      "erro_esocial": 93
+    },
+    "categorias": {
+      "plano_saude_coletivo_obrigatorio": 93
+    },
+    "fechamento": {
+      "protocolo": "1.1.202605.0000000013192318799",
+      "nr_recibo": "1.1.0000000040947418526",
+      "fechado": false,
+      "confirmado_em": "2026-05-21 19:40:14.261446+00:00",
+      "origem": "s1298_envio"
+    },
+    "s1298": {
+      "id": 169271,
+      "id_evento": "ID1108745230000002026052119400800001",
+      "nr_recibo": "1.1.0000000040947418526",
+      "cd_resposta": "201",
+      "dt_processamento": "2026-05-21 19:40:14.261446+00:00",
+      "protocolo": "1.1.202605.0000000013192318799"
+    },
+    "total_finais": 1226
+  },
+  {
+    "per_apur": "2025-11",
+    "envios": [
+      {
+        "id": 26,
+        "sequencia": 1,
+        "status": "concluido",
+        "total_tentados": 1284,
+        "total_sucesso": 262,
+        "total_erro": 1022,
+        "iniciado_em": "2026-05-21 19:58:25.702791",
+        "finalizado_em": "2026-05-21 20:05:23.680107",
+        "resumo": {
+          "modo": "real_homologacao",
+          "rotulo": "envio_teste_100",
+          "workers": 5,
+          "criterio": "100 primeiros HEAD ordem alfabetica de CPF",
+          "batch_size": 50,
+          "histograma_erros": {
+            "401": 1022
+          },
+          "pendente_consulta": 0
+        }
+      },
+      {
+        "id": 27,
+        "sequencia": 2,
+        "status": "concluido",
+        "total_tentados": 1000,
+        "total_sucesso": 931,
+        "total_erro": 69,
+        "iniciado_em": "2026-05-21 20:12:34.852239",
+        "finalizado_em": "2026-05-21 20:22:10.108064",
+        "resumo": {
+          "modo": "real_homologacao",
+          "rotulo": "retry_620_folha_fechada",
+          "workers": 5,
+          "criterio": "100 primeiros HEAD ordem alfabetica de CPF",
+          "batch_size": 50,
+          "origem_envio_id": 26,
+          "histograma_erros": {
+            "401": 69
+          },
+          "pendente_consulta": 0,
+          "reconsulta_protocolos": [
+            "1.1.202605.0000000013192525902"
+          ],
+          "reconsulta_protocolos_em": "2026-05-21 20:22:52.161709+00",
+          "pendente_consulta_pos_reconsulta": 0
+        }
+      }
+    ],
+    "counts": {
+      "sucesso": 1193,
+      "erro_esocial": 91
+    },
+    "categorias": {
+      "plano_saude_coletivo_obrigatorio": 91
+    },
+    "fechamento": {
+      "protocolo": "1.1.202605.0000000013192426470",
+      "nr_recibo": "1.1.0000000040948191770",
+      "fechado": false,
+      "confirmado_em": "2026-05-21 20:12:22.040252+00:00",
+      "origem": "s1298_reconsulta"
+    },
+    "s1298": {
+      "id": 169272,
+      "id_evento": "ID1108745230000002026052119581800001",
+      "nr_recibo": "1.1.0000000040948191770",
+      "cd_resposta": "201",
+      "dt_processamento": "2026-05-21 20:12:22.040252+00:00",
+      "protocolo": "1.1.202605.0000000013192426470"
+    },
+    "total_finais": 1284
+  }
+]

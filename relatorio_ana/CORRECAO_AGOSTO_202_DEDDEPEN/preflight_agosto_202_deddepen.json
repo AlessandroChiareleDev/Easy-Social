@@ -1,0 +1,6436 @@
+{
+  "empresa_id": 2,
+  "per_apur": "2025-08",
+  "generated_at": "2026-05-18T22:40:01",
+  "regra": {
+    "origem": "call Marcos: corrigir 202/1863 com dependentes reais de julho/setembro",
+    "ignorar_cpf_zero": "00000000000",
+    "valor_padrao_dependente": "189.59",
+    "nao_misturar_com": [
+      "planSaude",
+      "penAlim",
+      "S-1200"
+    ]
+  },
+  "counts": {
+    "total_202_atual": 105,
+    "com_deddepen_reconstruido": 35,
+    "com_recibo_ativo_local": 105,
+    "com_recibo_front_head_xml": 105,
+    "confianca_alta": 35,
+    "confianca_sem_prova": 70,
+    "pronto_para_xml_envio": 35
+  },
+  "receipt_sources": {
+    "front_s1210_cpfs_do_mes": 15495,
+    "coverage_current_202_front": 105,
+    "jsons_AGOSTO_202_ACTIVE_RECIBOS": 14,
+    "coverage_current_202_jsons": 0
+  },
+  "evidence": [
+    {
+      "cpf": "01987352190",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 1670,
+      "envio_id": 20,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695358202",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695358202",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695358202",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167976702",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309827823",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "02254091786",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 1883,
+      "envio_id": 20,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695365779",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695365779",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695365779",
+        "tem_xml_front": false
+      },
+      "confianca": "alta",
+      "motivo": "julho_setembro_iguais",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "06423506710",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "06423509735",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167988952",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "06423509735",
+              "vlrDedDep": "379.18"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "06423506710",
+              "vlrDedDep": "189.59"
+            }
+          ],
+          "ded_zero": []
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309727716",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "06423509735",
+              "vlrDedDep": "379.18"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "06423506710",
+              "vlrDedDep": "189.59"
+            }
+          ],
+          "ded_zero": []
+        }
+      }
+    },
+    {
+      "cpf": "02691360539",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 2183,
+      "envio_id": 21,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695363665",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695363665",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695363665",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167985601",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309725025",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "13",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "02708236385",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 2193,
+      "envio_id": 21,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695358403",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695358403",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695358403",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167977335",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "758.36"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309827136",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "758.36"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "03415419584",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 2886,
+      "envio_id": 30,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695371967",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695371967",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695371967",
+        "tem_xml_front": false
+      },
+      "confianca": "alta",
+      "motivo": "julho_setembro_iguais",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "01485657512",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "08671801535",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "12885697504",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167998492",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "12885697504",
+              "vlrDedDep": "189.59"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "01485657512",
+              "vlrDedDep": "379.18"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "08671801535",
+              "vlrDedDep": "189.59"
+            }
+          ],
+          "ded_zero": []
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309734865",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "01485657512",
+              "vlrDedDep": "379.18"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "12885697504",
+              "vlrDedDep": "189.59"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "08671801535",
+              "vlrDedDep": "189.59"
+            }
+          ],
+          "ded_zero": []
+        }
+      }
+    },
+    {
+      "cpf": "03418753418",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 2890,
+      "envio_id": 30,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695362098",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695362098",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695362098",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167982641",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309722888",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "03456861796",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 2917,
+      "envio_id": 30,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695364701",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695364701",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695364701",
+        "tem_xml_front": false
+      },
+      "confianca": "alta",
+      "motivo": "julho_setembro_iguais",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "18589975770",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167987849",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "18589975770",
+              "vlrDedDep": "379.18"
+            }
+          ],
+          "ded_zero": []
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309726395",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "18589975770",
+              "vlrDedDep": "379.18"
+            }
+          ],
+          "ded_zero": []
+        }
+      }
+    },
+    {
+      "cpf": "03470657750",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 2933,
+      "envio_id": 30,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695386479",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695386479",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695386479",
+        "tem_xml_front": false
+      },
+      "confianca": "alta",
+      "motivo": "julho_setembro_iguais",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "15301330764",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034168011085",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "15301330764",
+              "vlrDedDep": "379.18"
+            }
+          ],
+          "ded_zero": []
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309750593",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "15301330764",
+              "vlrDedDep": "379.18"
+            }
+          ],
+          "ded_zero": []
+        }
+      }
+    },
+    {
+      "cpf": "03499760401",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 2955,
+      "envio_id": 30,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695363587",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695363587",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695363587",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167983524",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309724407",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "03551743169",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 2989,
+      "envio_id": 31,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695358894",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695358894",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695358894",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034168012135",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "568.77"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309719838",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "568.77"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "03775596445",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 3139,
+      "envio_id": 32,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695362602",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695362602",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695362602",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167983841",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309723176",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "03884524470",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 3224,
+      "envio_id": 33,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695363907",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695363907",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695363907",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167986550",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309725487",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "04102191429",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 3384,
+      "envio_id": 35,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695361826",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695361826",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695361826",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167982354",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309722847",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "04140693401",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 3412,
+      "envio_id": 35,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695363262",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695363262",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695363262",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167985146",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309724425",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "04202911482",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 3450,
+      "envio_id": 35,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695360470",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695360470",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695360470",
+        "tem_xml_front": false
+      },
+      "confianca": "alta",
+      "motivo": "julho_setembro_iguais",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "18060495461",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167981053",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "18060495461",
+              "vlrDedDep": "189.59"
+            }
+          ],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309721715",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "18060495461",
+              "vlrDedDep": "189.59"
+            }
+          ],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "04239333458",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 3490,
+      "envio_id": 36,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695390734",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695390734",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695390734",
+        "tem_xml_front": false
+      },
+      "confianca": "alta",
+      "motivo": "julho_setembro_iguais",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "71440622477",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "71440625492",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034168014294",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "71440625492",
+              "vlrDedDep": "379.18"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "71440622477",
+              "vlrDedDep": "189.59"
+            }
+          ],
+          "ded_zero": []
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309754894",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "71440625492",
+              "vlrDedDep": "379.18"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "71440622477",
+              "vlrDedDep": "189.59"
+            }
+          ],
+          "ded_zero": []
+        }
+      }
+    },
+    {
+      "cpf": "04240549493",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 3491,
+      "envio_id": 36,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695362328",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695362328",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695362328",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167983149",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309722994",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "04240556430",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 3492,
+      "envio_id": 36,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695362717",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695362717",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695362717",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167983733",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309723339",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "04260837419",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 3507,
+      "envio_id": 36,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695363999",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695363999",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695363999",
+        "tem_xml_front": false
+      },
+      "confianca": "alta",
+      "motivo": "julho_setembro_iguais",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "16959530458",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167986072",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "16959530458",
+              "vlrDedDep": "189.59"
+            }
+          ],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "568.77"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309725503",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "16959530458",
+              "vlrDedDep": "189.59"
+            }
+          ],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "568.77"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "04472251469",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 3667,
+      "envio_id": 38,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695362452",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695362452",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695362452",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167983564",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309723384",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "04532926408",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 3714,
+      "envio_id": 38,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695362113",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695362113",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695362113",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167982823",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309722764",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "04575626414",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 3749,
+      "envio_id": 38,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695363623",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695363623",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695363623",
+        "tem_xml_front": false
+      },
+      "confianca": "alta",
+      "motivo": "julho_setembro_iguais",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "15416281448",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "15416325402",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167985946",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "15416325402",
+              "vlrDedDep": "379.18"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "15416281448",
+              "vlrDedDep": "189.59"
+            }
+          ],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "189.59"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309724763",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "15416325402",
+              "vlrDedDep": "379.18"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "15416281448",
+              "vlrDedDep": "189.59"
+            }
+          ],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "189.59"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "04598209402",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 3763,
+      "envio_id": 39,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695361193",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695361193",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695361193",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167981414",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309722299",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "04747697470",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 3855,
+      "envio_id": 39,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695361843",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695361843",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695361843",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167982549",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309722832",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "04893823477",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 3939,
+      "envio_id": 40,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695361967",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695361967",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695361967",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167982451",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309722816",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "05161404426",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 4088,
+      "envio_id": 42,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695363670",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695363670",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695363670",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167984021",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309723908",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "05365128761",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 4214,
+      "envio_id": 43,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695356132",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695356132",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695356132",
+        "tem_xml_front": false
+      },
+      "confianca": "alta",
+      "motivo": "julho_setembro_iguais",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "06492792718",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167973587",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "06492792718",
+              "vlrDedDep": "379.18"
+            }
+          ],
+          "ded_zero": []
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309827564",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "06492792718",
+              "vlrDedDep": "379.18"
+            }
+          ],
+          "ded_zero": []
+        }
+      }
+    },
+    {
+      "cpf": "05390784766",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 4231,
+      "envio_id": 43,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695385887",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695385887",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695385887",
+        "tem_xml_front": false
+      },
+      "confianca": "alta",
+      "motivo": "julho_setembro_iguais",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "19137580795",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "19137608711",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "20228682770",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034168010354",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "20228682770",
+              "vlrDedDep": "379.18"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "19137580795",
+              "vlrDedDep": "189.59"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "19137608711",
+              "vlrDedDep": "189.59"
+            }
+          ],
+          "ded_zero": []
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309750139",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "20228682770",
+              "vlrDedDep": "379.18"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "19137580795",
+              "vlrDedDep": "189.59"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "19137608711",
+              "vlrDedDep": "189.59"
+            }
+          ],
+          "ded_zero": []
+        }
+      }
+    },
+    {
+      "cpf": "05406893432",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 4239,
+      "envio_id": 43,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695363624",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695363624",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695363624",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167985343",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309724930",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "05488285474",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 4294,
+      "envio_id": 44,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695361469",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695361469",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695361469",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167981817",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "947.95"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309722566",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "947.95"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "05513724430",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 4310,
+      "envio_id": 44,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695362130",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695362130",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695362130",
+        "tem_xml_front": false
+      },
+      "confianca": "alta",
+      "motivo": "julho_setembro_iguais",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "13380700452",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "13380713430",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167982964",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "13380700452",
+              "vlrDedDep": "189.59"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "13380713430",
+              "vlrDedDep": "379.18"
+            }
+          ],
+          "ded_zero": []
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309722927",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "13380700452",
+              "vlrDedDep": "189.59"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "13380713430",
+              "vlrDedDep": "379.18"
+            }
+          ],
+          "ded_zero": []
+        }
+      }
+    },
+    {
+      "cpf": "05664595400",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 4411,
+      "envio_id": 45,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695360426",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695360426",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695360426",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167980957",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "568.77"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309721698",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "568.77"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "05771971421",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 4478,
+      "envio_id": 46,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695363414",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695363414",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695363414",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167985436",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309724153",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "05774255794",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 4480,
+      "envio_id": 46,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695374141",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695374141",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695374141",
+        "tem_xml_front": false
+      },
+      "confianca": "alta",
+      "motivo": "julho_setembro_iguais",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "16597807723",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "22404489704",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034168001504",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "22404489704",
+              "vlrDedDep": "189.59"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "16597807723",
+              "vlrDedDep": "379.18"
+            }
+          ],
+          "ded_zero": []
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309739070",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "22404489704",
+              "vlrDedDep": "189.59"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "16597807723",
+              "vlrDedDep": "379.18"
+            }
+          ],
+          "ded_zero": []
+        }
+      }
+    },
+    {
+      "cpf": "05788537797",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 4488,
+      "envio_id": 46,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695352620",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695352620",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695352620",
+        "tem_xml_front": false
+      },
+      "confianca": "alta",
+      "motivo": "julho_setembro_iguais",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "16400420754",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167966346",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "16400420754",
+              "vlrDedDep": "379.18"
+            }
+          ],
+          "ded_zero": []
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309827365",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "16400420754",
+              "vlrDedDep": "379.18"
+            }
+          ],
+          "ded_zero": []
+        }
+      }
+    },
+    {
+      "cpf": "05986727703",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 4614,
+      "envio_id": 47,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695378344",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695378344",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695378344",
+        "tem_xml_front": false
+      },
+      "confianca": "alta",
+      "motivo": "julho_setembro_iguais",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "15832548701",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034168006825",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "15832548701",
+              "vlrDedDep": "379.18"
+            }
+          ],
+          "ded_zero": []
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309743531",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "15832548701",
+              "vlrDedDep": "379.18"
+            }
+          ],
+          "ded_zero": []
+        }
+      }
+    },
+    {
+      "cpf": "06700501482",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 5027,
+      "envio_id": 51,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695364251",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695364251",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695364251",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167986483",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309725715",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "13",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "06721434458",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 5037,
+      "envio_id": 51,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695363416",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695363416",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695363416",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167983247",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309723459",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "06838610426",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 5078,
+      "envio_id": 52,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695362834",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695362834",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695362834",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167982279",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "568.77"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309722806",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "568.77"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "06894360413",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 5102,
+      "envio_id": 52,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695362118",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695362118",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695362118",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167982588",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "758.36"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309722943",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "758.36"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "07010962413",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 5156,
+      "envio_id": 52,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695363932",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695363932",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695363932",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167986042",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309725461",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "07047686401",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 5182,
+      "envio_id": 53,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695362325",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695362325",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695362325",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167983331",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309722916",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "07161826454",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 5253,
+      "envio_id": 53,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695362463",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695362463",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695362463",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167983715",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309723107",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "07196986423",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 5279,
+      "envio_id": 54,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695364007",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695364007",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695364007",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167986241",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309725388",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "07506531402",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 5459,
+      "envio_id": 56,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695361524",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695361524",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695361524",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167982086",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309722605",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "07750537406",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 5595,
+      "envio_id": 57,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695363370",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695363370",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695363370",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167985077",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309724453",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "07776275409",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 5614,
+      "envio_id": 57,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695362388",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695362388",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695362388",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167983645",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "568.77"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309723159",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "568.77"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "07833429422",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 5646,
+      "envio_id": 57,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695362768",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695362768",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695362768",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167981993",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "568.77"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309722750",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "568.77"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "07856021438",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 5663,
+      "envio_id": 58,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695358098",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695358098",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695358098",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167976446",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309827044",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "07923038490",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 5704,
+      "envio_id": 58,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695365889",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695365889",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695365889",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167988948",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309727936",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "08353059452",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 5907,
+      "envio_id": 60,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695363836",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695363836",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695363836",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167984089",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309725035",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "08405088750",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 5933,
+      "envio_id": 60,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695359966",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695359966",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695359966",
+        "tem_xml_front": false
+      },
+      "confianca": "alta",
+      "motivo": "julho_setembro_iguais",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "19267023799",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "20673146707",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "20673171728",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167978611",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "20673171728",
+              "vlrDedDep": "379.18"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "19267023799",
+              "vlrDedDep": "189.59"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "20673146707",
+              "vlrDedDep": "189.59"
+            }
+          ],
+          "ded_zero": []
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309720257",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "19267023799",
+              "vlrDedDep": "189.59"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "20673171728",
+              "vlrDedDep": "379.18"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "20673146707",
+              "vlrDedDep": "189.59"
+            }
+          ],
+          "ded_zero": []
+        }
+      }
+    },
+    {
+      "cpf": "08441489467",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 5951,
+      "envio_id": 60,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695363893",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695363893",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695363893",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167984170",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309724233",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "08554135733",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 6015,
+      "envio_id": 61,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695355753",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695355753",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695355753",
+        "tem_xml_front": false
+      },
+      "confianca": "alta",
+      "motivo": "julho_setembro_iguais",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "18710630783",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167970726",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "18710630783",
+              "vlrDedDep": "568.77"
+            }
+          ],
+          "ded_zero": []
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309827493",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "18710630783",
+              "vlrDedDep": "568.77"
+            }
+          ],
+          "ded_zero": []
+        }
+      }
+    },
+    {
+      "cpf": "08571172463",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 6024,
+      "envio_id": 61,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695364836",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695364836",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695364836",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167987932",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309726872",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "08852402438",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 6144,
+      "envio_id": 62,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695362871",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695362871",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695362871",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167984367",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309723977",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "09278365726",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 6333,
+      "envio_id": 64,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695374534",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695374534",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695374534",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": false,
+          "error": "sem S-1210 local"
+        },
+        "2025-09": {
+          "found": false,
+          "error": "sem S-1210 local"
+        }
+      }
+    },
+    {
+      "cpf": "09340578422",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 6368,
+      "envio_id": 65,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695364460",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695364460",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695364460",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167987328",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309725803",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "09568580743",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 6494,
+      "envio_id": 66,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695366028",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695366028",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695366028",
+        "tem_xml_front": false
+      },
+      "confianca": "alta",
+      "motivo": "julho_setembro_iguais",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "21044429747",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "21044471786",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167989145",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "21044429747",
+              "vlrDedDep": "379.18"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "21044471786",
+              "vlrDedDep": "189.59"
+            }
+          ],
+          "ded_zero": []
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309728046",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "21044429747",
+              "vlrDedDep": "379.18"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "21044471786",
+              "vlrDedDep": "189.59"
+            }
+          ],
+          "ded_zero": []
+        }
+      }
+    },
+    {
+      "cpf": "09705541760",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 6569,
+      "envio_id": 67,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695386340",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695386340",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695386340",
+        "tem_xml_front": false
+      },
+      "confianca": "alta",
+      "motivo": "julho_setembro_iguais",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "16638222716",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034168010791",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "16638222716",
+              "vlrDedDep": "379.18"
+            }
+          ],
+          "ded_zero": []
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309750467",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "16638222716",
+              "vlrDedDep": "379.18"
+            }
+          ],
+          "ded_zero": []
+        }
+      }
+    },
+    {
+      "cpf": "09821166407",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 6628,
+      "envio_id": 67,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695367135",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695367135",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695367135",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167989803",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "568.77"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309729201",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "568.77"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "09849145790",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 6642,
+      "envio_id": 67,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695364414",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695364414",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695364414",
+        "tem_xml_front": false
+      },
+      "confianca": "alta",
+      "motivo": "julho_setembro_iguais",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "06390152710",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "19443383730",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "23080190777",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167987067",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "06390152710",
+              "vlrDedDep": "189.59"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "19443383730",
+              "vlrDedDep": "379.18"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "23080190777",
+              "vlrDedDep": "189.59"
+            }
+          ],
+          "ded_zero": []
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309726188",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "06390152710",
+              "vlrDedDep": "189.59"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "19443383730",
+              "vlrDedDep": "379.18"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "23080190777",
+              "vlrDedDep": "189.59"
+            }
+          ],
+          "ded_zero": []
+        }
+      }
+    },
+    {
+      "cpf": "09981664723",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 6712,
+      "envio_id": 68,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695374572",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695374572",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695374572",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": false,
+          "error": "sem S-1210 local"
+        },
+        "2025-09": {
+          "found": false,
+          "error": "sem S-1210 local"
+        }
+      }
+    },
+    {
+      "cpf": "10057336431",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 6748,
+      "envio_id": 68,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695365298",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695365298",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695365298",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167988692",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309727192",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "10108325490",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 6779,
+      "envio_id": 69,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695361191",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695361191",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695361191",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034168013108",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309722255",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "10154281425",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 6800,
+      "envio_id": 69,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695362682",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695362682",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695362682",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167983953",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309723381",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "10617805709",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 7010,
+      "envio_id": 71,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695388036",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695388036",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695388036",
+        "tem_xml_front": false
+      },
+      "confianca": "alta",
+      "motivo": "julho_setembro_iguais",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "22063885702",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034168012355",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "22063885702",
+              "vlrDedDep": "379.18"
+            }
+          ],
+          "ded_zero": []
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309752354",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "22063885702",
+              "vlrDedDep": "379.18"
+            }
+          ],
+          "ded_zero": []
+        }
+      }
+    },
+    {
+      "cpf": "10703646494",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 7060,
+      "envio_id": 72,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695364026",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695364026",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695364026",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167986260",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309725642",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "13",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "11191263711",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 7305,
+      "envio_id": 74,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695339861",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695339861",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695339861",
+        "tem_xml_front": false
+      },
+      "confianca": "alta",
+      "motivo": "julho_setembro_iguais",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "20394818776",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167948935",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "20394818776",
+              "vlrDedDep": "379.18"
+            }
+          ],
+          "ded_zero": []
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309827176",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "20394818776",
+              "vlrDedDep": "379.18"
+            }
+          ],
+          "ded_zero": []
+        }
+      }
+    },
+    {
+      "cpf": "11227994460",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 7322,
+      "envio_id": 74,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695363959",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695363959",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695363959",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167986354",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309725441",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "11500569755",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 7455,
+      "envio_id": 75,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695359560",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695359560",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695359560",
+        "tem_xml_front": false
+      },
+      "confianca": "alta",
+      "motivo": "julho_setembro_iguais",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "21231750723",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "21231757736",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167979411",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "21231757736",
+              "vlrDedDep": "379.18"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "21231750723",
+              "vlrDedDep": "189.59"
+            }
+          ],
+          "ded_zero": []
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309720750",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "21231757736",
+              "vlrDedDep": "379.18"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "21231750723",
+              "vlrDedDep": "189.59"
+            }
+          ],
+          "ded_zero": []
+        }
+      }
+    },
+    {
+      "cpf": "11553980760",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 7472,
+      "envio_id": 76,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695356048",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695356048",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695356048",
+        "tem_xml_front": false
+      },
+      "confianca": "alta",
+      "motivo": "julho_setembro_iguais",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "21108762719",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167973663",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "21108762719",
+              "vlrDedDep": "379.18"
+            }
+          ],
+          "ded_zero": []
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309827596",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "21108762719",
+              "vlrDedDep": "379.18"
+            }
+          ],
+          "ded_zero": []
+        }
+      }
+    },
+    {
+      "cpf": "11679938886",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 7515,
+      "envio_id": 76,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695357925",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695357925",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695357925",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167977098",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309827855",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "11915524709",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 7609,
+      "envio_id": 77,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695340278",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695340278",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695340278",
+        "tem_xml_front": false
+      },
+      "confianca": "alta",
+      "motivo": "julho_setembro_iguais",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "21874576726",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167946895",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "21874576726",
+              "vlrDedDep": "379.18"
+            }
+          ],
+          "ded_zero": []
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309827209",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "21874576726",
+              "vlrDedDep": "379.18"
+            }
+          ],
+          "ded_zero": []
+        }
+      }
+    },
+    {
+      "cpf": "11994427477",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 7655,
+      "envio_id": 77,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695360413",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695360413",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695360413",
+        "tem_xml_front": false
+      },
+      "confianca": "alta",
+      "motivo": "julho_setembro_iguais",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "16795353400",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167980317",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "16795353400",
+              "vlrDedDep": "379.18"
+            }
+          ],
+          "ded_zero": []
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309721414",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "16795353400",
+              "vlrDedDep": "379.18"
+            }
+          ],
+          "ded_zero": []
+        }
+      }
+    },
+    {
+      "cpf": "12501850769",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 7816,
+      "envio_id": 79,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695374775",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695374775",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695374775",
+        "tem_xml_front": false
+      },
+      "confianca": "alta",
+      "motivo": "julho_setembro_iguais",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "18974292742",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "18974302721",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034168002292",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "18974292742",
+              "vlrDedDep": "379.18"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "18974302721",
+              "vlrDedDep": "189.59"
+            }
+          ],
+          "ded_zero": []
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309739641",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "18974292742",
+              "vlrDedDep": "379.18"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "18974302721",
+              "vlrDedDep": "189.59"
+            }
+          ],
+          "ded_zero": []
+        }
+      }
+    },
+    {
+      "cpf": "13182452738",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 8020,
+      "envio_id": 81,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695349383",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695349383",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695349383",
+        "tem_xml_front": false
+      },
+      "confianca": "alta",
+      "motivo": "julho_setembro_iguais",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "19073815703",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "19104968719",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "19958972727",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "20241481740",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "20241503736",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "20241514770",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "22292850761",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167960878",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "22292850761",
+              "vlrDedDep": "189.59"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "20241503736",
+              "vlrDedDep": "189.59"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "19073815703",
+              "vlrDedDep": "379.18"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "19104968719",
+              "vlrDedDep": "379.18"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "20241514770",
+              "vlrDedDep": "189.59"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "20241481740",
+              "vlrDedDep": "189.59"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "19958972727",
+              "vlrDedDep": "189.59"
+            }
+          ],
+          "ded_zero": []
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309827283",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "22292850761",
+              "vlrDedDep": "189.59"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "20241503736",
+              "vlrDedDep": "189.59"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "19073815703",
+              "vlrDedDep": "379.18"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "19104968719",
+              "vlrDedDep": "379.18"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "20241514770",
+              "vlrDedDep": "189.59"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "20241481740",
+              "vlrDedDep": "189.59"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "19958972727",
+              "vlrDedDep": "189.59"
+            }
+          ],
+          "ded_zero": []
+        }
+      }
+    },
+    {
+      "cpf": "15275584792",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 8565,
+      "envio_id": 87,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695367278",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695367278",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695367278",
+        "tem_xml_front": false
+      },
+      "confianca": "alta",
+      "motivo": "julho_setembro_iguais",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "22853460770",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167990224",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "22853460770",
+              "vlrDedDep": "379.18"
+            }
+          ],
+          "ded_zero": []
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309729419",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "22853460770",
+              "vlrDedDep": "379.18"
+            }
+          ],
+          "ded_zero": []
+        }
+      }
+    },
+    {
+      "cpf": "15447916747",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 8600,
+      "envio_id": 87,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695356074",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695356074",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695356074",
+        "tem_xml_front": false
+      },
+      "confianca": "alta",
+      "motivo": "julho_setembro_iguais",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "20374139717",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "20698806727",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167973792",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "20374139717",
+              "vlrDedDep": "189.59"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "20698806727",
+              "vlrDedDep": "379.18"
+            }
+          ],
+          "ded_zero": []
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309827083",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "20374139717",
+              "vlrDedDep": "189.59"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "20698806727",
+              "vlrDedDep": "379.18"
+            }
+          ],
+          "ded_zero": []
+        }
+      }
+    },
+    {
+      "cpf": "15701224740",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 8656,
+      "envio_id": 87,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695357614",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695357614",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695357614",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167976836",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309827757",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "17087835718",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 8917,
+      "envio_id": 90,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695461759",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695461759",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695461759",
+        "tem_xml_front": false
+      },
+      "confianca": "alta",
+      "motivo": "julho_setembro_iguais",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "23039241702",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034168114297",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "23039241702",
+              "vlrDedDep": "379.18"
+            }
+          ],
+          "ded_zero": []
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309816434",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "23039241702",
+              "vlrDedDep": "379.18"
+            }
+          ],
+          "ded_zero": []
+        }
+      }
+    },
+    {
+      "cpf": "17699409876",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 8997,
+      "envio_id": 91,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695358292",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695358292",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695358292",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167977171",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309827118",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "19354014755",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 9228,
+      "envio_id": 93,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695355772",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695355772",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695355772",
+        "tem_xml_front": false
+      },
+      "confianca": "alta",
+      "motivo": "julho_setembro_iguais",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "20625296788",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167972999",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "20625296788",
+              "vlrDedDep": "568.77"
+            }
+          ],
+          "ded_zero": []
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309827534",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "20625296788",
+              "vlrDedDep": "568.77"
+            }
+          ],
+          "ded_zero": []
+        }
+      }
+    },
+    {
+      "cpf": "25366903858",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 9695,
+      "envio_id": 98,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695357569",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695357569",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695357569",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167976746",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309827733",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "29387931897",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 10239,
+      "envio_id": 103,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695360124",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695360124",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695360124",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167980129",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309721335",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "13",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "30280615892",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 10352,
+      "envio_id": 104,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695358207",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695358207",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695358207",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167976878",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309827060",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "30730892840",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 10410,
+      "envio_id": 105,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695358039",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695358039",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695358039",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167975897",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309827801",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "32571450808",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 10645,
+      "envio_id": 107,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695357464",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695357464",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695357464",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167974935",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309827656",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "33681242852",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 10819,
+      "envio_id": 109,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695358018",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695358018",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695358018",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167978326",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309827950",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "33834306851",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 10837,
+      "envio_id": 109,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695365168",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695365168",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695365168",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167985989",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "568.77"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309725647",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "568.77"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "34286723801",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 10912,
+      "envio_id": 110,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695358229",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695358229",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695358229",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167976922",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309827099",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "34875548877",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 11011,
+      "envio_id": 111,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695359643",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695359643",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695359643",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034168012169",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309719793",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "35832326822",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 11142,
+      "envio_id": 112,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695388412",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695388412",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695388412",
+        "tem_xml_front": false
+      },
+      "confianca": "alta",
+      "motivo": "julho_setembro_iguais",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "56165716873",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "56509983885",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034168012675",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "56509983885",
+              "vlrDedDep": "379.18"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "56165716873",
+              "vlrDedDep": "189.59"
+            }
+          ],
+          "ded_zero": []
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309752914",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "56509983885",
+              "vlrDedDep": "379.18"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "56165716873",
+              "vlrDedDep": "189.59"
+            }
+          ],
+          "ded_zero": []
+        }
+      }
+    },
+    {
+      "cpf": "37647871803",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 11402,
+      "envio_id": 115,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695357434",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695357434",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695357434",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167976449",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "568.77"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309827710",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "568.77"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "40236751808",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 11741,
+      "envio_id": 118,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695342812",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695342812",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695342812",
+        "tem_xml_front": false
+      },
+      "confianca": "alta",
+      "motivo": "julho_setembro_iguais",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "53971605800",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "58045307803",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "58045328800",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167953278",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "53971605800",
+              "vlrDedDep": "379.18"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "58045328800",
+              "vlrDedDep": "189.59"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "58045307803",
+              "vlrDedDep": "189.59"
+            }
+          ],
+          "ded_zero": []
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309827248",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "53971605800",
+              "vlrDedDep": "379.18"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "58045328800",
+              "vlrDedDep": "189.59"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "58045307803",
+              "vlrDedDep": "189.59"
+            }
+          ],
+          "ded_zero": []
+        }
+      }
+    },
+    {
+      "cpf": "40806733888",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 11816,
+      "envio_id": 119,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695358794",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695358794",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695358794",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167978100",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309718796",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": []
+        }
+      }
+    },
+    {
+      "cpf": "41310627800",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 11874,
+      "envio_id": 120,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695352697",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695352697",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695352697",
+        "tem_xml_front": false
+      },
+      "confianca": "alta",
+      "motivo": "julho_setembro_iguais",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "23997904804",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167966630",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "23997904804",
+              "vlrDedDep": "568.77"
+            }
+          ],
+          "ded_zero": []
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309827412",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "23997904804",
+              "vlrDedDep": "568.77"
+            }
+          ],
+          "ded_zero": []
+        }
+      }
+    },
+    {
+      "cpf": "51811987168",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 12925,
+      "envio_id": 130,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695365094",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695365094",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695365094",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167987894",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309726528",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "74838130163",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 14208,
+      "envio_id": 143,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695358706",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695358706",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695358706",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167977822",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309827909",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "85132993168",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 15185,
+      "envio_id": 153,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695357952",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695357952",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695357952",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167975800",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309827883",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "88812090125",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 15645,
+      "envio_id": 157,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695359050",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695359050",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695359050",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167978179",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309719765",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "89107241534",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 15665,
+      "envio_id": 158,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695354925",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695354925",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695354925",
+        "tem_xml_front": false
+      },
+      "confianca": "alta",
+      "motivo": "julho_setembro_iguais",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "85906235566",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167971647",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "85906235566",
+              "vlrDedDep": "568.77"
+            }
+          ],
+          "ded_zero": []
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309827466",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "85906235566",
+              "vlrDedDep": "568.77"
+            }
+          ],
+          "ded_zero": []
+        }
+      }
+    },
+    {
+      "cpf": "89258258487",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 15675,
+      "envio_id": 158,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695364650",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695364650",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695364650",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167985218",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309725104",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "94928495420",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 16075,
+      "envio_id": 162,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695362080",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695362080",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695362080",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167982952",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "568.77"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309722798",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "568.77"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cpf": "98397435468",
+      "status_atual": "erro_esocial",
+      "erro_codigo": "202",
+      "item_id": 16240,
+      "envio_id": 163,
+      "tem_recibo_ativo_local": true,
+      "recibo_ativo_local": "1.1.0000000034695362419",
+      "recibo_fonte_local": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "front": {
+        "recibo": "1.1.0000000034695362419",
+        "fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+        "status_front": "erro",
+        "erro_codigo_front": "202",
+        "nr_recibo_novo_front": null,
+        "nr_recibo_usado_front": "1.1.0000000034695362419",
+        "tem_xml_front": false
+      },
+      "confianca": "sem_prova",
+      "motivo": "sem_deddepen_real_em_julho_setembro",
+      "dedDepen_corrigir": [],
+      "provas": {
+        "2025-07": {
+          "found": true,
+          "recibo_local": "1.1.0000000034167981640",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            },
+            {
+              "tpCR": "056107",
+              "tpRend": "13",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        },
+        "2025-09": {
+          "found": true,
+          "recibo_local": "1.1.0000000035309722499",
+          "infoIRCR": 1,
+          "infoDep": [],
+          "dedDepen": [],
+          "ded_zero": [
+            {
+              "tpCR": "056107",
+              "tpRend": "11",
+              "cpfDep": "00000000000",
+              "vlrDedDep": "379.18"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

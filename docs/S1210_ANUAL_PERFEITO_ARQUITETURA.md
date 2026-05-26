@@ -8,6 +8,7 @@ Escopo deste documento: estudo e desenho tecnico. Nao implementa codigo.
 Construir uma pagina unica do S1210 anual que permita:
 
 - Operar 11 meses (fev a dez, sem janeiro).
+- Decisão operacional 20/05/2026: janeiro pode continuar listado na grade anual, mas sempre como `sem_dados`, com contadores zerados e sem pendentes artificiais.
 - Operar 4 lotes por mes com o mesmo padrao de controle ja validado no projeto atual.
 - Aceitar carga parcial de dados (ex.: usuario envia apenas Lote 1 de 3 meses no inicio).
 - Manter trilha de validacao/vigilancia em tempo real: status por CPF, contadores consistentes, erro explicito, retry controlado.

@@ -1,0 +1,106 @@
+cpf,confianca,motivo,tem_recibo_ativo_local,recibo_ativo_local,recibo_fonte_local,ded_count,dependentes,envio_id,item_id
+01987352190,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695358202,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,20,1670
+02254091786,alta,julho_setembro_iguais,True,1.1.0000000034695365779,front_s1210_cpfs_do_mes.nr_recibo_xml,2,056107/11/06423506710/189.59; 056107/11/06423509735/189.59,20,1883
+02691360539,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695363665,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,21,2183
+02708236385,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695358403,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,21,2193
+03415419584,alta,julho_setembro_iguais,True,1.1.0000000034695371967,front_s1210_cpfs_do_mes.nr_recibo_xml,3,056107/11/01485657512/189.59; 056107/11/08671801535/189.59; 056107/11/12885697504/189.59,30,2886
+03418753418,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695362098,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,30,2890
+03456861796,alta,julho_setembro_iguais,True,1.1.0000000034695364701,front_s1210_cpfs_do_mes.nr_recibo_xml,1,056107/11/18589975770/189.59,30,2917
+03470657750,alta,julho_setembro_iguais,True,1.1.0000000034695386479,front_s1210_cpfs_do_mes.nr_recibo_xml,1,056107/11/15301330764/189.59,30,2933
+03499760401,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695363587,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,30,2955
+03551743169,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695358894,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,31,2989
+03775596445,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695362602,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,32,3139
+03884524470,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695363907,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,33,3224
+04102191429,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695361826,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,35,3384
+04140693401,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695363262,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,35,3412
+04202911482,alta,julho_setembro_iguais,True,1.1.0000000034695360470,front_s1210_cpfs_do_mes.nr_recibo_xml,1,056107/11/18060495461/189.59,35,3450
+04239333458,alta,julho_setembro_iguais,True,1.1.0000000034695390734,front_s1210_cpfs_do_mes.nr_recibo_xml,2,056107/11/71440622477/189.59; 056107/11/71440625492/189.59,36,3490
+04240549493,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695362328,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,36,3491
+04240556430,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695362717,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,36,3492
+04260837419,alta,julho_setembro_iguais,True,1.1.0000000034695363999,front_s1210_cpfs_do_mes.nr_recibo_xml,1,056107/11/16959530458/189.59,36,3507
+04472251469,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695362452,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,38,3667
+04532926408,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695362113,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,38,3714
+04575626414,alta,julho_setembro_iguais,True,1.1.0000000034695363623,front_s1210_cpfs_do_mes.nr_recibo_xml,2,056107/11/15416281448/189.59; 056107/11/15416325402/189.59,38,3749
+04598209402,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695361193,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,39,3763
+04747697470,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695361843,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,39,3855
+04893823477,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695361967,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,40,3939
+05161404426,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695363670,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,42,4088
+05365128761,alta,julho_setembro_iguais,True,1.1.0000000034695356132,front_s1210_cpfs_do_mes.nr_recibo_xml,1,056107/11/06492792718/189.59,43,4214
+05390784766,alta,julho_setembro_iguais,True,1.1.0000000034695385887,front_s1210_cpfs_do_mes.nr_recibo_xml,3,056107/11/19137580795/189.59; 056107/11/19137608711/189.59; 056107/11/20228682770/189.59,43,4231
+05406893432,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695363624,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,43,4239
+05488285474,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695361469,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,44,4294
+05513724430,alta,julho_setembro_iguais,True,1.1.0000000034695362130,front_s1210_cpfs_do_mes.nr_recibo_xml,2,056107/11/13380700452/189.59; 056107/11/13380713430/189.59,44,4310
+05664595400,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695360426,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,45,4411
+05771971421,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695363414,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,46,4478
+05774255794,alta,julho_setembro_iguais,True,1.1.0000000034695374141,front_s1210_cpfs_do_mes.nr_recibo_xml,2,056107/11/16597807723/189.59; 056107/11/22404489704/189.59,46,4480
+05788537797,alta,julho_setembro_iguais,True,1.1.0000000034695352620,front_s1210_cpfs_do_mes.nr_recibo_xml,1,056107/11/16400420754/189.59,46,4488
+05986727703,alta,julho_setembro_iguais,True,1.1.0000000034695378344,front_s1210_cpfs_do_mes.nr_recibo_xml,1,056107/11/15832548701/189.59,47,4614
+06700501482,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695364251,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,51,5027
+06721434458,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695363416,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,51,5037
+06838610426,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695362834,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,52,5078
+06894360413,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695362118,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,52,5102
+07010962413,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695363932,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,52,5156
+07047686401,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695362325,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,53,5182
+07161826454,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695362463,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,53,5253
+07196986423,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695364007,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,54,5279
+07506531402,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695361524,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,56,5459
+07750537406,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695363370,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,57,5595
+07776275409,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695362388,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,57,5614
+07833429422,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695362768,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,57,5646
+07856021438,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695358098,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,58,5663
+07923038490,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695365889,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,58,5704
+08353059452,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695363836,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,60,5907
+08405088750,alta,julho_setembro_iguais,True,1.1.0000000034695359966,front_s1210_cpfs_do_mes.nr_recibo_xml,3,056107/11/19267023799/189.59; 056107/11/20673146707/189.59; 056107/11/20673171728/189.59,60,5933
+08441489467,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695363893,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,60,5951
+08554135733,alta,julho_setembro_iguais,True,1.1.0000000034695355753,front_s1210_cpfs_do_mes.nr_recibo_xml,1,056107/11/18710630783/189.59,61,6015
+08571172463,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695364836,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,61,6024
+08852402438,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695362871,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,62,6144
+09278365726,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695374534,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,64,6333
+09340578422,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695364460,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,65,6368
+09568580743,alta,julho_setembro_iguais,True,1.1.0000000034695366028,front_s1210_cpfs_do_mes.nr_recibo_xml,2,056107/11/21044429747/189.59; 056107/11/21044471786/189.59,66,6494
+09705541760,alta,julho_setembro_iguais,True,1.1.0000000034695386340,front_s1210_cpfs_do_mes.nr_recibo_xml,1,056107/11/16638222716/189.59,67,6569
+09821166407,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695367135,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,67,6628
+09849145790,alta,julho_setembro_iguais,True,1.1.0000000034695364414,front_s1210_cpfs_do_mes.nr_recibo_xml,3,056107/11/06390152710/189.59; 056107/11/19443383730/189.59; 056107/11/23080190777/189.59,67,6642
+09981664723,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695374572,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,68,6712
+10057336431,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695365298,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,68,6748
+10108325490,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695361191,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,69,6779
+10154281425,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695362682,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,69,6800
+10617805709,alta,julho_setembro_iguais,True,1.1.0000000034695388036,front_s1210_cpfs_do_mes.nr_recibo_xml,1,056107/11/22063885702/189.59,71,7010
+10703646494,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695364026,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,72,7060
+11191263711,alta,julho_setembro_iguais,True,1.1.0000000034695339861,front_s1210_cpfs_do_mes.nr_recibo_xml,1,056107/11/20394818776/189.59,74,7305
+11227994460,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695363959,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,74,7322
+11500569755,alta,julho_setembro_iguais,True,1.1.0000000034695359560,front_s1210_cpfs_do_mes.nr_recibo_xml,2,056107/11/21231750723/189.59; 056107/11/21231757736/189.59,75,7455
+11553980760,alta,julho_setembro_iguais,True,1.1.0000000034695356048,front_s1210_cpfs_do_mes.nr_recibo_xml,1,056107/11/21108762719/189.59,76,7472
+11679938886,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695357925,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,76,7515
+11915524709,alta,julho_setembro_iguais,True,1.1.0000000034695340278,front_s1210_cpfs_do_mes.nr_recibo_xml,1,056107/11/21874576726/189.59,77,7609
+11994427477,alta,julho_setembro_iguais,True,1.1.0000000034695360413,front_s1210_cpfs_do_mes.nr_recibo_xml,1,056107/11/16795353400/189.59,77,7655
+12501850769,alta,julho_setembro_iguais,True,1.1.0000000034695374775,front_s1210_cpfs_do_mes.nr_recibo_xml,2,056107/11/18974292742/189.59; 056107/11/18974302721/189.59,79,7816
+13182452738,alta,julho_setembro_iguais,True,1.1.0000000034695349383,front_s1210_cpfs_do_mes.nr_recibo_xml,7,056107/11/19073815703/189.59; 056107/11/19104968719/189.59; 056107/11/19958972727/189.59; 056107/11/20241481740/189.59; 056107/11/20241503736/189.59; 056107/11/20241514770/189.59; 056107/11/22292850761/189.59,81,8020
+15275584792,alta,julho_setembro_iguais,True,1.1.0000000034695367278,front_s1210_cpfs_do_mes.nr_recibo_xml,1,056107/11/22853460770/189.59,87,8565
+15447916747,alta,julho_setembro_iguais,True,1.1.0000000034695356074,front_s1210_cpfs_do_mes.nr_recibo_xml,2,056107/11/20374139717/189.59; 056107/11/20698806727/189.59,87,8600
+15701224740,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695357614,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,87,8656
+17087835718,alta,julho_setembro_iguais,True,1.1.0000000034695461759,front_s1210_cpfs_do_mes.nr_recibo_xml,1,056107/11/23039241702/189.59,90,8917
+17699409876,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695358292,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,91,8997
+19354014755,alta,julho_setembro_iguais,True,1.1.0000000034695355772,front_s1210_cpfs_do_mes.nr_recibo_xml,1,056107/11/20625296788/189.59,93,9228
+25366903858,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695357569,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,98,9695
+29387931897,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695360124,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,103,10239
+30280615892,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695358207,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,104,10352
+30730892840,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695358039,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,105,10410
+32571450808,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695357464,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,107,10645
+33681242852,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695358018,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,109,10819
+33834306851,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695365168,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,109,10837
+34286723801,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695358229,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,110,10912
+34875548877,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695359643,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,111,11011
+35832326822,alta,julho_setembro_iguais,True,1.1.0000000034695388412,front_s1210_cpfs_do_mes.nr_recibo_xml,2,056107/11/56165716873/189.59; 056107/11/56509983885/189.59,112,11142
+37647871803,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695357434,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,115,11402
+40236751808,alta,julho_setembro_iguais,True,1.1.0000000034695342812,front_s1210_cpfs_do_mes.nr_recibo_xml,3,056107/11/53971605800/189.59; 056107/11/58045307803/189.59; 056107/11/58045328800/189.59,118,11741
+40806733888,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695358794,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,119,11816
+41310627800,alta,julho_setembro_iguais,True,1.1.0000000034695352697,front_s1210_cpfs_do_mes.nr_recibo_xml,1,056107/11/23997904804/189.59,120,11874
+51811987168,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695365094,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,130,12925
+74838130163,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695358706,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,143,14208
+85132993168,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695357952,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,153,15185
+88812090125,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695359050,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,157,15645
+89107241534,alta,julho_setembro_iguais,True,1.1.0000000034695354925,front_s1210_cpfs_do_mes.nr_recibo_xml,1,056107/11/85906235566/189.59,158,15665
+89258258487,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695364650,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,158,15675
+94928495420,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695362080,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,162,16075
+98397435468,sem_prova,sem_deddepen_real_em_julho_setembro,True,1.1.0000000034695362419,front_s1210_cpfs_do_mes.nr_recibo_xml,0,,163,16240

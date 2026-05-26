@@ -1,0 +1,93 @@
+{
+  "generated_at": "2026-05-20T15:07:52",
+  "empresa_id": 2,
+  "per_apur": "2025-10",
+  "cnpj": "09445502000109",
+  "ambiente": "producao",
+  "xmls": {
+    "unsigned_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1299_FECHAMENTOS\\2025-10\\S1299_2025-10_SOLUCOES_unsigned.xml",
+    "signed_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1299_FECHAMENTOS\\2025-10\\S1299_2025-10_SOLUCOES_signed.xml",
+    "unsigned": {
+      "id_evento": "ID1094455020000002026052018050700001",
+      "per_apur": "2025-10",
+      "tp_amb": "1",
+      "nr_insc": "09445502",
+      "signed": false,
+      "size_bytes": 584
+    },
+    "signed": {
+      "id_evento": "ID1094455020000002026052018050700001",
+      "per_apur": "2025-10",
+      "tp_amb": "1",
+      "nr_insc": "09445502",
+      "signed": true,
+      "size_bytes": 4567
+    }
+  },
+  "resultado": {
+    "ok": true,
+    "id_evento": "ID1094455020000002026052018050700001",
+    "protocolo": "1.1.202605.0000000013186812229",
+    "codigo": "201",
+    "descricao": "Sucesso.",
+    "nr_recibo": "1.1.0000000040921314346",
+    "evento_db_id": 3483534,
+    "ocorrencias": [],
+    "manifest": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1299_FECHAMENTOS\\2025-10\\manifest_fechamento_s1299_2025-10_solucoes.json",
+    "preflight": {
+      "empresa_id_externo": 2,
+      "empresa_id_interno": 1,
+      "per_apur": "2025-10",
+      "s1210_stats": [
+        {
+          "status": "sucesso",
+          "erro_codigo": "",
+          "total": 15994
+        },
+        {
+          "status": "sucesso",
+          "erro_codigo": "202",
+          "total": 117
+        }
+      ],
+      "pendencias_s1210": 0,
+      "fechamento_status_atual": {
+        "empresa_id": 1,
+        "per_apur": "2025-10",
+        "fechado": false,
+        "protocolo": "1.1.202605.0000000013183596214",
+        "nr_recibo": "1.1.0000000040764784109",
+        "origem": "s1298_ja_aberto",
+        "confirmado_em": "2026-05-20 01:06:16.740517+00:00"
+      },
+      "eventos_s1298_s1299_periodo": [
+        {
+          "tipo_evento": "S-1298",
+          "cd_resposta": "201",
+          "total": 5,
+          "ultimo": "2026-05-13 16:10:23.318291+00:00"
+        },
+        {
+          "tipo_evento": "S-1298",
+          "cd_resposta": "401",
+          "total": 1,
+          "ultimo": "2026-05-20 01:06:16.740517+00:00"
+        },
+        {
+          "tipo_evento": "S-1299",
+          "cd_resposta": "201",
+          "total": 4,
+          "ultimo": "2025-11-17 20:53:17.287000+00:00"
+        },
+        {
+          "tipo_evento": "S-1299",
+          "cd_resposta": "202",
+          "total": 1,
+          "ultimo": "2025-11-19 07:49:13.130000+00:00"
+        }
+      ],
+      "certificado_ok": true,
+      "senha_ok": true
+    }
+  }
+}

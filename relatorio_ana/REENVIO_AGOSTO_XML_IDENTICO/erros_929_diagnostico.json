@@ -1,0 +1,182 @@
+[
+  {
+    "cpf": "00237457709",
+    "item_id": 157376,
+    "erro_codigo": "401",
+    "erro_mensagem": "401: Conteudo do evento inválido. | 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.\nAção Sugerida: Deverá existir um Evento já recebido, \"Ativo\" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",
+    "nr_recibo_anterior": "1.1.0000000034695386396",
+    "versao_anterior_id": 228885,
+    "xml_enviado_oid": 2397141,
+    "status": "erro_esocial"
+  },
+  {
+    "cpf": "00290546729",
+    "item_id": 157377,
+    "erro_codigo": "401",
+    "erro_mensagem": "401: Conteudo do evento inválido. | 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.\nAção Sugerida: Deverá existir um Evento já recebido, \"Ativo\" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",
+    "nr_recibo_anterior": "1.1.0000000034695397351",
+    "versao_anterior_id": 231724,
+    "xml_enviado_oid": 2397142,
+    "status": "erro_esocial"
+  },
+  {
+    "cpf": "02022764579",
+    "item_id": 157427,
+    "erro_codigo": "401",
+    "erro_mensagem": "401: Conteudo do evento inválido. | 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.\nAção Sugerida: Deverá existir um Evento já recebido, \"Ativo\" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",
+    "nr_recibo_anterior": "1.1.0000000034695428454",
+    "versao_anterior_id": 240944,
+    "xml_enviado_oid": 2397192,
+    "status": "erro_esocial"
+  },
+  {
+    "cpf": "00001931946",
+    "item_id": 157370,
+    "erro_codigo": "401",
+    "erro_mensagem": "401: Conteudo do evento inválido. | 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.\nAção Sugerida: Deverá existir um Evento já recebido, \"Ativo\" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",
+    "nr_recibo_anterior": "1.1.0000000034695453274",
+    "versao_anterior_id": 247842,
+    "xml_enviado_oid": 2397135,
+    "status": "erro_esocial"
+  },
+  {
+    "cpf": "00004179129",
+    "item_id": 157371,
+    "erro_codigo": "401",
+    "erro_mensagem": "401: Conteudo do evento inválido. | 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.\nAção Sugerida: Deverá existir um Evento já recebido, \"Ativo\" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",
+    "nr_recibo_anterior": "1.1.0000000034695359470",
+    "versao_anterior_id": 214748,
+    "xml_enviado_oid": 2397136,
+    "status": "erro_esocial"
+  },
+  {
+    "cpf": "00005083575",
+    "item_id": 157372,
+    "erro_codigo": "401",
+    "erro_mensagem": "401: Conteudo do evento inválido. | 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.\nAção Sugerida: Deverá existir um Evento já recebido, \"Ativo\" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",
+    "nr_recibo_anterior": "1.1.0000000034695375738",
+    "versao_anterior_id": 225916,
+    "xml_enviado_oid": 2397137,
+    "status": "erro_esocial"
+  },
+  {
+    "cpf": "00007197225",
+    "item_id": 157373,
+    "erro_codigo": "401",
+    "erro_mensagem": "401: Conteudo do evento inválido. | 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.\nAção Sugerida: Deverá existir um Evento já recebido, \"Ativo\" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",
+    "nr_recibo_anterior": "1.1.0000000034695391980",
+    "versao_anterior_id": 230372,
+    "xml_enviado_oid": 2397138,
+    "status": "erro_esocial"
+  },
+  {
+    "cpf": "00010526757",
+    "item_id": 157374,
+    "erro_codigo": "401",
+    "erro_mensagem": "401: Conteudo do evento inválido. | 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.\nAção Sugerida: Deverá existir um Evento já recebido, \"Ativo\" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",
+    "nr_recibo_anterior": "1.1.0000000034695352486",
+    "versao_anterior_id": 210436,
+    "xml_enviado_oid": 2397139,
+    "status": "erro_esocial"
+  },
+  {
+    "cpf": "00011072598",
+    "item_id": 157375,
+    "erro_codigo": "401",
+    "erro_mensagem": "401: Conteudo do evento inválido. | 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.\nAção Sugerida: Deverá existir um Evento já recebido, \"Ativo\" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",
+    "nr_recibo_anterior": "1.1.0000000034695391826",
+    "versao_anterior_id": 230332,
+    "xml_enviado_oid": 2397140,
+    "status": "erro_esocial"
+  },
+  {
+    "cpf": "00297302795",
+    "item_id": 157378,
+    "erro_codigo": "401",
+    "erro_mensagem": "401: Conteudo do evento inválido. | 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.\nAção Sugerida: Deverá existir um Evento já recebido, \"Ativo\" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",
+    "nr_recibo_anterior": "1.1.0000000034695343620",
+    "versao_anterior_id": 208454,
+    "xml_enviado_oid": 2397143,
+    "status": "erro_esocial"
+  },
+  {
+    "cpf": "00299556700",
+    "item_id": 157379,
+    "erro_codigo": "401",
+    "erro_mensagem": "401: Conteudo do evento inválido. | 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.\nAção Sugerida: Deverá existir um Evento já recebido, \"Ativo\" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",
+    "nr_recibo_anterior": "1.1.0000000034695449382",
+    "versao_anterior_id": 246998,
+    "xml_enviado_oid": 2397144,
+    "status": "erro_esocial"
+  },
+  {
+    "cpf": "00341063592",
+    "item_id": 157380,
+    "erro_codigo": "401",
+    "erro_mensagem": "401: Conteudo do evento inválido. | 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.\nAção Sugerida: Deverá existir um Evento já recebido, \"Ativo\" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",
+    "nr_recibo_anterior": "1.1.0000000034695448461",
+    "versao_anterior_id": 246752,
+    "xml_enviado_oid": 2397145,
+    "status": "erro_esocial"
+  },
+  {
+    "cpf": "00350288151",
+    "item_id": 157381,
+    "erro_codigo": "401",
+    "erro_mensagem": "401: Conteudo do evento inválido. | 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.\nAção Sugerida: Deverá existir um Evento já recebido, \"Ativo\" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",
+    "nr_recibo_anterior": "1.1.0000000034695386263",
+    "versao_anterior_id": 228845,
+    "xml_enviado_oid": 2397146,
+    "status": "erro_esocial"
+  },
+  {
+    "cpf": "00371133564",
+    "item_id": 157382,
+    "erro_codigo": "401",
+    "erro_mensagem": "401: Conteudo do evento inválido. | 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.\nAção Sugerida: Deverá existir um Evento já recebido, \"Ativo\" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",
+    "nr_recibo_anterior": "1.1.0000000034695348107",
+    "versao_anterior_id": 209414,
+    "xml_enviado_oid": 2397147,
+    "status": "erro_esocial"
+  },
+  {
+    "cpf": "00391021141",
+    "item_id": 157383,
+    "erro_codigo": "401",
+    "erro_mensagem": "401: Conteudo do evento inválido. | 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.\nAção Sugerida: Deverá existir um Evento já recebido, \"Ativo\" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",
+    "nr_recibo_anterior": "1.1.0000000034695377347",
+    "versao_anterior_id": 226262,
+    "xml_enviado_oid": 2397148,
+    "status": "erro_esocial"
+  },
+  {
+    "cpf": "00403524989",
+    "item_id": 157384,
+    "erro_codigo": "401",
+    "erro_mensagem": "401: Conteudo do evento inválido. | 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.\nAção Sugerida: Deverá existir um Evento já recebido, \"Ativo\" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",
+    "nr_recibo_anterior": "1.1.0000000034695388146",
+    "versao_anterior_id": 229340,
+    "xml_enviado_oid": 2397149,
+    "status": "erro_esocial"
+  },
+  {
+    "cpf": "00428392547",
+    "item_id": 157385,
+    "erro_codigo": "401",
+    "erro_mensagem": "401: Conteudo do evento inválido. | 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.\nAção Sugerida: Deverá existir um Evento já recebido, \"Ativo\" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",
+    "nr_recibo_anterior": "1.1.0000000034695367236",
+    "versao_anterior_id": 219469,
+    "xml_enviado_oid": 2397150,
+    "status": "erro_esocial"
+  },
+  {
+    "cpf": "00433131918",
+    "item_id": 157386,
+    "erro_codigo": "401",
+    "erro_mensagem": "401: Conteudo do evento inválido. | 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.\nAção Sugerida: Deverá existir um Evento já recebido, \"Ativo\" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",
+    "nr_recibo_anterior": "1.1.0000000034695384535",
+    "versao_anterior_id": 228415,
+    "xml_enviado_oid": 2397151,
+    "status": "erro_esocial"
+  }
+]

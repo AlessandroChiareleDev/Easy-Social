@@ -1,0 +1,64 @@
+{
+  "empresa_id": 2,
+  "per_apur": "2025-02",
+  "generated_at": "2026-05-20T14:45:18",
+  "out_dir": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1210_CORRECOES\\2025-02\\dependente_infodep",
+  "target_cpfs": 3,
+  "xmls_generated": 3,
+  "blocked_count": 0,
+  "xml_type_counts": {
+    "dependente": 3
+  },
+  "targets": [
+    {
+      "cpf": "10423668455",
+      "cpf_dependentes": [
+        "17466625495"
+      ],
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1210_CORRECOES\\2025-02\\dependente_infodep\\xml_unsigned\\S1210_2025-02_10423668455_dependente_infodep_unsigned.xml",
+      "evento_id": 850447,
+      "nr_recibo": "1.1.0000000031463549232",
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 1861: CPF do dependente 17466625495 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+      "has_plano": false,
+      "has_pensao": false,
+      "has_dependente": true
+    },
+    {
+      "cpf": "38434368862",
+      "cpf_dependentes": [
+        "56620089810",
+        "52159690864"
+      ],
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1210_CORRECOES\\2025-02\\dependente_infodep\\xml_unsigned\\S1210_2025-02_38434368862_dependente_infodep_unsigned.xml",
+      "evento_id": 880739,
+      "nr_recibo": "1.1.0000000031463881989",
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 1861: CPF do dependente 56620089810 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento. |   - 1861: CPF do dependente 52159690864 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+      "has_plano": false,
+      "has_pensao": false,
+      "has_dependente": true
+    },
+    {
+      "cpf": "81529368553",
+      "cpf_dependentes": [
+        "09274837500",
+        "09274813597"
+      ],
+      "generated": true,
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1210_CORRECOES\\2025-02\\dependente_infodep\\xml_unsigned\\S1210_2025-02_81529368553_dependente_infodep_unsigned.xml",
+      "evento_id": 859259,
+      "nr_recibo": "1.1.0000000031463626305",
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 1861: CPF do dependente 09274837500 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento. |   - 1861: CPF do dependente 09274813597 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+      "has_plano": false,
+      "has_pensao": false,
+      "has_dependente": true
+    }
+  ]
+}

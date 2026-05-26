@@ -1,0 +1,17 @@
+{
+  "per_apur": "2025-11",
+  "total_cpfs_originais": 114,
+  "latest_rows": 114,
+  "successes": 114,
+  "remaining_errors": 0,
+  "by_status_codigo": {
+    "sucesso|": 114
+  },
+  "remaining": [],
+  "envios_corre??o": [
+    1236,
+    1237,
+    1238,
+    1239
+  ]
+}

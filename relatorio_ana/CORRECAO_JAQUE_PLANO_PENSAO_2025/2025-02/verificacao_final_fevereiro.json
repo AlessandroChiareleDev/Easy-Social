@@ -1,0 +1,63 @@
+{
+  "counts": {
+    "total_targets": 106,
+    "total_universe": 109,
+    "success": 104,
+    "errors": 2,
+    "missing": 3,
+    "pendentes_zero": 2
+  },
+  "by_status_codigo": {
+    "sucesso|": 104,
+    "erro_esocial|402": 2
+  },
+  "errors": [
+    {
+      "cpf": "28710124829",
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "erro_mensagem": "402: Schema do evento inválido. | 17: A estrutura do arquivo XML está em desconformidade com o esquema XSD.\nThe 'http://www.esocial.gov.br/schema/evt/evtPgtos/v_S_01_03_00:vlrDedPenAlim' element is invalid - The value '0.00' is invalid according to its datatype 'http://www.esocial.gov.br/schema/evt/evtPgtos/v_S_01_03_00:TS_vlrDedPenAlim' - The MinExclusive constraint failed.",
+      "nr_recibo_novo": null,
+      "item_id": 157509,
+      "envio_id": 931,
+      "criado_em": "2026-05-19T21:51:30.689421"
+    },
+    {
+      "cpf": "71985883104",
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "erro_mensagem": "402: Schema do evento inválido. | 17: A estrutura do arquivo XML está em desconformidade com o esquema XSD.\nThe 'http://www.esocial.gov.br/schema/evt/evtPgtos/v_S_01_03_00:vlrDedPenAlim' element is invalid - The value '0.00' is invalid according to its datatype 'http://www.esocial.gov.br/schema/evt/evtPgtos/v_S_01_03_00:TS_vlrDedPenAlim' - The MinExclusive constraint failed.",
+      "nr_recibo_novo": null,
+      "item_id": 157543,
+      "envio_id": 931,
+      "criado_em": "2026-05-19T21:51:30.689421"
+    }
+  ],
+  "missing_valid_responses": [
+    {
+      "per_apur": "2025-02",
+      "cpf": "30729903877",
+      "tipo": "PLANO",
+      "linhas_resposta": "1",
+      "motivos_invalidos": "cnpj_operadora;registro_ans;valor_titular:1",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute."
+    },
+    {
+      "per_apur": "2025-02",
+      "cpf": "33163519814",
+      "tipo": "PLANO",
+      "linhas_resposta": "1",
+      "motivos_invalidos": "cnpj_operadora;registro_ans;valor_titular:1",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute."
+    },
+    {
+      "per_apur": "2025-02",
+      "cpf": "42852580802",
+      "tipo": "PLANO",
+      "linhas_resposta": "1",
+      "motivos_invalidos": "cnpj_operadora;registro_ans;valor_titular:1",
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute."
+    }
+  ],
+  "pendentes_zero_list": ["28710124829", "71985883104"]
+}

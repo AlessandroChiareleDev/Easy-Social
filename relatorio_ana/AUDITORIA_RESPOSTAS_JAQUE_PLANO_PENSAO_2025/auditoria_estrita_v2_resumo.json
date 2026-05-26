@@ -1,0 +1,9 @@
+{
+  "total_alvo": 860,
+  "total_coberto": 612,
+  "total_faltante": 248,
+  "total_extras_nas_planilhas": 0,
+  "total_linhas_validas_encontradas": 739,
+  "cobertura_global_pct": 71.16,
+  "resolvido_100": false
+}

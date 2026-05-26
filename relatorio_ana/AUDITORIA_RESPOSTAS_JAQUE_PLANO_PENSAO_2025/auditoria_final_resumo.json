@@ -1,0 +1,170 @@
+{
+  "total_alvo_atual_plano_pensao": 860,
+  "total_coberto_valido": 814,
+  "total_faltante_valido": 46,
+  "cobertura_pct": 94.65,
+  "resolve_100_porcento_alvo_atual": false,
+  "total_linhas_resposta": 1714,
+  "total_linhas_resposta_validas": 958,
+  "extras_validos_fora_alvo_atual": 0,
+  "duplicados_validos_no_alvo_atual": 135,
+  "invalid_reasons": {
+    "cnpj_operadora;registro_ans;valor_titular": 653,
+    "registro_ans;valor_titular": 101,
+    "beneficiario_tipo_ou_valor": 2
+  },
+  "originais_total_chaves": 865,
+  "originais_sem_linha_na_resposta": 5,
+  "resposta_com_linha_fora_originais": 0,
+  "arquivos_resposta": [
+    "SOLUCOES_ABRIL_2025_JAQUE_PLANO_PENSAO_PREENCHER.xlsx",
+    "SOLUCOES_FEVEREIRO_2025_JAQUE_PLANO_PENSAO_PREENCHER.xlsx",
+    "SOLUCOES_JULHO_2025_JAQUE_PLANO_PENSAO_PREENCHER.xlsx",
+    "SOLUCOES_JUNHO_2025_JAQUE_PLANO_PENSAO_PREENCHER (1).xlsx",
+    "SOLUCOES_MAIO_2025_JAQUE_PLANO_PENSAO_PREENCHER.xlsx",
+    "SOLUCOES_MARCO_2025_JAQUE_PLANO_PENSAO_PREENCHER.xlsx",
+    "SOLUCOES_OUTUBRO_2025_JAQUE_PLANO_PENSAO_PREENCHER.xlsx",
+    "SOLUCOES_SETEMBRO_2025_JAQUE_PLANO_PENSAO_PREENCHER.xlsx"
+  ],
+  "arquivos_originais": [
+    "SOLUCOES_ABRIL_2025_JAQUE_PLANO_PENSAO_PREENCHER.xlsx",
+    "SOLUCOES_AGOSTO_2025_JAQUE_PLANO_PENSAO_PREENCHER.xlsx",
+    "SOLUCOES_FEVEREIRO_2025_JAQUE_PLANO_PENSAO_PREENCHER.xlsx",
+    "SOLUCOES_JULHO_2025_JAQUE_PLANO_PENSAO_PREENCHER.xlsx",
+    "SOLUCOES_JUNHO_2025_JAQUE_PLANO_PENSAO_PREENCHER.xlsx",
+    "SOLUCOES_MAIO_2025_JAQUE_PLANO_PENSAO_PREENCHER.xlsx",
+    "SOLUCOES_MARCO_2025_JAQUE_PLANO_PENSAO_PREENCHER.xlsx",
+    "SOLUCOES_OUTUBRO_2025_JAQUE_PLANO_PENSAO_PREENCHER.xlsx",
+    "SOLUCOES_SETEMBRO_2025_JAQUE_PLANO_PENSAO_PREENCHER.xlsx"
+  ],
+  "cobertura_por_mes_tipo": [
+    {
+      "per_apur": "2025-02",
+      "tipo": "PENSAO",
+      "total": 44,
+      "coberto": 44,
+      "faltante": 0,
+      "pct": 100.0
+    },
+    {
+      "per_apur": "2025-02",
+      "tipo": "PLANO",
+      "total": 65,
+      "coberto": 62,
+      "faltante": 3,
+      "pct": 95.38
+    },
+    {
+      "per_apur": "2025-03",
+      "tipo": "PENSAO",
+      "total": 45,
+      "coberto": 43,
+      "faltante": 2,
+      "pct": 95.56
+    },
+    {
+      "per_apur": "2025-03",
+      "tipo": "PLANO",
+      "total": 100,
+      "coberto": 87,
+      "faltante": 13,
+      "pct": 87.0
+    },
+    {
+      "per_apur": "2025-04",
+      "tipo": "PENSAO",
+      "total": 4,
+      "coberto": 4,
+      "faltante": 0,
+      "pct": 100.0
+    },
+    {
+      "per_apur": "2025-04",
+      "tipo": "PLANO",
+      "total": 97,
+      "coberto": 87,
+      "faltante": 10,
+      "pct": 89.69
+    },
+    {
+      "per_apur": "2025-05",
+      "tipo": "PENSAO",
+      "total": 4,
+      "coberto": 4,
+      "faltante": 0,
+      "pct": 100.0
+    },
+    {
+      "per_apur": "2025-05",
+      "tipo": "PLANO",
+      "total": 97,
+      "coberto": 95,
+      "faltante": 2,
+      "pct": 97.94
+    },
+    {
+      "per_apur": "2025-06",
+      "tipo": "PENSAO",
+      "total": 3,
+      "coberto": 3,
+      "faltante": 0,
+      "pct": 100.0
+    },
+    {
+      "per_apur": "2025-06",
+      "tipo": "PLANO",
+      "total": 103,
+      "coberto": 98,
+      "faltante": 5,
+      "pct": 95.15
+    },
+    {
+      "per_apur": "2025-07",
+      "tipo": "PENSAO",
+      "total": 3,
+      "coberto": 3,
+      "faltante": 0,
+      "pct": 100.0
+    },
+    {
+      "per_apur": "2025-07",
+      "tipo": "PLANO",
+      "total": 101,
+      "coberto": 98,
+      "faltante": 3,
+      "pct": 97.03
+    },
+    {
+      "per_apur": "2025-09",
+      "tipo": "PENSAO",
+      "total": 2,
+      "coberto": 2,
+      "faltante": 0,
+      "pct": 100.0
+    },
+    {
+      "per_apur": "2025-09",
+      "tipo": "PLANO",
+      "total": 97,
+      "coberto": 92,
+      "faltante": 5,
+      "pct": 94.85
+    },
+    {
+      "per_apur": "2025-10",
+      "tipo": "PENSAO",
+      "total": 1,
+      "coberto": 1,
+      "faltante": 0,
+      "pct": 100.0
+    },
+    {
+      "per_apur": "2025-10",
+      "tipo": "PLANO",
+      "total": 94,
+      "coberto": 91,
+      "faltante": 3,
+      "pct": 96.81
+    }
+  ]
+}

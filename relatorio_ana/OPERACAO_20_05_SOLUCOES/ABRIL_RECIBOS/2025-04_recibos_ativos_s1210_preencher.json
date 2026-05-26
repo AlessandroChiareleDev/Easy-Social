@@ -1,0 +1,21 @@
+{
+  "per_apur": "2025-04",
+  "total": 10,
+  "arquivo": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\ABRIL_RECIBOS\\2025-04_recibos_ativos_s1210_preencher.xlsx",
+  "cpfs": [
+    "14193059804",
+    "14285875861",
+    "14417604827",
+    "15146736812",
+    "17251076861",
+    "30729903877",
+    "32393572830",
+    "33163519814",
+    "37843870806",
+    "42852580802"
+  ],
+  "resumo": {
+    "ultimo_erro_atual": "401/106 duplicidade",
+    "causa_acao": "precisa do recibo ativo correto do S-1210 para retificacao; retificacao anterior com recibo local retornou 401/459"
+  }
+}

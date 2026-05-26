@@ -1,0 +1,31 @@
+{
+  "empresa_id": 2,
+  "per_apur": "2025-03",
+  "regra": "pensão março com Tipo Rendimento em branco: usar tpRend=11 mensal e inserir infoDep",
+  "resposta": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\RESPOSTAS_JAQUE_PLANO_PENSAO_2025_FEV_OUT\\SOLUCOES_MARCO_2025_JAQUE_PLANO_PENSAO_PREENCHER.xlsx",
+  "total_retry": 2,
+  "total_skipped": 0,
+  "targets": [
+    {
+      "cpf": "82541787472",
+      "cpf_dependente": "14797233478",
+      "tpRend": "11",
+      "vlrDedPenAlim": "505.65",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-03\\retry_pensao_tipo_rend_11\\xml_unsigned\\S1210_2025-03_82541787472_pensao_tprend11_unsigned.xml",
+      "evento_id": 2979373,
+      "nr_recibo": "1.1.0000000031994101705",
+      "has_pensao": true
+    },
+    {
+      "cpf": "94881898434",
+      "cpf_dependente": "03880026467",
+      "tpRend": "11",
+      "vlrDedPenAlim": "664.55",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-03\\retry_pensao_tipo_rend_11\\xml_unsigned\\S1210_2025-03_94881898434_pensao_tprend11_unsigned.xml",
+      "evento_id": 2986504,
+      "nr_recibo": "1.1.0000000031994183624",
+      "has_pensao": true
+    }
+  ],
+  "skipped": []
+}

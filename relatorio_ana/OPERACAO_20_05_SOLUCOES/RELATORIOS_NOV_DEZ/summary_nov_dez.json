@@ -1,0 +1,72 @@
+{
+  "generated_at": "2026-05-20T15:43:43",
+  "months": [
+    "2025-11",
+    "2025-12"
+  ],
+  "total": 236,
+  "by_month": {
+    "2025-11": 114,
+    "2025-12": 122
+  },
+  "jaque": 229,
+  "dev": 7,
+  "by_class": {
+    "Dev": 7,
+    "Jaque - plano de saude": 223,
+    "Jaque - pensao alimenticia": 4,
+    "Jaque - cpf dependente": 2
+  },
+  "jaque_by_month": {
+    "2025-11": {
+      "plano": 105,
+      "pensao": 2,
+      "dependente": 1
+    },
+    "2025-12": {
+      "plano": 118,
+      "pensao": 2,
+      "dependente": 1
+    }
+  },
+  "files": {
+    "jaque": {
+      "2025-11": {
+        "arquivo": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\RELATORIOS_NOV_DEZ\\2025-11_relatorio_final_jaque.xlsx",
+        "abas": [
+          "Novembro",
+          "Plano de saude",
+          "Pensao alimenticia",
+          "Dependente invalido"
+        ],
+        "contagens": {
+          "plano": 105,
+          "pensao": 2,
+          "dependente": 1
+        }
+      },
+      "2025-12": {
+        "arquivo": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\RELATORIOS_NOV_DEZ\\2025-12_relatorio_final_jaque.xlsx",
+        "abas": [
+          "Dezembro",
+          "Plano de saude",
+          "Pensao alimenticia",
+          "Dependente invalido"
+        ],
+        "contagens": {
+          "plano": 118,
+          "pensao": 2,
+          "dependente": 1
+        }
+      }
+    },
+    "dev": {
+      "arquivo": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\RELATORIOS_NOV_DEZ\\2025-11_2025-12_relatorio_dev.xlsx",
+      "abas": [
+        "Resumo",
+        "Erros dev"
+      ],
+      "total": 7
+    }
+  }
+}

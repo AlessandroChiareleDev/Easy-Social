@@ -1,0 +1,254 @@
+{
+  "empresa_id": 2,
+  "generated_at": "2026-05-19T23:08:05",
+  "total": 9,
+  "regra": "reenviar S-1210 original como inclusao indRetif=1 sem nrRecibo para eventos excluidos",
+  "targets": [
+    {
+      "ordem": 1,
+      "per_apur": "2025-03",
+      "cpf": "44234146862",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_RECIBOS_2025\\reinclusao_9_originais\\xml_unsigned\\S1210_2025-03_44234146862_reinclusao_unsigned.xml",
+      "evento_id": 2817976,
+      "nr_recibo": null,
+      "id_evento": "ID1094455020000002026052002080200001",
+      "validation": {
+        "per_apur": "2025-03",
+        "cpf": "44234146862",
+        "source_zip": "SOLUCOES_2025-04(01-15).zip",
+        "source_entry": "ID1094455020000002025040808371787322.S-1210.xml",
+        "old_id": "ID1094455020000002025040808371787322",
+        "new_id": "ID1094455020000002026052002080200001",
+        "indRetif": "1",
+        "nrRecibo": "",
+        "infoPgto_count": 1,
+        "vrLiq": [
+          "1632.75"
+        ],
+        "latest_envio_id": 962,
+        "latest_item_id": 158375,
+        "latest_status": "erro_esocial",
+        "latest_codigo": "401"
+      }
+    },
+    {
+      "ordem": 2,
+      "per_apur": "2025-03",
+      "cpf": "98469878115",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_RECIBOS_2025\\reinclusao_9_originais\\xml_unsigned\\S1210_2025-03_98469878115_reinclusao_unsigned.xml",
+      "evento_id": 2852449,
+      "nr_recibo": null,
+      "id_evento": "ID1094455020000002026052002080300001",
+      "validation": {
+        "per_apur": "2025-03",
+        "cpf": "98469878115",
+        "source_zip": "SOLUCOES_2025-04(01-15).zip",
+        "source_entry": "ID1094455020000002025040807504087901.S-1210.xml",
+        "old_id": "ID1094455020000002025040807504087901",
+        "new_id": "ID1094455020000002026052002080300001",
+        "indRetif": "1",
+        "nrRecibo": "",
+        "infoPgto_count": 1,
+        "vrLiq": [
+          "1546.9"
+        ],
+        "latest_envio_id": 962,
+        "latest_item_id": 158376,
+        "latest_status": "erro_esocial",
+        "latest_codigo": "401"
+      }
+    },
+    {
+      "ordem": 3,
+      "per_apur": "2025-04",
+      "cpf": "06042642405",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_RECIBOS_2025\\reinclusao_9_originais\\xml_unsigned\\S1210_2025-04_06042642405_reinclusao_unsigned.xml",
+      "evento_id": 2595915,
+      "nr_recibo": null,
+      "id_evento": "ID1094455020000002026052002080300002",
+      "validation": {
+        "per_apur": "2025-04",
+        "cpf": "06042642405",
+        "source_zip": "SOLUCOES_2025-05(01-15).zip",
+        "source_entry": "ID1094455020000002025050916075329069.S-1210.xml",
+        "old_id": "ID1094455020000002025050916075329069",
+        "new_id": "ID1094455020000002026052002080300002",
+        "indRetif": "1",
+        "nrRecibo": "",
+        "infoPgto_count": 2,
+        "vrLiq": [
+          "1288.77",
+          "1864.6"
+        ],
+        "latest_envio_id": 963,
+        "latest_item_id": 158377,
+        "latest_status": "erro_esocial",
+        "latest_codigo": "401"
+      }
+    },
+    {
+      "ordem": 4,
+      "per_apur": "2025-04",
+      "cpf": "39503742803",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_RECIBOS_2025\\reinclusao_9_originais\\xml_unsigned\\S1210_2025-04_39503742803_reinclusao_unsigned.xml",
+      "evento_id": 2620839,
+      "nr_recibo": null,
+      "id_evento": "ID1094455020000002026052002080300003",
+      "validation": {
+        "per_apur": "2025-04",
+        "cpf": "39503742803",
+        "source_zip": "SOLUCOES_2025-05(01-15).zip",
+        "source_entry": "ID1094455020000002025051312134723930.S-1210.xml",
+        "old_id": "ID1094455020000002025051312134723930",
+        "new_id": "ID1094455020000002026052002080300003",
+        "indRetif": "1",
+        "nrRecibo": "",
+        "infoPgto_count": 1,
+        "vrLiq": [
+          "1019.32"
+        ],
+        "latest_envio_id": 963,
+        "latest_item_id": 158378,
+        "latest_status": "erro_esocial",
+        "latest_codigo": "401"
+      }
+    },
+    {
+      "ordem": 5,
+      "per_apur": "2025-04",
+      "cpf": "42479397858",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_RECIBOS_2025\\reinclusao_9_originais\\xml_unsigned\\S1210_2025-04_42479397858_reinclusao_unsigned.xml",
+      "evento_id": 2620933,
+      "nr_recibo": null,
+      "id_evento": "ID1094455020000002026052002080400001",
+      "validation": {
+        "per_apur": "2025-04",
+        "cpf": "42479397858",
+        "source_zip": "SOLUCOES_2025-05(01-15).zip",
+        "source_entry": "ID1094455020000002025051312150022338.S-1210.xml",
+        "old_id": "ID1094455020000002025051312150022338",
+        "new_id": "ID1094455020000002026052002080400001",
+        "indRetif": "1",
+        "nrRecibo": "",
+        "infoPgto_count": 1,
+        "vrLiq": [
+          "951.56"
+        ],
+        "latest_envio_id": 963,
+        "latest_item_id": 158379,
+        "latest_status": "erro_esocial",
+        "latest_codigo": "401"
+      }
+    },
+    {
+      "ordem": 6,
+      "per_apur": "2025-04",
+      "cpf": "47736044848",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_RECIBOS_2025\\reinclusao_9_originais\\xml_unsigned\\S1210_2025-04_47736044848_reinclusao_unsigned.xml",
+      "evento_id": 2601746,
+      "nr_recibo": null,
+      "id_evento": "ID1094455020000002026052002080400002",
+      "validation": {
+        "per_apur": "2025-04",
+        "cpf": "47736044848",
+        "source_zip": "SOLUCOES_2025-05(01-15).zip",
+        "source_entry": "ID1094455020000002025051312011817520.S-1210.xml",
+        "old_id": "ID1094455020000002025051312011817520",
+        "new_id": "ID1094455020000002026052002080400002",
+        "indRetif": "1",
+        "nrRecibo": "",
+        "infoPgto_count": 1,
+        "vrLiq": [
+          "1523.51"
+        ],
+        "latest_envio_id": 963,
+        "latest_item_id": 158380,
+        "latest_status": "erro_esocial",
+        "latest_codigo": "401"
+      }
+    },
+    {
+      "ordem": 7,
+      "per_apur": "2025-05",
+      "cpf": "22735107809",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_RECIBOS_2025\\reinclusao_9_originais\\xml_unsigned\\S1210_2025-05_22735107809_reinclusao_unsigned.xml",
+      "evento_id": 2321056,
+      "nr_recibo": null,
+      "id_evento": "ID1094455020000002026052002080400003",
+      "validation": {
+        "per_apur": "2025-05",
+        "cpf": "22735107809",
+        "source_zip": "SOLUCOES_2025-06(01-15).zip",
+        "source_entry": "ID1094455020000002025061117371066050.S-1210.xml",
+        "old_id": "ID1094455020000002025061117371066050",
+        "new_id": "ID1094455020000002026052002080400003",
+        "indRetif": "1",
+        "nrRecibo": "",
+        "infoPgto_count": 2,
+        "vrLiq": [
+          "1969.99",
+          "2253.16"
+        ],
+        "latest_envio_id": 964,
+        "latest_item_id": 158381,
+        "latest_status": "erro_esocial",
+        "latest_codigo": "401"
+      }
+    },
+    {
+      "ordem": 8,
+      "per_apur": "2025-07",
+      "cpf": "04111405746",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_RECIBOS_2025\\reinclusao_9_originais\\xml_unsigned\\S1210_2025-07_04111405746_reinclusao_unsigned.xml",
+      "evento_id": 1916064,
+      "nr_recibo": null,
+      "id_evento": "ID1094455020000002026052002080500001",
+      "validation": {
+        "per_apur": "2025-07",
+        "cpf": "04111405746",
+        "source_zip": "SOLUCOES_2025-08(01-15).zip",
+        "source_entry": "ID1094455020000002025080811044960016.S-1210.xml",
+        "old_id": "ID1094455020000002025080811044960016",
+        "new_id": "ID1094455020000002026052002080500001",
+        "indRetif": "1",
+        "nrRecibo": "",
+        "infoPgto_count": 2,
+        "vrLiq": [
+          "0",
+          "256.99"
+        ],
+        "latest_envio_id": 965,
+        "latest_item_id": 158382,
+        "latest_status": "erro_esocial",
+        "latest_codigo": "401"
+      }
+    },
+    {
+      "ordem": 9,
+      "per_apur": "2025-07",
+      "cpf": "18113495797",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_RECIBOS_2025\\reinclusao_9_originais\\xml_unsigned\\S1210_2025-07_18113495797_reinclusao_unsigned.xml",
+      "evento_id": 1983493,
+      "nr_recibo": null,
+      "id_evento": "ID1094455020000002026052002080500002",
+      "validation": {
+        "per_apur": "2025-07",
+        "cpf": "18113495797",
+        "source_zip": "SOLUCOES_2025-08(01-15).zip",
+        "source_entry": "ID1094455020000002025080810261759736.S-1210.xml",
+        "old_id": "ID1094455020000002025080810261759736",
+        "new_id": "ID1094455020000002026052002080500002",
+        "indRetif": "1",
+        "nrRecibo": "",
+        "infoPgto_count": 1,
+        "vrLiq": [
+          "1589"
+        ],
+        "latest_envio_id": 965,
+        "latest_item_id": 158383,
+        "latest_status": "erro_esocial",
+        "latest_codigo": "401"
+      }
+    }
+  ]
+}

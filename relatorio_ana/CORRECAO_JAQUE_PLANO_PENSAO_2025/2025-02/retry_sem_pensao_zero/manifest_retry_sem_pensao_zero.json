@@ -1,0 +1,80 @@
+{
+  "empresa_id": 2,
+  "per_apur": "2025-02",
+  "regra": "reenviar CPFs que nao possuem pensao; remover completamente penAlim zerado, preservar dedDepen e declarar estes dependentes em infoDep",
+  "quinzenas_referencia": [
+    "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-03(01-15).zip",
+    "C:\\Users\\xandao\\Downloads\\todos os meses 2025 SOLUCOES\\SOLUCOES_2025-03(15-31).zip"
+  ],
+  "total_targets": 2,
+  "blocked_count": 0,
+  "targets": [
+    {
+      "cpf": "28710124829",
+      "evento_id": 871229,
+      "nr_recibo": "1.1.0000000031463733871",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-02\\retry_sem_pensao_zero\\xml_unsigned\\S1210_2025-02_28710124829_sem_pensao_unsigned.xml",
+      "source_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-02\\xml_unsigned\\S1210_2025-02_28710124829_jaque_unsigned.xml",
+      "latest_item_id": 157586,
+      "latest_envio_id": 935,
+      "latest_erro_codigo": "401",
+      "latest_erro_mensagem": "401: Conteudo do evento inválido. | 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "has_plano": false,
+      "has_pensao": false,
+      "cpfBenef": "28710124829",
+      "infoPgto": 2,
+      "infoIRCR": 1,
+      "dedDepen": 1,
+      "infoDep": 1,
+      "added_infoDep": [
+        "52214223878"
+      ],
+      "penAlim": 0,
+      "removed_penAlim": [
+        {
+          "tpRend": "11",
+          "cpfDep": "34099179850",
+          "vlrDedPenAlim": "0.00"
+        }
+      ],
+      "nrRecibo": "1.1.0000000031463733871",
+      "indRetif": "2",
+      "id": "ID1094455020000002026051922330700001"
+    },
+    {
+      "cpf": "71985883104",
+      "evento_id": 865132,
+      "nr_recibo": "1.1.0000000031463669385",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-02\\retry_sem_pensao_zero\\xml_unsigned\\S1210_2025-02_71985883104_sem_pensao_unsigned.xml",
+      "source_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-02\\xml_unsigned\\S1210_2025-02_71985883104_jaque_unsigned.xml",
+      "latest_item_id": 157587,
+      "latest_envio_id": 935,
+      "latest_erro_codigo": "401",
+      "latest_erro_mensagem": "401: Conteudo do evento inválido. | 8: Grupo 'Informação dos beneficiários da pensão alimentícia' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+      "has_plano": false,
+      "has_pensao": false,
+      "cpfBenef": "71985883104",
+      "infoPgto": 1,
+      "infoIRCR": 1,
+      "dedDepen": 3,
+      "infoDep": 3,
+      "added_infoDep": [
+        "01376494108",
+        "08445332112",
+        "93649401134"
+      ],
+      "penAlim": 0,
+      "removed_penAlim": [
+        {
+          "tpRend": "11",
+          "cpfDep": "01376494108",
+          "vlrDedPenAlim": "0.00"
+        }
+      ],
+      "nrRecibo": "1.1.0000000031463669385",
+      "indRetif": "2",
+      "id": "ID1094455020000002026051922330700002"
+    }
+  ],
+  "blocked": []
+}

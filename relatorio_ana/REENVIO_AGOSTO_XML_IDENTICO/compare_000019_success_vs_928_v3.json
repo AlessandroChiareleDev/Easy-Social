@@ -1,0 +1,88 @@
+{
+  "error_item": {
+    "db": {
+      "id": 157312,
+      "timeline_envio_id": 928,
+      "nr_recibo_anterior": "1.1.0000000040822635493",
+      "xml_enviado_oid": 2397019,
+      "erro_mensagem": "401: Conteudo do evento inv\u00e1lido. | 157: Evento de Exclus\u00e3o ou Retifica\u00e7\u00e3o dever\u00e1 ser do mesmo tipo e se referir ao mesmo objeto do evento a ser exclu\u00eddo/retificado.",
+      "status": "erro_esocial"
+    },
+    "xml_extracted": {
+      "evt_id": null,
+      "ide_evento_children": [
+        "i",
+        "n",
+        "p",
+        "t",
+        "p",
+        "v"
+      ],
+      "nr_rec_xml": "1.1.0000000040822635493",
+      "ide_empregador": {
+        "tpInsc": "1",
+        "nrInsc": "09445502"
+      },
+      "cpfBenef": "00001931946",
+      "pgtos": [
+        {
+          "dtPgto": "2025-08-06",
+          "tpPgto": "1",
+          "perRef": "2025-07",
+          "ideDmDev": "1.101.2437MENSA",
+          "vrLiq": "633.09"
+        }
+      ],
+      "counts": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "detPlano": 0
+      },
+      "hash": "29d9b88e21b2905f91e601c639f28c34f976211f7dee8daf7d7906986c2f22e7"
+    }
+  },
+  "success_item": {
+    "db": {
+      "id": 79796,
+      "timeline_envio_id": 833,
+      "nr_recibo_anterior": "1.1.0000000033078724189",
+      "xml_enviado_oid": 2242762,
+      "erro_mensagem": null,
+      "status": "sucesso"
+    },
+    "xml_extracted": {
+      "evt_id": null,
+      "ide_evento_children": [
+        "i",
+        "n",
+        "p",
+        "t",
+        "p",
+        "v"
+      ],
+      "nr_rec_xml": "1.1.0000000033078724189",
+      "ide_empregador": {
+        "tpInsc": "1",
+        "nrInsc": "09445502"
+      },
+      "cpfBenef": "00001931946",
+      "pgtos": [
+        {
+          "dtPgto": "2025-05-07",
+          "tpPgto": "1",
+          "perRef": "2025-04",
+          "ideDmDev": "1.101.2234MENSA",
+          "vrLiq": "485.36"
+        }
+      ],
+      "counts": {
+        "infoIRCR": 1,
+        "dedDepen": 0,
+        "detPlano": 0
+      },
+      "hash": "802700d1093bf08c6872d1dfd579c9e8ee8dcebe0e164b17c63acd314a9f2f46"
+    },
+    "nr_rec_xml_matches_db_rec_ant": true
+  },
+  "eventos_iguais": false
+}

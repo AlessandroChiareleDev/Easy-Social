@@ -1,0 +1,29 @@
+{
+  "per_apur": "2025-12",
+  "envio_id": 1243,
+  "sucesso": 1,
+  "erro": 0,
+  "protocolos": [
+    "1.1.202605.0000000013188381278"
+  ],
+  "histograma": {},
+  "manifest": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-12\\retry_459_recriar_original\\manifest_retry_459_recriar_original.json",
+  "latest": {
+    "total": 1,
+    "by_status_codigo": {
+      "sucesso|": 1
+    },
+    "rows": [
+      {
+        "cpf": "19877666790",
+        "status": "sucesso",
+        "erro_codigo": null,
+        "erro_mensagem": null,
+        "nr_recibo_novo": "1.1.0000000040929522642",
+        "item_id": 192070,
+        "envio_id": 1243,
+        "criado_em": "2026-05-20 23:08:08.752626"
+      }
+    ]
+  }
+}

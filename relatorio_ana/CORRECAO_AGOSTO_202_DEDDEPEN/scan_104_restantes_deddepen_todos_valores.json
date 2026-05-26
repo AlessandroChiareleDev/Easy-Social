@@ -1,0 +1,2058 @@
+{
+  "total_targets": 104,
+  "cpfs_with_zero_count": 70,
+  "cpfs_without_zero_count": 34,
+  "metrics_cpfs_without_zero": {
+    "total_cpfs": 34,
+    "cpfs": [
+      "02254091786",
+      "03415419584",
+      "03456861796",
+      "03470657750",
+      "04239333458",
+      "05365128761",
+      "05390784766",
+      "05513724430",
+      "05774255794",
+      "05788537797",
+      "05986727703",
+      "08405088750",
+      "08554135733",
+      "09278365726",
+      "09568580743",
+      "09705541760",
+      "09849145790",
+      "09981664723",
+      "10617805709",
+      "11191263711",
+      "11500569755",
+      "11553980760",
+      "11915524709",
+      "11994427477",
+      "12501850769",
+      "13182452738",
+      "15275584792",
+      "15447916747",
+      "17087835718",
+      "19354014755",
+      "35832326822",
+      "40236751808",
+      "41310627800",
+      "89107241534"
+    ],
+    "total_ded_depen_rows": 59,
+    "value_distribution": {
+      "189.59": 24,
+      "379.18": 31,
+      "568.77": 4
+    },
+    "non_multiple_rows": [],
+    "greater_than_base_rows": [
+      {
+        "cpf": "02254091786",
+        "tpCR": "056107",
+        "cpfDep": "06423509735",
+        "vlr": "379.18",
+        "is_zero_dep": false,
+        "is_multiple": true,
+        "is_greater": true
+      },
+      {
+        "cpf": "03415419584",
+        "tpCR": "056107",
+        "cpfDep": "01485657512",
+        "vlr": "379.18",
+        "is_zero_dep": false,
+        "is_multiple": true,
+        "is_greater": true
+      },
+      {
+        "cpf": "03456861796",
+        "tpCR": "056107",
+        "cpfDep": "18589975770",
+        "vlr": "379.18",
+        "is_zero_dep": false,
+        "is_multiple": true,
+        "is_greater": true
+      },
+      {
+        "cpf": "03470657750",
+        "tpCR": "056107",
+        "cpfDep": "15301330764",
+        "vlr": "379.18",
+        "is_zero_dep": false,
+        "is_multiple": true,
+        "is_greater": true
+      },
+      {
+        "cpf": "04239333458",
+        "tpCR": "056107",
+        "cpfDep": "71440625492",
+        "vlr": "379.18",
+        "is_zero_dep": false,
+        "is_multiple": true,
+        "is_greater": true
+      },
+      {
+        "cpf": "05365128761",
+        "tpCR": "056107",
+        "cpfDep": "06492792718",
+        "vlr": "379.18",
+        "is_zero_dep": false,
+        "is_multiple": true,
+        "is_greater": true
+      },
+      {
+        "cpf": "05390784766",
+        "tpCR": "056107",
+        "cpfDep": "20228682770",
+        "vlr": "379.18",
+        "is_zero_dep": false,
+        "is_multiple": true,
+        "is_greater": true
+      },
+      {
+        "cpf": "05513724430",
+        "tpCR": "056107",
+        "cpfDep": "13380713430",
+        "vlr": "379.18",
+        "is_zero_dep": false,
+        "is_multiple": true,
+        "is_greater": true
+      },
+      {
+        "cpf": "05774255794",
+        "tpCR": "056107",
+        "cpfDep": "16597807723",
+        "vlr": "379.18",
+        "is_zero_dep": false,
+        "is_multiple": true,
+        "is_greater": true
+      },
+      {
+        "cpf": "05788537797",
+        "tpCR": "056107",
+        "cpfDep": "16400420754",
+        "vlr": "379.18",
+        "is_zero_dep": false,
+        "is_multiple": true,
+        "is_greater": true
+      },
+      {
+        "cpf": "05986727703",
+        "tpCR": "056107",
+        "cpfDep": "15832548701",
+        "vlr": "379.18",
+        "is_zero_dep": false,
+        "is_multiple": true,
+        "is_greater": true
+      },
+      {
+        "cpf": "08405088750",
+        "tpCR": "056107",
+        "cpfDep": "20673171728",
+        "vlr": "379.18",
+        "is_zero_dep": false,
+        "is_multiple": true,
+        "is_greater": true
+      },
+      {
+        "cpf": "08554135733",
+        "tpCR": "056107",
+        "cpfDep": "18710630783",
+        "vlr": "568.77",
+        "is_zero_dep": false,
+        "is_multiple": true,
+        "is_greater": true
+      },
+      {
+        "cpf": "09278365726",
+        "tpCR": "056107",
+        "cpfDep": "22010723708",
+        "vlr": "379.18",
+        "is_zero_dep": false,
+        "is_multiple": true,
+        "is_greater": true
+      },
+      {
+        "cpf": "09568580743",
+        "tpCR": "056107",
+        "cpfDep": "21044429747",
+        "vlr": "379.18",
+        "is_zero_dep": false,
+        "is_multiple": true,
+        "is_greater": true
+      },
+      {
+        "cpf": "09705541760",
+        "tpCR": "056107",
+        "cpfDep": "16638222716",
+        "vlr": "379.18",
+        "is_zero_dep": false,
+        "is_multiple": true,
+        "is_greater": true
+      },
+      {
+        "cpf": "09849145790",
+        "tpCR": "056107",
+        "cpfDep": "19443383730",
+        "vlr": "379.18",
+        "is_zero_dep": false,
+        "is_multiple": true,
+        "is_greater": true
+      },
+      {
+        "cpf": "09981664723",
+        "tpCR": "056107",
+        "cpfDep": "19571935735",
+        "vlr": "379.18",
+        "is_zero_dep": false,
+        "is_multiple": true,
+        "is_greater": true
+      },
+      {
+        "cpf": "10617805709",
+        "tpCR": "056107",
+        "cpfDep": "22063885702",
+        "vlr": "379.18",
+        "is_zero_dep": false,
+        "is_multiple": true,
+        "is_greater": true
+      },
+      {
+        "cpf": "11191263711",
+        "tpCR": "056107",
+        "cpfDep": "20394818776",
+        "vlr": "379.18",
+        "is_zero_dep": false,
+        "is_multiple": true,
+        "is_greater": true
+      },
+      {
+        "cpf": "11500569755",
+        "tpCR": "056107",
+        "cpfDep": "21231757736",
+        "vlr": "379.18",
+        "is_zero_dep": false,
+        "is_multiple": true,
+        "is_greater": true
+      },
+      {
+        "cpf": "11553980760",
+        "tpCR": "056107",
+        "cpfDep": "21108762719",
+        "vlr": "379.18",
+        "is_zero_dep": false,
+        "is_multiple": true,
+        "is_greater": true
+      },
+      {
+        "cpf": "11915524709",
+        "tpCR": "056107",
+        "cpfDep": "21874576726",
+        "vlr": "379.18",
+        "is_zero_dep": false,
+        "is_multiple": true,
+        "is_greater": true
+      },
+      {
+        "cpf": "11994427477",
+        "tpCR": "056107",
+        "cpfDep": "16795353400",
+        "vlr": "379.18",
+        "is_zero_dep": false,
+        "is_multiple": true,
+        "is_greater": true
+      },
+      {
+        "cpf": "12501850769",
+        "tpCR": "056107",
+        "cpfDep": "18974292742",
+        "vlr": "379.18",
+        "is_zero_dep": false,
+        "is_multiple": true,
+        "is_greater": true
+      },
+      {
+        "cpf": "13182452738",
+        "tpCR": "056107",
+        "cpfDep": "19073815703",
+        "vlr": "379.18",
+        "is_zero_dep": false,
+        "is_multiple": true,
+        "is_greater": true
+      },
+      {
+        "cpf": "13182452738",
+        "tpCR": "056107",
+        "cpfDep": "19104968719",
+        "vlr": "379.18",
+        "is_zero_dep": false,
+        "is_multiple": true,
+        "is_greater": true
+      },
+      {
+        "cpf": "15275584792",
+        "tpCR": "056107",
+        "cpfDep": "22853460770",
+        "vlr": "379.18",
+        "is_zero_dep": false,
+        "is_multiple": true,
+        "is_greater": true
+      },
+      {
+        "cpf": "15447916747",
+        "tpCR": "056107",
+        "cpfDep": "20698806727",
+        "vlr": "379.18",
+        "is_zero_dep": false,
+        "is_multiple": true,
+        "is_greater": true
+      },
+      {
+        "cpf": "17087835718",
+        "tpCR": "056107",
+        "cpfDep": "23039241702",
+        "vlr": "379.18",
+        "is_zero_dep": false,
+        "is_multiple": true,
+        "is_greater": true
+      },
+      {
+        "cpf": "19354014755",
+        "tpCR": "056107",
+        "cpfDep": "20625296788",
+        "vlr": "568.77",
+        "is_zero_dep": false,
+        "is_multiple": true,
+        "is_greater": true
+      },
+      {
+        "cpf": "35832326822",
+        "tpCR": "056107",
+        "cpfDep": "56509983885",
+        "vlr": "379.18",
+        "is_zero_dep": false,
+        "is_multiple": true,
+        "is_greater": true
+      },
+      {
+        "cpf": "40236751808",
+        "tpCR": "056107",
+        "cpfDep": "53971605800",
+        "vlr": "379.18",
+        "is_zero_dep": false,
+        "is_multiple": true,
+        "is_greater": true
+      },
+      {
+        "cpf": "41310627800",
+        "tpCR": "056107",
+        "cpfDep": "23997904804",
+        "vlr": "568.77",
+        "is_zero_dep": false,
+        "is_multiple": true,
+        "is_greater": true
+      },
+      {
+        "cpf": "89107241534",
+        "tpCR": "056107",
+        "cpfDep": "85906235566",
+        "vlr": "568.77",
+        "is_zero_dep": false,
+        "is_multiple": true,
+        "is_greater": true
+      }
+    ]
+  },
+  "raw_data": [
+    {
+      "cpfBenef": "02254091786",
+      "has_zero_depen": false,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "06423509735",
+          "vlr": "379.18",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": true
+        },
+        {
+          "tpCR": "056107",
+          "cpfDep": "06423506710",
+          "vlr": "189.59",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": false
+        }
+      ]
+    },
+    {
+      "cpfBenef": "02691360539",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "02708236385",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "758.36",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "03415419584",
+      "has_zero_depen": false,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "01485657512",
+          "vlr": "379.18",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": true
+        },
+        {
+          "tpCR": "056107",
+          "cpfDep": "12885697504",
+          "vlr": "189.59",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": false
+        },
+        {
+          "tpCR": "056107",
+          "cpfDep": "08671801535",
+          "vlr": "189.59",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": false
+        }
+      ]
+    },
+    {
+      "cpfBenef": "03418753418",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "03456861796",
+      "has_zero_depen": false,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "18589975770",
+          "vlr": "379.18",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "03470657750",
+      "has_zero_depen": false,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "15301330764",
+          "vlr": "379.18",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "03499760401",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "03551743169",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "568.77",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "03775596445",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "03884524470",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "04102191429",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "04140693401",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "04202911482",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "18060495461",
+          "vlr": "189.59",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": false
+        },
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "04239333458",
+      "has_zero_depen": false,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "71440625492",
+          "vlr": "379.18",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": true
+        },
+        {
+          "tpCR": "056107",
+          "cpfDep": "71440622477",
+          "vlr": "189.59",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": false
+        }
+      ]
+    },
+    {
+      "cpfBenef": "04240549493",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "04240556430",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "04260837419",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "568.77",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        },
+        {
+          "tpCR": "056107",
+          "cpfDep": "16959530458",
+          "vlr": "189.59",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": false
+        }
+      ]
+    },
+    {
+      "cpfBenef": "04472251469",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "04532926408",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "04575626414",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "15416325402",
+          "vlr": "379.18",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": true
+        },
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "189.59",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": false
+        },
+        {
+          "tpCR": "056107",
+          "cpfDep": "15416281448",
+          "vlr": "189.59",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": false
+        }
+      ]
+    },
+    {
+      "cpfBenef": "04598209402",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "04747697470",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "04893823477",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "05161404426",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "05365128761",
+      "has_zero_depen": false,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "06492792718",
+          "vlr": "379.18",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "05390784766",
+      "has_zero_depen": false,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "20228682770",
+          "vlr": "379.18",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": true
+        },
+        {
+          "tpCR": "056107",
+          "cpfDep": "19137580795",
+          "vlr": "189.59",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": false
+        },
+        {
+          "tpCR": "056107",
+          "cpfDep": "19137608711",
+          "vlr": "189.59",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": false
+        }
+      ]
+    },
+    {
+      "cpfBenef": "05406893432",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "05488285474",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "947.95",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "05513724430",
+      "has_zero_depen": false,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "13380700452",
+          "vlr": "189.59",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": false
+        },
+        {
+          "tpCR": "056107",
+          "cpfDep": "13380713430",
+          "vlr": "379.18",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "05664595400",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "568.77",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "05771971421",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "05774255794",
+      "has_zero_depen": false,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "22404489704",
+          "vlr": "189.59",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": false
+        },
+        {
+          "tpCR": "056107",
+          "cpfDep": "16597807723",
+          "vlr": "379.18",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "05788537797",
+      "has_zero_depen": false,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "16400420754",
+          "vlr": "379.18",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "05986727703",
+      "has_zero_depen": false,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "15832548701",
+          "vlr": "379.18",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "06700501482",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "06721434458",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "06838610426",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "568.77",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "06894360413",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "758.36",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "07010962413",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "07047686401",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "07161826454",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "07196986423",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "07506531402",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "07750537406",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "07776275409",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "568.77",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "07833429422",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "568.77",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "07856021438",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "07923038490",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "08353059452",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "08405088750",
+      "has_zero_depen": false,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "19267023799",
+          "vlr": "189.59",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": false
+        },
+        {
+          "tpCR": "056107",
+          "cpfDep": "20673171728",
+          "vlr": "379.18",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": true
+        },
+        {
+          "tpCR": "056107",
+          "cpfDep": "20673146707",
+          "vlr": "189.59",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": false
+        }
+      ]
+    },
+    {
+      "cpfBenef": "08441489467",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "08554135733",
+      "has_zero_depen": false,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "18710630783",
+          "vlr": "568.77",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "08571172463",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "08852402438",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "09278365726",
+      "has_zero_depen": false,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "22010723708",
+          "vlr": "379.18",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "09340578422",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "09568580743",
+      "has_zero_depen": false,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "21044429747",
+          "vlr": "379.18",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": true
+        },
+        {
+          "tpCR": "056107",
+          "cpfDep": "21044471786",
+          "vlr": "189.59",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": false
+        }
+      ]
+    },
+    {
+      "cpfBenef": "09705541760",
+      "has_zero_depen": false,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "16638222716",
+          "vlr": "379.18",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "09821166407",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "568.77",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "09849145790",
+      "has_zero_depen": false,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "06390152710",
+          "vlr": "189.59",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": false
+        },
+        {
+          "tpCR": "056107",
+          "cpfDep": "19443383730",
+          "vlr": "379.18",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": true
+        },
+        {
+          "tpCR": "056107",
+          "cpfDep": "23080190777",
+          "vlr": "189.59",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": false
+        }
+      ]
+    },
+    {
+      "cpfBenef": "09981664723",
+      "has_zero_depen": false,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "19571935735",
+          "vlr": "379.18",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "10057336431",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "10108325490",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "10154281425",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "10617805709",
+      "has_zero_depen": false,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "22063885702",
+          "vlr": "379.18",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "10703646494",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "11191263711",
+      "has_zero_depen": false,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "20394818776",
+          "vlr": "379.18",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "11227994460",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "11500569755",
+      "has_zero_depen": false,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "21231757736",
+          "vlr": "379.18",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": true
+        },
+        {
+          "tpCR": "056107",
+          "cpfDep": "21231750723",
+          "vlr": "189.59",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": false
+        }
+      ]
+    },
+    {
+      "cpfBenef": "11553980760",
+      "has_zero_depen": false,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "21108762719",
+          "vlr": "379.18",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "11679938886",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "11915524709",
+      "has_zero_depen": false,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "21874576726",
+          "vlr": "379.18",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "11994427477",
+      "has_zero_depen": false,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "16795353400",
+          "vlr": "379.18",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "12501850769",
+      "has_zero_depen": false,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "18974292742",
+          "vlr": "379.18",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": true
+        },
+        {
+          "tpCR": "056107",
+          "cpfDep": "18974302721",
+          "vlr": "189.59",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": false
+        }
+      ]
+    },
+    {
+      "cpfBenef": "13182452738",
+      "has_zero_depen": false,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "22292850761",
+          "vlr": "189.59",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": false
+        },
+        {
+          "tpCR": "056107",
+          "cpfDep": "20241503736",
+          "vlr": "189.59",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": false
+        },
+        {
+          "tpCR": "056107",
+          "cpfDep": "19073815703",
+          "vlr": "379.18",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": true
+        },
+        {
+          "tpCR": "056107",
+          "cpfDep": "19104968719",
+          "vlr": "379.18",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": true
+        },
+        {
+          "tpCR": "056107",
+          "cpfDep": "20241514770",
+          "vlr": "189.59",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": false
+        },
+        {
+          "tpCR": "056107",
+          "cpfDep": "20241481740",
+          "vlr": "189.59",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": false
+        },
+        {
+          "tpCR": "056107",
+          "cpfDep": "19958972727",
+          "vlr": "189.59",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": false
+        }
+      ]
+    },
+    {
+      "cpfBenef": "15275584792",
+      "has_zero_depen": false,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "22853460770",
+          "vlr": "379.18",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "15447916747",
+      "has_zero_depen": false,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "20374139717",
+          "vlr": "189.59",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": false
+        },
+        {
+          "tpCR": "056107",
+          "cpfDep": "20698806727",
+          "vlr": "379.18",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "15701224740",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "17087835718",
+      "has_zero_depen": false,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "23039241702",
+          "vlr": "379.18",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "17699409876",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "19354014755",
+      "has_zero_depen": false,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "20625296788",
+          "vlr": "568.77",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "25366903858",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "29387931897",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "30280615892",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "30730892840",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "32571450808",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "33681242852",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "33834306851",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "568.77",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "34286723801",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "34875548877",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "35832326822",
+      "has_zero_depen": false,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "56509983885",
+          "vlr": "379.18",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": true
+        },
+        {
+          "tpCR": "056107",
+          "cpfDep": "56165716873",
+          "vlr": "189.59",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": false
+        }
+      ]
+    },
+    {
+      "cpfBenef": "37647871803",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "568.77",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "40236751808",
+      "has_zero_depen": false,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "53971605800",
+          "vlr": "379.18",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": true
+        },
+        {
+          "tpCR": "056107",
+          "cpfDep": "58045328800",
+          "vlr": "189.59",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": false
+        },
+        {
+          "tpCR": "056107",
+          "cpfDep": "58045307803",
+          "vlr": "189.59",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": false
+        }
+      ]
+    },
+    {
+      "cpfBenef": "40806733888",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "41310627800",
+      "has_zero_depen": false,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "23997904804",
+          "vlr": "568.77",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "51811987168",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "74838130163",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "85132993168",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "88812090125",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "89107241534",
+      "has_zero_depen": false,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "85906235566",
+          "vlr": "568.77",
+          "is_zero_dep": false,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "89258258487",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "94928495420",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "568.77",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    },
+    {
+      "cpfBenef": "98397435468",
+      "has_zero_depen": true,
+      "records": [
+        {
+          "tpCR": "056107",
+          "cpfDep": "00000000000",
+          "vlr": "379.18",
+          "is_zero_dep": true,
+          "is_multiple": true,
+          "is_greater": true
+        }
+      ]
+    }
+  ]
+}

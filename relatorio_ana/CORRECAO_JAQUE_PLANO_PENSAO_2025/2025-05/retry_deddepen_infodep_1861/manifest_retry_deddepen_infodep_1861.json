@@ -1,0 +1,165 @@
+{
+  "empresa_id": 2,
+  "per_apur": "2025-05",
+  "regra": "retry 401/1861 de dedDepen: inserir infoDep/cpfDep para CPFs ja usados em dedDepen",
+  "total_current_1861": 4,
+  "total_retry": 4,
+  "total_skipped": 0,
+  "targets": [
+    {
+      "cpf": "10423668455",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-05\\retry_deddepen_infodep_1861\\xml_unsigned\\S1210_2025-05_10423668455_deddepen_infodep_1861_unsigned.xml",
+      "evento_id": 2397427,
+      "nr_recibo": "1.1.0000000033078644125",
+      "id_evento": "ID1094455020000002026052000061000001",
+      "latest_item_id": 86551,
+      "latest_envio_id": 841,
+      "dependentes": [
+        "15922128400",
+        "15922148435",
+        "17466625495"
+      ],
+      "dependentes_mensagem": [
+        "17466625495"
+      ],
+      "validation": {
+        "source_id": "ID1094455020000002026051514345800005",
+        "new_id": "ID1094455020000002026052000061000001",
+        "nrRecibo": "1.1.0000000033078644125",
+        "dedDepen": [
+          "15922128400",
+          "15922148435",
+          "17466625495"
+        ],
+        "dependentes_mensagem": [
+          "17466625495"
+        ],
+        "infoDep_inserted": [
+          "15922128400",
+          "15922148435",
+          "17466625495"
+        ],
+        "infoDep": [
+          "15922128400",
+          "15922148435",
+          "17466625495"
+        ]
+      }
+    },
+    {
+      "cpf": "38434368862",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-05\\retry_deddepen_infodep_1861\\xml_unsigned\\S1210_2025-05_38434368862_deddepen_infodep_1861_unsigned.xml",
+      "evento_id": 2416875,
+      "nr_recibo": "1.1.0000000033078696365",
+      "id_evento": "ID1094455020000002026052000061000002",
+      "latest_item_id": 92932,
+      "latest_envio_id": 846,
+      "dependentes": [
+        "52159690864",
+        "56620089810"
+      ],
+      "dependentes_mensagem": [
+        "52159690864",
+        "56620089810"
+      ],
+      "validation": {
+        "source_id": "ID1094455020000002026051515324300008",
+        "new_id": "ID1094455020000002026052000061000002",
+        "nrRecibo": "1.1.0000000033078696365",
+        "dedDepen": [
+          "52159690864",
+          "56620089810"
+        ],
+        "dependentes_mensagem": [
+          "52159690864",
+          "56620089810"
+        ],
+        "infoDep_inserted": [
+          "52159690864",
+          "56620089810"
+        ],
+        "infoDep": [
+          "52159690864",
+          "56620089810"
+        ]
+      }
+    },
+    {
+      "cpf": "41257665847",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-05\\retry_deddepen_infodep_1861\\xml_unsigned\\S1210_2025-05_41257665847_deddepen_infodep_1861_unsigned.xml",
+      "evento_id": 2414824,
+      "nr_recibo": "1.1.0000000033078690426",
+      "id_evento": "ID1094455020000002026052000061100001",
+      "latest_item_id": 93540,
+      "latest_envio_id": 846,
+      "dependentes": [
+        "56760354800",
+        "60084116846"
+      ],
+      "dependentes_mensagem": [
+        "56760354800",
+        "60084116846"
+      ],
+      "validation": {
+        "source_id": "ID1094455020000002026051515351100012",
+        "new_id": "ID1094455020000002026052000061100001",
+        "nrRecibo": "1.1.0000000033078690426",
+        "dedDepen": [
+          "56760354800",
+          "60084116846"
+        ],
+        "dependentes_mensagem": [
+          "56760354800",
+          "60084116846"
+        ],
+        "infoDep_inserted": [
+          "56760354800",
+          "60084116846"
+        ],
+        "infoDep": [
+          "56760354800",
+          "60084116846"
+        ]
+      }
+    },
+    {
+      "cpf": "81529368553",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-05\\retry_deddepen_infodep_1861\\xml_unsigned\\S1210_2025-05_81529368553_deddepen_infodep_1861_unsigned.xml",
+      "evento_id": 2402643,
+      "nr_recibo": "1.1.0000000033078658486",
+      "id_evento": "ID1094455020000002026052000061100002",
+      "latest_item_id": 97397,
+      "latest_envio_id": 848,
+      "dependentes": [
+        "09274813597",
+        "09274837500"
+      ],
+      "dependentes_mensagem": [
+        "09274813597",
+        "09274837500"
+      ],
+      "validation": {
+        "source_id": "ID1094455020000002026051516051700014",
+        "new_id": "ID1094455020000002026052000061100002",
+        "nrRecibo": "1.1.0000000033078658486",
+        "dedDepen": [
+          "09274813597",
+          "09274837500"
+        ],
+        "dependentes_mensagem": [
+          "09274813597",
+          "09274837500"
+        ],
+        "infoDep_inserted": [
+          "09274813597",
+          "09274837500"
+        ],
+        "infoDep": [
+          "09274813597",
+          "09274837500"
+        ]
+      }
+    }
+  ],
+  "skipped": []
+}

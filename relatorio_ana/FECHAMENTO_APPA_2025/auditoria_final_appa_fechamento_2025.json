@@ -1,0 +1,110 @@
+[
+  {
+    "per_apur": "2025-01",
+    "fechado": true,
+    "protocolo": "1.1.202605.0000000013188451415",
+    "nr_recibo": null,
+    "origem": "s1299_ja_fechado_esocial",
+    "codigo_ocorrencia": "620",
+    "descricao_ocorrencia": "A folha de pagamento do per\u00edodo 2025-01 j\u00e1 foi fechada, para alter\u00e1-la ser\u00e1 necess\u00e1rio reabri-la."
+  },
+  {
+    "per_apur": "2025-02",
+    "fechado": true,
+    "protocolo": "1.1.202605.0000000013188451649",
+    "nr_recibo": "1.1.0000000040929887723",
+    "origem": "s1299_envio_aceito",
+    "codigo_ocorrencia": null,
+    "descricao_ocorrencia": null
+  },
+  {
+    "per_apur": "2025-03",
+    "fechado": true,
+    "protocolo": "1.1.202605.0000000013188452864",
+    "nr_recibo": "1.1.0000000040929892317",
+    "origem": "s1299_envio_aceito",
+    "codigo_ocorrencia": null,
+    "descricao_ocorrencia": null
+  },
+  {
+    "per_apur": "2025-04",
+    "fechado": true,
+    "protocolo": "1.1.202605.0000000013188454028",
+    "nr_recibo": "1.1.0000000040929898945",
+    "origem": "s1299_envio_aceito",
+    "codigo_ocorrencia": null,
+    "descricao_ocorrencia": null
+  },
+  {
+    "per_apur": "2025-05",
+    "fechado": true,
+    "protocolo": "1.1.202605.0000000013188455101",
+    "nr_recibo": "1.1.0000000040929907038",
+    "origem": "s1299_envio_aceito",
+    "codigo_ocorrencia": null,
+    "descricao_ocorrencia": null
+  },
+  {
+    "per_apur": "2025-06",
+    "fechado": true,
+    "protocolo": "1.1.202605.0000000013188456229",
+    "nr_recibo": null,
+    "origem": "s1299_ja_fechado_esocial",
+    "codigo_ocorrencia": "620",
+    "descricao_ocorrencia": "A folha de pagamento do per\u00edodo 2025-06 j\u00e1 foi fechada, para alter\u00e1-la ser\u00e1 necess\u00e1rio reabri-la."
+  },
+  {
+    "per_apur": "2025-07",
+    "fechado": true,
+    "protocolo": "1.1.202605.0000000013188456365",
+    "nr_recibo": null,
+    "origem": "s1299_ja_fechado_esocial",
+    "codigo_ocorrencia": "620",
+    "descricao_ocorrencia": "A folha de pagamento do per\u00edodo 2025-07 j\u00e1 foi fechada, para alter\u00e1-la ser\u00e1 necess\u00e1rio reabri-la."
+  },
+  {
+    "per_apur": "2025-08",
+    "fechado": true,
+    "protocolo": "1.1.202605.0000000013188456507",
+    "nr_recibo": "1.1.0000000040929915349",
+    "origem": "s1299_envio_aceito",
+    "codigo_ocorrencia": null,
+    "descricao_ocorrencia": null
+  },
+  {
+    "per_apur": "2025-09",
+    "fechado": true,
+    "protocolo": "1.1.202605.0000000013188457166",
+    "nr_recibo": "1.1.0000000040929919132",
+    "origem": "s1299_envio_aceito",
+    "codigo_ocorrencia": null,
+    "descricao_ocorrencia": null
+  },
+  {
+    "per_apur": "2025-10",
+    "fechado": true,
+    "protocolo": "1.1.202605.0000000013188458037",
+    "nr_recibo": "1.1.0000000040929926386",
+    "origem": "s1299_envio_aceito",
+    "codigo_ocorrencia": null,
+    "descricao_ocorrencia": null
+  },
+  {
+    "per_apur": "2025-11",
+    "fechado": true,
+    "protocolo": "1.1.202605.0000000013188458503",
+    "nr_recibo": null,
+    "origem": "s1299_ja_fechado_esocial",
+    "codigo_ocorrencia": "620",
+    "descricao_ocorrencia": "A folha de pagamento do per\u00edodo 2025-11 j\u00e1 foi fechada, para alter\u00e1-la ser\u00e1 necess\u00e1rio reabri-la."
+  },
+  {
+    "per_apur": "2025-12",
+    "fechado": true,
+    "protocolo": "1.1.202605.0000000013188458678",
+    "nr_recibo": "1.1.0000000040929929642",
+    "origem": "s1299_envio_aceito",
+    "codigo_ocorrencia": null,
+    "descricao_ocorrencia": null
+  }
+]

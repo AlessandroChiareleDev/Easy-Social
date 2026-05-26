@@ -1,0 +1,380 @@
+{
+  "empresa_id": 2,
+  "per_apur": "2025-02",
+  "origem": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-02\\erros_pos_envio_931.csv",
+  "regra": "retry somente 401/1861 de pensao; inserir infoDep/cpfDep no proprio S-1210; excluir 402 valor zero",
+  "total_retry": 32,
+  "total_skipped": 0,
+  "pendentes_zero": 2,
+  "targets": [
+    {
+      "cpf": "03734938945",
+      "cpf_dependente": "04060960900",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-02\\retry_infodep_1861\\xml_unsigned\\S1210_2025-02_03734938945_infodep_1861_unsigned.xml",
+      "evento_id": 1011328,
+      "nr_recibo": "1.1.0000000031463458462",
+      "has_plano": false,
+      "has_pensao": true,
+      "source_item_id": 139599,
+      "source_envio_id": 884
+    },
+    {
+      "cpf": "07222885498",
+      "cpf_dependente": "03539752498",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-02\\retry_infodep_1861\\xml_unsigned\\S1210_2025-02_07222885498_infodep_1861_unsigned.xml",
+      "evento_id": 856393,
+      "nr_recibo": "1.1.0000000031463591760",
+      "has_plano": false,
+      "has_pensao": true,
+      "source_item_id": 141906,
+      "source_envio_id": 885
+    },
+    {
+      "cpf": "07819709979",
+      "cpf_dependente": "45586853000",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-02\\retry_infodep_1861\\xml_unsigned\\S1210_2025-02_07819709979_infodep_1861_unsigned.xml",
+      "evento_id": 863713,
+      "nr_recibo": "1.1.0000000031463663703",
+      "has_plano": false,
+      "has_pensao": true,
+      "source_item_id": 142268,
+      "source_envio_id": 885
+    },
+    {
+      "cpf": "08551918486",
+      "cpf_dependente": "09345921443",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-02\\retry_infodep_1861\\xml_unsigned\\S1210_2025-02_08551918486_infodep_1861_unsigned.xml",
+      "evento_id": 871921,
+      "nr_recibo": "1.1.0000000031463743810",
+      "has_plano": false,
+      "has_pensao": true,
+      "source_item_id": 142685,
+      "source_envio_id": 885
+    },
+    {
+      "cpf": "09442696645",
+      "cpf_dependente": "13327707626",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-02\\retry_infodep_1861\\xml_unsigned\\S1210_2025-02_09442696645_infodep_1861_unsigned.xml",
+      "evento_id": 863560,
+      "nr_recibo": "1.1.0000000031463661076",
+      "has_plano": false,
+      "has_pensao": true,
+      "source_item_id": 143179,
+      "source_envio_id": 886
+    },
+    {
+      "cpf": "36495227809",
+      "cpf_dependente": "48029903839",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-02\\retry_infodep_1861\\xml_unsigned\\S1210_2025-02_36495227809_infodep_1861_unsigned.xml",
+      "evento_id": 937211,
+      "nr_recibo": "1.1.0000000031464072910",
+      "has_plano": false,
+      "has_pensao": true,
+      "source_item_id": 149684,
+      "source_envio_id": 889
+    },
+    {
+      "cpf": "74353861034",
+      "cpf_dependente": "00223153060",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-02\\retry_infodep_1861\\xml_unsigned\\S1210_2025-02_74353861034_infodep_1861_unsigned.xml",
+      "evento_id": 876211,
+      "nr_recibo": "1.1.0000000031463813623",
+      "has_plano": false,
+      "has_pensao": true,
+      "source_item_id": 153943,
+      "source_envio_id": 891
+    },
+    {
+      "cpf": "09998186781",
+      "cpf_dependente": "15567277717",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-02\\retry_infodep_1861\\xml_unsigned\\S1210_2025-02_09998186781_infodep_1861_unsigned.xml",
+      "evento_id": 938943,
+      "nr_recibo": "1.1.0000000031464099785",
+      "has_plano": false,
+      "has_pensao": true,
+      "source_item_id": 143495,
+      "source_envio_id": 886
+    },
+    {
+      "cpf": "12061471480",
+      "cpf_dependente": "13523268419",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-02\\retry_infodep_1861\\xml_unsigned\\S1210_2025-02_12061471480_infodep_1861_unsigned.xml",
+      "evento_id": 870785,
+      "nr_recibo": "1.1.0000000031463727494",
+      "has_plano": false,
+      "has_pensao": true,
+      "source_item_id": 144519,
+      "source_envio_id": 886
+    },
+    {
+      "cpf": "46500612884",
+      "cpf_dependente": "46890825888",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-02\\retry_infodep_1861\\xml_unsigned\\S1210_2025-02_46500612884_infodep_1861_unsigned.xml",
+      "evento_id": 938873,
+      "nr_recibo": "1.1.0000000031464098603",
+      "has_plano": false,
+      "has_pensao": true,
+      "source_item_id": 151718,
+      "source_envio_id": 890
+    },
+    {
+      "cpf": "01600865585",
+      "cpf_dependente": "98513770582",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-02\\retry_infodep_1861\\xml_unsigned\\S1210_2025-02_01600865585_infodep_1861_unsigned.xml",
+      "evento_id": 848507,
+      "nr_recibo": "1.1.0000000031463515242",
+      "has_plano": false,
+      "has_pensao": true,
+      "source_item_id": 138098,
+      "source_envio_id": 883
+    },
+    {
+      "cpf": "03025522003",
+      "cpf_dependente": "03223649069",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-02\\retry_infodep_1861\\xml_unsigned\\S1210_2025-02_03025522003_infodep_1861_unsigned.xml",
+      "evento_id": 874581,
+      "nr_recibo": "1.1.0000000031463776861",
+      "has_plano": false,
+      "has_pensao": true,
+      "source_item_id": 139062,
+      "source_envio_id": 884
+    },
+    {
+      "cpf": "04213972410",
+      "cpf_dependente": "05524090496",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-02\\retry_infodep_1861\\xml_unsigned\\S1210_2025-02_04213972410_infodep_1861_unsigned.xml",
+      "evento_id": 871969,
+      "nr_recibo": "1.1.0000000031463744595",
+      "has_plano": false,
+      "has_pensao": true,
+      "source_item_id": 139958,
+      "source_envio_id": 884
+    },
+    {
+      "cpf": "04603055498",
+      "cpf_dependente": "03330862440",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-02\\retry_infodep_1861\\xml_unsigned\\S1210_2025-02_04603055498_infodep_1861_unsigned.xml",
+      "evento_id": 856200,
+      "nr_recibo": "1.1.0000000031463588627",
+      "has_plano": false,
+      "has_pensao": true,
+      "source_item_id": 140282,
+      "source_envio_id": 884
+    },
+    {
+      "cpf": "07338460922",
+      "cpf_dependente": "07023893903",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-02\\retry_infodep_1861\\xml_unsigned\\S1210_2025-02_07338460922_infodep_1861_unsigned.xml",
+      "evento_id": 864011,
+      "nr_recibo": "1.1.0000000031463668344",
+      "has_plano": false,
+      "has_pensao": true,
+      "source_item_id": 141984,
+      "source_envio_id": 885
+    },
+    {
+      "cpf": "07575441425",
+      "cpf_dependente": "09663736429",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-02\\retry_infodep_1861\\xml_unsigned\\S1210_2025-02_07575441425_infodep_1861_unsigned.xml",
+      "evento_id": 938949,
+      "nr_recibo": "1.1.0000000031464099869",
+      "has_plano": false,
+      "has_pensao": true,
+      "source_item_id": 142111,
+      "source_envio_id": 885
+    },
+    {
+      "cpf": "08193739744",
+      "cpf_dependente": "03371639797",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-02\\retry_infodep_1861\\xml_unsigned\\S1210_2025-02_08193739744_infodep_1861_unsigned.xml",
+      "evento_id": 865836,
+      "nr_recibo": "1.1.0000000031463679996",
+      "has_plano": false,
+      "has_pensao": true,
+      "source_item_id": 142474,
+      "source_envio_id": 885
+    },
+    {
+      "cpf": "08517868471",
+      "cpf_dependente": "13997029474",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-02\\retry_infodep_1861\\xml_unsigned\\S1210_2025-02_08517868471_infodep_1861_unsigned.xml",
+      "evento_id": 867786,
+      "nr_recibo": "1.1.0000000031463693118",
+      "has_plano": false,
+      "has_pensao": true,
+      "source_item_id": 142658,
+      "source_envio_id": 885
+    },
+    {
+      "cpf": "09245657485",
+      "cpf_dependente": "01704416442",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-02\\retry_infodep_1861\\xml_unsigned\\S1210_2025-02_09245657485_infodep_1861_unsigned.xml",
+      "evento_id": 871581,
+      "nr_recibo": "1.1.0000000031463738841",
+      "has_plano": false,
+      "has_pensao": true,
+      "source_item_id": 143065,
+      "source_envio_id": 886
+    },
+    {
+      "cpf": "09321030816",
+      "cpf_dependente": "34166847880",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-02\\retry_infodep_1861\\xml_unsigned\\S1210_2025-02_09321030816_infodep_1861_unsigned.xml",
+      "evento_id": 850987,
+      "nr_recibo": "1.1.0000000031463557414",
+      "has_plano": false,
+      "has_pensao": true,
+      "source_item_id": 143103,
+      "source_envio_id": 886
+    },
+    {
+      "cpf": "10334489741",
+      "cpf_dependente": "11879040743",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-02\\retry_infodep_1861\\xml_unsigned\\S1210_2025-02_10334489741_infodep_1861_unsigned.xml",
+      "evento_id": 849087,
+      "nr_recibo": "1.1.0000000031463526603",
+      "has_plano": false,
+      "has_pensao": true,
+      "source_item_id": 143641,
+      "source_envio_id": 886
+    },
+    {
+      "cpf": "11488285675",
+      "cpf_dependente": "12645049931",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-02\\retry_infodep_1861\\xml_unsigned\\S1210_2025-02_11488285675_infodep_1861_unsigned.xml",
+      "evento_id": 868394,
+      "nr_recibo": "1.1.0000000031463702006",
+      "has_plano": false,
+      "has_pensao": true,
+      "source_item_id": 144253,
+      "source_envio_id": 886
+    },
+    {
+      "cpf": "13334011755",
+      "cpf_dependente": "01510216510",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-02\\retry_infodep_1861\\xml_unsigned\\S1210_2025-02_13334011755_infodep_1861_unsigned.xml",
+      "evento_id": 849701,
+      "nr_recibo": "1.1.0000000031463536004",
+      "has_plano": false,
+      "has_pensao": true,
+      "source_item_id": 144995,
+      "source_envio_id": 887
+    },
+    {
+      "cpf": "29304390842",
+      "cpf_dependente": "30160484855",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-02\\retry_infodep_1861\\xml_unsigned\\S1210_2025-02_29304390842_infodep_1861_unsigned.xml",
+      "evento_id": 938899,
+      "nr_recibo": "1.1.0000000031464099058",
+      "has_plano": false,
+      "has_pensao": true,
+      "source_item_id": 148015,
+      "source_envio_id": 888
+    },
+    {
+      "cpf": "30695631802",
+      "cpf_dependente": "27364293892",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-02\\retry_infodep_1861\\xml_unsigned\\S1210_2025-02_30695631802_infodep_1861_unsigned.xml",
+      "evento_id": 877566,
+      "nr_recibo": "1.1.0000000031463837289",
+      "has_plano": false,
+      "has_pensao": true,
+      "source_item_id": 148297,
+      "source_envio_id": 888
+    },
+    {
+      "cpf": "31045012890",
+      "cpf_dependente": "33181458821",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-02\\retry_infodep_1861\\xml_unsigned\\S1210_2025-02_31045012890_infodep_1861_unsigned.xml",
+      "evento_id": 938807,
+      "nr_recibo": "1.1.0000000031464097104",
+      "has_plano": false,
+      "has_pensao": true,
+      "source_item_id": 148385,
+      "source_envio_id": 888
+    },
+    {
+      "cpf": "33653549809",
+      "cpf_dependente": "40288806883",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-02\\retry_infodep_1861\\xml_unsigned\\S1210_2025-02_33653549809_infodep_1861_unsigned.xml",
+      "evento_id": 882786,
+      "nr_recibo": "1.1.0000000031463911725",
+      "has_plano": false,
+      "has_pensao": true,
+      "source_item_id": 148989,
+      "source_envio_id": 889
+    },
+    {
+      "cpf": "35527258819",
+      "cpf_dependente": "37117293802",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-02\\retry_infodep_1861\\xml_unsigned\\S1210_2025-02_35527258819_infodep_1861_unsigned.xml",
+      "evento_id": 851213,
+      "nr_recibo": "1.1.0000000031463560383",
+      "has_plano": false,
+      "has_pensao": true,
+      "source_item_id": 149444,
+      "source_envio_id": 889
+    },
+    {
+      "cpf": "70473824108",
+      "cpf_dependente": "08796377143",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-02\\retry_infodep_1861\\xml_unsigned\\S1210_2025-02_70473824108_infodep_1861_unsigned.xml",
+      "evento_id": 858021,
+      "nr_recibo": "1.1.0000000031463603921",
+      "has_plano": false,
+      "has_pensao": true,
+      "source_item_id": 153631,
+      "source_envio_id": 891
+    },
+    {
+      "cpf": "70633878120",
+      "cpf_dependente": "04503764195",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-02\\retry_infodep_1861\\xml_unsigned\\S1210_2025-02_70633878120_infodep_1861_unsigned.xml",
+      "evento_id": 851577,
+      "nr_recibo": "1.1.0000000031463565556",
+      "has_plano": false,
+      "has_pensao": true,
+      "source_item_id": 153661,
+      "source_envio_id": 891
+    },
+    {
+      "cpf": "82484660510",
+      "cpf_dependente": "01229590510",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-02\\retry_infodep_1861\\xml_unsigned\\S1210_2025-02_82484660510_infodep_1861_unsigned.xml",
+      "evento_id": 861253,
+      "nr_recibo": "1.1.0000000031463640633",
+      "has_plano": false,
+      "has_pensao": true,
+      "source_item_id": 154718,
+      "source_envio_id": 891
+    },
+    {
+      "cpf": "94881898434",
+      "cpf_dependente": "03880026467",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-02\\retry_infodep_1861\\xml_unsigned\\S1210_2025-02_94881898434_infodep_1861_unsigned.xml",
+      "evento_id": 870145,
+      "nr_recibo": "1.1.0000000031463717850",
+      "has_plano": false,
+      "has_pensao": true,
+      "source_item_id": 155815,
+      "source_envio_id": 892
+    }
+  ],
+  "skipped": [],
+  "zero_rows": [
+    {
+      "cpf": "28710124829",
+      "erro_codigo": "402",
+      "erro_mensagem": "402: Schema do evento inválido. | 17: A estrutura do arquivo XML está em desconformidade com o esquema XSD. The 'http://www.esocial.gov.br/schema/evt/evtPgtos/v_S_01_03_00:vlrDedPenAlim' element is invalid - The value '0.00' is invalid according to its datatype 'http://www.esocial.gov.br/schema/evt/evtPgtos/v_S_01_03_00:TS_vlrDedPenAlim' - The MinExclusive constraint failed.",
+      "cpf_dependente": "",
+      "no_manifest_pensao_plano": "NAO_ENCONTRADO"
+    },
+    {
+      "cpf": "71985883104",
+      "erro_codigo": "402",
+      "erro_mensagem": "402: Schema do evento inválido. | 17: A estrutura do arquivo XML está em desconformidade com o esquema XSD. The 'http://www.esocial.gov.br/schema/evt/evtPgtos/v_S_01_03_00:vlrDedPenAlim' element is invalid - The value '0.00' is invalid according to its datatype 'http://www.esocial.gov.br/schema/evt/evtPgtos/v_S_01_03_00:TS_vlrDedPenAlim' - The MinExclusive constraint failed.",
+      "cpf_dependente": "",
+      "no_manifest_pensao_plano": "NAO_ENCONTRADO"
+    }
+  ]
+}

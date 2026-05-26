@@ -1,0 +1,22 @@
+{
+  "empresa_id": 2,
+  "per_apur": "2025-08",
+  "cpf": "01987352190",
+  "tipo": "teste_retificacao_espelho_override_recibo",
+  "sem_consulta_download_esocial": true,
+  "envio_id": 922,
+  "protocolo": "1.1.202605.0000000013180674644",
+  "nr_recibo_anterior_usado": "1.1.0000000040581486791",
+  "status": "sucesso",
+  "cdResposta": "202",
+  "descResposta": "Sucesso com advertência.",
+  "nr_recibo_novo": "1.1.0000000040892946938",
+  "ocorrencias": [
+    {
+      "codigo": "1863",
+      "descricao": "Valor da dedução da base de cálculo do dependente 00000000000 inválido. Ação sugerida: O valor informado deve ser menor ou igual ao valor unitário da dedução por dependente de R$ 189,59.",
+      "localizacao": "/eSocial/evtPgtos/ideBenef/infoIRComplem/infoIRCR/dedDepen/vlrDedDep"
+    }
+  ],
+  "conclusao": "O recibo informado pelo usuario era ativo para o CPF testado; a retificacao espelho foi aceita com advertencia 202 e gerou novo recibo."
+}

@@ -1,0 +1,1332 @@
+{
+  "empresa_id": 2,
+  "per_apur": "2025-08",
+  "generated_at": "2026-05-15T23:07:11",
+  "files": {
+    "operadoras": "C:\\Users\\xandao\\Downloads\\OPERADORAS.xlsx",
+    "pensao": "C:\\Users\\xandao\\Downloads\\pensao.xlsx",
+    "recibos": "C:\\Users\\xandao\\Downloads\\RELATORIO_SOLUCOES_AGOSTO_2025_ERROS_S1210 resposta erro 456.xlsx"
+  },
+  "current_counts": {
+    "aviso_202": 119,
+    "duplicidade_543_sem_mudanca": 127,
+    "nao_ok": 672,
+    "overlap_1089": 55,
+    "pensao_codigo8": 4,
+    "plano_saude_codigo8": 99,
+    "recibo_459": 267
+  },
+  "receipt_overrides": {
+    "rows_total": 370,
+    "current_459_total": 267,
+    "ready": 267,
+    "missing": [],
+    "sample": {
+      "00001931946": {
+        "recibo_usado": "1.1.0000000034695453274",
+        "recibo_correto": "1.1.0000000034636459641",
+        "erro": "401 / 459 - Recibo de entrega nao localizado ou excluido/retificado"
+      },
+      "00004179129": {
+        "recibo_usado": "1.1.0000000034695359470",
+        "recibo_correto": "1.1.0000000034619811079",
+        "erro": "401 / 459 - Recibo de entrega nao localizado ou excluido/retificado"
+      },
+      "00005083575": {
+        "recibo_usado": "1.1.0000000034695375738",
+        "recibo_correto": "1.1.0000000034632291632",
+        "erro": "401 / 459 - Recibo de entrega nao localizado ou excluido/retificado"
+      },
+      "00007197225": {
+        "recibo_usado": "1.1.0000000034695391980",
+        "recibo_correto": "1.1.0000000034632597562",
+        "erro": "401 / 459 - Recibo de entrega nao localizado ou excluido/retificado"
+      },
+      "00010526757": {
+        "recibo_usado": "1.1.0000000034695352486",
+        "recibo_correto": "1.1.0000000034619686116",
+        "erro": "401 / 459 - Recibo de entrega nao localizado ou excluido/retificado"
+      },
+      "00011072598": {
+        "recibo_usado": "1.1.0000000034695391826",
+        "recibo_correto": "1.1.0000000034632602710",
+        "erro": "401 / 459 - Recibo de entrega nao localizado ou excluido/retificado"
+      },
+      "00237457709": {
+        "recibo_usado": "1.1.0000000034695386396",
+        "recibo_correto": "1.1.0000000034632492533",
+        "erro": "401 / 459 - Recibo de entrega nao localizado ou excluido/retificado"
+      },
+      "00290546729": {
+        "recibo_usado": "1.1.0000000034695397351",
+        "recibo_correto": "1.1.0000000034632670649",
+        "erro": "401 / 459 - Recibo de entrega nao localizado ou excluido/retificado"
+      },
+      "00297302795": {
+        "recibo_usado": "1.1.0000000034695343620",
+        "recibo_correto": "1.1.0000000034619518454",
+        "erro": "401 / 459 - Recibo de entrega nao localizado ou excluido/retificado"
+      },
+      "00299556700": {
+        "recibo_usado": "1.1.0000000034695449382",
+        "recibo_correto": "1.1.0000000034636444445",
+        "erro": "401 / 459 - Recibo de entrega nao localizado ou excluido/retificado"
+      }
+    },
+    "override_por_cpf": {
+      "00001931946": "1.1.0000000034636459641",
+      "00004179129": "1.1.0000000034619811079",
+      "00005083575": "1.1.0000000034632291632",
+      "00007197225": "1.1.0000000034632597562",
+      "00010526757": "1.1.0000000034619686116",
+      "00011072598": "1.1.0000000034632602710",
+      "00237457709": "1.1.0000000034632492533",
+      "00290546729": "1.1.0000000034632670649",
+      "00297302795": "1.1.0000000034619518454",
+      "00299556700": "1.1.0000000034636444445",
+      "00341063592": "1.1.0000000034636434197",
+      "00350288151": "1.1.0000000034632490195",
+      "00371133564": "1.1.0000000034619586048",
+      "00391021141": "1.1.0000000034632306377",
+      "00391802984": "1.1.0000000034632331041",
+      "00399179089": "1.1.0000000034632326371",
+      "00403524989": "1.1.0000000034632523878",
+      "00428392547": "1.1.0000000034619884240",
+      "00433131918": "1.1.0000000034632465880",
+      "00437592979": "1.1.0000000034636379545",
+      "00438201230": "1.1.0000000034619601778",
+      "00438789547": "1.1.0000000034632503035",
+      "00439368731": "1.1.0000000034619479938",
+      "00442181760": "1.1.0000000034619774231",
+      "00442241763": "1.1.0000000034636219760",
+      "00444023500": "1.1.0000000034636408866",
+      "00444362541": "1.1.0000000034636223559",
+      "00453172164": "1.1.0000000034619880480",
+      "00454378580": "1.1.0000000034636423516",
+      "00455249555": "1.1.0000000034632493830",
+      "00457118016": "1.1.0000000034636285461",
+      "00458928909": "1.1.0000000034632488198",
+      "00480580170": "1.1.0000000034632663863",
+      "00481915150": "1.1.0000000034636557693",
+      "00484906950": "1.1.0000000034632328346",
+      "00486262103": "1.1.0000000034632295098",
+      "00486729206": "1.1.0000000034632313214",
+      "00490974155": "1.1.0000000034632747230",
+      "00492090513": "1.1.0000000034619648973",
+      "00493933328": "1.1.0000000034619856455",
+      "00494935316": "1.1.0000000034619804625",
+      "00495870137": "1.1.0000000034619806421",
+      "00497808595": "1.1.0000000034632231882",
+      "00500774579": "1.1.0000000034636549289",
+      "00500997527": "1.1.0000000034632243228",
+      "00505195143": "1.1.0000000034636448065",
+      "00511224990": "1.1.0000000034632317707",
+      "00511443790": "1.1.0000000034619859923",
+      "00515611743": "1.1.0000000034636180976",
+      "00515638196": "1.1.0000000034619460374",
+      "00517292700": "1.1.0000000034619699800",
+      "00522731724": "1.1.0000000034619707344",
+      "00524997586": "1.1.0000000034636175000",
+      "00525356142": "1.1.0000000034619854290",
+      "00525756590": "1.1.0000000034619694842",
+      "00526548770": "1.1.0000000034632557180",
+      "00527328782": "1.1.0000000034619735494",
+      "00527956759": "1.1.0000000034619775222",
+      "00529606178": "1.1.0000000034632648113",
+      "00530098784": "1.1.0000000034632746808",
+      "00555173232": "1.1.0000000034632741759",
+      "00689822081": "1.1.0000000034632321390",
+      "00754427528": "1.1.0000000034632326165",
+      "00951324578": "1.1.0000000034632744252",
+      "01000220141": "1.1.0000000034632344718",
+      "01096669927": "1.1.0000000034632741541",
+      "01174298561": "1.1.0000000034632728623",
+      "01298605571": "1.1.0000000034632744966",
+      "01307928960": "1.1.0000000034632331817",
+      "01628320524": "1.1.0000000034632343466",
+      "01690871580": "1.1.0000000034632746583",
+      "01782580085": "1.1.0000000034632320771",
+      "01849233608": "1.1.0000000034632749859",
+      "01899199063": "1.1.0000000034632326558",
+      "01932186581": "1.1.0000000034632733303",
+      "01972178938": "1.1.0000000034632343555",
+      "01990928935": "1.1.0000000034632740821",
+      "02022764579": "1.1.0000000034636299900",
+      "02260424996": "1.1.0000000034632742051",
+      "02415675059": "1.1.0000000034632327545",
+      "02448322775": "1.1.0000000034632332514",
+      "02565079613": "1.1.0000000034632730693",
+      "02590172214": "1.1.0000000034632749879",
+      "03010116993": "1.1.0000000034632326410",
+      "03030949079": "1.1.0000000034632321969",
+      "03035763917": "1.1.0000000034632743033",
+      "03092255585": "1.1.0000000034632733335",
+      "03146159031": "1.1.0000000034632750165",
+      "03189281750": "1.1.0000000034632728818",
+      "03242831055": "1.1.0000000034632733453",
+      "03353599908": "1.1.0000000034632737286",
+      "03401177966": "1.1.0000000034632742901",
+      "03408762201": "1.1.0000000034632327291",
+      "03446501541": "1.1.0000000034632745012",
+      "03812947579": "1.1.0000000034632729143",
+      "03844131531": "1.1.0000000034632344047",
+      "03878446942": "1.1.0000000034632738144",
+      "04168990648": "1.1.0000000034632746514",
+      "04207887946": "1.1.0000000034632741326",
+      "04418734481": "1.1.0000000034632736928",
+      "04435448246": "1.1.0000000034632750431",
+      "04598923555": "1.1.0000000034632745016",
+      "04704640973": "1.1.0000000034632344292",
+      "04811715926": "1.1.0000000034632338264",
+      "04840942463": "1.1.0000000034632745919",
+      "04971475990": "1.1.0000000034632741197",
+      "05055596929": "1.1.0000000034632736868",
+      "05074255961": "1.1.0000000034632321990",
+      "05084186580": "1.1.0000000034632742577",
+      "05157997779": "1.1.0000000034632729688",
+      "05185478411": "1.1.0000000034632733828",
+      "05269096927": "1.1.0000000034632743049",
+      "05293526995": "1.1.0000000034632332026",
+      "05362558498": "1.1.0000000034632736720",
+      "05434146980": "1.1.0000000034632741138",
+      "05477320583": "1.1.0000000034632733170",
+      "05754014511": "1.1.0000000034632742883",
+      "05763731921": "1.1.0000000034632737676",
+      "05768456988": "1.1.0000000034632744526",
+      "05770320974": "1.1.0000000034632741797",
+      "05811338899": "1.1.0000000034632754161",
+      "05866819570": "1.1.0000000034632742851",
+      "05910023969": "1.1.0000000034632316642",
+      "06095247985": "1.1.0000000034632749614",
+      "06104861873": "1.1.0000000034632746306",
+      "06193418741": "1.1.0000000034632750423",
+      "06230097141": "1.1.0000000034632736991",
+      "06261831548": "1.1.0000000034632743370",
+      "06292676935": "1.1.0000000034632326868",
+      "06296286961": "1.1.0000000034632748789",
+      "06536214501": "1.1.0000000034632337785",
+      "06716981926": "1.1.0000000034632741447",
+      "06821597944": "1.1.0000000034632749760",
+      "07004024709": "1.1.0000000034632343670",
+      "07244960174": "1.1.0000000034632742327",
+      "07338460922": "1.1.0000000034632326584",
+      "07466867570": "1.1.0000000034632746759",
+      "07694566930": "1.1.0000000034632332507",
+      "07832592982": "1.1.0000000034632737149",
+      "08049233880": "1.1.0000000034632344842",
+      "08256943963": "1.1.0000000034632321184",
+      "08364897721": "1.1.0000000034632332055",
+      "08456174432": "1.1.0000000034632332353",
+      "08463914900": "1.1.0000000034632743498",
+      "08662239919": "1.1.0000000034632344566",
+      "08664772509": "1.1.0000000034632753693",
+      "08963684750": "1.1.0000000034632729011",
+      "08970783903": "1.1.0000000034632742611",
+      "09107763930": "1.1.0000000034632749784",
+      "09127419452": "1.1.0000000034632745891",
+      "09159574933": "1.1.0000000034632742547",
+      "09176394999": "1.1.0000000034632738040",
+      "09338029948": "1.1.0000000034632741183",
+      "09500575760": "1.1.0000000034632734306",
+      "09541779670": "1.1.0000000034632332149",
+      "09581518908": "1.1.0000000034632331496",
+      "09679921921": "1.1.0000000034632344552",
+      "09716802994": "1.1.0000000034632740552",
+      "09972194914": "1.1.0000000034632321279",
+      "10262370921": "1.1.0000000034632737044",
+      "10639821707": "1.1.0000000034632746420",
+      "10670312789": "1.1.0000000034632730150",
+      "10776754882": "1.1.0000000034632351475",
+      "11232896977": "1.1.0000000034632750135",
+      "11307430716": "1.1.0000000034632729807",
+      "11465200770": "1.1.0000000034632734673",
+      "11703488741": "1.1.0000000034632753758",
+      "11766669913": "1.1.0000000034632737431",
+      "12231775565": "1.1.0000000034632732989",
+      "12316885993": "1.1.0000000034632737415",
+      "12349012778": "1.1.0000000034632746342",
+      "12484576765": "1.1.0000000034632745190",
+      "12603557726": "1.1.0000000034632728747",
+      "13005267776": "1.1.0000000034632744559",
+      "13150894751": "1.1.0000000034632343919",
+      "13160557790": "1.1.0000000034632343817",
+      "13307151797": "1.1.0000000034632729260",
+      "13376334960": "1.1.0000000034632749629",
+      "13419966709": "1.1.0000000034632744952",
+      "13617297919": "1.1.0000000034632738640",
+      "13693675708": "1.1.0000000034632732857",
+      "14623248860": "1.1.0000000034632343430",
+      "14737678732": "1.1.0000000034632747910",
+      "15903360700": "1.1.0000000034632744620",
+      "16354942730": "1.1.0000000034632746110",
+      "16366471703": "1.1.0000000034632753421",
+      "16603766701": "1.1.0000000034632738421",
+      "16773313724": "1.1.0000000034632738413",
+      "16774374808": "1.1.0000000034632352878",
+      "16783493806": "1.1.0000000034632338581",
+      "16878737710": "1.1.0000000034632745861",
+      "17058402728": "1.1.0000000034632738538",
+      "17366588750": "1.1.0000000034632749514",
+      "17773925780": "1.1.0000000034632753950",
+      "17807819707": "1.1.0000000034632734124",
+      "17870426776": "1.1.0000000034632744971",
+      "18527673754": "1.1.0000000034632746970",
+      "18683242811": "1.1.0000000034632737043",
+      "19816734826": "1.1.0000000034632746792",
+      "21282806807": "1.1.0000000034632737390",
+      "21537414836": "1.1.0000000034632338194",
+      "22016884860": "1.1.0000000034632336969",
+      "22254046829": "1.1.0000000034632348930",
+      "22625316845": "1.1.0000000034632344974",
+      "23331046515": "1.1.0000000034632332618",
+      "25165831841": "1.1.0000000034632338362",
+      "26688118807": "1.1.0000000034632742118",
+      "26716454810": "1.1.0000000034632338564",
+      "27383376862": "1.1.0000000034632343895",
+      "27785199809": "1.1.0000000034632341068",
+      "31464512809": "1.1.0000000034632343536",
+      "31692526820": "1.1.0000000034632339363",
+      "31869297504": "1.1.0000000034632744051",
+      "32039053883": "1.1.0000000034632739513",
+      "32090731800": "1.1.0000000034632737144",
+      "33576378553": "1.1.0000000034632744517",
+      "34622695855": "1.1.0000000034632742372",
+      "35392613896": "1.1.0000000034632729472",
+      "36289301896": "1.1.0000000034632741728",
+      "36704265821": "1.1.0000000034632746587",
+      "37551176810": "1.1.0000000034632733670",
+      "40202776808": "1.1.0000000034632747623",
+      "41023696860": "1.1.0000000034632343678",
+      "41520707819": "1.1.0000000034632339042",
+      "43806228515": "1.1.0000000034632728531",
+      "44826672934": "1.1.0000000034632737404",
+      "46911108870": "1.1.0000000034632746294",
+      "48220270829": "1.1.0000000034632339591",
+      "48735051515": "1.1.0000000034632753282",
+      "51505932220": "1.1.0000000034632321056",
+      "54435528215": "1.1.0000000034632326183",
+      "54876206520": "1.1.0000000034632743901",
+      "56936230504": "1.1.0000000034632732958",
+      "60221432337": "1.1.0000000034632748654",
+      "61299448291": "1.1.0000000034632749113",
+      "63529980978": "1.1.0000000034632737629",
+      "64157890906": "1.1.0000000034632325751",
+      "64517322572": "1.1.0000000034632348230",
+      "68977328934": "1.1.0000000034632748958",
+      "70531499430": "1.1.0000000034632337167",
+      "71430199172": "1.1.0000000034632746840",
+      "72464224987": "1.1.0000000034632322452",
+      "72804351149": "1.1.0000000034632327081",
+      "73733202287": "1.1.0000000034632327199",
+      "76745961334": "1.1.0000000034632345260",
+      "77299566915": "1.1.0000000034632738025",
+      "78490723591": "1.1.0000000034632333116",
+      "78730686504": "1.1.0000000034632743265",
+      "79729045534": "1.1.0000000034632745907",
+      "80586058591": "1.1.0000000034632334477",
+      "82225818134": "1.1.0000000034632736662",
+      "83637109972": "1.1.0000000034632321943",
+      "83649557649": "1.1.0000000034632325811",
+      "84856530178": "1.1.0000000034632734254",
+      "85560537772": "1.1.0000000034632734160",
+      "85794832550": "1.1.0000000034632338044",
+      "86005036556": "1.1.0000000034632753484",
+      "86108173505": "1.1.0000000034632745556",
+      "89162072900": "1.1.0000000034632741433",
+      "90803612591": "1.1.0000000034632339351",
+      "93980973972": "1.1.0000000034632330491",
+      "94214573587": "1.1.0000000034632734177",
+      "95866604949": "1.1.0000000034632738408",
+      "96203048704": "1.1.0000000034632343790",
+      "96949805934": "1.1.0000000034632327818",
+      "97024996587": "1.1.0000000034632745181",
+      "99577186220": "1.1.0000000034632749140"
+    }
+  },
+  "pensao": {
+    "rows_cpfs_total": 39,
+    "current_pensao_total": 4,
+    "covered": 4,
+    "missing": [],
+    "sample": {
+      "03585456928": [
+        {
+          "vinculo": "VANDERLEI APARECIDO MOREIRA SIMAO",
+          "evento": "Pensao Judicial Salario",
+          "nr_evento": "1440",
+          "percentual": "30",
+          "valor": "698.84",
+          "data": "01/08/2025"
+        }
+      ],
+      "08551918486": [
+        {
+          "vinculo": "EDINALDO LOPES DE LIMA JUNIOR",
+          "evento": "Desc. Pensao Alimenticia Salario",
+          "nr_evento": "215117",
+          "percentual": "20",
+          "valor": "305.73",
+          "data": "01/08/2025"
+        }
+      ],
+      "12537867718": [
+        {
+          "vinculo": "PRISCILA DA SILVA SOUZA",
+          "evento": "Pensao Judicial Salario",
+          "nr_evento": "1440",
+          "percentual": "20",
+          "valor": "368.92",
+          "data": "01/08/2025"
+        }
+      ],
+      "39428963895": [
+        {
+          "vinculo": "VANESSA APARECIDA DE MATTOS",
+          "evento": "Pensao Judicial Salario",
+          "nr_evento": "1440",
+          "percentual": "20",
+          "valor": "550.68",
+          "data": "01/08/2025"
+        }
+      ]
+    },
+    "xml_inspection": {
+      "counters": {
+        "total": 4,
+        "plan_saude_presente": 0,
+        "penAlim_presente": 0,
+        "dedDepen_presente": 0
+      },
+      "details": [
+        {
+          "cpf": "03585456928",
+          "erro_xml": "OperationalError: ERROR:  large object 175878 does not exist\n"
+        },
+        {
+          "cpf": "08551918486",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "12537867718",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "39428963895",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        }
+      ]
+    }
+  },
+  "plano_saude": {
+    "current_plano_total": 99,
+    "operadoras_event_codes": 25,
+    "operadoras_names": 13,
+    "operadoras_sheets": {
+      "OPERADORAS": 11,
+      "VERBAS FOPAG 12.2025": 30
+    },
+    "s1210_operadoras_db": {
+      "ok": true,
+      "rows": []
+    },
+    "xml_inspection": {
+      "counters": {
+        "total": 99,
+        "plan_saude_presente": 0,
+        "penAlim_presente": 0,
+        "dedDepen_presente": 0
+      },
+      "details": [
+        {
+          "cpf": "00555440370",
+          "erro_xml": "OperationalError: ERROR:  large object 143562 does not exist\n"
+        },
+        {
+          "cpf": "02346385832",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "02713285844",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "02979332305",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "04224010569",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "07463327850",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "07634291714",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "07861242889",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "07863498830",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "07863548870",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "08865298839",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "09548614855",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "09552153824",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "09559713817",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "09612497656",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "10213292823",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "10639034837",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "11438810873",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "11746677880",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "11984250833",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "11999740807",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "12265702838",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "12601629827",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "12611014809",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "13660429805",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "13696451800",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "13705060821",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "13711160832",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "14193059804",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "14418818839",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "15057517805",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "15509458828",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "17725269835",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "18401846803",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "20315573864",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "21288302819",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "21653555831",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "21777491827",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "21804920819",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "21899082808",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "22229832824",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "22455023885",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "22617602800",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "22617893863",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "22647816883",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "22730253866",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "24945783888",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "25169797893",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "25585996827",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "26176873843",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "26349271858",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "26662467871",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "26903366857",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "27156659898",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "27206786863",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "27244289863",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "27984880875",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "28102078871",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "28328079844",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "29014861850",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "29813948353",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "29928815895",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "30516064215",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "30729903877",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "30748912894",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "30761016848",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "30815823851",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "30877919895",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "31268487880",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "31428650806",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "31798008874",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "32394567880",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "32875046810",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "33030723372",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "33387996837",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "33593392828",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "34212228866",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "34917814855",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "35716135897",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "35791396813",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "36984839807",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "37495188820",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "37824282856",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "38072051873",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "38678364858",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "38870126404",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "40805764801",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "41190097850",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "42526219841",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "43582114880",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "44752439808",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "45244860895",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "51109062893",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "61623830400",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "67578284568",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "73902209372",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "87041065472",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "90578570904",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "98234110187",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        }
+      ]
+    }
+  },
+  "aviso_202": {
+    "total": 119,
+    "xml_inspection": {
+      "counters": {
+        "total": 119,
+        "plan_saude_presente": 0,
+        "penAlim_presente": 0,
+        "dedDepen_presente": 0
+      },
+      "details": [
+        {
+          "cpf": "00560567103",
+          "erro_xml": "OperationalError: ERROR:  large object 153331 does not exist\n"
+        },
+        {
+          "cpf": "00779604407",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "00924781157",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "00931996430",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "01197621458",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "01342641507",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "01443091499",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "01450839509",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "01655281500",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "01987352190",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "02254091786",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "02525541324",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "02668183154",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "02691360539",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "02708236385",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "02941091700",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "03050636696",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "03082166792",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "03415419584",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "03418753418",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "03456861796",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "03470657750",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "03499760401",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "03551743169",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "03775596445",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "03884524470",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "04102191429",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "04140693401",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "04202911482",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "04239333458",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "04240549493",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "04240556430",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "04260837419",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "04472251469",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "04532926408",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "04575626414",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "04598209402",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "04747697470",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "04893823477",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "05161404426",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "05365128761",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "05390784766",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "05406893432",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "05488285474",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "05513724430",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "05664595400",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "05771971421",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "05774255794",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "05788537797",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "05986727703",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "06700501482",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "06721434458",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "06838610426",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "06894360413",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "07010962413",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "07047686401",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "07161826454",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "07196986423",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "07506531402",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "07750537406",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "07776275409",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "07833429422",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "07856021438",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "07923038490",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "08353059452",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "08405088750",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "08441489467",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "08554135733",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "08571172463",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "08852402438",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "09278365726",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "09340578422",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "09568580743",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "09705541760",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "09821166407",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "09849145790",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "09981664723",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "10057336431",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "10108325490",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "10154281425",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "10617805709",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "10703646494",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "11191263711",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "11227994460",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "11500569755",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "11553980760",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "11679938886",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "11915524709",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "11994427477",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "12501850769",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "13182452738",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "15275584792",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "15447916747",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "15701224740",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "17087835718",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "17699409876",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "19354014755",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "25366903858",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "29387931897",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "30280615892",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "30730892840",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "32571450808",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "33681242852",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "33834306851",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "34286723801",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "34875548877",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "35832326822",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "37647871803",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "40236751808",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "40806733888",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "41310627800",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "51811987168",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "74838130163",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "85132993168",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "88812090125",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "89107241534",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "89258258487",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "94928495420",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        },
+        {
+          "cpf": "98397435468",
+          "erro_xml": "OperationalError: ERROR:  current transaction is aborted, commands ignored until end of transaction block\n"
+        }
+      ]
+    }
+  },
+  "other_groups": {
+    "overlap_1089": 55,
+    "duplicidade_543_sem_mudanca": 127
+  }
+}

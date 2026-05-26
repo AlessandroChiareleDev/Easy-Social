@@ -1,0 +1,64 @@
+{
+  "empresa_id": 2,
+  "per_apur": "2025-11",
+  "regra": "retry 401/1861 de dedDepen: inserir infoDep/cpfDep para CPFs ja usados em dedDepen",
+  "total_current_1861": 2,
+  "total_retry": 1,
+  "total_skipped": 1,
+  "targets": [
+    {
+      "cpf": "81529368553",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-11\\retry_deddepen_infodep_1861\\xml_unsigned\\S1210_2025-11_81529368553_deddepen_infodep_1861_unsigned.xml",
+      "evento_id": 3246953,
+      "nr_recibo": "1.1.0000000036739483071",
+      "id_evento": "ID1094455020000002026052021083500002",
+      "latest_item_id": 173185,
+      "latest_envio_id": 1126,
+      "dependentes": [
+        "09274813597",
+        "09274837500"
+      ],
+      "dependentes_mensagem": [
+        "09274813597",
+        "09274837500"
+      ],
+      "validation": {
+        "source_id": "ID1094455020000002026052010234100005",
+        "new_id": "ID1094455020000002026052021083500002",
+        "nrRecibo": "1.1.0000000036739483071",
+        "dedDepen": [
+          "09274813597",
+          "09274837500"
+        ],
+        "dependentes_mensagem": [
+          "09274813597",
+          "09274837500"
+        ],
+        "infoDep_inserted": [
+          "09274813597",
+          "09274837500"
+        ],
+        "infoDep": [
+          "09274813597",
+          "09274837500"
+        ]
+      }
+    }
+  ],
+  "skipped": [
+    {
+      "item_id": 191844,
+      "envio_id": 1236,
+      "cpf": "08551918486",
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "erro_mensagem": "401: Conteudo do evento inválido. | 1861: CPF do dependente 09345921443 inválido.\nAção sugerida: Deve ser um CPF de dependente cadastrado no RET do eSocial ou no grupo de Informações de Dependentes do próprio evento.",
+      "nr_recibo_anterior": "1.1.0000000036739602829",
+      "nr_recibo_novo": null,
+      "versao_anterior_id": 3279071,
+      "xml_enviado_oid": 2497224,
+      "criado_em": "2026-05-20 21:03:23.991553",
+      "reason": "RuntimeError: dedDepen ausente"
+    }
+  ]
+}

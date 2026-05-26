@@ -1,0 +1,540 @@
+{
+  "00001931946": {
+    "timeline": [
+      {
+        "id": 157035,
+        "envio_id": 927,
+        "status": "erro_esocial",
+        "erro": "401",
+        "rec_ant": "1.1.0000000034636459641",
+        "rec_novo": null,
+        "v_ant_id": 247842,
+        "criado": "2026-05-19T19:29:08.091341"
+      },
+      {
+        "id": 156046,
+        "envio_id": 893,
+        "status": "sem_mudanca",
+        "erro": "SEM_MUDANCA",
+        "rec_ant": "1.1.0000000034636459641",
+        "rec_novo": null,
+        "v_ant_id": 247842,
+        "criado": "2026-05-16T02:48:52.782277"
+      },
+      {
+        "id": 524,
+        "envio_id": 13,
+        "status": "erro_esocial",
+        "erro": "401",
+        "rec_ant": "1.1.0000000034695453274",
+        "rec_novo": null,
+        "v_ant_id": 247842,
+        "criado": "2026-05-07T15:09:00.005193"
+      },
+      {
+        "id": 425,
+        "envio_id": 11,
+        "status": "erro_esocial",
+        "erro": "401",
+        "rec_ant": "1.1.0000000034636459641",
+        "rec_novo": null,
+        "v_ant_id": 259679,
+        "criado": "2026-05-07T12:28:10.411910"
+      },
+      {
+        "id": 424,
+        "envio_id": 11,
+        "status": "sucesso",
+        "erro": null,
+        "rec_ant": "1.1.0000000034695453274",
+        "rec_novo": "1.1.0000000040559048249",
+        "v_ant_id": 247842,
+        "criado": "2026-05-07T12:28:10.411910"
+      },
+      {
+        "id": 414,
+        "envio_id": 10,
+        "status": "pendente",
+        "erro": "SEM_RETORNO",
+        "rec_ant": "1.1.0000000034695453274",
+        "rec_novo": null,
+        "v_ant_id": 247842,
+        "criado": "2026-05-07T12:21:09.663165"
+      },
+      {
+        "id": 415,
+        "envio_id": 10,
+        "status": "pendente",
+        "erro": "SEM_RETORNO",
+        "rec_ant": "1.1.0000000034636459641",
+        "rec_novo": null,
+        "v_ant_id": 259679,
+        "criado": "2026-05-07T12:21:09.663165"
+      },
+      {
+        "id": 405,
+        "envio_id": 9,
+        "status": "erro_esocial",
+        "erro": "401",
+        "rec_ant": "1.1.0000000034636459641",
+        "rec_novo": null,
+        "v_ant_id": 259679,
+        "criado": "2026-05-07T12:18:55.941786"
+      },
+      {
+        "id": 404,
+        "envio_id": 9,
+        "status": "erro_esocial",
+        "erro": "401",
+        "rec_ant": "1.1.0000000034695453274",
+        "rec_novo": null,
+        "v_ant_id": 247842,
+        "criado": "2026-05-07T12:18:55.941786"
+      },
+      {
+        "id": 403,
+        "envio_id": 8,
+        "status": "pendente",
+        "erro": "SEM_RETORNO",
+        "rec_ant": "1.1.0000000034695453274",
+        "rec_novo": null,
+        "v_ant_id": 247842,
+        "criado": "2026-05-07T12:13:37.884281"
+      },
+      {
+        "id": 402,
+        "envio_id": 7,
+        "status": "pendente",
+        "erro": "SEM_RETORNO",
+        "rec_ant": "1.1.0000000034695453274",
+        "rec_novo": null,
+        "v_ant_id": 247842,
+        "criado": "2026-05-07T12:12:24.334768"
+      },
+      {
+        "id": 303,
+        "envio_id": 6,
+        "status": "erro_esocial",
+        "erro": "401",
+        "rec_ant": "1.1.0000000034636459641",
+        "rec_novo": null,
+        "v_ant_id": 259679,
+        "criado": "2026-05-07T12:09:33.312424"
+      },
+      {
+        "id": 302,
+        "envio_id": 6,
+        "status": "erro_esocial",
+        "erro": "401",
+        "rec_ant": "1.1.0000000034695453274",
+        "rec_novo": null,
+        "v_ant_id": 247842,
+        "criado": "2026-05-07T12:09:33.312424"
+      },
+      {
+        "id": 203,
+        "envio_id": 5,
+        "status": "erro_esocial",
+        "erro": "401",
+        "rec_ant": "1.1.0000000034636459641",
+        "rec_novo": null,
+        "v_ant_id": 259679,
+        "criado": "2026-05-07T11:50:12.699697"
+      },
+      {
+        "id": 202,
+        "envio_id": 5,
+        "status": "erro_esocial",
+        "erro": "401",
+        "rec_ant": "1.1.0000000034695453274",
+        "rec_novo": null,
+        "v_ant_id": 247842,
+        "criado": "2026-05-07T11:50:12.699697"
+      },
+      {
+        "id": 3,
+        "envio_id": 3,
+        "status": "erro_esocial",
+        "erro": "401",
+        "rec_ant": "1.1.0000000034636459641",
+        "rec_novo": null,
+        "v_ant_id": 259679,
+        "criado": "2026-05-07T05:49:43.654014"
+      },
+      {
+        "id": 2,
+        "envio_id": 3,
+        "status": "erro_esocial",
+        "erro": "401",
+        "rec_ant": "1.1.0000000034695453274",
+        "rec_novo": null,
+        "v_ant_id": 247842,
+        "criado": "2026-05-07T05:49:43.654014"
+      },
+      {
+        "id": 1,
+        "envio_id": 2,
+        "status": "erro_esocial",
+        "erro": "401",
+        "rec_ant": "1.1.0000000034695453274",
+        "rec_novo": null,
+        "v_ant_id": 247842,
+        "criado": "2026-05-07T05:49:19.270941"
+      }
+    ],
+    "explorador": [
+      {
+        "id": 247842,
+        "nr_recibo": "1.1.0000000034695453274",
+        "id_evento": "ID1094455020000002025091819283700008",
+        "dt": "2025-09-18T22:28:59.513000+00:00",
+        "retif_por": null,
+        "arq": "ID1094455020000002025091819283700008.S-1210.xml",
+        "xml_entry": "ID1094455020000002025091819283700008.S-1210.xml"
+      },
+      {
+        "id": 259679,
+        "nr_recibo": "1.1.0000000034636459641",
+        "id_evento": "ID1094455020000002025091217511013038",
+        "dt": "2025-09-12T20:51:12.373000+00:00",
+        "retif_por": 247842,
+        "arq": "ID1094455020000002025091217511013038.S-1210.xml",
+        "xml_entry": "ID1094455020000002025091217511013038.S-1210.xml"
+      }
+    ]
+  },
+  "00004179129": {
+    "timeline": [
+      {
+        "id": 157036,
+        "envio_id": 927,
+        "status": "erro_esocial",
+        "erro": "401",
+        "rec_ant": "1.1.0000000034619811079",
+        "rec_novo": null,
+        "v_ant_id": 214748,
+        "criado": "2026-05-19T19:29:08.091341"
+      },
+      {
+        "id": 156047,
+        "envio_id": 894,
+        "status": "sem_mudanca",
+        "erro": "SEM_MUDANCA",
+        "rec_ant": "1.1.0000000034619811079",
+        "rec_novo": null,
+        "v_ant_id": 214748,
+        "criado": "2026-05-16T02:50:18.682884"
+      },
+      {
+        "id": 525,
+        "envio_id": 13,
+        "status": "erro_esocial",
+        "erro": "401",
+        "rec_ant": "1.1.0000000034695359470",
+        "rec_novo": null,
+        "v_ant_id": 214748,
+        "criado": "2026-05-07T15:09:00.005193"
+      },
+      {
+        "id": 427,
+        "envio_id": 11,
+        "status": "erro_esocial",
+        "erro": "401",
+        "rec_ant": "1.1.0000000034619811079",
+        "rec_novo": null,
+        "v_ant_id": 321192,
+        "criado": "2026-05-07T12:28:10.411910"
+      },
+      {
+        "id": 426,
+        "envio_id": 11,
+        "status": "sucesso",
+        "erro": null,
+        "rec_ant": "1.1.0000000034695359470",
+        "rec_novo": "1.1.0000000040559049174",
+        "v_ant_id": 214748,
+        "criado": "2026-05-07T12:28:10.411910"
+      },
+      {
+        "id": 416,
+        "envio_id": 10,
+        "status": "pendente",
+        "erro": "SEM_RETORNO",
+        "rec_ant": "1.1.0000000034695359470",
+        "rec_novo": null,
+        "v_ant_id": 214748,
+        "criado": "2026-05-07T12:21:09.663165"
+      },
+      {
+        "id": 417,
+        "envio_id": 10,
+        "status": "pendente",
+        "erro": "SEM_RETORNO",
+        "rec_ant": "1.1.0000000034619811079",
+        "rec_novo": null,
+        "v_ant_id": 321192,
+        "criado": "2026-05-07T12:21:09.663165"
+      },
+      {
+        "id": 407,
+        "envio_id": 9,
+        "status": "erro_esocial",
+        "erro": "401",
+        "rec_ant": "1.1.0000000034619811079",
+        "rec_novo": null,
+        "v_ant_id": 321192,
+        "criado": "2026-05-07T12:18:55.941786"
+      },
+      {
+        "id": 406,
+        "envio_id": 9,
+        "status": "erro_esocial",
+        "erro": "401",
+        "rec_ant": "1.1.0000000034695359470",
+        "rec_novo": null,
+        "v_ant_id": 214748,
+        "criado": "2026-05-07T12:18:55.941786"
+      },
+      {
+        "id": 305,
+        "envio_id": 6,
+        "status": "erro_esocial",
+        "erro": "401",
+        "rec_ant": "1.1.0000000034695359470",
+        "rec_novo": null,
+        "v_ant_id": 214748,
+        "criado": "2026-05-07T12:09:33.312424"
+      },
+      {
+        "id": 304,
+        "envio_id": 6,
+        "status": "erro_esocial",
+        "erro": "401",
+        "rec_ant": "1.1.0000000034619811079",
+        "rec_novo": null,
+        "v_ant_id": 321192,
+        "criado": "2026-05-07T12:09:33.312424"
+      },
+      {
+        "id": 204,
+        "envio_id": 5,
+        "status": "erro_esocial",
+        "erro": "401",
+        "rec_ant": "1.1.0000000034619811079",
+        "rec_novo": null,
+        "v_ant_id": 321192,
+        "criado": "2026-05-07T11:50:12.699697"
+      },
+      {
+        "id": 205,
+        "envio_id": 5,
+        "status": "erro_esocial",
+        "erro": "401",
+        "rec_ant": "1.1.0000000034695359470",
+        "rec_novo": null,
+        "v_ant_id": 214748,
+        "criado": "2026-05-07T11:50:12.699697"
+      },
+      {
+        "id": 4,
+        "envio_id": 3,
+        "status": "erro_esocial",
+        "erro": "401",
+        "rec_ant": "1.1.0000000034619811079",
+        "rec_novo": null,
+        "v_ant_id": 321192,
+        "criado": "2026-05-07T05:49:43.654014"
+      },
+      {
+        "id": 5,
+        "envio_id": 3,
+        "status": "erro_esocial",
+        "erro": "401",
+        "rec_ant": "1.1.0000000034695359470",
+        "rec_novo": null,
+        "v_ant_id": 214748,
+        "criado": "2026-05-07T05:49:43.654014"
+      }
+    ],
+    "explorador": [
+      {
+        "id": 214748,
+        "nr_recibo": "1.1.0000000034695359470",
+        "id_evento": "ID1094455020000002025091819083700002",
+        "dt": "2025-09-18T22:08:54.983000+00:00",
+        "retif_por": null,
+        "arq": "ID1094455020000002025091819083700002.S-1210.xml",
+        "xml_entry": "ID1094455020000002025091819083700002.S-1210.xml"
+      },
+      {
+        "id": 321192,
+        "nr_recibo": "1.1.0000000034619811079",
+        "id_evento": "ID1094455020000002025091208214194694",
+        "dt": "2025-09-12T11:21:42.970000+00:00",
+        "retif_por": 214748,
+        "arq": "ID1094455020000002025091208214194694.S-1210.xml",
+        "xml_entry": "ID1094455020000002025091208214194694.S-1210.xml"
+      }
+    ]
+  },
+  "00005083575": {
+    "timeline": [
+      {
+        "id": 157037,
+        "envio_id": 927,
+        "status": "erro_esocial",
+        "erro": "401",
+        "rec_ant": "1.1.0000000034632291632",
+        "rec_novo": null,
+        "v_ant_id": 225916,
+        "criado": "2026-05-19T19:29:08.091341"
+      },
+      {
+        "id": 156048,
+        "envio_id": 894,
+        "status": "sem_mudanca",
+        "erro": "SEM_MUDANCA",
+        "rec_ant": "1.1.0000000034632291632",
+        "rec_novo": null,
+        "v_ant_id": 225916,
+        "criado": "2026-05-16T02:50:18.682884"
+      },
+      {
+        "id": 526,
+        "envio_id": 13,
+        "status": "erro_esocial",
+        "erro": "401",
+        "rec_ant": "1.1.0000000034695375738",
+        "rec_novo": null,
+        "v_ant_id": 225916,
+        "criado": "2026-05-07T15:09:00.005193"
+      },
+      {
+        "id": 428,
+        "envio_id": 11,
+        "status": "sucesso",
+        "erro": null,
+        "rec_ant": "1.1.0000000034695375738",
+        "rec_novo": "1.1.0000000040559050227",
+        "v_ant_id": 225916,
+        "criado": "2026-05-07T12:28:10.411910"
+      },
+      {
+        "id": 418,
+        "envio_id": 10,
+        "status": "pendente",
+        "erro": "SEM_RETORNO",
+        "rec_ant": "1.1.0000000034695375738",
+        "rec_novo": null,
+        "v_ant_id": 225916,
+        "criado": "2026-05-07T12:21:09.663165"
+      },
+      {
+        "id": 408,
+        "envio_id": 9,
+        "status": "erro_esocial",
+        "erro": "401",
+        "rec_ant": "1.1.0000000034695375738",
+        "rec_novo": null,
+        "v_ant_id": 225916,
+        "criado": "2026-05-07T12:18:55.941786"
+      },
+      {
+        "id": 306,
+        "envio_id": 6,
+        "status": "erro_esocial",
+        "erro": "401",
+        "rec_ant": "1.1.0000000034695375738",
+        "rec_novo": null,
+        "v_ant_id": 225916,
+        "criado": "2026-05-07T12:09:33.312424"
+      },
+      {
+        "id": 206,
+        "envio_id": 5,
+        "status": "erro_esocial",
+        "erro": "401",
+        "rec_ant": "1.1.0000000034695375738",
+        "rec_novo": null,
+        "v_ant_id": 225916,
+        "criado": "2026-05-07T11:50:12.699697"
+      },
+      {
+        "id": 6,
+        "envio_id": 3,
+        "status": "erro_esocial",
+        "erro": "401",
+        "rec_ant": "1.1.0000000034695375738",
+        "rec_novo": null,
+        "v_ant_id": 225916,
+        "criado": "2026-05-07T05:49:43.654014"
+      }
+    ],
+    "explorador": [
+      {
+        "id": 225916,
+        "nr_recibo": "1.1.0000000034695375738",
+        "id_evento": "ID1094455020000002025091819125200002",
+        "dt": "2025-09-18T22:13:03.397000+00:00",
+        "retif_por": null,
+        "arq": "ID1094455020000002025091819125200002.S-1210.xml",
+        "xml_entry": "ID1094455020000002025091819125200002.S-1210.xml"
+      }
+    ]
+  },
+  "00371133564": {
+    "timeline": [
+      {
+        "id": 157047,
+        "envio_id": 927,
+        "status": "erro_esocial",
+        "erro": "401",
+        "rec_ant": "1.1.0000000034619586048",
+        "rec_novo": null,
+        "v_ant_id": 209414,
+        "criado": "2026-05-19T19:29:08.091341"
+      },
+      {
+        "id": 156058,
+        "envio_id": 895,
+        "status": "sem_mudanca",
+        "erro": "SEM_MUDANCA",
+        "rec_ant": "1.1.0000000034619586048",
+        "rec_novo": null,
+        "v_ant_id": 209414,
+        "criado": "2026-05-16T02:51:03.233156"
+      },
+      {
+        "id": 644,
+        "envio_id": 13,
+        "status": "erro_esocial",
+        "erro": "401",
+        "rec_ant": "1.1.0000000034695348107",
+        "rec_novo": null,
+        "v_ant_id": 209414,
+        "criado": "2026-05-07T15:09:00.005193"
+      },
+      {
+        "id": 500,
+        "envio_id": 12,
+        "status": "sucesso",
+        "erro": null,
+        "rec_ant": "1.1.0000000034695348107",
+        "rec_novo": "1.1.0000000040560194509",
+        "v_ant_id": 209414,
+        "criado": "2026-05-07T12:49:53.895548"
+      }
+    ],
+    "explorador": [
+      {
+        "id": 209414,
+        "nr_recibo": "1.1.0000000034695348107",
+        "id_evento": "ID1094455020000002025091819054700012",
+        "dt": "2025-09-18T22:06:02.543000+00:00",
+        "retif_por": null,
+        "arq": "ID1094455020000002025091819054700012.S-1210.xml",
+        "xml_entry": "ID1094455020000002025091819054700012.S-1210.xml"
+      }
+    ]
+  }
+}

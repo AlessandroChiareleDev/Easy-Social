@@ -1,0 +1,277 @@
+{
+  "timestamp": "2026-05-20T20:50:40",
+  "source": "LOCAL_DB_CONFIG_as_appa_fallback",
+  "db": {
+    "db": "easy_social_db",
+    "schema": "public"
+  },
+  "tables": {
+    "s1299_fechamento_status": {
+      "exists": false
+    },
+    "explorador_eventos": {
+      "exists": false
+    },
+    "esocial_envios": {
+      "exists": true,
+      "columns": [
+        {
+          "column_name": "id",
+          "data_type": "integer"
+        },
+        {
+          "column_name": "tipo_evento",
+          "data_type": "character varying"
+        },
+        {
+          "column_name": "modo",
+          "data_type": "character varying"
+        },
+        {
+          "column_name": "status",
+          "data_type": "character varying"
+        },
+        {
+          "column_name": "protocolo_envio",
+          "data_type": "character varying"
+        },
+        {
+          "column_name": "codigo_resposta",
+          "data_type": "character varying"
+        },
+        {
+          "column_name": "descricao_resposta",
+          "data_type": "text"
+        },
+        {
+          "column_name": "total_eventos",
+          "data_type": "integer"
+        },
+        {
+          "column_name": "rubrica_ids",
+          "data_type": "jsonb"
+        },
+        {
+          "column_name": "xml_retorno",
+          "data_type": "text"
+        },
+        {
+          "column_name": "ocorrencias",
+          "data_type": "jsonb"
+        },
+        {
+          "column_name": "created_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column_name": "updated_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column_name": "ambiente",
+          "data_type": "character varying"
+        },
+        {
+          "column_name": "ini_valid",
+          "data_type": "character varying"
+        },
+        {
+          "column_name": "rubrica_detalhes",
+          "data_type": "jsonb"
+        },
+        {
+          "column_name": "xml_enviado",
+          "data_type": "text"
+        },
+        {
+          "column_name": "recibo_consulta",
+          "data_type": "jsonb"
+        },
+        {
+          "column_name": "nr_recibo",
+          "data_type": "character varying"
+        }
+      ]
+    },
+    "pipeline_runs": {
+      "exists": false
+    },
+    "pipeline_cpf_results": {
+      "exists": false
+    },
+    "certificados_a1": {
+      "exists": true,
+      "columns": [
+        {
+          "column_name": "id",
+          "data_type": "integer"
+        },
+        {
+          "column_name": "cnpj",
+          "data_type": "character varying"
+        },
+        {
+          "column_name": "titular",
+          "data_type": "character varying"
+        },
+        {
+          "column_name": "emissor",
+          "data_type": "character varying"
+        },
+        {
+          "column_name": "numero_serie",
+          "data_type": "character varying"
+        },
+        {
+          "column_name": "validade_inicio",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column_name": "validade_fim",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column_name": "arquivo_path",
+          "data_type": "character varying"
+        },
+        {
+          "column_name": "senha_encrypted",
+          "data_type": "text"
+        },
+        {
+          "column_name": "ativo",
+          "data_type": "boolean"
+        },
+        {
+          "column_name": "created_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column_name": "updated_at",
+          "data_type": "timestamp without time zone"
+        },
+        {
+          "column_name": "empresa_id",
+          "data_type": "integer"
+        }
+      ]
+    }
+  },
+  "certs": [
+    {
+      "id": 139,
+      "cnpj": "05969071000110",
+      "titular": "APPA SERVICOS TEMPORARIOS E EFETIVOS LTDA:05969071000110",
+      "ativo": true,
+      "basename": "cert_05969071000110_45C7EBE84F3FE665.pfx",
+      "exists": true
+    },
+    {
+      "id": 179,
+      "cnpj": "09445502000109",
+      "titular": "SOLUCOES SERVICOS TERCEIRIZADOS LTDA",
+      "ativo": false,
+      "basename": "SOLUCOES_SERVICOS_TERCEIRIZADOS_09445502000109.pfx",
+      "exists": true
+    },
+    {
+      "id": 177,
+      "cnpj": "12345678000190",
+      "titular": "TESTE EMPRESA LTDA",
+      "ativo": false,
+      "basename": "cert_12345678000190_4E636048DE67CCD5A307C651907389CFCB7F001F.pfx",
+      "exists": false
+    },
+    {
+      "id": 176,
+      "cnpj": "12345678000190",
+      "titular": "TESTE EMPRESA LTDA",
+      "ativo": false,
+      "basename": "cert_12345678000190_4E636048DE67CCD5A307C651907389CFCB7F001F.pfx",
+      "exists": false
+    },
+    {
+      "id": 174,
+      "cnpj": "12345678000190",
+      "titular": "TESTE EMPRESA LTDA",
+      "ativo": false,
+      "basename": "cert_12345678000190_4E636048DE67CCD5A307C651907389CFCB7F001F.pfx",
+      "exists": false
+    }
+  ],
+  "esocial_envios_s1299": [],
+  "derived_status": [
+    {
+      "per_apur": "2025-01",
+      "state": "sem_fechamento_local",
+      "status_table": null,
+      "last_periodic": null
+    },
+    {
+      "per_apur": "2025-02",
+      "state": "sem_fechamento_local",
+      "status_table": null,
+      "last_periodic": null
+    },
+    {
+      "per_apur": "2025-03",
+      "state": "sem_fechamento_local",
+      "status_table": null,
+      "last_periodic": null
+    },
+    {
+      "per_apur": "2025-04",
+      "state": "sem_fechamento_local",
+      "status_table": null,
+      "last_periodic": null
+    },
+    {
+      "per_apur": "2025-05",
+      "state": "sem_fechamento_local",
+      "status_table": null,
+      "last_periodic": null
+    },
+    {
+      "per_apur": "2025-06",
+      "state": "sem_fechamento_local",
+      "status_table": null,
+      "last_periodic": null
+    },
+    {
+      "per_apur": "2025-07",
+      "state": "sem_fechamento_local",
+      "status_table": null,
+      "last_periodic": null
+    },
+    {
+      "per_apur": "2025-08",
+      "state": "sem_fechamento_local",
+      "status_table": null,
+      "last_periodic": null
+    },
+    {
+      "per_apur": "2025-09",
+      "state": "sem_fechamento_local",
+      "status_table": null,
+      "last_periodic": null
+    },
+    {
+      "per_apur": "2025-10",
+      "state": "sem_fechamento_local",
+      "status_table": null,
+      "last_periodic": null
+    },
+    {
+      "per_apur": "2025-11",
+      "state": "sem_fechamento_local",
+      "status_table": null,
+      "last_periodic": null
+    },
+    {
+      "per_apur": "2025-12",
+      "state": "sem_fechamento_local",
+      "status_table": null,
+      "last_periodic": null
+    }
+  ]
+}

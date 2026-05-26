@@ -1,0 +1,3708 @@
+{
+  "escopo": "SOLUCOES S-1210 perApur 2025-08 CPFs do manifesto dedDepen 202/1863",
+  "sem_consulta_esocial": true,
+  "manifest": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\manifest_correcao_202_deddepen_quinzenais.json",
+  "total_cpfs_manifest": 37,
+  "timeline_rows": 213,
+  "read_errors": {
+    "OperationalError": 37
+  },
+  "cpfs_com_recibo_local": 1,
+  "cpfs_sem_recibo_local": 36,
+  "cpfs_bloqueados_por_recibo_manifest": 36,
+  "cpf_summary": [
+    {
+      "cpf": "02254091786",
+      "manifest_recibo": "1.1.0000000040883704639",
+      "manifest_recibo_fonte": "resultado_teste_recibo_02254091786.json",
+      "envio_liberado_local_manifest": true,
+      "timeline_rows": 7,
+      "local_receipts": [
+        {
+          "fonte": "coluna_nr_recibo_novo",
+          "recibo": "1.1.0000000040883704639",
+          "status": "sucesso",
+          "erro_codigo": null,
+          "envio": 918,
+          "item": 156988,
+          "criado_em": "2026-05-19 03:07:13.249951"
+        },
+        {
+          "fonte": "xml_retorno_oid",
+          "recibo": "1.1.0000000040883704639",
+          "status": "sucesso",
+          "erro_codigo": null,
+          "envio": 918,
+          "item": 156988,
+          "criado_em": "2026-05-19 03:07:13.249951",
+          "cd_respostas": [
+            "201"
+          ]
+        }
+      ],
+      "has_local_trusted_receipt": true
+    },
+    {
+      "cpf": "03415419584",
+      "manifest_recibo": "1.1.0000000034695371967",
+      "manifest_recibo_fonte": "zip_quinzenal_cadeia_ativa",
+      "envio_liberado_local_manifest": false,
+      "timeline_rows": 6,
+      "local_receipts": [],
+      "has_local_trusted_receipt": false
+    },
+    {
+      "cpf": "03456861796",
+      "manifest_recibo": "1.1.0000000034695364701",
+      "manifest_recibo_fonte": "zip_quinzenal_cadeia_ativa",
+      "envio_liberado_local_manifest": false,
+      "timeline_rows": 6,
+      "local_receipts": [],
+      "has_local_trusted_receipt": false
+    },
+    {
+      "cpf": "03470657750",
+      "manifest_recibo": "1.1.0000000034695386479",
+      "manifest_recibo_fonte": "zip_quinzenal_cadeia_ativa",
+      "envio_liberado_local_manifest": false,
+      "timeline_rows": 6,
+      "local_receipts": [],
+      "has_local_trusted_receipt": false
+    },
+    {
+      "cpf": "04202911482",
+      "manifest_recibo": "1.1.0000000034695360470",
+      "manifest_recibo_fonte": "zip_quinzenal_cadeia_ativa",
+      "envio_liberado_local_manifest": false,
+      "timeline_rows": 6,
+      "local_receipts": [],
+      "has_local_trusted_receipt": false
+    },
+    {
+      "cpf": "04239333458",
+      "manifest_recibo": "1.1.0000000034695390734",
+      "manifest_recibo_fonte": "zip_quinzenal_cadeia_ativa",
+      "envio_liberado_local_manifest": false,
+      "timeline_rows": 6,
+      "local_receipts": [],
+      "has_local_trusted_receipt": false
+    },
+    {
+      "cpf": "04260837419",
+      "manifest_recibo": "1.1.0000000034695363999",
+      "manifest_recibo_fonte": "zip_quinzenal_cadeia_ativa",
+      "envio_liberado_local_manifest": false,
+      "timeline_rows": 6,
+      "local_receipts": [],
+      "has_local_trusted_receipt": false
+    },
+    {
+      "cpf": "04575626414",
+      "manifest_recibo": "1.1.0000000034695363623",
+      "manifest_recibo_fonte": "zip_quinzenal_cadeia_ativa",
+      "envio_liberado_local_manifest": false,
+      "timeline_rows": 6,
+      "local_receipts": [],
+      "has_local_trusted_receipt": false
+    },
+    {
+      "cpf": "05365128761",
+      "manifest_recibo": "1.1.0000000034695356132",
+      "manifest_recibo_fonte": "zip_quinzenal_cadeia_ativa",
+      "envio_liberado_local_manifest": false,
+      "timeline_rows": 6,
+      "local_receipts": [],
+      "has_local_trusted_receipt": false
+    },
+    {
+      "cpf": "05390784766",
+      "manifest_recibo": "1.1.0000000034695385887",
+      "manifest_recibo_fonte": "zip_quinzenal_cadeia_ativa",
+      "envio_liberado_local_manifest": false,
+      "timeline_rows": 6,
+      "local_receipts": [],
+      "has_local_trusted_receipt": false
+    },
+    {
+      "cpf": "05513724430",
+      "manifest_recibo": "1.1.0000000034695362130",
+      "manifest_recibo_fonte": "zip_quinzenal_cadeia_ativa",
+      "envio_liberado_local_manifest": false,
+      "timeline_rows": 6,
+      "local_receipts": [],
+      "has_local_trusted_receipt": false
+    },
+    {
+      "cpf": "05774255794",
+      "manifest_recibo": "1.1.0000000034695374141",
+      "manifest_recibo_fonte": "zip_quinzenal_cadeia_ativa",
+      "envio_liberado_local_manifest": false,
+      "timeline_rows": 6,
+      "local_receipts": [],
+      "has_local_trusted_receipt": false
+    },
+    {
+      "cpf": "05788537797",
+      "manifest_recibo": "1.1.0000000034695352620",
+      "manifest_recibo_fonte": "zip_quinzenal_cadeia_ativa",
+      "envio_liberado_local_manifest": false,
+      "timeline_rows": 6,
+      "local_receipts": [],
+      "has_local_trusted_receipt": false
+    },
+    {
+      "cpf": "05986727703",
+      "manifest_recibo": "1.1.0000000034695378344",
+      "manifest_recibo_fonte": "zip_quinzenal_cadeia_ativa",
+      "envio_liberado_local_manifest": false,
+      "timeline_rows": 6,
+      "local_receipts": [],
+      "has_local_trusted_receipt": false
+    },
+    {
+      "cpf": "08405088750",
+      "manifest_recibo": "1.1.0000000034695359966",
+      "manifest_recibo_fonte": "zip_quinzenal_cadeia_ativa",
+      "envio_liberado_local_manifest": false,
+      "timeline_rows": 6,
+      "local_receipts": [],
+      "has_local_trusted_receipt": false
+    },
+    {
+      "cpf": "08554135733",
+      "manifest_recibo": "1.1.0000000034695355753",
+      "manifest_recibo_fonte": "zip_quinzenal_cadeia_ativa",
+      "envio_liberado_local_manifest": false,
+      "timeline_rows": 6,
+      "local_receipts": [],
+      "has_local_trusted_receipt": false
+    },
+    {
+      "cpf": "09278365726",
+      "manifest_recibo": "1.1.0000000034695374534",
+      "manifest_recibo_fonte": "zip_quinzenal_cadeia_ativa",
+      "envio_liberado_local_manifest": false,
+      "timeline_rows": 1,
+      "local_receipts": [],
+      "has_local_trusted_receipt": false
+    },
+    {
+      "cpf": "09568580743",
+      "manifest_recibo": "1.1.0000000034695366028",
+      "manifest_recibo_fonte": "zip_quinzenal_cadeia_ativa",
+      "envio_liberado_local_manifest": false,
+      "timeline_rows": 6,
+      "local_receipts": [],
+      "has_local_trusted_receipt": false
+    },
+    {
+      "cpf": "09705541760",
+      "manifest_recibo": "1.1.0000000034695386340",
+      "manifest_recibo_fonte": "zip_quinzenal_cadeia_ativa",
+      "envio_liberado_local_manifest": false,
+      "timeline_rows": 6,
+      "local_receipts": [],
+      "has_local_trusted_receipt": false
+    },
+    {
+      "cpf": "09849145790",
+      "manifest_recibo": "1.1.0000000034695364414",
+      "manifest_recibo_fonte": "zip_quinzenal_cadeia_ativa",
+      "envio_liberado_local_manifest": false,
+      "timeline_rows": 6,
+      "local_receipts": [],
+      "has_local_trusted_receipt": false
+    },
+    {
+      "cpf": "09981664723",
+      "manifest_recibo": "1.1.0000000034695374572",
+      "manifest_recibo_fonte": "zip_quinzenal_cadeia_ativa",
+      "envio_liberado_local_manifest": false,
+      "timeline_rows": 1,
+      "local_receipts": [],
+      "has_local_trusted_receipt": false
+    },
+    {
+      "cpf": "10617805709",
+      "manifest_recibo": "1.1.0000000034695388036",
+      "manifest_recibo_fonte": "zip_quinzenal_cadeia_ativa",
+      "envio_liberado_local_manifest": false,
+      "timeline_rows": 6,
+      "local_receipts": [],
+      "has_local_trusted_receipt": false
+    },
+    {
+      "cpf": "11191263711",
+      "manifest_recibo": "1.1.0000000034695339861",
+      "manifest_recibo_fonte": "zip_quinzenal_cadeia_ativa",
+      "envio_liberado_local_manifest": false,
+      "timeline_rows": 6,
+      "local_receipts": [],
+      "has_local_trusted_receipt": false
+    },
+    {
+      "cpf": "11500569755",
+      "manifest_recibo": "1.1.0000000034695359560",
+      "manifest_recibo_fonte": "zip_quinzenal_cadeia_ativa",
+      "envio_liberado_local_manifest": false,
+      "timeline_rows": 6,
+      "local_receipts": [],
+      "has_local_trusted_receipt": false
+    },
+    {
+      "cpf": "11553980760",
+      "manifest_recibo": "1.1.0000000034695356048",
+      "manifest_recibo_fonte": "zip_quinzenal_cadeia_ativa",
+      "envio_liberado_local_manifest": false,
+      "timeline_rows": 6,
+      "local_receipts": [],
+      "has_local_trusted_receipt": false
+    },
+    {
+      "cpf": "11915524709",
+      "manifest_recibo": "1.1.0000000034695340278",
+      "manifest_recibo_fonte": "zip_quinzenal_cadeia_ativa",
+      "envio_liberado_local_manifest": false,
+      "timeline_rows": 6,
+      "local_receipts": [],
+      "has_local_trusted_receipt": false
+    },
+    {
+      "cpf": "11994427477",
+      "manifest_recibo": "1.1.0000000034695360413",
+      "manifest_recibo_fonte": "zip_quinzenal_cadeia_ativa",
+      "envio_liberado_local_manifest": false,
+      "timeline_rows": 6,
+      "local_receipts": [],
+      "has_local_trusted_receipt": false
+    },
+    {
+      "cpf": "12501850769",
+      "manifest_recibo": "1.1.0000000034695374775",
+      "manifest_recibo_fonte": "zip_quinzenal_cadeia_ativa",
+      "envio_liberado_local_manifest": false,
+      "timeline_rows": 6,
+      "local_receipts": [],
+      "has_local_trusted_receipt": false
+    },
+    {
+      "cpf": "13182452738",
+      "manifest_recibo": "1.1.0000000034695349383",
+      "manifest_recibo_fonte": "zip_quinzenal_cadeia_ativa",
+      "envio_liberado_local_manifest": false,
+      "timeline_rows": 6,
+      "local_receipts": [],
+      "has_local_trusted_receipt": false
+    },
+    {
+      "cpf": "15275584792",
+      "manifest_recibo": "1.1.0000000034695367278",
+      "manifest_recibo_fonte": "zip_quinzenal_cadeia_ativa",
+      "envio_liberado_local_manifest": false,
+      "timeline_rows": 6,
+      "local_receipts": [],
+      "has_local_trusted_receipt": false
+    },
+    {
+      "cpf": "15447916747",
+      "manifest_recibo": "1.1.0000000034695356074",
+      "manifest_recibo_fonte": "zip_quinzenal_cadeia_ativa",
+      "envio_liberado_local_manifest": false,
+      "timeline_rows": 6,
+      "local_receipts": [],
+      "has_local_trusted_receipt": false
+    },
+    {
+      "cpf": "17087835718",
+      "manifest_recibo": "1.1.0000000034695461759",
+      "manifest_recibo_fonte": "zip_quinzenal_cadeia_ativa",
+      "envio_liberado_local_manifest": false,
+      "timeline_rows": 6,
+      "local_receipts": [],
+      "has_local_trusted_receipt": false
+    },
+    {
+      "cpf": "19354014755",
+      "manifest_recibo": "1.1.0000000034695355772",
+      "manifest_recibo_fonte": "zip_quinzenal_cadeia_ativa",
+      "envio_liberado_local_manifest": false,
+      "timeline_rows": 6,
+      "local_receipts": [],
+      "has_local_trusted_receipt": false
+    },
+    {
+      "cpf": "35832326822",
+      "manifest_recibo": "1.1.0000000034695388412",
+      "manifest_recibo_fonte": "zip_quinzenal_cadeia_ativa",
+      "envio_liberado_local_manifest": false,
+      "timeline_rows": 6,
+      "local_receipts": [],
+      "has_local_trusted_receipt": false
+    },
+    {
+      "cpf": "40236751808",
+      "manifest_recibo": "1.1.0000000034695342812",
+      "manifest_recibo_fonte": "zip_quinzenal_cadeia_ativa",
+      "envio_liberado_local_manifest": false,
+      "timeline_rows": 6,
+      "local_receipts": [],
+      "has_local_trusted_receipt": false
+    },
+    {
+      "cpf": "41310627800",
+      "manifest_recibo": "1.1.0000000034695352697",
+      "manifest_recibo_fonte": "zip_quinzenal_cadeia_ativa",
+      "envio_liberado_local_manifest": false,
+      "timeline_rows": 6,
+      "local_receipts": [],
+      "has_local_trusted_receipt": false
+    },
+    {
+      "cpf": "89107241534",
+      "manifest_recibo": "1.1.0000000034695354925",
+      "manifest_recibo_fonte": "zip_quinzenal_cadeia_ativa",
+      "envio_liberado_local_manifest": false,
+      "timeline_rows": 6,
+      "local_receipts": [],
+      "has_local_trusted_receipt": false
+    }
+  ],
+  "timeline_items": [
+    {
+      "cpf": "02254091786",
+      "timeline_envio_id": 918,
+      "timeline_envio_item_id": 156988,
+      "status": "sucesso",
+      "erro_codigo": null,
+      "nr_recibo_anterior": "1.1.0000000040581570546",
+      "nr_recibo_novo_coluna": "1.1.0000000040883704639",
+      "xml_retorno_oid": 2396361,
+      "xml_nr_recibos": [
+        "1.1.0000000040883704639"
+      ],
+      "xml_cd_respostas": [
+        "201"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 03:07:13.249951"
+    },
+    {
+      "cpf": "02254091786",
+      "timeline_envio_id": 917,
+      "timeline_envio_item_id": 156953,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695365779",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396325,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:35.946395"
+    },
+    {
+      "cpf": "02254091786",
+      "timeline_envio_id": 916,
+      "timeline_envio_item_id": 156918,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695365779",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396255,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:16.995700"
+    },
+    {
+      "cpf": "02254091786",
+      "timeline_envio_id": 915,
+      "timeline_envio_item_id": 156883,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695365779",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396185,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:55:04.356769"
+    },
+    {
+      "cpf": "02254091786",
+      "timeline_envio_id": 914,
+      "timeline_envio_item_id": 156848,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695365779",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396115,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:30.473411"
+    },
+    {
+      "cpf": "02254091786",
+      "timeline_envio_id": 913,
+      "timeline_envio_item_id": 156813,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695365779",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396045,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:00.057533"
+    },
+    {
+      "cpf": "02254091786",
+      "timeline_envio_id": 20,
+      "timeline_envio_item_id": 1883,
+      "status": "erro_esocial",
+      "erro_codigo": "202",
+      "nr_recibo_anterior": "1.1.0000000034695365779",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 319624,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [],
+      "read_error": "OperationalError: ERROR:  large object 319624 does not exist",
+      "criado_em": "2026-05-07 17:22:39.805016"
+    },
+    {
+      "cpf": "03415419584",
+      "timeline_envio_id": 917,
+      "timeline_envio_item_id": 156954,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695371967",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396326,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:35.946395"
+    },
+    {
+      "cpf": "03415419584",
+      "timeline_envio_id": 916,
+      "timeline_envio_item_id": 156919,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695371967",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396256,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:16.995700"
+    },
+    {
+      "cpf": "03415419584",
+      "timeline_envio_id": 915,
+      "timeline_envio_item_id": 156884,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695371967",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396186,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:55:04.356769"
+    },
+    {
+      "cpf": "03415419584",
+      "timeline_envio_id": 914,
+      "timeline_envio_item_id": 156849,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695371967",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396116,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:30.473411"
+    },
+    {
+      "cpf": "03415419584",
+      "timeline_envio_id": 913,
+      "timeline_envio_item_id": 156814,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695371967",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396046,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:00.057533"
+    },
+    {
+      "cpf": "03415419584",
+      "timeline_envio_id": 30,
+      "timeline_envio_item_id": 2886,
+      "status": "erro_esocial",
+      "erro_codigo": "202",
+      "nr_recibo_anterior": "1.1.0000000034695371967",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 322045,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [],
+      "read_error": "OperationalError: ERROR:  large object 322045 does not exist",
+      "criado_em": "2026-05-07 20:19:45.148225"
+    },
+    {
+      "cpf": "03456861796",
+      "timeline_envio_id": 917,
+      "timeline_envio_item_id": 156955,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695364701",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396327,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:35.946395"
+    },
+    {
+      "cpf": "03456861796",
+      "timeline_envio_id": 916,
+      "timeline_envio_item_id": 156920,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695364701",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396257,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:16.995700"
+    },
+    {
+      "cpf": "03456861796",
+      "timeline_envio_id": 915,
+      "timeline_envio_item_id": 156885,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695364701",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396187,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:55:04.356769"
+    },
+    {
+      "cpf": "03456861796",
+      "timeline_envio_id": 914,
+      "timeline_envio_item_id": 156850,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695364701",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396117,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:30.473411"
+    },
+    {
+      "cpf": "03456861796",
+      "timeline_envio_id": 913,
+      "timeline_envio_item_id": 156815,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695364701",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396047,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:00.057533"
+    },
+    {
+      "cpf": "03456861796",
+      "timeline_envio_id": 30,
+      "timeline_envio_item_id": 2917,
+      "status": "erro_esocial",
+      "erro_codigo": "202",
+      "nr_recibo_anterior": "1.1.0000000034695364701",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 321976,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [],
+      "read_error": "OperationalError: ERROR:  large object 321976 does not exist",
+      "criado_em": "2026-05-07 20:19:45.148225"
+    },
+    {
+      "cpf": "03470657750",
+      "timeline_envio_id": 917,
+      "timeline_envio_item_id": 156956,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695386479",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396328,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:35.946395"
+    },
+    {
+      "cpf": "03470657750",
+      "timeline_envio_id": 916,
+      "timeline_envio_item_id": 156921,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695386479",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396258,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:16.995700"
+    },
+    {
+      "cpf": "03470657750",
+      "timeline_envio_id": 915,
+      "timeline_envio_item_id": 156886,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695386479",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396188,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:55:04.356769"
+    },
+    {
+      "cpf": "03470657750",
+      "timeline_envio_id": 914,
+      "timeline_envio_item_id": 156851,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695386479",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396118,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:30.473411"
+    },
+    {
+      "cpf": "03470657750",
+      "timeline_envio_id": 913,
+      "timeline_envio_item_id": 156816,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695386479",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396048,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:00.057533"
+    },
+    {
+      "cpf": "03470657750",
+      "timeline_envio_id": 30,
+      "timeline_envio_item_id": 2933,
+      "status": "erro_esocial",
+      "erro_codigo": "202",
+      "nr_recibo_anterior": "1.1.0000000034695386479",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 321992,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [],
+      "read_error": "OperationalError: ERROR:  large object 321992 does not exist",
+      "criado_em": "2026-05-07 20:19:45.148225"
+    },
+    {
+      "cpf": "04202911482",
+      "timeline_envio_id": 917,
+      "timeline_envio_item_id": 156957,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695360470",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396329,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:35.946395"
+    },
+    {
+      "cpf": "04202911482",
+      "timeline_envio_id": 916,
+      "timeline_envio_item_id": 156922,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695360470",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396259,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:16.995700"
+    },
+    {
+      "cpf": "04202911482",
+      "timeline_envio_id": 915,
+      "timeline_envio_item_id": 156887,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695360470",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396189,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:55:04.356769"
+    },
+    {
+      "cpf": "04202911482",
+      "timeline_envio_id": 914,
+      "timeline_envio_item_id": 156852,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695360470",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396119,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:30.473411"
+    },
+    {
+      "cpf": "04202911482",
+      "timeline_envio_id": 913,
+      "timeline_envio_item_id": 156817,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695360470",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396049,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:00.057533"
+    },
+    {
+      "cpf": "04202911482",
+      "timeline_envio_id": 35,
+      "timeline_envio_item_id": 3450,
+      "status": "erro_esocial",
+      "erro_codigo": "202",
+      "nr_recibo_anterior": "1.1.0000000034695360470",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 323056,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [],
+      "read_error": "OperationalError: ERROR:  large object 323056 does not exist",
+      "criado_em": "2026-05-07 20:24:37.026626"
+    },
+    {
+      "cpf": "04239333458",
+      "timeline_envio_id": 917,
+      "timeline_envio_item_id": 156958,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695390734",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396330,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:35.946395"
+    },
+    {
+      "cpf": "04239333458",
+      "timeline_envio_id": 916,
+      "timeline_envio_item_id": 156923,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695390734",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396260,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:16.995700"
+    },
+    {
+      "cpf": "04239333458",
+      "timeline_envio_id": 915,
+      "timeline_envio_item_id": 156888,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695390734",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396190,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:55:04.356769"
+    },
+    {
+      "cpf": "04239333458",
+      "timeline_envio_id": 914,
+      "timeline_envio_item_id": 156853,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695390734",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396120,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:30.473411"
+    },
+    {
+      "cpf": "04239333458",
+      "timeline_envio_id": 913,
+      "timeline_envio_item_id": 156818,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695390734",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396050,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:00.057533"
+    },
+    {
+      "cpf": "04239333458",
+      "timeline_envio_id": 36,
+      "timeline_envio_item_id": 3490,
+      "status": "erro_esocial",
+      "erro_codigo": "202",
+      "nr_recibo_anterior": "1.1.0000000034695390734",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 323207,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [],
+      "read_error": "OperationalError: ERROR:  large object 323207 does not exist",
+      "criado_em": "2026-05-07 20:25:47.102417"
+    },
+    {
+      "cpf": "04260837419",
+      "timeline_envio_id": 917,
+      "timeline_envio_item_id": 156959,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695363999",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396331,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:35.946395"
+    },
+    {
+      "cpf": "04260837419",
+      "timeline_envio_id": 916,
+      "timeline_envio_item_id": 156924,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695363999",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396261,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:16.995700"
+    },
+    {
+      "cpf": "04260837419",
+      "timeline_envio_id": 915,
+      "timeline_envio_item_id": 156889,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695363999",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396191,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:55:04.356769"
+    },
+    {
+      "cpf": "04260837419",
+      "timeline_envio_id": 914,
+      "timeline_envio_item_id": 156854,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695363999",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396121,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:30.473411"
+    },
+    {
+      "cpf": "04260837419",
+      "timeline_envio_id": 913,
+      "timeline_envio_item_id": 156819,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695363999",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396051,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:00.057533"
+    },
+    {
+      "cpf": "04260837419",
+      "timeline_envio_id": 36,
+      "timeline_envio_item_id": 3507,
+      "status": "erro_esocial",
+      "erro_codigo": "202",
+      "nr_recibo_anterior": "1.1.0000000034695363999",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 323224,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [],
+      "read_error": "OperationalError: ERROR:  large object 323224 does not exist",
+      "criado_em": "2026-05-07 20:25:47.102417"
+    },
+    {
+      "cpf": "04575626414",
+      "timeline_envio_id": 917,
+      "timeline_envio_item_id": 156960,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695363623",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396332,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:35.946395"
+    },
+    {
+      "cpf": "04575626414",
+      "timeline_envio_id": 916,
+      "timeline_envio_item_id": 156925,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695363623",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396262,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:16.995700"
+    },
+    {
+      "cpf": "04575626414",
+      "timeline_envio_id": 915,
+      "timeline_envio_item_id": 156890,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695363623",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396192,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:55:04.356769"
+    },
+    {
+      "cpf": "04575626414",
+      "timeline_envio_id": 914,
+      "timeline_envio_item_id": 156855,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695363623",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396122,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:30.473411"
+    },
+    {
+      "cpf": "04575626414",
+      "timeline_envio_id": 913,
+      "timeline_envio_item_id": 156820,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695363623",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396052,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:00.057533"
+    },
+    {
+      "cpf": "04575626414",
+      "timeline_envio_id": 38,
+      "timeline_envio_item_id": 3749,
+      "status": "erro_esocial",
+      "erro_codigo": "202",
+      "nr_recibo_anterior": "1.1.0000000034695363623",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 323658,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [],
+      "read_error": "OperationalError: ERROR:  large object 323658 does not exist",
+      "criado_em": "2026-05-07 20:31:40.955846"
+    },
+    {
+      "cpf": "05365128761",
+      "timeline_envio_id": 917,
+      "timeline_envio_item_id": 156961,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695356132",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396333,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:35.946395"
+    },
+    {
+      "cpf": "05365128761",
+      "timeline_envio_id": 916,
+      "timeline_envio_item_id": 156926,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695356132",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396263,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:16.995700"
+    },
+    {
+      "cpf": "05365128761",
+      "timeline_envio_id": 915,
+      "timeline_envio_item_id": 156891,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695356132",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396193,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:55:04.356769"
+    },
+    {
+      "cpf": "05365128761",
+      "timeline_envio_id": 914,
+      "timeline_envio_item_id": 156856,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695356132",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396123,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:30.473411"
+    },
+    {
+      "cpf": "05365128761",
+      "timeline_envio_id": 913,
+      "timeline_envio_item_id": 156821,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695356132",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396053,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:00.057533"
+    },
+    {
+      "cpf": "05365128761",
+      "timeline_envio_id": 43,
+      "timeline_envio_item_id": 4214,
+      "status": "erro_esocial",
+      "erro_codigo": "202",
+      "nr_recibo_anterior": "1.1.0000000034695356132",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 324587,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [],
+      "read_error": "OperationalError: ERROR:  large object 324587 does not exist",
+      "criado_em": "2026-05-07 20:38:39.646653"
+    },
+    {
+      "cpf": "05390784766",
+      "timeline_envio_id": 917,
+      "timeline_envio_item_id": 156962,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695385887",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396334,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:35.946395"
+    },
+    {
+      "cpf": "05390784766",
+      "timeline_envio_id": 916,
+      "timeline_envio_item_id": 156927,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695385887",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396264,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:16.995700"
+    },
+    {
+      "cpf": "05390784766",
+      "timeline_envio_id": 915,
+      "timeline_envio_item_id": 156892,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695385887",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396194,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:55:04.356769"
+    },
+    {
+      "cpf": "05390784766",
+      "timeline_envio_id": 914,
+      "timeline_envio_item_id": 156857,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695385887",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396124,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:30.473411"
+    },
+    {
+      "cpf": "05390784766",
+      "timeline_envio_id": 913,
+      "timeline_envio_item_id": 156822,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695385887",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396054,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:00.057533"
+    },
+    {
+      "cpf": "05390784766",
+      "timeline_envio_id": 43,
+      "timeline_envio_item_id": 4231,
+      "status": "erro_esocial",
+      "erro_codigo": "202",
+      "nr_recibo_anterior": "1.1.0000000034695385887",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 324604,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [],
+      "read_error": "OperationalError: ERROR:  large object 324604 does not exist",
+      "criado_em": "2026-05-07 20:38:39.646653"
+    },
+    {
+      "cpf": "05513724430",
+      "timeline_envio_id": 917,
+      "timeline_envio_item_id": 156963,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695362130",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396335,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:35.946395"
+    },
+    {
+      "cpf": "05513724430",
+      "timeline_envio_id": 916,
+      "timeline_envio_item_id": 156928,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695362130",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396265,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:16.995700"
+    },
+    {
+      "cpf": "05513724430",
+      "timeline_envio_id": 915,
+      "timeline_envio_item_id": 156893,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695362130",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396195,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:55:04.356769"
+    },
+    {
+      "cpf": "05513724430",
+      "timeline_envio_id": 914,
+      "timeline_envio_item_id": 156858,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695362130",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396125,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:30.473411"
+    },
+    {
+      "cpf": "05513724430",
+      "timeline_envio_id": 913,
+      "timeline_envio_item_id": 156823,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695362130",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396055,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:00.057533"
+    },
+    {
+      "cpf": "05513724430",
+      "timeline_envio_id": 44,
+      "timeline_envio_item_id": 4310,
+      "status": "erro_esocial",
+      "erro_codigo": "202",
+      "nr_recibo_anterior": "1.1.0000000034695362130",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 324835,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [],
+      "read_error": "OperationalError: ERROR:  large object 324835 does not exist",
+      "criado_em": "2026-05-07 20:39:45.186030"
+    },
+    {
+      "cpf": "05774255794",
+      "timeline_envio_id": 917,
+      "timeline_envio_item_id": 156964,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695374141",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396336,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:35.946395"
+    },
+    {
+      "cpf": "05774255794",
+      "timeline_envio_id": 916,
+      "timeline_envio_item_id": 156929,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695374141",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396266,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:16.995700"
+    },
+    {
+      "cpf": "05774255794",
+      "timeline_envio_id": 915,
+      "timeline_envio_item_id": 156894,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695374141",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396196,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:55:04.356769"
+    },
+    {
+      "cpf": "05774255794",
+      "timeline_envio_id": 914,
+      "timeline_envio_item_id": 156859,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695374141",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396126,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:30.473411"
+    },
+    {
+      "cpf": "05774255794",
+      "timeline_envio_id": 913,
+      "timeline_envio_item_id": 156824,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695374141",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396056,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:00.057533"
+    },
+    {
+      "cpf": "05774255794",
+      "timeline_envio_id": 46,
+      "timeline_envio_item_id": 4480,
+      "status": "erro_esocial",
+      "erro_codigo": "202",
+      "nr_recibo_anterior": "1.1.0000000034695374141",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 325207,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [],
+      "read_error": "OperationalError: ERROR:  large object 325207 does not exist",
+      "criado_em": "2026-05-07 20:42:25.209145"
+    },
+    {
+      "cpf": "05788537797",
+      "timeline_envio_id": 917,
+      "timeline_envio_item_id": 156965,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695352620",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396337,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:35.946395"
+    },
+    {
+      "cpf": "05788537797",
+      "timeline_envio_id": 916,
+      "timeline_envio_item_id": 156930,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695352620",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396267,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:16.995700"
+    },
+    {
+      "cpf": "05788537797",
+      "timeline_envio_id": 915,
+      "timeline_envio_item_id": 156895,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695352620",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396197,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:55:04.356769"
+    },
+    {
+      "cpf": "05788537797",
+      "timeline_envio_id": 914,
+      "timeline_envio_item_id": 156860,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695352620",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396127,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:30.473411"
+    },
+    {
+      "cpf": "05788537797",
+      "timeline_envio_id": 913,
+      "timeline_envio_item_id": 156825,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695352620",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396057,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:00.057533"
+    },
+    {
+      "cpf": "05788537797",
+      "timeline_envio_id": 46,
+      "timeline_envio_item_id": 4488,
+      "status": "erro_esocial",
+      "erro_codigo": "202",
+      "nr_recibo_anterior": "1.1.0000000034695352620",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 325215,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [],
+      "read_error": "OperationalError: ERROR:  large object 325215 does not exist",
+      "criado_em": "2026-05-07 20:42:25.209145"
+    },
+    {
+      "cpf": "05986727703",
+      "timeline_envio_id": 917,
+      "timeline_envio_item_id": 156966,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695378344",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396338,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:35.946395"
+    },
+    {
+      "cpf": "05986727703",
+      "timeline_envio_id": 916,
+      "timeline_envio_item_id": 156931,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695378344",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396268,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:16.995700"
+    },
+    {
+      "cpf": "05986727703",
+      "timeline_envio_id": 915,
+      "timeline_envio_item_id": 156896,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695378344",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396198,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:55:04.356769"
+    },
+    {
+      "cpf": "05986727703",
+      "timeline_envio_id": 914,
+      "timeline_envio_item_id": 156861,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695378344",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396128,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:30.473411"
+    },
+    {
+      "cpf": "05986727703",
+      "timeline_envio_id": 913,
+      "timeline_envio_item_id": 156826,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695378344",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396058,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:00.057533"
+    },
+    {
+      "cpf": "05986727703",
+      "timeline_envio_id": 47,
+      "timeline_envio_item_id": 4614,
+      "status": "erro_esocial",
+      "erro_codigo": "202",
+      "nr_recibo_anterior": "1.1.0000000034695378344",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 325393,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [],
+      "read_error": "OperationalError: ERROR:  large object 325393 does not exist",
+      "criado_em": "2026-05-07 20:44:11.090954"
+    },
+    {
+      "cpf": "08405088750",
+      "timeline_envio_id": 917,
+      "timeline_envio_item_id": 156967,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695359966",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396339,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:35.946395"
+    },
+    {
+      "cpf": "08405088750",
+      "timeline_envio_id": 916,
+      "timeline_envio_item_id": 156932,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695359966",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396269,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:16.995700"
+    },
+    {
+      "cpf": "08405088750",
+      "timeline_envio_id": 915,
+      "timeline_envio_item_id": 156897,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695359966",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396199,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:55:04.356769"
+    },
+    {
+      "cpf": "08405088750",
+      "timeline_envio_id": 914,
+      "timeline_envio_item_id": 156862,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695359966",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396129,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:30.473411"
+    },
+    {
+      "cpf": "08405088750",
+      "timeline_envio_id": 913,
+      "timeline_envio_item_id": 156827,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695359966",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396059,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:00.057533"
+    },
+    {
+      "cpf": "08405088750",
+      "timeline_envio_id": 60,
+      "timeline_envio_item_id": 5933,
+      "status": "erro_esocial",
+      "erro_codigo": "202",
+      "nr_recibo_anterior": "1.1.0000000034695359966",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 328046,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [],
+      "read_error": "OperationalError: ERROR:  large object 328046 does not exist",
+      "criado_em": "2026-05-07 20:59:48.784495"
+    },
+    {
+      "cpf": "08554135733",
+      "timeline_envio_id": 917,
+      "timeline_envio_item_id": 156968,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695355753",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396340,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:35.946395"
+    },
+    {
+      "cpf": "08554135733",
+      "timeline_envio_id": 916,
+      "timeline_envio_item_id": 156933,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695355753",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396270,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:16.995700"
+    },
+    {
+      "cpf": "08554135733",
+      "timeline_envio_id": 915,
+      "timeline_envio_item_id": 156898,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695355753",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396200,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:55:04.356769"
+    },
+    {
+      "cpf": "08554135733",
+      "timeline_envio_id": 914,
+      "timeline_envio_item_id": 156863,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695355753",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396130,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:30.473411"
+    },
+    {
+      "cpf": "08554135733",
+      "timeline_envio_id": 913,
+      "timeline_envio_item_id": 156828,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695355753",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396060,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:00.057533"
+    },
+    {
+      "cpf": "08554135733",
+      "timeline_envio_id": 61,
+      "timeline_envio_item_id": 6015,
+      "status": "erro_esocial",
+      "erro_codigo": "202",
+      "nr_recibo_anterior": "1.1.0000000034695355753",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 328257,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [],
+      "read_error": "OperationalError: ERROR:  large object 328257 does not exist",
+      "criado_em": "2026-05-07 21:00:57.552525"
+    },
+    {
+      "cpf": "09278365726",
+      "timeline_envio_id": 64,
+      "timeline_envio_item_id": 6333,
+      "status": "erro_esocial",
+      "erro_codigo": "202",
+      "nr_recibo_anterior": "1.1.0000000034695374534",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 328856,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [],
+      "read_error": "OperationalError: ERROR:  large object 328856 does not exist",
+      "criado_em": "2026-05-07 21:37:54.045013"
+    },
+    {
+      "cpf": "09568580743",
+      "timeline_envio_id": 917,
+      "timeline_envio_item_id": 156969,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695366028",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396341,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:35.946395"
+    },
+    {
+      "cpf": "09568580743",
+      "timeline_envio_id": 916,
+      "timeline_envio_item_id": 156934,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695366028",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396271,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:16.995700"
+    },
+    {
+      "cpf": "09568580743",
+      "timeline_envio_id": 915,
+      "timeline_envio_item_id": 156899,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695366028",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396201,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:55:04.356769"
+    },
+    {
+      "cpf": "09568580743",
+      "timeline_envio_id": 914,
+      "timeline_envio_item_id": 156864,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695366028",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396131,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:30.473411"
+    },
+    {
+      "cpf": "09568580743",
+      "timeline_envio_id": 913,
+      "timeline_envio_item_id": 156829,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695366028",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396061,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:00.057533"
+    },
+    {
+      "cpf": "09568580743",
+      "timeline_envio_id": 66,
+      "timeline_envio_item_id": 6494,
+      "status": "erro_esocial",
+      "erro_codigo": "202",
+      "nr_recibo_anterior": "1.1.0000000034695366028",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 329276,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [],
+      "read_error": "OperationalError: ERROR:  large object 329276 does not exist",
+      "criado_em": "2026-05-07 21:39:59.526559"
+    },
+    {
+      "cpf": "09705541760",
+      "timeline_envio_id": 917,
+      "timeline_envio_item_id": 156970,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695386340",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396342,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:35.946395"
+    },
+    {
+      "cpf": "09705541760",
+      "timeline_envio_id": 916,
+      "timeline_envio_item_id": 156935,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695386340",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396272,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:16.995700"
+    },
+    {
+      "cpf": "09705541760",
+      "timeline_envio_id": 915,
+      "timeline_envio_item_id": 156900,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695386340",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396202,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:55:04.356769"
+    },
+    {
+      "cpf": "09705541760",
+      "timeline_envio_id": 914,
+      "timeline_envio_item_id": 156865,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695386340",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396132,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:30.473411"
+    },
+    {
+      "cpf": "09705541760",
+      "timeline_envio_id": 913,
+      "timeline_envio_item_id": 156830,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695386340",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396062,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:00.057533"
+    },
+    {
+      "cpf": "09705541760",
+      "timeline_envio_id": 67,
+      "timeline_envio_item_id": 6569,
+      "status": "erro_esocial",
+      "erro_codigo": "202",
+      "nr_recibo_anterior": "1.1.0000000034695386340",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 329467,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [],
+      "read_error": "OperationalError: ERROR:  large object 329467 does not exist",
+      "criado_em": "2026-05-07 21:41:01.366768"
+    },
+    {
+      "cpf": "09849145790",
+      "timeline_envio_id": 917,
+      "timeline_envio_item_id": 156971,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695364414",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396343,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:35.946395"
+    },
+    {
+      "cpf": "09849145790",
+      "timeline_envio_id": 916,
+      "timeline_envio_item_id": 156936,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695364414",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396273,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:16.995700"
+    },
+    {
+      "cpf": "09849145790",
+      "timeline_envio_id": 915,
+      "timeline_envio_item_id": 156901,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695364414",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396203,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:55:04.356769"
+    },
+    {
+      "cpf": "09849145790",
+      "timeline_envio_id": 914,
+      "timeline_envio_item_id": 156866,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695364414",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396133,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:30.473411"
+    },
+    {
+      "cpf": "09849145790",
+      "timeline_envio_id": 913,
+      "timeline_envio_item_id": 156831,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695364414",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396063,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:00.057533"
+    },
+    {
+      "cpf": "09849145790",
+      "timeline_envio_id": 67,
+      "timeline_envio_item_id": 6642,
+      "status": "erro_esocial",
+      "erro_codigo": "202",
+      "nr_recibo_anterior": "1.1.0000000034695364414",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 329440,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [],
+      "read_error": "OperationalError: ERROR:  large object 329440 does not exist",
+      "criado_em": "2026-05-07 21:41:01.366768"
+    },
+    {
+      "cpf": "09981664723",
+      "timeline_envio_id": 68,
+      "timeline_envio_item_id": 6712,
+      "status": "erro_esocial",
+      "erro_codigo": "202",
+      "nr_recibo_anterior": "1.1.0000000034695374572",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 329610,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [],
+      "read_error": "OperationalError: ERROR:  large object 329610 does not exist",
+      "criado_em": "2026-05-07 21:42:16.413158"
+    },
+    {
+      "cpf": "10617805709",
+      "timeline_envio_id": 917,
+      "timeline_envio_item_id": 156972,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695388036",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396344,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:35.946395"
+    },
+    {
+      "cpf": "10617805709",
+      "timeline_envio_id": 916,
+      "timeline_envio_item_id": 156937,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695388036",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396274,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:16.995700"
+    },
+    {
+      "cpf": "10617805709",
+      "timeline_envio_id": 915,
+      "timeline_envio_item_id": 156902,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695388036",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396204,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:55:04.356769"
+    },
+    {
+      "cpf": "10617805709",
+      "timeline_envio_id": 914,
+      "timeline_envio_item_id": 156867,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695388036",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396134,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:30.473411"
+    },
+    {
+      "cpf": "10617805709",
+      "timeline_envio_id": 913,
+      "timeline_envio_item_id": 156832,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695388036",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396064,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:00.057533"
+    },
+    {
+      "cpf": "10617805709",
+      "timeline_envio_id": 71,
+      "timeline_envio_item_id": 7010,
+      "status": "erro_esocial",
+      "erro_codigo": "202",
+      "nr_recibo_anterior": "1.1.0000000034695388036",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 330212,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [],
+      "read_error": "OperationalError: ERROR:  large object 330212 does not exist",
+      "criado_em": "2026-05-07 21:45:24.875600"
+    },
+    {
+      "cpf": "11191263711",
+      "timeline_envio_id": 917,
+      "timeline_envio_item_id": 156973,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695339861",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396345,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:35.946395"
+    },
+    {
+      "cpf": "11191263711",
+      "timeline_envio_id": 916,
+      "timeline_envio_item_id": 156938,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695339861",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396275,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:16.995700"
+    },
+    {
+      "cpf": "11191263711",
+      "timeline_envio_id": 915,
+      "timeline_envio_item_id": 156903,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695339861",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396205,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:55:04.356769"
+    },
+    {
+      "cpf": "11191263711",
+      "timeline_envio_id": 914,
+      "timeline_envio_item_id": 156868,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695339861",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396135,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:30.473411"
+    },
+    {
+      "cpf": "11191263711",
+      "timeline_envio_id": 913,
+      "timeline_envio_item_id": 156833,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695339861",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396065,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:00.057533"
+    },
+    {
+      "cpf": "11191263711",
+      "timeline_envio_id": 74,
+      "timeline_envio_item_id": 7305,
+      "status": "erro_esocial",
+      "erro_codigo": "202",
+      "nr_recibo_anterior": "1.1.0000000034695339861",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 330907,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [],
+      "read_error": "OperationalError: ERROR:  large object 330907 does not exist",
+      "criado_em": "2026-05-07 21:48:40.266073"
+    },
+    {
+      "cpf": "11500569755",
+      "timeline_envio_id": 917,
+      "timeline_envio_item_id": 156974,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695359560",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396346,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:35.946395"
+    },
+    {
+      "cpf": "11500569755",
+      "timeline_envio_id": 916,
+      "timeline_envio_item_id": 156939,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695359560",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396276,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:16.995700"
+    },
+    {
+      "cpf": "11500569755",
+      "timeline_envio_id": 915,
+      "timeline_envio_item_id": 156904,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695359560",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396206,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:55:04.356769"
+    },
+    {
+      "cpf": "11500569755",
+      "timeline_envio_id": 914,
+      "timeline_envio_item_id": 156869,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695359560",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396136,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:30.473411"
+    },
+    {
+      "cpf": "11500569755",
+      "timeline_envio_id": 913,
+      "timeline_envio_item_id": 156834,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695359560",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396066,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:00.057533"
+    },
+    {
+      "cpf": "11500569755",
+      "timeline_envio_id": 75,
+      "timeline_envio_item_id": 7455,
+      "status": "erro_esocial",
+      "erro_codigo": "202",
+      "nr_recibo_anterior": "1.1.0000000034695359560",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 331057,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [],
+      "read_error": "OperationalError: ERROR:  large object 331057 does not exist",
+      "criado_em": "2026-05-07 21:50:08.267233"
+    },
+    {
+      "cpf": "11553980760",
+      "timeline_envio_id": 917,
+      "timeline_envio_item_id": 156975,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695356048",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396347,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:35.946395"
+    },
+    {
+      "cpf": "11553980760",
+      "timeline_envio_id": 916,
+      "timeline_envio_item_id": 156940,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695356048",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396277,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:16.995700"
+    },
+    {
+      "cpf": "11553980760",
+      "timeline_envio_id": 915,
+      "timeline_envio_item_id": 156905,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695356048",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396207,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:55:04.356769"
+    },
+    {
+      "cpf": "11553980760",
+      "timeline_envio_id": 914,
+      "timeline_envio_item_id": 156870,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695356048",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396137,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:30.473411"
+    },
+    {
+      "cpf": "11553980760",
+      "timeline_envio_id": 913,
+      "timeline_envio_item_id": 156835,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695356048",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396067,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:00.057533"
+    },
+    {
+      "cpf": "11553980760",
+      "timeline_envio_id": 76,
+      "timeline_envio_item_id": 7472,
+      "status": "erro_esocial",
+      "erro_codigo": "202",
+      "nr_recibo_anterior": "1.1.0000000034695356048",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 331239,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [],
+      "read_error": "OperationalError: ERROR:  large object 331239 does not exist",
+      "criado_em": "2026-05-07 21:52:00.129581"
+    },
+    {
+      "cpf": "11915524709",
+      "timeline_envio_id": 917,
+      "timeline_envio_item_id": 156976,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695340278",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396348,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:35.946395"
+    },
+    {
+      "cpf": "11915524709",
+      "timeline_envio_id": 916,
+      "timeline_envio_item_id": 156941,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695340278",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396278,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:16.995700"
+    },
+    {
+      "cpf": "11915524709",
+      "timeline_envio_id": 915,
+      "timeline_envio_item_id": 156906,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695340278",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396208,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:55:04.356769"
+    },
+    {
+      "cpf": "11915524709",
+      "timeline_envio_id": 914,
+      "timeline_envio_item_id": 156871,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695340278",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396138,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:30.473411"
+    },
+    {
+      "cpf": "11915524709",
+      "timeline_envio_id": 913,
+      "timeline_envio_item_id": 156836,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695340278",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396068,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:00.057533"
+    },
+    {
+      "cpf": "11915524709",
+      "timeline_envio_id": 77,
+      "timeline_envio_item_id": 7609,
+      "status": "erro_esocial",
+      "erro_codigo": "202",
+      "nr_recibo_anterior": "1.1.0000000034695340278",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 331414,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [],
+      "read_error": "OperationalError: ERROR:  large object 331414 does not exist",
+      "criado_em": "2026-05-07 21:53:05.290258"
+    },
+    {
+      "cpf": "11994427477",
+      "timeline_envio_id": 917,
+      "timeline_envio_item_id": 156977,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695360413",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396349,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:35.946395"
+    },
+    {
+      "cpf": "11994427477",
+      "timeline_envio_id": 916,
+      "timeline_envio_item_id": 156942,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695360413",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396279,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:16.995700"
+    },
+    {
+      "cpf": "11994427477",
+      "timeline_envio_id": 915,
+      "timeline_envio_item_id": 156907,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695360413",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396209,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:55:04.356769"
+    },
+    {
+      "cpf": "11994427477",
+      "timeline_envio_id": 914,
+      "timeline_envio_item_id": 156872,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695360413",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396139,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:30.473411"
+    },
+    {
+      "cpf": "11994427477",
+      "timeline_envio_id": 913,
+      "timeline_envio_item_id": 156837,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695360413",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396069,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:00.057533"
+    },
+    {
+      "cpf": "11994427477",
+      "timeline_envio_id": 77,
+      "timeline_envio_item_id": 7655,
+      "status": "erro_esocial",
+      "erro_codigo": "202",
+      "nr_recibo_anterior": "1.1.0000000034695360413",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 331460,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [],
+      "read_error": "OperationalError: ERROR:  large object 331460 does not exist",
+      "criado_em": "2026-05-07 21:53:05.290258"
+    },
+    {
+      "cpf": "12501850769",
+      "timeline_envio_id": 917,
+      "timeline_envio_item_id": 156978,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695374775",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396350,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:35.946395"
+    },
+    {
+      "cpf": "12501850769",
+      "timeline_envio_id": 916,
+      "timeline_envio_item_id": 156943,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695374775",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396280,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:16.995700"
+    },
+    {
+      "cpf": "12501850769",
+      "timeline_envio_id": 915,
+      "timeline_envio_item_id": 156908,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695374775",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396210,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:55:04.356769"
+    },
+    {
+      "cpf": "12501850769",
+      "timeline_envio_id": 914,
+      "timeline_envio_item_id": 156873,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695374775",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396140,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:30.473411"
+    },
+    {
+      "cpf": "12501850769",
+      "timeline_envio_id": 913,
+      "timeline_envio_item_id": 156838,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695374775",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396070,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:00.057533"
+    },
+    {
+      "cpf": "12501850769",
+      "timeline_envio_id": 79,
+      "timeline_envio_item_id": 7816,
+      "status": "erro_esocial",
+      "erro_codigo": "202",
+      "nr_recibo_anterior": "1.1.0000000034695374775",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 331830,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [],
+      "read_error": "OperationalError: ERROR:  large object 331830 does not exist",
+      "criado_em": "2026-05-07 21:55:15.758206"
+    },
+    {
+      "cpf": "13182452738",
+      "timeline_envio_id": 917,
+      "timeline_envio_item_id": 156979,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695349383",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396351,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:35.946395"
+    },
+    {
+      "cpf": "13182452738",
+      "timeline_envio_id": 916,
+      "timeline_envio_item_id": 156944,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695349383",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396281,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:16.995700"
+    },
+    {
+      "cpf": "13182452738",
+      "timeline_envio_id": 915,
+      "timeline_envio_item_id": 156909,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695349383",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396211,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:55:04.356769"
+    },
+    {
+      "cpf": "13182452738",
+      "timeline_envio_id": 914,
+      "timeline_envio_item_id": 156874,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695349383",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396141,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:30.473411"
+    },
+    {
+      "cpf": "13182452738",
+      "timeline_envio_id": 913,
+      "timeline_envio_item_id": 156839,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695349383",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396071,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:00.057533"
+    },
+    {
+      "cpf": "13182452738",
+      "timeline_envio_id": 81,
+      "timeline_envio_item_id": 8020,
+      "status": "erro_esocial",
+      "erro_codigo": "202",
+      "nr_recibo_anterior": "1.1.0000000034695349383",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 332239,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [],
+      "read_error": "OperationalError: ERROR:  large object 332239 does not exist",
+      "criado_em": "2026-05-07 21:57:20.321738"
+    },
+    {
+      "cpf": "15275584792",
+      "timeline_envio_id": 917,
+      "timeline_envio_item_id": 156980,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695367278",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396352,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:35.946395"
+    },
+    {
+      "cpf": "15275584792",
+      "timeline_envio_id": 916,
+      "timeline_envio_item_id": 156945,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695367278",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396282,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:16.995700"
+    },
+    {
+      "cpf": "15275584792",
+      "timeline_envio_id": 915,
+      "timeline_envio_item_id": 156910,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695367278",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396212,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:55:04.356769"
+    },
+    {
+      "cpf": "15275584792",
+      "timeline_envio_id": 914,
+      "timeline_envio_item_id": 156875,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695367278",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396142,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:30.473411"
+    },
+    {
+      "cpf": "15275584792",
+      "timeline_envio_id": 913,
+      "timeline_envio_item_id": 156840,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695367278",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396072,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:00.057533"
+    },
+    {
+      "cpf": "15275584792",
+      "timeline_envio_id": 87,
+      "timeline_envio_item_id": 8565,
+      "status": "erro_esocial",
+      "erro_codigo": "202",
+      "nr_recibo_anterior": "1.1.0000000034695367278",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 333426,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [],
+      "read_error": "OperationalError: ERROR:  large object 333426 does not exist",
+      "criado_em": "2026-05-07 22:09:38.439672"
+    },
+    {
+      "cpf": "15447916747",
+      "timeline_envio_id": 917,
+      "timeline_envio_item_id": 156981,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695356074",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396353,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:35.946395"
+    },
+    {
+      "cpf": "15447916747",
+      "timeline_envio_id": 916,
+      "timeline_envio_item_id": 156946,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695356074",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396283,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:16.995700"
+    },
+    {
+      "cpf": "15447916747",
+      "timeline_envio_id": 915,
+      "timeline_envio_item_id": 156911,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695356074",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396213,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:55:04.356769"
+    },
+    {
+      "cpf": "15447916747",
+      "timeline_envio_id": 914,
+      "timeline_envio_item_id": 156876,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695356074",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396143,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:30.473411"
+    },
+    {
+      "cpf": "15447916747",
+      "timeline_envio_id": 913,
+      "timeline_envio_item_id": 156841,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695356074",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396073,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:00.057533"
+    },
+    {
+      "cpf": "15447916747",
+      "timeline_envio_id": 87,
+      "timeline_envio_item_id": 8600,
+      "status": "erro_esocial",
+      "erro_codigo": "202",
+      "nr_recibo_anterior": "1.1.0000000034695356074",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 333461,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [],
+      "read_error": "OperationalError: ERROR:  large object 333461 does not exist",
+      "criado_em": "2026-05-07 22:09:38.439672"
+    },
+    {
+      "cpf": "17087835718",
+      "timeline_envio_id": 917,
+      "timeline_envio_item_id": 156982,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695461759",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396354,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:35.946395"
+    },
+    {
+      "cpf": "17087835718",
+      "timeline_envio_id": 916,
+      "timeline_envio_item_id": 156947,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695461759",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396284,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:16.995700"
+    },
+    {
+      "cpf": "17087835718",
+      "timeline_envio_id": 915,
+      "timeline_envio_item_id": 156912,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695461759",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396214,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:55:04.356769"
+    },
+    {
+      "cpf": "17087835718",
+      "timeline_envio_id": 914,
+      "timeline_envio_item_id": 156877,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695461759",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396144,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:30.473411"
+    },
+    {
+      "cpf": "17087835718",
+      "timeline_envio_id": 913,
+      "timeline_envio_item_id": 156842,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695461759",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396074,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:00.057533"
+    },
+    {
+      "cpf": "17087835718",
+      "timeline_envio_id": 90,
+      "timeline_envio_item_id": 8917,
+      "status": "erro_esocial",
+      "erro_codigo": "202",
+      "nr_recibo_anterior": "1.1.0000000034695461759",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 334038,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [],
+      "read_error": "OperationalError: ERROR:  large object 334038 does not exist",
+      "criado_em": "2026-05-07 22:12:58.567114"
+    },
+    {
+      "cpf": "19354014755",
+      "timeline_envio_id": 917,
+      "timeline_envio_item_id": 156983,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695355772",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396355,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:35.946395"
+    },
+    {
+      "cpf": "19354014755",
+      "timeline_envio_id": 916,
+      "timeline_envio_item_id": 156948,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695355772",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396285,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:16.995700"
+    },
+    {
+      "cpf": "19354014755",
+      "timeline_envio_id": 915,
+      "timeline_envio_item_id": 156913,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695355772",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396215,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:55:04.356769"
+    },
+    {
+      "cpf": "19354014755",
+      "timeline_envio_id": 914,
+      "timeline_envio_item_id": 156878,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695355772",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396145,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:30.473411"
+    },
+    {
+      "cpf": "19354014755",
+      "timeline_envio_id": 913,
+      "timeline_envio_item_id": 156843,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695355772",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396075,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:00.057533"
+    },
+    {
+      "cpf": "19354014755",
+      "timeline_envio_id": 93,
+      "timeline_envio_item_id": 9228,
+      "status": "erro_esocial",
+      "erro_codigo": "202",
+      "nr_recibo_anterior": "1.1.0000000034695355772",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 334691,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [],
+      "read_error": "OperationalError: ERROR:  large object 334691 does not exist",
+      "criado_em": "2026-05-07 22:16:16.028277"
+    },
+    {
+      "cpf": "35832326822",
+      "timeline_envio_id": 917,
+      "timeline_envio_item_id": 156984,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695388412",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396356,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:35.946395"
+    },
+    {
+      "cpf": "35832326822",
+      "timeline_envio_id": 916,
+      "timeline_envio_item_id": 156949,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695388412",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396286,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:16.995700"
+    },
+    {
+      "cpf": "35832326822",
+      "timeline_envio_id": 915,
+      "timeline_envio_item_id": 156914,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695388412",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396216,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:55:04.356769"
+    },
+    {
+      "cpf": "35832326822",
+      "timeline_envio_id": 914,
+      "timeline_envio_item_id": 156879,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695388412",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396146,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:30.473411"
+    },
+    {
+      "cpf": "35832326822",
+      "timeline_envio_id": 913,
+      "timeline_envio_item_id": 156844,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695388412",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396076,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:00.057533"
+    },
+    {
+      "cpf": "35832326822",
+      "timeline_envio_id": 112,
+      "timeline_envio_item_id": 11142,
+      "status": "erro_esocial",
+      "erro_codigo": "202",
+      "nr_recibo_anterior": "1.1.0000000034695388412",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 338466,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [],
+      "read_error": "OperationalError: ERROR:  large object 338466 does not exist",
+      "criado_em": "2026-05-07 22:39:44.765019"
+    },
+    {
+      "cpf": "40236751808",
+      "timeline_envio_id": 917,
+      "timeline_envio_item_id": 156985,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695342812",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396357,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:35.946395"
+    },
+    {
+      "cpf": "40236751808",
+      "timeline_envio_id": 916,
+      "timeline_envio_item_id": 156950,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695342812",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396287,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:16.995700"
+    },
+    {
+      "cpf": "40236751808",
+      "timeline_envio_id": 915,
+      "timeline_envio_item_id": 156915,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695342812",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396217,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:55:04.356769"
+    },
+    {
+      "cpf": "40236751808",
+      "timeline_envio_id": 914,
+      "timeline_envio_item_id": 156880,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695342812",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396147,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:30.473411"
+    },
+    {
+      "cpf": "40236751808",
+      "timeline_envio_id": 913,
+      "timeline_envio_item_id": 156845,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695342812",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396077,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:00.057533"
+    },
+    {
+      "cpf": "40236751808",
+      "timeline_envio_id": 118,
+      "timeline_envio_item_id": 11741,
+      "status": "erro_esocial",
+      "erro_codigo": "202",
+      "nr_recibo_anterior": "1.1.0000000034695342812",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 339719,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [],
+      "read_error": "OperationalError: ERROR:  large object 339719 does not exist",
+      "criado_em": "2026-05-07 22:46:56.017269"
+    },
+    {
+      "cpf": "41310627800",
+      "timeline_envio_id": 917,
+      "timeline_envio_item_id": 156986,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695352697",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396358,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:35.946395"
+    },
+    {
+      "cpf": "41310627800",
+      "timeline_envio_id": 916,
+      "timeline_envio_item_id": 156951,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695352697",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396288,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:16.995700"
+    },
+    {
+      "cpf": "41310627800",
+      "timeline_envio_id": 915,
+      "timeline_envio_item_id": 156916,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695352697",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396218,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:55:04.356769"
+    },
+    {
+      "cpf": "41310627800",
+      "timeline_envio_id": 914,
+      "timeline_envio_item_id": 156881,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695352697",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396148,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:30.473411"
+    },
+    {
+      "cpf": "41310627800",
+      "timeline_envio_id": 913,
+      "timeline_envio_item_id": 156846,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695352697",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396078,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:00.057533"
+    },
+    {
+      "cpf": "41310627800",
+      "timeline_envio_id": 120,
+      "timeline_envio_item_id": 11874,
+      "status": "erro_esocial",
+      "erro_codigo": "202",
+      "nr_recibo_anterior": "1.1.0000000034695352697",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 340069,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [],
+      "read_error": "OperationalError: ERROR:  large object 340069 does not exist",
+      "criado_em": "2026-05-07 22:49:56.873805"
+    },
+    {
+      "cpf": "89107241534",
+      "timeline_envio_id": 917,
+      "timeline_envio_item_id": 156987,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695354925",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396359,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:35.946395"
+    },
+    {
+      "cpf": "89107241534",
+      "timeline_envio_id": 916,
+      "timeline_envio_item_id": 156952,
+      "status": "erro_esocial",
+      "erro_codigo": "401",
+      "nr_recibo_anterior": "1.1.0000000034695354925",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396289,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "401"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:59:16.995700"
+    },
+    {
+      "cpf": "89107241534",
+      "timeline_envio_id": 915,
+      "timeline_envio_item_id": 156917,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695354925",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396219,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:55:04.356769"
+    },
+    {
+      "cpf": "89107241534",
+      "timeline_envio_id": 914,
+      "timeline_envio_item_id": 156882,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695354925",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396149,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:30.473411"
+    },
+    {
+      "cpf": "89107241534",
+      "timeline_envio_id": 913,
+      "timeline_envio_item_id": 156847,
+      "status": "erro_esocial",
+      "erro_codigo": "402",
+      "nr_recibo_anterior": "1.1.0000000034695354925",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 2396079,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [
+        "402"
+      ],
+      "read_error": null,
+      "criado_em": "2026-05-19 01:54:00.057533"
+    },
+    {
+      "cpf": "89107241534",
+      "timeline_envio_id": 158,
+      "timeline_envio_item_id": 15665,
+      "status": "erro_esocial",
+      "erro_codigo": "202",
+      "nr_recibo_anterior": "1.1.0000000034695354925",
+      "nr_recibo_novo_coluna": null,
+      "xml_retorno_oid": 347660,
+      "xml_nr_recibos": [],
+      "xml_cd_respostas": [],
+      "read_error": "OperationalError: ERROR:  large object 347660 does not exist",
+      "criado_em": "2026-05-07 23:37:09.550819"
+    }
+  ]
+}

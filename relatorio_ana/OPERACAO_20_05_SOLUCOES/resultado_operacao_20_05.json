@@ -1,0 +1,1725 @@
+{
+  "generated_at": "2026-05-20T15:07:52",
+  "execute": true,
+  "close_zeroed": true,
+  "inputs": {
+    "csv": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\inputs_jaque_resposta_final.csv",
+    "rows": 30,
+    "included": {
+      "2025-02": {
+        "plano": 0,
+        "pensao": 0,
+        "dependente": 0,
+        "error_cpfs": 0
+      },
+      "2025-03": {
+        "plano": 1,
+        "pensao": 0,
+        "dependente": 0,
+        "error_cpfs": 1
+      },
+      "2025-04": {
+        "plano": 10,
+        "pensao": 0,
+        "dependente": 0,
+        "error_cpfs": 10
+      },
+      "2025-05": {
+        "plano": 2,
+        "pensao": 0,
+        "dependente": 0,
+        "error_cpfs": 2
+      },
+      "2025-06": {
+        "plano": 5,
+        "pensao": 0,
+        "dependente": 0,
+        "error_cpfs": 5
+      },
+      "2025-07": {
+        "plano": 3,
+        "pensao": 0,
+        "dependente": 0,
+        "error_cpfs": 3
+      },
+      "2025-09": {
+        "plano": 5,
+        "pensao": 1,
+        "dependente": 0,
+        "error_cpfs": 6
+      },
+      "2025-10": {
+        "plano": 3,
+        "pensao": 0,
+        "dependente": 0,
+        "error_cpfs": 3
+      }
+    }
+  },
+  "months": [
+    {
+      "per_apur": "2025-03",
+      "before": {
+        "erros": 1,
+        "codigos": {
+          "301": 1
+        },
+        "cpfs": [
+          "13209279802"
+        ],
+        "rows": [
+          {
+            "per_apur": "2025-03",
+            "cpf": "13209279802",
+            "status": "erro_esocial",
+            "erro_codigo": "301",
+            "erro_mensagem": "301: Código do erro: 301.3. Hash: 8AE41EDD68B5B1B8A9AB2FC3A650E9DAE03CA95C. Identificador: 099217cb-5fbd-4dd6-b696-747ab5bd247b. A solicitação não pode ser atendida devido a uma falha não identificada que pode ou não ser temporária. Favor tentar novamente mais tarde. Caso o erro permaneça por um período superior a 6 (seis) horas, favor acessar o Portal do eSocial através do endereço https://www.gov.br/esocial/pt-br/canais_atendimento/formularios/empresas/Erro-301",
+            "nr_recibo_anterior": "1.1.0000000031994035532",
+            "nr_recibo_novo": null,
+            "item_id": 191760,
+            "envio_id": 1225,
+            "criado_em": "2026-05-20 17:47:09.838735"
+          }
+        ]
+      },
+      "plan_pensao": {
+        "manifest": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1210_CORRECOES\\2025-03\\manifest_correcao_jaque_2025-03.json",
+        "xmls_generated": 1,
+        "blocked_count": 0,
+        "info_dep_patch": {
+          "updated": 0,
+          "cpfs": []
+        },
+        "validation": {
+          "total_validated": 1,
+          "wrong": [],
+          "sample": [
+            {
+              "cpf": "13209279802",
+              "indRetif": "2",
+              "nrRecibo": "1.1.0000000031994035532",
+              "perApur": "2025-03",
+              "planSaude": 1,
+              "penAlim": 0,
+              "infoIRCR": 1,
+              "signature": false
+            }
+          ]
+        },
+        "execute": {
+          "envio_id": 1227,
+          "sucesso": 1,
+          "erro": 0,
+          "protocolos": [
+            "1.1.202605.0000000013186695357"
+          ],
+          "histograma": {}
+        }
+      },
+      "dependente": {
+        "manifest": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1210_CORRECOES\\2025-03\\dependente_infodep\\manifest_dependente_infodep_2025-03.json",
+        "xmls_generated": 0,
+        "blocked_count": 0,
+        "validation": {
+          "total": 0,
+          "wrong": [],
+          "sample": []
+        },
+        "execute": {
+          "ok": true,
+          "skipped": true,
+          "reason": "sem dependente"
+        }
+      },
+      "after": {
+        "erros": 0,
+        "codigos": {},
+        "cpfs": [],
+        "rows": []
+      },
+      "closing": {
+        "ok": true,
+        "id_evento": "ID1094455020000002026052017514900001",
+        "protocolo": "1.1.202605.0000000013186696633",
+        "codigo": "201",
+        "descricao": "Sucesso.",
+        "nr_recibo": "1.1.0000000040920741237",
+        "evento_db_id": 3483529,
+        "ocorrencias": [],
+        "manifest": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1299_FECHAMENTOS\\2025-03\\manifest_fechamento_s1299_2025-03_solucoes.json",
+        "preflight": {
+          "empresa_id_externo": 2,
+          "empresa_id_interno": 1,
+          "per_apur": "2025-03",
+          "s1210_stats": [
+            {
+              "status": "sucesso",
+              "erro_codigo": "",
+              "total": 18929
+            },
+            {
+              "status": "sucesso",
+              "erro_codigo": "202",
+              "total": 126
+            }
+          ],
+          "pendencias_s1210": 0,
+          "fechamento_status_atual": {
+            "empresa_id": 1,
+            "per_apur": "2025-03",
+            "fechado": false,
+            "protocolo": "1.1.202605.0000000013183424134",
+            "nr_recibo": "1.1.0000000040845465686",
+            "origem": "s1298_ja_aberto",
+            "confirmado_em": "2026-05-19 23:08:14.407696+00:00"
+          },
+          "eventos_s1298_s1299_periodo": [
+            {
+              "tipo_evento": "S-1298",
+              "cd_resposta": "201",
+              "total": 5,
+              "ultimo": "2026-05-15 21:21:46.617396+00:00"
+            },
+            {
+              "tipo_evento": "S-1298",
+              "cd_resposta": "401",
+              "total": 1,
+              "ultimo": "2026-05-19 23:08:14.407696+00:00"
+            },
+            {
+              "tipo_evento": "S-1299",
+              "cd_resposta": "201",
+              "total": 1,
+              "ultimo": "2025-04-17 09:18:50.027000+00:00"
+            },
+            {
+              "tipo_evento": "S-1299",
+              "cd_resposta": "202",
+              "total": 4,
+              "ultimo": "2025-04-14 17:12:32.180000+00:00"
+            }
+          ],
+          "certificado_ok": true,
+          "senha_ok": true
+        }
+      }
+    },
+    {
+      "per_apur": "2025-04",
+      "before": {
+        "erros": 10,
+        "codigos": {
+          "": 10
+        },
+        "cpfs": [
+          "14193059804",
+          "14285875861",
+          "14417604827",
+          "15146736812",
+          "17251076861",
+          "30729903877",
+          "32393572830",
+          "33163519814",
+          "37843870806",
+          "42852580802"
+        ],
+        "rows": [
+          {
+            "per_apur": "2025-04",
+            "cpf": "14193059804",
+            "status": "pendente",
+            "erro_codigo": null,
+            "erro_mensagem": null,
+            "nr_recibo_anterior": "1.1.0000000032620475767",
+            "nr_recibo_novo": null,
+            "item_id": 191773,
+            "envio_id": 1226,
+            "criado_em": "2026-05-20 17:48:27.302684"
+          },
+          {
+            "per_apur": "2025-04",
+            "cpf": "14285875861",
+            "status": "pendente",
+            "erro_codigo": null,
+            "erro_mensagem": null,
+            "nr_recibo_anterior": "1.1.0000000032620939522",
+            "nr_recibo_novo": null,
+            "item_id": 191774,
+            "envio_id": 1226,
+            "criado_em": "2026-05-20 17:48:27.302684"
+          },
+          {
+            "per_apur": "2025-04",
+            "cpf": "14417604827",
+            "status": "pendente",
+            "erro_codigo": null,
+            "erro_mensagem": null,
+            "nr_recibo_anterior": "1.1.0000000032620791225",
+            "nr_recibo_novo": null,
+            "item_id": 191775,
+            "envio_id": 1226,
+            "criado_em": "2026-05-20 17:48:27.302684"
+          },
+          {
+            "per_apur": "2025-04",
+            "cpf": "15146736812",
+            "status": "pendente",
+            "erro_codigo": null,
+            "erro_mensagem": null,
+            "nr_recibo_anterior": "1.1.0000000032620900430",
+            "nr_recibo_novo": null,
+            "item_id": 191776,
+            "envio_id": 1226,
+            "criado_em": "2026-05-20 17:48:27.302684"
+          },
+          {
+            "per_apur": "2025-04",
+            "cpf": "17251076861",
+            "status": "pendente",
+            "erro_codigo": null,
+            "erro_mensagem": null,
+            "nr_recibo_anterior": "1.1.0000000032620963035",
+            "nr_recibo_novo": null,
+            "item_id": 191777,
+            "envio_id": 1226,
+            "criado_em": "2026-05-20 17:48:27.302684"
+          },
+          {
+            "per_apur": "2025-04",
+            "cpf": "30729903877",
+            "status": "pendente",
+            "erro_codigo": null,
+            "erro_mensagem": null,
+            "nr_recibo_anterior": "1.1.0000000032620458699",
+            "nr_recibo_novo": null,
+            "item_id": 191778,
+            "envio_id": 1226,
+            "criado_em": "2026-05-20 17:48:27.302684"
+          },
+          {
+            "per_apur": "2025-04",
+            "cpf": "32393572830",
+            "status": "pendente",
+            "erro_codigo": null,
+            "erro_mensagem": null,
+            "nr_recibo_anterior": "1.1.0000000032620443938",
+            "nr_recibo_novo": null,
+            "item_id": 191779,
+            "envio_id": 1226,
+            "criado_em": "2026-05-20 17:48:27.302684"
+          },
+          {
+            "per_apur": "2025-04",
+            "cpf": "33163519814",
+            "status": "pendente",
+            "erro_codigo": null,
+            "erro_mensagem": null,
+            "nr_recibo_anterior": "1.1.0000000032620935915",
+            "nr_recibo_novo": null,
+            "item_id": 191780,
+            "envio_id": 1226,
+            "criado_em": "2026-05-20 17:48:27.302684"
+          },
+          {
+            "per_apur": "2025-04",
+            "cpf": "37843870806",
+            "status": "pendente",
+            "erro_codigo": null,
+            "erro_mensagem": null,
+            "nr_recibo_anterior": "1.1.0000000032620969904",
+            "nr_recibo_novo": null,
+            "item_id": 191781,
+            "envio_id": 1226,
+            "criado_em": "2026-05-20 17:48:27.302684"
+          },
+          {
+            "per_apur": "2025-04",
+            "cpf": "42852580802",
+            "status": "pendente",
+            "erro_codigo": null,
+            "erro_mensagem": null,
+            "nr_recibo_anterior": "1.1.0000000032620738050",
+            "nr_recibo_novo": null,
+            "item_id": 191782,
+            "envio_id": 1226,
+            "criado_em": "2026-05-20 17:48:27.302684"
+          }
+        ]
+      },
+      "plan_pensao": {
+        "manifest": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1210_CORRECOES\\2025-04\\manifest_correcao_jaque_2025-04.json",
+        "xmls_generated": 10,
+        "blocked_count": 0,
+        "info_dep_patch": {
+          "updated": 0,
+          "cpfs": []
+        },
+        "validation": {
+          "total_validated": 10,
+          "wrong": [],
+          "sample": [
+            {
+              "cpf": "14193059804",
+              "indRetif": "2",
+              "nrRecibo": "1.1.0000000032620475767",
+              "perApur": "2025-04",
+              "planSaude": 1,
+              "penAlim": 0,
+              "infoIRCR": 1,
+              "signature": false
+            },
+            {
+              "cpf": "14285875861",
+              "indRetif": "2",
+              "nrRecibo": "1.1.0000000032620939522",
+              "perApur": "2025-04",
+              "planSaude": 1,
+              "penAlim": 0,
+              "infoIRCR": 1,
+              "signature": false
+            },
+            {
+              "cpf": "14417604827",
+              "indRetif": "2",
+              "nrRecibo": "1.1.0000000032620791225",
+              "perApur": "2025-04",
+              "planSaude": 1,
+              "penAlim": 0,
+              "infoIRCR": 1,
+              "signature": false
+            },
+            {
+              "cpf": "15146736812",
+              "indRetif": "2",
+              "nrRecibo": "1.1.0000000032620900430",
+              "perApur": "2025-04",
+              "planSaude": 1,
+              "penAlim": 0,
+              "infoIRCR": 1,
+              "signature": false
+            },
+            {
+              "cpf": "17251076861",
+              "indRetif": "2",
+              "nrRecibo": "1.1.0000000032620963035",
+              "perApur": "2025-04",
+              "planSaude": 1,
+              "penAlim": 0,
+              "infoIRCR": 1,
+              "signature": false
+            },
+            {
+              "cpf": "30729903877",
+              "indRetif": "2",
+              "nrRecibo": "1.1.0000000032620458699",
+              "perApur": "2025-04",
+              "planSaude": 1,
+              "penAlim": 0,
+              "infoIRCR": 1,
+              "signature": false
+            },
+            {
+              "cpf": "32393572830",
+              "indRetif": "2",
+              "nrRecibo": "1.1.0000000032620443938",
+              "perApur": "2025-04",
+              "planSaude": 1,
+              "penAlim": 0,
+              "infoIRCR": 1,
+              "signature": false
+            },
+            {
+              "cpf": "33163519814",
+              "indRetif": "2",
+              "nrRecibo": "1.1.0000000032620935915",
+              "perApur": "2025-04",
+              "planSaude": 1,
+              "penAlim": 0,
+              "infoIRCR": 1,
+              "signature": false
+            },
+            {
+              "cpf": "37843870806",
+              "indRetif": "2",
+              "nrRecibo": "1.1.0000000032620969904",
+              "perApur": "2025-04",
+              "planSaude": 1,
+              "penAlim": 0,
+              "infoIRCR": 1,
+              "signature": false
+            },
+            {
+              "cpf": "42852580802",
+              "indRetif": "2",
+              "nrRecibo": "1.1.0000000032620738050",
+              "perApur": "2025-04",
+              "planSaude": 1,
+              "penAlim": 0,
+              "infoIRCR": 1,
+              "signature": false
+            }
+          ]
+        },
+        "execute": {
+          "envio_id": 1228,
+          "sucesso": 0,
+          "erro": 10,
+          "protocolos": [
+            "1.1.202605.0000000013186723174"
+          ],
+          "histograma": {
+            "401": 10
+          }
+        }
+      },
+      "dependente": {
+        "manifest": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1210_CORRECOES\\2025-04\\dependente_infodep\\manifest_dependente_infodep_2025-04.json",
+        "xmls_generated": 0,
+        "blocked_count": 0,
+        "validation": {
+          "total": 0,
+          "wrong": [],
+          "sample": []
+        },
+        "execute": {
+          "ok": true,
+          "skipped": true,
+          "reason": "sem dependente"
+        }
+      },
+      "after": {
+        "erros": 10,
+        "codigos": {
+          "401": 10
+        },
+        "cpfs": [
+          "14193059804",
+          "14285875861",
+          "14417604827",
+          "15146736812",
+          "17251076861",
+          "30729903877",
+          "32393572830",
+          "33163519814",
+          "37843870806",
+          "42852580802"
+        ],
+        "rows": [
+          {
+            "per_apur": "2025-04",
+            "cpf": "14193059804",
+            "status": "erro_esocial",
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. | 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.\nAção Sugerida: Deverá existir um Evento já recebido, \"Ativo\" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",
+            "nr_recibo_anterior": "1.1.0000000032620475767",
+            "nr_recibo_novo": null,
+            "item_id": 191784,
+            "envio_id": 1228,
+            "criado_em": "2026-05-20 17:54:44.469187"
+          },
+          {
+            "per_apur": "2025-04",
+            "cpf": "14285875861",
+            "status": "erro_esocial",
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. | 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.\nAção Sugerida: Deverá existir um Evento já recebido, \"Ativo\" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",
+            "nr_recibo_anterior": "1.1.0000000032620939522",
+            "nr_recibo_novo": null,
+            "item_id": 191785,
+            "envio_id": 1228,
+            "criado_em": "2026-05-20 17:54:44.469187"
+          },
+          {
+            "per_apur": "2025-04",
+            "cpf": "14417604827",
+            "status": "erro_esocial",
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. | 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.\nAção Sugerida: Deverá existir um Evento já recebido, \"Ativo\" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",
+            "nr_recibo_anterior": "1.1.0000000032620791225",
+            "nr_recibo_novo": null,
+            "item_id": 191786,
+            "envio_id": 1228,
+            "criado_em": "2026-05-20 17:54:44.469187"
+          },
+          {
+            "per_apur": "2025-04",
+            "cpf": "15146736812",
+            "status": "erro_esocial",
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. | 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.\nAção Sugerida: Deverá existir um Evento já recebido, \"Ativo\" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",
+            "nr_recibo_anterior": "1.1.0000000032620900430",
+            "nr_recibo_novo": null,
+            "item_id": 191787,
+            "envio_id": 1228,
+            "criado_em": "2026-05-20 17:54:44.469187"
+          },
+          {
+            "per_apur": "2025-04",
+            "cpf": "17251076861",
+            "status": "erro_esocial",
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. | 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.\nAção Sugerida: Deverá existir um Evento já recebido, \"Ativo\" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",
+            "nr_recibo_anterior": "1.1.0000000032620963035",
+            "nr_recibo_novo": null,
+            "item_id": 191788,
+            "envio_id": 1228,
+            "criado_em": "2026-05-20 17:54:44.469187"
+          },
+          {
+            "per_apur": "2025-04",
+            "cpf": "30729903877",
+            "status": "erro_esocial",
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. | 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.\nAção Sugerida: Deverá existir um Evento já recebido, \"Ativo\" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",
+            "nr_recibo_anterior": "1.1.0000000032620458699",
+            "nr_recibo_novo": null,
+            "item_id": 191789,
+            "envio_id": 1228,
+            "criado_em": "2026-05-20 17:54:44.469187"
+          },
+          {
+            "per_apur": "2025-04",
+            "cpf": "32393572830",
+            "status": "erro_esocial",
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. | 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.\nAção Sugerida: Deverá existir um Evento já recebido, \"Ativo\" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",
+            "nr_recibo_anterior": "1.1.0000000032620443938",
+            "nr_recibo_novo": null,
+            "item_id": 191790,
+            "envio_id": 1228,
+            "criado_em": "2026-05-20 17:54:44.469187"
+          },
+          {
+            "per_apur": "2025-04",
+            "cpf": "33163519814",
+            "status": "erro_esocial",
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. | 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.\nAção Sugerida: Deverá existir um Evento já recebido, \"Ativo\" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",
+            "nr_recibo_anterior": "1.1.0000000032620935915",
+            "nr_recibo_novo": null,
+            "item_id": 191791,
+            "envio_id": 1228,
+            "criado_em": "2026-05-20 17:54:44.469187"
+          },
+          {
+            "per_apur": "2025-04",
+            "cpf": "37843870806",
+            "status": "erro_esocial",
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. | 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.\nAção Sugerida: Deverá existir um Evento já recebido, \"Ativo\" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",
+            "nr_recibo_anterior": "1.1.0000000032620969904",
+            "nr_recibo_novo": null,
+            "item_id": 191792,
+            "envio_id": 1228,
+            "criado_em": "2026-05-20 17:54:44.469187"
+          },
+          {
+            "per_apur": "2025-04",
+            "cpf": "42852580802",
+            "status": "erro_esocial",
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. | 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.\nAção Sugerida: Deverá existir um Evento já recebido, \"Ativo\" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",
+            "nr_recibo_anterior": "1.1.0000000032620738050",
+            "nr_recibo_novo": null,
+            "item_id": 191793,
+            "envio_id": 1228,
+            "criado_em": "2026-05-20 17:54:44.469187"
+          }
+        ]
+      },
+      "closing": {
+        "skipped": true,
+        "reason": "mes ainda tem erros"
+      }
+    },
+    {
+      "per_apur": "2025-05",
+      "before": {
+        "erros": 2,
+        "codigos": {
+          "401": 2
+        },
+        "cpfs": [
+          "14193059804",
+          "30729903877"
+        ],
+        "rows": [
+          {
+            "per_apur": "2025-05",
+            "cpf": "14193059804",
+            "status": "erro_esocial",
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+            "nr_recibo_anterior": "1.1.0000000033078635773",
+            "nr_recibo_novo": null,
+            "item_id": 88117,
+            "envio_id": 841,
+            "criado_em": "2026-05-15 14:34:40.232283"
+          },
+          {
+            "per_apur": "2025-05",
+            "cpf": "30729903877",
+            "status": "erro_esocial",
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+            "nr_recibo_anterior": "1.1.0000000033078633289",
+            "nr_recibo_novo": null,
+            "item_id": 91154,
+            "envio_id": 844,
+            "criado_em": "2026-05-15 15:03:13.576646"
+          }
+        ]
+      },
+      "plan_pensao": {
+        "manifest": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1210_CORRECOES\\2025-05\\manifest_correcao_jaque_2025-05.json",
+        "xmls_generated": 2,
+        "blocked_count": 0,
+        "info_dep_patch": {
+          "updated": 0,
+          "cpfs": []
+        },
+        "validation": {
+          "total_validated": 2,
+          "wrong": [],
+          "sample": [
+            {
+              "cpf": "14193059804",
+              "indRetif": "2",
+              "nrRecibo": "1.1.0000000033078635773",
+              "perApur": "2025-05",
+              "planSaude": 1,
+              "penAlim": 0,
+              "infoIRCR": 1,
+              "signature": false
+            },
+            {
+              "cpf": "30729903877",
+              "indRetif": "2",
+              "nrRecibo": "1.1.0000000033078633289",
+              "perApur": "2025-05",
+              "planSaude": 1,
+              "penAlim": 0,
+              "infoIRCR": 1,
+              "signature": false
+            }
+          ]
+        },
+        "execute": {
+          "envio_id": 1229,
+          "sucesso": 2,
+          "erro": 0,
+          "protocolos": [
+            "1.1.202605.0000000013186724640"
+          ],
+          "histograma": {}
+        }
+      },
+      "dependente": {
+        "manifest": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1210_CORRECOES\\2025-05\\dependente_infodep\\manifest_dependente_infodep_2025-05.json",
+        "xmls_generated": 0,
+        "blocked_count": 0,
+        "validation": {
+          "total": 0,
+          "wrong": [],
+          "sample": []
+        },
+        "execute": {
+          "ok": true,
+          "skipped": true,
+          "reason": "sem dependente"
+        }
+      },
+      "after": {
+        "erros": 0,
+        "codigos": {},
+        "cpfs": [],
+        "rows": []
+      },
+      "closing": {
+        "ok": true,
+        "id_evento": "ID1094455020000002026052017550400001",
+        "protocolo": "1.1.202605.0000000013186725851",
+        "codigo": "201",
+        "descricao": "Sucesso.",
+        "nr_recibo": "1.1.0000000040920895245",
+        "evento_db_id": 3483530,
+        "ocorrencias": [],
+        "manifest": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1299_FECHAMENTOS\\2025-05\\manifest_fechamento_s1299_2025-05_solucoes.json",
+        "preflight": {
+          "empresa_id_externo": 2,
+          "empresa_id_interno": 1,
+          "per_apur": "2025-05",
+          "s1210_stats": [
+            {
+              "status": "sucesso",
+              "erro_codigo": "",
+              "total": 18911
+            },
+            {
+              "status": "sucesso",
+              "erro_codigo": "202",
+              "total": 136
+            }
+          ],
+          "pendencias_s1210": 0,
+          "fechamento_status_atual": {
+            "empresa_id": 1,
+            "per_apur": "2025-05",
+            "fechado": false,
+            "protocolo": "1.1.202605.0000000013183506717",
+            "nr_recibo": "1.1.0000000040822472641",
+            "origem": "s1298_ja_aberto",
+            "confirmado_em": "2026-05-20 00:02:57.460292+00:00"
+          },
+          "eventos_s1298_s1299_periodo": [
+            {
+              "tipo_evento": "S-1298",
+              "cd_resposta": "201",
+              "total": 4,
+              "ultimo": "2026-05-15 12:02:38.242041+00:00"
+            },
+            {
+              "tipo_evento": "S-1298",
+              "cd_resposta": "401",
+              "total": 1,
+              "ultimo": "2026-05-20 00:02:57.460292+00:00"
+            },
+            {
+              "tipo_evento": "S-1299",
+              "cd_resposta": "201",
+              "total": 2,
+              "ultimo": "2025-06-18 20:30:43.800000+00:00"
+            },
+            {
+              "tipo_evento": "S-1299",
+              "cd_resposta": "202",
+              "total": 2,
+              "ultimo": "2025-06-16 20:26:29.730000+00:00"
+            }
+          ],
+          "certificado_ok": true,
+          "senha_ok": true
+        }
+      }
+    },
+    {
+      "per_apur": "2025-06",
+      "before": {
+        "erros": 5,
+        "codigos": {
+          "401": 5
+        },
+        "cpfs": [
+          "14193059804",
+          "30729903877",
+          "32393572830",
+          "33163519814",
+          "42852580802"
+        ],
+        "rows": [
+          {
+            "per_apur": "2025-06",
+            "cpf": "14193059804",
+            "status": "erro_esocial",
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+            "nr_recibo_anterior": "1.1.0000000033449764022",
+            "nr_recibo_novo": null,
+            "item_id": 71597,
+            "envio_id": 750,
+            "criado_em": "2026-05-15 03:58:12.800133"
+          },
+          {
+            "per_apur": "2025-06",
+            "cpf": "30729903877",
+            "status": "erro_esocial",
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+            "nr_recibo_anterior": "1.1.0000000033449687392",
+            "nr_recibo_novo": null,
+            "item_id": 73706,
+            "envio_id": 771,
+            "criado_em": "2026-05-15 04:22:17.174938"
+          },
+          {
+            "per_apur": "2025-06",
+            "cpf": "32393572830",
+            "status": "erro_esocial",
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+            "nr_recibo_anterior": "1.1.0000000033449614135",
+            "nr_recibo_novo": null,
+            "item_id": 73932,
+            "envio_id": 773,
+            "criado_em": "2026-05-15 04:24:13.124798"
+          },
+          {
+            "per_apur": "2025-06",
+            "cpf": "33163519814",
+            "status": "erro_esocial",
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+            "nr_recibo_anterior": "1.1.0000000033468839184",
+            "nr_recibo_novo": null,
+            "item_id": 74054,
+            "envio_id": 774,
+            "criado_em": "2026-05-15 04:25:04.933465"
+          },
+          {
+            "per_apur": "2025-06",
+            "cpf": "42852580802",
+            "status": "erro_esocial",
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+            "nr_recibo_anterior": "1.1.0000000033463044100",
+            "nr_recibo_novo": null,
+            "item_id": 75445,
+            "envio_id": 788,
+            "criado_em": "2026-05-15 04:46:23.811178"
+          }
+        ]
+      },
+      "plan_pensao": {
+        "manifest": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1210_CORRECOES\\2025-06\\manifest_correcao_jaque_2025-06.json",
+        "xmls_generated": 5,
+        "blocked_count": 0,
+        "info_dep_patch": {
+          "updated": 0,
+          "cpfs": []
+        },
+        "validation": {
+          "total_validated": 5,
+          "wrong": [],
+          "sample": [
+            {
+              "cpf": "14193059804",
+              "indRetif": "2",
+              "nrRecibo": "1.1.0000000033449764022",
+              "perApur": "2025-06",
+              "planSaude": 1,
+              "penAlim": 0,
+              "infoIRCR": 1,
+              "signature": false
+            },
+            {
+              "cpf": "30729903877",
+              "indRetif": "2",
+              "nrRecibo": "1.1.0000000033449687392",
+              "perApur": "2025-06",
+              "planSaude": 1,
+              "penAlim": 0,
+              "infoIRCR": 1,
+              "signature": false
+            },
+            {
+              "cpf": "32393572830",
+              "indRetif": "2",
+              "nrRecibo": "1.1.0000000033449614135",
+              "perApur": "2025-06",
+              "planSaude": 1,
+              "penAlim": 0,
+              "infoIRCR": 1,
+              "signature": false
+            },
+            {
+              "cpf": "33163519814",
+              "indRetif": "2",
+              "nrRecibo": "1.1.0000000033468839184",
+              "perApur": "2025-06",
+              "planSaude": 1,
+              "penAlim": 0,
+              "infoIRCR": 1,
+              "signature": false
+            },
+            {
+              "cpf": "42852580802",
+              "indRetif": "2",
+              "nrRecibo": "1.1.0000000033463044100",
+              "perApur": "2025-06",
+              "planSaude": 1,
+              "penAlim": 0,
+              "infoIRCR": 1,
+              "signature": false
+            }
+          ]
+        },
+        "execute": {
+          "envio_id": 1230,
+          "sucesso": 5,
+          "erro": 0,
+          "protocolos": [
+            "1.1.202605.0000000013186750918"
+          ],
+          "histograma": {}
+        }
+      },
+      "dependente": {
+        "manifest": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1210_CORRECOES\\2025-06\\dependente_infodep\\manifest_dependente_infodep_2025-06.json",
+        "xmls_generated": 0,
+        "blocked_count": 0,
+        "validation": {
+          "total": 0,
+          "wrong": [],
+          "sample": []
+        },
+        "execute": {
+          "ok": true,
+          "skipped": true,
+          "reason": "sem dependente"
+        }
+      },
+      "after": {
+        "erros": 0,
+        "codigos": {},
+        "cpfs": [],
+        "rows": []
+      },
+      "closing": {
+        "ok": true,
+        "id_evento": "ID1094455020000002026052017580700001",
+        "protocolo": "1.1.202605.0000000013186752516",
+        "codigo": "201",
+        "descricao": "Sucesso.",
+        "nr_recibo": "1.1.0000000040921049888",
+        "evento_db_id": 3483531,
+        "ocorrencias": [],
+        "manifest": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1299_FECHAMENTOS\\2025-06\\manifest_fechamento_s1299_2025-06_solucoes.json",
+        "preflight": {
+          "empresa_id_externo": 2,
+          "empresa_id_interno": 1,
+          "per_apur": "2025-06",
+          "s1210_stats": [
+            {
+              "status": "sucesso",
+              "erro_codigo": "",
+              "total": 15231
+            },
+            {
+              "status": "sucesso",
+              "erro_codigo": "202",
+              "total": 116
+            }
+          ],
+          "pendencias_s1210": 0,
+          "fechamento_status_atual": {
+            "empresa_id": 1,
+            "per_apur": "2025-06",
+            "fechado": false,
+            "protocolo": "1.1.202605.0000000013183533028",
+            "nr_recibo": "1.1.0000000040811310537",
+            "origem": "s1298_ja_aberto",
+            "confirmado_em": "2026-05-20 00:23:32.091690+00:00"
+          },
+          "eventos_s1298_s1299_periodo": [
+            {
+              "tipo_evento": "S-1298",
+              "cd_resposta": "201",
+              "total": 2,
+              "ultimo": "2026-05-14 20:32:50.606282+00:00"
+            },
+            {
+              "tipo_evento": "S-1298",
+              "cd_resposta": "401",
+              "total": 1,
+              "ultimo": "2026-05-20 00:23:32.091690+00:00"
+            },
+            {
+              "tipo_evento": "S-1299",
+              "cd_resposta": "201",
+              "total": 1,
+              "ultimo": "2025-07-11 16:59:40.450000+00:00"
+            },
+            {
+              "tipo_evento": "S-1299",
+              "cd_resposta": "202",
+              "total": 1,
+              "ultimo": "2025-07-11 20:10:26.110000+00:00"
+            }
+          ],
+          "certificado_ok": true,
+          "senha_ok": true
+        }
+      }
+    },
+    {
+      "per_apur": "2025-07",
+      "before": {
+        "erros": 3,
+        "codigos": {
+          "401": 3
+        },
+        "cpfs": [
+          "14193059804",
+          "30729903877",
+          "32393572830"
+        ],
+        "rows": [
+          {
+            "per_apur": "2025-07",
+            "cpf": "14193059804",
+            "status": "erro_esocial",
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+            "nr_recibo_anterior": "1.1.0000000034167953789",
+            "nr_recibo_novo": null,
+            "item_id": 56202,
+            "envio_id": 593,
+            "criado_em": "2026-05-14 17:21:24.133991"
+          },
+          {
+            "per_apur": "2025-07",
+            "cpf": "30729903877",
+            "status": "erro_esocial",
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+            "nr_recibo_anterior": "1.1.0000000034167950396",
+            "nr_recibo_novo": null,
+            "item_id": 58348,
+            "envio_id": 615,
+            "criado_em": "2026-05-14 18:09:03.948664"
+          },
+          {
+            "per_apur": "2025-07",
+            "cpf": "32393572830",
+            "status": "erro_esocial",
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+            "nr_recibo_anterior": "1.1.0000000034167946386",
+            "nr_recibo_novo": null,
+            "item_id": 58573,
+            "envio_id": 617,
+            "criado_em": "2026-05-14 18:12:18.513295"
+          }
+        ]
+      },
+      "plan_pensao": {
+        "manifest": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1210_CORRECOES\\2025-07\\manifest_correcao_jaque_2025-07.json",
+        "xmls_generated": 3,
+        "blocked_count": 0,
+        "info_dep_patch": {
+          "updated": 0,
+          "cpfs": []
+        },
+        "validation": {
+          "total_validated": 3,
+          "wrong": [],
+          "sample": [
+            {
+              "cpf": "14193059804",
+              "indRetif": "2",
+              "nrRecibo": "1.1.0000000034167953789",
+              "perApur": "2025-07",
+              "planSaude": 1,
+              "penAlim": 0,
+              "infoIRCR": 1,
+              "signature": false
+            },
+            {
+              "cpf": "30729903877",
+              "indRetif": "2",
+              "nrRecibo": "1.1.0000000034167950396",
+              "perApur": "2025-07",
+              "planSaude": 1,
+              "penAlim": 0,
+              "infoIRCR": 1,
+              "signature": false
+            },
+            {
+              "cpf": "32393572830",
+              "indRetif": "2",
+              "nrRecibo": "1.1.0000000034167946386",
+              "perApur": "2025-07",
+              "planSaude": 1,
+              "penAlim": 0,
+              "infoIRCR": 1,
+              "signature": false
+            }
+          ]
+        },
+        "execute": {
+          "envio_id": 1231,
+          "sucesso": 3,
+          "erro": 0,
+          "protocolos": [
+            "1.1.202605.0000000013186764936"
+          ],
+          "histograma": {}
+        }
+      },
+      "dependente": {
+        "manifest": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1210_CORRECOES\\2025-07\\dependente_infodep\\manifest_dependente_infodep_2025-07.json",
+        "xmls_generated": 0,
+        "blocked_count": 0,
+        "validation": {
+          "total": 0,
+          "wrong": [],
+          "sample": []
+        },
+        "execute": {
+          "ok": true,
+          "skipped": true,
+          "reason": "sem dependente"
+        }
+      },
+      "after": {
+        "erros": 0,
+        "codigos": {},
+        "cpfs": [],
+        "rows": []
+      },
+      "closing": {
+        "ok": true,
+        "id_evento": "ID1094455020000002026052017593200001",
+        "protocolo": "1.1.202605.0000000013186766277",
+        "codigo": "201",
+        "descricao": "Sucesso.",
+        "nr_recibo": "1.1.0000000040921103182",
+        "evento_db_id": 3483532,
+        "ocorrencias": [],
+        "manifest": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1299_FECHAMENTOS\\2025-07\\manifest_fechamento_s1299_2025-07_solucoes.json",
+        "preflight": {
+          "empresa_id_externo": 2,
+          "empresa_id_interno": 1,
+          "per_apur": "2025-07",
+          "s1210_stats": [
+            {
+              "status": "sucesso",
+              "erro_codigo": "",
+              "total": 15726
+            },
+            {
+              "status": "sucesso",
+              "erro_codigo": "202",
+              "total": 130
+            }
+          ],
+          "pendencias_s1210": 0,
+          "fechamento_status_atual": {
+            "empresa_id": 1,
+            "per_apur": "2025-07",
+            "fechado": false,
+            "protocolo": "1.1.202605.0000000013183547400",
+            "nr_recibo": "1.1.0000000040907111665",
+            "origem": "s1298_envio",
+            "confirmado_em": "2026-05-20 00:33:52.433102+00:00"
+          },
+          "eventos_s1298_s1299_periodo": [
+            {
+              "tipo_evento": "S-1298",
+              "cd_resposta": "201",
+              "total": 6,
+              "ultimo": "2026-05-20 00:33:52.433102+00:00"
+            },
+            {
+              "tipo_evento": "S-1298",
+              "cd_resposta": "401",
+              "total": 1,
+              "ultimo": "2026-05-14 05:43:15.566461+00:00"
+            },
+            {
+              "tipo_evento": "S-1299",
+              "cd_resposta": "201",
+              "total": 5,
+              "ultimo": "2026-05-14 20:17:09.985793+00:00"
+            },
+            {
+              "tipo_evento": "S-1299",
+              "cd_resposta": "202",
+              "total": 1,
+              "ultimo": "2025-08-12 16:33:00.023000+00:00"
+            }
+          ],
+          "certificado_ok": true,
+          "senha_ok": true
+        }
+      }
+    },
+    {
+      "per_apur": "2025-09",
+      "before": {
+        "erros": 6,
+        "codigos": {
+          "401": 5,
+          "402": 1
+        },
+        "cpfs": [
+          "14193059804",
+          "30729903877",
+          "34212228866",
+          "39428963895",
+          "73425230115",
+          "81504411153"
+        ],
+        "rows": [
+          {
+            "per_apur": "2025-09",
+            "cpf": "14193059804",
+            "status": "erro_esocial",
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+            "nr_recibo_anterior": "1.1.0000000035309703908",
+            "nr_recibo_novo": null,
+            "item_id": 24081,
+            "envio_id": 262,
+            "criado_em": "2026-05-13 05:31:44.677539"
+          },
+          {
+            "per_apur": "2025-09",
+            "cpf": "30729903877",
+            "status": "erro_esocial",
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+            "nr_recibo_anterior": "1.1.0000000035309700733",
+            "nr_recibo_novo": null,
+            "item_id": 26234,
+            "envio_id": 284,
+            "criado_em": "2026-05-13 07:26:05.527588"
+          },
+          {
+            "per_apur": "2025-09",
+            "cpf": "34212228866",
+            "status": "erro_esocial",
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+            "nr_recibo_anterior": "1.1.0000000035309753819",
+            "nr_recibo_novo": null,
+            "item_id": 26723,
+            "envio_id": 289,
+            "criado_em": "2026-05-13 07:30:09.835256"
+          },
+          {
+            "per_apur": "2025-09",
+            "cpf": "39428963895",
+            "status": "erro_esocial",
+            "erro_codigo": "402",
+            "erro_mensagem": "402: Schema do evento inválido. | 17: A estrutura do arquivo XML está em desconformidade com o esquema XSD.\nThe 'http://www.esocial.gov.br/schema/evt/evtPgtos/v_S_01_03_00:vlrDedPenAlim' element is invalid - The value '0.00' is invalid according to its datatype 'http://www.esocial.gov.br/schema/evt/evtPgtos/v_S_01_03_00:TS_vlrDedPenAlim' - The MinExclusive constraint failed.",
+            "nr_recibo_anterior": "1.1.0000000035309779630",
+            "nr_recibo_novo": null,
+            "item_id": 158265,
+            "envio_id": 956,
+            "criado_em": "2026-05-20 00:59:34.350439"
+          },
+          {
+            "per_apur": "2025-09",
+            "cpf": "73425230115",
+            "status": "erro_esocial",
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+            "nr_recibo_anterior": "1.1.0000000035309699462",
+            "nr_recibo_novo": null,
+            "item_id": 30051,
+            "envio_id": 322,
+            "criado_em": "2026-05-13 12:36:01.375019"
+          },
+          {
+            "per_apur": "2025-09",
+            "cpf": "81504411153",
+            "status": "erro_esocial",
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+            "nr_recibo_anterior": "1.1.0000000035309756757",
+            "nr_recibo_novo": null,
+            "item_id": 30731,
+            "envio_id": 329,
+            "criado_em": "2026-05-13 12:45:27.312726"
+          }
+        ]
+      },
+      "plan_pensao": {
+        "manifest": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1210_CORRECOES\\2025-09\\manifest_correcao_jaque_2025-09.json",
+        "xmls_generated": 6,
+        "blocked_count": 0,
+        "info_dep_patch": {
+          "updated": 1,
+          "cpfs": [
+            "39428963895"
+          ]
+        },
+        "validation": {
+          "total_validated": 6,
+          "wrong": [],
+          "sample": [
+            {
+              "cpf": "14193059804",
+              "indRetif": "2",
+              "nrRecibo": "1.1.0000000035309703908",
+              "perApur": "2025-09",
+              "planSaude": 1,
+              "penAlim": 0,
+              "infoIRCR": 1,
+              "signature": false
+            },
+            {
+              "cpf": "30729903877",
+              "indRetif": "2",
+              "nrRecibo": "1.1.0000000035309700733",
+              "perApur": "2025-09",
+              "planSaude": 1,
+              "penAlim": 0,
+              "infoIRCR": 1,
+              "signature": false
+            },
+            {
+              "cpf": "34212228866",
+              "indRetif": "2",
+              "nrRecibo": "1.1.0000000035309753819",
+              "perApur": "2025-09",
+              "planSaude": 1,
+              "penAlim": 0,
+              "infoIRCR": 1,
+              "signature": false
+            },
+            {
+              "cpf": "39428963895",
+              "indRetif": "2",
+              "nrRecibo": "1.1.0000000035309779630",
+              "perApur": "2025-09",
+              "planSaude": 0,
+              "penAlim": 1,
+              "infoIRCR": 1,
+              "signature": false
+            },
+            {
+              "cpf": "73425230115",
+              "indRetif": "2",
+              "nrRecibo": "1.1.0000000035309699462",
+              "perApur": "2025-09",
+              "planSaude": 1,
+              "penAlim": 0,
+              "infoIRCR": 1,
+              "signature": false
+            },
+            {
+              "cpf": "81504411153",
+              "indRetif": "2",
+              "nrRecibo": "1.1.0000000035309756757",
+              "perApur": "2025-09",
+              "planSaude": 1,
+              "penAlim": 0,
+              "infoIRCR": 1,
+              "signature": false
+            }
+          ]
+        },
+        "execute": {
+          "envio_id": 1232,
+          "sucesso": 6,
+          "erro": 0,
+          "protocolos": [
+            "1.1.202605.0000000013186789323"
+          ],
+          "histograma": {}
+        }
+      },
+      "dependente": {
+        "manifest": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1210_CORRECOES\\2025-09\\dependente_infodep\\manifest_dependente_infodep_2025-09.json",
+        "xmls_generated": 0,
+        "blocked_count": 0,
+        "validation": {
+          "total": 0,
+          "wrong": [],
+          "sample": []
+        },
+        "execute": {
+          "ok": true,
+          "skipped": true,
+          "reason": "sem dependente"
+        }
+      },
+      "after": {
+        "erros": 0,
+        "codigos": {},
+        "cpfs": [],
+        "rows": []
+      },
+      "closing": {
+        "ok": true,
+        "id_evento": "ID1094455020000002026052018022800001",
+        "protocolo": "1.1.202605.0000000013186790496",
+        "codigo": "201",
+        "descricao": "Sucesso.",
+        "nr_recibo": "1.1.0000000040921211777",
+        "evento_db_id": 3483533,
+        "ocorrencias": [],
+        "manifest": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1299_FECHAMENTOS\\2025-09\\manifest_fechamento_s1299_2025-09_solucoes.json",
+        "preflight": {
+          "empresa_id_externo": 2,
+          "empresa_id_interno": 1,
+          "per_apur": "2025-09",
+          "s1210_stats": [
+            {
+              "status": "sucesso",
+              "erro_codigo": "",
+              "total": 15797
+            },
+            {
+              "status": "sucesso",
+              "erro_codigo": "202",
+              "total": 120
+            }
+          ],
+          "pendencias_s1210": 0,
+          "fechamento_status_atual": {
+            "empresa_id": 1,
+            "per_apur": "2025-09",
+            "fechado": false,
+            "protocolo": "1.1.202605.0000000013183586881",
+            "nr_recibo": "1.1.0000000040747878940",
+            "origem": "s1298_ja_aberto",
+            "confirmado_em": "2026-05-20 00:59:22.150309+00:00"
+          },
+          "eventos_s1298_s1299_periodo": [
+            {
+              "tipo_evento": "S-1298",
+              "cd_resposta": "201",
+              "total": 4,
+              "ultimo": "2026-05-13 03:03:30.310744+00:00"
+            },
+            {
+              "tipo_evento": "S-1298",
+              "cd_resposta": "401",
+              "total": 1,
+              "ultimo": "2026-05-20 00:59:22.150309+00:00"
+            },
+            {
+              "tipo_evento": "S-1299",
+              "cd_resposta": "201",
+              "total": 3,
+              "ultimo": "2025-10-27 09:45:46.710000+00:00"
+            },
+            {
+              "tipo_evento": "S-1299",
+              "cd_resposta": "202",
+              "total": 1,
+              "ultimo": "2025-10-10 21:09:02.193000+00:00"
+            }
+          ],
+          "certificado_ok": true,
+          "senha_ok": true
+        }
+      }
+    },
+    {
+      "per_apur": "2025-10",
+      "before": {
+        "erros": 3,
+        "codigos": {
+          "401": 3
+        },
+        "cpfs": [
+          "14193059804",
+          "30729903877",
+          "32945497840"
+        ],
+        "rows": [
+          {
+            "per_apur": "2025-10",
+            "cpf": "14193059804",
+            "status": "erro_esocial",
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+            "nr_recibo_anterior": "1.1.0000000035822432705",
+            "nr_recibo_novo": null,
+            "item_id": 40145,
+            "envio_id": 429,
+            "criado_em": "2026-05-13 18:52:07.481694"
+          },
+          {
+            "per_apur": "2025-10",
+            "cpf": "30729903877",
+            "status": "erro_esocial",
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+            "nr_recibo_anterior": "1.1.0000000035822425672",
+            "nr_recibo_novo": null,
+            "item_id": 42558,
+            "envio_id": 453,
+            "criado_em": "2026-05-13 23:21:39.047866"
+          },
+          {
+            "per_apur": "2025-10",
+            "cpf": "32945497840",
+            "status": "erro_esocial",
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+            "nr_recibo_anterior": "1.1.0000000035822664601",
+            "nr_recibo_novo": null,
+            "item_id": 42866,
+            "envio_id": 456,
+            "criado_em": "2026-05-14 00:46:37.739024"
+          }
+        ]
+      },
+      "plan_pensao": {
+        "manifest": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1210_CORRECOES\\2025-10\\manifest_correcao_jaque_2025-10.json",
+        "xmls_generated": 3,
+        "blocked_count": 0,
+        "info_dep_patch": {
+          "updated": 0,
+          "cpfs": []
+        },
+        "validation": {
+          "total_validated": 3,
+          "wrong": [],
+          "sample": [
+            {
+              "cpf": "14193059804",
+              "indRetif": "2",
+              "nrRecibo": "1.1.0000000035822432705",
+              "perApur": "2025-10",
+              "planSaude": 1,
+              "penAlim": 0,
+              "infoIRCR": 1,
+              "signature": false
+            },
+            {
+              "cpf": "30729903877",
+              "indRetif": "2",
+              "nrRecibo": "1.1.0000000035822425672",
+              "perApur": "2025-10",
+              "planSaude": 1,
+              "penAlim": 0,
+              "infoIRCR": 1,
+              "signature": false
+            },
+            {
+              "cpf": "32945497840",
+              "indRetif": "2",
+              "nrRecibo": "1.1.0000000035822664601",
+              "perApur": "2025-10",
+              "planSaude": 1,
+              "penAlim": 0,
+              "infoIRCR": 1,
+              "signature": false
+            }
+          ]
+        },
+        "execute": {
+          "envio_id": 1233,
+          "sucesso": 3,
+          "erro": 0,
+          "protocolos": [
+            "1.1.202605.0000000013186811074"
+          ],
+          "histograma": {}
+        }
+      },
+      "dependente": {
+        "manifest": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1210_CORRECOES\\2025-10\\dependente_infodep\\manifest_dependente_infodep_2025-10.json",
+        "xmls_generated": 0,
+        "blocked_count": 0,
+        "validation": {
+          "total": 0,
+          "wrong": [],
+          "sample": []
+        },
+        "execute": {
+          "ok": true,
+          "skipped": true,
+          "reason": "sem dependente"
+        }
+      },
+      "after": {
+        "erros": 0,
+        "codigos": {},
+        "cpfs": [],
+        "rows": []
+      },
+      "closing": {
+        "ok": true,
+        "id_evento": "ID1094455020000002026052018050700001",
+        "protocolo": "1.1.202605.0000000013186812229",
+        "codigo": "201",
+        "descricao": "Sucesso.",
+        "nr_recibo": "1.1.0000000040921314346",
+        "evento_db_id": 3483534,
+        "ocorrencias": [],
+        "manifest": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\S1299_FECHAMENTOS\\2025-10\\manifest_fechamento_s1299_2025-10_solucoes.json",
+        "preflight": {
+          "empresa_id_externo": 2,
+          "empresa_id_interno": 1,
+          "per_apur": "2025-10",
+          "s1210_stats": [
+            {
+              "status": "sucesso",
+              "erro_codigo": "",
+              "total": 15994
+            },
+            {
+              "status": "sucesso",
+              "erro_codigo": "202",
+              "total": 117
+            }
+          ],
+          "pendencias_s1210": 0,
+          "fechamento_status_atual": {
+            "empresa_id": 1,
+            "per_apur": "2025-10",
+            "fechado": false,
+            "protocolo": "1.1.202605.0000000013183596214",
+            "nr_recibo": "1.1.0000000040764784109",
+            "origem": "s1298_ja_aberto",
+            "confirmado_em": "2026-05-20 01:06:16.740517+00:00"
+          },
+          "eventos_s1298_s1299_periodo": [
+            {
+              "tipo_evento": "S-1298",
+              "cd_resposta": "201",
+              "total": 5,
+              "ultimo": "2026-05-13 16:10:23.318291+00:00"
+            },
+            {
+              "tipo_evento": "S-1298",
+              "cd_resposta": "401",
+              "total": 1,
+              "ultimo": "2026-05-20 01:06:16.740517+00:00"
+            },
+            {
+              "tipo_evento": "S-1299",
+              "cd_resposta": "201",
+              "total": 4,
+              "ultimo": "2025-11-17 20:53:17.287000+00:00"
+            },
+            {
+              "tipo_evento": "S-1299",
+              "cd_resposta": "202",
+              "total": 1,
+              "ultimo": "2025-11-19 07:49:13.130000+00:00"
+            }
+          ],
+          "certificado_ok": true,
+          "senha_ok": true
+        }
+      }
+    }
+  ],
+  "reports_nov_dec": {
+    "generated_at": "2026-05-20T15:07:52",
+    "months": [
+      "2025-11",
+      "2025-12"
+    ],
+    "total": 236,
+    "by_month": {
+      "2025-11": 114,
+      "2025-12": 122
+    },
+    "jaque": 229,
+    "dev": 7,
+    "jaque_by_class": {
+      "Jaque - plano de saude": 223,
+      "Jaque - pensao alimenticia": 4,
+      "Jaque - cpf dependente": 2
+    },
+    "dev_by_code": {
+      "401": 7
+    },
+    "files": {
+      "jaque_csv": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\RELATORIOS_NOV_DEZ\\relatorio_jaque_nov_dez.csv",
+      "dev_csv": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\RELATORIOS_NOV_DEZ\\relatorio_dev_nov_dez.csv",
+      "todos_csv": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\RELATORIOS_NOV_DEZ\\relatorio_todos_nov_dez.csv",
+      "md": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\RELATORIOS_NOV_DEZ\\RELATORIO_NOV_DEZ.md",
+      "json": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OPERACAO_20_05_SOLUCOES\\RELATORIOS_NOV_DEZ\\summary_nov_dez.json"
+    }
+  }
+}

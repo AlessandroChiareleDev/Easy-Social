@@ -1,0 +1,953 @@
+{
+  "total_targets": 35,
+  "mapped": 35,
+  "with_protocol": 35,
+  "missing": [],
+  "target_envios": [
+    20,
+    30,
+    35,
+    36,
+    38,
+    43,
+    44,
+    46,
+    47,
+    60,
+    61,
+    66,
+    67,
+    71,
+    74,
+    75,
+    76,
+    77,
+    79,
+    81,
+    87,
+    90,
+    93,
+    112,
+    118,
+    120,
+    158
+  ],
+  "logs_found_for_envios": [
+    20,
+    30,
+    35,
+    36,
+    38,
+    43,
+    44,
+    46,
+    47,
+    60,
+    61,
+    66,
+    67,
+    71,
+    74,
+    75,
+    76,
+    77,
+    79,
+    81,
+    87,
+    90,
+    93,
+    112,
+    118,
+    120,
+    158
+  ],
+  "protocols_unique": [
+    "1.1.202605.0000000013127100357",
+    "1.1.202605.0000000013127823297",
+    "1.1.202605.0000000013127823301",
+    "1.1.202605.0000000013127832252",
+    "1.1.202605.0000000013127834607",
+    "1.1.202605.0000000013127847484",
+    "1.1.202605.0000000013127859454",
+    "1.1.202605.0000000013127861060",
+    "1.1.202605.0000000013127865098",
+    "1.1.202605.0000000013127867597",
+    "1.1.202605.0000000013127886510",
+    "1.1.202605.0000000013127888403",
+    "1.1.202605.0000000013127937959",
+    "1.1.202605.0000000013127939047",
+    "1.1.202605.0000000013127939049",
+    "1.1.202605.0000000013127944706",
+    "1.1.202605.0000000013127948307",
+    "1.1.202605.0000000013127950158",
+    "1.1.202605.0000000013127952650",
+    "1.1.202605.0000000013127953972",
+    "1.1.202605.0000000013127956645",
+    "1.1.202605.0000000013127959058",
+    "1.1.202605.0000000013127976474",
+    "1.1.202605.0000000013127981865",
+    "1.1.202605.0000000013127986891",
+    "1.1.202605.0000000013128023943",
+    "1.1.202605.0000000013128034747",
+    "1.1.202605.0000000013128039180",
+    "1.1.202605.0000000013128114315"
+  ],
+  "items": [
+    {
+      "cpf": "02254091786",
+      "item_id": 1883,
+      "envio_id": 20,
+      "rank_no_envio": 311,
+      "batch_size": 50,
+      "batch": 7,
+      "protocolo": "1.1.202605.0000000013127100357",
+      "log_file": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-eSocial-v2\\backend\\_archive\\_envio_500_v15.log",
+      "nr_recibo_anterior": "1.1.0000000034695365779",
+      "erro_codigo": "202",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "06423506710",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "06423509735",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "cpf": "03415419584",
+      "item_id": 2886,
+      "envio_id": 30,
+      "rank_no_envio": 29,
+      "batch_size": 50,
+      "batch": 1,
+      "protocolo": "1.1.202605.0000000013127823301",
+      "log_file": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-eSocial-v2\\backend\\_archive\\_envio_lote03.log",
+      "nr_recibo_anterior": "1.1.0000000034695371967",
+      "erro_codigo": "202",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "01485657512",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "08671801535",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "12885697504",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "cpf": "03456861796",
+      "item_id": 2917,
+      "envio_id": 30,
+      "rank_no_envio": 60,
+      "batch_size": 50,
+      "batch": 2,
+      "protocolo": "1.1.202605.0000000013127823297",
+      "log_file": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-eSocial-v2\\backend\\_archive\\_envio_lote03.log",
+      "nr_recibo_anterior": "1.1.0000000034695364701",
+      "erro_codigo": "202",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "18589975770",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "cpf": "03470657750",
+      "item_id": 2933,
+      "envio_id": 30,
+      "rank_no_envio": 76,
+      "batch_size": 50,
+      "batch": 2,
+      "protocolo": "1.1.202605.0000000013127823297",
+      "log_file": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-eSocial-v2\\backend\\_archive\\_envio_lote03.log",
+      "nr_recibo_anterior": "1.1.0000000034695386479",
+      "erro_codigo": "202",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "15301330764",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "cpf": "04202911482",
+      "item_id": 3450,
+      "envio_id": 35,
+      "rank_no_envio": 93,
+      "batch_size": 50,
+      "batch": 2,
+      "protocolo": "1.1.202605.0000000013127832252",
+      "log_file": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-eSocial-v2\\backend\\_archive\\_envio_lote08.log",
+      "nr_recibo_anterior": "1.1.0000000034695360470",
+      "erro_codigo": "202",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "18060495461",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "cpf": "04239333458",
+      "item_id": 3490,
+      "envio_id": 36,
+      "rank_no_envio": 33,
+      "batch_size": 50,
+      "batch": 1,
+      "protocolo": "1.1.202605.0000000013127834607",
+      "log_file": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-eSocial-v2\\backend\\_archive\\_envio_lote09.log",
+      "nr_recibo_anterior": "1.1.0000000034695390734",
+      "erro_codigo": "202",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "71440622477",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "71440625492",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "cpf": "04260837419",
+      "item_id": 3507,
+      "envio_id": 36,
+      "rank_no_envio": 50,
+      "batch_size": 50,
+      "batch": 1,
+      "protocolo": "1.1.202605.0000000013127834607",
+      "log_file": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-eSocial-v2\\backend\\_archive\\_envio_lote09.log",
+      "nr_recibo_anterior": "1.1.0000000034695363999",
+      "erro_codigo": "202",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "16959530458",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "cpf": "04575626414",
+      "item_id": 3749,
+      "envio_id": 38,
+      "rank_no_envio": 92,
+      "batch_size": 50,
+      "batch": 2,
+      "protocolo": "1.1.202605.0000000013127847484",
+      "log_file": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-eSocial-v2\\backend\\_archive\\_envio_lote11.log",
+      "nr_recibo_anterior": "1.1.0000000034695363623",
+      "erro_codigo": "202",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "15416281448",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "15416325402",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "cpf": "05365128761",
+      "item_id": 4214,
+      "envio_id": 43,
+      "rank_no_envio": 57,
+      "batch_size": 50,
+      "batch": 2,
+      "protocolo": "1.1.202605.0000000013127859454",
+      "log_file": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-eSocial-v2\\backend\\_archive\\_envio_lote16.log",
+      "nr_recibo_anterior": "1.1.0000000034695356132",
+      "erro_codigo": "202",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "06492792718",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "cpf": "05390784766",
+      "item_id": 4231,
+      "envio_id": 43,
+      "rank_no_envio": 74,
+      "batch_size": 50,
+      "batch": 2,
+      "protocolo": "1.1.202605.0000000013127859454",
+      "log_file": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-eSocial-v2\\backend\\_archive\\_envio_lote16.log",
+      "nr_recibo_anterior": "1.1.0000000034695385887",
+      "erro_codigo": "202",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "19137580795",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "19137608711",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "20228682770",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "cpf": "05513724430",
+      "item_id": 4310,
+      "envio_id": 44,
+      "rank_no_envio": 53,
+      "batch_size": 50,
+      "batch": 2,
+      "protocolo": "1.1.202605.0000000013127861060",
+      "log_file": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-eSocial-v2\\backend\\_archive\\_envio_lote17.log",
+      "nr_recibo_anterior": "1.1.0000000034695362130",
+      "erro_codigo": "202",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "13380700452",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "13380713430",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "cpf": "05774255794",
+      "item_id": 4480,
+      "envio_id": 46,
+      "rank_no_envio": 23,
+      "batch_size": 50,
+      "batch": 1,
+      "protocolo": "1.1.202605.0000000013127865098",
+      "log_file": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-eSocial-v2\\backend\\_archive\\_envio_lote19.log",
+      "nr_recibo_anterior": "1.1.0000000034695374141",
+      "erro_codigo": "202",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "16597807723",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "22404489704",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "cpf": "05788537797",
+      "item_id": 4488,
+      "envio_id": 46,
+      "rank_no_envio": 31,
+      "batch_size": 50,
+      "batch": 1,
+      "protocolo": "1.1.202605.0000000013127865098",
+      "log_file": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-eSocial-v2\\backend\\_archive\\_envio_lote19.log",
+      "nr_recibo_anterior": "1.1.0000000034695352620",
+      "erro_codigo": "202",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "16400420754",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "cpf": "05986727703",
+      "item_id": 4614,
+      "envio_id": 47,
+      "rank_no_envio": 57,
+      "batch_size": 50,
+      "batch": 2,
+      "protocolo": "1.1.202605.0000000013127867597",
+      "log_file": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-eSocial-v2\\backend\\_archive\\_envio_lote20.log",
+      "nr_recibo_anterior": "1.1.0000000034695378344",
+      "erro_codigo": "202",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "15832548701",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "cpf": "08405088750",
+      "item_id": 5933,
+      "envio_id": 60,
+      "rank_no_envio": 76,
+      "batch_size": 50,
+      "batch": 2,
+      "protocolo": "1.1.202605.0000000013127886510",
+      "log_file": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-eSocial-v2\\backend\\_archive\\_envio_lote33.log",
+      "nr_recibo_anterior": "1.1.0000000034695359966",
+      "erro_codigo": "202",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "19267023799",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "20673146707",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "20673171728",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "cpf": "08554135733",
+      "item_id": 6015,
+      "envio_id": 61,
+      "rank_no_envio": 58,
+      "batch_size": 50,
+      "batch": 2,
+      "protocolo": "1.1.202605.0000000013127888403",
+      "log_file": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-eSocial-v2\\backend\\_archive\\_envio_lote34.log",
+      "nr_recibo_anterior": "1.1.0000000034695355753",
+      "erro_codigo": "202",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "18710630783",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "cpf": "09568580743",
+      "item_id": 6494,
+      "envio_id": 66,
+      "rank_no_envio": 37,
+      "batch_size": 50,
+      "batch": 1,
+      "protocolo": "1.1.202605.0000000013127937959",
+      "log_file": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-eSocial-v2\\backend\\_archive\\_envio_lote39.log",
+      "nr_recibo_anterior": "1.1.0000000034695366028",
+      "erro_codigo": "202",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "21044429747",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "21044471786",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "cpf": "09705541760",
+      "item_id": 6569,
+      "envio_id": 67,
+      "rank_no_envio": 12,
+      "batch_size": 50,
+      "batch": 1,
+      "protocolo": "1.1.202605.0000000013127939049",
+      "log_file": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-eSocial-v2\\backend\\_archive\\_envio_lote40.log",
+      "nr_recibo_anterior": "1.1.0000000034695386340",
+      "erro_codigo": "202",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "16638222716",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "cpf": "09849145790",
+      "item_id": 6642,
+      "envio_id": 67,
+      "rank_no_envio": 85,
+      "batch_size": 50,
+      "batch": 2,
+      "protocolo": "1.1.202605.0000000013127939047",
+      "log_file": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-eSocial-v2\\backend\\_archive\\_envio_lote40.log",
+      "nr_recibo_anterior": "1.1.0000000034695364414",
+      "erro_codigo": "202",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "06390152710",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "19443383730",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "23080190777",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "cpf": "10617805709",
+      "item_id": 7010,
+      "envio_id": 71,
+      "rank_no_envio": 53,
+      "batch_size": 50,
+      "batch": 2,
+      "protocolo": "1.1.202605.0000000013127944706",
+      "log_file": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-eSocial-v2\\backend\\_archive\\_envio_lote44.log",
+      "nr_recibo_anterior": "1.1.0000000034695388036",
+      "erro_codigo": "202",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "22063885702",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "cpf": "11191263711",
+      "item_id": 7305,
+      "envio_id": 74,
+      "rank_no_envio": 48,
+      "batch_size": 50,
+      "batch": 1,
+      "protocolo": "1.1.202605.0000000013127948307",
+      "log_file": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-eSocial-v2\\backend\\_archive\\_envio_lote47.log",
+      "nr_recibo_anterior": "1.1.0000000034695339861",
+      "erro_codigo": "202",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "20394818776",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "cpf": "11500569755",
+      "item_id": 7455,
+      "envio_id": 75,
+      "rank_no_envio": 98,
+      "batch_size": 50,
+      "batch": 2,
+      "protocolo": "1.1.202605.0000000013127950158",
+      "log_file": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-eSocial-v2\\backend\\_archive\\_envio_lote48.log",
+      "nr_recibo_anterior": "1.1.0000000034695359560",
+      "erro_codigo": "202",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "21231750723",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "21231757736",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "cpf": "11553980760",
+      "item_id": 7472,
+      "envio_id": 76,
+      "rank_no_envio": 15,
+      "batch_size": 50,
+      "batch": 1,
+      "protocolo": "1.1.202605.0000000013127952650",
+      "log_file": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-eSocial-v2\\backend\\_archive\\_envio_lote49.log",
+      "nr_recibo_anterior": "1.1.0000000034695356048",
+      "erro_codigo": "202",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "21108762719",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "cpf": "11915524709",
+      "item_id": 7609,
+      "envio_id": 77,
+      "rank_no_envio": 52,
+      "batch_size": 50,
+      "batch": 2,
+      "protocolo": "1.1.202605.0000000013127953972",
+      "log_file": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-eSocial-v2\\backend\\_archive\\_envio_lote50.log",
+      "nr_recibo_anterior": "1.1.0000000034695340278",
+      "erro_codigo": "202",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "21874576726",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "cpf": "11994427477",
+      "item_id": 7655,
+      "envio_id": 77,
+      "rank_no_envio": 98,
+      "batch_size": 50,
+      "batch": 2,
+      "protocolo": "1.1.202605.0000000013127953972",
+      "log_file": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-eSocial-v2\\backend\\_archive\\_envio_lote50.log",
+      "nr_recibo_anterior": "1.1.0000000034695360413",
+      "erro_codigo": "202",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "16795353400",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "cpf": "12501850769",
+      "item_id": 7816,
+      "envio_id": 79,
+      "rank_no_envio": 59,
+      "batch_size": 50,
+      "batch": 2,
+      "protocolo": "1.1.202605.0000000013127956645",
+      "log_file": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-eSocial-v2\\backend\\_archive\\_envio_lote52.log",
+      "nr_recibo_anterior": "1.1.0000000034695374775",
+      "erro_codigo": "202",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "18974292742",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "18974302721",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "cpf": "13182452738",
+      "item_id": 8020,
+      "envio_id": 81,
+      "rank_no_envio": 63,
+      "batch_size": 50,
+      "batch": 2,
+      "protocolo": "1.1.202605.0000000013127959058",
+      "log_file": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-eSocial-v2\\backend\\_archive\\_envio_lote54.log",
+      "nr_recibo_anterior": "1.1.0000000034695349383",
+      "erro_codigo": "202",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "19073815703",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "19104968719",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "19958972727",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "20241481740",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "20241503736",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "20241514770",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "22292850761",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "cpf": "15275584792",
+      "item_id": 8565,
+      "envio_id": 87,
+      "rank_no_envio": 8,
+      "batch_size": 50,
+      "batch": 1,
+      "protocolo": "1.1.202605.0000000013127976474",
+      "log_file": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-eSocial-v2\\backend\\_archive\\_envio_lote60.log",
+      "nr_recibo_anterior": "1.1.0000000034695367278",
+      "erro_codigo": "202",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "22853460770",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "cpf": "15447916747",
+      "item_id": 8600,
+      "envio_id": 87,
+      "rank_no_envio": 43,
+      "batch_size": 50,
+      "batch": 1,
+      "protocolo": "1.1.202605.0000000013127976474",
+      "log_file": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-eSocial-v2\\backend\\_archive\\_envio_lote60.log",
+      "nr_recibo_anterior": "1.1.0000000034695356074",
+      "erro_codigo": "202",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "20374139717",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "20698806727",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "cpf": "17087835718",
+      "item_id": 8917,
+      "envio_id": 90,
+      "rank_no_envio": 60,
+      "batch_size": 50,
+      "batch": 2,
+      "protocolo": "1.1.202605.0000000013127981865",
+      "log_file": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-eSocial-v2\\backend\\_archive\\_envio_lote63.log",
+      "nr_recibo_anterior": "1.1.0000000034695461759",
+      "erro_codigo": "202",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "23039241702",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "cpf": "19354014755",
+      "item_id": 9228,
+      "envio_id": 93,
+      "rank_no_envio": 71,
+      "batch_size": 50,
+      "batch": 2,
+      "protocolo": "1.1.202605.0000000013127986891",
+      "log_file": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-eSocial-v2\\backend\\_archive\\_envio_lote66.log",
+      "nr_recibo_anterior": "1.1.0000000034695355772",
+      "erro_codigo": "202",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "20625296788",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "cpf": "35832326822",
+      "item_id": 11142,
+      "envio_id": 112,
+      "rank_no_envio": 85,
+      "batch_size": 50,
+      "batch": 2,
+      "protocolo": "1.1.202605.0000000013128023943",
+      "log_file": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-eSocial-v2\\backend\\_archive\\_envio_lote85.log",
+      "nr_recibo_anterior": "1.1.0000000034695388412",
+      "erro_codigo": "202",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "56165716873",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "56509983885",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "cpf": "40236751808",
+      "item_id": 11741,
+      "envio_id": 118,
+      "rank_no_envio": 84,
+      "batch_size": 50,
+      "batch": 2,
+      "protocolo": "1.1.202605.0000000013128034747",
+      "log_file": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-eSocial-v2\\backend\\_archive\\_envio_lote91.log",
+      "nr_recibo_anterior": "1.1.0000000034695342812",
+      "erro_codigo": "202",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "53971605800",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "58045307803",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "58045328800",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "cpf": "41310627800",
+      "item_id": 11874,
+      "envio_id": 120,
+      "rank_no_envio": 17,
+      "batch_size": 50,
+      "batch": 1,
+      "protocolo": "1.1.202605.0000000013128039180",
+      "log_file": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-eSocial-v2\\backend\\_archive\\_envio_lote93.log",
+      "nr_recibo_anterior": "1.1.0000000034695352697",
+      "erro_codigo": "202",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "23997904804",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    },
+    {
+      "cpf": "89107241534",
+      "item_id": 15665,
+      "envio_id": 158,
+      "rank_no_envio": 8,
+      "batch_size": 50,
+      "batch": 1,
+      "protocolo": "1.1.202605.0000000013128114315",
+      "log_file": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-eSocial-v2\\backend\\_archive\\_envio_lote131.log",
+      "nr_recibo_anterior": "1.1.0000000034695354925",
+      "erro_codigo": "202",
+      "dedDepen_corrigir": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "85906235566",
+          "vlrDedDep": "189.59"
+        }
+      ]
+    }
+  ]
+}

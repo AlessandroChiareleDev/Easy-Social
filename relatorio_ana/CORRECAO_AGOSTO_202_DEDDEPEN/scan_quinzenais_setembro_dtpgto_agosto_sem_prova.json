@@ -1,0 +1,2141 @@
+{
+  "zip_stats": [
+    {
+      "zip": "SOLUCOES_2025-09(01-15).zip",
+      "total_entries": 80817,
+      "s1210_entries": 15517,
+      "raw_target_hits": 70,
+      "parsed_target_events": 70,
+      "dtpgto_target_records": 70
+    },
+    {
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "total_entries": 117338,
+      "s1210_entries": 15501,
+      "raw_target_hits": 70,
+      "parsed_target_events": 70,
+      "dtpgto_target_records": 70
+    }
+  ],
+  "counts": {
+    "dtPgto_prefix": "2025-08",
+    "total_sem_prova": 70,
+    "found_by_dtPgto": 70,
+    "not_found_by_dtPgto": 0,
+    "multiple_records_per_cpf": 70,
+    "total_matching_records": 140,
+    "with_infoDep_real": 0,
+    "with_dedDepen_real": 2,
+    "with_ded_zero": 68,
+    "zero_only": 68,
+    "no_ir_data": 0,
+    "parse_errors": 0
+  },
+  "records": [
+    {
+      "cpf": "01987352190",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819081600002.S-1210.xml",
+      "id": "ID1094455020000002025091819081600002",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695358202"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "02691360539",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819095500003.S-1210.xml",
+      "id": "ID1094455020000002025091819095500003",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06",
+        "2025-08-08"
+      ],
+      "perRefs": [
+        "2025-07",
+        "2025-08"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695363665"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "02708236385",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819082500005.S-1210.xml",
+      "id": "ID1094455020000002025091819082500005",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695358403"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "758.36"
+        }
+      ]
+    },
+    {
+      "cpf": "03418753418",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819092400005.S-1210.xml",
+      "id": "ID1094455020000002025091819092400005",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695362098"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "03499760401",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819094100009.S-1210.xml",
+      "id": "ID1094455020000002025091819094100009",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695363587"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "03551743169",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819083900001.S-1210.xml",
+      "id": "ID1094455020000002025091819083900001",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695358894"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "568.77"
+        }
+      ]
+    },
+    {
+      "cpf": "03775596445",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819092500010.S-1210.xml",
+      "id": "ID1094455020000002025091819092500010",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695362602"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "03884524470",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819095600001.S-1210.xml",
+      "id": "ID1094455020000002025091819095600001",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695363907"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "04102191429",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819092800003.S-1210.xml",
+      "id": "ID1094455020000002025091819092800003",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695361826"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "04140693401",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819094500002.S-1210.xml",
+      "id": "ID1094455020000002025091819094500002",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695363262"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "04240549493",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819092400013.S-1210.xml",
+      "id": "ID1094455020000002025091819092400013",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695362328"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "04240556430",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819093000007.S-1210.xml",
+      "id": "ID1094455020000002025091819093000007",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695362717"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "04472251469",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819093300012.S-1210.xml",
+      "id": "ID1094455020000002025091819093300012",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695362452"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "04532926408",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819091900011.S-1210.xml",
+      "id": "ID1094455020000002025091819091900011",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695362113"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "04598209402",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819091700008.S-1210.xml",
+      "id": "ID1094455020000002025091819091700008",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695361193"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "04747697470",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819092300011.S-1210.xml",
+      "id": "ID1094455020000002025091819092300011",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695361843"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "04893823477",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819092400001.S-1210.xml",
+      "id": "ID1094455020000002025091819092400001",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695361967"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "05161404426",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819094200001.S-1210.xml",
+      "id": "ID1094455020000002025091819094200001",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695363670"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "05406893432",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819095500002.S-1210.xml",
+      "id": "ID1094455020000002025091819095500002",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695363624"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "05488285474",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819092200005.S-1210.xml",
+      "id": "ID1094455020000002025091819092200005",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695361469"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "947.95"
+        }
+      ]
+    },
+    {
+      "cpf": "05664595400",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819085800003.S-1210.xml",
+      "id": "ID1094455020000002025091819085800003",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695360426"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "568.77"
+        }
+      ]
+    },
+    {
+      "cpf": "05771971421",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819094100001.S-1210.xml",
+      "id": "ID1094455020000002025091819094100001",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695363414"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "06700501482",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819100100006.S-1210.xml",
+      "id": "ID1094455020000002025091819100100006",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695364251"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "06721434458",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819093600011.S-1210.xml",
+      "id": "ID1094455020000002025091819093600011",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695363416"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "06838610426",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819092600005.S-1210.xml",
+      "id": "ID1094455020000002025091819092600005",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695362834"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "568.77"
+        }
+      ]
+    },
+    {
+      "cpf": "06894360413",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819092800012.S-1210.xml",
+      "id": "ID1094455020000002025091819092800012",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695362118"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "758.36"
+        }
+      ]
+    },
+    {
+      "cpf": "07010962413",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819100000007.S-1210.xml",
+      "id": "ID1094455020000002025091819100000007",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695363932"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "07047686401",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819092000007.S-1210.xml",
+      "id": "ID1094455020000002025091819092000007",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695362325"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "07161826454",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819092500005.S-1210.xml",
+      "id": "ID1094455020000002025091819092500005",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695362463"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "07196986423",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819095600005.S-1210.xml",
+      "id": "ID1094455020000002025091819095600005",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695364007"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "07506531402",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819092300002.S-1210.xml",
+      "id": "ID1094455020000002025091819092300002",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695361524"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "07750537406",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819094500006.S-1210.xml",
+      "id": "ID1094455020000002025091819094500006",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695363370"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "07776275409",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819092500002.S-1210.xml",
+      "id": "ID1094455020000002025091819092500002",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695362388"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "568.77"
+        }
+      ]
+    },
+    {
+      "cpf": "07833429422",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819092600003.S-1210.xml",
+      "id": "ID1094455020000002025091819092600003",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695362768"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "568.77"
+        }
+      ]
+    },
+    {
+      "cpf": "07856021438",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819082300008.S-1210.xml",
+      "id": "ID1094455020000002025091819082300008",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695358098"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "07923038490",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819102700010.S-1210.xml",
+      "id": "ID1094455020000002025091819102700010",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695365889"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "08353059452",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819094600013.S-1210.xml",
+      "id": "ID1094455020000002025091819094600013",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695363836"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "08441489467",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819094700002.S-1210.xml",
+      "id": "ID1094455020000002025091819094700002",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695363893"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "08571172463",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819101600005.S-1210.xml",
+      "id": "ID1094455020000002025091819101600005",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695364836"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "08852402438",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819094300005.S-1210.xml",
+      "id": "ID1094455020000002025091819094300005",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695362871"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "09278365726",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819123600004.S-1210.xml",
+      "id": "ID1094455020000002025091819123600004",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-12"
+      ],
+      "perRefs": [
+        "2025-08"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695374534"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "22010723708",
+          "vlrDedDep": "379.18"
+        }
+      ],
+      "dedDepen_zero": []
+    },
+    {
+      "cpf": "09340578422",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819095700007.S-1210.xml",
+      "id": "ID1094455020000002025091819095700007",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695364460"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "09821166407",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819103900014.S-1210.xml",
+      "id": "ID1094455020000002025091819103900014",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695367135"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "568.77"
+        }
+      ]
+    },
+    {
+      "cpf": "09981664723",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819123600005.S-1210.xml",
+      "id": "ID1094455020000002025091819123600005",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-12"
+      ],
+      "perRefs": [
+        "2025-08"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695374572"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "19571935735",
+          "vlrDedDep": "379.18"
+        }
+      ],
+      "dedDepen_zero": []
+    },
+    {
+      "cpf": "10057336431",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819101700004.S-1210.xml",
+      "id": "ID1094455020000002025091819101700004",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695365298"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "10108325490",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819091300006.S-1210.xml",
+      "id": "ID1094455020000002025091819091300006",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695361191"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "10154281425",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819093000006.S-1210.xml",
+      "id": "ID1094455020000002025091819093000006",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695362682"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "10703646494",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819100000012.S-1210.xml",
+      "id": "ID1094455020000002025091819100000012",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695364026"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "11227994460",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819095600003.S-1210.xml",
+      "id": "ID1094455020000002025091819095600003",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695363959"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "11679938886",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819081800011.S-1210.xml",
+      "id": "ID1094455020000002025091819081800011",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06",
+        "2025-08-08"
+      ],
+      "perRefs": [
+        "2025-07",
+        "2025-08"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695357925"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "15701224740",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819081300010.S-1210.xml",
+      "id": "ID1094455020000002025091819081300010",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695357614"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "17699409876",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819082400012.S-1210.xml",
+      "id": "ID1094455020000002025091819082400012",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695358292"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "25366903858",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819081300008.S-1210.xml",
+      "id": "ID1094455020000002025091819081300008",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695357569"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "29387931897",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819085700003.S-1210.xml",
+      "id": "ID1094455020000002025091819085700003",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695360124"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "30280615892",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819082400006.S-1210.xml",
+      "id": "ID1094455020000002025091819082400006",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695358207"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "30730892840",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819081500006.S-1210.xml",
+      "id": "ID1094455020000002025091819081500006",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695358039"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "32571450808",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819080900005.S-1210.xml",
+      "id": "ID1094455020000002025091819080900005",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695357464"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "33681242852",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819082300003.S-1210.xml",
+      "id": "ID1094455020000002025091819082300003",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695358018"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "33834306851",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819100300006.S-1210.xml",
+      "id": "ID1094455020000002025091819100300006",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695365168"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "568.77"
+        }
+      ]
+    },
+    {
+      "cpf": "34286723801",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819082400008.S-1210.xml",
+      "id": "ID1094455020000002025091819082400008",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695358229"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "34875548877",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819083700010.S-1210.xml",
+      "id": "ID1094455020000002025091819083700010",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695359643"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "37647871803",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819081300001.S-1210.xml",
+      "id": "ID1094455020000002025091819081300001",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695357434"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "568.77"
+        }
+      ]
+    },
+    {
+      "cpf": "40806733888",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819082100008.S-1210.xml",
+      "id": "ID1094455020000002025091819082100008",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695358794"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "51811987168",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819100700010.S-1210.xml",
+      "id": "ID1094455020000002025091819100700010",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695365094"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "74838130163",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819082100003.S-1210.xml",
+      "id": "ID1094455020000002025091819082100003",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695358706"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "85132993168",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819081800012.S-1210.xml",
+      "id": "ID1094455020000002025091819081800012",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695357952"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "88812090125",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819083500006.S-1210.xml",
+      "id": "ID1094455020000002025091819083500006",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695359050"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "89258258487",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819095700013.S-1210.xml",
+      "id": "ID1094455020000002025091819095700013",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695364650"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    },
+    {
+      "cpf": "94928495420",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819091900010.S-1210.xml",
+      "id": "ID1094455020000002025091819091900010",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695362080"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "568.77"
+        }
+      ]
+    },
+    {
+      "cpf": "98397435468",
+      "record_count": 2,
+      "zip": "SOLUCOES_2025-09(16-30).zip",
+      "entry": "ID1094455020000002025091819092000010.S-1210.xml",
+      "id": "ID1094455020000002025091819092000010",
+      "perApur": "2025-08",
+      "dtPgtos": [
+        "2025-08-06"
+      ],
+      "perRefs": [
+        "2025-07"
+      ],
+      "nrRecibo_values": [
+        "1.1.0000000034695362419"
+      ],
+      "cdResposta_values": [
+        "202"
+      ],
+      "infoDep_cpfs": [],
+      "dedDepen_real": [],
+      "dedDepen_zero": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "00000000000",
+          "vlrDedDep": "379.18"
+        }
+      ]
+    }
+  ],
+  "not_found": []
+}

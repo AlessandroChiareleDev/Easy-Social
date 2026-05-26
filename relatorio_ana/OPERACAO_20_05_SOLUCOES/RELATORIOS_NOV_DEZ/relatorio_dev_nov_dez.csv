@@ -1,0 +1,15 @@
+﻿per_apur,cpf,responsavel,classe_operacional,status,erro_codigo,erro_mensagem,item_id,envio_id
+2025-11,00426401646,Dev,Dev,erro_esocial,401,"401: Conteudo do evento inválido. |   - 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.
+Ação Sugerida: Deverá existir um Evento já recebido, ""Ativo"" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",158550,980
+2025-11,00548440298,Dev,Dev,erro_esocial,401,"401: Conteudo do evento inválido. |   - 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.
+Ação Sugerida: Deverá existir um Evento já recebido, ""Ativo"" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",158603,980
+2025-11,01556900350,Dev,Dev,erro_esocial,401,"401: Conteudo do evento inválido. |   - 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.
+Ação Sugerida: Deverá existir um Evento já recebido, ""Ativo"" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",159203,986
+2025-11,03568399237,Dev,Dev,erro_esocial,401,"401: Conteudo do evento inválido. |   - 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.
+Ação Sugerida: Deverá existir um Evento já recebido, ""Ativo"" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",160667,1001
+2025-11,04380956776,Dev,Dev,erro_esocial,401,"401: Conteudo do evento inválido. |   - 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.
+Ação Sugerida: Deverá existir um Evento já recebido, ""Ativo"" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",161267,1007
+2025-11,06553932182,Dev,Dev,erro_esocial,401,"401: Conteudo do evento inválido. |   - 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.
+Ação Sugerida: Deverá existir um Evento já recebido, ""Ativo"" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",162649,1021
+2025-12,19877666790,Dev,Dev,erro_esocial,401,"401: Conteudo do evento inválido. |   - 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.
+Ação Sugerida: Deverá existir um Evento já recebido, ""Ativo"" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",191750,1222

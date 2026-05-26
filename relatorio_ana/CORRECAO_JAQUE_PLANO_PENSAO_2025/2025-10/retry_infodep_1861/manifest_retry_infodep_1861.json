@@ -1,0 +1,24 @@
+{
+  "empresa_id": 2,
+  "per_apur": "2025-10",
+  "origem_resultado": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-10\\resultado_execucao_2025-10.json",
+  "origem_manifest": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-10\\manifest_correcao_jaque_2025-10.json",
+  "regra": "retry 401/1861 de pensao: inserir infoDep/cpfDep no proprio S-1210",
+  "total_result_errors_1861": 1,
+  "total_retry": 1,
+  "total_skipped": 0,
+  "targets": [
+    {
+      "cpf": "08551918486",
+      "cpf_dependente": "09345921443",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_JAQUE_PLANO_PENSAO_2025\\2025-10\\retry_infodep_1861\\xml_unsigned\\S1210_2025-10_08551918486_infodep_1861_unsigned.xml",
+      "evento_id": 1539834,
+      "nr_recibo": "1.1.0000000035822580588",
+      "has_plano": false,
+      "has_pensao": true,
+      "source_item_id": 158291,
+      "source_envio_id": 959
+    }
+  ],
+  "skipped": []
+}

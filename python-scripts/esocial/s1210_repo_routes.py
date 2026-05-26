@@ -553,6 +553,26 @@ def overview_anual(
                 lotes_a_mostrar = [1]
             else:
                 lotes_a_mostrar = existentes
+
+        if mes.endswith("-01"):
+            lotes = [
+                OverviewAnualCelula(
+                    per_apur=mes,
+                    lote_num=lote,
+                    total=0,
+                    ok=0,
+                    erro=0,
+                    enviando=0,
+                    pendente=0,
+                    na=0,
+                    tem_xlsx=False,
+                    estado="sem_dados",
+                )
+                for lote in lotes_a_mostrar
+            ]
+            out_meses.append(OverviewAnualMes(per_apur=mes, lotes=lotes, fechado=False))
+            continue
+
         lotes: list[OverviewAnualCelula] = []
         for lote in lotes_a_mostrar:
             c = contadores.get((mes, lote))

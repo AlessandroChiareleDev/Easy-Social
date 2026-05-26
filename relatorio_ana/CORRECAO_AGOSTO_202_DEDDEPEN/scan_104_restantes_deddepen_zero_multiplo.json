@@ -1,0 +1,86 @@
+{
+  "total_targets_processed": 104,
+  "total_groups": 104,
+  "groups_with_zero_dependent": 70,
+  "cpfs_with_zero_dependent_count": 70,
+  "cpfs_without_zero_dependent_count": 34,
+  "individual_zero_values_distribution": {
+    "189.59": 1,
+    "379.18": 56,
+    "568.77": 10,
+    "758.36": 2,
+    "947.95": 1
+  },
+  "zero_sum_per_group_distribution": {
+    "189.59": 1,
+    "379.18": 56,
+    "568.77": 10,
+    "758.36": 2,
+    "947.95": 1
+  },
+  "anomalies": [],
+  "mixed_groups_summary": [
+    {
+      "cpf": "04202911482",
+      "tpCR": "056107",
+      "zeros": [
+        {
+          "vlr": "379.18"
+        }
+      ],
+      "reals": [
+        {
+          "cpf": "18060495461",
+          "vlr": "189.59"
+        }
+      ],
+      "zero_sum": "379.18",
+      "real_sum": "189.59",
+      "mixed": true,
+      "zero_equals_real_sum": false
+    },
+    {
+      "cpf": "04260837419",
+      "tpCR": "056107",
+      "zeros": [
+        {
+          "vlr": "568.77"
+        }
+      ],
+      "reals": [
+        {
+          "cpf": "16959530458",
+          "vlr": "189.59"
+        }
+      ],
+      "zero_sum": "568.77",
+      "real_sum": "189.59",
+      "mixed": true,
+      "zero_equals_real_sum": false
+    },
+    {
+      "cpf": "04575626414",
+      "tpCR": "056107",
+      "zeros": [
+        {
+          "vlr": "189.59"
+        }
+      ],
+      "reals": [
+        {
+          "cpf": "15416325402",
+          "vlr": "379.18"
+        },
+        {
+          "cpf": "15416281448",
+          "vlr": "189.59"
+        }
+      ],
+      "zero_sum": "189.59",
+      "real_sum": "568.77",
+      "mixed": true,
+      "zero_equals_real_sum": false
+    }
+  ],
+  "results_count": 70
+}

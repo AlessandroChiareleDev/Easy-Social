@@ -1,0 +1,109 @@
+{
+  "empresa_id": 2,
+  "per_apur": "2025-08",
+  "generated_at": "2026-05-19T14:46:09",
+  "planilha": "C:\\Users\\xandao\\Downloads\\SOLUCOES_AGOSTO_2025_JAQUE_PLANO_PENSAO_PREENChido 2.0.xlsx",
+  "regra": "XML base das quinzenas de setembro; retificacao indRetif=2; corrigir planSaude/pensao; sem consulta/download eSocial",
+  "targets": [
+    {
+      "cpf": "14193059804",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_JAQUE_2_0\\xml_unsigned\\S1210_2025-08_14193059804_jaque_2_0_unsigned.xml",
+      "evento_id": null,
+      "nr_recibo": "1.1.0000000034695344013",
+      "source_xml": "C:\\Users\\xandao\\Downloads\\solucoes\\ARQUIVOS 1210\\ARQUIVOS 1210\\SETEMBRO\\ID1094455020000002025091819045800006.S-1210.xml",
+      "source_id": "ID1094455020000002025091819045800006",
+      "id_evento": "ID1094455020000002026051917460900001",
+      "has_plano": true,
+      "has_pensao": false,
+      "plano": {
+        "cnpjOper": "63554067000198",
+        "regANS": "368253",
+        "vlrSaudeTit": "41.40",
+        "vlrSaudeDepSemCpf": null
+      },
+      "pensao": null,
+      "latest_item_id": 8308,
+      "latest_envio_id": 84
+    },
+    {
+      "cpf": "25585996827",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_JAQUE_2_0\\xml_unsigned\\S1210_2025-08_25585996827_jaque_2_0_unsigned.xml",
+      "evento_id": null,
+      "nr_recibo": "1.1.0000000034695353041",
+      "source_xml": "C:\\Users\\xandao\\Downloads\\solucoes\\ARQUIVOS 1210\\ARQUIVOS 1210\\SETEMBRO\\ID1094455020000002025091819064600010.S-1210.xml",
+      "source_id": "ID1094455020000002025091819064600010",
+      "id_evento": "ID1094455020000002026051917460900002",
+      "has_plano": true,
+      "has_pensao": false,
+      "plano": {
+        "cnpjOper": "63554067000198",
+        "regANS": "368253",
+        "vlrSaudeTit": "39.17",
+        "vlrSaudeDepSemCpf": null
+      },
+      "pensao": null,
+      "latest_item_id": 9720,
+      "latest_envio_id": 98
+    },
+    {
+      "cpf": "30729903877",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_JAQUE_2_0\\xml_unsigned\\S1210_2025-08_30729903877_jaque_2_0_unsigned.xml",
+      "evento_id": null,
+      "nr_recibo": "1.1.0000000034695340711",
+      "source_xml": "C:\\Users\\xandao\\Downloads\\solucoes\\ARQUIVOS 1210\\ARQUIVOS 1210\\SETEMBRO\\ID1094455020000002025091819041800014.S-1210.xml",
+      "source_id": "ID1094455020000002025091819041800014",
+      "id_evento": "ID1094455020000002026051917460900003",
+      "has_plano": true,
+      "has_pensao": false,
+      "plano": {
+        "cnpjOper": "63554067000198",
+        "regANS": "368253",
+        "vlrSaudeTit": "39.17",
+        "vlrSaudeDepSemCpf": null
+      },
+      "pensao": null,
+      "latest_item_id": 10409,
+      "latest_envio_id": 105
+    },
+    {
+      "cpf": "38870126404",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_JAQUE_2_0\\xml_unsigned\\S1210_2025-08_38870126404_jaque_2_0_unsigned.xml",
+      "evento_id": null,
+      "nr_recibo": "1.1.0000000034695388542",
+      "source_xml": "C:\\Users\\xandao\\Downloads\\solucoes\\ARQUIVOS 1210\\ARQUIVOS 1210\\SETEMBRO\\ID1094455020000002025091819152500005.S-1210.xml",
+      "source_id": "ID1094455020000002025091819152500005",
+      "id_evento": "ID1094455020000002026051917460900004",
+      "has_plano": true,
+      "has_pensao": false,
+      "plano": {
+        "cnpjOper": "02127779000136",
+        "regANS": "364592",
+        "vlrSaudeTit": "102.00",
+        "vlrSaudeDepSemCpf": "194.00"
+      },
+      "pensao": null,
+      "latest_item_id": 11566,
+      "latest_envio_id": 117
+    },
+    {
+      "cpf": "39428963895",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_JAQUE_2_0\\xml_unsigned\\S1210_2025-08_39428963895_jaque_2_0_unsigned.xml",
+      "evento_id": null,
+      "nr_recibo": "1.1.0000000034695417208",
+      "source_xml": "C:\\Users\\xandao\\Downloads\\solucoes\\ARQUIVOS 1210\\ARQUIVOS 1210\\SETEMBRO\\ID1094455020000002025091819212400001.S-1210.xml",
+      "source_id": "ID1094455020000002025091819212400001",
+      "id_evento": "ID1094455020000002026051917460900005",
+      "has_plano": false,
+      "has_pensao": true,
+      "plano": null,
+      "pensao": {
+        "cpfDep": "15576137884",
+        "tpRend": "11",
+        "vlrDedPenAlim": "550.68"
+      },
+      "latest_item_id": 156812,
+      "latest_envio_id": 910
+    }
+  ],
+  "total": 5
+}

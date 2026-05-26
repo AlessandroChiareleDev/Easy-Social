@@ -1,0 +1,89 @@
+{
+  "empresa_id_externo": 2,
+  "empresa_id_interno": 1,
+  "per_apur": "2025-11",
+  "fechamento_status": {
+    "empresa_id": 1,
+    "per_apur": "2025-11",
+    "fechado": true,
+    "protocolo": "1.1.202605.0000000013188275471",
+    "nr_recibo": "1.1.0000000040928822916",
+    "origem": "s1299_envio",
+    "confirmado_em": "2026-05-20 22:09:24.597827+00:00"
+  },
+  "eventos_s1298_s1299_ultimos": [
+    {
+      "id": 3483538,
+      "tipo_evento": "S-1299",
+      "id_evento": "ID1094455020000002026052022062500001",
+      "nr_recibo": "1.1.0000000040928822916",
+      "cd_resposta": "201",
+      "dt_processamento": "2026-05-20 22:09:24.597827+00:00",
+      "arquivo_origem": "s1299_fechamento_2025-11_solucoes.xml",
+      "protocolo_json": "1.1.202605.0000000013188275471",
+      "origem_json": "envio_s1299_2025-11_solucoes"
+    },
+    {
+      "id": 3483537,
+      "tipo_evento": "S-1298",
+      "id_evento": "ID1094455020000002026052021030100001",
+      "nr_recibo": null,
+      "cd_resposta": "401",
+      "dt_processamento": "2026-05-20 21:03:11.844965+00:00",
+      "arquivo_origem": "s1298_reabertura_2025-11_solucoes.xml",
+      "protocolo_json": "1.1.202605.0000000013188112670",
+      "origem_json": "s1298_ja_aberto"
+    },
+    {
+      "id": 3000507,
+      "tipo_evento": "S-1298",
+      "id_evento": "ID1094455020000002026051315204500001",
+      "nr_recibo": "1.1.0000000040763112909",
+      "cd_resposta": "201",
+      "dt_processamento": "2026-05-13 15:20:55.869903+00:00",
+      "arquivo_origem": "s1298_reabertura_2025-11.xml",
+      "protocolo_json": "1.1.202605.0000000013153641030",
+      "origem_json": "envio_s1298"
+    },
+    {
+      "id": 3356965,
+      "tipo_evento": "S-1299",
+      "id_evento": "ID1094455020000002025122309474800001",
+      "nr_recibo": "1.1.0000000036740641883",
+      "cd_resposta": "201",
+      "dt_processamento": "2025-12-23 09:47:49.680000+00:00",
+      "arquivo_origem": "ID1094455020000002025122309474800001.S-1299.xml",
+      "protocolo_json": null,
+      "origem_json": null
+    },
+    {
+      "id": 3201519,
+      "tipo_evento": "S-1298",
+      "id_evento": "ID1094455020000002025122210514100001",
+      "nr_recibo": "1.1.0000000036723600384",
+      "cd_resposta": "201",
+      "dt_processamento": "2025-12-22 10:51:41.823000+00:00",
+      "arquivo_origem": "ID1094455020000002025122210514100001.S-1298.xml",
+      "protocolo_json": null,
+      "origem_json": null
+    },
+    {
+      "id": 3201514,
+      "tipo_evento": "S-1299",
+      "id_evento": "ID1094455020000002025122210495000001",
+      "nr_recibo": "1.1.0000000036723542762",
+      "cd_resposta": "201",
+      "dt_processamento": "2025-12-22 10:49:52.053000+00:00",
+      "arquivo_origem": "ID1094455020000002025122210495000001.S-1299.xml",
+      "protocolo_json": null,
+      "origem_json": null
+    }
+  ],
+  "s1210_latest_total_cpfs": 16254,
+  "s1210_histograma": {
+    "sucesso|": 16155,
+    "sucesso|202": 99
+  },
+  "s1210_pendencias_count": 0,
+  "s1210_pendencias_sample": []
+}

@@ -1,0 +1,935 @@
+{
+  "empresa_id": 2,
+  "per_apur": "2025-08",
+  "generated_at": "2026-05-18T22:58:13",
+  "total_xmls": 35,
+  "xml_dir": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_correcao_202_deddepen_unsigned",
+  "targets": [
+    {
+      "cpf": "02254091786",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_correcao_202_deddepen_unsigned\\S1210_2025-08_02254091786_dedDepen202_unsigned.xml",
+      "id_evento": "ID1094455020000002026051901572500001",
+      "recibo_ativo": "1.1.0000000034695365779",
+      "recibo_fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "ded_count": 2,
+      "dependentes": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "06423506710",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "06423509735",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "source_event_id": "ID1094455020000002025091819102200012",
+      "source_recibo": "1.1.0000000034695365779",
+      "source_zip": "SOLUCOES_2025-08.zip",
+      "notes": [
+        "infoDep_inseridos=0"
+      ]
+    },
+    {
+      "cpf": "03415419584",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_correcao_202_deddepen_unsigned\\S1210_2025-08_03415419584_dedDepen202_unsigned.xml",
+      "id_evento": "ID1094455020000002026051901572600002",
+      "recibo_ativo": "1.1.0000000034695371967",
+      "recibo_fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "ded_count": 3,
+      "dependentes": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "01485657512",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "08671801535",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "12885697504",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "source_event_id": "ID1094455020000002025091819114900003",
+      "source_recibo": "1.1.0000000034695371967",
+      "source_zip": "SOLUCOES_2025-08.zip",
+      "notes": [
+        "infoDep_inseridos=0"
+      ]
+    },
+    {
+      "cpf": "03456861796",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_correcao_202_deddepen_unsigned\\S1210_2025-08_03456861796_dedDepen202_unsigned.xml",
+      "id_evento": "ID1094455020000002026051901572700003",
+      "recibo_ativo": "1.1.0000000034695364701",
+      "recibo_fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "ded_count": 1,
+      "dependentes": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "18589975770",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "source_event_id": "ID1094455020000002025091819100600012",
+      "source_recibo": "1.1.0000000034695364701",
+      "source_zip": "SOLUCOES_2025-08.zip",
+      "notes": [
+        "infoDep_inseridos=0"
+      ]
+    },
+    {
+      "cpf": "03470657750",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_correcao_202_deddepen_unsigned\\S1210_2025-08_03470657750_dedDepen202_unsigned.xml",
+      "id_evento": "ID1094455020000002026051901572800004",
+      "recibo_ativo": "1.1.0000000034695386479",
+      "recibo_fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "ded_count": 1,
+      "dependentes": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "15301330764",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "source_event_id": "ID1094455020000002025091819144900002",
+      "source_recibo": "1.1.0000000034695386479",
+      "source_zip": "SOLUCOES_2025-08.zip",
+      "notes": [
+        "infoDep_inseridos=0"
+      ]
+    },
+    {
+      "cpf": "04202911482",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_correcao_202_deddepen_unsigned\\S1210_2025-08_04202911482_dedDepen202_unsigned.xml",
+      "id_evento": "ID1094455020000002026051901572900005",
+      "recibo_ativo": "1.1.0000000034695360470",
+      "recibo_fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "ded_count": 1,
+      "dependentes": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "18060495461",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "source_event_id": "ID1094455020000002025091819085800005",
+      "source_recibo": "1.1.0000000034695360470",
+      "source_zip": "SOLUCOES_2025-08.zip",
+      "notes": [
+        "infoDep_inseridos=0"
+      ]
+    },
+    {
+      "cpf": "04239333458",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_correcao_202_deddepen_unsigned\\S1210_2025-08_04239333458_dedDepen202_unsigned.xml",
+      "id_evento": "ID1094455020000002026051901573100006",
+      "recibo_ativo": "1.1.0000000034695390734",
+      "recibo_fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "ded_count": 2,
+      "dependentes": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "71440622477",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "71440625492",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "source_event_id": "ID1094455020000002025091819155200010",
+      "source_recibo": "1.1.0000000034695390734",
+      "source_zip": "SOLUCOES_2025-08.zip",
+      "notes": [
+        "infoDep_inseridos=0"
+      ]
+    },
+    {
+      "cpf": "04260837419",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_correcao_202_deddepen_unsigned\\S1210_2025-08_04260837419_dedDepen202_unsigned.xml",
+      "id_evento": "ID1094455020000002026051901573200007",
+      "recibo_ativo": "1.1.0000000034695363999",
+      "recibo_fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "ded_count": 1,
+      "dependentes": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "16959530458",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "source_event_id": "ID1094455020000002025091819100000011",
+      "source_recibo": "1.1.0000000034695363999",
+      "source_zip": "SOLUCOES_2025-08.zip",
+      "notes": [
+        "infoDep_inseridos=0"
+      ]
+    },
+    {
+      "cpf": "04575626414",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_correcao_202_deddepen_unsigned\\S1210_2025-08_04575626414_dedDepen202_unsigned.xml",
+      "id_evento": "ID1094455020000002026051901573400008",
+      "recibo_ativo": "1.1.0000000034695363623",
+      "recibo_fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "ded_count": 2,
+      "dependentes": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "15416281448",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "15416325402",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "source_event_id": "ID1094455020000002025091819094600004",
+      "source_recibo": "1.1.0000000034695363623",
+      "source_zip": "SOLUCOES_2025-08.zip",
+      "notes": [
+        "infoDep_inseridos=0"
+      ]
+    },
+    {
+      "cpf": "05365128761",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_correcao_202_deddepen_unsigned\\S1210_2025-08_05365128761_dedDepen202_unsigned.xml",
+      "id_evento": "ID1094455020000002026051901573500009",
+      "recibo_ativo": "1.1.0000000034695356132",
+      "recibo_fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "ded_count": 1,
+      "dependentes": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "06492792718",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "source_event_id": "ID1094455020000002025091819074700009",
+      "source_recibo": "1.1.0000000034695356132",
+      "source_zip": "SOLUCOES_2025-08.zip",
+      "notes": [
+        "infoDep_inseridos=0"
+      ]
+    },
+    {
+      "cpf": "05390784766",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_correcao_202_deddepen_unsigned\\S1210_2025-08_05390784766_dedDepen202_unsigned.xml",
+      "id_evento": "ID1094455020000002026051901573700010",
+      "recibo_ativo": "1.1.0000000034695385887",
+      "recibo_fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "ded_count": 3,
+      "dependentes": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "19137580795",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "19137608711",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "20228682770",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "source_event_id": "ID1094455020000002025091819145200001",
+      "source_recibo": "1.1.0000000034695385887",
+      "source_zip": "SOLUCOES_2025-08.zip",
+      "notes": [
+        "infoDep_inseridos=0"
+      ]
+    },
+    {
+      "cpf": "05513724430",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_correcao_202_deddepen_unsigned\\S1210_2025-08_05513724430_dedDepen202_unsigned.xml",
+      "id_evento": "ID1094455020000002026051901573800011",
+      "recibo_ativo": "1.1.0000000034695362130",
+      "recibo_fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "ded_count": 2,
+      "dependentes": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "13380700452",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "13380713430",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "source_event_id": "ID1094455020000002025091819092400006",
+      "source_recibo": "1.1.0000000034695362130",
+      "source_zip": "SOLUCOES_2025-08.zip",
+      "notes": [
+        "infoDep_inseridos=0"
+      ]
+    },
+    {
+      "cpf": "05774255794",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_correcao_202_deddepen_unsigned\\S1210_2025-08_05774255794_dedDepen202_unsigned.xml",
+      "id_evento": "ID1094455020000002026051901573900012",
+      "recibo_ativo": "1.1.0000000034695374141",
+      "recibo_fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "ded_count": 2,
+      "dependentes": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "16597807723",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "22404489704",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "source_event_id": "ID1094455020000002025091819124000001",
+      "source_recibo": "1.1.0000000034695374141",
+      "source_zip": "SOLUCOES_2025-08.zip",
+      "notes": [
+        "infoDep_inseridos=0"
+      ]
+    },
+    {
+      "cpf": "05788537797",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_correcao_202_deddepen_unsigned\\S1210_2025-08_05788537797_dedDepen202_unsigned.xml",
+      "id_evento": "ID1094455020000002026051901574100013",
+      "recibo_ativo": "1.1.0000000034695352620",
+      "recibo_fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "ded_count": 1,
+      "dependentes": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "16400420754",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "source_event_id": "ID1094455020000002025091819064900012",
+      "source_recibo": "1.1.0000000034695352620",
+      "source_zip": "SOLUCOES_2025-08.zip",
+      "notes": [
+        "infoDep_inseridos=0"
+      ]
+    },
+    {
+      "cpf": "05986727703",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_correcao_202_deddepen_unsigned\\S1210_2025-08_05986727703_dedDepen202_unsigned.xml",
+      "id_evento": "ID1094455020000002026051901574200014",
+      "recibo_ativo": "1.1.0000000034695378344",
+      "recibo_fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "ded_count": 1,
+      "dependentes": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "15832548701",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "source_event_id": "ID1094455020000002025091819133200001",
+      "source_recibo": "1.1.0000000034695378344",
+      "source_zip": "SOLUCOES_2025-08.zip",
+      "notes": [
+        "infoDep_inseridos=0"
+      ]
+    },
+    {
+      "cpf": "08405088750",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_correcao_202_deddepen_unsigned\\S1210_2025-08_08405088750_dedDepen202_unsigned.xml",
+      "id_evento": "ID1094455020000002026051901574400015",
+      "recibo_ativo": "1.1.0000000034695359966",
+      "recibo_fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "ded_count": 3,
+      "dependentes": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "19267023799",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "20673146707",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "20673171728",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "source_event_id": "ID1094455020000002025091819084300003",
+      "source_recibo": "1.1.0000000034695359966",
+      "source_zip": "SOLUCOES_2025-08.zip",
+      "notes": [
+        "infoDep_inseridos=0"
+      ]
+    },
+    {
+      "cpf": "08554135733",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_correcao_202_deddepen_unsigned\\S1210_2025-08_08554135733_dedDepen202_unsigned.xml",
+      "id_evento": "ID1094455020000002026051901574500016",
+      "recibo_ativo": "1.1.0000000034695355753",
+      "recibo_fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "ded_count": 1,
+      "dependentes": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "18710630783",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "source_event_id": "ID1094455020000002025091819072800007",
+      "source_recibo": "1.1.0000000034695355753",
+      "source_zip": "SOLUCOES_2025-08.zip",
+      "notes": [
+        "infoDep_inseridos=0"
+      ]
+    },
+    {
+      "cpf": "09568580743",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_correcao_202_deddepen_unsigned\\S1210_2025-08_09568580743_dedDepen202_unsigned.xml",
+      "id_evento": "ID1094455020000002026051901574700017",
+      "recibo_ativo": "1.1.0000000034695366028",
+      "recibo_fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "ded_count": 2,
+      "dependentes": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "21044429747",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "21044471786",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "source_event_id": "ID1094455020000002025091819102700013",
+      "source_recibo": "1.1.0000000034695366028",
+      "source_zip": "SOLUCOES_2025-08.zip",
+      "notes": [
+        "infoDep_inseridos=0"
+      ]
+    },
+    {
+      "cpf": "09705541760",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_correcao_202_deddepen_unsigned\\S1210_2025-08_09705541760_dedDepen202_unsigned.xml",
+      "id_evento": "ID1094455020000002026051901574800018",
+      "recibo_ativo": "1.1.0000000034695386340",
+      "recibo_fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "ded_count": 1,
+      "dependentes": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "16638222716",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "source_event_id": "ID1094455020000002025091819144800010",
+      "source_recibo": "1.1.0000000034695386340",
+      "source_zip": "SOLUCOES_2025-08.zip",
+      "notes": [
+        "infoDep_inseridos=0"
+      ]
+    },
+    {
+      "cpf": "09849145790",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_correcao_202_deddepen_unsigned\\S1210_2025-08_09849145790_dedDepen202_unsigned.xml",
+      "id_evento": "ID1094455020000002026051901575000019",
+      "recibo_ativo": "1.1.0000000034695364414",
+      "recibo_fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "ded_count": 3,
+      "dependentes": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "06390152710",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "19443383730",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "23080190777",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "source_event_id": "ID1094455020000002025091819101000008",
+      "source_recibo": "1.1.0000000034695364414",
+      "source_zip": "SOLUCOES_2025-08.zip",
+      "notes": [
+        "infoDep_inseridos=0"
+      ]
+    },
+    {
+      "cpf": "10617805709",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_correcao_202_deddepen_unsigned\\S1210_2025-08_10617805709_dedDepen202_unsigned.xml",
+      "id_evento": "ID1094455020000002026051901575100020",
+      "recibo_ativo": "1.1.0000000034695388036",
+      "recibo_fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "ded_count": 1,
+      "dependentes": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "22063885702",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "source_event_id": "ID1094455020000002025091819151500005",
+      "source_recibo": "1.1.0000000034695388036",
+      "source_zip": "SOLUCOES_2025-08.zip",
+      "notes": [
+        "infoDep_inseridos=0"
+      ]
+    },
+    {
+      "cpf": "11191263711",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_correcao_202_deddepen_unsigned\\S1210_2025-08_11191263711_dedDepen202_unsigned.xml",
+      "id_evento": "ID1094455020000002026051901575300021",
+      "recibo_ativo": "1.1.0000000034695339861",
+      "recibo_fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "ded_count": 1,
+      "dependentes": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "20394818776",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "source_event_id": "ID1094455020000002025091819040300007",
+      "source_recibo": "1.1.0000000034695339861",
+      "source_zip": "SOLUCOES_2025-08.zip",
+      "notes": [
+        "infoDep_inseridos=0"
+      ]
+    },
+    {
+      "cpf": "11500569755",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_correcao_202_deddepen_unsigned\\S1210_2025-08_11500569755_dedDepen202_unsigned.xml",
+      "id_evento": "ID1094455020000002026051901575400022",
+      "recibo_ativo": "1.1.0000000034695359560",
+      "recibo_fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "ded_count": 2,
+      "dependentes": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "21231750723",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "21231757736",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "source_event_id": "ID1094455020000002025091819085000005",
+      "source_recibo": "1.1.0000000034695359560",
+      "source_zip": "SOLUCOES_2025-08.zip",
+      "notes": [
+        "infoDep_inseridos=0"
+      ]
+    },
+    {
+      "cpf": "11553980760",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_correcao_202_deddepen_unsigned\\S1210_2025-08_11553980760_dedDepen202_unsigned.xml",
+      "id_evento": "ID1094455020000002026051901575500023",
+      "recibo_ativo": "1.1.0000000034695356048",
+      "recibo_fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "ded_count": 1,
+      "dependentes": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "21108762719",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "source_event_id": "ID1094455020000002025091819074700006",
+      "source_recibo": "1.1.0000000034695356048",
+      "source_zip": "SOLUCOES_2025-08.zip",
+      "notes": [
+        "infoDep_inseridos=0"
+      ]
+    },
+    {
+      "cpf": "11915524709",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_correcao_202_deddepen_unsigned\\S1210_2025-08_11915524709_dedDepen202_unsigned.xml",
+      "id_evento": "ID1094455020000002026051901575700024",
+      "recibo_ativo": "1.1.0000000034695340278",
+      "recibo_fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "ded_count": 1,
+      "dependentes": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "21874576726",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "source_event_id": "ID1094455020000002025091819040400003",
+      "source_recibo": "1.1.0000000034695340278",
+      "source_zip": "SOLUCOES_2025-08.zip",
+      "notes": [
+        "infoDep_inseridos=0"
+      ]
+    },
+    {
+      "cpf": "11994427477",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_correcao_202_deddepen_unsigned\\S1210_2025-08_11994427477_dedDepen202_unsigned.xml",
+      "id_evento": "ID1094455020000002026051901575800025",
+      "recibo_ativo": "1.1.0000000034695360413",
+      "recibo_fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "ded_count": 1,
+      "dependentes": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "16795353400",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "source_event_id": "ID1094455020000002025091819090600002",
+      "source_recibo": "1.1.0000000034695360413",
+      "source_zip": "SOLUCOES_2025-08.zip",
+      "notes": [
+        "infoDep_inseridos=0"
+      ]
+    },
+    {
+      "cpf": "12501850769",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_correcao_202_deddepen_unsigned\\S1210_2025-08_12501850769_dedDepen202_unsigned.xml",
+      "id_evento": "ID1094455020000002026051901580000026",
+      "recibo_ativo": "1.1.0000000034695374775",
+      "recibo_fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "ded_count": 2,
+      "dependentes": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "18974292742",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "18974302721",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "source_event_id": "ID1094455020000002025091819124500006",
+      "source_recibo": "1.1.0000000034695374775",
+      "source_zip": "SOLUCOES_2025-08.zip",
+      "notes": [
+        "infoDep_inseridos=0"
+      ]
+    },
+    {
+      "cpf": "13182452738",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_correcao_202_deddepen_unsigned\\S1210_2025-08_13182452738_dedDepen202_unsigned.xml",
+      "id_evento": "ID1094455020000002026051901580100027",
+      "recibo_ativo": "1.1.0000000034695349383",
+      "recibo_fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "ded_count": 7,
+      "dependentes": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "19073815703",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "19104968719",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "19958972727",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "20241481740",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "20241503736",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "20241514770",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "22292850761",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "source_event_id": "ID1094455020000002025091819060300001",
+      "source_recibo": "1.1.0000000034695349383",
+      "source_zip": "SOLUCOES_2025-08.zip",
+      "notes": [
+        "infoDep_inseridos=0"
+      ]
+    },
+    {
+      "cpf": "15275584792",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_correcao_202_deddepen_unsigned\\S1210_2025-08_15275584792_dedDepen202_unsigned.xml",
+      "id_evento": "ID1094455020000002026051901580300028",
+      "recibo_ativo": "1.1.0000000034695367278",
+      "recibo_fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "ded_count": 1,
+      "dependentes": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "22853460770",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "source_event_id": "ID1094455020000002025091819104000006",
+      "source_recibo": "1.1.0000000034695367278",
+      "source_zip": "SOLUCOES_2025-08.zip",
+      "notes": [
+        "infoDep_inseridos=0"
+      ]
+    },
+    {
+      "cpf": "15447916747",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_correcao_202_deddepen_unsigned\\S1210_2025-08_15447916747_dedDepen202_unsigned.xml",
+      "id_evento": "ID1094455020000002026051901580400029",
+      "recibo_ativo": "1.1.0000000034695356074",
+      "recibo_fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "ded_count": 2,
+      "dependentes": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "20374139717",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "20698806727",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "source_event_id": "ID1094455020000002025091819074700007",
+      "source_recibo": "1.1.0000000034695356074",
+      "source_zip": "SOLUCOES_2025-08.zip",
+      "notes": [
+        "infoDep_inseridos=0"
+      ]
+    },
+    {
+      "cpf": "17087835718",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_correcao_202_deddepen_unsigned\\S1210_2025-08_17087835718_dedDepen202_unsigned.xml",
+      "id_evento": "ID1094455020000002026051901580600030",
+      "recibo_ativo": "1.1.0000000034695461759",
+      "recibo_fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "ded_count": 1,
+      "dependentes": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "23039241702",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "source_event_id": "ID1094455020000002025091819302800001",
+      "source_recibo": "1.1.0000000034695461759",
+      "source_zip": "SOLUCOES_2025-08.zip",
+      "notes": [
+        "infoDep_inseridos=0"
+      ]
+    },
+    {
+      "cpf": "19354014755",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_correcao_202_deddepen_unsigned\\S1210_2025-08_19354014755_dedDepen202_unsigned.xml",
+      "id_evento": "ID1094455020000002026051901580700031",
+      "recibo_ativo": "1.1.0000000034695355772",
+      "recibo_fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "ded_count": 1,
+      "dependentes": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "20625296788",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "source_event_id": "ID1094455020000002025091819073700010",
+      "source_recibo": "1.1.0000000034695355772",
+      "source_zip": "SOLUCOES_2025-08.zip",
+      "notes": [
+        "infoDep_inseridos=0"
+      ]
+    },
+    {
+      "cpf": "35832326822",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_correcao_202_deddepen_unsigned\\S1210_2025-08_35832326822_dedDepen202_unsigned.xml",
+      "id_evento": "ID1094455020000002026051901580800032",
+      "recibo_ativo": "1.1.0000000034695388412",
+      "recibo_fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "ded_count": 2,
+      "dependentes": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "56165716873",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "56509983885",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "source_event_id": "ID1094455020000002025091819152500001",
+      "source_recibo": "1.1.0000000034695388412",
+      "source_zip": "SOLUCOES_2025-08.zip",
+      "notes": [
+        "infoDep_inseridos=0"
+      ]
+    },
+    {
+      "cpf": "40236751808",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_correcao_202_deddepen_unsigned\\S1210_2025-08_40236751808_dedDepen202_unsigned.xml",
+      "id_evento": "ID1094455020000002026051901581000033",
+      "recibo_ativo": "1.1.0000000034695342812",
+      "recibo_fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "ded_count": 3,
+      "dependentes": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "53971605800",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "58045307803",
+          "vlrDedDep": "189.59"
+        },
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "58045328800",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "source_event_id": "ID1094455020000002025091819044600003",
+      "source_recibo": "1.1.0000000034695342812",
+      "source_zip": "SOLUCOES_2025-08.zip",
+      "notes": [
+        "infoDep_inseridos=0"
+      ]
+    },
+    {
+      "cpf": "41310627800",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_correcao_202_deddepen_unsigned\\S1210_2025-08_41310627800_dedDepen202_unsigned.xml",
+      "id_evento": "ID1094455020000002026051901581100034",
+      "recibo_ativo": "1.1.0000000034695352697",
+      "recibo_fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "ded_count": 1,
+      "dependentes": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "23997904804",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "source_event_id": "ID1094455020000002025091819065400006",
+      "source_recibo": "1.1.0000000034695352697",
+      "source_zip": "SOLUCOES_2025-08.zip",
+      "notes": [
+        "infoDep_inseridos=0"
+      ]
+    },
+    {
+      "cpf": "89107241534",
+      "xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\CORRECAO_AGOSTO_202_DEDDEPEN\\xml_correcao_202_deddepen_unsigned\\S1210_2025-08_89107241534_dedDepen202_unsigned.xml",
+      "id_evento": "ID1094455020000002026051901581300035",
+      "recibo_ativo": "1.1.0000000034695354925",
+      "recibo_fonte": "front_s1210_cpfs_do_mes.nr_recibo_xml",
+      "ded_count": 1,
+      "dependentes": [
+        {
+          "tpCR": "056107",
+          "tpRend": "11",
+          "cpfDep": "85906235566",
+          "vlrDedDep": "189.59"
+        }
+      ],
+      "source_event_id": "ID1094455020000002025091819072600011",
+      "source_recibo": "1.1.0000000034695354925",
+      "source_zip": "SOLUCOES_2025-08.zip",
+      "notes": [
+        "infoDep_inseridos=0"
+      ]
+    }
+  ]
+}

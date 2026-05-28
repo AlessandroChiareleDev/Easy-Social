@@ -1,0 +1,122 @@
+{
+  "empresa_id": 3,
+  "per_apur": "2025-12",
+  "ambiente": "producao",
+  "meta_total": 100,
+  "chunk_size": 50,
+  "workers": 1,
+  "batch_size": 50,
+  "max_error_rate": 0.2,
+  "started_at": "2026-05-27T02:23:38.171343+00:00",
+  "chunks": [
+    {
+      "chunk_index": 1,
+      "started_at": "2026-05-27T02:25:01.152984+00:00",
+      "elapsed_s": 66.60727405548096,
+      "result": {
+        "ok": true,
+        "envio_id": 29,
+        "sucesso": 48,
+        "erro": 2,
+        "pendente_consulta": 0,
+        "histograma": {
+          "401": 2
+        },
+        "elapsed_s": 65.82544994354248
+      },
+      "status": {
+        "by_status": {
+          "sucesso": 48,
+          "erro_esocial": 2
+        },
+        "by_error": {
+          "401": 2
+        },
+        "error_samples": [
+          {
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. |   - 459: Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.\nAção Sugerida: Deverá existir um Evento já recebido, \"Ativo\" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",
+            "n": 1
+          },
+          {
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+            "n": 1
+          }
+        ]
+      },
+      "tentados": 50,
+      "non_success": 2,
+      "error_rate": 0.04
+    },
+    {
+      "chunk_index": 2,
+      "started_at": "2026-05-27T02:26:09.222571+00:00",
+      "elapsed_s": 67.88729763031006,
+      "result": {
+        "ok": true,
+        "envio_id": 30,
+        "sucesso": 50,
+        "erro": 0,
+        "pendente_consulta": 0,
+        "histograma": {},
+        "elapsed_s": 67.18735098838806
+      },
+      "status": {
+        "by_status": {
+          "sucesso": 50
+        },
+        "by_error": {},
+        "error_samples": []
+      },
+      "tentados": 50,
+      "non_success": 0,
+      "error_rate": 0.0
+    }
+  ],
+  "stopped": false,
+  "stop_reason": "ciclo_100_concluido",
+  "certificado": {
+    "id": 2,
+    "cnpj": "10874523000110"
+  },
+  "s1298": {
+    "skipped": false,
+    "ok": true,
+    "id_evento": "ID1108745230000002026052702233800001",
+    "protocolo": "1.1.202605.0000000013210362404",
+    "attempts": 1,
+    "evento": {
+      "id_evento": "ID1108745230000002026052702233800001",
+      "codigo": "201",
+      "descricao": "Sucesso.",
+      "nr_recibo": "1.1.0000000041038424835",
+      "ocorrencias": [],
+      "xml_retorno": "<evento xmlns=\"http://www.esocial.gov.br/schema/lote/eventos/envio/retornoProcessamento/v1_3_0\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:s=\"http://schemas.xmlsoap.org/soap/envelope/\" Id=\"ID1108745230000002026052702233800001\"><retornoEvento><eSocial xmlns=\"http://www.esocial.gov.br/schema/evt/retornoEvento/v1_3_0\"><retornoEvento Id=\"ID1108745230000002026052702233800001\"><ideEmpregador><tpInsc>1</tpInsc><nrInsc>10874523</nrInsc></ideEmpregador><recepcao><tpAmb>1</tpAmb><dhRecepcao>2026-05-26T23:23:46.353</dhRecepcao><versaoAppRecepcao>0.1.0.0</versaoAppRecepcao><protocoloEnvioLote>1.1.202605.0000000013210362404</protocoloEnvioLote></recepcao><processamento><cdResposta>201</cdResposta><descResposta>Sucesso.</descResposta><versaoAppProcessamento>15.10.5</versaoAppProcessamento><dhProcessamento>2026-05-26T23:23:46.483</dhProcessamento></processamento><recibo><nrRecibo>1.1.0000000041038424835</nrRecibo><hash>V/qTE2MKmBi3tDmpkalWOz9wwU68k8km36f6JXnr98Q=</hash></recibo></retornoEvento><Signature xmlns=\"http://www.w3.org/2000/09/xmldsig#\"><SignedInfo><CanonicalizationMethod Algorithm=\"http://www.w3.org/TR/2001/REC-xml-c14n-20010315\"/><SignatureMethod Algorithm=\"http://www.w3.org/2001/04/xmldsig-more#rsa-sha256\"/><Reference URI=\"\"><Transforms><Transform Algorithm=\"http://www.w3.org/2000/09/xmldsig#enveloped-signature\"/><Transform Algorithm=\"http://www.w3.org/TR/2001/REC-xml-c14n-20010315\"/></Transforms><DigestMethod Algorithm=\"http://www.w3.org/2001/04/xmlenc#sha256\"/><DigestValue>5hJq/2/6nDrmt7Il084rUYkfZNSbU8mfrf9qdZe5CqA=</DigestValue></Reference></SignedInfo><SignatureValue>Wn9dYeyB9VSBT241T/SCxksUYi4j5N4SYVPYv/BZFBwtiYEX6IoUJFXsn+rB4awWP+cRFWBAHT+k4koHbBa19nHueWxUg3M3DoQyf4LwyDjI/SQ9l6mrpPmn79RC8af/qnMyMKzqr47DeQcNwNt8TkzhhCoQFnKIp2f6acaRchOQLAJL6pHL+8JsnwsxXILNwHZgoQXcH1CtbGef9qBKndIg1ic2B4Sfp9oU2Z1B+X9YOMy+jnYfUv68PJ8fdxsBIROLlh1686sgidZa4La0+7/G7g9mURqNVQxKiRPxoy33/xjMxqkYvVSqwXrT9ZvqysWqGn3ZN+ZqUmJUsKcQaA==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIHuDCCBaCgAwIBAgIMDZgzr7trQq55pHFQMA0GCSqGSIb3DQEBCwUAMIGnMQswCQYDVQQGEwJCUjETMBEGA1UECgwKSUNQLUJyYXNpbDEPMA0GA1UECwwGQ1NQQi0xMTswOQYDVQQLDDJTZXJ2aWNvIEZlZGVyYWwgZGUgUHJvY2Vzc2FtZW50byBkZSBEYWRvcyAtIFNFUlBSTzE1MDMGA1UEAwwsQXV0b3JpZGFkZSBDZXJ0aWZpY2Fkb3JhIGRvIFNFUlBSTyBGaW5hbCBTU0wwHhcNMjYwMzIzMTc1MDUxWhcNMjcwMzIzMTc1MDUxWjCB4jELMAkGA1UEBhMCQlIxEzARBgNVBAoMCklDUC1CcmFzaWwxGTAXBgNVBAsMEHZpZGVvY29uZmVyZW5jaWExFzAVBgNVBAsMDjMzNjgzMTExMDAwMTA3MRUwEwYDVQQLDAxBcGxpY2FjYW8gQTExETAPBgNVBAsMCEFSU0VSUFJPMTUwMwYDVQQLDCxBdXRvcmlkYWRlIENlcnRpZmljYWRvcmEgZG8gU0VSUFJPIEZpbmFsIFNTTDEpMCcGA1UEAwwgQVBQMDAwMzQuUFJPRFVDQU8uRVNPQ0lBTC5HT1YuQlIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC0ueizhDUbtYCt4+q251zpwsMevZ9zWFZjg2h8TPyCbPPGgu94Fr/NJ7hu/3s4+m/HBhkRTDwYsBiKhODPUCsqiYdIo953NTFFqnXrif1nbaUEO95t2UfcPTiZpi3rDWONwrBLM44b0UsDgbYDlCM/l+tEgTcZuvtTtYY5W7U/JiyzPLzfbL6lOudzaMaPXkDwJB+W2lomHYWwRRHihvzWQe7WMcipTB6uxConExEdivdFw5NAdhqTrvy6x3vdZDHG+JtHRABaqAKXX8znqUnLgKMvWsMQO8qShvTgVClWk4yhRqkybwQQyqeT5iGaLu3jisTkkowDcnsuwI7+Pp8zAgMBAAGjggKlMIICoTAfBgNVHSMEGDAWgBTdCFl+ThYdI9JUgr1cVIdkw/oDPzAOBgNVHQ8BAf8EBAMCBeAwXgYDVR0gBFcwVTBTBgZgTAECAVkwSTBHBggrBgEFBQcCARY7aHR0cDovL3JlcG9zaXRvcmlvLnNlcnByby5nb3YuYnIvZG9jcy9kcGNhY3NlcnByb2FjZnNzbC5wZGYwgdkGA1UdEQSB0TCBzqA0BgVgTAEDCKArBClTRVJWSUNPIEZFREVSQUwgREUgUFJPQ0VTU0FNRU5UTyBERSBEQURPU6AZBgVgTAEDA6AQBA4zMzY4MzExMTAwMDEwN6AeBgVgTAEDAqAVBBNGVUxWSU8gVFJBTERJIEZJTEhPoDgGBWBMAQMEoC8ELTEyMDkxOTYzMDY1ODAyNTU4OTcwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMIEhZnVsdmlvLnRyYWxkaS1maWxob0BzZXJwcm8uZ292LmJyMBMGA1UdJQQMMAoGCCsGAQUFBwMCMIGLBgNVHR8EgYMwgYAwPaA7oDmGN2h0dHA6Ly9yZXBvc2l0b3Jpby5zZXJwcm8uZ292LmJyL2xjci9hY3NlcnByb2FjZnNzbC5jcmwwP6A9oDuGOWh0dHA6Ly9jZXJ0aWZpY2Fkb3MyLnNlcnByby5nb3YuYnIvbGNyL2Fjc2VycHJvYWNmc3NsLmNybDCBjgYIKwYBBQUHAQEEgYEwfzBHBggrBgEFBQcwAoY7aHR0cDovL3JlcG9zaXRvcmlvLnNlcnByby5nb3YuYnIvY2FkZWlhcy9hY3NlcnByb2FjZnNzbC5wN2IwNAYIKwYBBQUHMAGGKGh0dHA6Ly9vY3NwLnNlcnByby5nb3YuYnIvQUNTRVJQUk9BQ0ZTU0wwDQYJKoZIhvcNAQELBQADggIBAMeUpTGMvzayUa1JVBipSqc89Nq8Nhq36B4tc9q8OWaSlMP0Rz/TY3FbL4z3WM9XNej0I2Hr6ZSrflt8fzFY+8SVHfxEvwrEEowOhq3tEP/GapcXl1INGqfS8AxUdYF6d968HtTpJV7QGsVYE6Xampeh/6/kS20H1rEhWOn3NUNO7D7B+dFMvyjGfq5dXyG5GWJmlhoj7YBAczOtKoMcBu8tuHvNK+oqs1dr15b2MwXYKzKHYpdiEwuykPbBCucc2hJKA5n9LiTTpUTElI8BaZ6lzBLOTLiaivRROCPQ9rp8oG/5ijmF+hyKum71eXvPU8EQddftgfSwjTmfW4I70n7uPd30oOAx2bCxV2lU1c0GbIN+ILkPOR6RWCspI2eb/UdU6sn9VxD2H55SVODoZsqsD5hsv5TMmu39eLT95AHbU7ytuzyWxVjpP+2hydTuSSlrMLZQ0dvyMRcvy7WVEBdj1KEzDDk3EDjGo2bVL6CBYoig1i6DBaGn1uWuHCsZHtvZ2FqIF80i39dkVuHa+PEBBvkYBobjK4U7MNcoBzpT9hkYoB7KEaBDTRTyidEq6xLilD49UCb9xHNJU5DEWs/0tjxhT5INGoXzELTaR/cfzB3+XB/YIdYQjybG05kdtBYl106nltYwmGfFHjRMU1trvex8sAjx3aghstt8TdC+</X509Certificate></X509Data></KeyInfo></Signature></eSocial></retornoEvento></evento>"
+    },
+    "salvo": {
+      "evento_db_id": 190921,
+      "codigo": "201",
+      "descricao": "Sucesso.",
+      "nr_recibo": "1.1.0000000041038424835",
+      "ocorrencias": []
+    },
+    "status_after": {
+      "empresa_id": 3,
+      "per_apur": "2025-12",
+      "fechado": false,
+      "protocolo": "1.1.202605.0000000013210362404",
+      "nr_recibo": "1.1.0000000041038424835",
+      "origem": "s1298_envio",
+      "confirmado_em": "2026-05-27 02:24:01.659787+00:00"
+    }
+  },
+  "cumulative": {
+    "tentados": 100,
+    "non_success": 2,
+    "error_rate": 0.02,
+    "success": 98
+  },
+  "finished_at": "2026-05-27T02:26:09.224782+00:00",
+  "elapsed_s": 151.0534393787384
+}

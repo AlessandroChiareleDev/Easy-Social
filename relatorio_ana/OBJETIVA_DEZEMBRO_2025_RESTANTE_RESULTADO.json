@@ -1,0 +1,814 @@
+{
+  "empresa_id": 3,
+  "per_apur": "2025-12",
+  "ambiente": "producao",
+  "meta_total": 1184,
+  "chunk_size": 50,
+  "workers": 1,
+  "batch_size": 50,
+  "max_error_rate": 0.2,
+  "started_at": "2026-05-27T02:38:04.580075+00:00",
+  "chunks": [
+    {
+      "chunk_index": 1,
+      "started_at": "2026-05-27T02:39:19.672943+00:00",
+      "elapsed_s": 74.5736608505249,
+      "result": {
+        "ok": true,
+        "envio_id": 31,
+        "sucesso": 50,
+        "erro": 0,
+        "pendente_consulta": 0,
+        "histograma": {},
+        "elapsed_s": 73.90282273292542
+      },
+      "status": {
+        "by_status": {
+          "sucesso": 50
+        },
+        "by_error": {},
+        "error_samples": []
+      },
+      "tentados": 50,
+      "non_success": 0,
+      "error_rate": 0.0
+    },
+    {
+      "chunk_index": 2,
+      "started_at": "2026-05-27T02:40:39.205561+00:00",
+      "elapsed_s": 79.37672185897827,
+      "result": {
+        "ok": true,
+        "envio_id": 32,
+        "sucesso": 50,
+        "erro": 0,
+        "pendente_consulta": 0,
+        "histograma": {},
+        "elapsed_s": 78.63172912597656
+      },
+      "status": {
+        "by_status": {
+          "sucesso": 50
+        },
+        "by_error": {},
+        "error_samples": []
+      },
+      "tentados": 50,
+      "non_success": 0,
+      "error_rate": 0.0
+    },
+    {
+      "chunk_index": 3,
+      "started_at": "2026-05-27T02:41:52.813804+00:00",
+      "elapsed_s": 73.42384743690491,
+      "result": {
+        "ok": true,
+        "envio_id": 33,
+        "sucesso": 47,
+        "erro": 3,
+        "pendente_consulta": 0,
+        "histograma": {
+          "401": 3
+        },
+        "elapsed_s": 72.64847755432129
+      },
+      "status": {
+        "by_status": {
+          "sucesso": 47,
+          "erro_esocial": 3
+        },
+        "by_error": {
+          "401": 3
+        },
+        "error_samples": [
+          {
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+            "n": 3
+          }
+        ]
+      },
+      "tentados": 50,
+      "non_success": 3,
+      "error_rate": 0.06
+    },
+    {
+      "chunk_index": 4,
+      "started_at": "2026-05-27T02:43:12.482206+00:00",
+      "elapsed_s": 79.51686930656433,
+      "result": {
+        "ok": true,
+        "envio_id": 34,
+        "sucesso": 50,
+        "erro": 0,
+        "pendente_consulta": 0,
+        "histograma": {},
+        "elapsed_s": 78.77160096168518
+      },
+      "status": {
+        "by_status": {
+          "sucesso": 50
+        },
+        "by_error": {},
+        "error_samples": []
+      },
+      "tentados": 50,
+      "non_success": 0,
+      "error_rate": 0.0
+    },
+    {
+      "chunk_index": 5,
+      "started_at": "2026-05-27T02:44:32.060755+00:00",
+      "elapsed_s": 79.41631150245667,
+      "result": {
+        "ok": true,
+        "envio_id": 35,
+        "sucesso": 48,
+        "erro": 2,
+        "pendente_consulta": 0,
+        "histograma": {
+          "401": 2
+        },
+        "elapsed_s": 78.56012654304504
+      },
+      "status": {
+        "by_status": {
+          "sucesso": 48,
+          "erro_esocial": 2
+        },
+        "by_error": {
+          "401": 2
+        },
+        "error_samples": [
+          {
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+            "n": 2
+          }
+        ]
+      },
+      "tentados": 50,
+      "non_success": 2,
+      "error_rate": 0.04
+    },
+    {
+      "chunk_index": 6,
+      "started_at": "2026-05-27T02:46:07.420045+00:00",
+      "elapsed_s": 95.19115161895752,
+      "result": {
+        "ok": true,
+        "envio_id": 36,
+        "sucesso": 50,
+        "erro": 0,
+        "pendente_consulta": 0,
+        "histograma": {},
+        "elapsed_s": 94.42137551307678
+      },
+      "status": {
+        "by_status": {
+          "sucesso": 50
+        },
+        "by_error": {},
+        "error_samples": []
+      },
+      "tentados": 50,
+      "non_success": 0,
+      "error_rate": 0.0
+    },
+    {
+      "chunk_index": 7,
+      "started_at": "2026-05-27T02:47:35.628327+00:00",
+      "elapsed_s": 88.02505016326904,
+      "result": {
+        "ok": true,
+        "envio_id": 37,
+        "sucesso": 50,
+        "erro": 0,
+        "pendente_consulta": 0,
+        "histograma": {},
+        "elapsed_s": 87.1574764251709
+      },
+      "status": {
+        "by_status": {
+          "sucesso": 50
+        },
+        "by_error": {},
+        "error_samples": []
+      },
+      "tentados": 50,
+      "non_success": 0,
+      "error_rate": 0.0
+    },
+    {
+      "chunk_index": 8,
+      "started_at": "2026-05-27T02:49:07.133613+00:00",
+      "elapsed_s": 91.29045844078064,
+      "result": {
+        "ok": true,
+        "envio_id": 38,
+        "sucesso": 49,
+        "erro": 1,
+        "pendente_consulta": 0,
+        "histograma": {
+          "401": 1
+        },
+        "elapsed_s": 90.3547911643982
+      },
+      "status": {
+        "by_status": {
+          "sucesso": 49,
+          "erro_esocial": 1
+        },
+        "by_error": {
+          "401": 1
+        },
+        "error_samples": [
+          {
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+            "n": 1
+          }
+        ]
+      },
+      "tentados": 50,
+      "non_success": 1,
+      "error_rate": 0.02
+    },
+    {
+      "chunk_index": 9,
+      "started_at": "2026-05-27T02:50:35.134493+00:00",
+      "elapsed_s": 87.71135354042053,
+      "result": {
+        "ok": true,
+        "envio_id": 39,
+        "sucesso": 48,
+        "erro": 2,
+        "pendente_consulta": 0,
+        "histograma": {
+          "401": 2
+        },
+        "elapsed_s": 86.97749400138855
+      },
+      "status": {
+        "by_status": {
+          "sucesso": 48,
+          "erro_esocial": 2
+        },
+        "by_error": {
+          "401": 2
+        },
+        "error_samples": [
+          {
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+            "n": 2
+          }
+        ]
+      },
+      "tentados": 50,
+      "non_success": 2,
+      "error_rate": 0.04
+    },
+    {
+      "chunk_index": 10,
+      "started_at": "2026-05-27T02:51:58.258837+00:00",
+      "elapsed_s": 82.91032791137695,
+      "result": {
+        "ok": true,
+        "envio_id": 40,
+        "sucesso": 46,
+        "erro": 4,
+        "pendente_consulta": 0,
+        "histograma": {
+          "401": 4
+        },
+        "elapsed_s": 82.06030774116516
+      },
+      "status": {
+        "by_status": {
+          "sucesso": 46,
+          "erro_esocial": 4
+        },
+        "by_error": {
+          "401": 4
+        },
+        "error_samples": [
+          {
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+            "n": 4
+          }
+        ]
+      },
+      "tentados": 50,
+      "non_success": 4,
+      "error_rate": 0.08
+    },
+    {
+      "chunk_index": 11,
+      "started_at": "2026-05-27T02:53:29.861630+00:00",
+      "elapsed_s": 91.41612815856934,
+      "result": {
+        "ok": true,
+        "envio_id": 41,
+        "sucesso": 48,
+        "erro": 2,
+        "pendente_consulta": 0,
+        "histograma": {
+          "401": 2
+        },
+        "elapsed_s": 90.64724230766296
+      },
+      "status": {
+        "by_status": {
+          "sucesso": 48,
+          "erro_esocial": 2
+        },
+        "by_error": {
+          "401": 2
+        },
+        "error_samples": [
+          {
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+            "n": 2
+          }
+        ]
+      },
+      "tentados": 50,
+      "non_success": 2,
+      "error_rate": 0.04
+    },
+    {
+      "chunk_index": 12,
+      "started_at": "2026-05-27T02:54:59.521562+00:00",
+      "elapsed_s": 89.49049353599548,
+      "result": {
+        "ok": true,
+        "envio_id": 42,
+        "sucesso": 40,
+        "erro": 10,
+        "pendente_consulta": 0,
+        "histograma": {
+          "401": 10
+        },
+        "elapsed_s": 88.67066478729248
+      },
+      "status": {
+        "by_status": {
+          "sucesso": 40,
+          "erro_esocial": 10
+        },
+        "by_error": {
+          "401": 10
+        },
+        "error_samples": [
+          {
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+            "n": 10
+          }
+        ]
+      },
+      "tentados": 50,
+      "non_success": 10,
+      "error_rate": 0.2
+    },
+    {
+      "chunk_index": 13,
+      "started_at": "2026-05-27T02:56:24.557278+00:00",
+      "elapsed_s": 84.7880551815033,
+      "result": {
+        "ok": true,
+        "envio_id": 43,
+        "sucesso": 46,
+        "erro": 4,
+        "pendente_consulta": 0,
+        "histograma": {
+          "401": 4
+        },
+        "elapsed_s": 83.89349317550659
+      },
+      "status": {
+        "by_status": {
+          "sucesso": 46,
+          "erro_esocial": 4
+        },
+        "by_error": {
+          "401": 4
+        },
+        "error_samples": [
+          {
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+            "n": 4
+          }
+        ]
+      },
+      "tentados": 50,
+      "non_success": 4,
+      "error_rate": 0.08
+    },
+    {
+      "chunk_index": 14,
+      "started_at": "2026-05-27T02:57:49.331650+00:00",
+      "elapsed_s": 84.61846876144409,
+      "result": {
+        "ok": true,
+        "envio_id": 44,
+        "sucesso": 45,
+        "erro": 5,
+        "pendente_consulta": 0,
+        "histograma": {
+          "401": 5
+        },
+        "elapsed_s": 83.79609370231628
+      },
+      "status": {
+        "by_status": {
+          "sucesso": 45,
+          "erro_esocial": 5
+        },
+        "by_error": {
+          "401": 5
+        },
+        "error_samples": [
+          {
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+            "n": 5
+          }
+        ]
+      },
+      "tentados": 50,
+      "non_success": 5,
+      "error_rate": 0.1
+    },
+    {
+      "chunk_index": 15,
+      "started_at": "2026-05-27T02:59:14.923991+00:00",
+      "elapsed_s": 85.41065430641174,
+      "result": {
+        "ok": true,
+        "envio_id": 45,
+        "sucesso": 40,
+        "erro": 10,
+        "pendente_consulta": 0,
+        "histograma": {
+          "401": 10
+        },
+        "elapsed_s": 84.5641553401947
+      },
+      "status": {
+        "by_status": {
+          "sucesso": 40,
+          "erro_esocial": 10
+        },
+        "by_error": {
+          "401": 10
+        },
+        "error_samples": [
+          {
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+            "n": 10
+          }
+        ]
+      },
+      "tentados": 50,
+      "non_success": 10,
+      "error_rate": 0.2
+    },
+    {
+      "chunk_index": 16,
+      "started_at": "2026-05-27T03:00:39.204359+00:00",
+      "elapsed_s": 84.11008739471436,
+      "result": {
+        "ok": true,
+        "envio_id": 46,
+        "sucesso": 44,
+        "erro": 6,
+        "pendente_consulta": 0,
+        "histograma": {
+          "401": 6
+        },
+        "elapsed_s": 83.33997201919556
+      },
+      "status": {
+        "by_status": {
+          "sucesso": 44,
+          "erro_esocial": 6
+        },
+        "by_error": {
+          "401": 6
+        },
+        "error_samples": [
+          {
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+            "n": 6
+          }
+        ]
+      },
+      "tentados": 50,
+      "non_success": 6,
+      "error_rate": 0.12
+    },
+    {
+      "chunk_index": 17,
+      "started_at": "2026-05-27T03:02:04.427177+00:00",
+      "elapsed_s": 84.93103432655334,
+      "result": {
+        "ok": true,
+        "envio_id": 47,
+        "sucesso": 46,
+        "erro": 4,
+        "pendente_consulta": 0,
+        "histograma": {
+          "401": 4
+        },
+        "elapsed_s": 84.13701748847961
+      },
+      "status": {
+        "by_status": {
+          "sucesso": 46,
+          "erro_esocial": 4
+        },
+        "by_error": {
+          "401": 4
+        },
+        "error_samples": [
+          {
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+            "n": 4
+          }
+        ]
+      },
+      "tentados": 50,
+      "non_success": 4,
+      "error_rate": 0.08
+    },
+    {
+      "chunk_index": 18,
+      "started_at": "2026-05-27T03:03:43.606737+00:00",
+      "elapsed_s": 98.93501138687134,
+      "result": {
+        "ok": true,
+        "envio_id": 48,
+        "sucesso": 46,
+        "erro": 4,
+        "pendente_consulta": 0,
+        "histograma": {
+          "401": 4
+        },
+        "elapsed_s": 98.1388988494873
+      },
+      "status": {
+        "by_status": {
+          "sucesso": 46,
+          "erro_esocial": 4
+        },
+        "by_error": {
+          "401": 4
+        },
+        "error_samples": [
+          {
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+            "n": 4
+          }
+        ]
+      },
+      "tentados": 50,
+      "non_success": 4,
+      "error_rate": 0.08
+    },
+    {
+      "chunk_index": 19,
+      "started_at": "2026-05-27T03:05:14.983154+00:00",
+      "elapsed_s": 91.13248538970947,
+      "result": {
+        "ok": true,
+        "envio_id": 49,
+        "sucesso": 44,
+        "erro": 6,
+        "pendente_consulta": 0,
+        "histograma": {
+          "401": 6
+        },
+        "elapsed_s": 90.22160315513611
+      },
+      "status": {
+        "by_status": {
+          "sucesso": 44,
+          "erro_esocial": 6
+        },
+        "by_error": {
+          "401": 6
+        },
+        "error_samples": [
+          {
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+            "n": 6
+          }
+        ]
+      },
+      "tentados": 50,
+      "non_success": 6,
+      "error_rate": 0.12
+    },
+    {
+      "chunk_index": 20,
+      "started_at": "2026-05-27T03:06:39.418542+00:00",
+      "elapsed_s": 84.27573680877686,
+      "result": {
+        "ok": true,
+        "envio_id": 50,
+        "sucesso": 47,
+        "erro": 3,
+        "pendente_consulta": 0,
+        "histograma": {
+          "401": 3
+        },
+        "elapsed_s": 83.33520650863647
+      },
+      "status": {
+        "by_status": {
+          "sucesso": 47,
+          "erro_esocial": 3
+        },
+        "by_error": {
+          "401": 3
+        },
+        "error_samples": [
+          {
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+            "n": 3
+          }
+        ]
+      },
+      "tentados": 50,
+      "non_success": 3,
+      "error_rate": 0.06
+    },
+    {
+      "chunk_index": 21,
+      "started_at": "2026-05-27T03:07:55.376988+00:00",
+      "elapsed_s": 75.77354979515076,
+      "result": {
+        "ok": true,
+        "envio_id": 51,
+        "sucesso": 48,
+        "erro": 2,
+        "pendente_consulta": 0,
+        "histograma": {
+          "401": 2
+        },
+        "elapsed_s": 74.89263033866882
+      },
+      "status": {
+        "by_status": {
+          "sucesso": 48,
+          "erro_esocial": 2
+        },
+        "by_error": {
+          "401": 2
+        },
+        "error_samples": [
+          {
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+            "n": 2
+          }
+        ]
+      },
+      "tentados": 50,
+      "non_success": 2,
+      "error_rate": 0.04
+    },
+    {
+      "chunk_index": 22,
+      "started_at": "2026-05-27T03:09:08.261382+00:00",
+      "elapsed_s": 72.65891456604004,
+      "result": {
+        "ok": true,
+        "envio_id": 52,
+        "sucesso": 48,
+        "erro": 2,
+        "pendente_consulta": 0,
+        "histograma": {
+          "401": 2
+        },
+        "elapsed_s": 71.82889723777771
+      },
+      "status": {
+        "by_status": {
+          "sucesso": 48,
+          "erro_esocial": 2
+        },
+        "by_error": {
+          "401": 2
+        },
+        "error_samples": [
+          {
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+            "n": 2
+          }
+        ]
+      },
+      "tentados": 50,
+      "non_success": 2,
+      "error_rate": 0.04
+    },
+    {
+      "chunk_index": 23,
+      "started_at": "2026-05-27T03:10:27.018446+00:00",
+      "elapsed_s": 78.58497214317322,
+      "result": {
+        "ok": true,
+        "envio_id": 53,
+        "sucesso": 50,
+        "erro": 0,
+        "pendente_consulta": 0,
+        "histograma": {},
+        "elapsed_s": 77.67167115211487
+      },
+      "status": {
+        "by_status": {
+          "sucesso": 50
+        },
+        "by_error": {},
+        "error_samples": []
+      },
+      "tentados": 50,
+      "non_success": 0,
+      "error_rate": 0.0
+    },
+    {
+      "chunk_index": 24,
+      "started_at": "2026-05-27T03:11:23.307346+00:00",
+      "elapsed_s": 56.1129515171051,
+      "result": {
+        "ok": true,
+        "envio_id": 54,
+        "sucesso": 33,
+        "erro": 1,
+        "pendente_consulta": 0,
+        "histograma": {
+          "401": 1
+        },
+        "elapsed_s": 55.463955879211426
+      },
+      "status": {
+        "by_status": {
+          "sucesso": 33,
+          "erro_esocial": 1
+        },
+        "by_error": {
+          "401": 1
+        },
+        "error_samples": [
+          {
+            "erro_codigo": "401",
+            "erro_mensagem": "401: Conteudo do evento inválido. |   - 8: Grupo 'Plano de saúde coletivo' deve ser preenchido. Verifique as condições de preenchimento no leiaute.",
+            "n": 1
+          }
+        ]
+      },
+      "tentados": 34,
+      "non_success": 1,
+      "error_rate": 0.029411764705882353
+    }
+  ],
+  "stopped": false,
+  "stop_reason": "dezembro_concluido_ate_fim",
+  "certificado": {
+    "id": 2,
+    "cnpj": "10874523000110"
+  },
+  "s1298": {
+    "skipped": true,
+    "reason": "already_open_confirmed",
+    "status": {
+      "empresa_id": 3,
+      "per_apur": "2025-12",
+      "fechado": false,
+      "protocolo": "1.1.202605.0000000013210362404",
+      "nr_recibo": "1.1.0000000041038424835",
+      "origem": "s1298_envio",
+      "confirmado_em": "2026-05-27 02:24:01.659787+00:00"
+    }
+  },
+  "cumulative": {
+    "tentados": 1184,
+    "non_success": 71,
+    "error_rate": 0.059966216216216214,
+    "success": 1113
+  },
+  "finished_at": "2026-05-27T03:11:23.315498+00:00",
+  "elapsed_s": 1998.7354238033295
+}

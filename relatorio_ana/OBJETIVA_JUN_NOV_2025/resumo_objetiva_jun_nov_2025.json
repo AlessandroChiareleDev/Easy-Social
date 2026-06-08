@@ -25,18 +25,16 @@
       }
     ],
     "counts": {
-      "sucesso": 909,
-      "erro_esocial": 87
+      "sucesso": 996,
+      "erro_esocial": 0
     },
-    "categorias": {
-      "plano_saude_coletivo_obrigatorio": 87
-    },
+    "categorias": {},
     "fechamento": {
-      "protocolo": "1.1.202605.0000000013192142032",
-      "nr_recibo": "1.1.0000000040946564210",
-      "fechado": false,
-      "confirmado_em": "2026-05-21 19:16:39.917674+00:00",
-      "origem": "s1298_envio"
+      "protocolo": "1.1.202605.0000000013221818201",
+      "nr_recibo": "1.1.0000000041100417148",
+      "fechado": true,
+      "confirmado_em": "2026-05-28 21:54:10",
+      "origem": "s1299_envio"
     },
     "s1298": {
       "id": 169267,
@@ -45,6 +43,23 @@
       "cd_resposta": "201",
       "dt_processamento": "2026-05-21 19:16:39.917674+00:00",
       "protocolo": "1.1.202605.0000000013192142032"
+    },
+    "correcao_plan_saude_2026_05_28": {
+      "timeline_envio_id": 63,
+      "xmls_corretivos": 87,
+      "protocolos_s1210": [
+        "1.1.202605.0000000013221815660",
+        "1.1.202605.0000000013221816509",
+        "1.1.202605.0000000013221817417"
+      ],
+      "resultado_s1210": {
+        "sucesso": 87,
+        "erro_ou_pendente": 0
+      },
+      "s1299": {
+        "protocolo": "1.1.202605.0000000013221818201",
+        "nr_recibo": "1.1.0000000041100417148"
+      }
     },
     "total_finais": 996
   },
@@ -74,18 +89,16 @@
       }
     ],
     "counts": {
-      "sucesso": 908,
-      "erro_esocial": 87
+      "sucesso": 995,
+      "erro_esocial": 0
     },
-    "categorias": {
-      "plano_saude_coletivo_obrigatorio": 87
-    },
+    "categorias": {},
     "fechamento": {
-      "protocolo": "1.1.202605.0000000013192186055",
-      "nr_recibo": "1.1.0000000040946772638",
-      "fechado": false,
-      "confirmado_em": "2026-05-21 19:22:26.149946+00:00",
-      "origem": "s1298_envio"
+      "protocolo": "1.1.202605.0000000013221826511",
+      "nr_recibo": "1.1.0000000041100466416",
+      "fechado": true,
+      "confirmado_em": "2026-05-28 21:59:40",
+      "origem": "s1299_envio"
     },
     "s1298": {
       "id": 169268,
@@ -94,6 +107,24 @@
       "cd_resposta": "201",
       "dt_processamento": "2026-05-21 19:22:26.149946+00:00",
       "protocolo": "1.1.202605.0000000013192186055"
+    },
+    "correcao_plan_saude_2026_05_28": {
+      "timeline_envio_id": 64,
+      "xmls_corretivos": 87,
+      "protocolos_s1210": [
+        "1.1.202605.0000000013221824396",
+        "1.1.202605.0000000013221825070",
+        "1.1.202605.0000000013221825870"
+      ],
+      "resultado_s1210": {
+        "sucesso": 87,
+        "erro_ou_pendente": 0
+      },
+      "fallback_count": 1,
+      "s1299": {
+        "protocolo": "1.1.202605.0000000013221826511",
+        "nr_recibo": "1.1.0000000041100466416"
+      }
     },
     "total_finais": 995
   },
@@ -123,18 +154,16 @@
       }
     ],
     "counts": {
-      "sucesso": 961,
-      "erro_esocial": 96
+      "sucesso": 1057,
+      "erro_esocial": 0
     },
-    "categorias": {
-      "plano_saude_coletivo_obrigatorio": 96
-    },
+    "categorias": {},
     "fechamento": {
-      "protocolo": "1.1.202605.0000000013192226977",
-      "nr_recibo": "1.1.0000000040946973523",
-      "fechado": false,
-      "confirmado_em": "2026-05-21 19:27:59.092422+00:00",
-      "origem": "s1298_envio"
+      "protocolo": "1.1.202605.0000000013221843473",
+      "nr_recibo": "1.1.0000000041100538978",
+      "fechado": true,
+      "confirmado_em": "2026-05-28 22:10:32",
+      "origem": "s1299_envio"
     },
     "s1298": {
       "id": 169269,
@@ -143,6 +172,25 @@
       "cd_resposta": "201",
       "dt_processamento": "2026-05-21 19:27:59.092422+00:00",
       "protocolo": "1.1.202605.0000000013192226977"
+    },
+    "correcao_plan_saude_2026_05_28": {
+      "timeline_envio_id": 65,
+      "xmls_corretivos": 96,
+      "protocolos_s1210": [
+        "1.1.202605.0000000013221840679",
+        "1.1.202605.0000000013221841693",
+        "1.1.202605.0000000013221842493"
+      ],
+      "resultado_s1210": {
+        "sucesso": 96,
+        "erro_ou_pendente": 0
+      },
+      "fontes_s2299_count": 2,
+      "fallback_count": 0,
+      "s1299": {
+        "protocolo": "1.1.202605.0000000013221843473",
+        "nr_recibo": "1.1.0000000041100538978"
+      }
     },
     "total_finais": 1057
   },
@@ -172,19 +220,16 @@
       }
     ],
     "counts": {
-      "sucesso": 976,
-      "erro_esocial": 83
+      "sucesso": 1059,
+      "erro_esocial": 0
     },
-    "categorias": {
-      "plano_saude_coletivo_obrigatorio": 82,
-      "recibo_459_nao_localizado_excluido_retificado": 1
-    },
+    "categorias": {},
     "fechamento": {
-      "protocolo": "1.1.202605.0000000013192269972",
-      "nr_recibo": "1.1.0000000040947177208",
-      "fechado": false,
-      "confirmado_em": "2026-05-21 19:34:03.206855+00:00",
-      "origem": "s1298_envio"
+      "protocolo": "1.1.202605.0000000013221942257",
+      "nr_recibo": "1.1.0000000041101000922",
+      "fechado": true,
+      "confirmado_em": "2026-05-29 02:05:26.399164+00:00",
+      "origem": "s1299_envio"
     },
     "s1298": {
       "id": 169270,
@@ -193,6 +238,41 @@
       "cd_resposta": "201",
       "dt_processamento": "2026-05-21 19:34:03.206855+00:00",
       "protocolo": "1.1.202605.0000000013192269972"
+    },
+    "correcao_plan_saude_2026_05_28": {
+      "timeline_envio_id": 66,
+      "xmls_corretivos": 82,
+      "protocolos_s1210": [
+        "1.1.202605.0000000013221851751",
+        "1.1.202605.0000000013221853136",
+        "1.1.202605.0000000013221854766"
+      ],
+      "resultado_s1210": {
+        "sucesso": 82,
+        "erro_ou_pendente": 0
+      },
+      "fontes_s2299_count": 2,
+      "fallback_count": 0,
+      "cpf_recibo_pendente": null,
+      "recibo_459_resolvido_2026_05_28": {
+        "cpf": "06701349960",
+        "recibo_s3000_exclusao_informado": "1.1.0000000035183951429",
+        "recibo_s1210_excluido": "1.1.0000000035182530057",
+        "tentativa_retificacao": {
+          "timeline_envio_id": 70,
+          "protocolo": "1.1.202605.0000000013221934485",
+          "resultado": "401/157 porque o recibo informado era S-3000, nao S-1210"
+        },
+        "inclusao_s1210": {
+          "timeline_envio_id": 72,
+          "protocolo": "1.1.202605.0000000013221940347",
+          "nr_recibo": "1.1.0000000041100992863"
+        }
+      },
+      "s1299": {
+        "protocolo": "1.1.202605.0000000013221942257",
+        "nr_recibo": "1.1.0000000041101000922"
+      }
     },
     "total_finais": 1059
   },
@@ -230,18 +310,16 @@
       }
     ],
     "counts": {
-      "sucesso": 1133,
-      "erro_esocial": 93
+      "sucesso": 1226,
+      "erro_esocial": 0
     },
-    "categorias": {
-      "plano_saude_coletivo_obrigatorio": 93
-    },
+    "categorias": {},
     "fechamento": {
-      "protocolo": "1.1.202605.0000000013192318799",
-      "nr_recibo": "1.1.0000000040947418526",
-      "fechado": false,
-      "confirmado_em": "2026-05-21 19:40:14.261446+00:00",
-      "origem": "s1298_envio"
+      "protocolo": "1.1.202605.0000000013221867451",
+      "nr_recibo": "1.1.0000000041100640007",
+      "fechado": true,
+      "confirmado_em": "2026-05-28 22:21:40",
+      "origem": "s1299_envio"
     },
     "s1298": {
       "id": 169271,
@@ -250,6 +328,25 @@
       "cd_resposta": "201",
       "dt_processamento": "2026-05-21 19:40:14.261446+00:00",
       "protocolo": "1.1.202605.0000000013192318799"
+    },
+    "correcao_plan_saude_2026_05_28": {
+      "timeline_envio_id": 67,
+      "xmls_corretivos": 93,
+      "protocolos_s1210": [
+        "1.1.202605.0000000013221863880",
+        "1.1.202605.0000000013221865009",
+        "1.1.202605.0000000013221866118"
+      ],
+      "resultado_s1210": {
+        "sucesso": 93,
+        "erro_ou_pendente": 0
+      },
+      "fontes_s2299_count": 2,
+      "fallback_count": 0,
+      "s1299": {
+        "protocolo": "1.1.202605.0000000013221867451",
+        "nr_recibo": "1.1.0000000041100640007"
+      }
     },
     "total_finais": 1226
   },
@@ -306,18 +403,16 @@
       }
     ],
     "counts": {
-      "sucesso": 1193,
-      "erro_esocial": 91
+      "sucesso": 1284,
+      "erro_esocial": 0
     },
-    "categorias": {
-      "plano_saude_coletivo_obrigatorio": 91
-    },
+    "categorias": {},
     "fechamento": {
-      "protocolo": "1.1.202605.0000000013192426470",
-      "nr_recibo": "1.1.0000000040948191770",
-      "fechado": false,
-      "confirmado_em": "2026-05-21 20:12:22.040252+00:00",
-      "origem": "s1298_reconsulta"
+      "protocolo": "1.1.202605.0000000013221877950",
+      "nr_recibo": "1.1.0000000041100699587",
+      "fechado": true,
+      "confirmado_em": "2026-05-28 22:27:02",
+      "origem": "s1299_envio"
     },
     "s1298": {
       "id": 169272,
@@ -326,6 +421,25 @@
       "cd_resposta": "201",
       "dt_processamento": "2026-05-21 20:12:22.040252+00:00",
       "protocolo": "1.1.202605.0000000013192426470"
+    },
+    "correcao_plan_saude_2026_05_28": {
+      "timeline_envio_id": 68,
+      "xmls_corretivos": 91,
+      "protocolos_s1210": [
+        "1.1.202605.0000000013221875083",
+        "1.1.202605.0000000013221875966",
+        "1.1.202605.0000000013221877059"
+      ],
+      "resultado_s1210": {
+        "sucesso": 91,
+        "erro_ou_pendente": 0
+      },
+      "fontes_s2299_count": 0,
+      "fallback_count": 0,
+      "s1299": {
+        "protocolo": "1.1.202605.0000000013221877950",
+        "nr_recibo": "1.1.0000000041100699587"
+      }
     },
     "total_finais": 1284
   }

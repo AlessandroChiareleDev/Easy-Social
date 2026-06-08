@@ -1,0 +1,15 @@
+{
+  "ok": true,
+  "cpf": "00820996777",
+  "recibo_informado": "1.1.0000000039559372733",
+  "timeline_envio_id": 58,
+  "timeline_item_id": 13475,
+  "versao_nova_id": 190991,
+  "status": "sucesso",
+  "protocolo": "1.1.202605.0000000013221604564",
+  "codigo": "201",
+  "descricao": "Sucesso.",
+  "nr_recibo_novo": "1.1.0000000041099143046",
+  "ocorrencias": [],
+  "xml_path": "relatorio_ana/OBJETIVA_JAN_MAI_2025/xmls_janeiro_70_corrigidos/04_recibo_459_retificacao_recibo_informado/S1210_2025-01_00820996777_retificacao_recibo_informado_assinado.xml"
+}

@@ -1,0 +1,20 @@
+{
+  "ok": false,
+  "cpf": "00820996777",
+  "timeline_envio_id": 56,
+  "timeline_item_id": 13473,
+  "versao_nova_id": null,
+  "status": "erro_esocial",
+  "protocolo": "1.1.202605.0000000013221596815",
+  "codigo": "401",
+  "descricao": "Conteudo do evento inválido.",
+  "nr_recibo_novo": null,
+  "ocorrencias": [
+    {
+      "codigo": "459",
+      "descricao": "Não foi localizado um evento para o recibo de entrega informado ou o mesmo foi excluído/retificado.\nAção Sugerida: Deverá existir um Evento já recebido, \"Ativo\" (não excluído ou retificado), com número de recibo de entrega igual ao informado no campo.",
+      "tipo": "1"
+    }
+  ],
+  "xml_path": "relatorio_ana/OBJETIVA_JAN_MAI_2025/xmls_janeiro_70_corrigidos/03_recibo_459_retificacao_recibo_ativo/S1210_2025-01_00820996777_retificacao_recibo_ativo_assinado.xml"
+}

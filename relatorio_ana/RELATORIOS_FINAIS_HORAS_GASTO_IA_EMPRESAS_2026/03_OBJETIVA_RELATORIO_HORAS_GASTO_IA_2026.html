@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Relatório - OBJETIVA</title>
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; background: #edf2f7; color: #172033; font-family: Arial, Helvetica, sans-serif; }
+.page { width: 210mm; min-height: 297mm; margin: 18px auto; background: #fff; box-shadow: 0 12px 30px rgba(15,23,42,.12); }
+.topbar { background: #0D1530; color: #fff; padding: 28px 32px; }
+.logo { width: 128px; max-height: 46px; object-fit: contain; display: block; margin-bottom: 24px; }
+.logo-fallback { font-size: 18px; font-weight: 800; margin-bottom: 24px; }
+h1 { margin: 0; font-size: 25px; line-height: 1.18; letter-spacing: 0; }
+.company { margin-top: 9px; color: #c9d7ea; font-size: 13px; line-height: 1.4; }
+.content { padding: 30px 32px; }
+.summary { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 18px; }
+.box { border: 1px solid #DBE5F3; border-radius: 8px; background: #F5F8FC; padding: 18px; min-height: 132px; }
+.label { color: #64748B; font-size: 11px; text-transform: uppercase; letter-spacing: .45px; font-weight: 700; margin-bottom: 10px; }
+.value { color: #0D1530; font-size: 31px; font-weight: 850; line-height: 1.05; }
+.sub { margin-top: 10px; color: #64748B; font-size: 12px; line-height: 1.35; }
+table { width: 100%; border-collapse: collapse; margin-top: 18px; font-size: 12px; }
+th { width: 34%; background: #0D1530; color: #fff; text-align: left; padding: 11px; font-size: 11px; text-transform: uppercase; letter-spacing: .45px; }
+td { border: 1px solid #DBE5F3; padding: 12px; vertical-align: top; }
+.footer-line { margin-top: 22px; height: 3px; width: 90px; background: #0066FF; border-radius: 999px; }
+@media print { body { background: #fff; } .page { margin: 0; box-shadow: none; } }
+</style>
+</head>
+<body>
+<main class="page">
+  <header class="topbar">
+    <img src="../../frontend/public/brand-logo.png" alt="Easy Social" class="logo">
+    <h1>Relatório de Horas Trabalhadas e Gasto com IA</h1>
+    <div class="company">OBJETIVA SERVIÇOS TERCEIRIZADOS LTDA<br>CNPJ 10.874.523/0001-10</div>
+  </header>
+  <section class="content">
+    <div class="summary">
+      <div class="box">
+        <div class="label">Horas trabalhadas</div>
+        <div class="value">68 h</div>
+        <div class="sub">Período: 20/05/2026 a 29/05/2026</div>
+      </div>
+      <div class="box">
+        <div class="label">Valor gasto com IA</div>
+        <div class="value">US$ 195,33</div>
+        <div class="sub">Gasto de IA/tokens vinculado à empresa.</div>
+      </div>
+    </div>
+    <table>
+      <tbody>
+        <tr><th>Empresa</th><td>OBJETIVA SERVIÇOS TERCEIRIZADOS LTDA</td></tr>
+        <tr><th>CNPJ</th><td>10.874.523/0001-10</td></tr>
+        <tr><th>Período</th><td>20/05/2026 a 29/05/2026</td></tr>
+        <tr><th>Total de horas trabalhadas</th><td>68 horas</td></tr>
+        <tr><th>Valor gasto com IA</th><td>US$ 195,33</td></tr>
+      </tbody>
+    </table>
+    <div class="footer-line"></div>
+  </section>
+</main>
+</body>
+</html>

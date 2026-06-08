@@ -1,0 +1,758 @@
+{
+  "documento": {
+    "titulo": "Relatório de Horas Trabalhadas por Empresa",
+    "subtitulo": "Memória técnica de horas - APPA, Soluções e Objetiva",
+    "codigo": "ES-HORAS-2026-001",
+    "gerado_em": "02/06/2026 17:06",
+    "periodo_consolidado": "24/03/2026 a 29/05/2026",
+    "criterio_resumo": "8h de segunda a sexta + 4h aos sábados = 44h/semana"
+  },
+  "criterios": [
+    "Jornada-base: 8 horas de segunda a sexta-feira e 4 horas aos sábados, totalizando 44 horas por semana cheia.",
+    "Domingos foram considerados sem jornada.",
+    "Feriados não foram abatidos porque não foram informados como premissa específica.",
+    "Datas de transição foram preservadas no documento e alocadas a uma única empresa no consolidado, evitando dupla contagem.",
+    "Este relatório não atribui valor financeiro por hora; entrega a memória de horas para eventual precificação posterior."
+  ],
+  "empresas": [
+    {
+      "ordem": 1,
+      "slug": "appa",
+      "sigla": "APPA",
+      "nome": "APPA - Administração dos Portos de Paranaguá e Antonina",
+      "cnpj": "05.969.071/0001-10",
+      "frente": "Operação Easy e-Social APPA, análise de rubricas, suporte técnico e processamento assistido",
+      "cor": "0066FF",
+      "periodo_informado": {
+        "inicio": "2026-03-24",
+        "fim": "2026-05-07",
+        "texto": "24/03/2026 a 07/05/2026"
+      },
+      "periodo_calculo": {
+        "inicio": "2026-03-24",
+        "fim": "2026-05-06",
+        "texto": "24/03/2026 a 06/05/2026"
+      },
+      "observacao": "07/05/2026 foi tratado como marco de transição para Soluções no cálculo consolidado.",
+      "dias": [
+        {
+          "data": "2026-03-24",
+          "data_br": "24/03/2026",
+          "dia_semana": "terça-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S13",
+          "horas": 8
+        },
+        {
+          "data": "2026-03-25",
+          "data_br": "25/03/2026",
+          "dia_semana": "quarta-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S13",
+          "horas": 8
+        },
+        {
+          "data": "2026-03-26",
+          "data_br": "26/03/2026",
+          "dia_semana": "quinta-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S13",
+          "horas": 8
+        },
+        {
+          "data": "2026-03-27",
+          "data_br": "27/03/2026",
+          "dia_semana": "sexta-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S13",
+          "horas": 8
+        },
+        {
+          "data": "2026-03-28",
+          "data_br": "28/03/2026",
+          "dia_semana": "sábado",
+          "tipo": "Sábado - 4h",
+          "semana": "2026-S13",
+          "horas": 4
+        },
+        {
+          "data": "2026-03-29",
+          "data_br": "29/03/2026",
+          "dia_semana": "domingo",
+          "tipo": "Domingo - 0h",
+          "semana": "2026-S13",
+          "horas": 0
+        },
+        {
+          "data": "2026-03-30",
+          "data_br": "30/03/2026",
+          "dia_semana": "segunda-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S14",
+          "horas": 8
+        },
+        {
+          "data": "2026-03-31",
+          "data_br": "31/03/2026",
+          "dia_semana": "terça-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S14",
+          "horas": 8
+        },
+        {
+          "data": "2026-04-01",
+          "data_br": "01/04/2026",
+          "dia_semana": "quarta-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S14",
+          "horas": 8
+        },
+        {
+          "data": "2026-04-02",
+          "data_br": "02/04/2026",
+          "dia_semana": "quinta-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S14",
+          "horas": 8
+        },
+        {
+          "data": "2026-04-03",
+          "data_br": "03/04/2026",
+          "dia_semana": "sexta-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S14",
+          "horas": 8
+        },
+        {
+          "data": "2026-04-04",
+          "data_br": "04/04/2026",
+          "dia_semana": "sábado",
+          "tipo": "Sábado - 4h",
+          "semana": "2026-S14",
+          "horas": 4
+        },
+        {
+          "data": "2026-04-05",
+          "data_br": "05/04/2026",
+          "dia_semana": "domingo",
+          "tipo": "Domingo - 0h",
+          "semana": "2026-S14",
+          "horas": 0
+        },
+        {
+          "data": "2026-04-06",
+          "data_br": "06/04/2026",
+          "dia_semana": "segunda-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S15",
+          "horas": 8
+        },
+        {
+          "data": "2026-04-07",
+          "data_br": "07/04/2026",
+          "dia_semana": "terça-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S15",
+          "horas": 8
+        },
+        {
+          "data": "2026-04-08",
+          "data_br": "08/04/2026",
+          "dia_semana": "quarta-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S15",
+          "horas": 8
+        },
+        {
+          "data": "2026-04-09",
+          "data_br": "09/04/2026",
+          "dia_semana": "quinta-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S15",
+          "horas": 8
+        },
+        {
+          "data": "2026-04-10",
+          "data_br": "10/04/2026",
+          "dia_semana": "sexta-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S15",
+          "horas": 8
+        },
+        {
+          "data": "2026-04-11",
+          "data_br": "11/04/2026",
+          "dia_semana": "sábado",
+          "tipo": "Sábado - 4h",
+          "semana": "2026-S15",
+          "horas": 4
+        },
+        {
+          "data": "2026-04-12",
+          "data_br": "12/04/2026",
+          "dia_semana": "domingo",
+          "tipo": "Domingo - 0h",
+          "semana": "2026-S15",
+          "horas": 0
+        },
+        {
+          "data": "2026-04-13",
+          "data_br": "13/04/2026",
+          "dia_semana": "segunda-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S16",
+          "horas": 8
+        },
+        {
+          "data": "2026-04-14",
+          "data_br": "14/04/2026",
+          "dia_semana": "terça-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S16",
+          "horas": 8
+        },
+        {
+          "data": "2026-04-15",
+          "data_br": "15/04/2026",
+          "dia_semana": "quarta-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S16",
+          "horas": 8
+        },
+        {
+          "data": "2026-04-16",
+          "data_br": "16/04/2026",
+          "dia_semana": "quinta-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S16",
+          "horas": 8
+        },
+        {
+          "data": "2026-04-17",
+          "data_br": "17/04/2026",
+          "dia_semana": "sexta-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S16",
+          "horas": 8
+        },
+        {
+          "data": "2026-04-18",
+          "data_br": "18/04/2026",
+          "dia_semana": "sábado",
+          "tipo": "Sábado - 4h",
+          "semana": "2026-S16",
+          "horas": 4
+        },
+        {
+          "data": "2026-04-19",
+          "data_br": "19/04/2026",
+          "dia_semana": "domingo",
+          "tipo": "Domingo - 0h",
+          "semana": "2026-S16",
+          "horas": 0
+        },
+        {
+          "data": "2026-04-20",
+          "data_br": "20/04/2026",
+          "dia_semana": "segunda-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S17",
+          "horas": 8
+        },
+        {
+          "data": "2026-04-21",
+          "data_br": "21/04/2026",
+          "dia_semana": "terça-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S17",
+          "horas": 8
+        },
+        {
+          "data": "2026-04-22",
+          "data_br": "22/04/2026",
+          "dia_semana": "quarta-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S17",
+          "horas": 8
+        },
+        {
+          "data": "2026-04-23",
+          "data_br": "23/04/2026",
+          "dia_semana": "quinta-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S17",
+          "horas": 8
+        },
+        {
+          "data": "2026-04-24",
+          "data_br": "24/04/2026",
+          "dia_semana": "sexta-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S17",
+          "horas": 8
+        },
+        {
+          "data": "2026-04-25",
+          "data_br": "25/04/2026",
+          "dia_semana": "sábado",
+          "tipo": "Sábado - 4h",
+          "semana": "2026-S17",
+          "horas": 4
+        },
+        {
+          "data": "2026-04-26",
+          "data_br": "26/04/2026",
+          "dia_semana": "domingo",
+          "tipo": "Domingo - 0h",
+          "semana": "2026-S17",
+          "horas": 0
+        },
+        {
+          "data": "2026-04-27",
+          "data_br": "27/04/2026",
+          "dia_semana": "segunda-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S18",
+          "horas": 8
+        },
+        {
+          "data": "2026-04-28",
+          "data_br": "28/04/2026",
+          "dia_semana": "terça-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S18",
+          "horas": 8
+        },
+        {
+          "data": "2026-04-29",
+          "data_br": "29/04/2026",
+          "dia_semana": "quarta-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S18",
+          "horas": 8
+        },
+        {
+          "data": "2026-04-30",
+          "data_br": "30/04/2026",
+          "dia_semana": "quinta-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S18",
+          "horas": 8
+        },
+        {
+          "data": "2026-05-01",
+          "data_br": "01/05/2026",
+          "dia_semana": "sexta-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S18",
+          "horas": 8
+        },
+        {
+          "data": "2026-05-02",
+          "data_br": "02/05/2026",
+          "dia_semana": "sábado",
+          "tipo": "Sábado - 4h",
+          "semana": "2026-S18",
+          "horas": 4
+        },
+        {
+          "data": "2026-05-03",
+          "data_br": "03/05/2026",
+          "dia_semana": "domingo",
+          "tipo": "Domingo - 0h",
+          "semana": "2026-S18",
+          "horas": 0
+        },
+        {
+          "data": "2026-05-04",
+          "data_br": "04/05/2026",
+          "dia_semana": "segunda-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S19",
+          "horas": 8
+        },
+        {
+          "data": "2026-05-05",
+          "data_br": "05/05/2026",
+          "dia_semana": "terça-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S19",
+          "horas": 8
+        },
+        {
+          "data": "2026-05-06",
+          "data_br": "06/05/2026",
+          "dia_semana": "quarta-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S19",
+          "horas": 8
+        }
+      ],
+      "semanas": [
+        {
+          "semana": "2026-S13",
+          "periodo": "24/03/2026 a 29/03/2026",
+          "dias_8h": 4,
+          "sabados_4h": 1,
+          "domingos_0h": 1,
+          "horas": 36
+        },
+        {
+          "semana": "2026-S14",
+          "periodo": "30/03/2026 a 05/04/2026",
+          "dias_8h": 5,
+          "sabados_4h": 1,
+          "domingos_0h": 1,
+          "horas": 44
+        },
+        {
+          "semana": "2026-S15",
+          "periodo": "06/04/2026 a 12/04/2026",
+          "dias_8h": 5,
+          "sabados_4h": 1,
+          "domingos_0h": 1,
+          "horas": 44
+        },
+        {
+          "semana": "2026-S16",
+          "periodo": "13/04/2026 a 19/04/2026",
+          "dias_8h": 5,
+          "sabados_4h": 1,
+          "domingos_0h": 1,
+          "horas": 44
+        },
+        {
+          "semana": "2026-S17",
+          "periodo": "20/04/2026 a 26/04/2026",
+          "dias_8h": 5,
+          "sabados_4h": 1,
+          "domingos_0h": 1,
+          "horas": 44
+        },
+        {
+          "semana": "2026-S18",
+          "periodo": "27/04/2026 a 03/05/2026",
+          "dias_8h": 5,
+          "sabados_4h": 1,
+          "domingos_0h": 1,
+          "horas": 44
+        },
+        {
+          "semana": "2026-S19",
+          "periodo": "04/05/2026 a 06/05/2026",
+          "dias_8h": 3,
+          "sabados_4h": 0,
+          "domingos_0h": 0,
+          "horas": 24
+        }
+      ],
+      "totais": {
+        "horas": 280,
+        "dias_calendario": 44,
+        "dias_8h": 32,
+        "sabados_4h": 6,
+        "domingos_0h": 6,
+        "semanas": 7,
+        "participacao": 0.6542056074766355
+      }
+    },
+    {
+      "ordem": 2,
+      "slug": "solucoes",
+      "sigla": "SOLUÇÕES",
+      "nome": "SOLUÇÕES SERVIÇOS TERCEIRIZADOS LTDA",
+      "cnpj": "09.445.502/0001-09",
+      "frente": "Reenvio massivo S-1210, saneamento de pendências e fechamento operacional dos períodos 2025",
+      "cor": "137A3A",
+      "periodo_informado": {
+        "inicio": "2026-05-07",
+        "fim": "2026-05-20",
+        "texto": "07/05/2026 a 20/05/2026"
+      },
+      "periodo_calculo": {
+        "inicio": "2026-05-07",
+        "fim": "2026-05-19",
+        "texto": "07/05/2026 a 19/05/2026"
+      },
+      "observacao": "20/05/2026 foi tratado como marco de transição para Objetiva no cálculo consolidado.",
+      "dias": [
+        {
+          "data": "2026-05-07",
+          "data_br": "07/05/2026",
+          "dia_semana": "quinta-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S19",
+          "horas": 8
+        },
+        {
+          "data": "2026-05-08",
+          "data_br": "08/05/2026",
+          "dia_semana": "sexta-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S19",
+          "horas": 8
+        },
+        {
+          "data": "2026-05-09",
+          "data_br": "09/05/2026",
+          "dia_semana": "sábado",
+          "tipo": "Sábado - 4h",
+          "semana": "2026-S19",
+          "horas": 4
+        },
+        {
+          "data": "2026-05-10",
+          "data_br": "10/05/2026",
+          "dia_semana": "domingo",
+          "tipo": "Domingo - 0h",
+          "semana": "2026-S19",
+          "horas": 0
+        },
+        {
+          "data": "2026-05-11",
+          "data_br": "11/05/2026",
+          "dia_semana": "segunda-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S20",
+          "horas": 8
+        },
+        {
+          "data": "2026-05-12",
+          "data_br": "12/05/2026",
+          "dia_semana": "terça-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S20",
+          "horas": 8
+        },
+        {
+          "data": "2026-05-13",
+          "data_br": "13/05/2026",
+          "dia_semana": "quarta-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S20",
+          "horas": 8
+        },
+        {
+          "data": "2026-05-14",
+          "data_br": "14/05/2026",
+          "dia_semana": "quinta-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S20",
+          "horas": 8
+        },
+        {
+          "data": "2026-05-15",
+          "data_br": "15/05/2026",
+          "dia_semana": "sexta-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S20",
+          "horas": 8
+        },
+        {
+          "data": "2026-05-16",
+          "data_br": "16/05/2026",
+          "dia_semana": "sábado",
+          "tipo": "Sábado - 4h",
+          "semana": "2026-S20",
+          "horas": 4
+        },
+        {
+          "data": "2026-05-17",
+          "data_br": "17/05/2026",
+          "dia_semana": "domingo",
+          "tipo": "Domingo - 0h",
+          "semana": "2026-S20",
+          "horas": 0
+        },
+        {
+          "data": "2026-05-18",
+          "data_br": "18/05/2026",
+          "dia_semana": "segunda-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S21",
+          "horas": 8
+        },
+        {
+          "data": "2026-05-19",
+          "data_br": "19/05/2026",
+          "dia_semana": "terça-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S21",
+          "horas": 8
+        }
+      ],
+      "semanas": [
+        {
+          "semana": "2026-S19",
+          "periodo": "07/05/2026 a 10/05/2026",
+          "dias_8h": 2,
+          "sabados_4h": 1,
+          "domingos_0h": 1,
+          "horas": 20
+        },
+        {
+          "semana": "2026-S20",
+          "periodo": "11/05/2026 a 17/05/2026",
+          "dias_8h": 5,
+          "sabados_4h": 1,
+          "domingos_0h": 1,
+          "horas": 44
+        },
+        {
+          "semana": "2026-S21",
+          "periodo": "18/05/2026 a 19/05/2026",
+          "dias_8h": 2,
+          "sabados_4h": 0,
+          "domingos_0h": 0,
+          "horas": 16
+        }
+      ],
+      "totais": {
+        "horas": 80,
+        "dias_calendario": 13,
+        "dias_8h": 9,
+        "sabados_4h": 2,
+        "domingos_0h": 2,
+        "semanas": 3,
+        "participacao": 0.18691588785046728
+      }
+    },
+    {
+      "ordem": 3,
+      "slug": "objetiva",
+      "sigla": "OBJETIVA",
+      "nome": "OBJETIVA SERVIÇOS TERCEIRIZADOS LTDA",
+      "cnpj": "10.874.523/0001-10",
+      "frente": "Início da frente Objetiva, validação de base, preparação de execução e operação assistida",
+      "cor": "7C3AED",
+      "periodo_informado": {
+        "inicio": "2026-05-20",
+        "fim": "2026-05-29",
+        "texto": "20/05/2026 a 29/05/2026"
+      },
+      "periodo_calculo": {
+        "inicio": "2026-05-20",
+        "fim": "2026-05-29",
+        "texto": "20/05/2026 a 29/05/2026"
+      },
+      "observacao": "Período final do recorte solicitado, sem transição posterior dentro deste relatório.",
+      "dias": [
+        {
+          "data": "2026-05-20",
+          "data_br": "20/05/2026",
+          "dia_semana": "quarta-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S21",
+          "horas": 8
+        },
+        {
+          "data": "2026-05-21",
+          "data_br": "21/05/2026",
+          "dia_semana": "quinta-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S21",
+          "horas": 8
+        },
+        {
+          "data": "2026-05-22",
+          "data_br": "22/05/2026",
+          "dia_semana": "sexta-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S21",
+          "horas": 8
+        },
+        {
+          "data": "2026-05-23",
+          "data_br": "23/05/2026",
+          "dia_semana": "sábado",
+          "tipo": "Sábado - 4h",
+          "semana": "2026-S21",
+          "horas": 4
+        },
+        {
+          "data": "2026-05-24",
+          "data_br": "24/05/2026",
+          "dia_semana": "domingo",
+          "tipo": "Domingo - 0h",
+          "semana": "2026-S21",
+          "horas": 0
+        },
+        {
+          "data": "2026-05-25",
+          "data_br": "25/05/2026",
+          "dia_semana": "segunda-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S22",
+          "horas": 8
+        },
+        {
+          "data": "2026-05-26",
+          "data_br": "26/05/2026",
+          "dia_semana": "terça-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S22",
+          "horas": 8
+        },
+        {
+          "data": "2026-05-27",
+          "data_br": "27/05/2026",
+          "dia_semana": "quarta-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S22",
+          "horas": 8
+        },
+        {
+          "data": "2026-05-28",
+          "data_br": "28/05/2026",
+          "dia_semana": "quinta-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S22",
+          "horas": 8
+        },
+        {
+          "data": "2026-05-29",
+          "data_br": "29/05/2026",
+          "dia_semana": "sexta-feira",
+          "tipo": "Dia útil - 8h",
+          "semana": "2026-S22",
+          "horas": 8
+        }
+      ],
+      "semanas": [
+        {
+          "semana": "2026-S21",
+          "periodo": "20/05/2026 a 24/05/2026",
+          "dias_8h": 3,
+          "sabados_4h": 1,
+          "domingos_0h": 1,
+          "horas": 28
+        },
+        {
+          "semana": "2026-S22",
+          "periodo": "25/05/2026 a 29/05/2026",
+          "dias_8h": 5,
+          "sabados_4h": 0,
+          "domingos_0h": 0,
+          "horas": 40
+        }
+      ],
+      "totais": {
+        "horas": 68,
+        "dias_calendario": 10,
+        "dias_8h": 8,
+        "sabados_4h": 1,
+        "domingos_0h": 1,
+        "semanas": 2,
+        "participacao": 0.1588785046728972
+      }
+    }
+  ],
+  "totais": {
+    "empresas": 3,
+    "horas": 428,
+    "dias_8h": 49,
+    "sabados_4h": 9,
+    "domingos_0h": 9,
+    "dias_calendario": 67
+  }
+}

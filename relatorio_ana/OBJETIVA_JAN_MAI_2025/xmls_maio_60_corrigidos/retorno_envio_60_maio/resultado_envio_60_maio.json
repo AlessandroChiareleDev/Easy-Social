@@ -1,0 +1,492 @@
+{
+  "ok": true,
+  "empresa": "OBJETIVA",
+  "empresa_id": 3,
+  "per_apur": "2025-05",
+  "timeline_envio_id": 62,
+  "total_enviados_agora": 60,
+  "total_sucesso": 60,
+  "total_erro_ou_pendente": 0,
+  "results": [
+    {
+      "cpf": "00137622570",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221672288",
+      "nr_recibo_novo": "1.1.0000000041099493126",
+      "versao_nova_id": 191225
+    },
+    {
+      "cpf": "00407180508",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221672288",
+      "nr_recibo_novo": "1.1.0000000041099493178",
+      "versao_nova_id": 191226
+    },
+    {
+      "cpf": "00764252585",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221672288",
+      "nr_recibo_novo": "1.1.0000000041099493241",
+      "versao_nova_id": 191227
+    },
+    {
+      "cpf": "00953811557",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221672288",
+      "nr_recibo_novo": "1.1.0000000041099493308",
+      "versao_nova_id": 191228
+    },
+    {
+      "cpf": "01369448503",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221672288",
+      "nr_recibo_novo": "1.1.0000000041099493385",
+      "versao_nova_id": 191229
+    },
+    {
+      "cpf": "01431027537",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221672288",
+      "nr_recibo_novo": "1.1.0000000041099493467",
+      "versao_nova_id": 191230
+    },
+    {
+      "cpf": "01616333588",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221672288",
+      "nr_recibo_novo": "1.1.0000000041099493503",
+      "versao_nova_id": 191231
+    },
+    {
+      "cpf": "01956081518",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221672288",
+      "nr_recibo_novo": "1.1.0000000041099493562",
+      "versao_nova_id": 191232
+    },
+    {
+      "cpf": "02524041573",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221672288",
+      "nr_recibo_novo": "1.1.0000000041099493624",
+      "versao_nova_id": 191233
+    },
+    {
+      "cpf": "02708030507",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221672288",
+      "nr_recibo_novo": "1.1.0000000041099493694",
+      "versao_nova_id": 191234
+    },
+    {
+      "cpf": "03040816551",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221672288",
+      "nr_recibo_novo": "1.1.0000000041099493746",
+      "versao_nova_id": 191235
+    },
+    {
+      "cpf": "03140619596",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221672288",
+      "nr_recibo_novo": "1.1.0000000041099493798",
+      "versao_nova_id": 191236
+    },
+    {
+      "cpf": "03698538571",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221672288",
+      "nr_recibo_novo": "1.1.0000000041099493859",
+      "versao_nova_id": 191237
+    },
+    {
+      "cpf": "03700001533",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221672288",
+      "nr_recibo_novo": "1.1.0000000041099493926",
+      "versao_nova_id": 191238
+    },
+    {
+      "cpf": "03852854504",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221672288",
+      "nr_recibo_novo": "1.1.0000000041099493996",
+      "versao_nova_id": 191239
+    },
+    {
+      "cpf": "03906984583",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221672288",
+      "nr_recibo_novo": "1.1.0000000041099494068",
+      "versao_nova_id": 191240
+    },
+    {
+      "cpf": "04136279850",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221672288",
+      "nr_recibo_novo": "1.1.0000000041099494137",
+      "versao_nova_id": 191241
+    },
+    {
+      "cpf": "04959319500",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221672288",
+      "nr_recibo_novo": "1.1.0000000041099494199",
+      "versao_nova_id": 191242
+    },
+    {
+      "cpf": "05638487581",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221672288",
+      "nr_recibo_novo": "1.1.0000000041099494278",
+      "versao_nova_id": 191243
+    },
+    {
+      "cpf": "09699573864",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221672288",
+      "nr_recibo_novo": "1.1.0000000041099494355",
+      "versao_nova_id": 191244
+    },
+    {
+      "cpf": "10477639828",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221672288",
+      "nr_recibo_novo": "1.1.0000000041099494423",
+      "versao_nova_id": 191245
+    },
+    {
+      "cpf": "11255263865",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221672288",
+      "nr_recibo_novo": "1.1.0000000041099494489",
+      "versao_nova_id": 191246
+    },
+    {
+      "cpf": "12377832830",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221672288",
+      "nr_recibo_novo": "1.1.0000000041099494560",
+      "versao_nova_id": 191247
+    },
+    {
+      "cpf": "13361896819",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221672288",
+      "nr_recibo_novo": "1.1.0000000041099494615",
+      "versao_nova_id": 191248
+    },
+    {
+      "cpf": "13746319811",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221672288",
+      "nr_recibo_novo": "1.1.0000000041099494686",
+      "versao_nova_id": 191249
+    },
+    {
+      "cpf": "13790716820",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221672288",
+      "nr_recibo_novo": "1.1.0000000041099494749",
+      "versao_nova_id": 191250
+    },
+    {
+      "cpf": "17386831846",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221672288",
+      "nr_recibo_novo": "1.1.0000000041099494819",
+      "versao_nova_id": 191251
+    },
+    {
+      "cpf": "18780244858",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221672288",
+      "nr_recibo_novo": "1.1.0000000041099494887",
+      "versao_nova_id": 191252
+    },
+    {
+      "cpf": "23430798892",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221672288",
+      "nr_recibo_novo": "1.1.0000000041099494956",
+      "versao_nova_id": 191253
+    },
+    {
+      "cpf": "28457414801",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221672288",
+      "nr_recibo_novo": "1.1.0000000041099495047",
+      "versao_nova_id": 191254
+    },
+    {
+      "cpf": "29584653814",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221672288",
+      "nr_recibo_novo": "1.1.0000000041099495125",
+      "versao_nova_id": 191255
+    },
+    {
+      "cpf": "29876859803",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221672288",
+      "nr_recibo_novo": "1.1.0000000041099495186",
+      "versao_nova_id": 191256
+    },
+    {
+      "cpf": "30006999883",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221672288",
+      "nr_recibo_novo": "1.1.0000000041099495246",
+      "versao_nova_id": 191257
+    },
+    {
+      "cpf": "30142041882",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221672288",
+      "nr_recibo_novo": "1.1.0000000041099495317",
+      "versao_nova_id": 191258
+    },
+    {
+      "cpf": "31241178836",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221672288",
+      "nr_recibo_novo": "1.1.0000000041099495389",
+      "versao_nova_id": 191259
+    },
+    {
+      "cpf": "31661517889",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221672288",
+      "nr_recibo_novo": "1.1.0000000041099495433",
+      "versao_nova_id": 191260
+    },
+    {
+      "cpf": "31757691871",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221672288",
+      "nr_recibo_novo": "1.1.0000000041099495506",
+      "versao_nova_id": 191261
+    },
+    {
+      "cpf": "32373427850",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221672288",
+      "nr_recibo_novo": "1.1.0000000041099495587",
+      "versao_nova_id": 191262
+    },
+    {
+      "cpf": "32644330874",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221672288",
+      "nr_recibo_novo": "1.1.0000000041099495642",
+      "versao_nova_id": 191263
+    },
+    {
+      "cpf": "34324772878",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221672288",
+      "nr_recibo_novo": "1.1.0000000041099495698",
+      "versao_nova_id": 191264
+    },
+    {
+      "cpf": "34518412826",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221673050",
+      "nr_recibo_novo": "1.1.0000000041099497096",
+      "versao_nova_id": 191265
+    },
+    {
+      "cpf": "35748418843",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221673050",
+      "nr_recibo_novo": "1.1.0000000041099497151",
+      "versao_nova_id": 191266
+    },
+    {
+      "cpf": "37478763820",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221673050",
+      "nr_recibo_novo": "1.1.0000000041099497226",
+      "versao_nova_id": 191267
+    },
+    {
+      "cpf": "37480192894",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221673050",
+      "nr_recibo_novo": "1.1.0000000041099497283",
+      "versao_nova_id": 191268
+    },
+    {
+      "cpf": "39779983821",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221673050",
+      "nr_recibo_novo": "1.1.0000000041099497353",
+      "versao_nova_id": 191269
+    },
+    {
+      "cpf": "40608281816",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221673050",
+      "nr_recibo_novo": "1.1.0000000041099497408",
+      "versao_nova_id": 191270
+    },
+    {
+      "cpf": "41449145850",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221673050",
+      "nr_recibo_novo": "1.1.0000000041099497491",
+      "versao_nova_id": 191271
+    },
+    {
+      "cpf": "43519949830",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221673050",
+      "nr_recibo_novo": "1.1.0000000041099497553",
+      "versao_nova_id": 191272
+    },
+    {
+      "cpf": "44339905828",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221673050",
+      "nr_recibo_novo": "1.1.0000000041099497608",
+      "versao_nova_id": 191273
+    },
+    {
+      "cpf": "44917822882",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221673050",
+      "nr_recibo_novo": "1.1.0000000041099497664",
+      "versao_nova_id": 191274
+    },
+    {
+      "cpf": "47847837846",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221673050",
+      "nr_recibo_novo": "1.1.0000000041099497728",
+      "versao_nova_id": 191275
+    },
+    {
+      "cpf": "51622669819",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221673050",
+      "nr_recibo_novo": "1.1.0000000041099497785",
+      "versao_nova_id": 191276
+    },
+    {
+      "cpf": "53902278838",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221673050",
+      "nr_recibo_novo": "1.1.0000000041099497851",
+      "versao_nova_id": 191277
+    },
+    {
+      "cpf": "54116716553",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221673050",
+      "nr_recibo_novo": "1.1.0000000041099497918",
+      "versao_nova_id": 191278
+    },
+    {
+      "cpf": "69289107553",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221673050",
+      "nr_recibo_novo": "1.1.0000000041099497985",
+      "versao_nova_id": 191279
+    },
+    {
+      "cpf": "72819774253",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221673050",
+      "nr_recibo_novo": "1.1.0000000041099498060",
+      "versao_nova_id": 191280
+    },
+    {
+      "cpf": "83464379515",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221673050",
+      "nr_recibo_novo": "1.1.0000000041099498107",
+      "versao_nova_id": 191281
+    },
+    {
+      "cpf": "83518762591",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221673050",
+      "nr_recibo_novo": "1.1.0000000041099498205",
+      "versao_nova_id": 191282
+    },
+    {
+      "cpf": "96840994520",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221673050",
+      "nr_recibo_novo": "1.1.0000000041099498296",
+      "versao_nova_id": 191283
+    },
+    {
+      "cpf": "99654300559",
+      "status": "sucesso",
+      "codigo": "201",
+      "protocolo": "1.1.202605.0000000013221673050",
+      "nr_recibo_novo": "1.1.0000000041099498367",
+      "versao_nova_id": 191284
+    }
+  ]
+}

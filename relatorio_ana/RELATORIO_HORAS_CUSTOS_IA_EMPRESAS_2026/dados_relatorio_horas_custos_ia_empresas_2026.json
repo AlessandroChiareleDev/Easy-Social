@@ -1,0 +1,206 @@
+{
+  "documento": {
+    "titulo": "Relatório Executivo de Horas e Custos de IA",
+    "subtitulo": "APPA, Soluções e Objetiva - horas trabalhadas, tokens e ferramentas IA",
+    "codigo": "ES-HC-IA-2026-002",
+    "gerado_em": "02/06/2026 18:44",
+    "periodo_consolidado": "24/03/2026 a 29/05/2026",
+    "criterio_resumo": "8h de segunda a sexta + 4h aos sábados = 44h/semana"
+  },
+  "cambio": {
+    "abr_2026": {
+      "data": "01/04/2026",
+      "taxa": 5.1564
+    },
+    "mai_2026": {
+      "data": "01/05/2026",
+      "taxa": 4.9943
+    }
+  },
+  "premissas": [
+    "Jornada-base: 8 horas de segunda a sexta-feira e 4 horas aos sábados, totalizando 44 horas por semana cheia.",
+    "Domingos não são listados no corpo executivo; entram apenas no cálculo semanal como dias sem jornada.",
+    "Datas de transição foram alocadas a uma única empresa no consolidado para evitar dupla contagem.",
+    "Custos de IA são usados somente quando localizados em artefatos existentes do projeto.",
+    "Para Soluções, o relatório de origem registra US$ 586,00 em tokens extras e 126 horas de processamento; a coluna de custo/hora desta v2 usa a base padronizada de jornada do recorte solicitado.",
+    "Para Objetiva, não foi localizado custo de IA/tokens nos artefatos disponíveis; o campo permanece pendente, sem estimativa inventada."
+  ],
+  "fontes": [
+    "APPA: dashboard/src/components/relatorio-pdf-inner.tsx, constantes GITHUB_TOTAL=468, CLAUDE_TOTAL=400 e TOTAL_USD=868.",
+    "APPA: dashboard/src/components/relatorio-profissional.tsx, câmbio de abril/2026 e maio/2026 usado para conversão BRL.",
+    "APPA: dashboard/src/components/relatorio-github.tsx, 12.340 requests estimados de Copilot e uso alocado majoritariamente/totalmente ao Easy e-Social APPA.",
+    "Soluções: relatorio_ana/RELATORIO_CONCLUSAO_ATIVIDADE_SOLUCOES_2025/RELATORIO_CONCLUSAO_ATIVIDADE_EASY_SOCIAL_SOLUCOES_2025.html, linhas de horas totais e tokens extras.",
+    "Objetiva: busca local em relatorio_ana, python-scripts e docs não localizou custo de IA/tokens documentado."
+  ],
+  "empresas": [
+    {
+      "ordem": 1,
+      "slug": "appa",
+      "sigla": "APPA",
+      "nome": "APPA - Administração dos Portos de Paranaguá e Antonina",
+      "cnpj": "05.969.071/0001-10",
+      "frente": "Operação Easy e-Social APPA, análise de rubricas, suporte técnico e processamento assistido.",
+      "cor": "0066FF",
+      "periodo_informado": "24/03/2026 a 07/05/2026",
+      "periodo_calculo": "24/03/2026 a 06/05/2026",
+      "observacao_horas": "07/05/2026 foi tratado como transição para Soluções no consolidado.",
+      "semanas": [
+        {
+          "semana": "2026-S13",
+          "periodo": "24/03/2026 a 29/03/2026",
+          "dias_uteis": 4,
+          "sabados": 1,
+          "horas": 36
+        },
+        {
+          "semana": "2026-S14",
+          "periodo": "30/03/2026 a 05/04/2026",
+          "dias_uteis": 5,
+          "sabados": 1,
+          "horas": 44
+        },
+        {
+          "semana": "2026-S15",
+          "periodo": "06/04/2026 a 12/04/2026",
+          "dias_uteis": 5,
+          "sabados": 1,
+          "horas": 44
+        },
+        {
+          "semana": "2026-S16",
+          "periodo": "13/04/2026 a 19/04/2026",
+          "dias_uteis": 5,
+          "sabados": 1,
+          "horas": 44
+        },
+        {
+          "semana": "2026-S17",
+          "periodo": "20/04/2026 a 26/04/2026",
+          "dias_uteis": 5,
+          "sabados": 1,
+          "horas": 44
+        },
+        {
+          "semana": "2026-S18",
+          "periodo": "27/04/2026 a 03/05/2026",
+          "dias_uteis": 5,
+          "sabados": 1,
+          "horas": 44
+        },
+        {
+          "semana": "2026-S19",
+          "periodo": "04/05/2026 a 06/05/2026",
+          "dias_uteis": 3,
+          "sabados": 0,
+          "horas": 24
+        }
+      ],
+      "horas": 280,
+      "custo_usd": 868.0,
+      "custo_brl": 4405.4,
+      "custo_status": "Documentado",
+      "custo_fonte": "GitHub Copilot Pro: US$ 468,00; Claude Max 20x: US$ 400,00; total APPA: US$ 868,00.",
+      "tokens_resumo": "12.340 requests Copilot estimados; Copilot alocado 98% a 100% ao APPA; Claude 100% APPA.",
+      "detalhe_ia": "GitHub Copilot Pro, Claude Max 20x e uso de assistentes de desenvolvimento no Easy e-Social APPA.",
+      "horas_fonte_custo": null,
+      "custo_hora_usd": 3.1,
+      "custo_hora_brl": 15.73,
+      "participacao_horas": 0.6542
+    },
+    {
+      "ordem": 2,
+      "slug": "solucoes",
+      "sigla": "SOLUÇÕES",
+      "nome": "SOLUÇÕES SERVIÇOS TERCEIRIZADOS LTDA",
+      "cnpj": "09.445.502/0001-09",
+      "frente": "Reenvio massivo S-1210, saneamento de pendências e fechamento operacional dos períodos 2025.",
+      "cor": "137A3A",
+      "periodo_informado": "07/05/2026 a 20/05/2026",
+      "periodo_calculo": "07/05/2026 a 19/05/2026",
+      "observacao_horas": "20/05/2026 foi tratado como transição para Objetiva no consolidado.",
+      "semanas": [
+        {
+          "semana": "2026-S19",
+          "periodo": "07/05/2026 a 10/05/2026",
+          "dias_uteis": 2,
+          "sabados": 1,
+          "horas": 20
+        },
+        {
+          "semana": "2026-S20",
+          "periodo": "11/05/2026 a 17/05/2026",
+          "dias_uteis": 5,
+          "sabados": 1,
+          "horas": 44
+        },
+        {
+          "semana": "2026-S21",
+          "periodo": "18/05/2026 a 19/05/2026",
+          "dias_uteis": 2,
+          "sabados": 0,
+          "horas": 16
+        }
+      ],
+      "horas": 80,
+      "custo_usd": 586.0,
+      "custo_brl": 2926.66,
+      "custo_status": "Documentado",
+      "custo_fonte": "Relatório de conclusão Soluções: US$ 586,00 em tokens extras para processamento da empresa.",
+      "tokens_resumo": "Tokens extras documentados em valor financeiro: US$ 586,00; contagem técnica de tokens não informada no artefato.",
+      "detalhe_ia": "Processamento assistido por IA para reenvio massivo S-1210 e fechamento operacional.",
+      "horas_fonte_custo": 126,
+      "custo_hora_usd": 7.33,
+      "custo_hora_brl": 36.58,
+      "participacao_horas": 0.1869
+    },
+    {
+      "ordem": 3,
+      "slug": "objetiva",
+      "sigla": "OBJETIVA",
+      "nome": "OBJETIVA SERVIÇOS TERCEIRIZADOS LTDA",
+      "cnpj": "10.874.523/0001-10",
+      "frente": "Validação de base, preparação de execução e operação assistida da frente Objetiva.",
+      "cor": "6D28D9",
+      "periodo_informado": "20/05/2026 a 29/05/2026",
+      "periodo_calculo": "20/05/2026 a 29/05/2026",
+      "observacao_horas": "Período final do recorte solicitado, sem transição posterior dentro deste relatório.",
+      "semanas": [
+        {
+          "semana": "2026-S21",
+          "periodo": "20/05/2026 a 24/05/2026",
+          "dias_uteis": 3,
+          "sabados": 1,
+          "horas": 28
+        },
+        {
+          "semana": "2026-S22",
+          "periodo": "25/05/2026 a 29/05/2026",
+          "dias_uteis": 5,
+          "sabados": 0,
+          "horas": 40
+        }
+      ],
+      "horas": 68,
+      "custo_usd": null,
+      "custo_brl": null,
+      "custo_status": "Não localizado",
+      "custo_fonte": "Não foi localizado relatório de custo IA/tokens para Objetiva nos artefatos pesquisados.",
+      "tokens_resumo": "Sem valor de tokens ou custo de IA localizado; campo mantido pendente.",
+      "detalhe_ia": "Sem fonte financeira localizada para atribuição de custo de IA.",
+      "horas_fonte_custo": null,
+      "custo_hora_usd": null,
+      "custo_hora_brl": null,
+      "participacao_horas": 0.1589
+    }
+  ],
+  "totais": {
+    "horas": 428,
+    "horas_com_custo_documentado": 360,
+    "custo_usd_documentado": 1454.0,
+    "custo_brl_referencia": 7332.06,
+    "custo_hora_usd_documentado": 4.04,
+    "custo_hora_brl_documentado": 20.37,
+    "empresas_com_custo": 2,
+    "empresas_sem_custo": 1
+  }
+}

@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Relatório Executivo de Horas e Custos de IA</title>
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; background: #e8eef6; color: #172033; font-family: Arial, Helvetica, sans-serif; }
+.page { width: 210mm; min-height: 297mm; margin: 18px auto; background: #fff; box-shadow: 0 12px 32px rgba(15, 23, 42, .12); }
+.topbar { background: #0D1530; color: #fff; padding: 26px 30px 30px; }
+.brand-line { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
+.brand { display: flex; align-items: center; gap: 12px; font-weight: 800; letter-spacing: .2px; }
+.logo-img { width: 118px; max-height: 42px; object-fit: contain; display: block; }
+.logo-mark { width: 34px; height: 34px; border-radius: 9px; background: #0066FF; color: #fff; display: grid; place-items: center; font-weight: 900; }
+.logo-text span { color: #5db8ff; }
+.tag { border: 1px solid rgba(255,255,255,.24); border-radius: 999px; padding: 7px 11px; font-size: 11px; text-transform: uppercase; letter-spacing: .7px; color: #c9d7ea; }
+h1 { margin: 0; font-size: 27px; line-height: 1.12; letter-spacing: 0; }
+.subtitle { margin-top: 8px; color: #c9d7ea; font-size: 13px; }
+.content { padding: 24px 30px 30px; }
+.metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 18px; }
+.metric { border: 1px solid #DBE5F3; border-radius: 8px; padding: 13px; background: #F5F8FC; min-height: 86px; }
+.metric-label { font-size: 10px; color: #64748B; text-transform: uppercase; letter-spacing: .5px; margin-bottom: 7px; }
+.metric-value { font-size: 20px; line-height: 1.15; color: #0D1530; font-weight: 800; }
+.metric-sub { font-size: 10px; color: #64748B; margin-top: 6px; line-height: 1.35; }
+.section-title { margin: 20px 0 10px; color: #0D1530; font-weight: 800; font-size: 15px; }
+table { width: 100%; border-collapse: collapse; font-size: 11px; }
+th { background: #0D1530; color: #fff; text-align: left; padding: 9px; font-size: 10px; text-transform: uppercase; letter-spacing: .45px; }
+td { border: 1px solid #DBE5F3; padding: 9px; vertical-align: top; line-height: 1.35; }
+td span { display: block; color: #64748B; font-size: 10px; margin-top: 3px; }
+.num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.badge { display: inline-block; border-radius: 999px; padding: 4px 8px; font-size: 10px; font-weight: 700; white-space: nowrap; }
+.badge.ok { color: #137A3A; background: #e9f8ef; border: 1px solid #b9e7c9; }
+.badge.pending { color: #B45309; background: #fff7ed; border: 1px solid #fed7aa; }
+.note-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 16px; }
+.note { border-left: 4px solid #0066FF; padding: 10px 12px; background: #f8fbff; color: #334155; font-size: 11px; line-height: 1.45; }
+.note strong { color: #0D1530; }
+.footer { display: flex; justify-content: space-between; gap: 12px; border-top: 1px solid #DBE5F3; margin-top: 20px; padding-top: 12px; color: #64748B; font-size: 10px; }
+.avoid-break { page-break-inside: avoid; }
+@media print { body { background: #fff; } .page { margin: 0; box-shadow: none; width: auto; } }
+</style>
+</head>
+<body>
+<main class="page">
+  <header class="topbar">
+    <div class="brand-line">
+      <div class="brand"><img src="../../frontend/public/brand-logo.png" alt="Easy Social" class="logo-img"></div>
+      <div class="tag">Relatório executivo</div>
+    </div>
+    <h1>Relatório Executivo de Horas e Custos de IA</h1>
+    <div class="subtitle">APPA, Soluções e Objetiva - horas trabalhadas, tokens e ferramentas IA · 24/03/2026 a 29/05/2026</div>
+  </header>
+  <section class="content">
+    <div class="metrics avoid-break">
+      
+      <div class="metric">
+        <div class="metric-label">Horas trabalhadas</div>
+        <div class="metric-value">428 h</div>
+        <div class="metric-sub">8h de segunda a sexta + 4h aos sábados = 44h/semana</div>
+      </div>
+    
+      
+      <div class="metric">
+        <div class="metric-label">Custo IA documentado</div>
+        <div class="metric-value">US$ 1.454,00</div>
+        <div class="metric-sub">APPA + Soluções; Objetiva pendente</div>
+      </div>
+    
+      
+      <div class="metric">
+        <div class="metric-label">Referência BRL</div>
+        <div class="metric-value">R$ 7.332,06</div>
+        <div class="metric-sub">Câmbio documentado em APPA e maio/2026 para Soluções</div>
+      </div>
+    
+      
+      <div class="metric">
+        <div class="metric-label">Custo por hora</div>
+        <div class="metric-value">US$ 4,04/h</div>
+        <div class="metric-sub">R$ 20,37/h em empresas com custo</div>
+      </div>
+    
+    </div>
+
+    <div class="section-title">Resumo por empresa</div>
+    <table class="avoid-break">
+      <thead>
+        <tr>
+          <th>Empresa</th>
+          <th>Período usado</th>
+          <th class="num">Horas</th>
+          <th class="num">Custo IA USD</th>
+          <th class="num">Referência BRL</th>
+          <th class="num">USD/h</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+            <tr>
+              <td><strong>APPA</strong><span>APPA - Administração dos Portos de Paranaguá e Antonina<br>CNPJ 05.969.071/0001-10</span></td>
+              <td>24/03/2026 a 06/05/2026</td>
+              <td class="num">280 h</td>
+              <td class="num">US$ 868,00</td>
+              <td class="num">R$ 4.405,40</td>
+              <td class="num">US$ 3,10/h</td>
+              <td><span class="badge ok">Documentado</span></td>
+            </tr>
+            
+
+            <tr>
+              <td><strong>SOLUÇÕES</strong><span>SOLUÇÕES SERVIÇOS TERCEIRIZADOS LTDA<br>CNPJ 09.445.502/0001-09</span></td>
+              <td>07/05/2026 a 19/05/2026</td>
+              <td class="num">80 h</td>
+              <td class="num">US$ 586,00</td>
+              <td class="num">R$ 2.926,66</td>
+              <td class="num">US$ 7,33/h</td>
+              <td><span class="badge ok">Documentado</span></td>
+            </tr>
+            
+
+            <tr>
+              <td><strong>OBJETIVA</strong><span>OBJETIVA SERVIÇOS TERCEIRIZADOS LTDA<br>CNPJ 10.874.523/0001-10</span></td>
+              <td>20/05/2026 a 29/05/2026</td>
+              <td class="num">68 h</td>
+              <td class="num">Não localizado</td>
+              <td class="num">Não localizado</td>
+              <td class="num">Não localizado/h</td>
+              <td><span class="badge pending">Não localizado</span></td>
+            </tr>
+            </tbody>
+    </table>
+
+    <div class="section-title">Custo de IA e tokens</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Empresa</th>
+          <th>Uso relacionado</th>
+          <th>Tokens / requests</th>
+          <th>Fonte de custo</th>
+        </tr>
+      </thead>
+      <tbody>
+            <tr>
+              <td><strong>APPA</strong></td>
+              <td>GitHub Copilot Pro, Claude Max 20x e uso de assistentes de desenvolvimento no Easy e-Social APPA.</td>
+              <td>12.340 requests Copilot estimados; Copilot alocado 98% a 100% ao APPA; Claude 100% APPA.</td>
+              <td>GitHub Copilot Pro: US$ 468,00; Claude Max 20x: US$ 400,00; total APPA: US$ 868,00.</td>
+            </tr>
+            
+
+            <tr>
+              <td><strong>SOLUÇÕES</strong></td>
+              <td>Processamento assistido por IA para reenvio massivo S-1210 e fechamento operacional.</td>
+              <td>Tokens extras documentados em valor financeiro: US$ 586,00; contagem técnica de tokens não informada no artefato.</td>
+              <td>Relatório de conclusão Soluções: US$ 586,00 em tokens extras para processamento da empresa.<br><span>Fonte de custo também registra 126 horas de processamento.</span></td>
+            </tr>
+            
+
+            <tr>
+              <td><strong>OBJETIVA</strong></td>
+              <td>Sem fonte financeira localizada para atribuição de custo de IA.</td>
+              <td>Sem valor de tokens ou custo de IA localizado; campo mantido pendente.</td>
+              <td>Não foi localizado relatório de custo IA/tokens para Objetiva nos artefatos pesquisados.</td>
+            </tr>
+            </tbody>
+    </table>
+
+    <div class="note-grid avoid-break">
+      <div class="note"><strong>Premissa de horas.</strong> O relatório usa uma base executiva de jornada, não memória diária: 8h em dias úteis e 4h aos sábados. Domingos zerados não são listados.</div>
+      <div class="note"><strong>Objetiva.</strong> Há horas trabalhadas no recorte, mas custo de IA/tokens não foi localizado nos artefatos existentes. O relatório deixa o campo pendente para evitar estimativa sem fonte.</div>
+    </div>
+
+    <div class="section-title">Premissas e fontes</div>
+    <table>
+      <tbody>
+        <tr><td>Jornada-base: 8 horas de segunda a sexta-feira e 4 horas aos sábados, totalizando 44 horas por semana cheia.</td></tr><tr><td>Domingos não são listados no corpo executivo; entram apenas no cálculo semanal como dias sem jornada.</td></tr><tr><td>Datas de transição foram alocadas a uma única empresa no consolidado para evitar dupla contagem.</td></tr><tr><td>Custos de IA são usados somente quando localizados em artefatos existentes do projeto.</td></tr>
+        <tr><td>APPA: dashboard/src/components/relatorio-pdf-inner.tsx, constantes GITHUB_TOTAL=468, CLAUDE_TOTAL=400 e TOTAL_USD=868.</td></tr><tr><td>APPA: dashboard/src/components/relatorio-profissional.tsx, câmbio de abril/2026 e maio/2026 usado para conversão BRL.</td></tr><tr><td>APPA: dashboard/src/components/relatorio-github.tsx, 12.340 requests estimados de Copilot e uso alocado majoritariamente/totalmente ao Easy e-Social APPA.</td></tr><tr><td>Soluções: relatorio_ana/RELATORIO_CONCLUSAO_ATIVIDADE_SOLUCOES_2025/RELATORIO_CONCLUSAO_ATIVIDADE_EASY_SOCIAL_SOLUCOES_2025.html, linhas de horas totais e tokens extras.</td></tr><tr><td>Objetiva: busca local em relatorio_ana, python-scripts e docs não localizou custo de IA/tokens documentado.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="footer">
+      <div>ES-HC-IA-2026-002 · Gerado em 02/06/2026 18:44</div>
+      <div>Easy Social · Relatório executivo de horas e custos IA</div>
+    </div>
+  </section>
+</main>
+</body>
+</html>

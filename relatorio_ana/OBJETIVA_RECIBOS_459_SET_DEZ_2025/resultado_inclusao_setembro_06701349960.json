@@ -1,0 +1,57 @@
+{
+  "ok": true,
+  "empresa": "OBJETIVA",
+  "empresa_id": 3,
+  "ambiente": "producao",
+  "gerado_em": "2026-05-28T23:04:18",
+  "sem_chamada_download_ou_identificadores": true,
+  "fix": {
+    "per_apur": "2025-09",
+    "cpf": "06701349960",
+    "base_recibo_local": "1.1.0000000035182530057",
+    "recibo_s3000_exclusao": "1.1.0000000035183951429",
+    "recibo_ativo": "",
+    "s1200_periodos": [
+      "2025-08",
+      "2025-09"
+    ],
+    "seq": 9092
+  },
+  "generated": {
+    "xml_path": "relatorio_ana/OBJETIVA_RECIBOS_459_SET_DEZ_2025/xmls/S1210_2025-09_06701349960_inclusao_apos_s3000_assinado.xml",
+    "info": {
+      "id_evento": "ID1108745230000002026052902041600001",
+      "cpf": "06701349960",
+      "indRetif": "1",
+      "nrRecibo": "",
+      "perApur": "2025-09",
+      "dtPgto": [
+        "2025-09-05"
+      ],
+      "ideDmDev": [
+        "00002700"
+      ],
+      "planSaude_count": 0,
+      "signature_count": 1
+    },
+    "base_event_id": 115474,
+    "base_evento_id": "ID1108745230000002025101412132400001",
+    "planSaude": [],
+    "rubricas_usadas": [],
+    "source_events": [],
+    "fallback_source": null
+  },
+  "result": {
+    "ok": true,
+    "cpf": "06701349960",
+    "per_apur": "2025-09",
+    "timeline_envio_id": 72,
+    "timeline_item_id": 14375,
+    "versao_nova_id": 191900,
+    "protocolo": "1.1.202605.0000000013221940347",
+    "codigo": "201",
+    "descricao": "Sucesso.",
+    "nr_recibo_novo": "1.1.0000000041100992863",
+    "xml_path": "relatorio_ana/OBJETIVA_RECIBOS_459_SET_DEZ_2025/xmls/S1210_2025-09_06701349960_inclusao_apos_s3000_assinado.xml"
+  }
+}

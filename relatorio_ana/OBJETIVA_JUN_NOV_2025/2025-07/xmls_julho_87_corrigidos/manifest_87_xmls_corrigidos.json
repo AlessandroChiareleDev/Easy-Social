@@ -1,0 +1,4181 @@
+{
+  "gerado_em": "2026-05-28T21:57:38",
+  "empresa": "OBJETIVA",
+  "empresa_id": 3,
+  "per_apur_s1210": "2025-07",
+  "s1200_periodos_busca": [
+    "2025-06",
+    "2025-07"
+  ],
+  "total_erros_csv": 87,
+  "total_xmls_gerados": 87,
+  "retificacoes_plano_saude": 87,
+  "regra_valor": "rubricas 516/605/619/774/775 dos dmDev locais ligados ao S-1210; dtPgto preservado do S-1210 original",
+  "sem_chamada_esocial": true,
+  "items": [
+    {
+      "cpf": "00137622570",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_00137622570_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149349555",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149349555",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003114"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "02127779000136",
+          "regANS": "364592",
+          "vlrSaudeTit": "27.65"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "522",
+          "vrRubr": "27.65",
+          "ideTabRubr": "1",
+          "operadora": "NEW LEADER",
+          "cnpjOper": "02127779000136",
+          "regANS": "364592"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003114",
+          "s1200_recibo": "1.1.0000000033430598199",
+          "s1200_evento_id": "ID1108745230000002025071614572500002",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "299f2e21605b8a7665ccfe09c75ef12dbbee287a66735e91a890a2b2eb727c03",
+      "bytes": 4897
+    },
+    {
+      "cpf": "01176051580",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_01176051580_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149349854",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149349854",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003114"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "02127779000136",
+          "regANS": "364592",
+          "vlrSaudeTit": "12.35"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "522",
+          "vrRubr": "12.35",
+          "ideTabRubr": "1",
+          "operadora": "NEW LEADER",
+          "cnpjOper": "02127779000136",
+          "regANS": "364592"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003114",
+          "s1200_recibo": "1.1.0000000033430624293",
+          "s1200_evento_id": "ID1108745230000002025071614572700009",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "779dc9fa62e36db8519b628b8ab3edcc328f0dcb9b40d12ed6b700389cb8b0cf",
+      "bytes": 4800
+    },
+    {
+      "cpf": "01369448503",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_01369448503_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353455",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353455",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003130"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "11.24"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "11.24",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003130",
+          "s1200_recibo": "1.1.0000000033430641314",
+          "s1200_evento_id": "ID1108745230000002025071614572800005",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "d2d8f0f42eca04cb7dcb281c5b0ff7d3e64b12d4308670fc1d01826d298b717e",
+      "bytes": 4800
+    },
+    {
+      "cpf": "01431027537",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_01431027537_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353474",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353474",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003130"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "22.48"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "22.48",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003130",
+          "s1200_recibo": "1.1.0000000033430640741",
+          "s1200_evento_id": "ID1108745230000002025071614572800007",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "6da2d955ef6cd591dee9d7019f4c6d8e627ef98b73fd07461cffac75d43bbfe3",
+      "bytes": 4703
+    },
+    {
+      "cpf": "01616333588",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_01616333588_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149350009",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149350009",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003114"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "02127779000136",
+          "regANS": "364592",
+          "vlrSaudeTit": "20.35"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "522",
+          "vrRubr": "20.35",
+          "ideTabRubr": "1",
+          "operadora": "NEW LEADER",
+          "cnpjOper": "02127779000136",
+          "regANS": "364592"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003114",
+          "s1200_recibo": "1.1.0000000033431053698",
+          "s1200_evento_id": "ID1108745230000002025071614572900005",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "1df151cfe55ccc50d3c7fccbadf14d5dccda32dadf496384f2e5f9c8ed7369ff",
+      "bytes": 4800
+    },
+    {
+      "cpf": "02524041573",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_02524041573_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353485",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353485",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003130"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "11.24"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "11.24",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003130",
+          "s1200_recibo": "1.1.0000000033431093809",
+          "s1200_evento_id": "ID1108745230000002025071614573900003",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "d394a3476f7bfa4d620932c5c106aed66cf12428b61e767369e7806505bb8bd9",
+      "bytes": 4703
+    },
+    {
+      "cpf": "02700900537",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_02700900537_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149350147",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149350147",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003114"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "02127779000136",
+          "regANS": "364592",
+          "vlrSaudeTit": "142.00"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "522",
+          "vrRubr": "142.00",
+          "ideTabRubr": "1",
+          "operadora": "NEW LEADER",
+          "cnpjOper": "02127779000136",
+          "regANS": "364592"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003114",
+          "s1200_recibo": "1.1.0000000033430744965",
+          "s1200_evento_id": "ID1108745230000002025071614573900008",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "ae49ecc4965680d708acc361094fbe7a75677a0eec8c834ff069709d7f4beab2",
+      "bytes": 4704
+    },
+    {
+      "cpf": "03040816551",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_03040816551_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353493",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353493",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003120"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "27.20"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "27.20",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003120",
+          "s1200_recibo": "1.1.0000000033430751201",
+          "s1200_evento_id": "ID1108745230000002025071614574300002",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "d2f16720fce5a69a18574920bd6a35c5a40d44e54611dce7c48aefb10c59b08d",
+      "bytes": 4803
+    },
+    {
+      "cpf": "03156177563",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_03156177563_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149349988",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149349988",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003114"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "02127779000136",
+          "regANS": "364592",
+          "vlrSaudeTit": "12.35"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "522",
+          "vrRubr": "12.35",
+          "ideTabRubr": "1",
+          "operadora": "NEW LEADER",
+          "cnpjOper": "02127779000136",
+          "regANS": "364592"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003114",
+          "s1200_recibo": "1.1.0000000033430750019",
+          "s1200_evento_id": "ID1108745230000002025071614574300005",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "18047db8c787577a9507daaab64b52764ed9fc015475298baed494f20e2b39c4",
+      "bytes": 4994
+    },
+    {
+      "cpf": "03274490555",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_03274490555_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149350060",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149350060",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04",
+        "2025-07-18"
+      ],
+      "ideDmDev": [
+        "00003114",
+        "00003137"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "02127779000136",
+          "regANS": "364592",
+          "vlrSaudeTit": "83.65"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "522",
+          "vrRubr": "83.65",
+          "ideTabRubr": "1",
+          "operadora": "NEW LEADER",
+          "cnpjOper": "02127779000136",
+          "regANS": "364592"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003114",
+          "s1200_recibo": "1.1.0000000033431093526",
+          "s1200_evento_id": "ID1108745230000002025071614574400003",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "63b3b7b64fa0ad5651e2b49d2a9ad782fce95d4b669e1738e013f460f64a6701",
+      "bytes": 4841
+    },
+    {
+      "cpf": "03679440570",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_03679440570_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149350226",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149350226",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003114"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "02127779000136",
+          "regANS": "364592",
+          "vlrSaudeTit": "24.70"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "522",
+          "vrRubr": "24.70",
+          "ideTabRubr": "1",
+          "operadora": "NEW LEADER",
+          "cnpjOper": "02127779000136",
+          "regANS": "364592"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003114",
+          "s1200_recibo": "1.1.0000000033431094743",
+          "s1200_evento_id": "ID1108745230000002025071614574500005",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "26e1996ce0c9fb3c02b5eead79e31b6cde68806e6390a8410c6a8af4cb281927",
+      "bytes": 4800
+    },
+    {
+      "cpf": "03852854504",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_03852854504_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353506",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353506",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003130"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "11.24"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "11.24",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003130",
+          "s1200_recibo": "1.1.0000000033430760163",
+          "s1200_evento_id": "ID1108745230000002025071614574600006",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "7a4441908fae6ce4548a79c5352c2b9539736220f08bb071d5824cd51e75d37c",
+      "bytes": 4703
+    },
+    {
+      "cpf": "03906984583",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_03906984583_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149350515",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149350515",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003114"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "02127779000136",
+          "regANS": "364592",
+          "vlrSaudeTit": "160.00"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "619",
+          "vrRubr": "160.00",
+          "ideTabRubr": "1",
+          "operadora": "NEW LEADER",
+          "cnpjOper": "02127779000136",
+          "regANS": "364592"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003114",
+          "s1200_recibo": "1.1.0000000033430760307",
+          "s1200_evento_id": "ID1108745230000002025071614574700001",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "b7e601507c12768f7856c10e9ed3a074d3a6e289b53514ae9651ef09be46471d",
+      "bytes": 4898
+    },
+    {
+      "cpf": "04600111540",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_04600111540_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149350248",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149350248",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04",
+        "2025-07-18"
+      ],
+      "ideDmDev": [
+        "00003114",
+        "00003137"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "02127779000136",
+          "regANS": "364592",
+          "vlrSaudeTit": "29.80"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "522",
+          "vrRubr": "29.80",
+          "ideTabRubr": "1",
+          "operadora": "NEW LEADER",
+          "cnpjOper": "02127779000136",
+          "regANS": "364592"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003114",
+          "s1200_recibo": "1.1.0000000033430778658",
+          "s1200_evento_id": "ID1108745230000002025071614575000005",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "1fc47e9377fe99dd3fb865912b578d18d1585067f12d88d5d8f878b376a922c4",
+      "bytes": 4938
+    },
+    {
+      "cpf": "04838057504",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_04838057504_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149350362",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149350362",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003114"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "02127779000136",
+          "regANS": "364592",
+          "vlrSaudeTit": "12.35"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "522",
+          "vrRubr": "12.35",
+          "ideTabRubr": "1",
+          "operadora": "NEW LEADER",
+          "cnpjOper": "02127779000136",
+          "regANS": "364592"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003114",
+          "s1200_recibo": "1.1.0000000033431135010",
+          "s1200_evento_id": "ID1108745230000002025071614575100008",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "d496d0af912f1d47b88063559519cad38f2e7c7af89aa54568b59d0a303d16c7",
+      "bytes": 4800
+    },
+    {
+      "cpf": "04954821533",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_04954821533_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149350424",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149350424",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003114"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "02127779000136",
+          "regANS": "364592",
+          "vlrSaudeTit": "20.35"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "522",
+          "vrRubr": "20.35",
+          "ideTabRubr": "1",
+          "operadora": "NEW LEADER",
+          "cnpjOper": "02127779000136",
+          "regANS": "364592"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003114",
+          "s1200_recibo": "1.1.0000000033430781369",
+          "s1200_evento_id": "ID1108745230000002025071614575200002",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "1a989ec94e34e15bc132a463e3e548f37039890caf57ff03ff626968bf642a7c",
+      "bytes": 4800
+    },
+    {
+      "cpf": "04959319500",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_04959319500_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353512",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353512",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003120"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "27.20"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "27.20",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003120",
+          "s1200_recibo": "1.1.0000000033430783230",
+          "s1200_evento_id": "ID1108745230000002025071614575200003",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "aa1348f7489695390901cbda3f0012fd1070055d80cdeea5f489ce47b2cd57b1",
+      "bytes": 4803
+    },
+    {
+      "cpf": "06379120556",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_06379120556_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149350747",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149350747",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003114"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "02127779000136",
+          "regANS": "364592",
+          "vlrSaudeTit": "61.05"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "522",
+          "vrRubr": "61.05",
+          "ideTabRubr": "1",
+          "operadora": "NEW LEADER",
+          "cnpjOper": "02127779000136",
+          "regANS": "364592"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003114",
+          "s1200_recibo": "1.1.0000000033430830529",
+          "s1200_evento_id": "ID1108745230000002025071614575900010",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "9b6a4dbb12fbbdd06c25ca165ee88354142a26ba3d0e8b365e779eab89c4b658",
+      "bytes": 4897
+    },
+    {
+      "cpf": "08445043510",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_08445043510_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149350905",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149350905",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003114"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "02127779000136",
+          "regANS": "364592",
+          "vlrSaudeTit": "42.95"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "522",
+          "vrRubr": "42.95",
+          "ideTabRubr": "1",
+          "operadora": "NEW LEADER",
+          "cnpjOper": "02127779000136",
+          "regANS": "364592"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003114",
+          "s1200_recibo": "1.1.0000000033430914201",
+          "s1200_evento_id": "ID1108745230000002025071614581200005",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "4883b7dbc771a505a1596f0cd4e8e32922659da24bf4503235ecd0b6f2e162ef",
+      "bytes": 4703
+    },
+    {
+      "cpf": "11255263865",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_11255263865_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353524",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353524",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003120"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "27.20"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "27.20",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003120",
+          "s1200_recibo": "1.1.0000000033430952304",
+          "s1200_evento_id": "ID1108745230000002025071614582300003",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "6add13a5919e324abff361e600cc49962a00a9cbae641b8fb657f6167dee16c1",
+      "bytes": 4706
+    },
+    {
+      "cpf": "12073149863",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_12073149863_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353533",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353533",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003120"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "54.40"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "54.40",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003120",
+          "s1200_recibo": "1.1.0000000033430974049",
+          "s1200_evento_id": "ID1108745230000002025071614582700003",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "a4c4004b417ee0db8b3f0e15b68c06c1d2c4ab935e94f6e4972908e6b8927520",
+      "bytes": 4706
+    },
+    {
+      "cpf": "12377832830",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_12377832830_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353545",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353545",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04",
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003110",
+        "00003120"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "81.60"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "81.60",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003110",
+          "s1200_recibo": "1.1.0000000033924004282",
+          "s1200_evento_id": "ID1108745230000002025082006430800001",
+          "s1200_per_apur": "2025-07"
+        },
+        {
+          "ideDmDev": "00003120",
+          "s1200_recibo": "1.1.0000000033431276536",
+          "s1200_evento_id": "ID1108745230000002025071614582800004",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "187067112901658b7976a4de1ae30c0c262dd527a082cb41eb53af8675342015",
+      "bytes": 4846
+    },
+    {
+      "cpf": "13361896819",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_13361896819_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353555",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353555",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003120"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "27.20"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "27.20",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003120",
+          "s1200_recibo": "1.1.0000000033431515943",
+          "s1200_evento_id": "ID1108745230000002025071614582900006",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "765083069e016f648f638611574d1edc02e36608eaa80544799c14a5c7a3fff4",
+      "bytes": 4706
+    },
+    {
+      "cpf": "13746319811",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_13746319811_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353570",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353570",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003120"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "27.20"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "27.20",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003120",
+          "s1200_recibo": "1.1.0000000033430988582",
+          "s1200_evento_id": "ID1108745230000002025071614583000002",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "f1d75cf390f9cd3aa425587bc9949d1536164904255e3b1b27bb7b6fa589693f",
+      "bytes": 4900
+    },
+    {
+      "cpf": "13790716820",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_13790716820_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353590",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353590",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04",
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003111",
+        "00003120"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "27.20"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "27.20",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003111",
+          "s1200_recibo": "1.1.0000000033924019431",
+          "s1200_evento_id": "ID1108745230000002025082006431100004",
+          "s1200_per_apur": "2025-07"
+        },
+        {
+          "ideDmDev": "00003120",
+          "s1200_recibo": "1.1.0000000033430988745",
+          "s1200_evento_id": "ID1108745230000002025071614583000003",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "c5cd3bc4789b9cf294bd8f267b403c80cb1145a1f3bc81086ecc599805ca3c9e",
+      "bytes": 4846
+    },
+    {
+      "cpf": "15552724879",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_15552724879_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353605",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353605",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-08",
+        "2025-07-31"
+      ],
+      "ideDmDev": [
+        "00003110",
+        "00003154"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "23.00"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "23.00",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003110",
+          "s1200_recibo": "1.1.0000000033924035569",
+          "s1200_evento_id": "ID1108745230000002025082006431400004",
+          "s1200_per_apur": "2025-07"
+        },
+        {
+          "ideDmDev": "00003154",
+          "s1200_recibo": "1.1.0000000033924035569",
+          "s1200_evento_id": "ID1108745230000002025082006431400004",
+          "s1200_per_apur": "2025-07"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "baffe99e6e8135a0f94d15b05401897ab89da64edb7bb01372719b83f24e7944",
+      "bytes": 5040
+    },
+    {
+      "cpf": "15571123800",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_15571123800_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353620",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353620",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-08",
+        "2025-07-31"
+      ],
+      "ideDmDev": [
+        "00003110",
+        "00003154"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "23.00"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "23.00",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003110",
+          "s1200_recibo": "1.1.0000000033924041180",
+          "s1200_evento_id": "ID1108745230000002025082006431400006",
+          "s1200_per_apur": "2025-07"
+        },
+        {
+          "ideDmDev": "00003154",
+          "s1200_recibo": "1.1.0000000033924041180",
+          "s1200_evento_id": "ID1108745230000002025082006431400006",
+          "s1200_per_apur": "2025-07"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "13e09546a55df5b156263130285184e677c582590e8d540446297e29100677bb",
+      "bytes": 5038
+    },
+    {
+      "cpf": "15867162800",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_15867162800_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149351810",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149351810",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003120"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "54.40"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "605",
+          "vrRubr": "54.40",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003120",
+          "s1200_recibo": "1.1.0000000033431424777",
+          "s1200_evento_id": "ID1108745230000002025071614583600005",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "092270b05afa6176a5827856d8c62d4bea0bf27b724972c04dc5e9ab5df87762",
+      "bytes": 4899
+    },
+    {
+      "cpf": "16435366802",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_16435366802_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353633",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353633",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-31"
+      ],
+      "ideDmDev": [
+        "00003154"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "23.00"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "23.00",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003154",
+          "s1200_recibo": "1.1.0000000033924055360",
+          "s1200_evento_id": "ID1108745230000002025082006431800007",
+          "s1200_per_apur": "2025-07"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "9c48361625ec23b9ab6e6b329b7f39370f1199ae1dae9057afe0ae664ae58439",
+      "bytes": 4706
+    },
+    {
+      "cpf": "16457905846",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_16457905846_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353646",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353646",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-08",
+        "2025-07-31"
+      ],
+      "ideDmDev": [
+        "00003110",
+        "00003154"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "138.00"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "138.00",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003110",
+          "s1200_recibo": "1.1.0000000033924063551",
+          "s1200_evento_id": "ID1108745230000002025082006431800008",
+          "s1200_per_apur": "2025-07"
+        },
+        {
+          "ideDmDev": "00003154",
+          "s1200_recibo": "1.1.0000000033924063551",
+          "s1200_evento_id": "ID1108745230000002025082006431800008",
+          "s1200_per_apur": "2025-07"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "5b45493995ef1613497c28bd877f10602b09b7354dfdf6f79ce158e2b24a7bfb",
+      "bytes": 5041
+    },
+    {
+      "cpf": "17347617847",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_17347617847_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149352108",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149352108",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003114"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "02127779000136",
+          "regANS": "364592",
+          "vlrSaudeTit": "20.35"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "522",
+          "vrRubr": "20.35",
+          "ideTabRubr": "1",
+          "operadora": "NEW LEADER",
+          "cnpjOper": "02127779000136",
+          "regANS": "364592"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003114",
+          "s1200_recibo": "1.1.0000000033431059156",
+          "s1200_evento_id": "ID1108745230000002025071614583800009",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "5160f34df918ea1e0ffe0b0a08652c15c57e49b9175c4d92a826ac4a006efc9e",
+      "bytes": 4800
+    },
+    {
+      "cpf": "17386831846",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_17386831846_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353650",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353650",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003133"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "27.20"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "27.20",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003133",
+          "s1200_recibo": "1.1.0000000033431060245",
+          "s1200_evento_id": "ID1108745230000002025071614583900001",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "6031f4dfd177b5f79106439fb407ed0e86811910e648fe842215d5608bf37928",
+      "bytes": 4706
+    },
+    {
+      "cpf": "17730249812",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_17730249812_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353661",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353661",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-31"
+      ],
+      "ideDmDev": [
+        "00003154"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "69.00"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "69.00",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003154",
+          "s1200_recibo": "1.1.0000000033924070472",
+          "s1200_evento_id": "ID1108745230000002025082006432000003",
+          "s1200_per_apur": "2025-07"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "03bb0eb7b2755e46b0838e96d4366996f92dbad88a4f36ceaaec3cb633b6cc38",
+      "bytes": 4706
+    },
+    {
+      "cpf": "17730581850",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_17730581850_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353675",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353675",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-01",
+        "2025-07-31"
+      ],
+      "ideDmDev": [
+        "00003104",
+        "00003154"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "23.00"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "23.00",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003104",
+          "s1200_recibo": "1.1.0000000033924072781",
+          "s1200_evento_id": "ID1108745230000002025082006432000004",
+          "s1200_per_apur": "2025-07"
+        },
+        {
+          "ideDmDev": "00003154",
+          "s1200_recibo": "1.1.0000000033924072781",
+          "s1200_evento_id": "ID1108745230000002025082006432000004",
+          "s1200_per_apur": "2025-07"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "c804ce3393d57b103515bb4b907e5297f233963ec71bd058f98a79c102472e4d",
+      "bytes": 5039
+    },
+    {
+      "cpf": "18240472826",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_18240472826_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149351745",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149351745",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003114"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "02127779000136",
+          "regANS": "364592",
+          "vlrSaudeTit": "37.85"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "522",
+          "vrRubr": "37.85",
+          "ideTabRubr": "1",
+          "operadora": "NEW LEADER",
+          "cnpjOper": "02127779000136",
+          "regANS": "364592"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003114",
+          "s1200_recibo": "1.1.0000000033431077604",
+          "s1200_evento_id": "ID1108745230000002025071614584400001",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "fad8bf82303176130b4e7c0da649b1cf1297a830c9e7269eef2b3b6ca74684ae",
+      "bytes": 4800
+    },
+    {
+      "cpf": "18397505881",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_18397505881_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353691",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353691",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-08",
+        "2025-07-31"
+      ],
+      "ideDmDev": [
+        "00003110",
+        "00003154"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "46.00"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "46.00",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003110",
+          "s1200_recibo": "1.1.0000000033924079883",
+          "s1200_evento_id": "ID1108745230000002025082006432100007",
+          "s1200_per_apur": "2025-07"
+        },
+        {
+          "ideDmDev": "00003154",
+          "s1200_recibo": "1.1.0000000033924079883",
+          "s1200_evento_id": "ID1108745230000002025082006432100007",
+          "s1200_per_apur": "2025-07"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "dcb33ca17dc743e9b53fd743edf4e266eaf3babacc91753ab33548b95cd8425e",
+      "bytes": 5040
+    },
+    {
+      "cpf": "18550994898",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_18550994898_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353708",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353708",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-31"
+      ],
+      "ideDmDev": [
+        "00003154"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "23.00"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "23.00",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003154",
+          "s1200_recibo": "1.1.0000000033924079788",
+          "s1200_evento_id": "ID1108745230000002025082006432100009",
+          "s1200_per_apur": "2025-07"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "888b7243bef4a6822bc22868ff99bacce4b131f9cf2c1d0935891664d32f70b2",
+      "bytes": 4706
+    },
+    {
+      "cpf": "18780244858",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_18780244858_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353713",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353713",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003120"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "108.80"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "108.80",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003120",
+          "s1200_recibo": "1.1.0000000033431092236",
+          "s1200_evento_id": "ID1108745230000002025071614584400006",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "efc27203eeda57f53ee9774d441b0540c13e23ded35aadf90a70f0096d9769ca",
+      "bytes": 4901
+    },
+    {
+      "cpf": "19819289874",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_19819289874_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353723",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353723",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-01",
+        "2025-07-31"
+      ],
+      "ideDmDev": [
+        "00003104",
+        "00003154"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "46.00"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "46.00",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003104",
+          "s1200_recibo": "1.1.0000000033924087884",
+          "s1200_evento_id": "ID1108745230000002025082006432200005",
+          "s1200_per_apur": "2025-07"
+        },
+        {
+          "ideDmDev": "00003154",
+          "s1200_recibo": "1.1.0000000033924087884",
+          "s1200_evento_id": "ID1108745230000002025082006432200005",
+          "s1200_per_apur": "2025-07"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "a5e970b908002d44f273f7547a796054c624ceafc55333918f1d90b4dbae4251",
+      "bytes": 4846
+    },
+    {
+      "cpf": "19997931882",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_19997931882_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353731",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353731",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-08",
+        "2025-07-31"
+      ],
+      "ideDmDev": [
+        "00003110",
+        "00003154"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "23.00"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "23.00",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003110",
+          "s1200_recibo": "1.1.0000000033924088154",
+          "s1200_evento_id": "ID1108745230000002025082006432200006",
+          "s1200_per_apur": "2025-07"
+        },
+        {
+          "ideDmDev": "00003154",
+          "s1200_recibo": "1.1.0000000033924088154",
+          "s1200_evento_id": "ID1108745230000002025082006432200006",
+          "s1200_per_apur": "2025-07"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "b66c7bf13084541e4fd49329b23de587a41ba484f1b32ef0c95d7397ee95ff98",
+      "bytes": 4846
+    },
+    {
+      "cpf": "21417609842",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_21417609842_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353746",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353746",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-08",
+        "2025-07-31"
+      ],
+      "ideDmDev": [
+        "00003110",
+        "00003154"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "23.00"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "23.00",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003110",
+          "s1200_recibo": "1.1.0000000033924094375",
+          "s1200_evento_id": "ID1108745230000002025082006432400002",
+          "s1200_per_apur": "2025-07"
+        },
+        {
+          "ideDmDev": "00003154",
+          "s1200_recibo": "1.1.0000000033924094375",
+          "s1200_evento_id": "ID1108745230000002025082006432400002",
+          "s1200_per_apur": "2025-07"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "fb1ba1d31ead9492d9fd1d2f854cc02e23aafec141e480f35a3b0689c9c5ae68",
+      "bytes": 5234
+    },
+    {
+      "cpf": "23430798892",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_23430798892_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353292",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353292",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003120"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "81.60"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "81.60",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003120",
+          "s1200_recibo": "1.1.0000000033431128716",
+          "s1200_evento_id": "ID1108745230000002025071614584600003",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "c1c1c21328fa362b7907e4098d2baf26402e135b02bf00085305596414783b2c",
+      "bytes": 4900
+    },
+    {
+      "cpf": "28457414801",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_28457414801_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353308",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353308",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003120"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "27.20"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "27.20",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003120",
+          "s1200_recibo": "1.1.0000000033431532695",
+          "s1200_evento_id": "ID1108745230000002025071614585300008",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "b771e3d18cd208c4aceacb6096b6561bce94d61f1f1593df059cd4fb2933cc64",
+      "bytes": 4996
+    },
+    {
+      "cpf": "28512538830",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_28512538830_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353326",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353326",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-08",
+        "2025-07-31"
+      ],
+      "ideDmDev": [
+        "00003110",
+        "00003154"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "46.00"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "46.00",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003110",
+          "s1200_recibo": "1.1.0000000033924143723",
+          "s1200_evento_id": "ID1108745230000002025082006433300004",
+          "s1200_per_apur": "2025-07"
+        },
+        {
+          "ideDmDev": "00003154",
+          "s1200_recibo": "1.1.0000000033924143723",
+          "s1200_evento_id": "ID1108745230000002025082006433300004",
+          "s1200_per_apur": "2025-07"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "8809b6cdc656863653c91374ed27d6fcd376405f092ddbce88998ba918202c0f",
+      "bytes": 4846
+    },
+    {
+      "cpf": "29876859803",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_29876859803_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149352450",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149352450",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003114"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "02127779000136",
+          "regANS": "364592",
+          "vlrSaudeTit": "242.95"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "522",
+          "vrRubr": "82.95",
+          "ideTabRubr": "1",
+          "operadora": "NEW LEADER",
+          "cnpjOper": "02127779000136",
+          "regANS": "364592"
+        },
+        {
+          "codRubr": "619",
+          "vrRubr": "160.00",
+          "ideTabRubr": "1",
+          "operadora": "NEW LEADER",
+          "cnpjOper": "02127779000136",
+          "regANS": "364592"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003114",
+          "s1200_recibo": "1.1.0000000033431547597",
+          "s1200_evento_id": "ID1108745230000002025071614585700006",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "2e6b09b9a7530a3a1cb1f5a4d9779246e713337a1bde8881093cfe7337540bfe",
+      "bytes": 4801
+    },
+    {
+      "cpf": "29921596896",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_29921596896_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353363",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353363",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-08",
+        "2025-07-31"
+      ],
+      "ideDmDev": [
+        "00003110",
+        "00003154"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "46.00"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "46.00",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003110",
+          "s1200_recibo": "1.1.0000000033924161103",
+          "s1200_evento_id": "ID1108745230000002025082006433600004",
+          "s1200_per_apur": "2025-07"
+        },
+        {
+          "ideDmDev": "00003154",
+          "s1200_recibo": "1.1.0000000033924161103",
+          "s1200_evento_id": "ID1108745230000002025082006433600004",
+          "s1200_per_apur": "2025-07"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "f9cafe6afa838fa724f5675c630da7e1a2760283bf90b5196bdf8dba03b792a6",
+      "bytes": 5039
+    },
+    {
+      "cpf": "30006999883",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_30006999883_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353379",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353379",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003113"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "02127779000136",
+          "regANS": "364592",
+          "vlrSaudeTit": "315.00"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "619",
+          "vrRubr": "210.00",
+          "ideTabRubr": "1",
+          "operadora": "NEW LEADER",
+          "cnpjOper": "02127779000136",
+          "regANS": "364592"
+        },
+        {
+          "codRubr": "774",
+          "vrRubr": "105.00",
+          "ideTabRubr": "1",
+          "operadora": "NEW LEADER",
+          "cnpjOper": "02127779000136",
+          "regANS": "364592"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003113",
+          "s1200_recibo": "1.1.0000000033431548920",
+          "s1200_evento_id": "ID1108745230000002025071614585800004",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "7c1762bd4401773a27bd2176efef900438a590177d7378696150c8b58e2b2015",
+      "bytes": 4707
+    },
+    {
+      "cpf": "30252663845",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_30252663845_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353402",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353402",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-01",
+        "2025-07-31"
+      ],
+      "ideDmDev": [
+        "00003104",
+        "00003154"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "23.00"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "23.00",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003104",
+          "s1200_recibo": "1.1.0000000033924168244",
+          "s1200_evento_id": "ID1108745230000002025082006433700006",
+          "s1200_per_apur": "2025-07"
+        },
+        {
+          "ideDmDev": "00003154",
+          "s1200_recibo": "1.1.0000000033924168244",
+          "s1200_evento_id": "ID1108745230000002025082006433700006",
+          "s1200_per_apur": "2025-07"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "6007b1e3cd7804b7c4c6fd0448e5e9389bf778afd9582c9a87dfcb1c0d49603e",
+      "bytes": 4846
+    },
+    {
+      "cpf": "30307094855",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_30307094855_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353428",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353428",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-31"
+      ],
+      "ideDmDev": [
+        "00003154"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "46.00"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "46.00",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003154",
+          "s1200_recibo": "1.1.0000000033924168402",
+          "s1200_evento_id": "ID1108745230000002025082006434300001",
+          "s1200_per_apur": "2025-07"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "a5148252ddaef8c739335f7dd851eaef04767422b280268db78b7fbff4be7869",
+      "bytes": 4997
+    },
+    {
+      "cpf": "31241178836",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_31241178836_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353445",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353445",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003120"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "02127779000136",
+          "regANS": "364592",
+          "vlrSaudeTit": "210.00"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "619",
+          "vrRubr": "105.00",
+          "ideTabRubr": "1",
+          "operadora": "NEW LEADER",
+          "cnpjOper": "02127779000136",
+          "regANS": "364592"
+        },
+        {
+          "codRubr": "774",
+          "vrRubr": "105.00",
+          "ideTabRubr": "1",
+          "operadora": "NEW LEADER",
+          "cnpjOper": "02127779000136",
+          "regANS": "364592"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003120",
+          "s1200_recibo": "1.1.0000000033431189378",
+          "s1200_evento_id": "ID1108745230000002025071614590100001",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "da5924f0f678e07da7d6746b61eaceb17d175599c323d3999716515e4b87d631",
+      "bytes": 4804
+    },
+    {
+      "cpf": "31661517889",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_31661517889_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353457",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353457",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003120"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "27.20"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "27.20",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003120",
+          "s1200_recibo": "1.1.0000000033431199005",
+          "s1200_evento_id": "ID1108745230000002025071614590100005",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "a7f701a77235ffe7c2f35f90d7a93dc96f45b7a99846518b1417da623b105a80",
+      "bytes": 4706
+    },
+    {
+      "cpf": "31757691871",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_31757691871_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353476",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353476",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003120"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "27.20"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "27.20",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003120",
+          "s1200_recibo": "1.1.0000000033431571150",
+          "s1200_evento_id": "ID1108745230000002025071614590100009",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "568374253ff9044a79512a328b07f02abe67eb2e748910b1a98ab34af49ff923",
+      "bytes": 4802
+    },
+    {
+      "cpf": "32373427850",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_32373427850_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353489",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353489",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003133"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "54.40"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "54.40",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003133",
+          "s1200_recibo": "1.1.0000000033431200701",
+          "s1200_evento_id": "ID1108745230000002025071614590200007",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "cf942e5be791275027983ab24cdc73eb1f4153851286c3b085e0f29b2cbcebc3",
+      "bytes": 4900
+    },
+    {
+      "cpf": "32540823890",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_32540823890_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353499",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353499",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-31"
+      ],
+      "ideDmDev": [
+        "00003154"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "23.00"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "23.00",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003154",
+          "s1200_recibo": "1.1.0000000033924189945",
+          "s1200_evento_id": "ID1108745230000002025082006434600008",
+          "s1200_per_apur": "2025-07"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "b2fd7d48e85812401610cedd1908fe22fb5af2babdb4c42645aa3218f8bd00e4",
+      "bytes": 4997
+    },
+    {
+      "cpf": "32644330874",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_32644330874_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353522",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353522",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04",
+        "2025-07-17"
+      ],
+      "ideDmDev": [
+        "00003120",
+        "00003137"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "54.40"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "54.40",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003120",
+          "s1200_recibo": "1.1.0000000033431200275",
+          "s1200_evento_id": "ID1108745230000002025071614590500001",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "c44bdcaced8b940ab521321c471e13b028cc542f7b02f248360954f3f634f1af",
+      "bytes": 4847
+    },
+    {
+      "cpf": "33409840850",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_33409840850_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353542",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353542",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-08",
+        "2025-07-31"
+      ],
+      "ideDmDev": [
+        "00003110",
+        "00003154"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "23.00"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "23.00",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003110",
+          "s1200_recibo": "1.1.0000000033924205635",
+          "s1200_evento_id": "ID1108745230000002025082006434800006",
+          "s1200_per_apur": "2025-07"
+        },
+        {
+          "ideDmDev": "00003154",
+          "s1200_recibo": "1.1.0000000033924205635",
+          "s1200_evento_id": "ID1108745230000002025082006434800006",
+          "s1200_per_apur": "2025-07"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "08ceeced7b7b547cb08ed694853c483b5eeaa8f5bdce97652ad6bc7ac0324e7f",
+      "bytes": 4846
+    },
+    {
+      "cpf": "33465961846",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_33465961846_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353442",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353442",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-01",
+        "2025-07-31"
+      ],
+      "ideDmDev": [
+        "00003104",
+        "00003154"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "23.00"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "23.00",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003104",
+          "s1200_recibo": "1.1.0000000033924204517",
+          "s1200_evento_id": "ID1108745230000002025082006434800008",
+          "s1200_per_apur": "2025-07"
+        },
+        {
+          "ideDmDev": "00003154",
+          "s1200_recibo": "1.1.0000000033924204517",
+          "s1200_evento_id": "ID1108745230000002025082006434800008",
+          "s1200_per_apur": "2025-07"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "c23d3df3ec4156c70313ab8cf5dd2e90745a105b4808f9241c67ab527a74dd9d",
+      "bytes": 4846
+    },
+    {
+      "cpf": "33931848817",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_33931848817_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353556",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353556",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-01",
+        "2025-07-31"
+      ],
+      "ideDmDev": [
+        "00003104",
+        "00003154"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "110.00"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "110.00",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003104",
+          "s1200_recibo": "1.1.0000000033924212222",
+          "s1200_evento_id": "ID1108745230000002025082006435000006",
+          "s1200_per_apur": "2025-07"
+        },
+        {
+          "ideDmDev": "00003154",
+          "s1200_recibo": "1.1.0000000033924212222",
+          "s1200_evento_id": "ID1108745230000002025082006435000006",
+          "s1200_per_apur": "2025-07"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "0b6c52073ce177f3be637b6b1295c39eff5bee80afaada2b05750bd048705d82",
+      "bytes": 5041
+    },
+    {
+      "cpf": "34183362806",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_34183362806_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353573",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353573",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-31"
+      ],
+      "ideDmDev": [
+        "00003154"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "46.00"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "46.00",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003154",
+          "s1200_recibo": "1.1.0000000033924212509",
+          "s1200_evento_id": "ID1108745230000002025082006435000007",
+          "s1200_per_apur": "2025-07"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "608aa602b97675bb9664408f48c192c631f17b73ba93fee553c591f3238cad38",
+      "bytes": 4802
+    },
+    {
+      "cpf": "34324772878",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_34324772878_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353596",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353596",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04",
+        "2025-07-08"
+      ],
+      "ideDmDev": [
+        "00003112",
+        "00003111"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "27.20"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "27.20",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003111",
+          "s1200_recibo": "1.1.0000000033924212916",
+          "s1200_evento_id": "ID1108745230000002025082006435100004",
+          "s1200_per_apur": "2025-07"
+        },
+        {
+          "ideDmDev": "00003112",
+          "s1200_recibo": "1.1.0000000033431648432",
+          "s1200_evento_id": "ID1108745230000002025071614590800002",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "fc1070fc62324d9707d6a66a05182765c470d47ede7b2bdd35d6ed0b127842fd",
+      "bytes": 5040
+    },
+    {
+      "cpf": "34596022879",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_34596022879_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353608",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353608",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-31"
+      ],
+      "ideDmDev": [
+        "00003154"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "110.00"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "110.00",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003154",
+          "s1200_recibo": "1.1.0000000033924225505",
+          "s1200_evento_id": "ID1108745230000002025082006435200005",
+          "s1200_per_apur": "2025-07"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "da537c5e068cbcca72eb3260fd9ede076adbf600309ed84cb4a8cb6269c097c6",
+      "bytes": 4998
+    },
+    {
+      "cpf": "36842622859",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_36842622859_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353627",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353627",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-08",
+        "2025-07-31"
+      ],
+      "ideDmDev": [
+        "00003110",
+        "00003154"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "110.00"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "110.00",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003110",
+          "s1200_recibo": "1.1.0000000033924257363",
+          "s1200_evento_id": "ID1108745230000002025082006435800007",
+          "s1200_per_apur": "2025-07"
+        },
+        {
+          "ideDmDev": "00003154",
+          "s1200_recibo": "1.1.0000000033924257363",
+          "s1200_evento_id": "ID1108745230000002025082006435800007",
+          "s1200_per_apur": "2025-07"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "0fb2a6f3670aeb26bae245d1eda0893b02e11376268493f97c09f11230727046",
+      "bytes": 4847
+    },
+    {
+      "cpf": "36858792864",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_36858792864_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353641",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353641",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-31"
+      ],
+      "ideDmDev": [
+        "00003154"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "23.00"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "23.00",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003154",
+          "s1200_recibo": "1.1.0000000033924258108",
+          "s1200_evento_id": "ID1108745230000002025082006435800008",
+          "s1200_per_apur": "2025-07"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "67e8d1dee482073658ed6f4d67cb5ed5e16378a55af856c5edbfb5672a4b3479",
+      "bytes": 4803
+    },
+    {
+      "cpf": "37478763820",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_37478763820_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353648",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353648",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003120"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "54.40"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "54.40",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003120",
+          "s1200_recibo": "1.1.0000000033431256720",
+          "s1200_evento_id": "ID1108745230000002025071614591600002",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "1bea580cef7b1d0dfda9167110b0c8464e3b52eebd46b1b7a0b8f4fd1d9b84f7",
+      "bytes": 4900
+    },
+    {
+      "cpf": "37838898803",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_37838898803_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149352581",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149352581",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-07",
+        "2025-07-31"
+      ],
+      "ideDmDev": [
+        "00003140",
+        "00003154"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "02127779000136",
+          "regANS": "364592",
+          "vlrSaudeTit": "223.00"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "619",
+          "vrRubr": "223.00",
+          "ideTabRubr": "1",
+          "operadora": "NEW LEADER",
+          "cnpjOper": "02127779000136",
+          "regANS": "364592"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003154",
+          "s1200_recibo": "1.1.0000000033924273320",
+          "s1200_evento_id": "ID1108745230000002025082006440100001",
+          "s1200_per_apur": "2025-07"
+        },
+        {
+          "ideDmDev": "00003140",
+          "s1200_recibo": "1.1.0000000033431258628",
+          "s1200_evento_id": "ID1108745230000002025071614591600008",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "4f3e12a6f8896abe1ec783b0be5760ac752cc8038996d126d1b60fb4c10fe898",
+      "bytes": 4944
+    },
+    {
+      "cpf": "38262453859",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_38262453859_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353679",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353679",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-08",
+        "2025-07-31"
+      ],
+      "ideDmDev": [
+        "00003110",
+        "00003154"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "69.00"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "69.00",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003110",
+          "s1200_recibo": "1.1.0000000033924273758",
+          "s1200_evento_id": "ID1108745230000002025082006440100006",
+          "s1200_per_apur": "2025-07"
+        },
+        {
+          "ideDmDev": "00003154",
+          "s1200_recibo": "1.1.0000000033924273758",
+          "s1200_evento_id": "ID1108745230000002025082006440100006",
+          "s1200_per_apur": "2025-07"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "e22a744e3497f240f2ab9b82e23f66aee22624fc2229671744b91b2d90eb5785",
+      "bytes": 5235
+    },
+    {
+      "cpf": "39779983821",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_39779983821_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353703",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353703",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04",
+        "2025-07-07"
+      ],
+      "ideDmDev": [
+        "00003133",
+        "00003136"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "27.20"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "27.20",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003133",
+          "s1200_recibo": "1.1.0000000033432080234",
+          "s1200_evento_id": "ID1108745230000002025071614592000005",
+          "s1200_per_apur": "2025-06"
+        },
+        {
+          "ideDmDev": "00003136",
+          "s1200_recibo": "1.1.0000000033432080234",
+          "s1200_evento_id": "ID1108745230000002025071614592000005",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "85c292ebf072a8b0151de9b11b3ae075ab35323769ae20f606faf5e5adaef9b6",
+      "bytes": 4845
+    },
+    {
+      "cpf": "40760139806",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_40760139806_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353715",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353715",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-01",
+        "2025-07-31"
+      ],
+      "ideDmDev": [
+        "00003104",
+        "00003154"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "220.00"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "220.00",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003104",
+          "s1200_recibo": "1.1.0000000033924301908",
+          "s1200_evento_id": "ID1108745230000002025082006440500007",
+          "s1200_per_apur": "2025-07"
+        },
+        {
+          "ideDmDev": "00003154",
+          "s1200_recibo": "1.1.0000000033924301908",
+          "s1200_evento_id": "ID1108745230000002025082006440500007",
+          "s1200_per_apur": "2025-07"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "5993aaf01b6bf0548fa4e85cf530da0b873620b5c7509f317087e5289ed07061",
+      "bytes": 5234
+    },
+    {
+      "cpf": "41449145850",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_41449145850_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353072",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353072",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003131"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "10.00"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "775",
+          "vrRubr": "10.00",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003131",
+          "s1200_recibo": "1.1.0000000033432088732",
+          "s1200_evento_id": "ID1108745230000002025071614592200007",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "ff91f32433f42724335bd1b229cf92f66db1e3bff3cf909581ba778a489d5069",
+      "bytes": 4800
+    },
+    {
+      "cpf": "41829127802",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_41829127802_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353727",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353727",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-08",
+        "2025-07-31"
+      ],
+      "ideDmDev": [
+        "00003110",
+        "00003154"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "46.00"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "46.00",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003110",
+          "s1200_recibo": "1.1.0000000033924311578",
+          "s1200_evento_id": "ID1108745230000002025082006440700002",
+          "s1200_per_apur": "2025-07"
+        },
+        {
+          "ideDmDev": "00003154",
+          "s1200_recibo": "1.1.0000000033924311578",
+          "s1200_evento_id": "ID1108745230000002025082006440700002",
+          "s1200_per_apur": "2025-07"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "a49d2a23cad7af72520c0bd5dc3f4e3a75dbebf2ade8864619e28cc8fcf5593f",
+      "bytes": 5234
+    },
+    {
+      "cpf": "42832587844",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_42832587844_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353744",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353744",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-31"
+      ],
+      "ideDmDev": [
+        "00003154"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "46.00"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "46.00",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003154",
+          "s1200_recibo": "1.1.0000000033924317724",
+          "s1200_evento_id": "ID1108745230000002025082006440800003",
+          "s1200_per_apur": "2025-07"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "85fe1413f2eb6aacd0f9866282a1f0ba69a536c1f9830ce88e5947370846d53e",
+      "bytes": 4997
+    },
+    {
+      "cpf": "43641918847",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_43641918847_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353748",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353748",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-31"
+      ],
+      "ideDmDev": [
+        "00003154"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "23.00"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "23.00",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003154",
+          "s1200_recibo": "1.1.0000000033924326450",
+          "s1200_evento_id": "ID1108745230000002025082006440900002",
+          "s1200_per_apur": "2025-07"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "f8f2f657edc8c8773b18c55ba4d19009cafc48f42c907f88242923afa9a5f9e8",
+      "bytes": 4803
+    },
+    {
+      "cpf": "44339905828",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_44339905828_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353751",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353751",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003112"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "81.60"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "81.60",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003112",
+          "s1200_recibo": "1.1.0000000033431312639",
+          "s1200_evento_id": "ID1108745230000002025071614592500006",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "adc0efcb43a27b3f3f4f983154d2f7c368646e894a63455140c4b7ca11b536aa",
+      "bytes": 4706
+    },
+    {
+      "cpf": "44683182874",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_44683182874_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353767",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353767",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-08",
+        "2025-07-31"
+      ],
+      "ideDmDev": [
+        "00003110",
+        "00003154"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "69.00"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "69.00",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003110",
+          "s1200_recibo": "1.1.0000000033924336483",
+          "s1200_evento_id": "ID1108745230000002025082006441000007",
+          "s1200_per_apur": "2025-07"
+        },
+        {
+          "ideDmDev": "00003154",
+          "s1200_recibo": "1.1.0000000033924336483",
+          "s1200_evento_id": "ID1108745230000002025082006441000007",
+          "s1200_per_apur": "2025-07"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "e6e2e91b7d82cce1be51eefdd98b962eb89c01c85f8468fab72ad1bb021f0259",
+      "bytes": 5231
+    },
+    {
+      "cpf": "44917822882",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_44917822882_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353783",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353783",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-01",
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003111",
+        "00003112"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "27.20"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "27.20",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003111",
+          "s1200_recibo": "1.1.0000000033924343887",
+          "s1200_evento_id": "ID1108745230000002025082006441100001",
+          "s1200_per_apur": "2025-07"
+        },
+        {
+          "ideDmDev": "00003112",
+          "s1200_recibo": "1.1.0000000033431314115",
+          "s1200_evento_id": "ID1108745230000002025071614592600002",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "93071efa71509870a179366f9f261152fb3163ae40dbe2bc6386e3339ccad133",
+      "bytes": 5234
+    },
+    {
+      "cpf": "45804548808",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_45804548808_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353791",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353791",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-31"
+      ],
+      "ideDmDev": [
+        "00003154"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "46.00"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "46.00",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003154",
+          "s1200_recibo": "1.1.0000000033924351517",
+          "s1200_evento_id": "ID1108745230000002025082006441300005",
+          "s1200_per_apur": "2025-07"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "3a333730b40d0dc30c3218dcda1a2bbe13b927e27c437159c184561caae104fa",
+      "bytes": 4803
+    },
+    {
+      "cpf": "46715491828",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_46715491828_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353807",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353807",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-08",
+        "2025-07-31"
+      ],
+      "ideDmDev": [
+        "00003110",
+        "00003154"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "23.00"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "23.00",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003110",
+          "s1200_recibo": "1.1.0000000033924358849",
+          "s1200_evento_id": "ID1108745230000002025082006441400003",
+          "s1200_per_apur": "2025-07"
+        },
+        {
+          "ideDmDev": "00003154",
+          "s1200_recibo": "1.1.0000000033924358849",
+          "s1200_evento_id": "ID1108745230000002025082006441400003",
+          "s1200_per_apur": "2025-07"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "80a77b44759dfe9260525ba347938e06b2610a03a15ad569128edcc87000e3ef",
+      "bytes": 4846
+    },
+    {
+      "cpf": "47200725854",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_47200725854_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353814",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353814",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-10"
+      ],
+      "ideDmDev": [
+        "00003137"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "92.00"
+        }
+      ],
+      "rubricas_usadas": [],
+      "s1200_sources": [],
+      "fallback_source": {
+        "fallback": "ultimo_s1210_aceito_com_planSaude_do_mes_anterior",
+        "s1210_per_apur": "2025-06",
+        "s1210_recibo": "1.1.0000000041100412121",
+        "s1210_evento_id": "ID1108745230000002026052900514600001",
+        "s1210_db_id": 191364
+      },
+      "signature_count": 1,
+      "sha256": "074b80fc40e48dc03c1b455609f84a8c4c8c878a2ec7f0f5d6d885d9ad0099d9",
+      "bytes": 4897
+    },
+    {
+      "cpf": "51622669819",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_51622669819_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149352831",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149352831",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003131"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "10.00"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "775",
+          "vrRubr": "10.00",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003131",
+          "s1200_recibo": "1.1.0000000033431350000",
+          "s1200_evento_id": "ID1108745230000002025071614593200002",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "ec88db0fe6121f880ef152b81f4ce15285cd842f55f9457ede68287abe3c6705",
+      "bytes": 4703
+    },
+    {
+      "cpf": "53902278838",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_53902278838_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353825",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353825",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003120"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "27.20"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "27.20",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003120",
+          "s1200_recibo": "1.1.0000000033432109498",
+          "s1200_evento_id": "ID1108745230000002025071614593200007",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "9a1e03753775037f2b7e5baee6c45634626632235e2fc9492f526eeb4becf894",
+      "bytes": 4803
+    },
+    {
+      "cpf": "54116716553",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_54116716553_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149352926",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149352926",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003114"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "02127779000136",
+          "regANS": "364592",
+          "vlrSaudeTit": "165.10"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "522",
+          "vrRubr": "5.10",
+          "ideTabRubr": "1",
+          "operadora": "NEW LEADER",
+          "cnpjOper": "02127779000136",
+          "regANS": "364592"
+        },
+        {
+          "codRubr": "619",
+          "vrRubr": "160.00",
+          "ideTabRubr": "1",
+          "operadora": "NEW LEADER",
+          "cnpjOper": "02127779000136",
+          "regANS": "364592"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003114",
+          "s1200_recibo": "1.1.0000000033431350528",
+          "s1200_evento_id": "ID1108745230000002025071614593300001",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "e06a3fdf6dfc5a015ac194be7c5e1c14f34bffd64434974d67c89732d00e9560",
+      "bytes": 4704
+    },
+    {
+      "cpf": "67477909520",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_67477909520_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353304",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353304",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003114"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "02127779000136",
+          "regANS": "364592",
+          "vlrSaudeTit": "83.73"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "522",
+          "vrRubr": "83.73",
+          "ideTabRubr": "1",
+          "operadora": "NEW LEADER",
+          "cnpjOper": "02127779000136",
+          "regANS": "364592"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003114",
+          "s1200_recibo": "1.1.0000000033431375930",
+          "s1200_evento_id": "ID1108745230000002025071614593700004",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "f7c9ebdcfb488cc19b65714a762e1e5cb8864ca5f964e926df3c7f6965feaffc",
+      "bytes": 4800
+    },
+    {
+      "cpf": "69289107553",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_69289107553_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353833",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353833",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003114"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "11.00"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "11.00",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003114",
+          "s1200_recibo": "1.1.0000000033431376990",
+          "s1200_evento_id": "ID1108745230000002025071614593700008",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "db88afb8a0004b41c6113656b568df3bdcc8d2688c69d4db53ed85a1bea31723",
+      "bytes": 4703
+    },
+    {
+      "cpf": "72819774253",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_72819774253_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353844",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353844",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003120"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "27.20"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "27.20",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003120",
+          "s1200_recibo": "1.1.0000000033431379232",
+          "s1200_evento_id": "ID1108745230000002025071614593800007",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "c68d922a3cfba0c88927abf999b2311958c9e2a064a64044180d4ab1948e456c",
+      "bytes": 4706
+    },
+    {
+      "cpf": "74987968568",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_74987968568_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353010",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353010",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003114"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "02127779000136",
+          "regANS": "364592",
+          "vlrSaudeTit": "12.35"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "522",
+          "vrRubr": "12.35",
+          "ideTabRubr": "1",
+          "operadora": "NEW LEADER",
+          "cnpjOper": "02127779000136",
+          "regANS": "364592"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003114",
+          "s1200_recibo": "1.1.0000000033431379650",
+          "s1200_evento_id": "ID1108745230000002025071614593900003",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "aa4d5555e6361bdeb91aa7f066e5f7f560efeda4024ef31fe3f769784d2a50bb",
+      "bytes": 4702
+    },
+    {
+      "cpf": "80800246500",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_80800246500_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353141",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353141",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003114"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "02127779000136",
+          "regANS": "364592",
+          "vlrSaudeTit": "42.95"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "522",
+          "vrRubr": "42.95",
+          "ideTabRubr": "1",
+          "operadora": "NEW LEADER",
+          "cnpjOper": "02127779000136",
+          "regANS": "364592"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003114",
+          "s1200_recibo": "1.1.0000000033431393930",
+          "s1200_evento_id": "ID1108745230000002025071614594000003",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "b21cd1d5925a4400d33c290af5ac08db3a8db680fcf7c2451fcbd6fabfffd151",
+      "bytes": 4897
+    },
+    {
+      "cpf": "96840994520",
+      "categoria": "plano_saude_coletivo_obrigatorio",
+      "acao": "retificacao_indRetif_2_com_planSaude",
+      "xml_path": "relatorio_ana/OBJETIVA_JUN_NOV_2025/2025-07/xmls_julho_87_corrigidos/01_plano_saude_retificacao/S1210_2025-07_96840994520_plano_saude_retificacao_assinado.xml",
+      "nr_recibo_anterior": "1.1.0000000034149353856",
+      "indRetif": "2",
+      "nrRecibo_no_xml": "1.1.0000000034149353856",
+      "perApur_no_xml": "2025-07",
+      "dtPgto": [
+        "2025-07-04"
+      ],
+      "ideDmDev": [
+        "00003114"
+      ],
+      "planSaude": [
+        {
+          "cnpjOper": "02127779000136",
+          "regANS": "364592",
+          "vlrSaudeTit": "112.20"
+        },
+        {
+          "cnpjOper": "28633372000174",
+          "regANS": "421154",
+          "vlrSaudeTit": "22.00"
+        }
+      ],
+      "rubricas_usadas": [
+        {
+          "codRubr": "516",
+          "vrRubr": "22.00",
+          "ideTabRubr": "1",
+          "operadora": "SB SAUDE",
+          "cnpjOper": "28633372000174",
+          "regANS": "421154"
+        },
+        {
+          "codRubr": "522",
+          "vrRubr": "112.20",
+          "ideTabRubr": "1",
+          "operadora": "NEW LEADER",
+          "cnpjOper": "02127779000136",
+          "regANS": "364592"
+        }
+      ],
+      "s1200_sources": [
+        {
+          "ideDmDev": "00003114",
+          "s1200_recibo": "1.1.0000000033431433790",
+          "s1200_evento_id": "ID1108745230000002025071614594700006",
+          "s1200_per_apur": "2025-06"
+        }
+      ],
+      "fallback_source": null,
+      "signature_count": 1,
+      "sha256": "f43a561fa4db1a4b7f7ed87372f47d79cce49eb36aa080352a6fa9c12df83d73",
+      "bytes": 5011
+    }
+  ]
+}

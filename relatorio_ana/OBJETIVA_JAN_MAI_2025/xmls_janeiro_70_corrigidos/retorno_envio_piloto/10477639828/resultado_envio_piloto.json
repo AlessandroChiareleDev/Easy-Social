@@ -1,0 +1,51 @@
+{
+  "gerado_em": "2026-05-28T19:21:03",
+  "empresa": "OBJETIVA",
+  "empresa_id": 3,
+  "cpf": "10477639828",
+  "xml_path": "relatorio_ana/OBJETIVA_JAN_MAI_2025/xmls_janeiro_70_corrigidos/01_plano_saude_retificacao/S1210_2025-01_10477639828_plano_saude_retificacao_assinado.xml",
+  "ambiente": "producao",
+  "grupo": "3",
+  "precheck_xml": {
+    "cpfBenef": "10477639828",
+    "indRetif": "2",
+    "nrRecibo": "1.1.0000000030926650044",
+    "dtPgto": [
+      "2025-01-06"
+    ],
+    "planSaude_count": 1,
+    "signature_count": 1
+  },
+  "envio": {
+    "sucesso": true,
+    "codigo_resposta": "201",
+    "descricao": "Lote Recebido com Sucesso.",
+    "protocolo": "1.1.202605.0000000013221570765",
+    "dh_recepcao": "2026-05-28T19:21:03.723",
+    "ocorrencias": []
+  },
+  "consultas": [
+    {
+      "sucesso": true,
+      "codigo_resposta": "201",
+      "descricao": "Lote processado com sucesso.",
+      "eventos": [
+        {
+          "id": "ID1108745230000002026052822143500001",
+          "codigo_resposta": "201",
+          "descricao": "Sucesso.",
+          "nr_recibo": "1.1.0000000041098951355",
+          "ocorrencias": []
+        }
+      ],
+      "tentativa": 1
+    }
+  ],
+  "resultado_final": {
+    "processado": true,
+    "codigo_resposta": "201",
+    "descricao": "Sucesso.",
+    "nr_recibo": "1.1.0000000041098951355",
+    "ocorrencias": []
+  }
+}

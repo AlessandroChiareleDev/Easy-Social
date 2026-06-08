@@ -1,0 +1,82 @@
+{
+  "generated_at": "2026-05-28T22:27:02",
+  "empresa_id": 3,
+  "per_apur": "2025-11",
+  "cnpj": "10874523000110",
+  "ambiente": "producao",
+  "xmls": {
+    "unsigned_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OBJETIVA_JUN_NOV_2025\\2025-11\\fechamento_novembro_s1299\\S1299_2025-11_OBJETIVA_unsigned.xml",
+    "signed_xml": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OBJETIVA_JUN_NOV_2025\\2025-11\\fechamento_novembro_s1299\\S1299_2025-11_OBJETIVA_signed.xml",
+    "unsigned": {
+      "id_evento": "ID1108745230000002026052901265600001",
+      "per_apur": "2025-11",
+      "tp_amb": "1",
+      "nr_insc": "10874523",
+      "signed": false,
+      "size_bytes": 584
+    },
+    "signed": {
+      "id_evento": "ID1108745230000002026052901265600001",
+      "per_apur": "2025-11",
+      "tp_amb": "1",
+      "nr_insc": "10874523",
+      "signed": true,
+      "size_bytes": 4466
+    }
+  },
+  "resultado": {
+    "ok": true,
+    "id_evento": "ID1108745230000002026052901265600001",
+    "protocolo": "1.1.202605.0000000013221877950",
+    "codigo_lote": "201",
+    "descricao_lote": "Lote processado com sucesso.",
+    "codigo": "201",
+    "descricao": "Sucesso.",
+    "nr_recibo": "1.1.0000000041100699587",
+    "evento_db_id": 191826,
+    "ocorrencias": [],
+    "manifest": "C:\\Users\\xandao\\Documents\\GitHub\\Easy-Social\\relatorio_ana\\OBJETIVA_JUN_NOV_2025\\2025-11\\fechamento_novembro_s1299\\manifest_fechamento_s1299_novembro_objetiva.json",
+    "preflight": {
+      "empresa_id_externo": 3,
+      "empresa_id_interno": 3,
+      "per_apur": "2025-11",
+      "s1210_stats": [
+        {
+          "status": "sucesso",
+          "erro_codigo": "",
+          "total": 1284
+        }
+      ],
+      "pendencias_s1210": 0,
+      "fechamento_status_atual": {
+        "empresa_id": 3,
+        "per_apur": "2025-11",
+        "fechado": false,
+        "protocolo": "1.1.202605.0000000013192426470",
+        "nr_recibo": "1.1.0000000040948191770",
+        "origem": "s1298_reconsulta",
+        "confirmado_em": "2026-05-21 20:12:22.040252+00:00"
+      },
+      "eventos_s1298_s1299_periodo": [
+        {
+          "tipo_evento": "S-1298",
+          "cd_resposta": "201",
+          "total": 3,
+          "ultimo": "2026-05-21 20:12:22.040252+00:00"
+        },
+        {
+          "tipo_evento": "S-1299",
+          "cd_resposta": "201",
+          "total": 2,
+          "ultimo": "2025-12-22 10:13:34.830000+00:00"
+        },
+        {
+          "tipo_evento": "S-1299",
+          "cd_resposta": "202",
+          "total": 1,
+          "ultimo": "2025-12-15 14:51:11.290000+00:00"
+        }
+      ]
+    }
+  }
+}

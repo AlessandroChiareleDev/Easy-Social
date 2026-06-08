@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Relatório de Horas Trabalhadas por Empresa - Consolidado</title><style>
+@page { size: A4; margin: 14mm; }
+@media print { body { -webkit-print-color-adjust: exact; print-color-adjust: exact; } .page { box-shadow: none; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: #edf2f7; color: #0f172a; font-family: "Segoe UI", Arial, sans-serif; font-size: 12px; line-height: 1.45; }
+.page { width: 100%; max-width: 1060px; margin: 0 auto; background: #ffffff; border: 1px solid #dbe5f3; box-shadow: 0 18px 44px rgba(13, 21, 48, 0.12); }
+.topbar { background: #0d1530; color: #ffffff; padding: 24px 28px 22px; border-bottom: 5px solid #0066ff; }
+.brand-line { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 18px; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 850; font-size: 18px; }
+.mark { width: 36px; height: 36px; border-radius: 8px; background: linear-gradient(135deg, #0066ff, #37b7ff); display: inline-flex; align-items: center; justify-content: center; color: #ffffff; font-weight: 900; }
+.tag { border: 1px solid rgba(255,255,255,0.24); color: #cbd5e1; border-radius: 999px; padding: 6px 11px; font-size: 10px; text-transform: uppercase; font-weight: 800; }
+h1 { margin: 0; font-size: 29px; line-height: 1.12; letter-spacing: 0; }
+.subtitle { margin-top: 9px; color: #cbd5e1; max-width: 780px; }
+.content { padding: 24px 28px 28px; }
+.hero-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 14px; margin-bottom: 16px; }
+.panel { border: 1px solid #e2e8f0; border-radius: 8px; background: #ffffff; padding: 14px; }
+.panel.soft { background: #f8fbff; }
+.panel.warning { background: #fff7ed; border-color: #fed7aa; }
+.label { color: #64748b; font-size: 10px; font-weight: 800; text-transform: uppercase; margin-bottom: 4px; }
+.value { font-size: 14px; font-weight: 800; color: #0f172a; }
+.muted { color: #64748b; }
+.metric-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin: 16px 0; }
+.metric { border: 1px solid #dbe7f6; background: #f8fbff; border-radius: 8px; padding: 13px 12px; }
+.metric .k { color: #64748b; font-size: 10px; font-weight: 850; text-transform: uppercase; }
+.metric .v { margin-top: 7px; color: #0d1530; font-size: 25px; font-weight: 900; line-height: 1; font-variant-numeric: tabular-nums; }
+.metric.green { border-color: #bfe6d0; background: #f3fbf6; }
+.metric.green .v { color: #137a3a; }
+.metric.amber { border-color: #fed7aa; background: #fff7ed; }
+.metric.amber .v { color: #b45309; }
+.section-title { display: flex; align-items: center; gap: 8px; margin: 20px 0 10px; color: #0d1530; font-size: 15px; font-weight: 900; }
+.section-title::before { content: ""; width: 4px; height: 17px; background: #0066ff; border-radius: 99px; }
+table { width: 100%; border-collapse: collapse; font-size: 11px; }
+th { background: #eef4ff; color: #334155; border: 1px solid #dbe5f3; padding: 8px 9px; text-align: left; font-size: 10px; text-transform: uppercase; }
+td { border: 1px solid #e2e8f0; padding: 8px 9px; vertical-align: top; }
+tr:nth-child(even) td { background: #fbfdff; }
+.num { text-align: right; font-variant-numeric: tabular-nums; }
+.ok { color: #137a3a; font-weight: 900; }
+.pill { display: inline-block; border-radius: 999px; padding: 3px 8px; font-size: 10px; font-weight: 850; white-space: nowrap; }
+.pill.blue { color: #0757d8; background: #eaf2ff; border: 1px solid #bcd6ff; }
+.pill.green { color: #137a3a; background: #e9f8ef; border: 1px solid #bfe6d0; }
+.pill.amber { color: #9a3412; background: #fff7ed; border: 1px solid #fed7aa; }
+.company-card { border: 1px solid #dbe5f3; border-radius: 8px; background: #ffffff; padding: 14px; margin-bottom: 12px; page-break-inside: avoid; }
+.company-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; margin-bottom: 10px; }
+.company-title { font-size: 16px; font-weight: 900; color: #0d1530; }
+.accent-line { height: 4px; border-radius: 99px; margin: 11px 0 12px; }
+.bar-track { height: 8px; border-radius: 999px; background: #e2e8f0; overflow: hidden; }
+.bar-fill { height: 8px; border-radius: 999px; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.note-list { margin: 0; padding-left: 18px; color: #334155; }
+.note-list li { margin-bottom: 5px; }
+.conclusion { margin-top: 16px; border-radius: 8px; background: #0d1530; color: #ffffff; padding: 15px 16px; }
+.conclusion b { color: #7cc7ff; }
+.footer { display: flex; justify-content: space-between; gap: 12px; border-top: 1px solid #dbe5f3; margin-top: 18px; padding-top: 11px; color: #64748b; font-size: 10px; }
+.avoid-break { page-break-inside: avoid; }
+@media (max-width: 760px) { .hero-grid, .metric-grid, .two-col { grid-template-columns: 1fr; } .brand-line, .company-head, .footer { flex-direction: column; align-items: flex-start; } h1 { font-size: 24px; } }
+</style></head>
+<body><main class="page">
+
+  <header class="topbar" style="border-bottom-color:#0066FF">
+    <div class="brand-line">
+      <div class="brand"><span class="mark">ES</span><span>Easy <span style="color:#5db8ff">Social</span></span></div>
+      <div class="tag">ES-HORAS-2026-001</div>
+    </div>
+    <h1>Relatório de Horas Trabalhadas por Empresa</h1>
+    <div class="subtitle">Memória técnica de horas - APPA, Soluções e Objetiva. Documento executivo com memória de cálculo, separação por empresa e critério auditável de jornada.</div>
+  </header>
+
+  <section class="content">
+    <div class="hero-grid avoid-break"><div class="panel soft"><div class="label">Período consolidado</div><div class="value">24/03/2026 a 29/05/2026</div><div class="muted">Recorte solicitado: APPA, Soluções e Objetiva, com transições controladas.</div></div><div class="panel"><div class="label">Critério de jornada</div><div class="value">8h de segunda a sexta + 4h aos sábados = 44h/semana</div><div class="muted">Gerado em 02/06/2026 17:06</div></div></div>
+    <div class="metric-grid avoid-break"><div class="metric"><div class="k">Empresas</div><div class="v">3</div></div><div class="metric green"><div class="k">Horas consolidadas</div><div class="v">428</div></div><div class="metric"><div class="k">Dias de 8h</div><div class="v">49</div></div><div class="metric amber"><div class="k">Sábados de 4h</div><div class="v">9</div></div></div>
+    <div class="conclusion avoid-break">Total consolidado apurado: <b>428 horas trabalhadas</b>, separado por empresa e sem dupla contagem nas datas de transição entre frentes.</div>
+    <div class="section-title">Resumo executivo por empresa</div>
+    <table><thead><tr><th>Empresa</th><th>Período informado</th><th>Período apurado</th><th class="num">Dias 8h</th><th class="num">Sáb. 4h</th><th class="num">Dom. 0h</th><th class="num">Horas</th><th class="num">Part.</th></tr></thead><tbody>
+            <tr>
+              <td><strong>APPA</strong><br><span class="muted">APPA - Administração dos Portos de Paranaguá e Antonina</span></td>
+              <td>24/03/2026 a 07/05/2026</td>
+              <td>24/03/2026 a 06/05/2026</td>
+              <td class="num">32</td>
+              <td class="num">6</td>
+              <td class="num">6</td>
+              <td class="num ok">280 h</td>
+              <td class="num">65,4%</td>
+            </tr>
+            
+
+            <tr>
+              <td><strong>SOLUÇÕES</strong><br><span class="muted">SOLUÇÕES SERVIÇOS TERCEIRIZADOS LTDA</span></td>
+              <td>07/05/2026 a 20/05/2026</td>
+              <td>07/05/2026 a 19/05/2026</td>
+              <td class="num">9</td>
+              <td class="num">2</td>
+              <td class="num">2</td>
+              <td class="num ok">80 h</td>
+              <td class="num">18,7%</td>
+            </tr>
+            
+
+            <tr>
+              <td><strong>OBJETIVA</strong><br><span class="muted">OBJETIVA SERVIÇOS TERCEIRIZADOS LTDA</span></td>
+              <td>20/05/2026 a 29/05/2026</td>
+              <td>20/05/2026 a 29/05/2026</td>
+              <td class="num">8</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num ok">68 h</td>
+              <td class="num">15,9%</td>
+            </tr>
+            </tbody></table>
+    <div class="section-title">Leitura por empresa</div>
+            <article class="company-card">
+              <div class="company-head">
+                <div>
+                  <div class="label">Empresa</div>
+                  <div class="company-title">APPA</div>
+                  <div class="muted">APPA - Administração dos Portos de Paranaguá e Antonina - CNPJ 05.969.071/0001-10</div>
+                </div>
+                <div><span class="pill blue">24/03/2026 a 07/05/2026</span></div>
+              </div>
+              <div class="accent-line" style="background:#0066FF"></div>
+              <div class="two-col">
+                <div><div class="label">Frente de trabalho</div><div>Operação Easy e-Social APPA, análise de rubricas, suporte técnico e processamento assistido</div></div>
+                <div><div class="label">Horas apuradas</div><div class="value">280 horas</div><div class="muted">32 dias de 8h, 6 sábados de 4h e 6 domingos sem jornada.</div></div>
+              </div>
+              <div style="margin-top:12px"><div class="bar-track"><div class="bar-fill" style="width:65.42%; background:#0066FF"></div></div><div class="muted" style="margin-top:5px">Participação no consolidado: 65,4%</div></div>
+              <div class="panel warning" style="margin-top:12px"><div class="label">Regra de transição</div><div>07/05/2026 foi tratado como marco de transição para Soluções no cálculo consolidado.</div></div>
+            </article>
+            
+
+            <article class="company-card">
+              <div class="company-head">
+                <div>
+                  <div class="label">Empresa</div>
+                  <div class="company-title">SOLUÇÕES</div>
+                  <div class="muted">SOLUÇÕES SERVIÇOS TERCEIRIZADOS LTDA - CNPJ 09.445.502/0001-09</div>
+                </div>
+                <div><span class="pill blue">07/05/2026 a 20/05/2026</span></div>
+              </div>
+              <div class="accent-line" style="background:#137A3A"></div>
+              <div class="two-col">
+                <div><div class="label">Frente de trabalho</div><div>Reenvio massivo S-1210, saneamento de pendências e fechamento operacional dos períodos 2025</div></div>
+                <div><div class="label">Horas apuradas</div><div class="value">80 horas</div><div class="muted">9 dias de 8h, 2 sábados de 4h e 2 domingos sem jornada.</div></div>
+              </div>
+              <div style="margin-top:12px"><div class="bar-track"><div class="bar-fill" style="width:18.69%; background:#137A3A"></div></div><div class="muted" style="margin-top:5px">Participação no consolidado: 18,7%</div></div>
+              <div class="panel warning" style="margin-top:12px"><div class="label">Regra de transição</div><div>20/05/2026 foi tratado como marco de transição para Objetiva no cálculo consolidado.</div></div>
+            </article>
+            
+
+            <article class="company-card">
+              <div class="company-head">
+                <div>
+                  <div class="label">Empresa</div>
+                  <div class="company-title">OBJETIVA</div>
+                  <div class="muted">OBJETIVA SERVIÇOS TERCEIRIZADOS LTDA - CNPJ 10.874.523/0001-10</div>
+                </div>
+                <div><span class="pill blue">20/05/2026 a 29/05/2026</span></div>
+              </div>
+              <div class="accent-line" style="background:#7C3AED"></div>
+              <div class="two-col">
+                <div><div class="label">Frente de trabalho</div><div>Início da frente Objetiva, validação de base, preparação de execução e operação assistida</div></div>
+                <div><div class="label">Horas apuradas</div><div class="value">68 horas</div><div class="muted">8 dias de 8h, 1 sábados de 4h e 1 domingos sem jornada.</div></div>
+              </div>
+              <div style="margin-top:12px"><div class="bar-track"><div class="bar-fill" style="width:15.89%; background:#7C3AED"></div></div><div class="muted" style="margin-top:5px">Participação no consolidado: 15,9%</div></div>
+              <div class="panel warning" style="margin-top:12px"><div class="label">Regra de transição</div><div>Período final do recorte solicitado, sem transição posterior dentro deste relatório.</div></div>
+            </article>
+            
+    <div class="section-title">Critérios de cálculo</div><div class="panel soft"><ul class="note-list"><li>Jornada-base: 8 horas de segunda a sexta-feira e 4 horas aos sábados, totalizando 44 horas por semana cheia.</li><li>Domingos foram considerados sem jornada.</li><li>Feriados não foram abatidos porque não foram informados como premissa específica.</li><li>Datas de transição foram preservadas no documento e alocadas a uma única empresa no consolidado, evitando dupla contagem.</li><li>Este relatório não atribui valor financeiro por hora; entrega a memória de horas para eventual precificação posterior.</li></ul></div>
+    <div class="section-title">Memória semanal</div>
+    <div class="company-card">
+      <div class="company-head"><div><div class="label">Memória semanal</div><div class="company-title">APPA</div></div><div><span class="pill green">280 h</span></div></div>
+      <table>
+        <thead><tr><th>Semana</th><th>Período</th><th class="num">Dias 8h</th><th class="num">Sáb. 4h</th><th class="num">Dom. 0h</th><th class="num">Horas</th></tr></thead>
+        <tbody>
+            <tr>
+              <td>2026-S13</td>
+              <td>24/03/2026 a 29/03/2026</td>
+              <td class="num">4</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num ok">36 h</td>
+            </tr>
+            
+
+            <tr>
+              <td>2026-S14</td>
+              <td>30/03/2026 a 05/04/2026</td>
+              <td class="num">5</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num ok">44 h</td>
+            </tr>
+            
+
+            <tr>
+              <td>2026-S15</td>
+              <td>06/04/2026 a 12/04/2026</td>
+              <td class="num">5</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num ok">44 h</td>
+            </tr>
+            
+
+            <tr>
+              <td>2026-S16</td>
+              <td>13/04/2026 a 19/04/2026</td>
+              <td class="num">5</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num ok">44 h</td>
+            </tr>
+            
+
+            <tr>
+              <td>2026-S17</td>
+              <td>20/04/2026 a 26/04/2026</td>
+              <td class="num">5</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num ok">44 h</td>
+            </tr>
+            
+
+            <tr>
+              <td>2026-S18</td>
+              <td>27/04/2026 a 03/05/2026</td>
+              <td class="num">5</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num ok">44 h</td>
+            </tr>
+            
+
+            <tr>
+              <td>2026-S19</td>
+              <td>04/05/2026 a 06/05/2026</td>
+              <td class="num">3</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num ok">24 h</td>
+            </tr>
+            </tbody>
+      </table>
+    </div>
+    
+    <div class="company-card">
+      <div class="company-head"><div><div class="label">Memória semanal</div><div class="company-title">SOLUÇÕES</div></div><div><span class="pill green">80 h</span></div></div>
+      <table>
+        <thead><tr><th>Semana</th><th>Período</th><th class="num">Dias 8h</th><th class="num">Sáb. 4h</th><th class="num">Dom. 0h</th><th class="num">Horas</th></tr></thead>
+        <tbody>
+            <tr>
+              <td>2026-S19</td>
+              <td>07/05/2026 a 10/05/2026</td>
+              <td class="num">2</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num ok">20 h</td>
+            </tr>
+            
+
+            <tr>
+              <td>2026-S20</td>
+              <td>11/05/2026 a 17/05/2026</td>
+              <td class="num">5</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num ok">44 h</td>
+            </tr>
+            
+
+            <tr>
+              <td>2026-S21</td>
+              <td>18/05/2026 a 19/05/2026</td>
+              <td class="num">2</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num ok">16 h</td>
+            </tr>
+            </tbody>
+      </table>
+    </div>
+    
+    <div class="company-card">
+      <div class="company-head"><div><div class="label">Memória semanal</div><div class="company-title">OBJETIVA</div></div><div><span class="pill green">68 h</span></div></div>
+      <table>
+        <thead><tr><th>Semana</th><th>Período</th><th class="num">Dias 8h</th><th class="num">Sáb. 4h</th><th class="num">Dom. 0h</th><th class="num">Horas</th></tr></thead>
+        <tbody>
+            <tr>
+              <td>2026-S21</td>
+              <td>20/05/2026 a 24/05/2026</td>
+              <td class="num">3</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num ok">28 h</td>
+            </tr>
+            
+
+            <tr>
+              <td>2026-S22</td>
+              <td>25/05/2026 a 29/05/2026</td>
+              <td class="num">5</td>
+              <td class="num">0</td>
+              <td class="num">0</td>
+              <td class="num ok">40 h</td>
+            </tr>
+            </tbody>
+      </table>
+    </div>
+    
+    <div class="footer"><div>Easy Social - Relatório de horas trabalhadas</div><div>Fonte: premissas informadas pelo solicitante; cálculo estático sem consulta ao eSocial.</div></div>
+  </section>
+</main></body></html>

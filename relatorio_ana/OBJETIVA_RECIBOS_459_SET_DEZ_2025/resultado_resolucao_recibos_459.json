@@ -1,0 +1,129 @@
+{
+  "ok": false,
+  "empresa": "OBJETIVA",
+  "empresa_id": 3,
+  "ambiente": "producao",
+  "gerado_em": "2026-05-28T23:01:31",
+  "sem_chamada_download_ou_identificadores": true,
+  "fixes": [
+    {
+      "per_apur": "2025-09",
+      "cpf": "06701349960",
+      "base_recibo_local": "1.1.0000000035182530057",
+      "recibo_ativo": "1.1.0000000035183951429",
+      "s1200_periodos": [
+        "2025-08",
+        "2025-09"
+      ],
+      "seq": 9091
+    },
+    {
+      "per_apur": "2025-12",
+      "cpf": "00831605588",
+      "base_recibo_local": "1.1.0000000037295806756",
+      "recibo_ativo": "1.1.0000000037296094083",
+      "s1200_periodos": [
+        "2025-11",
+        "2025-12"
+      ],
+      "seq": 1212
+    }
+  ],
+  "generated": [
+    {
+      "xml_path": "relatorio_ana/OBJETIVA_RECIBOS_459_SET_DEZ_2025/xmls/S1210_2025-09_06701349960_retifica_recibo_ativo_assinado.xml",
+      "info": {
+        "id_evento": "ID1108745230000002026052902011900001",
+        "cpf": "06701349960",
+        "indRetif": "2",
+        "nrRecibo": "1.1.0000000035183951429",
+        "perApur": "2025-09",
+        "dtPgto": [
+          "2025-09-05"
+        ],
+        "ideDmDev": [
+          "00002700"
+        ],
+        "planSaude_count": 0,
+        "signature_count": 1
+      },
+      "base_event_id": 115474,
+      "base_evento_id": "ID1108745230000002025101412132400001",
+      "base_recibo_local": "1.1.0000000035182530057",
+      "recibo_ativo": "1.1.0000000035183951429",
+      "planSaude": [],
+      "rubricas_usadas": [],
+      "source_events": [],
+      "fallback_source": null,
+      "sha256": "402b81d322907994c346311feffb9a13ea2958215e2c395563f10bd29a52455d"
+    },
+    {
+      "xml_path": "relatorio_ana/OBJETIVA_RECIBOS_459_SET_DEZ_2025/xmls/S1210_2025-12_00831605588_retifica_recibo_ativo_assinado.xml",
+      "info": {
+        "id_evento": "ID1108745230000002026052902012900001",
+        "cpf": "00831605588",
+        "indRetif": "2",
+        "nrRecibo": "1.1.0000000037296094083",
+        "perApur": "2025-12",
+        "dtPgto": [
+          "2025-12-05",
+          "2025-12-19",
+          "2025-12-19"
+        ],
+        "ideDmDev": [
+          "00003361",
+          "00003382",
+          "00003400"
+        ],
+        "planSaude_count": 0,
+        "signature_count": 1
+      },
+      "base_event_id": 176154,
+      "base_evento_id": "ID1108745230000002026012013152400001",
+      "base_recibo_local": "1.1.0000000037295806756",
+      "recibo_ativo": "1.1.0000000037296094083",
+      "planSaude": [],
+      "rubricas_usadas": [],
+      "source_events": [],
+      "fallback_source": null,
+      "sha256": "1dc310d04942bc4ae93d562fdb35119f89f4bf0a1b7462c8982e54ed36ae7932"
+    }
+  ],
+  "results": [
+    {
+      "ok": false,
+      "cpf": "06701349960",
+      "per_apur": "2025-09",
+      "timeline_envio_id": 70,
+      "timeline_item_id": 14373,
+      "protocolo": "1.1.202605.0000000013221934485",
+      "codigo": "401",
+      "descricao": "Conteudo do evento inválido.",
+      "ocorrencias": [
+        {
+          "codigo": "157",
+          "descricao": "Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.",
+          "tipo": "1"
+        }
+      ],
+      "erro_mensagem": "401: Conteudo do evento inválido. |   - 157: Evento de Exclusão ou Retificação deverá ser do mesmo tipo e se referir ao mesmo objeto do evento a ser excluído/retificado.",
+      "xml_path": "relatorio_ana/OBJETIVA_RECIBOS_459_SET_DEZ_2025/xmls/S1210_2025-09_06701349960_retifica_recibo_ativo_assinado.xml"
+    },
+    {
+      "ok": true,
+      "cpf": "00831605588",
+      "per_apur": "2025-12",
+      "timeline_envio_id": 71,
+      "timeline_item_id": 14374,
+      "versao_nova_id": 191899,
+      "protocolo": "1.1.202605.0000000013221934866",
+      "codigo": "201",
+      "descricao": "Sucesso.",
+      "nr_recibo_novo": "1.1.0000000041100973111",
+      "xml_path": "relatorio_ana/OBJETIVA_RECIBOS_459_SET_DEZ_2025/xmls/S1210_2025-12_00831605588_retifica_recibo_ativo_assinado.xml",
+      "recibo_ativo_informado": "1.1.0000000037296094083",
+      "base_recibo_local": "1.1.0000000037295806756",
+      "planSaude_count": 0
+    }
+  ]
+}

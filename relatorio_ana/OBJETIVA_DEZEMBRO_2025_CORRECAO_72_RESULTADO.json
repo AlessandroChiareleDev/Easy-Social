@@ -1,0 +1,63 @@
+{
+  "empresa": "OBJETIVA",
+  "empresa_id": 3,
+  "per_apur": "2025-12",
+  "ambiente": "producao",
+  "gerado_em": "2026-05-29",
+  "fonte_erros": "V2 timeline atual",
+  "csv_erros_atual": "relatorio_ana/OBJETIVA_DEZEMBRO_2025_ERROS_V2_ATUAL_2026-05-28.csv",
+  "escopo_inicial_v2": {
+    "total_erros": 73,
+    "plano_saude_coletivo_obrigatorio": 72,
+    "recibo_459_pulado": 1,
+    "recibo_459_cpfs": [
+      "00831605588"
+    ]
+  },
+  "geracao_xml": {
+    "total_xmls_assinados": 72,
+    "zip": "relatorio_ana/OBJETIVA_DEZEMBRO_2025/xmls_dezembro_72_corrigidos/OBJETIVA_2025-12_72_XMLS_CORRIGIDOS_ASSINADOS.zip",
+    "manifest": "relatorio_ana/OBJETIVA_DEZEMBRO_2025/xmls_dezembro_72_corrigidos/manifest_72_xmls_corrigidos.json",
+    "fallback_count": 0,
+    "rescisao_source_count": 19,
+    "rubricas": {
+      "516": 63,
+      "619": 10,
+      "774": 8,
+      "775": 2
+    }
+  },
+  "envio_s1210": {
+    "timeline_envio_id": 69,
+    "total_enviados": 72,
+    "total_sucesso": 72,
+    "total_erro_ou_pendente": 0,
+    "protocolos": {
+      "1.1.202605.0000000013221886030": 40,
+      "1.1.202605.0000000013221887079": 32
+    },
+    "primeiro_recibo_novo": "1.1.0000000041100738194",
+    "ultimo_recibo_novo": "1.1.0000000041100745142",
+    "resultado_bruto": "relatorio_ana/OBJETIVA_DEZEMBRO_2025/xmls_dezembro_72_corrigidos/retorno_envio_72_dezembro/resultado_envio_72_dezembro.json"
+  },
+  "validacao_v2_pos_envio": {
+    "total_cpfs": 1275,
+    "ok_apos_correcao_plano": 1274,
+    "erro_apos_correcao_plano": 1,
+    "erro_restante_categoria": "recibo_459_nao_localizado_excluido_retificado",
+    "erro_restante_cpf": "00831605588",
+    "erro_restante_recibo": "1.1.0000000037295806756",
+    "recibo_ativo_informado": "1.1.0000000037296094083",
+    "recibo_novo_s1210": "1.1.0000000041100973111",
+    "ok_final": 1275,
+    "erro_final": 0,
+    "fechamento_s1299_executado": true,
+    "s1299_protocolo": "1.1.202605.0000000013221942818",
+    "s1299_recibo": "1.1.0000000041101004200"
+  },
+  "observacoes": [
+    "Nao houve chamada de Download, SolicitarDownload ou ConsultarIdentificadores.",
+    "Apenas envio S-1210 e consulta dos protocolos enviados foram usados.",
+    "Dezembro foi fechado com S-1299 apos resolver o recibo residual."
+  ]
+}

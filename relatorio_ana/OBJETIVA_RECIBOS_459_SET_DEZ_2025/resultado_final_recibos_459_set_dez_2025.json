@@ -1,0 +1,62 @@
+{
+  "empresa": "OBJETIVA",
+  "empresa_id": 3,
+  "ambiente": "producao",
+  "gerado_em_local": "2026-05-28",
+  "sem_chamada_download_ou_identificadores": true,
+  "setembro_2025": {
+    "cpf": "06701349960",
+    "recibo_informado_pelo_usuario": "1.1.0000000035183951429",
+    "diagnostico": "O recibo informado era S-3000 de exclusao, nao S-1210 ativo.",
+    "s3000": {
+      "recibo": "1.1.0000000035183951429",
+      "tpEvento": "S-1210",
+      "nrRecEvt_excluido": "1.1.0000000035182530057"
+    },
+    "tentativa_retificacao": {
+      "timeline_envio_id": 70,
+      "protocolo": "1.1.202605.0000000013221934485",
+      "resultado": "401/157 - recibo nao era do mesmo tipo/objeto para retificacao S-1210"
+    },
+    "correcao_final": {
+      "acao": "inclusao S-1210 indRetif=1 apos S-3000 excluir o S-1210 antigo",
+      "timeline_envio_id": 72,
+      "protocolo": "1.1.202605.0000000013221940347",
+      "nr_recibo_s1210_novo": "1.1.0000000041100992863",
+      "resultado": "201 Sucesso"
+    },
+    "validacao_v2": {
+      "total": 1059,
+      "ok": 1059,
+      "erro": 0,
+      "pendente": 0
+    },
+    "s1299": {
+      "protocolo": "1.1.202605.0000000013221942257",
+      "nr_recibo": "1.1.0000000041101000922",
+      "resultado": "201 Sucesso"
+    }
+  },
+  "dezembro_2025": {
+    "cpf": "00831605588",
+    "recibo_informado_pelo_usuario": "1.1.0000000037296094083",
+    "correcao_final": {
+      "acao": "retificacao S-1210 indRetif=2 com recibo ativo informado",
+      "timeline_envio_id": 71,
+      "protocolo": "1.1.202605.0000000013221934866",
+      "nr_recibo_s1210_novo": "1.1.0000000041100973111",
+      "resultado": "201 Sucesso"
+    },
+    "validacao_v2": {
+      "total": 1275,
+      "ok": 1275,
+      "erro": 0,
+      "pendente": 0
+    },
+    "s1299": {
+      "protocolo": "1.1.202605.0000000013221942818",
+      "nr_recibo": "1.1.0000000041101004200",
+      "resultado": "201 Sucesso"
+    }
+  }
+}

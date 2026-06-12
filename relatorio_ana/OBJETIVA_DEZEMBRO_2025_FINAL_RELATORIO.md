@@ -73,8 +73,8 @@ Resumo da geracao:
 
 Resumo do envio:
 
-| Lote | Protocolo                         | Eventos | Resultado |
-| ---- | --------------------------------- | ------: | --------- |
+| Lote | Protocolo                        | Eventos | Resultado  |
+| ---- | -------------------------------- | ------: | ---------- |
 | 1    | `1.1.202605.0000000013221886030` |      40 | 40 aceitos |
 | 2    | `1.1.202605.0000000013221887079` |      32 | 32 aceitos |
 

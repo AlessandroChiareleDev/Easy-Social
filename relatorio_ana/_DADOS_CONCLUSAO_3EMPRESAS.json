@@ -1,0 +1,297 @@
+{
+  "appa": {
+    "empresa": {
+      "key": "appa",
+      "schema": "appa",
+      "empresa_id_interno": 1,
+      "cnpj": "05.969.071/0001-10",
+      "razao": "APPA SERVICOS TEMPORARIOS E EFETIVOS LTDA"
+    },
+    "totais": {
+      "escopo": 110651,
+      "ok": 105878,
+      "erro": 232,
+      "pendente": 0,
+      "na": 4541,
+      "meses_fechados": 5,
+      "meses_total": 12
+    },
+    "por_mes": [
+      {
+        "per_apur": "2025-01",
+        "escopo": 11290,
+        "ok": 11280,
+        "erro": 0,
+        "pendente": 0,
+        "na": 10,
+        "enviando": 0,
+        "s1299_fechado": true,
+        "s1299_protocolo": null,
+        "s1299_recibo": "1.1.0000000030914503432",
+        "s1299_origem": "sync"
+      },
+      {
+        "per_apur": "2025-02",
+        "escopo": 11600,
+        "ok": 10764,
+        "erro": 0,
+        "pendente": 0,
+        "na": 836,
+        "enviando": 0,
+        "s1299_fechado": true,
+        "s1299_protocolo": null,
+        "s1299_recibo": "1.1.0000000031450968699",
+        "s1299_origem": "sync"
+      },
+      {
+        "per_apur": "2025-03",
+        "escopo": 11185,
+        "ok": 10372,
+        "erro": 0,
+        "pendente": 0,
+        "na": 813,
+        "enviando": 0,
+        "s1299_fechado": true,
+        "s1299_protocolo": null,
+        "s1299_recibo": "VIRTUALMENTE FECHADO",
+        "s1299_origem": "virtual"
+      },
+      {
+        "per_apur": "2025-04",
+        "escopo": 10016,
+        "ok": 8922,
+        "erro": 0,
+        "pendente": 0,
+        "na": 1094,
+        "enviando": 0,
+        "s1299_fechado": true,
+        "s1299_protocolo": null,
+        "s1299_recibo": "VIRTUALMENTE FECHADO",
+        "s1299_origem": "virtual"
+      },
+      {
+        "per_apur": "2025-05",
+        "escopo": 10074,
+        "ok": 9916,
+        "erro": 104,
+        "pendente": 0,
+        "na": 54,
+        "enviando": 0,
+        "s1299_fechado": false,
+        "s1299_protocolo": null,
+        "s1299_recibo": null,
+        "s1299_origem": null
+      },
+      {
+        "per_apur": "2025-06",
+        "escopo": 9475,
+        "ok": 9356,
+        "erro": 74,
+        "pendente": 0,
+        "na": 45,
+        "enviando": 0,
+        "s1299_fechado": false,
+        "s1299_protocolo": null,
+        "s1299_recibo": null,
+        "s1299_origem": null
+      },
+      {
+        "per_apur": "2025-07",
+        "escopo": 9020,
+        "ok": 8917,
+        "erro": 37,
+        "pendente": 0,
+        "na": 66,
+        "enviando": 0,
+        "s1299_fechado": false,
+        "s1299_protocolo": null,
+        "s1299_recibo": null,
+        "s1299_origem": null
+      },
+      {
+        "per_apur": "2025-08",
+        "escopo": 7477,
+        "ok": 7427,
+        "erro": 0,
+        "pendente": 0,
+        "na": 50,
+        "enviando": 0,
+        "s1299_fechado": false,
+        "s1299_protocolo": null,
+        "s1299_recibo": null,
+        "s1299_origem": null
+      },
+      {
+        "per_apur": "2025-09",
+        "escopo": 8127,
+        "ok": 7633,
+        "erro": 17,
+        "pendente": 0,
+        "na": 477,
+        "enviando": 0,
+        "s1299_fechado": true,
+        "s1299_protocolo": null,
+        "s1299_recibo": "1.1.0000000035299651093",
+        "s1299_origem": "sync"
+      },
+      {
+        "per_apur": "2025-10",
+        "escopo": 7822,
+        "ok": 7347,
+        "erro": 0,
+        "pendente": 0,
+        "na": 475,
+        "enviando": 0,
+        "s1299_fechado": false,
+        "s1299_protocolo": null,
+        "s1299_recibo": null,
+        "s1299_origem": null
+      },
+      {
+        "per_apur": "2025-11",
+        "escopo": 7142,
+        "ok": 6886,
+        "erro": 0,
+        "pendente": 0,
+        "na": 256,
+        "enviando": 0,
+        "s1299_fechado": false,
+        "s1299_protocolo": null,
+        "s1299_recibo": null,
+        "s1299_origem": null
+      },
+      {
+        "per_apur": "2025-12",
+        "escopo": 7423,
+        "ok": 7058,
+        "erro": 0,
+        "pendente": 0,
+        "na": 365,
+        "enviando": 0,
+        "s1299_fechado": false,
+        "s1299_protocolo": null,
+        "s1299_recibo": null,
+        "s1299_origem": null
+      }
+    ],
+    "fechamentos_extra_sem_envios": []
+  },
+  "solucoes": {
+    "empresa": {
+      "key": "solucoes",
+      "schema": "solucoes",
+      "empresa_id_interno": 1,
+      "cnpj": "09.445.502/0001-09",
+      "razao": "SOLUCOES SERVICOS TERCEIRIZADOS LTDA"
+    },
+    "totais": {
+      "escopo": 0,
+      "ok": 0,
+      "erro": 0,
+      "pendente": 0,
+      "na": 0,
+      "meses_fechados": 0,
+      "meses_total": 0
+    },
+    "por_mes": [],
+    "fechamentos_extra_sem_envios": [
+      {
+        "per_apur": "2025-02",
+        "fechado": true,
+        "protocolo": "1.1.202605.0000000013186641532",
+        "nr_recibo": "1.1.0000000040920505692",
+        "origem": "s1299_envio"
+      },
+      {
+        "per_apur": "2025-03",
+        "fechado": true,
+        "protocolo": "1.1.202605.0000000013186696633",
+        "nr_recibo": "1.1.0000000040920741237",
+        "origem": "s1299_envio"
+      },
+      {
+        "per_apur": "2025-04",
+        "fechado": true,
+        "protocolo": "1.1.202605.0000000013187399208",
+        "nr_recibo": "1.1.0000000040924242847",
+        "origem": "s1299_envio"
+      },
+      {
+        "per_apur": "2025-05",
+        "fechado": true,
+        "protocolo": "1.1.202605.0000000013186725851",
+        "nr_recibo": "1.1.0000000040920895245",
+        "origem": "s1299_envio"
+      },
+      {
+        "per_apur": "2025-06",
+        "fechado": true,
+        "protocolo": "1.1.202605.0000000013186752516",
+        "nr_recibo": "1.1.0000000040921049888",
+        "origem": "s1299_envio"
+      },
+      {
+        "per_apur": "2025-07",
+        "fechado": true,
+        "protocolo": "1.1.202605.0000000013186766277",
+        "nr_recibo": "1.1.0000000040921103182",
+        "origem": "s1299_envio"
+      },
+      {
+        "per_apur": "2025-08",
+        "fechado": true,
+        "protocolo": "1.1.202605.0000000013183106342",
+        "nr_recibo": "1.1.0000000040904436372",
+        "origem": "s1299_envio"
+      },
+      {
+        "per_apur": "2025-09",
+        "fechado": true,
+        "protocolo": "1.1.202605.0000000013186790496",
+        "nr_recibo": "1.1.0000000040921211777",
+        "origem": "s1299_envio"
+      },
+      {
+        "per_apur": "2025-10",
+        "fechado": true,
+        "protocolo": "1.1.202605.0000000013186812229",
+        "nr_recibo": "1.1.0000000040921314346",
+        "origem": "s1299_envio"
+      },
+      {
+        "per_apur": "2025-11",
+        "fechado": true,
+        "protocolo": "1.1.202605.0000000013188275471",
+        "nr_recibo": "1.1.0000000040928822916",
+        "origem": "s1299_envio"
+      },
+      {
+        "per_apur": "2025-12",
+        "fechado": true,
+        "protocolo": "1.1.202605.0000000013188387831",
+        "nr_recibo": "1.1.0000000040929555762",
+        "origem": "s1299_envio"
+      }
+    ]
+  },
+  "objetiva": {
+    "empresa": {
+      "key": "objetiva",
+      "schema": "objetiva",
+      "empresa_id_interno": 1,
+      "cnpj": "10.874.523/0001-10",
+      "razao": "OBJETIVA SERVICOS TERCEIRIZADOS LTDA"
+    },
+    "totais": {
+      "escopo": 0,
+      "ok": 0,
+      "erro": 0,
+      "pendente": 0,
+      "na": 0,
+      "meses_fechados": 0,
+      "meses_total": 0
+    },
+    "por_mes": [],
+    "fechamentos_extra_sem_envios": []
+  }
+}

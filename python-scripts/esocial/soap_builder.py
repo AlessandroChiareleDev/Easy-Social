@@ -76,6 +76,12 @@ SOAP_ACTION_IDENT_TRABALHADOR = (
     "ServicoConsultarIdentificadoresEventos/"
     "ConsultarIdentificadoresEventosTrabalhador"
 )
+SOAP_ACTION_IDENT_TABELA = (
+    "http://www.esocial.gov.br/servicos/empregador/consulta/"
+    "identificadores-eventos/v1_0_0/"
+    "ServicoConsultarIdentificadoresEventos/"
+    "ConsultarIdentificadoresEventosTabela"
+)
 SOAP_ACTION_IDENT_EMPREGADOR = (
     "http://www.esocial.gov.br/servicos/empregador/consulta/"
     "identificadores-eventos/v1_0_0/"
@@ -109,6 +115,10 @@ NS_V1_DOWNLOAD = (
 NS_SCHEMA_IDENT_TRABALHADOR = (
     "http://www.esocial.gov.br/schema/consulta/"
     "identificadores-eventos/trabalhador/v1_0_0"
+)
+NS_SCHEMA_IDENT_TABELA = (
+    "http://www.esocial.gov.br/schema/consulta/"
+    "identificadores-eventos/tabela/v1_0_0"
 )
 NS_SCHEMA_IDENT_EMPREGADOR = (
     "http://www.esocial.gov.br/schema/consulta/"
@@ -266,6 +276,13 @@ class SOAPEnvelopeBuilder:
         }
 
     @staticmethod
+    def headers_ident_tabela() -> dict:
+        return {
+            "Content-Type": "text/xml; charset=utf-8",
+            "SOAPAction": SOAP_ACTION_IDENT_TABELA,
+        }
+
+    @staticmethod
     def headers_ident_empregador() -> dict:
         return {
             "Content-Type": "text/xml; charset=utf-8",
@@ -308,6 +325,40 @@ class SOAPEnvelopeBuilder:
             f"<dtIni>{dt_ini}</dtIni>"
             f"<dtFim>{dt_fim}</dtFim>"
             f"</consultaEvtsTrabalhador>"
+            f"</consultaIdentificadoresEvts>"
+            f"</eSocial>"
+        )
+
+    @staticmethod
+    def inner_consulta_ident_tabela(
+        empregador: dict,
+        tp_evt: str,
+        ch_evt: str | None = None,
+        dt_ini: str | None = None,
+        dt_fim: str | None = None,
+    ) -> str:
+        """Build unsigned inner eSocial XML for ConsultarIdentificadoresEventosTabela."""
+        tp_insc = str(empregador["tpInsc"])
+        nr_insc = str(empregador["nrInsc"])[:8]
+        optional_filters = ""
+        if ch_evt:
+            optional_filters += f"<chEvt>{ch_evt}</chEvt>"
+        if dt_ini:
+            optional_filters += f"<dtIni>{dt_ini}</dtIni>"
+        if dt_fim:
+            optional_filters += f"<dtFim>{dt_fim}</dtFim>"
+        return (
+            f'<eSocial xmlns="{NS_SCHEMA_IDENT_TABELA}" '
+            f'xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">'
+            f"<consultaIdentificadoresEvts>"
+            f"<ideEmpregador>"
+            f"<tpInsc>{tp_insc}</tpInsc>"
+            f"<nrInsc>{nr_insc}</nrInsc>"
+            f"</ideEmpregador>"
+            f"<consultaEvtsTabela>"
+            f"<tpEvt>{tp_evt}</tpEvt>"
+            f"{optional_filters}"
+            f"</consultaEvtsTabela>"
             f"</consultaIdentificadoresEvts>"
             f"</eSocial>"
         )
@@ -392,6 +443,23 @@ class SOAPEnvelopeBuilder:
             "    <v1:ConsultarIdentificadoresEventosTrabalhador>\n"
             f"      <v1:consultaEventosTrabalhador>{inner}</v1:consultaEventosTrabalhador>\n"
             "    </v1:ConsultarIdentificadoresEventosTrabalhador>\n"
+            "  </soapenv:Body>\n"
+            "</soapenv:Envelope>"
+        )
+
+    @staticmethod
+    def montar_consulta_ident_tabela(inner_xml_assinado: str) -> str:
+        """Wrap signed inner XML in SOAP envelope for ConsultarIdentificadoresEventosTabela."""
+        inner = _remover_xml_declaration(inner_xml_assinado)
+        return (
+            '<?xml version="1.0" encoding="UTF-8"?>\n'
+            '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" '
+            f'xmlns:v1="{NS_V1_IDENT}">\n'
+            "  <soapenv:Header/>\n"
+            "  <soapenv:Body>\n"
+            "    <v1:ConsultarIdentificadoresEventosTabela>\n"
+            f"      <v1:consultaEventosTabela>{inner}</v1:consultaEventosTabela>\n"
+            "    </v1:ConsultarIdentificadoresEventosTabela>\n"
             "  </soapenv:Body>\n"
             "</soapenv:Envelope>"
         )

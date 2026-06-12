@@ -10,9 +10,7 @@
     "total_erros": 73,
     "plano_saude_coletivo_obrigatorio": 72,
     "recibo_459_pulado": 1,
-    "recibo_459_cpfs": [
-      "00831605588"
-    ]
+    "recibo_459_cpfs": ["00831605588"]
   },
   "geracao_xml": {
     "total_xmls_assinados": 72,

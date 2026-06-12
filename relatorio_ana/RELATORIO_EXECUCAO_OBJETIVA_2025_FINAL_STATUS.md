@@ -10,27 +10,27 @@ Nao houve chamada de Download, SolicitarDownload ou ConsultarIdentificadores nes
 
 ## Validacao V2 por competencia
 
-| Competencia | Total V2 | OK | Erro | Pendente | Situacao |
-| ----------- | -------: | -: | ---: | -------: | -------- |
-| 2025-01 | 806 | 806 | 0 | 0 | Zerado/fechado |
-| 2025-02 | 887 | 887 | 0 | 0 | Zerado/fechado |
-| 2025-03 | 982 | 982 | 0 | 0 | Zerado/fechado |
-| 2025-04 | 986 | 986 | 0 | 0 | Zerado/fechado |
-| 2025-05 | 840 | 840 | 0 | 0 | Zerado/fechado |
-| 2025-06 | 996 | 996 | 0 | 0 | Zerado/fechado |
-| 2025-07 | 995 | 995 | 0 | 0 | Zerado/fechado |
-| 2025-08 | 1057 | 1057 | 0 | 0 | Zerado/fechado |
-| 2025-09 | 1059 | 1059 | 0 | 0 | Zerado/fechado |
-| 2025-10 | 1226 | 1226 | 0 | 0 | Zerado/fechado |
-| 2025-11 | 1284 | 1284 | 0 | 0 | Zerado/fechado |
-| 2025-12 | 1275 | 1275 | 0 | 0 | Zerado/fechado |
+| Competencia | Total V2 |   OK | Erro | Pendente | Situacao       |
+| ----------- | -------: | ---: | ---: | -------: | -------------- |
+| 2025-01     |      806 |  806 |    0 |        0 | Zerado/fechado |
+| 2025-02     |      887 |  887 |    0 |        0 | Zerado/fechado |
+| 2025-03     |      982 |  982 |    0 |        0 | Zerado/fechado |
+| 2025-04     |      986 |  986 |    0 |        0 | Zerado/fechado |
+| 2025-05     |      840 |  840 |    0 |        0 | Zerado/fechado |
+| 2025-06     |      996 |  996 |    0 |        0 | Zerado/fechado |
+| 2025-07     |      995 |  995 |    0 |        0 | Zerado/fechado |
+| 2025-08     |     1057 | 1057 |    0 |        0 | Zerado/fechado |
+| 2025-09     |     1059 | 1059 |    0 |        0 | Zerado/fechado |
+| 2025-10     |     1226 | 1226 |    0 |        0 | Zerado/fechado |
+| 2025-11     |     1284 | 1284 |    0 |        0 | Zerado/fechado |
+| 2025-12     |     1275 | 1275 |    0 |        0 | Zerado/fechado |
 
 ## Recibos residuais resolvidos
 
-| Competencia | CPF | Caminho adotado | Recibo S-1210 novo | Fechamento S-1299 |
-| ----------- | --- | -------------- | ----------------- | ---------------- |
-| 2025-09 | `06701349960` | Recibo informado `1.1.0000000035183951429` era S-3000 excluindo o S-1210 antigo; foi feita nova inclusao `indRetif=1` | `1.1.0000000041100992863` | `1.1.0000000041101000922` |
-| 2025-12 | `00831605588` | Retificacao `indRetif=2` com recibo ativo informado `1.1.0000000037296094083` | `1.1.0000000041100973111` | `1.1.0000000041101004200` |
+| Competencia | CPF           | Caminho adotado                                                                                                       | Recibo S-1210 novo        | Fechamento S-1299         |
+| ----------- | ------------- | --------------------------------------------------------------------------------------------------------------------- | ------------------------- | ------------------------- |
+| 2025-09     | `06701349960` | Recibo informado `1.1.0000000035183951429` era S-3000 excluindo o S-1210 antigo; foi feita nova inclusao `indRetif=1` | `1.1.0000000041100992863` | `1.1.0000000041101000922` |
+| 2025-12     | `00831605588` | Retificacao `indRetif=2` com recibo ativo informado `1.1.0000000037296094083`                                         | `1.1.0000000041100973111` | `1.1.0000000041101004200` |
 
 Evidencia consolidada: `relatorio_ana/OBJETIVA_RECIBOS_459_SET_DEZ_2025/resultado_final_recibos_459_set_dez_2025.json`.
 

@@ -4,14 +4,14 @@ Fluxo executado em producao com S-1298 de reabertura e S-1210 de retificacao por
 
 ## Resumo final por CPF
 
-| per_apur | recibo S-1298 | envios | CPFs finais | aceitos | erros finais | pendente_consulta | principais categorias |
-|---|---:|---:|---:|---:|---:|---:|---|
-| 2025-06 | 1.1.0000000040946564210 | 21, 63 | 996 | 996 | 0 | 0 | corrigido e fechado em 2026-05-28 |
-| 2025-07 | 1.1.0000000040946772638 | 22, 64 | 995 | 995 | 0 | 0 | corrigido e fechado em 2026-05-28 |
-| 2025-08 | 1.1.0000000040946973523 | 23, 65 | 1057 | 1057 | 0 | 0 | corrigido e fechado em 2026-05-28 |
-| 2025-09 | 1.1.0000000040947177208 | 24, 66, 70, 72 | 1059 | 1059 | 0 | 0 | corrigido e fechado apos resolver S-3000/S-1210 do CPF 06701349960 |
-| 2025-10 | 1.1.0000000040947418526 | 25, 67 | 1226 | 1226 | 0 | 0 | corrigido e fechado em 2026-05-28 |
-| 2025-11 | 1.1.0000000040948191770 | 26, 27, 68 | 1284 | 1284 | 0 | 0 | corrigido e fechado em 2026-05-28 |
+| per_apur |           recibo S-1298 |         envios | CPFs finais | aceitos | erros finais | pendente_consulta | principais categorias                                              |
+| -------- | ----------------------: | -------------: | ----------: | ------: | -----------: | ----------------: | ------------------------------------------------------------------ |
+| 2025-06  | 1.1.0000000040946564210 |         21, 63 |         996 |     996 |            0 |                 0 | corrigido e fechado em 2026-05-28                                  |
+| 2025-07  | 1.1.0000000040946772638 |         22, 64 |         995 |     995 |            0 |                 0 | corrigido e fechado em 2026-05-28                                  |
+| 2025-08  | 1.1.0000000040946973523 |         23, 65 |        1057 |    1057 |            0 |                 0 | corrigido e fechado em 2026-05-28                                  |
+| 2025-09  | 1.1.0000000040947177208 | 24, 66, 70, 72 |        1059 |    1059 |            0 |                 0 | corrigido e fechado apos resolver S-3000/S-1210 do CPF 06701349960 |
+| 2025-10  | 1.1.0000000040947418526 |         25, 67 |        1226 |    1226 |            0 |                 0 | corrigido e fechado em 2026-05-28                                  |
+| 2025-11  | 1.1.0000000040948191770 |     26, 27, 68 |        1284 |    1284 |            0 |                 0 | corrigido e fechado em 2026-05-28                                  |
 
 ## Totais Jun-Nov
 

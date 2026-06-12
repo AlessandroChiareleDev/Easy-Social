@@ -497,6 +497,62 @@ class ESocialClient:
         return resultado
 
     @staticmethod
+    def consultar_identificadores_tabela(
+        tp_evt: str,
+        pfx_data: bytes,
+        password: str,
+        empregador: dict,
+        ch_evt: str | None = None,
+        dt_ini: str | None = None,
+        dt_fim: str | None = None,
+        producao: bool = False,
+    ) -> dict:
+        """
+        Consulta identificadores de eventos de tabela do empregador.
+
+        Args:
+            tp_evt: Tipo do evento (ex: "S-1005", "S-1020")
+            pfx_data: Conteúdo do .pfx
+            password: Senha do certificado
+            empregador: dict com tpInsc e nrInsc
+            ch_evt: Chave do evento de tabela (ex: "tpInsc=1;nrInsc=...")
+            dt_ini: Data/hora inicial de recepção (xs:dateTime)
+            dt_fim: Data/hora final de recepção (xs:dateTime)
+            producao: Se True, usa ambiente de produção
+
+        Returns:
+            dict com: sucesso, codigo_resposta, descricao, eventos[], xml_resposta, erro
+        """
+        inner_xml = SOAPEnvelopeBuilder.inner_consulta_ident_tabela(
+            empregador=empregador,
+            tp_evt=tp_evt,
+            ch_evt=ch_evt,
+            dt_ini=dt_ini,
+            dt_fim=dt_fim,
+        )
+        try:
+            response_text = ESocialClient._fazer_request_assinado(
+                inner_xml=inner_xml,
+                montar_soap_fn=SOAPEnvelopeBuilder.montar_consulta_ident_tabela,
+                url=SOAPEnvelopeBuilder.url_identificadores(producao),
+                headers=SOAPEnvelopeBuilder.headers_ident_tabela(),
+                pfx_data=pfx_data,
+                password=password,
+            )
+        except Exception as e:
+            return {
+                "sucesso": False,
+                "codigo_resposta": None,
+                "descricao": None,
+                "eventos": [],
+                "erro": str(e),
+            }
+
+        resultado = ESocialClient._parsear_resposta_identificadores(response_text)
+        resultado["xml_resposta"] = response_text
+        return resultado
+
+    @staticmethod
     def consultar_identificadores_empregador(
         tp_evt: str,
         per_apur: str,
